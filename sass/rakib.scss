@@ -1,0 +1,210 @@
+/* variable */
+@import "variables";
+@import "_mixin.scss";
+@import "partials/theme-default";
+
+// global-overwrite
+@import "modules/global-overwrite";
+
+$text-primary: #4566d4;
+$text-gray-light: #6a6c73;
+
+/* Hero slider CSS */
+//@import "modules/title-section";
+
+/* Hero slider CSS */
+@import "modules/slider-style-one";
+/* custom slider CSS */
+@import "modules/custom-slider";
+
+/* Why choose us CSS(modern tecnology) */
+@import "modules/why-choose-us";
+
+/* About-us CSS */
+@import "modules/about-us";
+
+/* Service-details counter style-three CSS */
+@import "modules/counter-card-three";
+
+/* Service CSS */
+@import "modules/service";
+
+/* Process CSS */
+//@import "modules/process";
+
+/* Pricing CSS */
+@import "modules/pricing";
+
+/* Articles CSS */
+@import "modules/articles";
+
+/* Info card-style-one CSS */
+// @import "modules/info-card-one";
+
+/* Testimonial card CSS */
+@import "modules/testimonial-card";
+
+/* client widget CSS */
+@import "modules/client-widget";
+
+/* Service-page CSS */
+@import "modules/service-page";
+
+/* Contact-info-card CSS */
+@import "modules/contact-info";
+
+/* Footer CSS */
+@import "partials/footer-two";
+
+// icon-card style-one
+@import "modules/icon-card";
+
+// icon-card style-two
+@import "modules/icon-card-two";
+
+// icon-card style-three
+@import "modules/icon-card-three";
+
+// icon-card style-three
+@import "modules/icon-card-four";
+
+// info-card
+@import "modules/info-card";
+
+// info-card style-two
+@import "modules/info-card-two";
+
+// info-card style-three
+@import "modules/info-card-three";
+
+// Info-card style-four
+@import "modules/info-card-four";
+
+// price-card
+@import "modules/price-card";
+
+// Testimonial-card
+@import "modules/testimonial-card-two";
+
+// Testimonial-card
+@import "modules/testimonial-card-three";
+
+// Process-step-card
+@import "modules/process-step";
+
+// Process-step-card style-two
+@import "modules/process-step-two";
+
+// Post-card
+@import "modules/post-card-two";
+
+// Post-card
+@import "modules/post-card-three";
+
+// Post-card
+@import "modules/post-card-four";
+
+/* Team-member-card style-one CSS */
+@import "modules/team-member";
+
+/* Nav-tab style-one CSS */
+@import "modules/nav-tabs";
+
+/* Time-card style-one CSS */
+@import "modules/time-card";
+
+/* Service-details CSS */
+@import "modules/service-details";
+
+/* Service-details side-bar CSS */
+@import "partials/sidebar-two";
+
+/* Project-details CSS */
+@import "modules/project-details";
+
+/* Client-logo CSS */
+@import "modules/client-logo-two";
+
+/* List-item CSS */
+@import "modules/list-item";
+
+/* Team-member-page CSS */
+@import "pages/team-member";
+
+/* Service-page CSS */
+@import "pages/service-page";
+
+/* Accordion-style-four CSS */
+@import "modules/accordion-style-four";
+
+/* Pricing-page CSS */
+@import "pages/pricing-page";
+
+/* Blog-page CSS */
+@import "pages/blog-page";
+
+.common-card-wrapper {
+  background: #4566d4;
+  padding: 100px 50px;
+}
+.testimonial-cards {
+  background: #eef5f8;
+  padding: 50px 0;
+}
+.process-wrapper-two {
+  background: #393d48;
+  padding: 50px;
+}
+
+.icon-card-wrapper-two {
+  padding: 70px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #2c3236;
+}
+
+// page heading
+.page-heading {
+  &.style-two {
+    h1 {
+      font-size: 40px;
+      line-height: 54px;
+      margin-bottom: 0;
+      @media only screen and (min-width: 992px) {
+        font-size: 60px;
+        margin-bottom: 12px;
+        line-height: 70px;
+      }
+    }
+  }
+}
+
+// contact-page
+.contact-title {
+  text-align: center;
+  h2 {
+    font-size: 38px;
+    color: $secondary-color;
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      font-size: 48px;
+    }
+  }
+}
+.map {
+  iframe {
+    width: 100%;
+    height: 380px;
+    border-radius: 12px;
+  }
+}
+
+//image-wrapper
+.service-image {
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

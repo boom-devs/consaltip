@@ -1,0 +1,31 @@
+.header-area {
+  &.style-two {
+
+    // Header Top Area
+    .header-top {
+      .header-top-btn {
+        a {
+          margin-bottom: inherit;
+          padding: 6px 46px;
+
+          &:before {
+            border-radius: 0;
+            transform: skewX(-20deg);
+          }
+        }
+      }
+    }
+
+    // Header Menu Area
+    .header-sec {
+      .logo {
+        &:before {
+          border-radius: 0;
+          transform: skewX(-20deg);
+          bottom: 0;
+          height: 190px;
+        }
+      }
+    }
+  }
+}

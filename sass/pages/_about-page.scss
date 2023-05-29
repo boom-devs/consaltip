@@ -1,0 +1,58 @@
+// About Us Area
+.about-page-about-us-area {
+  padding: 145px 0;
+
+  @include rmaxwd(991) {
+    padding: 100px 0;
+  }
+}
+// Counter Area
+.about-page-counter-area {
+  padding: 145px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+
+  @include rmaxwd(991) {
+    padding: 100px 0;
+  }
+}
+
+// FAQ Area
+.about-page-faq-area {
+  padding: 145px 0;
+
+  @include rmaxwd(991) {
+    padding: 100px 0;
+  }
+
+  .video-popup-card.style-three {
+    margin-left: 160px;
+
+    @include rmaxwd(1199) {
+      margin-left: 0;
+      margin-top: 80px;
+    }
+  }
+}
+
+// Timeline Area
+.about-page-timeline-area {
+  background-color: #f3f7fc;
+  padding: 145px 0;
+}
+
+// Testimonial Area
+.about-page-testimonial-area {
+  background-color: #f3f7fc;
+  padding: 145px 0;
+
+  @include rmaxwd(991) {
+    padding: 100px 0;
+  }
+}
+
+// Client Logo
+.about-page-client-logo-area {
+  padding: 100px 0;
+}

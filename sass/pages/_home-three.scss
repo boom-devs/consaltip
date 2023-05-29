@@ -1,0 +1,39 @@
+// Why Choose Area
+.why-us-area {
+  margin-top: -65px;
+  position: relative;
+  z-index: 2;
+
+
+  .why-us-area-inner {
+    background-color: $black-50;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+}
+
+// Why Choose Area Three
+.why-choose-three-area {
+  background-color: $secondary-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+// Pricing Area
+.pricing-area {
+  background-color: $blue-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+// Our Service Area
+.home-three-our-service-area {
+  padding-top: 145px;
+  padding-bottom: 105px;
+
+  @include rmaxwd(991) {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}

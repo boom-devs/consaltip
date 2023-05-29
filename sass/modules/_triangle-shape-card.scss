@@ -1,0 +1,46 @@
+// Shape Card One
+.triangle-shape-card-one {
+    width: 200px;
+    height: 375px;
+    background-color: $orange-color;
+    -webkit-clip-path: polygon(68% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(80% 0, 100% 0, 100% 100%, 0% 100%);
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+    z-index: 2;
+    animation: MoveUpDown 2s linear infinite alternate;
+
+    @include rmaxwd(991) {
+        height: 200px;
+    }
+}
+// Two
+.triangle-shape-card-two {
+    width: 310px;
+    height: 290px;
+    background-color: $primary-color;
+    -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+    position: absolute;
+    bottom: -210px;
+    right: 0;
+    animation: MoveLeftRight 2s linear infinite alternate;
+    overflow: hidden;
+    z-index: 1;
+
+    @include rmaxwd(991) {
+        height: 200px;
+    }
+}
+
+// Three
+.triangle-shape-card-three {
+    position: absolute;
+    left: 0;
+    bottom: -50%;
+    transform: translateY(50%);
+    z-index: 99;
+    border-top: 408px solid $secondary-color;
+    border-right: 165px solid transparent;
+}

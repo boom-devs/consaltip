@@ -1,0 +1,16 @@
+.service-sidebar {
+}
+.service-page-service-list-area {
+    padding: 165px 0;
+    .service-list-wrapper {
+        padding-right: 100px;
+        padding-top: 65px;
+        @include sm {
+            padding-right: 0;
+            padding-top: 0;
+        }
+    }
+    @include sm {
+        padding: 65px 0;
+    }
+}

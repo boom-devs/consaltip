@@ -1,0 +1,61 @@
+/* variable */
+@import "variables";
+@import "_mixin.scss";
+
+.nav-bottom {
+  background: rgba(4, 20, 78, 0.5) !important;
+  backdrop-filter: blur(2px) !important;
+  position: absolute;
+  z-index: 99999999999;
+  // background: white;
+}
+.hero-section {
+  position: relative;
+  padding-top: 92px;
+  padding-bottom: 50px;
+  z-index: 0;
+  .page-overlay {
+    background: rgba(2, 10, 39, 0.5);
+  }
+  .hero-title {
+    padding: 50px 0;
+    .hero-btn-two {
+      border-radius: 5px;
+    }
+    @media screen and (min-width: "1199px") {
+      padding: 115px 0;
+    }
+  }
+  @media screen and (min-width: "1199px") {
+    padding-bottom: 125px;
+  }
+}
+.info-card-section-two {
+  position: relative;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+  z-index: 0;
+  @media screen and (min-width: "1199px") {
+    margin-top: -240px;
+    margin-bottom: 100px;
+  }
+}
+.portfolio_slider {
+  padding-bottom: 420px;
+}
+
+.subscribe-form-widget-two {
+  border-radius: 4px !important;
+  margin-bottom: 0 !important;
+  .custom-input-two {
+    input {
+      border-radius: 4px !important;
+      padding: 0 20px;
+    }
+  }
+  .submit-btn-two {
+    border-radius: 4px !important;
+  }
+}
+@import "modules/comment-form";

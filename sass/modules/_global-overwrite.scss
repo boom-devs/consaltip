@@ -1,0 +1,75 @@
+// main-menu style-two
+.main-menu {
+  &.style-two {
+    ul {
+      li {
+        ul {
+          background-color: #071c34;
+        }
+        a {
+          color: $white;
+        }
+        a {
+          &:before {
+            border: 1px solid $white;
+            border-width: 0 1px 1px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.comment-respond {
+  &.style-two {
+    position: relative;
+    z-index: 1;
+    padding: 25px;
+    @media screen and (min-width: "1199px") {
+      padding: 50px;
+    }
+  }
+}
+// footer newsletter
+.subscribe-area {
+  &.style-two {
+    background: $white;
+    border-bottom: 0;
+    padding: 20px 24px 0;
+    border-radius: 10px;
+    .subscribe-title {
+      color: $secondary-color;
+      font-family: $heading-font;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}
+.subscribe-form-widget {
+  .single-field {
+    &.style-two {
+      input {
+        border: 1px solid $white-50;
+        border-radius: 10px;
+      }
+    }
+  }
+  &.style-two {
+    flex-direction: column;
+    gap: 25px;
+    // @media screen and (min-width: "1199px") {
+    //   gap: 0;
+    // }
+  }
+}
+.footer-bottom-menu {
+  &.style-two {
+    ul {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+    }
+  }
+}

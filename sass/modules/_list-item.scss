@@ -1,0 +1,30 @@
+.list-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 45px;
+    .icon {
+        width: 54px;
+        height: 54px;
+        border-radius: 50px;
+        background: $orange-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        i {
+            color: $white;
+        }
+    }
+    .text {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 700;
+        color: $text-color;
+        margin: 0;
+    }
+    @include sm {
+        margin-bottom: 20px;
+    }
+}

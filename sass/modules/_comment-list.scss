@@ -1,0 +1,127 @@
+//.post-comments {
+//  padding: 30px;
+//  background-color: $white;
+//  border-radius: 14px;
+//  margin-top: 40px;
+//}
+.post-comments-form {
+  margin-top: 70px;
+}
+.blog-coment-title h2 {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.latest-comments {
+  li {
+
+    .children {
+      .comments-box {
+        margin-left: 50px;
+
+        @include sm {
+          margin-left: 0;
+        }
+      }
+      .children {
+        .comments-box {
+          margin-left: 100px;
+          border-top: 1px solid #D2D2D2;
+        }
+      }
+    }
+
+    .comments-box {
+      padding: 50px;
+      border: 1px solid $gray-300;
+      border-radius: 8px;
+      margin-bottom: 24px;
+
+      .comments-avatar {
+        float: left;
+
+        @include sm {
+          float: inherit;
+          margin-bottom: 20px;
+        }
+        img {
+          margin-right: 30px;
+          width: 100px;
+          border-radius: 50px;
+        }
+      }
+      .comments-text {
+          overflow: hidden;
+
+
+        p {
+          font-size: 16px;
+          line-height: 30px;
+          margin-bottom: 20px;
+          color: $text-color;
+        }
+        .avatar-name {
+          margin-bottom: 10px;
+          position: relative;
+
+          h5 {
+            font-size: 21px;
+            margin-bottom: 5px;
+            font-weight: 700;
+            font-family: $heading-font;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          span {
+            color: #9ba8c3;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: $body-font;
+          }
+        }
+        .comment-reply-link {
+          display: inline-flex;
+          align-items: center;
+          border-radius: 6px;
+          font-size: 14px;
+          font-weight: 700;
+          color: $secondary-color;
+          border: 1px solid $orange-color;
+          padding: 4px 26px;
+          gap: 8px;
+          position: absolute;
+          top: 0;
+          right: 0;
+
+          @include sm {
+            position: unset;
+            margin-top: 10px;
+          }
+
+          &:hover {
+            background-color: $orange-color;
+            color: $white;
+            @include transition;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.post-comments .latest-comments > ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.comments-text > ul,.comments-text > ol {
+  margin-bottom: 20px;
+}
+ul.children {
+  list-style: none;
+}
+
+

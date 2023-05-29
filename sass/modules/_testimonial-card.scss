@@ -1,0 +1,88 @@
+.testimonial-card {
+    padding: 40px 50px;
+    background: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .content {
+        .text {
+            margin: 0;
+            font-size: 23px;
+            line-height: 36px;
+            font-weight: 400;
+            @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+                font-size: 16px;
+            }
+        }
+    }
+    .meta-user {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+            .info {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    margin: 0;
+                    font-size: 21px;
+                    line-height: 28px;
+                    font-weight: 700;
+                    color: $secondary-color;
+                }
+                p {
+                    margin: 0;
+                    font-size: 16px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    color: #778196;
+                }
+            }
+        }
+    }
+    //@include sm {
+    //    padding: 25px;
+    //    .content {
+    //        margin-bottom: 15px;
+    //    }
+    //    .meta-user {
+    //        .user-info {
+    //            gap: 5px;
+    //        }
+    //    }
+    //}
+    //@include md {
+    //    padding: 25px;
+    //    .content {
+    //        margin-bottom: 15px;
+    //    }
+    //    .meta-user {
+    //        .user-info {
+    //            gap: 5px;
+    //        }
+    //        .icon {
+    //            width: 50px;
+    //            height: 50px;
+    //        }
+    //    }
+    //}
+}

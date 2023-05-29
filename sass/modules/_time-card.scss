@@ -1,0 +1,202 @@
+.time-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f3f7fc;
+
+    .time-card-item {
+        width: 100%;
+        padding: 30px 96px;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        position: relative;
+        &:nth-of-type(even) {
+            flex-direction: row-reverse;
+        }
+        &::after {
+            content: "";
+            width: 3px;
+            height: 100%;
+            right: 0;
+            left: 50%;
+            top: 0;
+            position: absolute;
+            background: #dde4f6;
+        }
+        .time-card-desc {
+            width: 424px;
+            height: 250px;
+            background: $white;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            .title {
+                padding: 8px 0;
+                background: $orange-color;
+                display: flex;
+                justify-content: center;
+                h2 {
+                    margin: 0;
+                    font-family: $heading-font;
+                    font-size: 21px;
+                    line-height: 60px;
+                    font-weight: 700;
+                    color: $white;
+                }
+            }
+            .desc {
+                padding: 40px;
+                p {
+                    margin: 0;
+                    font-family: $body-font;
+                    font-size: 18px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    color: $text-color;
+                }
+                @include sm {
+                    padding: 20px;
+                }
+            }
+            @include sm {
+                width: 300px;
+            }
+        }
+        .circle-wrapper {
+            padding: 30px 117px;
+            position: relative;
+            overflow: hidden;
+            .time-card-circle {
+                min-width: 18px;
+                min-height: 18px;
+                border-radius: 50px;
+                background: $orange-color;
+                flex-shrink: 0;
+                position: relative;
+                z-index: 3;
+            }
+            &:after {
+                content: "";
+                width: 100%;
+                height: 3px;
+                right: 0;
+                left: 0;
+                top: 49%;
+                position: absolute;
+                background: #dde4f6;
+                @include sm {
+                    width: 3px;
+                    height: 100%;
+                    top: 0;
+                    left: 50%;
+                }
+                @include md {
+                    width: 3px;
+                    height: 100%;
+                    top: 0;
+                    left: 50%;
+                }
+            }
+            @include lg {
+                padding: 30px 33px;
+            }
+        }
+        .time-card-time {
+            min-width: 174px;
+            min-height: 50px;
+            border-radius: 24px;
+            background: $sky-color;
+            flex-shrink: 0;
+            z-index: 2;
+            margin-top: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            p {
+                margin: 0;
+                color: $white;
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 700;
+                color: $white;
+            }
+            @include sm {
+                flex-shrink: 0;
+                // &:after {
+                //     content: "";
+                //     width: 50%;
+                //     height: 3px;
+                //     right: 0;
+                //     left: 100%;
+                //     top: 50%;
+                //     position: absolute;
+                //     background: #dde4f6;
+                //     z-index: 1;
+                // }
+            }
+            // @include md {
+            //     flex-shrink: 0;
+            //     &:after {
+            //         content: "";
+            //         width: 100%;
+            //         height: 3px;
+            //         right: 0;
+            //         left: 100%;
+            //         top: 50%;
+            //         position: absolute;
+            //         background: #dde4f6;
+            //         z-index: 1;
+            //     }
+            // }
+        }
+
+        @include sm {
+            flex-direction: column-reverse;
+            padding: 0;
+            align-items: center;
+            padding-bottom: 30px;
+            &:nth-of-type(even) {
+                flex-direction: column-reverse;
+            }
+            &:after {
+                display: none;
+            }
+        }
+        @include md {
+            flex-direction: column-reverse;
+            padding: 30px 0;
+            align-items: center;
+            padding-bottom: 30px;
+            &:nth-of-type(even) {
+                flex-direction: column-reverse;
+            }
+            &:after {
+                display: none;
+            }
+        }
+        @include lg {
+            padding: 30px 0;
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1439px) {
+            padding: 30px 8px;
+        }
+    }
+    .time-card-arrow {
+        flex-shrink: 0;
+        width: 42px;
+        height: 42px;
+        border-radius: 50px;
+        background: $orange-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+            font-size: 16px;
+            color: $white;
+        }
+    }
+}

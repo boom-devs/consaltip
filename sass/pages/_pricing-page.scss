@@ -1,0 +1,50 @@
+.pricing-card-wrapper {
+    background: $gray-50;
+}
+.why-choose-card-wrapper {
+    padding-left: 110px;
+    @include sm {
+        padding-left: 0;
+    }
+}
+.accordion-section {
+    padding: 200px 0;
+    @include sm {
+        padding: 70px 0;
+    }
+}
+.pricing-accordion-wrapper {
+    padding-left: 120px;
+    @include sm {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+}
+.faq-tab {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .faq-single-tab {
+        border-radius: 6px;
+        padding: 26px 35px;
+        background: $gray-50;
+        @include transition;
+        a {
+            h3 {
+                margin: 0;
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: 700;
+                color: $secondary-color;
+            }
+        }
+        &:hover {
+            background: $orange-color;
+            a {
+                h3 {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

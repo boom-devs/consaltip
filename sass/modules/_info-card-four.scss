@@ -1,0 +1,90 @@
+.info-card {
+    &.style-four {
+        position: relative;
+        padding: 0;
+        border-radius: 14px;
+        .image-wrapper {
+            position: relative;
+            opacity: 1;
+            transition: all 0.6s ease;
+            border-radius: 10px;
+            .overlay {
+                background: #393d49;
+            }
+        }
+        .content-wrapper {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+            .content-inner {
+                padding: 20px 30px 20px 35px;
+                background: transparent;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+            }
+            .title-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row;
+                padding-bottom: 30px;
+                .icon {
+                    display: flex;
+                    flex-shrink: 0;
+                    width: 60px;
+                    height: 60px;
+                    color: $white;
+                }
+                .title {
+                    font-size: 30px;
+                    line-height: 42px;
+                    font-weight: 700;
+                    margin: 0;
+                    color: $white;
+                }
+            }
+            .content-area {
+                overflow: hidden;
+                visibility: hidden;
+                opacity: 1;
+                transition: all 0.6s ease;
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                margin-top: -200px;
+                @include transition;
+                .desc {
+                    color: $white;
+                }
+                .read-more {
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        &:hover {
+            .title-wrapper {
+                // padding-bottom: 30px;
+                border-bottom: 1px solid #ffffff;
+            }
+            .content-wrapper {
+                // margin-bottom: 85px;
+                .content-area {
+                    visibility: visible;
+                    opacity: 1;
+                    transition: 0.6s;
+
+                    .content {
+                        margin: 20px 0 30px 0;
+                    }
+                }
+            }
+        }
+    }
+}

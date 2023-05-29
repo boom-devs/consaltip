@@ -1,0 +1,28 @@
+.accordion-wrapper {
+    &.style-four {
+        .accordion-list-item {
+            margin-bottom: 20px;
+            &.open {
+                .accordion-head {
+                    .icon {
+                        background: $orange-color;
+                    }
+                }
+            }
+            .accordion-head {
+                .accordion-title {
+                    color: $secondary-color;
+                }
+                .icon {
+                    width: 30px;
+                    height: 30px;
+                    background: $sky-color;
+                    border-radius: 50px;
+                }
+            }
+            .accordion-item-body {
+                padding-top: 16px;
+            }
+        }
+    }
+}

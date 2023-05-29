@@ -1,0 +1,58 @@
+.accordion-wrapper {
+  .accordion-list-item {
+    &.open {
+      .accordion-item-body {
+        display: block;
+      }
+      .accordion-head {
+        .icon {
+          &:before {
+            content: "\f068";
+          }
+        }
+      }
+    }
+    .accordion-head {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 32px;
+      cursor: pointer;
+      flex-direction: row-reverse;
+      padding: 12px 0;
+
+      .accordion-title {
+        font-size: 21px;
+        line-height: 32px;
+        color: $white;
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        color: $white;
+        font-size: 18px;
+        font-weight: 700;
+        flex-shrink: 0;
+
+        &:before {
+          position: absolute;
+          content: "\2b";
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          font-family: $font-awesome;
+        }
+      }
+    }
+    .accordion-item-body {
+      color: $white-100;
+      padding-left: 60px;
+      padding-bottom: 25px;
+    }
+  }
+}
