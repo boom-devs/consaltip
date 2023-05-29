@@ -1294,48 +1294,43 @@ input:focus {
 }
 
 .icon-card.style-two {
-  background: transparent;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 34px;
-  padding: 70px;
-  position: relative;
-  margin-bottom: 0;
-}
-.icon-card.style-two .divider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border-right: 1px solid #464b4e;
-  border-bottom: 1px solid #464b4e;
+  align-items: center;
+  padding: 36px 40px;
+  border-radius: 8px;
+  margin-bottom: 32px;
 }
 .icon-card.style-two .icon {
-  width: 62px;
-  height: 62px;
+  background: #e0f780;
+  width: 80px;
+  height: 80px;
 }
 .icon-card.style-two .icon img {
-  width: 100%;
-}
-.icon-card.style-two .content {
-  gap: 34px;
+  width: 42px;
+  height: 42px;
 }
 .icon-card.style-two .content .title {
-  color: #ffffff;
+  text-align: start;
 }
 .icon-card.style-two .content .desc {
-  color: #c7cdda;
+  text-align: start;
+  font-size: 18px;
+  line-height: 31px;
+  margin-top: -9px;
+  opacity: 0;
+  overflow: hidden;
+  height: 0px;
+  transition: all 0.5s ease-out;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .icon-card.style-two {
-    flex-direction: column;
-    padding: 36px;
-    gap: 34px;
-  }
-  .icon-card.style-two .content {
-    gap: 24px;
-  }
+.icon-card.style-two:hover {
+  align-items: start;
+  padding: 39px 40px;
+}
+.icon-card.style-two:hover .content .desc {
+  margin: 0;
+  opacity: 1;
+  overflow: visible;
+  height: auto;
 }
 
 .icon-card.style-three {
