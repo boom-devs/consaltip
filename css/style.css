@@ -316,6 +316,7 @@ p {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 27px;
+  font-weight: 400;
 }
 
 img {
@@ -338,9 +339,9 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
+  margin: 0;
   font-family: "Outfit", sans-serif;
-  color: #fcaf14;
+  color: #080f10;
   font-style: normal;
   transition: all 0.5s ease-out;
 }
@@ -4360,12 +4361,13 @@ a.meanmenu-reveal {
   align-items: center;
   padding: 36px 40px;
   border-radius: 8px;
-  margin-bottom: 32px;
+  justify-content: start;
 }
 .icon-card.style-two .icon {
   background: #e0f780;
   width: 80px;
   height: 80px;
+  align-self: start;
 }
 .icon-card.style-two .icon img {
   width: 42px;
@@ -4378,21 +4380,6 @@ a.meanmenu-reveal {
   text-align: start;
   font-size: 18px;
   line-height: 31px;
-  margin-top: -9px;
-  opacity: 0;
-  overflow: hidden;
-  height: 0px;
-  transition: all 0.5s ease-out;
-}
-.icon-card.style-two:hover {
-  align-items: start;
-  padding: 39px 40px;
-}
-.icon-card.style-two:hover .content .desc {
-  margin: 0;
-  opacity: 1;
-  overflow: visible;
-  height: auto;
 }
 
 .icon-card.style-three {
@@ -8618,6 +8605,17 @@ ul.children {
   left: 0;
   top: 0;
   z-index: -1;
+}
+
+.icon-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.portfolio-wrapper {
+  background: #035b7b;
+  padding: 100px 0;
 }
 
 .counter-area-two {

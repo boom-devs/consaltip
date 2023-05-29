@@ -11,4 +11,23 @@
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.portfolio-card .portfolio-image {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-card .portfolio-image img {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-card .content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }/*# sourceMappingURL=rakib-two.css.map */

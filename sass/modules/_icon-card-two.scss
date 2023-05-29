@@ -4,12 +4,12 @@
         align-items: center;
         padding: 36px 40px;
         border-radius: 8px;
-        margin-bottom: 32px;
-
+        justify-content: start;
         .icon {
             background: $brand;
             width: 80px;
             height: 80px;
+            align-self: start;
             img {
                 width: 42px;
                 height: 42px;
@@ -23,25 +23,20 @@
                 text-align: start;
                 font-size: 18px;
                 line-height: 31px;
-                margin-top: -9px;
-                opacity: 0;
-                overflow: hidden;
-                height: 0px;
-                @include transition;
             }
         }
-        &:hover {
-            align-items: start;
-            padding: 39px 40px;
+        // &:hover {
+        //     align-items: start;
+        //     padding: 39px 40px;
 
-            .content {
-                .desc {
-                    margin: 0;
-                    opacity: 1;
-                    overflow: visible;
-                    height: auto;
-                }
-            }
-        }
+        //     .content {
+        //         .desc {
+        //             margin: 0;
+        //             opacity: 1;
+        //             overflow: visible;
+        //             height: auto;
+        //         }
+        //     }
+        // }
     }
 }
