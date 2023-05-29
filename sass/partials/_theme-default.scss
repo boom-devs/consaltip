@@ -15,7 +15,10 @@ body {
   line-height: 30px;
 }
 p {
-  margin: 0 0 15px;
+  margin: 0;
+  font-family: $body-font;
+  font-size: 16px;
+  line-height: 27px;
 }
 
 img {
@@ -45,34 +48,34 @@ h6 {
 }
 
 h1 {
-  font-size: 120px;
-  line-height: 132px;
-  font-weight: 700;
+  font-size: 76px;
+  line-height: 91px;
+  font-weight: 600;
 }
 h2 {
-  font-size: 48px;
-  line-height: 60px;
-  font-weight: 700;
+  font-size: 57px;
+  line-height: 68px;
+  font-weight: 600;
 }
 h3 {
-  font-size: 36px;
-  line-height: 43px;
-  font-weight: 700;
+  font-size: 43px;
+  line-height: 52px;
+  font-weight: 600;
 }
 h4 {
-  font-size: 30px;
+  font-size: 32px;
   line-height: 42px;
-  font-weight: 700;
+  font-weight: 600;
 }
 h5 {
   font-size: 24px;
-  line-height: 36px;
-  font-weight: 700;
+  line-height: 34px;
+  font-weight: 600;
 }
 h6 {
   font-size: 18px;
-  line-height: 28px;
-  font-weight: 700;
+  line-height: 25px;
+  font-weight: 500;
 }
 label {
   color: $text-color;
@@ -151,6 +154,10 @@ input:focus {
 }
 .page-bg {
   background-color: $black;
+}
+
+.background-primary {
+  background-color: $background;
 }
 
 .page-area {

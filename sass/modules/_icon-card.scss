@@ -1,50 +1,41 @@
 .icon-card {
-    display: flex;
     background: $white;
-    flex-direction: row;
-    gap: 40px;
-    margin-bottom: 50px;
-
-    @include sm {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-    }
-
+    padding: 67px 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    z-index: 2;
 
     .icon {
-        width: 78px;
-        height: 78px;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border: 1px solid #033f47;
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-shrink: 0;
         img {
-            width: 100%;
+            width: 60px;
+            height: 60px;
         }
     }
     .content {
         display: flex;
-        gap: 32px;
+        gap: 16px;
         flex-direction: column;
-
-        @include sm {
-            gap: 15px;
-        }
         .title {
-            font-family: $heading-font;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 36px;
-            color: $secondary-color;
+            color: $title-color;
             margin-bottom: 0;
+            text-align: center;
         }
         .desc {
-            font-family: $body-font;
-            font-size: 18px;
-            line-height: 30px;
             font-weight: 400;
             color: $text-color;
-            margin-bottom: 0;
+            text-align: center;
         }
     }
-
 }
