@@ -1,84 +1,51 @@
-.post-card {
+.post-card-one {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 30px 35px 25px 35px;
-  border: 1px solid #778196;
-  border-radius: 12px;
-  gap: 60px;
-  margin-bottom: 25px;
-  .image {
-    overflow: hidden;
-    border-radius: 12px;
-  }
-  .overlay {
-    width: 100%;
-    height: 100%;
-    background: $secondary-color;
-    opacity: 24%;
-  }
-  .content {
+  .content-wrapper {
+    background: $white;
+    padding: 32px 32px 48px 48px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    .post-meta {
-      color: $orange-color;
-      font-size: 16px;
-      line-height: 28px;
-      font-weight: 700;
-      margin: 0;
-      display: inline-flex;
-      gap: 17px;
-      align-items: center;
-      span {
-        margin: 0;
-        &:before {
-          background-color: #b8bfcc;
-          width: 1px;
+    gap: 48px;
+    .post-content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .post-meta {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        .user {
+          padding: 8px 16px;
           display: inline-flex;
-          height: 12px;
-          content: "";
-          margin-right: 17px;
+          align-items: center;
+          gap: 8px;
         }
-        &:last-child {
-          display: none;
+        .date {
+          padding: 8px 16px;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
         }
-        &:first-child {
-          &:before {
-            display: none;
+        .user,
+        .date {
+          span {
+            line-height: 21px;
+            i {
+              font-size: 14px;
+            }
+          }
+          p {
+            font-size: 14px;
+            line-height: 21px;
           }
         }
       }
-    }
-    .title {
-      font-size: 21px;
-      line-height: 30px;
-      font-weight: 700;
-      margin: 0;
-      color: $secondary-color;
-    }
-  }
-  .date {
-    margin-bottom: 0;
-  }
-  .date-bottom {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 400;
-    margin-bottom: 0;
-    color: #778196;
-  }
-  @include lg {
-    padding: 20px 25px;
-    gap: 55px;
-    .content {
-      .post-meta {
-        font-size: 14px;
-      }
       .title {
-        font-size: 16px;
-        line-height: 26px;
       }
+    }
+    button {
+      flex-shrink: 0;
     }
   }
 }

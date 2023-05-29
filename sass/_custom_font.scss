@@ -2,8 +2,7 @@
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?gpc86a");
   src: url("../fonts/icomoon.eot?gpc86a#iefix") format("embedded-opentype"),
-    url("../fonts/icomoon.ttf?gpc86a") format("truetype"),
-    url("../fonts/icomoon.woff?gpc86a") format("woff"),
+    url("../fonts/icomoon.ttf?gpc86a") format("truetype"), url("../fonts/icomoon.woff?gpc86a") format("woff"),
     url("../fonts/icomoon.svg?gpc86a#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
@@ -25,6 +24,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-calender:before {
+  content: "\e900";
+}
+.icon-user:before {
+  content: "\e901";
+}
+
 .icon-check_trans:before {
   content: "\e900";
 }

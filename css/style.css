@@ -53,6 +53,14 @@ Footer Section
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-calender:before {
+  content: "\e900";
+}
+
+.icon-user:before {
+  content: "\e901";
+}
+
 .icon-check_trans:before {
   content: "\e900";
 }
@@ -487,43 +495,22 @@ input:focus {
 .theme-btn,
 .wp-block-loginout a {
   display: inline-flex;
-  background: rgb(227, 0, 8);
-  background: linear-gradient(65deg, rgb(227, 0, 8) 0%, rgb(250, 174, 0) 100%);
-  color: #fff;
-  padding: 11px 11px 11px 36px;
+  color: #080f10;
+  padding: 16px 24px;
   text-align: center;
-  font-weight: 700;
-  font-family: "Outfit", sans-serif;
   text-transform: capitalize;
-  position: relative;
-  z-index: 1;
-  transition: all 0.5s ease-out;
-  font-size: 18px;
-  align-items: center;
-  gap: 36px;
-  border-radius: 6px;
-}
-.theme-btn i,
-.wp-block-loginout a i {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 6px;
-  background-color: #035b7b;
-  color: #fff;
+  font-family: "Outfit", sans-serif;
   font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  border-radius: 4px;
+  background: #e0f780;
 }
 .theme-btn:hover,
 .wp-block-loginout a:hover {
   background: #071c34;
   color: #fff;
   border-color: #071c34;
-}
-
-.border-radius-12 {
-  border-radius: 12px;
 }
 
 /* Deafult Margin & Padding */
@@ -5663,87 +5650,54 @@ button.testimonial-arrow-btn:hover i {
   }
 }
 
-.post-card {
+.post-card-one {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 30px 35px 25px 35px;
-  border: 1px solid #778196;
-  border-radius: 12px;
-  gap: 60px;
-  margin-bottom: 25px;
 }
-.post-card .image {
-  overflow: hidden;
-  border-radius: 12px;
-}
-.post-card .overlay {
-  width: 100%;
-  height: 100%;
-  background: #fcaf14;
-  opacity: 24%;
-}
-.post-card .content {
+.post-card-one .content-wrapper {
+  background: #ffffff;
+  padding: 32px 32px 48px 48px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 48px;
 }
-.post-card .content .post-meta {
-  color: #ff6731;
-  font-size: 16px;
-  line-height: 28px;
-  font-weight: 700;
-  margin: 0;
-  display: inline-flex;
-  gap: 17px;
+.post-card-one .content-wrapper .post-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.post-card-one .content-wrapper .post-content .post-meta {
+  display: flex;
+  gap: 16px;
   align-items: center;
 }
-.post-card .content .post-meta span {
-  margin: 0;
-}
-.post-card .content .post-meta span:before {
-  background-color: #b8bfcc;
-  width: 1px;
+.post-card-one .content-wrapper .post-content .post-meta .user {
+  padding: 8px 16px;
   display: inline-flex;
-  height: 12px;
-  content: "";
-  margin-right: 17px;
+  align-items: center;
+  gap: 8px;
 }
-.post-card .content .post-meta span:last-child {
-  display: none;
+.post-card-one .content-wrapper .post-content .post-meta .date {
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
-.post-card .content .post-meta span:first-child:before {
-  display: none;
+.post-card-one .content-wrapper .post-content .post-meta .user span,
+.post-card-one .content-wrapper .post-content .post-meta .date span {
+  line-height: 21px;
 }
-.post-card .content .title {
-  font-size: 21px;
-  line-height: 30px;
-  font-weight: 700;
-  margin: 0;
-  color: #fcaf14;
+.post-card-one .content-wrapper .post-content .post-meta .user span i,
+.post-card-one .content-wrapper .post-content .post-meta .date span i {
+  font-size: 14px;
 }
-.post-card .date {
-  margin-bottom: 0;
+.post-card-one .content-wrapper .post-content .post-meta .user p,
+.post-card-one .content-wrapper .post-content .post-meta .date p {
+  font-size: 14px;
+  line-height: 21px;
 }
-.post-card .date-bottom {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  margin-bottom: 0;
-  color: #778196;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .post-card {
-    padding: 20px 25px;
-    gap: 55px;
-  }
-  .post-card .content .post-meta {
-    font-size: 14px;
-  }
-  .post-card .content .title {
-    font-size: 16px;
-    line-height: 26px;
-  }
+.post-card-one .content-wrapper button {
+  flex-shrink: 0;
 }
 
 .post-card.style-two {
