@@ -20,6 +20,10 @@
         i {
             color: #033f47;
         }
+        @include sm {
+            width: 28px;
+            height: 28px;
+        }
     }
     .text {
         font-size: 20px;
@@ -28,8 +32,12 @@
         color: $title-color;
         margin: 0;
         font-family: $heading-font;
+        @include sm {
+            font-size: 16px;
+            line-height: 28px;
+        }
     }
     @include sm {
-        margin-bottom: 20px;
+        gap: 10px;
     }
 }

@@ -3186,6 +3186,12 @@ input:focus {
 .list-item .icon i {
   color: #033f47;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .list-item .icon {
+    width: 28px;
+    height: 28px;
+  }
+}
 .list-item .text {
   font-size: 20px;
   line-height: 34px;
@@ -3195,8 +3201,14 @@ input:focus {
   font-family: "Outfit", sans-serif;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .list-item .text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .list-item {
-    margin-bottom: 20px;
+    gap: 10px;
   }
 }
 
