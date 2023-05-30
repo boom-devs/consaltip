@@ -3151,33 +3151,11 @@ input:focus {
 }
 
 /* Client-logo CSS */
-.client-logo-wrapper.style-two {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 60px 30px;
+.client-logo-wrapper {
+  gap: 24px 49px;
 }
-.client-logo-wrapper.style-two .client-logo {
-  cursor: pointer;
-  overflow: hidden;
-  transition: all 0.5s ease-out;
-}
-.client-logo-wrapper.style-two .client-logo img {
-  filter: grayscale(100%);
-  opacity: 0.65;
-  transition: all 0.5s ease-out;
-}
-.client-logo-wrapper.style-two .client-logo:hover {
-  transform: scale(1.1);
-}
-.client-logo-wrapper.style-two .client-logo:hover img {
-  filter: none;
-  opacity: 1;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .client-logo-wrapper.style-two {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px 30px;
-  }
+.client-logo-wrapper .client-logo.style-two {
+  filter: brightness(0);
 }
 
 /* List-item CSS */
