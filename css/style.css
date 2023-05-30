@@ -508,6 +508,17 @@ Footer Section
   color: #4566d4;
 }
 
+.icon-Process-Development-color .path1:before {
+  content: "\e900";
+  color: rgb(224, 247, 128);
+}
+
+.icon-Process-Development-color .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(3, 63, 71);
+}
+
 * {
   margin: 0;
   border: 0;
@@ -4529,9 +4540,9 @@ a.meanmenu-reveal {
   align-items: center;
   flex-shrink: 0;
 }
-.icon-card .icon img {
-  width: 60px;
-  height: 60px;
+.icon-card .icon i {
+  font-size: 55px;
+  line-height: 55px;
 }
 .icon-card .content {
   display: flex;
@@ -4562,9 +4573,9 @@ a.meanmenu-reveal {
   height: 80px;
   align-self: start;
 }
-.icon-card.style-two .icon img {
-  width: 42px;
-  height: 42px;
+.icon-card.style-two .icon i {
+  font-size: 48px;
+  font-weight: 500;
 }
 .icon-card.style-two .content .title {
   text-align: start;

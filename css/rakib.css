@@ -1253,9 +1253,9 @@ input:focus {
   align-items: center;
   flex-shrink: 0;
 }
-.icon-card .icon img {
-  width: 60px;
-  height: 60px;
+.icon-card .icon i {
+  font-size: 55px;
+  line-height: 55px;
 }
 .icon-card .content {
   display: flex;
@@ -1286,9 +1286,9 @@ input:focus {
   height: 80px;
   align-self: start;
 }
-.icon-card.style-two .icon img {
-  width: 42px;
-  height: 42px;
+.icon-card.style-two .icon i {
+  font-size: 48px;
+  font-weight: 500;
 }
 .icon-card.style-two .content .title {
   text-align: start;
