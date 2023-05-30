@@ -30,4 +30,39 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.image-card {
+  display: flex;
+  align-items: center;
+}
+.image-card .content {
+  padding-right: 134px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  flex: 1;
+}
+.image-card .content .title {
+  position: relative;
+  margin-bottom: 16px;
+}
+.image-card .content .title .under-line {
+  background: url("../../images/under_line.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  width: 100%;
+  height: 12px;
+  right: 0;
+  bottom: -12px;
+}
+.image-card .content .desc {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31px;
+}
+.image-card .image {
+  flex: 1;
 }/*# sourceMappingURL=rakib-two.css.map */

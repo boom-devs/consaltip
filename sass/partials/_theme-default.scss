@@ -171,13 +171,13 @@ input:focus {
   color: $title-color;
   padding: 16px 24px;
   text-align: center;
+  border-radius: 4px;
+  background: $brand;
   text-transform: capitalize;
-  font-family: $heading-font;
+  font-family: $body-font;
   font-size: 16px;
   line-height: 27px;
   font-weight: 400;
-  border-radius: 4px;
-  background: $brand;
 
   &:hover {
     background: #071c34;

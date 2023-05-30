@@ -271,10 +271,6 @@ Footer Section
   content: "\e900";
 }
 
-.icon-check:before {
-  content: "\e929";
-}
-
 .icon-dev1:before {
   content: "\e928";
   color: #4566d4;
@@ -715,13 +711,13 @@ input:focus {
   color: #080f10;
   padding: 16px 24px;
   text-align: center;
+  border-radius: 4px;
+  background: #e0f780;
   text-transform: capitalize;
-  font-family: "Outfit", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 27px;
   font-weight: 400;
-  border-radius: 4px;
-  background: #e0f780;
 }
 .theme-btn:hover,
 .wp-block-loginout a:hover {
