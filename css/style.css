@@ -5317,102 +5317,46 @@ a.meanmenu-reveal {
   }
 }
 
-.process-steps-wrapper {
-  padding: 70px 0px 10px 50px;
-  background: #31373f;
-}
-
 .process-step {
-  position: relative;
-  padding: 42px 50px;
-  border-radius: 10px;
-  background: #ffffff;
-  margin-bottom: 78px;
+  display: flex;
 }
-@media (max-width: 991px) {
-  .process-step {
-    margin-bottom: 24px;
-  }
+.process-step .image {
+  width: 50%;
 }
-.process-step .count {
+.process-step .image img {
+  width: 100%;
+  height: 100%;
+}
+.process-step .content-wrapper {
+  width: 50%;
+  padding: 95px 111px 96px 133px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  background: #f8f8f1;
+}
+.process-step .content-wrapper .content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.process-step .content-wrapper .content .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: #e0f780;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  background: #1eae98;
-  width: 72px;
-  height: 72px;
-  border-radius: 50px;
-  color: #ffffff;
 }
-.process-step .count span {
-  font-size: 24px;
-  line-height: 36px;
-  font-weight: 700;
+.process-step .content-wrapper .content .icon i {
+  font-size: 48px;
+  line-height: 48px;
 }
-.process-step .content {
+.process-step .content-wrapper .content .title-wrapper {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-.process-step .content .title {
-  margin: 0;
-  font-size: 24px;
-  line-height: 36px;
-  font-weight: 700;
-  color: #fcaf14;
-}
-.process-step .content .desc {
-  margin: 0;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #575959;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .process-step {
-    padding: 25px 30px;
-  }
-  .process-step .icon {
-    margin-bottom: 20px;
-  }
-  .process-step .count {
-    left: 0;
-    top: 6px;
-    position: relative;
-    transform: inherit;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .process-step {
-    padding: 25px 30px;
-  }
-  .process-step .icon {
-    margin-bottom: 20px;
-  }
-  .process-step .count {
-    left: 0;
-    top: 6px;
-    position: relative;
-    transform: inherit;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .process-step {
-    padding: 25px 30px;
-  }
-  .process-step .icon {
-    margin-bottom: 20px;
-  }
-  .process-step .count {
-    left: 0;
-    top: 6px;
-    position: relative;
-    transform: inherit;
-  }
 }
 
 .process-step.style-two {

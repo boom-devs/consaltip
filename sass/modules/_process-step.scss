@@ -1,89 +1,41 @@
-.process-steps-wrapper {
-    padding: 70px 0px 10px 50px;
-    background: #31373f;
-}
 .process-step {
-    position: relative;
-    padding: 42px 50px;
-    border-radius: 10px;
-    background: $white;
-    margin-bottom: 78px;
-
-    @include rmaxwd(991) {
-        margin-bottom: 24px;
-    }
-    .count {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(-50%, -50%);
-        background: $sky-color;
-        width: 72px;
-        height: 72px;
-        border-radius: 50px;
-        color: $white;
-        span {
-            font-size: 24px;
-            line-height: 36px;
-            font-weight: 700;
+    display: flex;
+    .image {
+        width: 50%;
+        img {
+            width: 100%;
+            height: 100%;
         }
     }
-    .content {
+    .content-wrapper {
+        width: 50%;
+        padding: 95px 111px 96px 133px;
         display: flex;
         flex-direction: column;
-        gap: 16px;
-        .title {
-            margin: 0;
-            font-size: 24px;
-            line-height: 36px;
-            font-weight: 700;
-            color: $secondary-color;
-        }
-        .desc {
-            margin: 0;
-            font-size: 18px;
-            line-height: 30px;
-            font-weight: 400;
-            color: $text-color;
-        }
-    }
-    @include sm {
-        padding: 25px 30px;
-        .icon {
-            margin-bottom: 20px;
-        }
-        .count {
-            left: 0;
-            top: 6px;
-            position: relative;
-            transform: inherit;
-        }
-    }
-    @include md {
-        padding: 25px 30px;
-        .icon {
-            margin-bottom: 20px;
-        }
-        .count {
-            left: 0;
-            top: 6px;
-            position: relative;
-            transform: inherit;
-        }
-    }
-    @include lg {
-        padding: 25px 30px;
-        .icon {
-            margin-bottom: 20px;
-        }
-        .count {
-            left: 0;
-            top: 6px;
-            position: relative;
-            transform: inherit;
+        gap: 48px;
+        background: $background;
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            .icon {
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                background: $brand;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i {
+                    font-size: 48px;
+                    line-height: 48px;
+                }
+            }
+            .title-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
         }
     }
 }
