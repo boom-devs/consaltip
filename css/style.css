@@ -5222,14 +5222,24 @@ a.meanmenu-reveal {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 60px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .counter-card {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .counter-card:before {
+    display: none;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .counter-card {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .counter-card {
-    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
   }
 }
 .counter-card .counter-item {
@@ -5327,6 +5337,16 @@ a.meanmenu-reveal {
   width: 100%;
   height: 100%;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .process-step .image {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .process-step .image {
+    width: 100%;
+  }
+}
 .process-step .content-wrapper {
   width: 50%;
   padding: 95px 111px 96px 133px;
@@ -5357,6 +5377,33 @@ a.meanmenu-reveal {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .process-step .content-wrapper {
+    width: 100%;
+    padding: 24px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .process-step .content-wrapper {
+    width: 100%;
+    padding: 24px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .process-step .content-wrapper {
+    padding: 24px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .process-step {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .process-step {
+    flex-direction: column;
+  }
 }
 
 .process-step.style-two {
@@ -5807,6 +5854,18 @@ button.testimonial-arrow-btn:hover i {
 }
 .client-logo-wrapper .client-logo:hover img {
   filter: brightness(0);
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .client-logo-wrapper {
+    padding: 0 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .client-logo-wrapper {
+    padding: 0 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .client-logo-wrapper {

@@ -6,11 +6,19 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 60px;
 
+  @include sm {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    &:before {
+      display: none;
+    }
+  }
   @include md {
     grid-template-columns: repeat(2, 1fr);
   }
-  @include sm {
-    grid-template-columns: repeat(1, 1fr);
+  @include lg {
+    padding: 0;
   }
 
   .counter-item {
