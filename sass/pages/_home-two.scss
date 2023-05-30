@@ -1,238 +1,254 @@
-// Counter Area Two
-.counter-area-two {
-  position: relative;
-  padding: 140px 0;
-  overflow: hidden;
+// // Counter Area Two
+// .counter-area-two {
+//   position: relative;
+//   padding: 140px 0;
+//   overflow: hidden;
 
-  &:before {
+//   &:before {
+//     position: absolute;
+//     content: "";
+//     width: 100%;
+//     height: 100%;
+//     background-color: $orange-color;
+//     top: 0;
+//     right: -75%;
+//     transform: skewX(-20deg);
+//   }
+
+//   .counter-area-two-inner {
+//     padding: 140px 0;
+//     position: relative;
+//     background-color: $primary-color;
+//     border-radius: 0 18px 18px 0;
+
+//     &:before {
+//       position: absolute;
+//       content: "";
+//       width: 100%;
+//       height: 100%;
+//       background-color: $primary-color;
+//       top: 0;
+//       left: -100%;
+//     }
+//   }
+// }
+
+// // Process Step Two Area
+// .process-step-two-area {
+//   padding-top: 395px;
+//   padding-bottom: 145px;
+// }
+// .triangle-shape-top {
+//   position: absolute;
+//   left: 0;
+//   top: -80px;
+//   border-top: 350px solid $sky-color;
+//   border-right: 140px solid transparent;
+//   z-index: 1;
+// }
+// .triangle-shape-bottom {
+//   position: absolute;
+//   //right: -580px;
+//   right: 0;
+//   bottom: -115px;
+//   //width: 750px;
+//   //height: 230px;
+//   //background-color: $orange-color;
+//   //z-index: 1;
+//   //transform: skewX(-22deg);
+//   border-bottom: 240px solid $orange-color;
+//   border-left: 100px solid transparent;
+//   border-right: 0 solid transparent;
+//   width: 170px;
+//   animation: MoveUpDown 2s linear infinite alternate;
+// }
+// .triangle-border-shape {
+//   position: absolute;
+//   width: 230px;
+//   height: 400px;
+//   top: 85px;
+//   left: -150px;
+//   border-top: 1px solid $orange-color;
+//   border-right: 1px solid $orange-color;
+//   transform: skewX(-22deg);
+// }
+
+// // Appointment Booking Area
+// .appointment-booking-area {
+//   margin-bottom: -270px;
+//   position: relative;
+//   z-index: 2;
+// }
+
+// // Accordion Area
+// .home-two-accordion-area {
+//   z-index: 2;
+
+//   &.py-145 {
+//     @include rmaxwd(991) {
+//       padding: 100px 0;
+//     }
+//   }
+//   .accordion-wrapper {
+//     @include rmaxwd(991) {
+//       padding-left: 0;
+//       padding-bottom: 80px;
+//     }
+//   }
+// }
+// .triangle-image-shape-wrapper {
+//   position: absolute;
+//   width: 760px;
+//   top: -140px;
+//   left: 0;
+//   z-index: -1;
+
+//   @include rmaxwd(991) {
+//     display: none;
+//   }
+// }
+// .triangle-image-shape {
+//   -webkit-clip-path: polygon(0 0, 64% 0, 100% 100%, 0% 100%);
+//   clip-path: polygon(0 0, 64% 0, 100% 100%, 0% 100%);
+// }
+// .triangle-image-shape-border {
+//   position: absolute;
+//   top: -30px;
+//   left: 0;
+//   animation: MoveUpDown 2s linear infinite alternate;
+// }
+
+// // Client Logo Area
+
+// // Testimonial Area
+// .home-two-testimonial-area-area {
+//   padding-top: 145px;
+
+//   @include rmaxwd(991) {
+//     padding-top: 0;
+//     padding-bottom: 100px;
+//   }
+// }
+// // Testimonial Triangle Image
+// .testimonial-triangle-image-wrapper {
+//   width: 780px;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+
+//   @include rmaxwd(991) {
+//     width: 100%;
+//     position: relative;
+//     margin-bottom: 100px;
+//   }
+// }
+// .testimonial-triangle-image {
+//   -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+//   clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+// }
+// .testimonial-triangle-shape {
+//   position: absolute;
+//   right: 40px;
+//   bottom: 70px;
+//   width: 190px;
+//   height: 190px;
+//   background-color: $sky-color;
+//   transform: skewX(-20deg);
+// }
+
+// // About Us Area
+// .home-two-about-us-area {
+//   padding: 145px 0;
+
+//   @include rmaxwd(991) {
+//     padding: 100px 0;
+//   }
+//   .about-info-card {
+//     .about-info-content {
+//       padding-left: 60px;
+
+//       @include rmaxwd(1199) {
+//         padding-left: 0;
+//         padding-top: 330px;
+//       }
+//       @include rmaxwd(767) {
+//         padding-top: 100px;
+//       }
+//     }
+//   }
+// }
+
+// // Form Image Wrapper
+// .form-image-wrapper {
+//   img {
+//     width: 100%;
+//   }
+// }
+
+// // News Area
+// .home-two-news-area {
+//   padding-top: 145px;
+//   padding-bottom: 270px;
+
+//   @include rmaxwd(991) {
+//     padding-top: 270px;
+//   }
+
+//   .section-title {
+//     margin-bottom: 70px;
+
+//     @include rmaxwd(991) {
+//       margin-bottom: 50px;
+//     }
+//   }
+// }
+
+// // Team Member Area
+// .home-two-team-member-area {
+//  padding: 145px 0;
+
+//   @include rmaxwd(991) {
+//     padding: 100px 0;
+//   }
+// }
+
+// // Project Area
+// .home-two-project-area {
+//   padding-bottom: 200px;
+
+//   @include rmaxwd(767) {
+//     padding-top: 100px;
+//   }
+// }
+
+// // Why Choose Us Area
+// .home-two-why-choose-area {
+//   padding-top: 145px;
+//   padding-bottom: 100px;
+
+//   @include rmaxwd(991) {
+//     padding-top: 100px;
+//   }
+
+//   .section-title {
+//     @include rmaxwd(991) {
+//       margin-bottom: 70px;
+//     }
+//   }
+// }
+
+.counter-card-wrapper {
+  padding: 100px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: relative;
+  .overlay {
     position: absolute;
-    content: "";
     width: 100%;
     height: 100%;
-    background-color: $orange-color;
     top: 0;
-    right: -75%;
-    transform: skewX(-20deg);
-  }
-
-  .counter-area-two-inner {
-    padding: 140px 0;
-    position: relative;
-    background-color: $primary-color;
-    border-radius: 0 18px 18px 0;
-
-    &:before {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 100%;
-      background-color: $primary-color;
-      top: 0;
-      left: -100%;
-    }
-  }
-}
-
-// Process Step Two Area
-.process-step-two-area {
-  padding-top: 395px;
-  padding-bottom: 145px;
-}
-.triangle-shape-top {
-  position: absolute;
-  left: 0;
-  top: -80px;
-  border-top: 350px solid $sky-color;
-  border-right: 140px solid transparent;
-  z-index: 1;
-}
-.triangle-shape-bottom {
-  position: absolute;
-  //right: -580px;
-  right: 0;
-  bottom: -115px;
-  //width: 750px;
-  //height: 230px;
-  //background-color: $orange-color;
-  //z-index: 1;
-  //transform: skewX(-22deg);
-  border-bottom: 240px solid $orange-color;
-  border-left: 100px solid transparent;
-  border-right: 0 solid transparent;
-  width: 170px;
-  animation: MoveUpDown 2s linear infinite alternate;
-}
-.triangle-border-shape {
-  position: absolute;
-  width: 230px;
-  height: 400px;
-  top: 85px;
-  left: -150px;
-  border-top: 1px solid $orange-color;
-  border-right: 1px solid $orange-color;
-  transform: skewX(-22deg);
-}
-
-// Appointment Booking Area
-.appointment-booking-area {
-  margin-bottom: -270px;
-  position: relative;
-  z-index: 2;
-}
-
-// Accordion Area
-.home-two-accordion-area {
-  z-index: 2;
-
-  &.py-145 {
-    @include rmaxwd(991) {
-      padding: 100px 0;
-    }
-  }
-  .accordion-wrapper {
-    @include rmaxwd(991) {
-      padding-left: 0;
-      padding-bottom: 80px;
-    }
-  }
-}
-.triangle-image-shape-wrapper {
-  position: absolute;
-  width: 760px;
-  top: -140px;
-  left: 0;
-  z-index: -1;
-
-  @include rmaxwd(991) {
-    display: none;
-  }
-}
-.triangle-image-shape {
-  -webkit-clip-path: polygon(0 0, 64% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(0 0, 64% 0, 100% 100%, 0% 100%);
-}
-.triangle-image-shape-border {
-  position: absolute;
-  top: -30px;
-  left: 0;
-  animation: MoveUpDown 2s linear infinite alternate;
-}
-
-// Client Logo Area
-
-// Testimonial Area
-.home-two-testimonial-area-area {
-  padding-top: 145px;
-
-  @include rmaxwd(991) {
-    padding-top: 0;
-    padding-bottom: 100px;
-  }
-}
-// Testimonial Triangle Image
-.testimonial-triangle-image-wrapper {
-  width: 780px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  
-  @include rmaxwd(991) {
-    width: 100%;
-    position: relative;
-    margin-bottom: 100px;
-  }
-}
-.testimonial-triangle-image {
-  -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
-}
-.testimonial-triangle-shape {
-  position: absolute;
-  right: 40px;
-  bottom: 70px;
-  width: 190px;
-  height: 190px;
-  background-color: $sky-color;
-  transform: skewX(-20deg);
-}
-
-// About Us Area
-.home-two-about-us-area {
-  padding: 145px 0;
-
-  @include rmaxwd(991) {
-    padding: 100px 0;
-  }
-  .about-info-card {
-    .about-info-content {
-      padding-left: 60px;
-
-      @include rmaxwd(1199) {
-        padding-left: 0;
-        padding-top: 330px;
-      }
-      @include rmaxwd(767) {
-        padding-top: 100px;
-      }
-    }
-  }
-}
-
-// Form Image Wrapper
-.form-image-wrapper {
-  img {
-    width: 100%;
-  }
-}
-
-// News Area
-.home-two-news-area {
-  padding-top: 145px;
-  padding-bottom: 270px;
-
-  @include rmaxwd(991) {
-    padding-top: 270px;
-  }
-
-  .section-title {
-    margin-bottom: 70px;
-
-    @include rmaxwd(991) {
-      margin-bottom: 50px;
-    }
-  }
-}
-
-// Team Member Area
-.home-two-team-member-area {
- padding: 145px 0;
-
-  @include rmaxwd(991) {
-    padding: 100px 0;
-  }
-}
-
-// Project Area
-.home-two-project-area {
-  padding-bottom: 200px;
-
-  @include rmaxwd(767) {
-    padding-top: 100px;
-  }
-}
-
-// Why Choose Us Area
-.home-two-why-choose-area {
-  padding-top: 145px;
-  padding-bottom: 100px;
-
-  @include rmaxwd(991) {
-    padding-top: 100px;
-  }
-
-  .section-title {
-    @include rmaxwd(991) {
-      margin-bottom: 70px;
-    }
+    left: 0;
+    background: linear-gradient(0deg, rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8));
   }
 }
