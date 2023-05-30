@@ -15,24 +15,16 @@
         display: flex;
         gap: 16px;
         align-items: center;
-        .user {
+        .meta-info {
           padding: 8px 16px;
           display: inline-flex;
           align-items: center;
           gap: 8px;
-        }
-        .date {
-          padding: 8px 16px;
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-        }
-        .user,
-        .date {
           span {
             line-height: 21px;
             i {
               font-size: 14px;
+              line-height: 16px;
             }
           }
           p {
@@ -40,8 +32,6 @@
             line-height: 21px;
           }
         }
-      }
-      .title {
       }
     }
     button {

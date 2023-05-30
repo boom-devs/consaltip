@@ -5671,28 +5671,20 @@ button.testimonial-arrow-btn:hover i {
   gap: 16px;
   align-items: center;
 }
-.post-card-one .content-wrapper .post-content .post-meta .user {
+.post-card-one .content-wrapper .post-content .post-meta .meta-info {
   padding: 8px 16px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
 }
-.post-card-one .content-wrapper .post-content .post-meta .date {
-  padding: 8px 16px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.post-card-one .content-wrapper .post-content .post-meta .user span,
-.post-card-one .content-wrapper .post-content .post-meta .date span {
+.post-card-one .content-wrapper .post-content .post-meta .meta-info span {
   line-height: 21px;
 }
-.post-card-one .content-wrapper .post-content .post-meta .user span i,
-.post-card-one .content-wrapper .post-content .post-meta .date span i {
+.post-card-one .content-wrapper .post-content .post-meta .meta-info span i {
   font-size: 14px;
+  line-height: 16px;
 }
-.post-card-one .content-wrapper .post-content .post-meta .user p,
-.post-card-one .content-wrapper .post-content .post-meta .date p {
+.post-card-one .content-wrapper .post-content .post-meta .meta-info p {
   font-size: 14px;
   line-height: 21px;
 }
