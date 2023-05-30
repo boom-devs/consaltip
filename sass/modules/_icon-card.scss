@@ -38,4 +38,10 @@
             text-align: center;
         }
     }
+    @include sm {
+        margin-top: 24px;
+    }
+    @include md {
+        margin-top: 24px;
+    }
 }

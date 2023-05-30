@@ -1,5 +1,8 @@
 .client-logo-wrapper {
   padding: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
   .client-logo {
     display: flex;
     align-items: center;
@@ -8,15 +11,13 @@
     overflow: hidden;
     @include transition;
     img {
-      filter: grayscale(100%);
-      opacity: 0.65;
+      // opacity: 0.65;
       @include transition;
     }
     &:hover {
       transform: scale(1.1);
       img {
-        filter: none;
-        opacity: 1;
+        filter: brightness(0);
       }
     }
   }
