@@ -326,4 +326,25 @@ input:focus {
   .image-card {
     flex-direction: column-reverse;
   }
+}
+
+.team-member-card.style-two .image {
+  border-radius: 0 0 40% 40%;
+  overflow: hidden;
+}
+.team-member-card.style-two .content-wrapper .social {
+  display: none;
+}
+.team-member-card.style-two:hover .content-wrapper {
+  background: none;
+  -webkit-backdrop-filter: blur(0);
+          backdrop-filter: blur(0);
+  margin-top: 0;
+}
+.team-member-card.style-two:hover .content-wrapper .user-info h4,
+.team-member-card.style-two:hover .content-wrapper .user-info p {
+  color: unset;
+}
+.team-member-card.style-two:hover .content-wrapper .social i {
+  color: unset;
 }/*# sourceMappingURL=rakib-two.css.map */
