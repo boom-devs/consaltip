@@ -202,6 +202,14 @@ input:focus {
   line-height: 27px;
   font-weight: 400;
 }
+.theme-btn span,
+.wp-block-loginout a span {
+  text-transform: capitalize;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+}
 .theme-btn:hover,
 .wp-block-loginout a:hover {
   background: #071c34;

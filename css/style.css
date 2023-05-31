@@ -719,6 +719,14 @@ input:focus {
   line-height: 27px;
   font-weight: 400;
 }
+.theme-btn span,
+.wp-block-loginout a span {
+  text-transform: capitalize;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+}
 .theme-btn:hover,
 .wp-block-loginout a:hover {
   background: #071c34;
@@ -5739,97 +5747,37 @@ button.testimonial-arrow-btn:hover i {
   flex-shrink: 0;
 }
 
-.post-card.style-two {
-  padding: 0;
-  border: none;
-  border-radius: 12px;
-  gap: 30px;
-  flex-direction: row;
-  align-items: center;
+.post-card-one.style-two .content-wrapper {
+  background: #f8f8f1;
+  padding: 24px 25px 32px 24px;
+  gap: 32px;
 }
-.post-card.style-two:hover .image img {
-  transform: scale(1.05);
+.post-card-one.style-two .content-wrapper .post-content {
+  gap: 8px;
 }
-.post-card.style-two:hover .image .icon {
-  z-index: 2;
-  opacity: 1;
-  transition: all 0.5s ease-out;
+.post-card-one.style-two .content-wrapper .post-content .post-meta {
+  gap: 8px;
 }
-.post-card.style-two:hover .image:before {
-  opacity: 0.6;
-  z-index: 1;
+.post-card-one.style-two .content-wrapper .post-content .post-meta .meta-info {
+  padding: 4px 8px;
 }
-.post-card.style-two .image {
-  flex-shrink: 0;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+.post-card-one.style-two .content-wrapper .post-content .post-meta .meta-info span i {
+  font-weight: 600;
 }
-.post-card.style-two .image img {
-  transform: scale(1.01);
-  transition: all 0.5s ease-out;
+.post-card-one.style-two .content-wrapper .post-content .post-meta .meta-info p {
+  font-size: 16px;
+  line-height: 27px;
 }
-.post-card.style-two .image:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: #fcaf14;
-  z-index: -2;
-  opacity: 0;
-}
-.post-card.style-two .image .icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 50px;
-  background: #ff6731;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  z-index: -1;
-  opacity: 0;
-  transition: all 0.5s ease-out;
-}
-.post-card.style-two .image .icon i {
-  color: #ffffff;
-}
-.post-card.style-two .content {
-  gap: 12px;
-}
-.post-card.style-two .content .post-meta span:last-child {
-  display: block;
-}
-.post-card.style-two .content .post-meta span:first-child:before {
-  display: none;
-}
-.post-card.style-two .content .post-meta .date {
-  color: #778196;
-  font-weight: 400;
-}
-.post-card.style-two .content .title {
+.post-card-one.style-two .content-wrapper .post-content .title {
   font-size: 24px;
-  line-height: 33px;
-  font-weight: 700;
+  line-height: 34px;
 }
-.post-card.style-two .content .title:hover {
-  color: #035b7b;
+.post-card-one.style-two .content-wrapper .theme-btn {
+  border: 1px solid #828282;
+  background: transparent;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .post-card.style-two {
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-  .post-card.style-two .image {
-    width: 100%;
-  }
+.post-card-one.style-two .content-wrapper .theme-btn:hover {
+  color: #080f10;
 }
 
 .post-card.style-three {
