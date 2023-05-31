@@ -1,123 +1,119 @@
-.price-card {
-    padding: 30px;
-    background: white;
-    z-index: 2;
-    position: relative;
-    border-radius: 14px;
-    .card-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 35px;
-        flex-direction: column;
-        .sub-title {
-            font-family: $body-font;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 36px;
-            text-transform: uppercase;
-            color: $orange-color;
-            margin: 0;
-        }
-        .title {
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 30px;
-            color: $secondary-color;
-        }
-    }
-    .price {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        background: #1eae98;
-        border-radius: 7px;
-        padding-top: 28px;
-        padding-bottom: 28px;
-        gap: 10px;
-        .price-heading {
-            font-family: $heading-font;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 48px;
-            line-height: 42px;
-            color: $white;
-            display: flex;
-            align-items: center;
-            gap: 2px;
-            margin-bottom: 0;
-            .currency {
-                font-family: $heading-font;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 28px;
-                color: $white;
-                text-align: start;
-                align-self: flex-start;
+.price-card-wrapper {
+    .price-card {
+        background: $background;
+        padding: 64px 38px 44px 36px;
+        .price {
+            margin-top: 39px;
+            .price-heading {
+                display: flex;
+                align-items: center;
+                .duration {
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-transform: uppercase;
+                }
             }
-            .under-dot {
-                font-family: $body-font;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 24px;
-                line-height: 28px;
-                text-transform: capitalize;
-                color: $white;
-                align-self: end;
-            }
-        }
-        .price-desc {
-            font-family: $body-font;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 30px;
-            text-transform: capitalize;
-            color: $white;
-            margin-bottom: 0;
-        }
-    }
-    .list-wrapper {
-        display: flex;
-        // align-items: center;
-        justify-content: center;
-    }
-    .list {
-        margin-top: 0;
-        padding: 40px 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 12px;
-        .price-list-item {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 12px;
-            .fa-check {
-                color: $orange-color;
-            }
-            .fa-x {
-                color: #bbc7cf;
-            }
-            .text {
-                font-family: $body-font;
+            .price-desc {
+                margin-top: 32px;
                 font-weight: 400;
                 font-size: 18px;
-                line-height: 36px;
-                color: $secondary-color;
-                margin: 0;
+                line-height: 31px;
+                color: $text-color;
+            }
+        }
+        .divider {
+            position: relative;
+            margin-top: 20px;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background: #e0e0e0;
+            }
+        }
+        .list-title {
+            font-family: $heading-font;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            margin: 24px 0;
+        }
+        .list-wrapper {
+            display: flex;
+            flex-direction: column;
+            .price-list-item {
+                display: inline-flex;
+                gap: 16px;
+                align-items: center;
+                .icon {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50px;
+                    background: $white;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    i {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+            .price-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 76px;
+                a {
+                    padding: 17px 64px;
+                    border: 1px solid $text-color;
+                    border-radius: 4px;
+                    font-family: $body-font;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 31px;
+                    text-align: center;
+                    color: $title-color;
+                }
             }
         }
     }
-    .card-btn {
-        width: 100%;
-        text-align: center;
+    .price-header {
+        opacity: 0;
+        overflow: hidden;
+        background: $brand;
+        display: flex;
         justify-content: center;
+        align-items: center;
+        background: $icon-color;
+        padding: 15px 0 12px 0;
     }
-    @include lg {
-        padding: 24px;
+    &.active {
+        .price-card {
+            background: $brand;
+        }
+        .price-header {
+            opacity: 1;
+            overflow: visible;
+            p {
+                color: $white;
+            }
+        }
+        .list-wrapper {
+            .price-btn {
+                a {
+                    background: $icon-color;
+                }
+            }
+            .price-list-item {
+                .icon {
+                    background: $icon-color;
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+        }
     }
 }

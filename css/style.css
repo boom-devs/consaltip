@@ -5961,129 +5961,114 @@ button.testimonial-arrow-btn:hover i {
   border-radius: 50px;
 }
 
-.price-card {
-  padding: 30px;
-  background: white;
-  z-index: 2;
-  position: relative;
-  border-radius: 14px;
+.price-card-wrapper .price-card {
+  background: #f8f8f1;
+  padding: 64px 38px 44px 36px;
 }
-.price-card .card-title {
+.price-card-wrapper .price-card .price {
+  margin-top: 39px;
+}
+.price-card-wrapper .price-card .price .price-heading {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 35px;
-  flex-direction: column;
 }
-.price-card .card-title .sub-title {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 36px;
+.price-card-wrapper .price-card .price .price-heading .duration {
+  font-size: 18px;
+  line-height: 25px;
   text-transform: uppercase;
-  color: #ff6731;
-  margin: 0;
 }
-.price-card .card-title .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 30px;
-  color: #fcaf14;
-}
-.price-card .price {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background: #1eae98;
-  border-radius: 7px;
-  padding-top: 28px;
-  padding-bottom: 28px;
-  gap: 10px;
-}
-.price-card .price .price-heading {
-  font-family: "Outfit", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 42px;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  margin-bottom: 0;
-}
-.price-card .price .price-heading .currency {
-  font-family: "Outfit", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 28px;
-  color: #ffffff;
-  text-align: start;
-  align-self: flex-start;
-}
-.price-card .price .price-heading .under-dot {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: capitalize;
-  color: #ffffff;
-  align-self: end;
-}
-.price-card .price .price-desc {
-  font-family: "Inter", sans-serif;
+.price-card-wrapper .price-card .price .price-desc {
+  margin-top: 32px;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  text-transform: capitalize;
-  color: #ffffff;
-  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 31px;
+  color: #575959;
 }
-.price-card .list-wrapper {
-  display: flex;
-  justify-content: center;
+.price-card-wrapper .price-card .divider {
+  position: relative;
+  margin-top: 20px;
 }
-.price-card .list {
-  margin-top: 0;
-  padding: 40px 0;
+.price-card-wrapper .price-card .divider:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #e0e0e0;
+}
+.price-card-wrapper .price-card .list-title {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 24px 0;
+}
+.price-card-wrapper .price-card .list-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 12px;
 }
-.price-card .list .price-list-item {
-  display: flex;
-  flex-direction: row;
+.price-card-wrapper .price-card .list-wrapper .price-list-item {
+  display: inline-flex;
+  gap: 16px;
   align-items: center;
-  gap: 12px;
 }
-.price-card .list .price-list-item .fa-check {
-  color: #ff6731;
+.price-card-wrapper .price-card .list-wrapper .price-list-item .icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+  background: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-.price-card .list .price-list-item .fa-x {
-  color: #bbc7cf;
+.price-card-wrapper .price-card .list-wrapper .price-list-item .icon i {
+  font-size: 14px;
+  line-height: 16px;
 }
-.price-card .list .price-list-item .text {
+.price-card-wrapper .price-card .list-wrapper .price-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 76px;
+}
+.price-card-wrapper .price-card .list-wrapper .price-btn a {
+  padding: 17px 64px;
+  border: 1px solid #575959;
+  border-radius: 4px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 36px;
-  color: #fcaf14;
-  margin: 0;
-}
-.price-card .card-btn {
-  width: 100%;
+  line-height: 31px;
   text-align: center;
-  justify-content: center;
+  color: #080f10;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .price-card {
-    padding: 24px;
-  }
+.price-card-wrapper .price-header {
+  opacity: 0;
+  overflow: hidden;
+  background: #e0f780;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #033f47;
+  padding: 15px 0 12px 0;
+}
+.price-card-wrapper.active .price-card {
+  background: #e0f780;
+}
+.price-card-wrapper.active .price-header {
+  opacity: 1;
+  overflow: visible;
+}
+.price-card-wrapper.active .price-header p {
+  color: #ffffff;
+}
+.price-card-wrapper.active .list-wrapper .price-btn a {
+  background: #033f47;
+}
+.price-card-wrapper.active .list-wrapper .price-list-item .icon {
+  background: #033f47;
+}
+.price-card-wrapper.active .list-wrapper .price-list-item .icon i {
+  color: #ffffff;
 }
 
 .call-to-action-area {
