@@ -8192,7 +8192,7 @@ ul.children {
   position: relative;
 }
 .team-member-card .image {
-  background: url("../../images/team/Bg.png");
+  background-color: #f8f8f1;
   background-position: center;
   background-repeat: no-repeat;
   -o-object-fit: cover;

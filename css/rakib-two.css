@@ -332,7 +332,7 @@ input:focus {
   padding: 0 20px;
 }
 .team-member-card.style-two .image {
-  border-radius: 0 0 40% 40%;
+  border-radius: 0 0 500px 500px;
   overflow: hidden;
 }
 .team-member-card.style-two .content-wrapper {
@@ -352,14 +352,11 @@ input:focus {
   background: none;
   -webkit-backdrop-filter: blur(0);
           backdrop-filter: blur(0);
-  margin-top: 0;
+  top: 0;
 }
 .team-member-card.style-two:hover .content-wrapper .user-info h4 {
   color: #080f10;
 }
 .team-member-card.style-two:hover .content-wrapper .user-info p {
-  color: unset;
-}
-.team-member-card.style-two:hover .content-wrapper .social i {
   color: unset;
 }/*# sourceMappingURL=rakib-two.css.map */

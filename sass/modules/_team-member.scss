@@ -1,7 +1,7 @@
 .team-member-card {
   position: relative;
   .image {
-    background: url("../../images/team/Bg.png");
+    background-color: $background;
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
