@@ -2308,6 +2308,8 @@ input:focus {
   flex-direction: column;
   gap: 16px;
   width: 100%;
+  position: relative;
+  top: 0;
   transition: all 0.5s ease-out;
 }
 .team-member-card .content-wrapper .user-info h4 {
@@ -2334,7 +2336,8 @@ input:focus {
   background: rgba(3, 63, 71, 0.8);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  margin-top: -200px;
+  position: relative;
+  top: -200px;
 }
 .team-member-card:hover .content-wrapper .user-info h4,
 .team-member-card:hover .content-wrapper .user-info p {
