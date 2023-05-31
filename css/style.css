@@ -4460,39 +4460,18 @@ a.meanmenu-reveal {
 }
 
 .icon-card.style-three {
-  display: flex;
-  background: transparent;
-  flex-direction: column;
-  gap: 40px;
-  margin-bottom: 50px;
-}
-.icon-card.style-three .icon {
-  width: 78px;
-  height: 78px;
-  display: flex;
-  flex-shrink: 0;
-}
-.icon-card.style-three .icon img {
-  width: 100%;
+  flex-direction: row;
+  background: #f8f8f1;
+  padding: 39px 41px 40px 32px;
 }
 .icon-card.style-three .content {
-  display: flex;
-  gap: 34px;
-  flex-direction: column;
+  gap: 8px;
 }
 .icon-card.style-three .content .title {
-  color: #ffffff;
+  text-align: start;
 }
 .icon-card.style-three .content .desc {
-  color: #c7cdda;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .icon-card.style-three {
-    gap: 25px;
-  }
-  .icon-card.style-three .content {
-    gap: 18px;
-  }
+  text-align: start;
 }
 
 .about-image-card .main-img-wrapper {
