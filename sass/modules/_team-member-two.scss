@@ -1,10 +1,21 @@
 .team-member-card {
     &.style-two {
+        padding: 0 20px;
         .image {
             border-radius: 0 0 40% 40%;
             overflow: hidden;
         }
         .content-wrapper {
+            padding: 24px 0 0 0;
+            .user-info {
+                h4 {
+                    margin-bottom: 8px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 31px;
+                }
+            }
             .social {
                 display: none;
             }
@@ -14,8 +25,11 @@
                 background: none;
                 backdrop-filter: blur(0);
                 margin-top: 0;
+
                 .user-info {
-                    h4,
+                    h4 {
+                        color: #080f10;
+                    }
                     p {
                         color: unset;
                     }
