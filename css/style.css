@@ -734,6 +734,21 @@ input:focus {
   border-color: #071c34;
 }
 
+.under-line-wrapper {
+  position: relative;
+}
+.under-line-wrapper .under-line {
+  background: url("../../images/under_line.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  width: 100%;
+  height: 12px;
+  right: 0;
+  bottom: -12px;
+}
+
 /* Deafult Margin & Padding */
 /*-- Margin Top --*/
 .mt-5 {
@@ -4726,49 +4741,77 @@ a.meanmenu-reveal {
   gap: 15px;
 }
 
-.about-info-card .about-info-content {
+.about-info-card {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 48px;
+  padding-left: 132px;
 }
-.about-info-card .about-info-content .section-title .title {
-  margin-bottom: 0;
-}
-.about-info-card .about-info-content .sub-title p,
-.about-info-card .about-info-content .text p,
-.about-info-card .about-info-content .quote-text p {
-  margin-bottom: 0;
-}
-.about-info-card .about-info-content .sub-title {
-  font-weight: 700;
-}
-.about-info-card .about-info-content .quote-text {
-  padding-left: 40px;
-  border-left: 6px solid #035b7b;
-  font-style: italic;
-}
-.about-info-card .about-info-content .quote-text .quote-text-meta {
+.about-info-card .content-wrapper {
   display: flex;
-  gap: 14px;
-  align-items: center;
-  margin-top: 20px;
+  flex-direction: column;
+  gap: 24px;
 }
-.about-info-card .about-info-content .quote-text .quote-text-meta .divider {
-  width: 25px;
-  height: 1px;
-  background-color: #bfc5cb;
+.about-info-card .content-wrapper .content .title {
+  margin-bottom: 16px;
 }
-.about-info-card .about-info-content .quote-text .quote-text-meta .name {
-  font-family: "Outfit", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: #fcaf14;
-  font-style: normal;
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-info-card .content-wrapper .content .title {
+    font-size: 40px;
+    line-height: 60px;
+  }
 }
-.about-info-card .about-info-content .quote-text .quote-text-meta .designation {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-info-card .content-wrapper .content .title {
+    font-size: 46px;
+    line-height: 60px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-info-card .content-wrapper .content .title {
+    font-size: 46px;
+    line-height: 60px;
+  }
+}
+.about-info-card .content-wrapper .about-counter-card {
+  display: flex;
+  gap: 32px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
+    font-size: 46px;
+    line-height: 60px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
+    font-size: 46px;
+    line-height: 60px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-info-card {
+    padding: 0;
+    margin-top: 24px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-info-card {
+    padding: 0;
+    margin-top: 24px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-info-card {
+    padding: 0;
+    margin-top: 24px;
+  }
 }
 
 .about-info-card.style-two .about-info-content .icon-card-wrapper {
@@ -5767,6 +5810,7 @@ button.testimonial-arrow-btn:hover i {
 .post-card-one.style-two .content-wrapper .post-content .post-meta .meta-info p {
   font-size: 16px;
   line-height: 27px;
+  font-family: "Inter", sans-serif;
 }
 .post-card-one.style-two .content-wrapper .post-content .title {
   font-size: 24px;
