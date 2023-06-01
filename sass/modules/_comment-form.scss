@@ -37,6 +37,7 @@
   }
   .single-input-field {
     .nice-select {
+      color: $form-border;
       &:after {
         color: $white;
         border-bottom: 2px solid $title-color;
@@ -54,7 +55,8 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 27px;
-    color: $form-border;
+    color: $title-color;
+    margin-bottom: 8px;
   }
   .checkbox-field-wrapper {
     display: flex;
@@ -146,52 +148,52 @@
   }
 }
 
-// .comment-respond {
-//   &.style-two {
-//     background-color: transparent;
-//     .post-comments-title {
-//       h2 {
-//         color: $white;
-//       }
-//     }
-//     label {
-//       color: $white-100;
-//     }
-//     .single-input-field {
-//       input,
-//       select {
-//         background-color: transparent;
-//         border-color: #739bbf;
-//         color: $white-100;
-//       }
-//       *::-webkit-input-placeholder {
-//         color: $white-100;
-//       }
-//       *:-moz-placeholder {
-//         color: $white-100;
-//         opacity: 1;
-//       }
-//       *::-moz-placeholder {
-//         color: $white-100;
-//         opacity: 1;
-//       }
-//       *:-ms-input-placeholder {
-//         color: $white-100;
-//       }
-//       *::-ms-input-placeholder {
-//         color: $white-100;
-//       }
-//       *::placeholder {
-//         color: $white-100;
-//       }
-//     }
-//     .checkbox-field-wrapper {
-//       .single-checkbox-field {
-//         .form-check-input {
-//           background-color: transparent;
-//           border-color: #739bbf;
-//         }
-//       }
-//     }
-//   }
-// }
+.comment-respond {
+  &.style-two {
+    .single-input-field {
+      margin-bottom: 30px;
+    }
+    .single-input-field {
+      input,
+      select {
+        background-color: transparent;
+        border-color: #828282;
+        color: $white-100;
+      }
+      *::-webkit-input-placeholder {
+        color: $white-100;
+      }
+      *:-moz-placeholder {
+        color: $white-100;
+        opacity: 1;
+      }
+      *::-moz-placeholder {
+        color: $white-100;
+        opacity: 1;
+      }
+      *:-ms-input-placeholder {
+        color: $white-100;
+      }
+      *::-ms-input-placeholder {
+        color: $white-100;
+      }
+      *::placeholder {
+        color: $white-100;
+      }
+    }
+    .checkbox-field-wrapper {
+      .single-checkbox-field {
+        .form-check-input {
+          background-color: transparent;
+          border-color: #739bbf;
+        }
+      }
+    }
+    input:focus,
+    textarea:focus,
+    .form-select:focus,
+    .nice-select {
+      border-color: #828282;
+    }
+  }
+}
