@@ -7467,10 +7467,12 @@ ul.children {
 }
 .comment-respond label {
   display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
-  font-weight: 600;
-  color: #778196;
-  margin-bottom: 12px;
+  line-height: 27px;
+  color: #c3d1d2;
 }
 .comment-respond .checkbox-field-wrapper {
   display: flex;
@@ -7536,7 +7538,8 @@ ul.children {
 }
 .comment-respond input:focus,
 .comment-respond textarea:focus,
-.comment-respond .form-select:focus {
+.comment-respond .form-select:focus,
+.comment-respond .nice-select {
   outline: none !important;
   box-shadow: none;
   border-color: #c3d1d2;

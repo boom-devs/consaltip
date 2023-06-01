@@ -756,39 +756,6 @@ input:focus {
   color: #ffffff;
 }
 
-.list {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-.list .item {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  margin-top: 20px;
-}
-.list .item .icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  background: rgba(69, 102, 212, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.list .item .item-text {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  color: #fcaf14;
-}
-.list .about-btn {
-  flex-shrink: 0;
-}
-
 /* Service-details counter style-three CSS */
 .counter-card.style-three {
   display: flex;

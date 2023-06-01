@@ -37,10 +37,12 @@
   }
   label {
     display: block;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
-    font-weight: 600;
-    color: $black-300;
-    margin-bottom: 12px;
+    line-height: 27px;
+    color: $form-border;
   }
   .checkbox-field-wrapper {
     display: flex;
@@ -123,7 +125,8 @@
 
   input:focus,
   textarea:focus,
-  .form-select:focus {
+  .form-select:focus,
+  .nice-select {
     outline: none !important;
     box-shadow: none;
     border-color: $form-border;
