@@ -7,7 +7,7 @@
         $(window).on("load", function () {
             $("#preloader").fadeOut();
             $("#preloader-status").delay(200).fadeOut("slow");
-            $("body").delay(200).css({"overflow-x": "hidden"});
+            $("body").delay(200).css({ "overflow-x": "hidden" });
         });
 
         /*
@@ -27,7 +27,7 @@
             if (100 < $(window).scrollTop() && !scrolled) {
                 nav
                     .addClass("sticky_menu animated fadeIn")
-                    .animate({"margin-top": "0px"});
+                    .animate({ "margin-top": "0px" });
                 scrolled = true;
             }
             if (100 > $(window).scrollTop() && scrolled) {
@@ -44,7 +44,7 @@
         $('.nav-tab li:first-child').addClass('active');
         $('.tab-content').hide();
         $('.tab-content:first').show();
-        $('.nav-tab li').on('click', function(){
+        $('.nav-tab li').on('click', function () {
             $('.nav-tab li').removeClass('active');
             $(this).addClass('active');
             $('.tab-content').hide();
@@ -57,10 +57,10 @@
         /*
         Jquery Accordion
         ============================*/
-        $(function() {
-            $('.accordion-list-item .accordion-item-body').css("display","none");
-            $('.accordion-list-item.open .accordion-item-body').css("display","block");
-            $('.accordion-list-item').on('click', function(){
+        $(function () {
+            $('.accordion-list-item .accordion-item-body').css("display", "none");
+            $('.accordion-list-item.open .accordion-item-body').css("display", "block");
+            $('.accordion-list-item').on('click', function () {
                 $(this).toggleClass(' open ');
                 $(this).siblings().removeClass(' open ');
                 $('.accordion-item-body').stop().slideUp();
@@ -72,18 +72,18 @@
         /*
         Skill Progress Bar Js
         ============================*/
-        $('.skill-progressbar').one('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        $('.skill-progressbar').one('inview', function (event, isInView, visiblePartX, visiblePartY) {
             if (isInView) {
-                jQuery('.progress-inner').each(function() {
+                jQuery('.progress-inner').each(function () {
                     jQuery(this).find('.progress-content').animate({
-                        width:jQuery(this).attr('data-percentage')
-                    },2000);
+                        width: jQuery(this).attr('data-percentage')
+                    }, 2000);
 
                     jQuery(this).find('.progress-number-count').animate(
-                        {left:jQuery(this).attr('data-percentage')},
+                        { left: jQuery(this).attr('data-percentage') },
                         {
                             duration: 2000,
-                            step: function(now, fx) {
+                            step: function (now, fx) {
                                 var data = Math.round(now);
                                 jQuery(this).find('.progress-percent').html(data + '%');
                             }
@@ -103,7 +103,7 @@
             arrows: true,
             slidesToScroll: 1,
             loop: true,
-            dots: true,
+            dots: false,
             speed: 1500,
             prevArrow:
                 "<button type='button' class='slider-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
@@ -216,10 +216,10 @@
             ],
         });
 
-        $('#trigger_testimonial_prev').on('click', function() {
+        $('#trigger_testimonial_prev').on('click', function () {
             $('.testimonial-slider-wrapper .prev-btn').trigger('click');
         });
-        $('#trigger_testimonial_next').on('click', function() {
+        $('#trigger_testimonial_next').on('click', function () {
             $('.testimonial-slider-wrapper .next-btn').trigger('click');
         });
 
