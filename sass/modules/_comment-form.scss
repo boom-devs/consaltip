@@ -35,6 +35,18 @@
   .contacts-message {
     margin-bottom: 16px;
   }
+  .single-input-field {
+    .nice-select {
+      &:after {
+        color: $white;
+        border-bottom: 2px solid $title-color;
+        border-right: 2px solid $title-color;
+        color: #ffffff;
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
   label {
     display: block;
     font-family: "Inter";

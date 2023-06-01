@@ -7465,6 +7465,14 @@ ul.children {
 .comment-respond .contacts-message {
   margin-bottom: 16px;
 }
+.comment-respond .single-input-field .nice-select:after {
+  color: #ffffff;
+  border-bottom: 2px solid #080f10;
+  border-right: 2px solid #080f10;
+  color: #ffffff;
+  width: 10px;
+  height: 10px;
+}
 .comment-respond label {
   display: block;
   font-family: "Inter";
