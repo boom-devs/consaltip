@@ -37,7 +37,7 @@
   }
   .single-input-field {
     .nice-select {
-      color: $form-border;
+      color: #c3d1d2;
       &:after {
         color: $white;
         border-bottom: 2px solid $title-color;
@@ -91,7 +91,7 @@
     padding: 0 16px;
     height: 60px;
     width: 100%;
-    color: $form-border;
+    color: $white;
     border: 1px solid $form-border;
     border-radius: 5px;
     font-size: 16px;
@@ -100,30 +100,30 @@
     font-family: $body-font !important;
   }
   *::-webkit-input-placeholder {
-    color: $black-300;
+    color: $form-border;
   }
   *:-moz-placeholder {
-    color: $black-300;
+    color: $form-border;
     opacity: 1;
   }
   *::-moz-placeholder {
-    color: $black-300;
+    color: $form-border;
     opacity: 1;
   }
   *:-ms-input-placeholder {
-    color: $black-300;
+    color: $form-border;
   }
   *::-ms-input-placeholder {
-    color: $black-300;
+    color: $form-border;
   }
   *::placeholder {
-    color: $black-300;
+    color: $form-border;
   }
   textarea {
     resize: vertical;
     padding: 16px;
     width: 100%;
-    color: $form-border;
+    color: $white;
     border: 1px solid $form-border;
     border-radius: 3px;
     font-size: 16px;
@@ -145,6 +145,7 @@
     box-shadow: none;
     border-color: $form-border;
     transition: all 0.4s ease 0s;
+    color: $white;
   }
 }
 
@@ -152,33 +153,37 @@
   &.style-two {
     .single-input-field {
       margin-bottom: 30px;
-    }
-    .single-input-field {
       input,
       select {
         background-color: transparent;
         border-color: #828282;
-        color: #828282;
+        color: $title-color;
+      }
+      .nice-select {
+        color: $title-color;
+      }
+      textarea {
+        border-color: #828282;
       }
       *::-webkit-input-placeholder {
-        color: $white-100;
+        color: #828282;
       }
       *:-moz-placeholder {
-        color: $white-100;
+        color: #828282;
         opacity: 1;
       }
       *::-moz-placeholder {
-        color: $white-100;
+        color: #828282;
         opacity: 1;
       }
       *:-ms-input-placeholder {
-        color: $white-100;
+        color: #828282;
       }
       *::-ms-input-placeholder {
-        color: $white-100;
+        color: #828282;
       }
       *::placeholder {
-        color: $white-100;
+        color: #828282;
       }
     }
     .checkbox-field-wrapper {

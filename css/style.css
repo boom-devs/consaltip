@@ -5959,6 +5959,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .price-card-wrapper.active .list-wrapper .price-btn a {
   background: #033f47;
+  color: #ffffff;
 }
 .price-card-wrapper.active .list-wrapper .price-list-item .icon {
   background: #033f47;
@@ -7536,7 +7537,7 @@ ul.children {
   padding: 0 16px;
   height: 60px;
   width: 100%;
-  color: #c3d1d2;
+  color: #ffffff;
   border: 1px solid #c3d1d2;
   border-radius: 5px;
   font-size: 16px;
@@ -7545,17 +7546,17 @@ ul.children {
   font-family: "Inter", sans-serif !important;
 }
 .comment-respond *::-moz-placeholder {
-  color: #778196;
+  color: #c3d1d2;
   opacity: 1;
 }
 .comment-respond *::placeholder {
-  color: #778196;
+  color: #c3d1d2;
 }
 .comment-respond textarea {
   resize: vertical;
   padding: 16px;
   width: 100%;
-  color: #c3d1d2;
+  color: #ffffff;
   border: 1px solid #c3d1d2;
   border-radius: 3px;
   font-size: 16px;
@@ -7575,6 +7576,7 @@ ul.children {
   box-shadow: none;
   border-color: #c3d1d2;
   transition: all 0.4s ease 0s;
+  color: #ffffff;
 }
 
 .comment-respond.style-two .single-input-field {
@@ -7584,14 +7586,20 @@ ul.children {
 .comment-respond.style-two .single-input-field select {
   background-color: transparent;
   border-color: #828282;
-  color: #828282;
+  color: #080f10;
+}
+.comment-respond.style-two .single-input-field .nice-select {
+  color: #080f10;
+}
+.comment-respond.style-two .single-input-field textarea {
+  border-color: #828282;
 }
 .comment-respond.style-two .single-input-field *::-moz-placeholder {
-  color: #c7cdda;
+  color: #828282;
   opacity: 1;
 }
 .comment-respond.style-two .single-input-field *::placeholder {
-  color: #c7cdda;
+  color: #828282;
 }
 .comment-respond.style-two .checkbox-field-wrapper .single-checkbox-field .form-check-input {
   background-color: transparent;

@@ -35,19 +35,6 @@
                 }
             }
         }
-        // &:hover {
-        //     align-items: start;
-        //     padding: 39px 40px;
-
-        //     .content {
-        //         .desc {
-        //             margin: 0;
-        //             opacity: 1;
-        //             overflow: visible;
-        //             height: auto;
-        //         }
-        //     }
-        // }
         @include sm {
             flex-direction: column;
             justify-content: center;

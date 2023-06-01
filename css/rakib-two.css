@@ -477,4 +477,31 @@ input:focus {
 .portfolio-card.style-three .content h4,
 .portfolio-card.style-three .content p {
   color: #080f10;
+}
+
+.icon-card.style-five {
+  flex-direction: row;
+  align-items: start;
+  padding: 0;
+  justify-content: start;
+  gap: 16px;
+}
+.icon-card.style-five .icon {
+  background: #e0f780;
+  width: 64px;
+  height: 64px;
+  border: none;
+}
+.icon-card.style-five .icon i {
+  font-size: 24px;
+  color: #000;
+}
+.icon-card.style-five .content {
+  gap: 4px;
+}
+.icon-card.style-five .content .title {
+  text-align: start;
+}
+.icon-card.style-five .content .desc {
+  text-align: start;
 }/*# sourceMappingURL=rakib-two.css.map */

@@ -1804,6 +1804,7 @@ input:focus {
 }
 .price-card-wrapper.active .list-wrapper .price-btn a {
   background: #033f47;
+  color: #ffffff;
 }
 .price-card-wrapper.active .list-wrapper .price-list-item .icon {
   background: #033f47;
