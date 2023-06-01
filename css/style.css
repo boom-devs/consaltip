@@ -5603,10 +5603,13 @@ button.testimonial-arrow-btn:hover i {
 }
 .accordion-wrapper .accordion-list-item {
   background: #ffffff;
-  padding: 39px 40px;
+  padding: 39px 0;
 }
 .accordion-wrapper .accordion-list-item.open .accordion-item-body {
   display: block;
+}
+.accordion-wrapper .accordion-list-item.open .accordion-head {
+  padding: 0 40px;
 }
 .accordion-wrapper .accordion-list-item.open .accordion-head .icon:before {
   content: "\e90f";
@@ -5618,7 +5621,7 @@ button.testimonial-arrow-btn:hover i {
   gap: 32px;
   cursor: pointer;
   flex-direction: row;
-  padding: 12px 0;
+  padding: 0 40px;
   position: relative;
 }
 .accordion-wrapper .accordion-list-item .accordion-head .accordion-title {
@@ -5649,47 +5652,9 @@ button.testimonial-arrow-btn:hover i {
 }
 .accordion-wrapper .accordion-list-item .accordion-item-body {
   color: #575959;
-  margin-top: 32px;
-}
-
-.accordion-wrapper.style-two .accordion-list-item.open .accordion-head .icon {
-  background-color: #ff6731;
-  color: #ffffff;
-}
-.accordion-wrapper.style-two .accordion-list-item .accordion-head {
-  border-top: 1px solid #395670;
-}
-.accordion-wrapper.style-two .accordion-list-item .accordion-head .icon {
-  background-color: #ffffff;
-  border-radius: 50px;
-  color: #ff6731;
-  font-size: 12px;
-}
-.accordion-wrapper.style-two .accordion-list-item:last-child {
-  border-bottom: 1px solid #395670;
-}
-
-.accordion-wrapper.style-two.accordion-style-three .accordion-list-item.open .accordion-head .icon {
-  background-color: #ff6731;
-  color: #ffffff;
-}
-.accordion-wrapper.style-two.accordion-style-three .accordion-list-item .accordion-head {
-  border-top: 1px solid #dfe2e9;
-  padding: 12px 0;
-}
-.accordion-wrapper.style-two.accordion-style-three .accordion-list-item .accordion-head .accordion-title {
-  color: #fcaf14;
-}
-.accordion-wrapper.style-two.accordion-style-three .accordion-list-item .accordion-head .icon {
-  background-color: #1eae98;
-  border-radius: 50px;
-  color: #ffffff;
-}
-.accordion-wrapper.style-two.accordion-style-three .accordion-list-item .accordion-item-body {
-  color: #575959;
-}
-.accordion-wrapper.style-two.accordion-style-three .accordion-list-item:last-child {
-  border-bottom: 1px solid #dfe2e9;
+  padding: 16px 40px 0 40px;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 16px;
 }
 
 .client-logo-wrapper {
@@ -6346,9 +6311,7 @@ button.testimonial-arrow-btn:hover i {
 .breadcrumb-list ul li:last-child::before {
   display: none;
   display: none;
-}
-
-/* 16.Blog Section */
+} /* 16.Blog Section */
 .blog-area ol,
 .blog-area ul {
   padding-left: 20px;

@@ -2971,26 +2971,6 @@ input:focus {
   }
 }
 
-/* Accordion-style-four CSS */
-.accordion-wrapper.style-four .accordion-list-item {
-  margin-bottom: 20px;
-}
-.accordion-wrapper.style-four .accordion-list-item.open .accordion-head .icon {
-  background: #ff6731;
-}
-.accordion-wrapper.style-four .accordion-list-item .accordion-head .accordion-title {
-  color: #fcaf14;
-}
-.accordion-wrapper.style-four .accordion-list-item .accordion-head .icon {
-  width: 30px;
-  height: 30px;
-  background: #1eae98;
-  border-radius: 50px;
-}
-.accordion-wrapper.style-four .accordion-list-item .accordion-item-body {
-  padding-top: 16px;
-}
-
 /* Pricing-page CSS */
 .pricing-card-wrapper {
   background: #eef5f8;
