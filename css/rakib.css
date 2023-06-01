@@ -192,6 +192,8 @@ input:focus {
 .theme-btn,
 .wp-block-loginout a {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: #080f10;
   padding: 16px 24px;
   text-align: center;

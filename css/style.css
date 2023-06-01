@@ -712,6 +712,8 @@ input:focus {
 .theme-btn,
 .wp-block-loginout a {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: #080f10;
   padding: 16px 24px;
   text-align: center;
@@ -7320,10 +7322,6 @@ button.testimonial-arrow-btn:hover i {
   margin-bottom: 32px;
 }
 
-.post-comments-form {
-  margin-top: 70px;
-}
-
 .blog-coment-title h2 {
   font-size: 24px;
   line-height: 28px;
@@ -7340,7 +7338,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .latest-comments li .children .children .comments-box {
   margin-left: 100px;
-  border-top: 1px solid #D2D2D2;
+  border-top: 1px solid #d2d2d2;
 }
 .latest-comments li .comments-box {
   padding: 50px;
@@ -7422,7 +7420,8 @@ button.testimonial-arrow-btn:hover i {
   margin-bottom: 0;
 }
 
-.comments-text > ul, .comments-text > ol {
+.comments-text > ul,
+.comments-text > ol {
   margin-bottom: 20px;
 }
 
@@ -7431,57 +7430,40 @@ ul.children {
 }
 
 /*Comment Input Filed*/
-.page-content .post-comments-form {
-  padding-top: 1px;
-  margin-bottom: 15px;
-  clear: both;
+.post-comments-form {
+  padding: 40px 49px;
+  background: #033f47;
 }
 
 .post-comments-title .sub-title {
-  font-size: 18px;
-  font-weight: 700;
-  font-family: "Outfit", sans-serif;
-  color: #ff6731;
+  color: #ffffff;
   display: inline-block;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
-.post-comments-title h2 {
-  font-size: 36px;
-  line-height: 28px;
-  font-weight: 700;
-  color: #fcaf14;
-  margin-bottom: 40px;
+.post-comments-title h5 {
+  color: #ffffff;
+  margin-bottom: 32px;
   display: flex;
   justify-content: space-between;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .post-comments-title h2 {
+  .post-comments-title h5 {
     font-size: 28px;
     margin-bottom: 20px;
   }
 }
-.post-comments-title h2 small {
+.post-comments-title h5 small {
   font-size: 16px;
   font-family: "Inter", sans-serif;
   color: #035b7b;
 }
 
-.comment-respond {
-  background-color: #eef5f8;
-  padding: 50px;
-  border-radius: 8px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .comment-respond {
-    padding: 30px;
-  }
-}
 .comment-respond .contacts-email,
 .comment-respond .contacts-name,
 .comment-respond .single-input-field,
 .comment-respond .contacts-message {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 .comment-respond label {
   display: block;
@@ -7495,7 +7477,7 @@ ul.children {
   justify-content: space-between;
   gap: 10px;
   flex-wrap: wrap;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   padding: 15px 0;
 }
 .comment-respond .checkbox-field-wrapper .single-checkbox-field {
@@ -7518,15 +7500,15 @@ ul.children {
 }
 .comment-respond input,
 .comment-respond select {
-  padding: 0 20px;
+  padding: 0 16px;
   height: 60px;
   width: 100%;
-  color: #778196;
-  border: 1px solid #dfe2e9;
+  color: #c3d1d2;
+  border: 1px solid #c3d1d2;
   border-radius: 5px;
   font-size: 16px;
   font-weight: 400;
-  background-color: #ffffff;
+  background-color: transparent;
   font-family: "Inter", sans-serif !important;
 }
 .comment-respond *::-moz-placeholder {
@@ -7538,16 +7520,16 @@ ul.children {
 }
 .comment-respond textarea {
   resize: vertical;
-  padding: 20px;
+  padding: 16px;
   width: 100%;
-  color: #778196;
-  border: 1px solid #d2d2d2;
-  border-radius: 5px;
+  color: #c3d1d2;
+  border: 1px solid #c3d1d2;
+  border-radius: 3px;
   font-size: 16px;
   font-weight: 400;
-  background-color: #ffffff;
+  background-color: transparent;
   font-family: "Inter", sans-serif !important;
-  height: 130px;
+  height: 200px;
 }
 .comment-respond p {
   margin-bottom: 20px;
@@ -7557,35 +7539,8 @@ ul.children {
 .comment-respond .form-select:focus {
   outline: none !important;
   box-shadow: none;
-  border-color: #035b7b;
+  border-color: #c3d1d2;
   transition: all 0.4s ease 0s;
-}
-
-.comment-respond.style-two {
-  background-color: transparent;
-}
-.comment-respond.style-two .post-comments-title h2 {
-  color: #ffffff;
-}
-.comment-respond.style-two label {
-  color: #c7cdda;
-}
-.comment-respond.style-two .single-input-field input,
-.comment-respond.style-two .single-input-field select {
-  background-color: transparent;
-  border-color: #739bbf;
-  color: #c7cdda;
-}
-.comment-respond.style-two .single-input-field *::-moz-placeholder {
-  color: #c7cdda;
-  opacity: 1;
-}
-.comment-respond.style-two .single-input-field *::placeholder {
-  color: #c7cdda;
-}
-.comment-respond.style-two .checkbox-field-wrapper .single-checkbox-field .form-check-input {
-  background-color: transparent;
-  border-color: #739bbf;
 }
 
 /* Footer Section */

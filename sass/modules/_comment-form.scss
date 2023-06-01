@@ -1,27 +1,19 @@
 /*Comment Input Filed*/
-.page-content {
-  .post-comments-form {
-    padding-top: 1px;
-    margin-bottom: 15px;
-    clear: both;
-  }
+
+.post-comments-form {
+  padding: 40px 49px;
+  background: $icon-color;
 }
 .post-comments-title {
   .sub-title {
-    font-size: 18px;
-    font-weight: 700;
-    font-family: $heading-font;
-    color: $orange-color;
+    color: $white;
     display: inline-block;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
-  h2 {
-    font-size: 36px;
-    line-height: 28px;
-    font-weight: 700;
-    color: $secondary-color;
-    margin-bottom: 40px;
+  h5 {
+    color: $white;
+    margin-bottom: 32px;
     display: flex;
     justify-content: space-between;
 
@@ -37,19 +29,11 @@
   }
 }
 .comment-respond {
-  background-color: $gray-50;
-  padding: 50px;
-  border-radius: 8px;
-
-  @include sm {
-    padding: 30px;
-  }
-
   .contacts-email,
   .contacts-name,
   .single-input-field,
   .contacts-message {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
   label {
     display: block;
@@ -63,7 +47,7 @@
     justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     padding: 15px 0;
 
     .single-checkbox-field {
@@ -88,15 +72,15 @@
   }
   input,
   select {
-    padding: 0 20px;
+    padding: 0 16px;
     height: 60px;
     width: 100%;
-    color: $black-300;
-    border: 1px solid $gray-300;
+    color: $form-border;
+    border: 1px solid $form-border;
     border-radius: 5px;
     font-size: 16px;
     font-weight: 400;
-    background-color: $white;
+    background-color: transparent;
     font-family: $body-font !important;
   }
   *::-webkit-input-placeholder {
@@ -121,42 +105,17 @@
   }
   textarea {
     resize: vertical;
-    padding: 20px;
+    padding: 16px;
     width: 100%;
-    color: $black-300;
-    border: 1px solid #d2d2d2;
-    border-radius: 5px;
+    color: $form-border;
+    border: 1px solid $form-border;
+    border-radius: 3px;
     font-size: 16px;
     font-weight: 400;
-    background-color: $white;
+    background-color: transparent;
     font-family: $body-font !important;
-    height: 130px;
+    height: 200px;
   }
-
-  //.theme-btn {
-  //  display: inline-flex;
-  //  background: $primary-color;
-  //  color: $white;
-  //  padding: 12px 34px;
-  //  text-align: center;
-  //  font-weight: 500;
-  //  font-family: $body-font;
-  //  text-transform: capitalize;
-  //  position: relative;
-  //  z-index: 1;
-  //  transition: 0.3s;
-  //  font-size: 16px;
-  //  align-items: center;
-  //  gap: 10px;
-  //  border-radius: 50px;
-  //  margin-top: 20px;
-  //
-  //  &:hover {
-  //    background: #071c34;
-  //    color: #fff;
-  //    border-color: #071c34;
-  //  }
-  //}
 
   p {
     margin-bottom: 20px;
@@ -164,61 +123,60 @@
 
   input:focus,
   textarea:focus,
-  .form-select:focus{
+  .form-select:focus {
     outline: none !important;
     box-shadow: none;
-    border-color: $primary-color;
+    border-color: $form-border;
     transition: all 0.4s ease 0s;
   }
 }
 
-.comment-respond {
-  &.style-two {
-    background-color: transparent;
-    .post-comments-title {
-      h2 {
-        color: $white;
-      }
-    }
-    label {
-      color: $white-100;
-    }
-    .single-input-field {
-      input,
-      select {
-        background-color: transparent;
-        border-color: #739bbf;
-        color: $white-100;
-      }
-      *::-webkit-input-placeholder {
-        color: $white-100;
-      }
-      *:-moz-placeholder {
-        color: $white-100;
-        opacity: 1;
-      }
-      *::-moz-placeholder {
-        color: $white-100;
-        opacity: 1;
-      }
-      *:-ms-input-placeholder {
-        color: $white-100;
-      }
-      *::-ms-input-placeholder {
-        color: $white-100;
-      }
-      *::placeholder {
-        color: $white-100;
-      }
-    }
-    .checkbox-field-wrapper {
-
-      .single-checkbox-field {
-        .form-check-input {
-          background-color: transparent;
-          border-color: #739bbf;
-        }
-      }
-    }
-  }
-}
+// .comment-respond {
+//   &.style-two {
+//     background-color: transparent;
+//     .post-comments-title {
+//       h2 {
+//         color: $white;
+//       }
+//     }
+//     label {
+//       color: $white-100;
+//     }
+//     .single-input-field {
+//       input,
+//       select {
+//         background-color: transparent;
+//         border-color: #739bbf;
+//         color: $white-100;
+//       }
+//       *::-webkit-input-placeholder {
+//         color: $white-100;
+//       }
+//       *:-moz-placeholder {
+//         color: $white-100;
+//         opacity: 1;
+//       }
+//       *::-moz-placeholder {
+//         color: $white-100;
+//         opacity: 1;
+//       }
+//       *:-ms-input-placeholder {
+//         color: $white-100;
+//       }
+//       *::-ms-input-placeholder {
+//         color: $white-100;
+//       }
+//       *::placeholder {
+//         color: $white-100;
+//       }
+//     }
+//     .checkbox-field-wrapper {
+//       .single-checkbox-field {
+//         .form-check-input {
+//           background-color: transparent;
+//           border-color: #739bbf;
+//         }
+//       }
+//     }
+//   }
+// }
