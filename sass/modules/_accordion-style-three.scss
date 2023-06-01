@@ -1,0 +1,37 @@
+.accordion-wrapper {
+
+  &.style-two {
+    &.accordion-style-three {
+      .accordion-list-item {
+        &.open {
+          .accordion-head {
+            .icon {
+              background-color: $orange-color;
+              color: $white;
+            }
+          }
+        }
+        .accordion-head {
+          border-top: 1px solid #dfe2e9;
+          padding: 12px 0;
+          .accordion-title {
+            color: $secondary-color;
+          }
+          .icon {
+            background-color: $sky-color;
+            border-radius: 50px;
+            color: $white;
+          }
+        }
+        .accordion-item-body {
+          color: $text-color;
+        }
+        &:last-child {
+          border-bottom: 1px solid #dfe2e9;
+        }
+
+      }
+    }
+
+  }
+}

@@ -8169,36 +8169,15 @@ ul.children {
   gap: 0;
 }
 .portfolio-card.style-two .content {
-  position: relative;
   padding: 64px 40px;
   background: #f8f8f1;
 }
 .portfolio-card.style-two .content .icon {
-  position: absolute;
-  top: 0;
-  right: 40px;
-  transform: translate(0, -50%);
-  width: 64px;
-  height: 64px;
-  border-radius: 50px;
-  background: #e0f780;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.portfolio-card.style-two .content .icon i {
-  font-size: 21px;
-  line-height: 21px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .portfolio-card.style-two .content .icon {
-    right: 20px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .portfolio-card.style-two .content .icon {
-    right: 20px;
-  }
+.portfolio-card.style-two .content h4,
+.portfolio-card.style-two .content p {
+  color: #080f10;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .portfolio-card.style-two .content {

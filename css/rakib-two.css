@@ -247,6 +247,10 @@ input:focus {
   background-size: cover !important;
 }
 
+.pl-312 {
+  padding-left: 312px;
+}
+
 .portfolio-card {
   display: flex;
   flex-direction: column;
@@ -264,6 +268,78 @@ input:focus {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  position: relative;
+}
+.portfolio-card .content .icon {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  transform: translate(0, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  background: #e0f780;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-card .content .icon i {
+  font-size: 21px;
+  line-height: 21px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .portfolio-card .content .icon {
+    right: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio-card .content .icon {
+    right: 20px;
+  }
+}
+.portfolio-card .content .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.portfolio-card .content h4,
+.portfolio-card .content p {
+  color: #ffffff;
+}
+
+.portfolio-card.style-two {
+  gap: 0;
+}
+.portfolio-card.style-two .content {
+  padding: 64px 40px;
+  background: #f8f8f1;
+}
+.portfolio-card.style-two .content .icon {
+  display: flex;
+}
+.portfolio-card.style-two .content h4,
+.portfolio-card.style-two .content p {
+  color: #080f10;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .portfolio-card.style-two .content {
+    padding: 50px 22px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio-card.style-two .content {
+    padding: 50px 22px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-card.style-two .content {
+    padding: 50px 22px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .portfolio-card.style-two {
+    margin-top: 24px;
+  }
 }
 
 .image-card {
@@ -382,4 +458,32 @@ input:focus {
 }
 .team-member-card.style-two:hover .content-wrapper .user-info p {
   color: unset;
+}
+
+.portfolio-card.style-three {
+  gap: 0;
+}
+.portfolio-card.style-three .content {
+  background: #ffffff;
+  padding: 42px 49px 44px 49px;
+}
+.portfolio-card.style-three .content .icon {
+  display: flex;
+  border-radius: 4px;
+  background: #033f47;
+  bottom: 50px;
+  right: 50px;
+  top: unset;
+}
+.portfolio-card.style-three .content .icon i {
+  color: #ffffff;
+}
+.portfolio-card.style-three .content h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+}
+.portfolio-card.style-three .content h4,
+.portfolio-card.style-three .content p {
+  color: #080f10;
 }/*# sourceMappingURL=rakib-two.css.map */

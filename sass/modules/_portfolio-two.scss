@@ -2,31 +2,14 @@
   &.style-two {
     gap: 0;
     .content {
-      position: relative;
       padding: 64px 40px;
       background: $background;
       .icon {
-        position: absolute;
-        top: 0;
-        right: 40px;
-        transform: translate(0, -50%);
-        width: 64px;
-        height: 64px;
-        border-radius: 50px;
-        background: $brand;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        i {
-          font-size: 21px;
-          line-height: 21px;
-        }
-        @include sm {
-          right: 20px;
-        }
-        @include md {
-          right: 20px;
-        }
+      }
+      h4,
+      p {
+        color: $title-color;
       }
       @include sm {
         padding: 50px 22px;
