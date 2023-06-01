@@ -1,53 +1,63 @@
 .about-info-card {
-  .about-info-content {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-
-    .section-title {
-      .title {
-        margin-bottom: 0;
-      }
-    }
-    .sub-title,
-    .text,
-    .quote-text {
-      p {
-        margin-bottom: 0;
-      }
-    }
-    .sub-title {
-      font-weight: 700;
-    }
-    .quote-text {
-        padding-left: 40px;
-        border-left: 6px solid $primary-color;
-        font-style: italic;
-
-      .quote-text-meta {
+    gap: 48px;
+    padding-left: 132px;
+    .content-wrapper {
         display: flex;
-        gap: 14px;
-        align-items: center;
-        margin-top: 20px;
+        flex-direction: column;
+        gap: 24px;
+        .content {
+            .title {
+                margin-bottom: 16px;
 
-        .divider {
-          width: 25px;
-          height: 1px;
-          background-color: $white-50;
+                @include sm {
+                    font-size: 40px;
+                    line-height: 60px;
+                }
+                @include md {
+                    font-size: 46px;
+                    line-height: 60px;
+                }
+                @include lg {
+                    font-size: 46px;
+                    line-height: 60px;
+                }
+            }
         }
-        .name {
-          font-family: $heading-font;
-          font-size: 16px;
-          font-weight: 700;
-          color: $secondary-color;
-          font-style: normal;
+        .about-counter-card {
+            display: flex;
+            gap: 32px;
+            .counter-item {
+                .counter-title {
+                    .number {
+                        @include sm {
+                            font-size: 40px;
+                            line-height: 60px;
+                        }
+                        @include md {
+                            font-size: 46px;
+                            line-height: 60px;
+                        }
+                        @include lg {
+                            font-size: 46px;
+                            line-height: 60px;
+                        }
+                    }
+                }
+            }
         }
-        .designation {
-          font-family: $body-font;
-          font-size: 16px;
-          font-weight: 400;
-        }
-      }
     }
-  }
+    @include sm {
+        padding: 0;
+        margin-top: 24px;
+    }
+    @include md {
+        padding: 0;
+        margin-top: 24px;
+    }
+    @include lg {
+        padding: 0;
+        margin-top: 24px;
+    }
 }

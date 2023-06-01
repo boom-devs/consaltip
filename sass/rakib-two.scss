@@ -17,11 +17,21 @@
     background-size: cover !important;
 }
 
+.pl-312 {
+    padding-left: 312px;
+}
+
 // Portfolio-card
 @import "modules/portfolio";
+
+// Portfolio-card
+@import "modules/portfolio-two";
 
 // Image-card
 @import "modules/image-card";
 
 // team-member-card style-two
 @import "modules/team-member-two";
+
+// Portfolio-card style-three
+@import "modules/portfolio-three";

@@ -168,6 +168,8 @@ input:focus {
 .theme-btn,
 .wp-block-loginout a {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: $title-color;
   padding: 16px 24px;
   text-align: center;
@@ -178,10 +180,31 @@ input:focus {
   font-size: 16px;
   line-height: 27px;
   font-weight: 400;
+  span {
+    text-transform: capitalize;
+    font-family: $body-font;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+  }
 
   &:hover {
     background: #071c34;
     color: #fff;
     border-color: #071c34;
+  }
+}
+.under-line-wrapper {
+  position: relative;
+  .under-line {
+    background: url("../../images/under_line.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    width: 100%;
+    height: 12px;
+    right: 0;
+    bottom: -12px;
   }
 }

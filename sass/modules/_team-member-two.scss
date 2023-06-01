@@ -2,7 +2,7 @@
     &.style-two {
         padding: 0 20px;
         .image {
-            border-radius: 0 0 40% 40%;
+            border-radius: 0 0 500px 500px;
             overflow: hidden;
         }
         .content-wrapper {
@@ -24,18 +24,13 @@
             .content-wrapper {
                 background: none;
                 backdrop-filter: blur(0);
-                margin-top: 0;
+                top: 0;
 
                 .user-info {
                     h4 {
                         color: #080f10;
                     }
                     p {
-                        color: unset;
-                    }
-                }
-                .social {
-                    i {
                         color: unset;
                     }
                 }
