@@ -19,22 +19,31 @@
   opacity: 0.6;
 }
 
-.page-heading h1 {
-  font-family: $heading-font;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 76px;
-  line-height: 91px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: $white;
-  @include sm {
-    font-size: 42px;
-    line-height: 72px;
+.page-heading {
+  position: relative;
+  .sketch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
   }
-  @include md {
-    font-size: 60px;
-    line-height: 72px;
+  h1 {
+    font-family: $heading-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 76px;
+    line-height: 91px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $white;
+    @include sm {
+      font-size: 42px;
+      line-height: 72px;
+    }
+    @include md {
+      font-size: 60px;
+      line-height: 72px;
+    }
   }
 }
 .breadcrumb-wrapper {

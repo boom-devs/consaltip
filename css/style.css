@@ -6187,6 +6187,15 @@ button.testimonial-arrow-btn:hover i {
   opacity: 0.6;
 }
 
+.page-heading {
+  position: relative;
+}
+.page-heading .sketch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
 .page-heading h1 {
   font-family: "Outfit", sans-serif;
   font-style: normal;
@@ -8434,7 +8443,7 @@ ul.children {
 }
 
 .counter-card-wrapper {
-  padding: 100px 0;
+  padding: 120px 0 104px 0;
   background-position: center;
   background-repeat: no-repeat;
   -o-object-fit: cover;
@@ -8492,7 +8501,7 @@ ul.children {
 }
 
 .about-page-about-us-area {
-  padding: 145px 0;
+  padding: 120px 0;
 }
 @media (max-width: 991px) {
   .about-page-about-us-area {
