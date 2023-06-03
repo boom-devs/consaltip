@@ -21,6 +21,10 @@
     padding-left: 312px;
 }
 
+.mb-64 {
+    margin-bottom: 64px;
+}
+
 // Portfolio-card
 @import "modules/portfolio";
 
@@ -41,3 +45,6 @@
 
 // Portfolio-card style-three
 @import "modules/icon-card-six";
+
+// Portfolio-card-slider-control
+@import "modules/portfolio-card-slider-control";

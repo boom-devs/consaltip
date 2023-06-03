@@ -52,22 +52,7 @@
 }
 
 // Timeline Area
-.about-page-timeline-area {
-  background-color: #f3f7fc;
-  padding: 145px 0;
-}
-
-// Testimonial Area
-.about-page-testimonial-area {
-  background-color: #f3f7fc;
-  padding: 145px 0;
-
-  @include rmaxwd(991) {
-    padding: 100px 0;
-  }
-}
-
-// Client Logo
-.about-page-client-logo-area {
-  padding: 100px 0;
+.about-page-portfolio-area {
+  background-color: $icon-color;
+  padding: 120px 0;
 }

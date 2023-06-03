@@ -8589,23 +8589,9 @@ ul.children {
   }
 }
 
-.about-page-timeline-area {
-  background-color: #f3f7fc;
-  padding: 145px 0;
-}
-
-.about-page-testimonial-area {
-  background-color: #f3f7fc;
-  padding: 145px 0;
-}
-@media (max-width: 991px) {
-  .about-page-testimonial-area {
-    padding: 100px 0;
-  }
-}
-
-.about-page-client-logo-area {
-  padding: 100px 0;
+.about-page-portfolio-area {
+  background-color: #033f47;
+  padding: 120px 0;
 }
 
 .nav-tab {

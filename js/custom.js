@@ -122,10 +122,10 @@
         /*
        Info Card Slider
        ============================*/
-        $("#info_card_slider_wrapper").slick({
+        $(".portfolio_card_wrapper").slick({
             slidesToShow: 3,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
