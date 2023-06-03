@@ -8,10 +8,24 @@
 }
 // Counter Area
 .about-page-counter-area {
-  padding: 145px 0;
+  padding: 120px 0;
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
+  position: relative;
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    @include gradient-color-counter;
+  }
+  .theme-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+  }
 
   @include rmaxwd(991) {
     padding: 100px 0;

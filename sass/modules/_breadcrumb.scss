@@ -8,7 +8,7 @@
 }
 
 .page-overlay {
-  @include gradient-color-skye;
+  @include gradient-color-hero;
   height: 100%;
   left: 0;
   position: absolute;
@@ -21,12 +21,6 @@
 
 .page-heading {
   position: relative;
-  .sketch {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-  }
   h1 {
     font-family: $heading-font;
     font-style: normal;

@@ -204,6 +204,8 @@ input:focus {
   font-size: 16px;
   line-height: 27px;
   font-weight: 400;
+  position: relative;
+  z-index: 1;
 }
 .theme-btn span,
 .wp-block-loginout a span {
@@ -218,21 +220,6 @@ input:focus {
   background: #071c34;
   color: #fff;
   border-color: #071c34;
-}
-
-.under-line-wrapper {
-  position: relative;
-}
-.under-line-wrapper .under-line {
-  background: url("../../images/under_line.png");
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 1;
-  width: 100%;
-  height: 12px;
-  right: 0;
-  bottom: -12px;
 }
 
 .main-menu.style-two ul li ul {
@@ -439,7 +426,8 @@ input:focus {
   overflow: hidden;
 }
 .slider-area .single-slider .slider-overlay {
-  background: linear-gradient(0deg, rgba(3, 63, 71, 0.7), rgba(3, 63, 71, 0.7));
+  background: rgb(0, 91, 172);
+  background: linear-gradient(135deg, rgba(0, 91, 172, 0.83) 0%, rgb(30, 174, 152) 100%);
   position: absolute;
   left: 0;
   top: 0;
@@ -1280,7 +1268,8 @@ input:focus {
   transition: all 0.5s ease-out;
 }
 .info-card.style-two:hover:before {
-  background: linear-gradient(0deg, rgba(3, 63, 71, 0.7), rgba(3, 63, 71, 0.7));
+  background: rgb(0, 91, 172);
+  background: linear-gradient(135deg, rgba(0, 91, 172, 0.83) 0%, rgb(30, 174, 152) 100%);
   transition: all 0.5s ease-out;
 }
 .info-card.style-two:hover .title-wrapper {
@@ -2446,7 +2435,8 @@ input:focus {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(0deg, rgba(3, 63, 71, 0.7), rgba(3, 63, 71, 0.7));
+  background: rgb(0, 91, 172);
+  background: linear-gradient(135deg, rgba(0, 91, 172, 0.83) 0%, rgb(30, 174, 152) 100%);
 }
 .widget_service_promotion .widget-subtitle {
   position: relative;
@@ -2579,7 +2569,8 @@ input:focus {
 .widget_service_brochura .button-wrapper .doc {
   padding: 18px;
   border-radius: 6px;
-  background: linear-gradient(0deg, rgba(3, 63, 71, 0.7), rgba(3, 63, 71, 0.7));
+  background: rgb(0, 91, 172);
+  background: linear-gradient(135deg, rgba(0, 91, 172, 0.83) 0%, rgb(30, 174, 152) 100%);
 }
 
 /* Project-details CSS */
@@ -2714,7 +2705,9 @@ input:focus {
   .service-page-service-list-area {
     padding: 65px 0;
   }
-} /* Pricing-page CSS */
+}
+
+/* Pricing-page CSS */
 .pricing-card-wrapper {
   background: #eef5f8;
 }
