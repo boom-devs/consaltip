@@ -3691,8 +3691,7 @@ a.meanmenu-reveal {
   overflow: hidden;
 }
 .slider-area .single-slider .slider-overlay {
-  background: rgb(0, 91, 172);
-  background: linear-gradient(135deg, rgba(0, 91, 172, 0.83) 0%, rgb(30, 174, 152) 100%);
+  background: linear-gradient(0deg, rgba(3, 63, 71, 0.7), rgba(3, 63, 71, 0.7));
   position: absolute;
   left: 0;
   top: 0;
@@ -3973,8 +3972,7 @@ a.meanmenu-reveal {
   transition: all 0.5s ease-out;
 }
 .info-card.style-two:hover:before {
-  background: rgb(0, 91, 172);
-  background: linear-gradient(135deg, rgba(0, 91, 172, 0.83) 0%, rgb(30, 174, 152) 100%);
+  background: linear-gradient(0deg, rgba(3, 63, 71, 0.7), rgba(3, 63, 71, 0.7));
   transition: all 0.5s ease-out;
 }
 .info-card.style-two:hover .title-wrapper {
@@ -4386,6 +4384,7 @@ a.meanmenu-reveal {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  transition: all 0.5s ease-out;
 }
 .icon-card .icon i {
   font-size: 55px;
@@ -4405,6 +4404,12 @@ a.meanmenu-reveal {
   font-weight: 400;
   color: #575959;
   text-align: center;
+}
+.icon-card:hover .icon {
+  background: #033f47;
+}
+.icon-card:hover .icon i {
+  color: #ffffff;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .icon-card {
@@ -6162,7 +6167,7 @@ button.testimonial-arrow-btn:hover i {
 
 /* 15.Page Breadcrumb Section */
 .page-breadcrumb-sec {
-  padding: 125px 0;
+  padding: 211px 0;
   position: relative;
   z-index: 2;
   background-repeat: no-repeat;
@@ -6171,8 +6176,7 @@ button.testimonial-arrow-btn:hover i {
 }
 
 .page-overlay {
-  background: rgb(0, 91, 172);
-  background: linear-gradient(135deg, rgba(0, 91, 172, 0.83) 0%, rgb(30, 174, 152) 100%);
+  background: linear-gradient(0deg, rgba(3, 63, 71, 0.7), rgba(3, 63, 71, 0.7));
   height: 100%;
   left: 0;
   position: absolute;
@@ -6185,14 +6189,13 @@ button.testimonial-arrow-btn:hover i {
 
 .page-heading h1 {
   font-family: "Outfit", sans-serif;
-  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 76px;
+  line-height: 91px;
   text-align: center;
+  letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 20px;
-  text-transform: capitalize;
-  line-height: 84px;
-  font-weight: 700;
-  margin: 0;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .page-heading h1 {
@@ -6217,26 +6220,35 @@ button.testimonial-arrow-btn:hover i {
 .breadcrumb-list ul {
   margin-bottom: 10px;
   padding-left: 0;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
 }
 .breadcrumb-list ul i {
   color: #ffffff;
   font-size: 12px;
 }
 .breadcrumb-list ul li {
-  display: inline-block;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
   position: relative;
-  padding: 0px 14px;
 }
-.breadcrumb-list ul li.active a {
-  color: #ff6731;
+.breadcrumb-list ul li i {
+  flex-shrink: 0;
+}
+.breadcrumb-list ul li.active a,
+.breadcrumb-list ul li.active i {
+  color: #e0f780;
 }
 .breadcrumb-list ul li a {
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   color: #ffffff;
   text-transform: capitalize;
-  line-height: 54px;
+  line-height: 27px;
   font-weight: 400;
   margin-bottom: 0;
   transition: all 0.5s ease-out;

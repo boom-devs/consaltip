@@ -439,8 +439,7 @@ input:focus {
   overflow: hidden;
 }
 .slider-area .single-slider .slider-overlay {
-  background: rgb(0, 91, 172);
-  background: linear-gradient(135deg, rgba(0, 91, 172, 0.83) 0%, rgb(30, 174, 152) 100%);
+  background: linear-gradient(0deg, rgba(3, 63, 71, 0.7), rgba(3, 63, 71, 0.7));
   position: absolute;
   left: 0;
   top: 0;
@@ -1221,6 +1220,7 @@ input:focus {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  transition: all 0.5s ease-out;
 }
 .icon-card .icon i {
   font-size: 55px;
@@ -1240,6 +1240,12 @@ input:focus {
   font-weight: 400;
   color: #575959;
   text-align: center;
+}
+.icon-card:hover .icon {
+  background: #033f47;
+}
+.icon-card:hover .icon i {
+  color: #ffffff;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .icon-card {
@@ -1393,8 +1399,7 @@ input:focus {
   transition: all 0.5s ease-out;
 }
 .info-card.style-two:hover:before {
-  background: rgb(0, 91, 172);
-  background: linear-gradient(135deg, rgba(0, 91, 172, 0.83) 0%, rgb(30, 174, 152) 100%);
+  background: linear-gradient(0deg, rgba(3, 63, 71, 0.7), rgba(3, 63, 71, 0.7));
   transition: all 0.5s ease-out;
 }
 .info-card.style-two:hover .title-wrapper {
@@ -2560,8 +2565,7 @@ input:focus {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgb(0, 91, 172);
-  background: linear-gradient(135deg, rgba(0, 91, 172, 0.83) 0%, rgb(30, 174, 152) 100%);
+  background: linear-gradient(0deg, rgba(3, 63, 71, 0.7), rgba(3, 63, 71, 0.7));
 }
 .widget_service_promotion .widget-subtitle {
   position: relative;
@@ -2694,8 +2698,7 @@ input:focus {
 .widget_service_brochura .button-wrapper .doc {
   padding: 18px;
   border-radius: 6px;
-  background: rgb(0, 91, 172);
-  background: linear-gradient(135deg, rgba(0, 91, 172, 0.83) 0%, rgb(30, 174, 152) 100%);
+  background: linear-gradient(0deg, rgba(3, 63, 71, 0.7), rgba(3, 63, 71, 0.7));
 }
 
 /* Project-details CSS */
@@ -2830,9 +2833,7 @@ input:focus {
   .service-page-service-list-area {
     padding: 65px 0;
   }
-}
-
-/* Pricing-page CSS */
+} /* Pricing-page CSS */
 .pricing-card-wrapper {
   background: #eef5f8;
 }
