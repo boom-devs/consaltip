@@ -35,12 +35,28 @@
   .contacts-message {
     margin-bottom: 16px;
   }
+  .single-input-field {
+    .nice-select {
+      color: #c3d1d2;
+      &:after {
+        color: $white;
+        border-bottom: 2px solid $title-color;
+        border-right: 2px solid $title-color;
+        color: #ffffff;
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
   label {
     display: block;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
-    font-weight: 600;
-    color: $black-300;
-    margin-bottom: 12px;
+    line-height: 27px;
+    color: $title-color;
+    margin-bottom: 8px;
   }
   .checkbox-field-wrapper {
     display: flex;
@@ -75,7 +91,7 @@
     padding: 0 16px;
     height: 60px;
     width: 100%;
-    color: $form-border;
+    color: $white;
     border: 1px solid $form-border;
     border-radius: 5px;
     font-size: 16px;
@@ -84,30 +100,30 @@
     font-family: $body-font !important;
   }
   *::-webkit-input-placeholder {
-    color: $black-300;
+    color: $form-border;
   }
   *:-moz-placeholder {
-    color: $black-300;
+    color: $form-border;
     opacity: 1;
   }
   *::-moz-placeholder {
-    color: $black-300;
+    color: $form-border;
     opacity: 1;
   }
   *:-ms-input-placeholder {
-    color: $black-300;
+    color: $form-border;
   }
   *::-ms-input-placeholder {
-    color: $black-300;
+    color: $form-border;
   }
   *::placeholder {
-    color: $black-300;
+    color: $form-border;
   }
   textarea {
     resize: vertical;
     padding: 16px;
     width: 100%;
-    color: $form-border;
+    color: $white;
     border: 1px solid $form-border;
     border-radius: 3px;
     font-size: 16px;
@@ -123,60 +139,66 @@
 
   input:focus,
   textarea:focus,
-  .form-select:focus {
+  .form-select:focus,
+  .nice-select {
     outline: none !important;
     box-shadow: none;
     border-color: $form-border;
     transition: all 0.4s ease 0s;
+    color: $white;
   }
 }
 
-// .comment-respond {
-//   &.style-two {
-//     background-color: transparent;
-//     .post-comments-title {
-//       h2 {
-//         color: $white;
-//       }
-//     }
-//     label {
-//       color: $white-100;
-//     }
-//     .single-input-field {
-//       input,
-//       select {
-//         background-color: transparent;
-//         border-color: #739bbf;
-//         color: $white-100;
-//       }
-//       *::-webkit-input-placeholder {
-//         color: $white-100;
-//       }
-//       *:-moz-placeholder {
-//         color: $white-100;
-//         opacity: 1;
-//       }
-//       *::-moz-placeholder {
-//         color: $white-100;
-//         opacity: 1;
-//       }
-//       *:-ms-input-placeholder {
-//         color: $white-100;
-//       }
-//       *::-ms-input-placeholder {
-//         color: $white-100;
-//       }
-//       *::placeholder {
-//         color: $white-100;
-//       }
-//     }
-//     .checkbox-field-wrapper {
-//       .single-checkbox-field {
-//         .form-check-input {
-//           background-color: transparent;
-//           border-color: #739bbf;
-//         }
-//       }
-//     }
-//   }
-// }
+.comment-respond {
+  &.style-two {
+    .single-input-field {
+      margin-bottom: 30px;
+      input,
+      select {
+        background-color: transparent;
+        border-color: #828282;
+        color: $title-color;
+      }
+      .nice-select {
+        color: $title-color;
+      }
+      textarea {
+        border-color: #828282;
+      }
+      *::-webkit-input-placeholder {
+        color: #828282;
+      }
+      *:-moz-placeholder {
+        color: #828282;
+        opacity: 1;
+      }
+      *::-moz-placeholder {
+        color: #828282;
+        opacity: 1;
+      }
+      *:-ms-input-placeholder {
+        color: #828282;
+      }
+      *::-ms-input-placeholder {
+        color: #828282;
+      }
+      *::placeholder {
+        color: #828282;
+      }
+    }
+    .checkbox-field-wrapper {
+      .single-checkbox-field {
+        .form-check-input {
+          background-color: transparent;
+          border-color: #739bbf;
+        }
+      }
+    }
+    input:focus,
+    textarea:focus,
+    .form-select:focus,
+    .nice-select {
+      border-color: #828282;
+    }
+  }
+}

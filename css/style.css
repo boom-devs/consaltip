@@ -5959,6 +5959,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .price-card-wrapper.active .list-wrapper .price-btn a {
   background: #033f47;
+  color: #ffffff;
 }
 .price-card-wrapper.active .list-wrapper .price-list-item .icon {
   background: #033f47;
@@ -6138,6 +6139,25 @@ button.testimonial-arrow-btn:hover i {
   width: 72px;
   height: 6px;
   background-color: #035b7b;
+}
+
+.under-line {
+  position: relative;
+}
+.under-line:after {
+  content: "";
+  background: url("../../images/under_line.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 12px;
+  right: 0;
+  top: 50%;
+}
+.under-line.style-two:after {
+  top: unset;
+  bottom: 0;
 }
 
 /* 15.Page Breadcrumb Section */
@@ -7465,12 +7485,26 @@ ul.children {
 .comment-respond .contacts-message {
   margin-bottom: 16px;
 }
+.comment-respond .single-input-field .nice-select {
+  color: #c3d1d2;
+}
+.comment-respond .single-input-field .nice-select:after {
+  color: #ffffff;
+  border-bottom: 2px solid #080f10;
+  border-right: 2px solid #080f10;
+  color: #ffffff;
+  width: 10px;
+  height: 10px;
+}
 .comment-respond label {
   display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
-  font-weight: 600;
-  color: #778196;
-  margin-bottom: 12px;
+  line-height: 27px;
+  color: #080f10;
+  margin-bottom: 8px;
 }
 .comment-respond .checkbox-field-wrapper {
   display: flex;
@@ -7503,7 +7537,7 @@ ul.children {
   padding: 0 16px;
   height: 60px;
   width: 100%;
-  color: #c3d1d2;
+  color: #ffffff;
   border: 1px solid #c3d1d2;
   border-radius: 5px;
   font-size: 16px;
@@ -7512,17 +7546,17 @@ ul.children {
   font-family: "Inter", sans-serif !important;
 }
 .comment-respond *::-moz-placeholder {
-  color: #778196;
+  color: #c3d1d2;
   opacity: 1;
 }
 .comment-respond *::placeholder {
-  color: #778196;
+  color: #c3d1d2;
 }
 .comment-respond textarea {
   resize: vertical;
   padding: 16px;
   width: 100%;
-  color: #c3d1d2;
+  color: #ffffff;
   border: 1px solid #c3d1d2;
   border-radius: 3px;
   font-size: 16px;
@@ -7536,11 +7570,46 @@ ul.children {
 }
 .comment-respond input:focus,
 .comment-respond textarea:focus,
-.comment-respond .form-select:focus {
+.comment-respond .form-select:focus,
+.comment-respond .nice-select {
   outline: none !important;
   box-shadow: none;
   border-color: #c3d1d2;
   transition: all 0.4s ease 0s;
+  color: #ffffff;
+}
+
+.comment-respond.style-two .single-input-field {
+  margin-bottom: 30px;
+}
+.comment-respond.style-two .single-input-field input,
+.comment-respond.style-two .single-input-field select {
+  background-color: transparent;
+  border-color: #828282;
+  color: #080f10;
+}
+.comment-respond.style-two .single-input-field .nice-select {
+  color: #080f10;
+}
+.comment-respond.style-two .single-input-field textarea {
+  border-color: #828282;
+}
+.comment-respond.style-two .single-input-field *::-moz-placeholder {
+  color: #828282;
+  opacity: 1;
+}
+.comment-respond.style-two .single-input-field *::placeholder {
+  color: #828282;
+}
+.comment-respond.style-two .checkbox-field-wrapper .single-checkbox-field .form-check-input {
+  background-color: transparent;
+  border-color: #739bbf;
+}
+.comment-respond.style-two input:focus,
+.comment-respond.style-two textarea:focus,
+.comment-respond.style-two .form-select:focus,
+.comment-respond.style-two .nice-select {
+  border-color: #828282;
 }
 
 /* Footer Section */

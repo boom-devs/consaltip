@@ -359,17 +359,6 @@ input:focus {
   position: relative;
   margin-bottom: 16px;
 }
-.image-card .content .title .under-line {
-  background: url("../../images/under_line.png");
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 1;
-  width: 100%;
-  height: 12px;
-  right: 0;
-  bottom: -12px;
-}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .image-card .content .title {
     font-size: 46px;
@@ -488,4 +477,31 @@ input:focus {
 .portfolio-card.style-three .content h4,
 .portfolio-card.style-three .content p {
   color: #080f10;
+}
+
+.icon-card.style-five {
+  flex-direction: row;
+  align-items: start;
+  padding: 0;
+  justify-content: start;
+  gap: 16px;
+}
+.icon-card.style-five .icon {
+  background: #e0f780;
+  width: 64px;
+  height: 64px;
+  border: none;
+}
+.icon-card.style-five .icon i {
+  font-size: 24px;
+  color: #000;
+}
+.icon-card.style-five .content {
+  gap: 4px;
+}
+.icon-card.style-five .content .title {
+  text-align: start;
+}
+.icon-card.style-five .content .desc {
+  text-align: start;
 }/*# sourceMappingURL=rakib-two.css.map */
