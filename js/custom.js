@@ -155,16 +155,20 @@
         /*
        Team Slider
        ============================*/
-        $("#team_slider_wrapper").slick({
+        $(".about_us_team_member").slick({
             slidesToShow: 3,
             infinite: true,
             autoplay: false,
             draggable: true,
-            arrows: false,
+            arrows: true,
             slidesToScroll: 1,
             loop: true,
             dots: true,
             speed: 1500,
+             prevArrow:
+                "<button type='button' class='team-card-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+            nextArrow:
+                "<button type='button' class='team-card-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
             responsive: [
                 {
                     breakpoint: 992,

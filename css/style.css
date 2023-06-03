@@ -8594,6 +8594,90 @@ ul.children {
   padding: 120px 0;
 }
 
+.about-page-team-area {
+  padding: 120px 0;
+}
+
+.about_us_team_member {
+  position: relative;
+}
+.about_us_team_member .slick-list .slick-slide {
+  margin: 0 12px;
+  transition: all 0.5s ease-out;
+}
+.about_us_team_member .slick-list .slick-slide.slick-active {
+  transition: all 0.5s ease-out;
+}
+.about_us_team_member button.team-card-arrow-btn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: 0.3s;
+  z-index: 99;
+  background-color: transparent;
+  border: 1px solid #828282;
+  cursor: pointer;
+  top: -164px;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .about_us_team_member button.team-card-arrow-btn {
+    top: unset;
+    bottom: -80px;
+  }
+}
+.about_us_team_member button.team-card-arrow-btn.prev-btn {
+  right: 72px;
+}
+@media (max-width: 767px) {
+  .about_us_team_member button.team-card-arrow-btn.prev-btn {
+    right: unset;
+    left: 30px;
+  }
+}
+.about_us_team_member button.team-card-arrow-btn.next-btn {
+  right: 0;
+}
+@media (max-width: 767px) {
+  .about_us_team_member button.team-card-arrow-btn.next-btn {
+    right: 30px;
+    left: unset;
+  }
+}
+.about_us_team_member button.team-card-arrow-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #080f10;
+  font-size: 21px;
+  transition: all 0.5s ease-out;
+}
+.about_us_team_member button.team-card-arrow-btn:hover {
+  background: #e0f780;
+}
+.about_us_team_member button.team-card-arrow-btn:hover i {
+  color: #080f10;
+  transition: all 0.5s ease-out;
+}
+.about_us_team_member .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 64px;
+}
+.about_us_team_member .slick-dots li button {
+  content-visibility: hidden;
+  padding: 8px;
+  border-radius: 50px;
+  background-color: #bdbdbd;
+}
+.about_us_team_member .slick-dots li.slick-active button {
+  background: #080f10;
+}
+
 .nav-tab {
   list-style: none;
   padding-left: 0;

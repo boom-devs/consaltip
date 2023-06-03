@@ -56,3 +56,95 @@
   background-color: $icon-color;
   padding: 120px 0;
 }
+.about-page-team-area {
+  padding: 120px 0;
+}
+.about_us_team_member {
+  position: relative;
+  .slick-list {
+    .slick-slide {
+      margin: 0 12px;
+      //border-radius: 20px;
+      //visibility: hidden;
+      //opacity: 0;
+      @include transition;
+
+      &.slick-active {
+        @include transition;
+        //visibility: visible;
+        //opacity: 1;
+      }
+    }
+  }
+  // Slick Nav Arrow Button
+  button.team-card-arrow-btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 99;
+    background-color: transparent;
+    border: 1px solid #828282;
+    cursor: pointer;
+    top: -164px;
+    overflow: hidden;
+    @include rmaxwd(991) {
+      top: unset;
+      bottom: -80px;
+    }
+
+    &.prev-btn {
+      right: 72px;
+
+      @include rmaxwd(767) {
+        right: unset;
+        left: 30px;
+      }
+    }
+    &.next-btn {
+      right: 0;
+      @include rmaxwd(767) {
+        right: 30px;
+        left: unset;
+      }
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $title-color;
+      font-size: 21px;
+      @include transition;
+    }
+    &:hover {
+      background: $brand;
+
+      i {
+        color: $title-color;
+        @include transition;
+      }
+    }
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 64px;
+    li {
+      button {
+        content-visibility: hidden;
+        padding: 8px;
+        border-radius: 50px;
+        background-color: #bdbdbd;
+      }
+      &.slick-active {
+        button {
+          background: $title-color;
+        }
+      }
+    }
+  }
+}
