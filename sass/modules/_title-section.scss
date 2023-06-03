@@ -46,6 +46,32 @@
     height: 6px;
     background-color: $primary-color;
   }
+  &.style-two {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 64px;
+    .title {
+      color: $title-color;
+      width: 50%;
+    }
+    .desc {
+      color: $text-color;
+      padding-left: 200px;
+      width: 50%;
+      text-align: start;
+    }
+  }
+  &.style-three {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    .title {
+      color: $title-color;
+    }
+    .desc {
+      color: $text-color;
+    }
+  }
 }
 .under-line {
   position: relative;

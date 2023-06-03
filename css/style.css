@@ -5516,10 +5516,12 @@ button.testimonial-arrow-btn:hover i {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  position: relative;
 }
 .accordion-wrapper .accordion-list-item {
   background: #ffffff;
   padding: 39px 0;
+  position: relative;
 }
 .accordion-wrapper .accordion-list-item.open .accordion-item-body {
   display: block;
@@ -5571,6 +5573,17 @@ button.testimonial-arrow-btn:hover i {
   padding: 16px 40px 0 40px;
   border-top: 1px solid #e0e0e0;
   margin-top: 16px;
+}
+.accordion-wrapper .faq-sketch {
+  background: url("../../images/sketch-color.png");
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 .client-logo-wrapper {
@@ -6133,6 +6146,32 @@ button.testimonial-arrow-btn:hover i {
   width: 72px;
   height: 6px;
   background-color: #035b7b;
+}
+.section-title.style-two {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 64px;
+}
+.section-title.style-two .title {
+  color: #080f10;
+  width: 50%;
+}
+.section-title.style-two .desc {
+  color: #575959;
+  padding-left: 200px;
+  width: 50%;
+  text-align: start;
+}
+.section-title.style-three {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+.section-title.style-three .title {
+  color: #080f10;
+}
+.section-title.style-three .desc {
+  color: #575959;
 }
 
 .under-line {
@@ -8532,7 +8571,8 @@ ul.children {
 }
 
 .about-page-faq-area {
-  padding: 145px 0;
+  padding: 120px 0;
+  background: #f8f8f1;
 }
 @media (max-width: 991px) {
   .about-page-faq-area {

@@ -491,4 +491,10 @@ input:focus {
 }
 .icon-card.style-five .content .desc {
   text-align: start;
+}
+
+.icon-card.style-six {
+  background: #f8f8f1;
+  padding: 55px 38px;
+  margin-bottom: 24px;
 }/*# sourceMappingURL=rakib-two.css.map */

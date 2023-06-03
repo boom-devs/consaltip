@@ -34,7 +34,8 @@
 
 // FAQ Area
 .about-page-faq-area {
-  padding: 145px 0;
+  padding: 120px 0;
+  background: $background;
 
   @include rmaxwd(991) {
     padding: 100px 0;
