@@ -244,6 +244,11 @@ input:focus {
   margin-bottom: 64px;
 }
 
+.custom-container {
+  max-width: 1728px;
+  margin: 0 auto;
+}
+
 .portfolio-card {
   display: flex;
   flex-direction: column;
@@ -338,17 +343,19 @@ input:focus {
 .image-card {
   display: flex;
   align-items: center;
+  gap: 24px;
 }
 .image-card .content {
-  padding-right: 134px;
+  padding-right: 111px;
   display: flex;
   flex-direction: column;
   gap: 48px;
-  flex: 1;
+  width: 50%;
 }
 .image-card .content .title {
   position: relative;
   margin-bottom: 16px;
+  letter-spacing: 0.02em;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .image-card .content .title {
@@ -385,13 +392,26 @@ input:focus {
   font-weight: 400;
 }
 .image-card .image {
-  flex: 1;
-  width: 100%;
+  width: 50%;
   height: 100%;
+  position: relative;
+}
+.image-card .image .image-card-sketch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 79%;
+  height: 91%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
 }
 .image-card .image img {
   width: 100%;
   height: 100%;
+  z-index: 1;
+  position: relative;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .image-card .image {

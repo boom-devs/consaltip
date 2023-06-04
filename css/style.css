@@ -6191,23 +6191,9 @@ button.testimonial-arrow-btn:hover i {
 .under-line.style-two:after {
   top: unset;
   bottom: -12px;
-}
-
-.sketch {
-  background: url("../../images/title-sketch.png");
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-
-/* 15.Page Breadcrumb Section */
+} /* 15.Page Breadcrumb Section */
 .page-breadcrumb-sec {
-  padding: 211px 0;
+  padding: 211px 0 212px 0;
   position: relative;
   z-index: 2;
   background-repeat: no-repeat;
@@ -6298,8 +6284,8 @@ button.testimonial-arrow-btn:hover i {
 }
 @media only screen and (min-width: 992px) {
   .breadcrumb-list ul li a {
-    font-size: 16px;
-    line-height: 54px;
+    font-size: 18px;
+    line-height: 31px;
   }
 }
 .breadcrumb-list ul li a:hover {
@@ -8532,6 +8518,17 @@ ul.children {
     padding-top: 100px;
     padding-bottom: 80px;
   }
+}
+
+.page-breadcrumb-sec .sketch {
+  background: url("../../images/title-sketch.png");
+  position: absolute;
+  top: 153px;
+  left: 11px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 169px;
+  height: 169px;
 }
 
 .about-page-about-us-area {

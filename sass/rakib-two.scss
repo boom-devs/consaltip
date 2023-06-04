@@ -25,6 +25,11 @@
     margin-bottom: 64px;
 }
 
+.custom-container {
+    max-width: 1728px;
+    margin: 0 auto;
+}
+
 // Portfolio-card
 @import "modules/portfolio";
 
