@@ -12,7 +12,6 @@
         display: block;
       }
       .accordion-head {
-        padding: 0 40px;
         .icon {
           &:before {
             content: "\e90f";
@@ -37,6 +36,14 @@
         color: $title-color;
         font-weight: 600;
         margin-bottom: 0;
+        @include sm {
+          font-size: 20px;
+          line-height: 30px;
+        }
+        @include lg {
+          font-size: 20px;
+          line-height: 30px;
+        }
       }
       .icon {
         display: flex;
@@ -58,12 +65,30 @@
           font-family: $iconmoon;
         }
       }
+      @include sm {
+        padding: 0 20px;
+      }
+      @include lg {
+        padding: 0 30px;
+      }
     }
     .accordion-item-body {
       color: $text-color;
       padding: 16px 40px 0 40px;
       border-top: 1px solid #e0e0e0;
       margin-top: 16px;
+      @include sm {
+        padding: 16px 20px 0 20px;
+      }
+      @include lg {
+        padding: 16px 20px 0 30px;
+      }
+    }
+    @include sm {
+      padding: 28px 0;
+    }
+    @include lg {
+      padding: 28px 0;
     }
   }
   .faq-sketch {

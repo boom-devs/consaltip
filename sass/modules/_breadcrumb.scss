@@ -5,6 +5,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  @include sm {
+    padding: 160px 5px;
+  }
 }
 
 .page-overlay {
@@ -31,12 +34,12 @@
     letter-spacing: 0.02em;
     color: $white;
     @include sm {
-      font-size: 42px;
-      line-height: 72px;
+      font-size: 38px;
+      line-height: 62px;
     }
     @include md {
-      font-size: 60px;
-      line-height: 72px;
+      font-size: 48px;
+      line-height: 62px;
     }
   }
 }

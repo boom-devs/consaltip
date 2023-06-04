@@ -68,5 +68,8 @@
       line-height: 31px;
       font-weight: 400;
     }
+    @include sm {
+      padding: 35px 0;
+    }
   }
 }
