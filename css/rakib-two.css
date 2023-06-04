@@ -238,6 +238,10 @@ input:focus {
   margin-bottom: 64px;
 }
 
+.mt-64 {
+  margin-top: 64px;
+}
+
 .mt-36 {
   margin-top: 36px;
 }
@@ -506,6 +510,13 @@ input:focus {
   .image-card {
     flex-direction: column-reverse;
   }
+}
+.image-card.style-two {
+  flex-direction: row-reverse;
+  gap: 64px;
+}
+.image-card.style-two .content {
+  padding-right: 30px;
 }
 
 .team-member-card.style-two .image {

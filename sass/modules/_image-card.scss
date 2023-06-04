@@ -91,4 +91,11 @@
     @include md {
         flex-direction: column-reverse;
     }
+    &.style-two {
+        flex-direction: row-reverse;
+        gap: 64px;
+        .content {
+            padding-right: 30px;
+        }
+    }
 }
