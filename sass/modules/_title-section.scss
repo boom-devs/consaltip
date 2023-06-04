@@ -19,6 +19,7 @@
     margin-bottom: 0;
     text-align: center;
     line-height: 68px;
+    letter-spacing: 0.02em;
     @include md {
       font-size: 38px;
       line-height: 48px;
@@ -49,6 +50,7 @@
   &.style-two {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 64px;
     .title {
       color: $title-color;
@@ -72,6 +74,11 @@
       color: $text-color;
     }
   }
+  &.style-four {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .under-line {
   position: relative;
@@ -81,7 +88,7 @@
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
+    width: 271px;
     height: 12px;
     right: 0;
     top: 50%;

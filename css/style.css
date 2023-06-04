@@ -581,6 +581,7 @@ h2 {
   font-size: 57px;
   line-height: 68px;
   font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 h3 {
@@ -599,6 +600,7 @@ h5 {
   font-size: 24px;
   line-height: 34px;
   font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 h6 {
@@ -715,25 +717,17 @@ input:focus {
   align-items: center;
   justify-content: center;
   color: #080f10;
-  padding: 16px 24px;
+  padding: 16.5px 32px;
   text-align: center;
   border-radius: 4px;
   background: #e0f780;
   text-transform: capitalize;
   font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 27px;
+  font-size: 18px;
+  line-height: 31px;
   font-weight: 400;
   position: relative;
   z-index: 1;
-}
-.theme-btn span,
-.wp-block-loginout a span {
-  text-transform: capitalize;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 27px;
-  font-weight: 400;
 }
 .theme-btn:hover,
 .wp-block-loginout a:hover {
@@ -5067,12 +5061,12 @@ a.meanmenu-reveal {
 }
 
 .counter-card {
-  padding: 72px 0;
+  padding-top: 63px;
   z-index: 1;
   position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 60px;
+  grid-gap: 0 60px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .counter-card {
@@ -5095,6 +5089,7 @@ a.meanmenu-reveal {
   }
 }
 .counter-card .counter-item {
+  padding: 72px 0;
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -5109,7 +5104,6 @@ a.meanmenu-reveal {
   width: 1px;
   height: 80px;
   background: #e0f780;
-  top: 24px;
   left: -30px;
 }
 .counter-card .counter-item:first-child:before {
@@ -5543,10 +5537,11 @@ button.testimonial-arrow-btn:hover i {
   position: relative;
 }
 .accordion-wrapper .accordion-list-item .accordion-head .accordion-title {
-  font-size: 21px;
-  line-height: 32px;
+  font-family: "Outfit", sans-serif;
+  font-size: 24px;
+  line-height: 34px;
   color: #080f10;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 0;
 }
 .accordion-wrapper .accordion-list-item .accordion-head .icon {
@@ -6117,6 +6112,7 @@ button.testimonial-arrow-btn:hover i {
   margin-bottom: 0;
   text-align: center;
   line-height: 68px;
+  letter-spacing: 0.02em;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-title .title {
@@ -6150,6 +6146,7 @@ button.testimonial-arrow-btn:hover i {
 .section-title.style-two {
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 64px;
 }
 .section-title.style-two .title {
@@ -6173,6 +6170,11 @@ button.testimonial-arrow-btn:hover i {
 .section-title.style-three .desc {
   color: #575959;
 }
+.section-title.style-four {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .under-line {
   position: relative;
@@ -6183,7 +6185,7 @@ button.testimonial-arrow-btn:hover i {
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
+  width: 271px;
   height: 12px;
   right: 0;
   top: 50%;
@@ -6191,7 +6193,9 @@ button.testimonial-arrow-btn:hover i {
 .under-line.style-two:after {
   top: unset;
   bottom: -12px;
-} /* 15.Page Breadcrumb Section */
+}
+
+/* 15.Page Breadcrumb Section */
 .page-breadcrumb-sec {
   padding: 211px 0 212px 0;
   position: relative;
@@ -8541,11 +8545,10 @@ ul.children {
 }
 
 .about-page-counter-area {
-  padding: 120px 0;
+  padding: 120px 0 104px 0;
   background-repeat: no-repeat;
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
   position: relative;
 }
 .about-page-counter-area .overlay {
@@ -8567,6 +8570,21 @@ ul.children {
   }
 }
 
+.about-us-our-service-area {
+  padding: 120px 0;
+  position: relative;
+}
+.about-us-our-service-area .sketch {
+  background: url("../../images/sketch-color.png");
+  position: absolute;
+  left: 40px;
+  bottom: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 169px;
+  height: 169px;
+}
+
 .about-page-faq-area {
   padding: 120px 0;
   background: #f8f8f1;
@@ -8586,6 +8604,10 @@ ul.children {
   }
 }
 
+.container-fluid {
+  width: calc(100% + 60px);
+}
+
 .about-page-portfolio-area {
   background-color: #033f47;
   padding: 120px 0;
@@ -8595,11 +8617,20 @@ ul.children {
   padding: 120px 0;
 }
 
+.about_team_member_container {
+  max-width: 1460px;
+  margin-left: 163px;
+  width: 100%;
+}
+
 .about_us_team_member {
   position: relative;
 }
+.about_us_team_member .team-card-arrow-btn {
+  display: none !important;
+}
 .about_us_team_member .slick-list .slick-slide {
-  margin: 0 12px;
+  margin: 0 32px;
   transition: all 0.5s ease-out;
 }
 .about_us_team_member .slick-list .slick-slide.slick-active {
@@ -8665,9 +8696,13 @@ ul.children {
   gap: 8px;
   margin-top: 64px;
 }
+.about_us_team_member .slick-dots li {
+  width: 8px;
+  height: 8px;
+}
 .about_us_team_member .slick-dots li button {
   content-visibility: hidden;
-  padding: 8px;
+  padding: 4px;
   border-radius: 50px;
   background-color: #bdbdbd;
 }

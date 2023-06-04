@@ -24,10 +24,58 @@
 .mb-64 {
     margin-bottom: 64px;
 }
+.mt-24 {
+    margin-top: 24px;
+}
 
 .custom-container {
     max-width: 1728px;
     margin: 0 auto;
+}
+
+.custom-slider-btn {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    a {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        transition: 0.3s;
+        z-index: 99;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $white;
+            font-size: 21px;
+            @include transition;
+        }
+        &:hover {
+            background: $brand;
+
+            i {
+                color: $title-color;
+                @include transition;
+            }
+        }
+    }
+    &.style-two {
+        margin-top: 0;
+        a {
+            border: 1px solid #828282;
+            i {
+                color: $title-color;
+            }
+        }
+    }
 }
 
 // Portfolio-card

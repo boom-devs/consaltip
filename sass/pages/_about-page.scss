@@ -22,10 +22,10 @@
 }
 // Counter Area
 .about-page-counter-area {
-  padding: 120px 0;
+  padding: 120px 0 104px 0;
   background-repeat: no-repeat;
   background-position: center;
-  object-fit: cover;
+  background-size: cover;
   position: relative;
   .overlay {
     position: absolute;
@@ -43,6 +43,22 @@
 
   @include rmaxwd(991) {
     padding: 100px 0;
+  }
+}
+
+// Our service area
+.about-us-our-service-area {
+  padding: 120px 0;
+  position: relative;
+  .sketch {
+    background: url("../../images/sketch-color.png");
+    position: absolute;
+    left: 40px;
+    bottom: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 169px;
+    height: 169px;
   }
 }
 
@@ -65,19 +81,33 @@
   }
 }
 
+//
+.container-fluid {
+  width: calc(100% + 60px);
+}
+
 // Timeline Area
 .about-page-portfolio-area {
   background-color: $icon-color;
   padding: 120px 0;
 }
+// Team-member area
 .about-page-team-area {
   padding: 120px 0;
 }
+.about_team_member_container {
+  max-width: 1460px;
+  margin-left: 163px;
+  width: 100%;
+}
 .about_us_team_member {
   position: relative;
+  .team-card-arrow-btn {
+    display: none !important;
+  }
   .slick-list {
     .slick-slide {
-      margin: 0 12px;
+      margin: 0 32px;
       //border-radius: 20px;
       //visibility: hidden;
       //opacity: 0;
@@ -148,9 +178,11 @@
     gap: 8px;
     margin-top: 64px;
     li {
+      width: 8px;
+      height: 8px;
       button {
         content-visibility: hidden;
-        padding: 8px;
+        padding: 4px;
         border-radius: 50px;
         background-color: #bdbdbd;
       }

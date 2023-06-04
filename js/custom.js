@@ -125,7 +125,7 @@
         $(".portfolio_card_wrapper").slick({
             slidesToShow: 3,
             infinite: true,
-            autoplay: true,
+            autoplay: false,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -152,6 +152,14 @@
             ],
         });
 
+
+        $('.prev_btn_custom').on('click', function () {
+            $('.prev-btn').trigger('click');
+        });
+        $('.next_btn_custom').on('click', function () {
+            $('.next-btn').trigger('click');
+        });
+
         /*
        Team Slider
        ============================*/
@@ -172,12 +180,6 @@
             responsive: [
                 {
                     breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                },
-                {
-                    breakpoint: 991,
                     settings: {
                         slidesToShow: 2,
                     },
