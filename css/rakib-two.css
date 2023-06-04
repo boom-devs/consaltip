@@ -238,6 +238,10 @@ input:focus {
   margin-bottom: 64px;
 }
 
+.mt-36 {
+  margin-top: 36px;
+}
+
 .mt-24 {
   margin-top: 24px;
 }
@@ -247,6 +251,7 @@ input:focus {
   margin: 0 auto;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .custom-slider-btn {

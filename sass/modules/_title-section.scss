@@ -15,7 +15,7 @@
     font-size: 57px;
     font-weight: 600;
     font-family: $heading-font;
-    color: $white;
+    color: $title-color;
     margin-bottom: 0;
     text-align: center;
     line-height: 68px;
@@ -38,7 +38,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 31px;
-    color: $white;
+    color: $text-color;
     margin-bottom: 0;
     text-align: center;
     @include sm {
