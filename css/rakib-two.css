@@ -751,16 +751,12 @@ input:focus {
   padding: 120px 0;
   position: relative;
 }
-.project-page-project-sec .project-view-type ul {
+.project-page-project-sec .project-view-type {
   display: flex;
   justify-content: end;
   gap: 16px;
 }
-.project-page-project-sec .project-view-type ul li {
-  display: inline-flex;
-  align-items: center;
-}
-.project-page-project-sec .project-view-type ul li a {
+.project-page-project-sec .project-view-type button {
   padding: 16px 24px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -772,17 +768,17 @@ input:focus {
   letter-spacing: 0.02em;
   color: #080f10;
 }
-.project-page-project-sec .project-view-type ul li a:hover {
+.project-page-project-sec .project-view-type button:hover {
   background-color: #080f10;
   color: #ffffff;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .project-page-project-sec .project-view-type ul li a {
+  .project-page-project-sec .project-view-type button {
     padding: 12px 18px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .project-page-project-sec .project-view-type ul {
+  .project-page-project-sec .project-view-type button {
     flex-wrap: wrap;
   }
 }

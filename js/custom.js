@@ -356,5 +356,21 @@
             preloader: false,
             fixedContentPos: false,
         });
+
+        $('.isotope-grid').isotope({
+            // options
+            itemSelector: '.isotope-item',
+            layoutMode: 'fitRows'
+        });
+       var $grid = $('.isotope-grid').isotope({
+        itemSelector: '.isotope-item',
+            layoutMode: 'fitRows'
+  // options
+});
+// filter items on button click
+$('.filter-button-group').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
     });
 })(jQuery);

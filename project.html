@@ -78,30 +78,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 mb-48">
-                    <div class="project-view-type">
-                        <ul>
-                            <li>
-                                <a href="#">All</a>
-                            </li>
-                            <li>
-                                <a href="#">Business</a>
-                            </li>
-                            <li>
-                                <a href="#">Financial</a>
-                            </li>
-                            <li>
-                                <a href="#">Managing</a>
-                            </li>
-                            <li>
-                                <a href="#">Marketing</a>
-                            </li>
-                        </ul>
+                    <div class="project-view-type filter-button-group">
+                        <button data-filter="*">All</button>
+                        <button data-filter=".business">Business</button>
+                        <button data-filter=".financial">Financial</button>
+                        <button data-filter=".managing">Managing</button>
+                        <button data-filter=".marketing">Marketing</button>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="portfolio-card style-two">
+            <div class="row isotope-grid">
+                <div class="col-12 col-md-6 isotope-item business">
+                    <div class="portfolio-card style-two ">
                         <div class="portfolio-image">
                             <img src="images/case-studies-home-2/Image.png" alt="" />
                         </div>
@@ -114,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 isotope-item financial marketing">
                     <div class="portfolio-card style-two">
                         <div class="portfolio-image">
                             <img src="images/case-studies-home-2/case-studies-2.png" alt="" />
@@ -128,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 mt-64">
+                <div class="col-12 col-md-6 mb-64 isotope-item managing">
                     <div class="portfolio-card style-two">
                         <div class="portfolio-image">
                             <img src="images/common/image-card-3.jpg" alt="" />
@@ -142,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 mt-64">
+                <div class="col-12 col-md-6 mb-64 isotope-item financial marketing">
                     <div class="portfolio-card style-two">
                         <div class="portfolio-image">
                             <img src="images/common/image-card-4.jpg" alt="" />
@@ -156,7 +144,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 mt-64">
+                <div class="col-12 col-md-6 mb-64 isotope-item  marketing">
                     <div class="portfolio-card style-two">
                         <div class="portfolio-image">
                             <img src="images/common/image-card-5.jpg" alt="" />
@@ -170,7 +158,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 mt-64">
+                <div class="col-12 col-md-6 mb-64 isotope-item financial managing">
                     <div class="portfolio-card style-two">
                         <div class="portfolio-image">
                             <img src="images/common/image-card-6.jpg" alt="" />
@@ -319,6 +307,7 @@
     <script src="js/jquery.meanmenu.min.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 
