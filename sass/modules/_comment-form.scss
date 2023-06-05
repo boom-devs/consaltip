@@ -3,6 +3,12 @@
 .post-comments-form {
   padding: 40px 49px;
   background: $icon-color;
+  @include sm {
+    margin-top: 24px;
+  }
+  @include lg {
+    padding: 25px 30px;
+  }
 }
 .post-comments-title {
   .sub-title {

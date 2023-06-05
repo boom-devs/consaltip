@@ -1,6 +1,23 @@
+// page-breadcrumb-sec
+.page-breadcrumb-sec {
+  .sketch {
+    background: url("../../images/title-sketch.png");
+    position: absolute;
+    top: 153px;
+    left: 11px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 169px;
+    height: 169px;
+    @include sm {
+      display: none;
+    }
+  }
+}
+
 // About Us Area
 .about-page-about-us-area {
-  padding: 145px 0;
+  padding: 120px 0;
 
   @include rmaxwd(991) {
     padding: 100px 0;
@@ -8,19 +25,62 @@
 }
 // Counter Area
 .about-page-counter-area {
-  padding: 145px 0;
+  padding: 120px 0 104px 0;
   background-repeat: no-repeat;
   background-position: center;
-  object-fit: cover;
+  background-size: cover;
+  position: relative;
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    @include gradient-color-counter;
+  }
+  .theme-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+  }
 
   @include rmaxwd(991) {
     padding: 100px 0;
   }
 }
 
+// Our service area
+.about-us-our-service-area {
+  padding: 120px 0;
+  position: relative;
+  .sketch {
+    background: url("../../images/sketch-color.png");
+    position: absolute;
+    left: 40px;
+    bottom: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 169px;
+    height: 169px;
+    @include sm {
+      display: none;
+    }
+    @include md {
+      display: none;
+    }
+    @include lg {
+      display: none;
+    }
+  }
+}
+
 // FAQ Area
 .about-page-faq-area {
-  padding: 145px 0;
+  padding: 120px 0;
+  background: $background;
+  @include sm {
+    padding: 100px 0;
+  }
 
   @include rmaxwd(991) {
     padding: 100px 0;
@@ -36,23 +96,135 @@
   }
 }
 
-// Timeline Area
-.about-page-timeline-area {
-  background-color: #f3f7fc;
-  padding: 145px 0;
-}
-
-// Testimonial Area
-.about-page-testimonial-area {
-  background-color: #f3f7fc;
-  padding: 145px 0;
-
-  @include rmaxwd(991) {
-    padding: 100px 0;
+//
+.about-container-fluid {
+  width: calc(100% + 60px);
+  overflow: hidden;
+  padding-right: 0;
+  @include sm {
+    padding: 0 12px;
+    width: 100%;
   }
 }
 
-// Client Logo
-.about-page-client-logo-area {
-  padding: 100px 0;
+// Timeline Area
+.about-page-portfolio-area {
+  background-color: $icon-color;
+  padding: 120px 0;
+}
+// Team-member area
+.about-page-team-area {
+  padding: 120px 0;
+}
+.about_team_member_container {
+  max-width: 1460px;
+  margin-left: 163px;
+  width: 100%;
+  @include sm {
+    margin-left: 0;
+  }
+  @include md {
+    margin-left: 0;
+  }
+  @include lg {
+    margin-left: 30px;
+    max-width: 980px;
+  }
+}
+.about_us_team_member {
+  position: relative;
+  .team-card-arrow-btn {
+    display: none !important;
+  }
+  .slick-list {
+    .slick-slide {
+      margin: 0 32px;
+      //border-radius: 20px;
+      //visibility: hidden;
+      //opacity: 0;
+      @include transition;
+
+      &.slick-active {
+        @include transition;
+        //visibility: visible;
+        //opacity: 1;
+      }
+      @include lg {
+        margin: 0 16px;
+      }
+    }
+  }
+  // Slick Nav Arrow Button
+  button.team-card-arrow-btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 99;
+    background-color: transparent;
+    border: 1px solid #828282;
+    cursor: pointer;
+    top: -164px;
+    overflow: hidden;
+    @include rmaxwd(991) {
+      top: unset;
+      bottom: -80px;
+    }
+
+    &.prev-btn {
+      right: 72px;
+
+      @include rmaxwd(767) {
+        right: unset;
+        left: 30px;
+      }
+    }
+    &.next-btn {
+      right: 0;
+      @include rmaxwd(767) {
+        right: 30px;
+        left: unset;
+      }
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $title-color;
+      font-size: 21px;
+      @include transition;
+    }
+    &:hover {
+      background: $brand;
+
+      i {
+        color: $title-color;
+        @include transition;
+      }
+    }
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 64px;
+    li {
+      width: 8px;
+      height: 8px;
+      button {
+        content-visibility: hidden;
+        padding: 4px;
+        border-radius: 50px;
+        background-color: #bdbdbd;
+      }
+      &.slick-active {
+        button {
+          background: $title-color;
+        }
+      }
+    }
+  }
 }

@@ -57,6 +57,7 @@ h2 {
   font-size: 57px;
   line-height: 68px;
   font-weight: 600;
+  letter-spacing: 0.02em;
 }
 h3 {
   font-size: 43px;
@@ -72,6 +73,7 @@ h5 {
   font-size: 24px;
   line-height: 34px;
   font-weight: 600;
+  letter-spacing: 0.02em;
 }
 h6 {
   font-size: 18px;
@@ -171,40 +173,21 @@ input:focus {
   align-items: center;
   justify-content: center;
   color: $title-color;
-  padding: 16px 24px;
+  padding: 16.5px 32px;
   text-align: center;
   border-radius: 4px;
   background: $brand;
   text-transform: capitalize;
   font-family: $body-font;
-  font-size: 16px;
-  line-height: 27px;
+  font-size: 18px;
+  line-height: 31px;
   font-weight: 400;
-  span {
-    text-transform: capitalize;
-    font-family: $body-font;
-    font-size: 16px;
-    line-height: 27px;
-    font-weight: 400;
-  }
+  position: relative;
+  z-index: 1;
 
   &:hover {
     background: #071c34;
     color: #fff;
     border-color: #071c34;
-  }
-}
-.under-line-wrapper {
-  position: relative;
-  .under-line {
-    background: url("../../images/under_line.png");
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1;
-    width: 100%;
-    height: 12px;
-    right: 0;
-    bottom: -12px;
   }
 }

@@ -1,14 +1,17 @@
 .page-breadcrumb-sec {
-  padding: 125px 0;
+  padding: 211px 0 212px 0;
   position: relative;
   z-index: 2;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  @include sm {
+    padding: 160px 5px;
+  }
 }
 
 .page-overlay {
-  @include gradient-color-skye;
+  @include gradient-color-hero;
   height: 100%;
   left: 0;
   position: absolute;
@@ -19,23 +22,25 @@
   opacity: 0.6;
 }
 
-.page-heading h1 {
-  font-family: $heading-font;
-  font-size: 72px;
-  text-align: center;
-  color: $white;
-  margin-bottom: 20px;
-  text-transform: capitalize;
-  line-height: 84px;
-  font-weight: 700;
-  margin: 0;
-  @include sm {
-    font-size: 42px;
-    line-height: 72px;
-  }
-  @include md {
-    font-size: 60px;
-    line-height: 72px;
+.page-heading {
+  position: relative;
+  h1 {
+    font-family: $heading-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 76px;
+    line-height: 91px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $white;
+    @include sm {
+      font-size: 38px;
+      line-height: 62px;
+    }
+    @include md {
+      font-size: 48px;
+      line-height: 62px;
+    }
   }
 }
 .breadcrumb-wrapper {
@@ -47,34 +52,43 @@
   ul {
     margin-bottom: 10px;
     padding-left: 0;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
     i {
       color: $white;
       font-size: 12px;
     }
     li {
-      display: inline-block;
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
       position: relative;
-      padding: 0px 14px;
+      i {
+        flex-shrink: 0;
+      }
 
       &.active {
-        a {
-          color: $orange-color;
+        a,
+        i {
+          color: $brand;
         }
       }
       a {
         font-family: $body-font;
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
         color: $white;
         text-transform: capitalize;
-        line-height: 54px;
+        line-height: 27px;
         font-weight: 400;
         margin-bottom: 0;
         @include transition;
 
         @media only screen and (min-width: 992px) {
-          font-size: 16px;
-          line-height: 54px;
+          font-size: 18px;
+          line-height: 31px;
         }
 
         &:hover {

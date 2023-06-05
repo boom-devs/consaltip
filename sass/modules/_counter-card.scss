@@ -1,10 +1,10 @@
 .counter-card {
-  padding: 72px 72px;
+  padding-top: 63px;
   z-index: 1;
   position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 60px;
+  grid-gap: 0 60px;
 
   @include sm {
     display: grid;
@@ -22,6 +22,7 @@
   }
 
   .counter-item {
+    padding: 72px 0;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -35,7 +36,6 @@
       width: 1px;
       height: 80px;
       background: $brand;
-      top: 24px;
       left: -30px;
     }
     &:first-child {
@@ -67,6 +67,9 @@
       font-size: 18px;
       line-height: 31px;
       font-weight: 400;
+    }
+    @include sm {
+      padding: 35px 0;
     }
   }
 }

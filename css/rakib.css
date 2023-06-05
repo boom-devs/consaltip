@@ -61,6 +61,7 @@ h2 {
   font-size: 57px;
   line-height: 68px;
   font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 h3 {
@@ -79,6 +80,7 @@ h5 {
   font-size: 24px;
   line-height: 34px;
   font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 h6 {
@@ -195,44 +197,23 @@ input:focus {
   align-items: center;
   justify-content: center;
   color: #080f10;
-  padding: 16px 24px;
+  padding: 16.5px 32px;
   text-align: center;
   border-radius: 4px;
   background: #e0f780;
   text-transform: capitalize;
   font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 27px;
+  font-size: 18px;
+  line-height: 31px;
   font-weight: 400;
-}
-.theme-btn span,
-.wp-block-loginout a span {
-  text-transform: capitalize;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 27px;
-  font-weight: 400;
+  position: relative;
+  z-index: 1;
 }
 .theme-btn:hover,
 .wp-block-loginout a:hover {
   background: #071c34;
   color: #fff;
   border-color: #071c34;
-}
-
-.under-line-wrapper {
-  position: relative;
-}
-.under-line-wrapper .under-line {
-  background: url("../../images/under_line.png");
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 1;
-  width: 100%;
-  height: 12px;
-  right: 0;
-  bottom: -12px;
 }
 
 .main-menu.style-two ul li ul {
@@ -549,11 +530,6 @@ input:focus {
 }
 
 /* custom slider CSS */
-.custom-container {
-  overflow: hidden;
-  padding-bottom: 10px;
-}
-
 .custom-slider-wrapper,
 .portfolio-slider {
   margin-top: 50px;
@@ -637,125 +613,6 @@ input:focus {
 
 /* Why choose us CSS(modern tecnology) */
 /* About-us CSS */
-.about-us {
-  background: #ffffff;
-  position: relative;
-  padding: 100px 0;
-}
-@media screen and (min-width: 1200px) {
-  .about-us {
-    padding: 100px 0 248px 0;
-  }
-}
-
-.image-wrapper {
-  position: relative;
-}
-.image-wrapper .main-img img {
-  width: 100%;
-  height: 100%;
-}
-@media screen and (min-width: 1200px) {
-  .image-wrapper .main-img {
-    border-radius: 14px;
-  }
-}
-.image-wrapper .topper-img {
-  display: none;
-}
-.image-wrapper .topper-img .video-btn {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  top: -25px;
-  left: -25px;
-  background: #4566d4;
-  z-index: 2;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.image-wrapper .topper-img .video-btn i {
-  font-size: 20px;
-  color: #ffffff;
-}
-.image-wrapper .topper-img .video-btn a {
-  width: 70px;
-  height: 70px;
-  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-  border-radius: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (min-width: 1200px) {
-  .image-wrapper .topper-img {
-    position: absolute;
-    bottom: -60px;
-    right: -70px;
-    z-index: 1;
-    display: block;
-  }
-}
-.image-wrapper.style-two {
-  position: relative;
-}
-.image-wrapper.style-two .main-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-  height: 562px;
-}
-@media screen and (min-width: 767px) {
-  .image-wrapper.style-two .main-img {
-    background: url("/images/about-us-main-2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
-.image-wrapper.style-two .topper-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.image-wrapper.style-two .topper-img img {
-  border-radius: 14px;
-}
-@media screen and (min-width: 767px) {
-  .image-wrapper.style-two .topper-img img {
-    border-radius: 50%;
-  }
-}
-.image-wrapper.style-two .topper-img .video-btn {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  top: 44%;
-  bottom: 50%;
-  left: 42%;
-  background: #4566d4;
-  z-index: 2;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.image-wrapper.style-two .topper-img .video-btn i {
-  font-size: 20px;
-  color: #ffffff;
-}
-
 /* Service-details counter style-three CSS */
 .counter-card.style-three {
   display: flex;
@@ -1221,6 +1078,7 @@ input:focus {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  transition: all 0.5s ease-out;
 }
 .icon-card .icon i {
   font-size: 55px;
@@ -1240,6 +1098,12 @@ input:focus {
   font-weight: 400;
   color: #575959;
   text-align: center;
+}
+.icon-card:hover .icon {
+  background: #033f47;
+}
+.icon-card:hover .icon i {
+  color: #ffffff;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .icon-card {
@@ -2813,23 +2677,16 @@ input:focus {
 }
 
 /* Service-page CSS */
-.service-page-service-list-area {
-  padding: 165px 0;
+.service-hero-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../images/about-home-1/Pattern.png");
 }
-.service-page-service-list-area .service-list-wrapper {
-  padding-right: 100px;
-  padding-top: 65px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .service-page-service-list-area .service-list-wrapper {
-    padding-right: 0;
-    padding-top: 0;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .service-page-service-list-area {
-    padding: 65px 0;
-  }
+
+.service_what_we_area {
+  background: #f8f8f1;
+  padding: 120px 0;
 }
 
 /* Pricing-page CSS */
