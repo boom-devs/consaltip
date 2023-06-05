@@ -1566,6 +1566,120 @@ input:focus {
   margin: 20px 0 30px 0;
 }
 
+.price-card-switch {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.price-card-switch span {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 31px;
+  color: #080f10;
+}
+.price-card-switch .switch {
+  position: relative;
+  display: inline-block;
+  width: 72px;
+  height: 36px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-switch .switch {
+    width: 50px;
+    height: 25px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-card-switch .switch {
+    width: 50px;
+    height: 25px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .price-card-switch .switch {
+    width: 50px;
+    height: 25px;
+  }
+}
+.price-card-switch .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.price-card-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+.price-card-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 29px;
+  width: 29px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-switch .slider:before {
+    bottom: 3px;
+    width: 20px;
+    height: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-card-switch .slider:before {
+    bottom: 3px;
+    width: 20px;
+    height: 20px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .price-card-switch .slider:before {
+    bottom: 3px;
+    width: 20px;
+    height: 20px;
+  }
+}
+.price-card-switch input:checked + .slider {
+  background-color: #033f47;
+}
+.price-card-switch input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+.price-card-switch input:checked + .slider:before {
+  transform: translateX(35px);
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-switch input:checked + .slider:before {
+    transform: translate(23px);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-card-switch input:checked + .slider:before {
+    transform: translate(23px);
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .price-card-switch input:checked + .slider:before {
+    transform: translate(23px);
+  }
+}
+.price-card-switch .slider.round {
+  border-radius: 34px;
+}
+.price-card-switch .slider.round:before {
+  border-radius: 50%;
+}
+
 .price-card-wrapper .price-card {
   background: #f8f8f1;
   padding: 64px 38px 44px 36px;
@@ -1619,11 +1733,13 @@ input:focus {
 .price-card-wrapper .price-card .list-wrapper .price-list-item .icon {
   width: 24px;
   height: 24px;
+  flex-shrink: 0;
   border-radius: 50px;
   background: #ffffff;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s ease-out;
 }
 .price-card-wrapper .price-card .list-wrapper .price-list-item .icon i {
   font-size: 14px;
@@ -1646,6 +1762,15 @@ input:focus {
   text-align: center;
   color: #080f10;
 }
+.price-card-wrapper .price-card .list-wrapper .price-btn a:hover {
+  background: #033f47;
+  color: #ffffff;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .price-card-wrapper .price-card {
+    padding: 45px 25px 35px 25px;
+  }
+}
 .price-card-wrapper .price-header {
   opacity: 0;
   overflow: hidden;
@@ -1656,8 +1781,14 @@ input:focus {
   background: #033f47;
   padding: 15px 0 12px 0;
 }
-.price-card-wrapper.active .price-card {
+.price-card-wrapper.active .price-card, .price-card-wrapper:hover .price-card {
   background: #e0f780;
+}
+.price-card-wrapper.active .list-wrapper .price-list-item .icon, .price-card-wrapper:hover .list-wrapper .price-list-item .icon {
+  background: #033f47;
+}
+.price-card-wrapper.active .list-wrapper .price-list-item .icon i, .price-card-wrapper:hover .list-wrapper .price-list-item .icon i {
+  color: #ffffff;
 }
 .price-card-wrapper.active .price-header {
   opacity: 1;
@@ -1668,12 +1799,6 @@ input:focus {
 }
 .price-card-wrapper.active .list-wrapper .price-btn a {
   background: #033f47;
-  color: #ffffff;
-}
-.price-card-wrapper.active .list-wrapper .price-list-item .icon {
-  background: #033f47;
-}
-.price-card-wrapper.active .list-wrapper .price-list-item .icon i {
   color: #ffffff;
 }
 
@@ -2677,9 +2802,194 @@ input:focus {
 }
 
 /* Service-page CSS */
-.service_what_we_area {
+.service-what-we-area {
   background: #f8f8f1;
   padding: 120px 0;
+  position: relative;
+}
+.service-what-we-area .sketch {
+  background: url("../../images/sketch-color.png");
+  position: absolute;
+  right: 32px;
+  bottom: 368px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 169px;
+  height: 169px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .service-what-we-area .sketch {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .service-what-we-area .sketch {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .service-what-we-area .sketch {
+    display: none;
+  }
+}
+.service-what-we-area .shape-one {
+  background: url("../../images/shape/Rectangle.png");
+  position: absolute;
+  left: 33px;
+  bottom: 609px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .service-what-we-area .shape-one {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .service-what-we-area .shape-one {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .service-what-we-area .shape-one {
+    display: none;
+  }
+}
+.service-what-we-area .shape-two {
+  background: url("../../images/shape/shape-2.png");
+  position: absolute;
+  right: 55px;
+  top: 201px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .service-what-we-area .shape-two {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .service-what-we-area .shape-two {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .service-what-we-area .shape-two {
+    display: none;
+  }
+}
+
+.image-card-section {
+  position: relative;
+}
+.image-card-section .sketch {
+  background: url("../../images/sketch-color.png");
+  position: absolute;
+  right: 94px;
+  bottom: 94px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 169px;
+  height: 169px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .image-card-section .sketch {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .image-card-section .sketch {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .image-card-section .sketch {
+    display: none;
+  }
+}
+
+.price-card-section {
+  position: relative;
+  padding: 120px 0;
+}
+.price-card-section .sketch {
+  background: url("../../images/sketch-color.png");
+  position: absolute;
+  left: 30px;
+  bottom: 201px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 169px;
+  height: 169px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-section .sketch {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-card-section .sketch {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .price-card-section .sketch {
+    display: none;
+  }
+}
+.price-card-section .shape-one {
+  background: url("../../images/shape/Rectangle.png");
+  position: absolute;
+  left: 42px;
+  bottom: 507px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-section .shape-one {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-card-section .shape-one {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .price-card-section .shape-one {
+    display: none;
+  }
+}
+.price-card-section .shape-two {
+  background: url("../../images/shape/shape-2.png");
+  position: absolute;
+  right: 55px;
+  top: 201px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-section .shape-two {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-card-section .shape-two {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .price-card-section .shape-two {
+    display: none;
+  }
 }
 
 /* Pricing-page CSS */

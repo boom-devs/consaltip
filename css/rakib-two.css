@@ -242,12 +242,20 @@ input:focus {
   margin-top: 64px;
 }
 
+.mt-48 {
+  margin-top: 48px;
+}
+
 .mt-36 {
   margin-top: 36px;
 }
 
 .mt-24 {
   margin-top: 24px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
 }
 
 .custom-container {
@@ -525,6 +533,20 @@ input:focus {
 }
 .image-card.style-two .content {
   padding-right: 30px;
+}
+.image-card.style-two .content .title {
+  font-size: 43px;
+  line-height: 53px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .image-card.style-two {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .image-card.style-two {
+    flex-direction: column-reverse;
+  }
 }
 
 .team-member-card.style-two .image {
