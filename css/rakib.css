@@ -2677,13 +2677,6 @@ input:focus {
 }
 
 /* Service-page CSS */
-.service-hero-overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-image: url("../../images/about-home-1/Pattern.png");
-}
-
 .service_what_we_area {
   background: #f8f8f1;
   padding: 120px 0;
