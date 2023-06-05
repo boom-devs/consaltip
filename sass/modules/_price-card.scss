@@ -1,3 +1,107 @@
+.price-card-switch {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    span {
+        font-family: $body-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 31px;
+        color: $title-color;
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 72px;
+        height: 36px;
+        @include sm {
+            width: 50px;
+            height: 25px;
+        }
+        @include md {
+            width: 50px;
+            height: 25px;
+        }
+        @include lg {
+            width: 50px;
+            height: 25px;
+        }
+    }
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 29px;
+        width: 29px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        @include sm {
+            bottom: 3px;
+            width: 20px;
+            height: 20px;
+        }
+        @include md {
+            bottom: 3px;
+            width: 20px;
+            height: 20px;
+        }
+        @include lg {
+            bottom: 3px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    input:checked + .slider {
+        background-color: $icon-color;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196f3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(35px);
+        -ms-transform: translateX(35px);
+        transform: translateX(35px);
+        @include sm {
+            transform: translate(23px);
+        }
+        @include md {
+            transform: translate(23px);
+        }
+        @include lg {
+            transform: translate(23px);
+        }
+    }
+
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+}
 .price-card-wrapper {
     .price-card {
         background: $background;
@@ -49,11 +153,13 @@
                 .icon {
                     width: 24px;
                     height: 24px;
+                    flex-shrink: 0;
                     border-radius: 50px;
                     background: $white;
                     display: inline-flex;
                     align-items: center;
                     justify-content: center;
+                    @include transition;
                     i {
                         font-size: 14px;
                         line-height: 16px;
@@ -75,8 +181,15 @@
                     line-height: 31px;
                     text-align: center;
                     color: $title-color;
+                    &:hover {
+                        background: $icon-color;
+                        color: $white;
+                    }
                 }
             }
+        }
+        @include lg {
+            padding: 45px 25px 35px 25px;
         }
     }
     .price-header {
@@ -89,10 +202,23 @@
         background: $icon-color;
         padding: 15px 0 12px 0;
     }
-    &.active {
+    &.active,
+    &:hover {
         .price-card {
             background: $brand;
         }
+        .list-wrapper {
+            .price-list-item {
+                .icon {
+                    background: $icon-color;
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    &.active {
         .price-header {
             opacity: 1;
             overflow: visible;
@@ -105,14 +231,6 @@
                 a {
                     background: $icon-color;
                     color: $white;
-                }
-            }
-            .price-list-item {
-                .icon {
-                    background: $icon-color;
-                    i {
-                        color: $white;
-                    }
                 }
             }
         }

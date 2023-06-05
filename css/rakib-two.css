@@ -242,12 +242,20 @@ input:focus {
   margin-top: 64px;
 }
 
+.mt-48 {
+  margin-top: 48px;
+}
+
 .mt-36 {
   margin-top: 36px;
 }
 
 .mt-24 {
   margin-top: 24px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
 }
 
 .custom-container {
@@ -526,6 +534,20 @@ input:focus {
 .image-card.style-two .content {
   padding-right: 30px;
 }
+.image-card.style-two .content .title {
+  font-size: 43px;
+  line-height: 53px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .image-card.style-two {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .image-card.style-two {
+    flex-direction: column-reverse;
+  }
+}
 
 .team-member-card.style-two .image {
   border-radius: 0 0 500px 500px;
@@ -657,4 +679,47 @@ input:focus {
 }
 .portfolio_card_wrapper button.info-card-arrow-btn {
   display: none !important;
+}
+
+.project-page-project-sec {
+  padding: 120px 0;
+  position: relative;
+}
+.project-page-project-sec .view-type ul {
+  display: inline-flex;
+  justify-content: end;
+  gap: 16px;
+}
+.project-page-project-sec .view-type ul li {
+  display: inline-block;
+}
+.project-page-project-sec .view-type ul li a {
+  padding: 16px 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+.project-page-project-sec .sketch {
+  background: url("../../images/sketch-color.png");
+  position: absolute;
+  left: 83px;
+  top: 84px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 169px;
+  height: 169px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-page-project-sec .sketch {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-page-project-sec .sketch {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .project-page-project-sec .sketch {
+    display: none;
+  }
 }/*# sourceMappingURL=rakib-two.css.map */

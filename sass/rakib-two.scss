@@ -27,11 +27,17 @@
 .mt-64 {
     margin-top: 64px;
 }
+.mt-48 {
+    margin-top: 48px;
+}
 .mt-36 {
     margin-top: 36px;
 }
 .mt-24 {
     margin-top: 24px;
+}
+.mb-48 {
+    margin-bottom: 48px;
 }
 
 .custom-container {
@@ -118,3 +124,6 @@
 
 // Portfolio-card-slider-control
 @import "modules/portfolio-card-slider-control";
+
+// Project-page
+@import "pages/project-page";
