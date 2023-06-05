@@ -1,0 +1,38 @@
+.project-page-project-sec {
+    padding: 120px 0;
+    position: relative;
+    .view-type {
+        ul {
+            display: inline-flex;
+            justify-content: end;
+            gap: 16px;
+            li {
+                display: inline-block;
+                a {
+                    padding: 16px 24px;
+                    border: 1px solid #e0e0e0;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+    .sketch {
+        background: url("../../images/sketch-color.png");
+        position: absolute;
+        left: 83px;
+        top: 84px;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 169px;
+        height: 169px;
+        @include sm {
+            display: none;
+        }
+        @include md {
+            display: none;
+        }
+        @include lg {
+            display: none;
+        }
+    }
+}
