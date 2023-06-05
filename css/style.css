@@ -6337,8 +6337,6 @@ button.testimonial-arrow-btn:hover i {
   right: 0;
   top: 0;
   width: 100%;
-  z-index: -1;
-  opacity: 0.6;
 }
 
 .page-heading {
@@ -8885,13 +8883,14 @@ ul.children {
   margin-top: 64px;
 }
 .about_us_team_member .slick-dots li {
-  width: 8px;
-  height: 8px;
+  line-height: 0;
 }
 .about_us_team_member .slick-dots li button {
-  content-visibility: hidden;
-  padding: 4px;
+  width: 8px;
+  height: 8px;
+  font-size: 0;
   border-radius: 50px;
+  padding: unset;
   background-color: #bdbdbd;
 }
 .about_us_team_member .slick-dots li.slick-active button {
