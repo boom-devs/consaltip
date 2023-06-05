@@ -318,6 +318,72 @@ input:focus {
   z-index: 3;
 }
 
+.faq-area-global {
+  background-color: #f8f8f1;
+  padding: 120px 0;
+  position: relative;
+}
+.faq-area-global .faq-sketch {
+  background: url("../../images/sketch-color.png");
+  position: absolute;
+  bottom: 201px;
+  left: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 169px;
+  height: 169px;
+}
+.faq-area-global .shape-one {
+  background: url("../../images/shape/Rectangle.png");
+  position: absolute;
+  left: 42px;
+  bottom: 507px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .faq-area-global .shape-one {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .faq-area-global .shape-one {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .faq-area-global .shape-one {
+    display: none;
+  }
+}
+.faq-area-global .shape-two {
+  background: url("../../images/shape/shape-2.png");
+  position: absolute;
+  right: 55px;
+  top: 201px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .faq-area-global .shape-two {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .faq-area-global .shape-two {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .faq-area-global .shape-two {
+    display: none;
+  }
+}
+
 .portfolio-card {
   display: flex;
   flex-direction: column;
@@ -685,18 +751,40 @@ input:focus {
   padding: 120px 0;
   position: relative;
 }
-.project-page-project-sec .view-type ul {
-  display: inline-flex;
+.project-page-project-sec .project-view-type ul {
+  display: flex;
   justify-content: end;
   gap: 16px;
 }
-.project-page-project-sec .view-type ul li {
-  display: inline-block;
+.project-page-project-sec .project-view-type ul li {
+  display: inline-flex;
+  align-items: center;
 }
-.project-page-project-sec .view-type ul li a {
+.project-page-project-sec .project-view-type ul li a {
   padding: 16px 24px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #080f10;
+}
+.project-page-project-sec .project-view-type ul li a:hover {
+  background-color: #080f10;
+  color: #ffffff;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-page-project-sec .project-view-type ul li a {
+    padding: 12px 18px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-page-project-sec .project-view-type ul {
+    flex-wrap: wrap;
+  }
 }
 .project-page-project-sec .sketch {
   background: url("../../images/sketch-color.png");
