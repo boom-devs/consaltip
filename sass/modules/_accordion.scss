@@ -87,5 +87,8 @@
     @include sm {
       padding: 20px 30px;
     }
+    @include lg {
+      padding: 20px 28px;
+    }
   }
 }

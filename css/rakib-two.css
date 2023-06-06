@@ -234,10 +234,6 @@ input:focus {
   padding-left: 312px;
 }
 
-.mb-64 {
-  margin-bottom: 64px;
-}
-
 .mt-64 {
   margin-top: 64px;
 }
@@ -254,8 +250,16 @@ input:focus {
   margin-top: 24px;
 }
 
+.mb-64 {
+  margin-bottom: 64px;
+}
+
 .mb-48 {
   margin-bottom: 48px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
 }
 
 .custom-container {
@@ -314,7 +318,7 @@ input:focus {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("../../images/about-home-1/Pattern.png");
+  background-image: url("../../images/Pattern.png");
   z-index: 3;
 }
 
@@ -381,6 +385,11 @@ input:focus {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .faq-area-global .shape-two {
     display: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .faq-area-global {
+    padding: 100px 0;
   }
 }
 
@@ -593,6 +602,7 @@ input:focus {
     flex-direction: column-reverse;
   }
 }
+
 .image-card.style-two {
   flex-direction: row-reverse;
   gap: 64px;
@@ -611,6 +621,38 @@ input:focus {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .image-card.style-two {
+    flex-direction: column-reverse;
+  }
+}
+
+.image-card.style-three {
+  flex-direction: row-reverse;
+  gap: 64px;
+}
+.image-card.style-three .content {
+  padding-right: 30px;
+}
+.image-card.style-three .content .title {
+  font-size: 43px;
+  line-height: 52px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .image-card.style-three .content .title {
+    font-size: 38px;
+  }
+}
+.image-card.style-three .content .desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .image-card.style-three {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .image-card.style-three {
     flex-direction: column-reverse;
   }
 }
@@ -806,4 +848,29 @@ input:focus {
   .project-page-project-sec .sketch {
     display: none;
   }
+}
+
+.service-details-offer .desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 31px;
+  color: #080f10;
+  margin-top: 16px;
+}
+
+.service-details-about {
+  padding: 120px 0;
+  background-color: #033f47;
+  position: relative;
+}
+.service-details-about .service-details-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../../images/Pattern.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }/*# sourceMappingURL=rakib-two.css.map */

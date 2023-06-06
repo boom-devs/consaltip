@@ -5604,6 +5604,11 @@ button.testimonial-arrow-btn:hover i {
     padding: 20px 30px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .accordion-wrapper .accordion-list-item {
+    padding: 20px 28px;
+  }
+}
 
 .client-logo-wrapper {
   padding: 10px 0;
@@ -7729,6 +7734,7 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .post-comments-form {
     margin-top: 24px;
+    padding: 40px 30px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
