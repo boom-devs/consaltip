@@ -2687,43 +2687,6 @@ input:focus {
   background: linear-gradient(135deg, rgba(0, 91, 172, 0.83) 0%, rgb(30, 174, 152) 100%);
 }
 
-/* Project-details CSS */
-.project-info-widget {
-  background: #e0f780;
-  padding: 60px 48px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-.project-info-widget .info-item {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.project-info-widget .info-item p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 34px;
-  color: #575959;
-}
-
-.list-item {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.list-item li {
-  display: inline-flex;
-  gap: 15px;
-}
-.list-item li i {
-  color: #ff6731;
-  line-height: 30px;
-}
-.list-item li p {
-  margin: 0;
-}
-
 /* Client-logo CSS */
 .client-logo-wrapper {
   gap: 24px 49px;

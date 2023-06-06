@@ -33,11 +33,17 @@
 .mt-24 {
     margin-top: 24px;
 }
+.mt-12 {
+    margin-top: 12px;
+}
 .mb-64 {
     margin-bottom: 64px;
 }
 .mb-48 {
     margin-bottom: 48px;
+}
+.mb-24 {
+    margin-bottom: 24px;
 }
 .mb-16 {
     margin-bottom: 16px;
@@ -192,6 +198,9 @@
 
 // Project-page
 @import "pages/project-page";
+
+/* Project-details CSS */
+@import "pages/project-details";
 
 // Service-details-page
 @import "pages/service-details";

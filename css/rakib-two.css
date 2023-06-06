@@ -250,12 +250,20 @@ input:focus {
   margin-top: 24px;
 }
 
+.mt-12 {
+  margin-top: 12px;
+}
+
 .mb-64 {
   margin-bottom: 64px;
 }
 
 .mb-48 {
   margin-bottom: 48px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
 }
 
 .mb-16 {
@@ -848,6 +856,167 @@ input:focus {
   .project-page-project-sec .sketch {
     display: none;
   }
+}
+
+/* Project-details CSS */
+.project-details-info {
+  padding-top: 120px;
+  background: #f8f8f1;
+}
+
+.project-info-widget {
+  background: #e0f780;
+  padding: 60px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+}
+.project-info-widget .project-info-sketch {
+  position: absolute;
+  width: 109px;
+  height: 109px;
+  top: 0;
+  left: 0;
+  transform: translate(-72%, -72%);
+  background-image: url("../../images/image-card-sketch.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.project-info-widget .info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.project-info-widget .info-item p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #575959;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.list-item li {
+  display: inline-flex;
+  gap: 15px;
+}
+.list-item li i {
+  color: #ff6731;
+  line-height: 30px;
+}
+.list-item li p {
+  margin: 0;
+}
+
+.project-banner {
+  padding: 29px;
+  border-left: 5px solid #033f47;
+}
+.project-banner p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #080f10;
+}
+.project-banner.style-two {
+  padding: 5px;
+}
+.project-banner.style-two p {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.project-details-gallery {
+  margin-top: 117px;
+}
+
+.color-card-section {
+  margin-top: 24px;
+}
+.color-card-section .color-card-one {
+  height: 250px;
+  background-color: #000;
+}
+.color-card-section .color-card-two {
+  height: 250px;
+  background-color: #e0f780;
+}
+.color-card-section .color-card-three {
+  height: 250px;
+  background-color: #033f47;
+}
+.color-card-section .color-card-four {
+  height: 250px;
+  background-color: #f8f8f1;
+}
+
+.project-text-banner {
+  padding: 0 76px;
+}
+.project-text-banner p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+  color: #080f10;
+}
+
+.video-banner {
+  margin-top: 120px;
+}
+
+.number-card-wrapper .number-card {
+  padding: 76px 0 77px 0;
+  background-color: #033f47;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.number-card-wrapper .number-card h4 {
+  color: #ffffff;
+}
+.number-card-wrapper .number-card p {
+  font-size: 18px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.project-slider-wrapper {
+  height: 700px;
+}
+.project-slider-wrapper .image-wrapper {
+  height: 100%;
+}
+.project-slider-wrapper .image-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.project-slider-wrapper .slick-list {
+  height: 100%;
+  padding: 0 !important;
+}
+.project-slider-wrapper .slick-track {
+  height: 100%;
+}
+.project-slider-wrapper .slick-center {
+  width: 612px !important;
+}
+.project-slider-wrapper .slick-slide {
+  margin: 0 12px;
+  height: 100%;
+  width: 306px;
+}
+.project-slider-wrapper button {
+  display: none !important;
 }
 
 .service-details-offer .desc {
