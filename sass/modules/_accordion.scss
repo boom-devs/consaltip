@@ -2,12 +2,27 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  position: relative;
   .accordion-list-item {
     background: $white;
-    padding: 39px 0;
     position: relative;
+    padding: 39px 40px;
+    cursor: pointer;
     &.open {
+      &:before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #e0e0e0;
+        position: absolute;
+        top: 45%;
+        left: 0;
+        @include sm {
+          top: 96px;
+        }
+        @include md {
+          top: 86px;
+        }
+      }
       .accordion-item-body {
         display: block;
       }
@@ -26,7 +41,6 @@
       gap: 32px;
       cursor: pointer;
       flex-direction: row;
-      padding: 0 40px;
       position: relative;
 
       .accordion-title {
@@ -65,41 +79,16 @@
           font-family: $iconmoon;
         }
       }
-      @include sm {
-        padding: 0 20px;
-      }
-      @include lg {
-        padding: 0 30px;
-      }
     }
     .accordion-item-body {
       color: $text-color;
-      padding: 16px 40px 0 40px;
-      border-top: 1px solid #e0e0e0;
-      margin-top: 16px;
-      @include sm {
-        padding: 16px 20px 0 20px;
-      }
-      @include lg {
-        padding: 16px 20px 0 30px;
-      }
+      margin-top: 32px;
     }
     @include sm {
-      padding: 28px 0;
+      padding: 20px 30px;
     }
     @include lg {
-      padding: 28px 0;
+      padding: 20px 28px;
     }
-  }
-  .faq-sketch {
-    background: url("../../images/sketch-color.png");
-    position: absolute;
-    top: 50%;
-    left: -20%;
-    transform: translate(-50%, -50%);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
   }
 }

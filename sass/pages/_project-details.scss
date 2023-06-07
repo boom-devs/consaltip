@@ -1,0 +1,181 @@
+.project-details-info {
+    padding-top: 120px;
+    background: $background;
+}
+.project-info-widget-wrapper {
+    padding-right: 200px;
+    @include sm {
+        padding-right: 0;
+    }
+    @include md {
+        padding-right: 0;
+    }
+    .project-info-widget {
+        background: $brand;
+        padding: 60px 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        position: relative;
+        .project-info-sketch {
+            position: absolute;
+            width: 109px;
+            height: 109px;
+            top: 0;
+            left: 0;
+            transform: translate(-72%, -72%);
+            background-image: url("../../images/image-card-sketch.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            @include sm {
+                display: none;
+            }
+            @include md {
+                display: none;
+            }
+        }
+        .info-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 34px;
+                color: $text-color;
+            }
+        }
+    }
+}
+// .list-item {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 8px;
+//     li {
+//         display: inline-flex;
+//         gap: 15px;
+//         i {
+//             color: $orange-color;
+//             line-height: 30px;
+//         }
+//         p {
+//             margin: 0;
+//         }
+//     }
+// }
+
+.project-banner {
+    padding: 29px;
+    border-left: 5px solid $icon-color;
+    p {
+        font-family: $heading-font;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.02em;
+        color: $title-color;
+    }
+    &.style-two {
+        padding: 5px;
+        p {
+            font-size: 24px;
+            line-height: 34px;
+        }
+    }
+}
+.project-details-gallery {
+    margin-top: 117px;
+}
+.color-card-section {
+    margin-top: 24px;
+    .color-card-one {
+        height: 250px;
+        background-color: #000;
+    }
+    .color-card-two {
+        height: 250px;
+        background-color: $brand;
+    }
+    .color-card-three {
+        height: 250px;
+        background-color: $icon-color;
+    }
+    .color-card-four {
+        height: 250px;
+        background-color: $background;
+    }
+}
+.project-text-banner {
+    padding: 0 76px;
+    p {
+        font-family: $heading-font;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 42px;
+        letter-spacing: 0.02em;
+        color: $title-color;
+    }
+    @include sm {
+        padding: 0 20px;
+    }
+    @include md {
+        padding: 0 20px;
+    }
+}
+.video-banner {
+    margin-top: 120px;
+}
+.number-card-wrapper {
+    .number-card {
+        padding: 76px 0 77px 0;
+        background-color: $icon-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        h4 {
+            color: $white;
+        }
+        p {
+            font-size: 18px;
+            line-height: 31px;
+            color: $white;
+        }
+    }
+}
+
+.project-slider-wrapper {
+    height: 700px;
+    .image-wrapper {
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .slick-list {
+        height: 100%;
+        padding: 0 !important;
+    }
+    .slick-track {
+        height: 100%;
+    }
+    .slick-center {
+        width: 612px !important;
+        @include sm {
+            width: 370px !important;
+        }
+    }
+    .slick-slide {
+        margin: 0 12px;
+        height: 100%;
+        width: 306px;
+        @include md {
+            width: 220px;
+        }
+    }
+    button {
+        display: none !important;
+    }
+}

@@ -21,9 +21,6 @@
     padding-left: 312px;
 }
 
-.mb-64 {
-    margin-bottom: 64px;
-}
 .mt-64 {
     margin-top: 64px;
 }
@@ -36,8 +33,20 @@
 .mt-24 {
     margin-top: 24px;
 }
+.mt-12 {
+    margin-top: 12px;
+}
+.mb-64 {
+    margin-bottom: 64px;
+}
 .mb-48 {
     margin-bottom: 48px;
+}
+.mb-24 {
+    margin-bottom: 24px;
+}
+.mb-16 {
+    margin-bottom: 16px;
 }
 
 .custom-container {
@@ -97,8 +106,64 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url("../../images/about-home-1/Pattern.png");
+    background-image: url("../../images/Pattern.png");
     z-index: 3;
+}
+.faq-area-global {
+    background-color: $background;
+    padding: 120px 0;
+    position: relative;
+    .faq-sketch {
+        background: url("../../images/sketch-color.png");
+        position: absolute;
+        bottom: 201px;
+        left: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 169px;
+        height: 169px;
+    }
+    .shape-one {
+        background: url("../../images/shape/Rectangle.png");
+        position: absolute;
+        left: 42px;
+        bottom: 507px;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        @include sm {
+            display: none;
+        }
+        @include md {
+            display: none;
+        }
+        @include lg {
+            display: none;
+        }
+    }
+    .shape-two {
+        background: url("../../images/shape/shape-2.png");
+        position: absolute;
+        right: 55px;
+        top: 201px;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        @include sm {
+            display: none;
+        }
+        @include md {
+            display: none;
+        }
+        @include lg {
+            display: none;
+        }
+    }
+    @include sm {
+        padding: 100px 0;
+    }
 }
 
 // Portfolio-card
@@ -108,7 +173,13 @@
 @import "modules/portfolio-two";
 
 // Image-card
-@import "modules/image-card";
+@import "modules/image-card/image-card";
+
+// Image-card style-two
+@import "modules/image-card/image-card-two";
+
+// Image-card style-three
+@import "modules/image-card/image-card-three";
 
 // team-member-card style-two
 @import "modules/team-member-two";
@@ -127,3 +198,12 @@
 
 // Project-page
 @import "pages/project-page";
+
+/* Project-details CSS */
+@import "pages/project-details";
+
+// Service-details-page
+@import "pages/service-details";
+
+// Contact-page
+@import "pages/contact-page";

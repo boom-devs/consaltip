@@ -1,0 +1,27 @@
+.service-details-offer {
+    .title {
+    }
+    .desc {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 31px;
+        color: $title-color;
+        margin-top: 16px;
+    }
+}
+.service-details-about {
+    padding: 120px 0;
+    background-color: #033f47;
+    position: relative;
+    .service-details-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url("../../images/Pattern.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}

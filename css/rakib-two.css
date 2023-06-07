@@ -234,10 +234,6 @@ input:focus {
   padding-left: 312px;
 }
 
-.mb-64 {
-  margin-bottom: 64px;
-}
-
 .mt-64 {
   margin-top: 64px;
 }
@@ -254,8 +250,24 @@ input:focus {
   margin-top: 24px;
 }
 
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
 .mb-48 {
   margin-bottom: 48px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
 }
 
 .custom-container {
@@ -314,8 +326,79 @@ input:focus {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("../../images/about-home-1/Pattern.png");
+  background-image: url("../../images/Pattern.png");
   z-index: 3;
+}
+
+.faq-area-global {
+  background-color: #f8f8f1;
+  padding: 120px 0;
+  position: relative;
+}
+.faq-area-global .faq-sketch {
+  background: url("../../images/sketch-color.png");
+  position: absolute;
+  bottom: 201px;
+  left: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 169px;
+  height: 169px;
+}
+.faq-area-global .shape-one {
+  background: url("../../images/shape/Rectangle.png");
+  position: absolute;
+  left: 42px;
+  bottom: 507px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .faq-area-global .shape-one {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .faq-area-global .shape-one {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .faq-area-global .shape-one {
+    display: none;
+  }
+}
+.faq-area-global .shape-two {
+  background: url("../../images/shape/shape-2.png");
+  position: absolute;
+  right: 55px;
+  top: 201px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .faq-area-global .shape-two {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .faq-area-global .shape-two {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .faq-area-global .shape-two {
+    display: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .faq-area-global {
+    padding: 100px 0;
+  }
 }
 
 .portfolio-card {
@@ -527,6 +610,7 @@ input:focus {
     flex-direction: column-reverse;
   }
 }
+
 .image-card.style-two {
   flex-direction: row-reverse;
   gap: 64px;
@@ -545,6 +629,38 @@ input:focus {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .image-card.style-two {
+    flex-direction: column-reverse;
+  }
+}
+
+.image-card.style-three {
+  flex-direction: row-reverse;
+  gap: 64px;
+}
+.image-card.style-three .content {
+  padding-right: 30px;
+}
+.image-card.style-three .content .title {
+  font-size: 43px;
+  line-height: 52px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .image-card.style-three .content .title {
+    font-size: 38px;
+  }
+}
+.image-card.style-three .content .desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .image-card.style-three {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .image-card.style-three {
     flex-direction: column-reverse;
   }
 }
@@ -685,18 +801,36 @@ input:focus {
   padding: 120px 0;
   position: relative;
 }
-.project-page-project-sec .view-type ul {
-  display: inline-flex;
+.project-page-project-sec .project-view-type {
+  display: flex;
   justify-content: end;
   gap: 16px;
 }
-.project-page-project-sec .view-type ul li {
-  display: inline-block;
-}
-.project-page-project-sec .view-type ul li a {
+.project-page-project-sec .project-view-type button {
   padding: 16px 24px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #080f10;
+}
+.project-page-project-sec .project-view-type button:hover {
+  background-color: #080f10;
+  color: #ffffff;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-page-project-sec .project-view-type button {
+    padding: 12px 18px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-page-project-sec .project-view-type button {
+    flex-wrap: wrap;
+  }
 }
 .project-page-project-sec .sketch {
   background: url("../../images/sketch-color.png");
@@ -722,4 +856,257 @@ input:focus {
   .project-page-project-sec .sketch {
     display: none;
   }
+}
+
+/* Project-details CSS */
+.project-details-info {
+  padding-top: 120px;
+  background: #f8f8f1;
+}
+
+.project-info-widget-wrapper {
+  padding-right: 200px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-info-widget-wrapper {
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-info-widget-wrapper {
+    padding-right: 0;
+  }
+}
+.project-info-widget-wrapper .project-info-widget {
+  background: #e0f780;
+  padding: 60px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+}
+.project-info-widget-wrapper .project-info-widget .project-info-sketch {
+  position: absolute;
+  width: 109px;
+  height: 109px;
+  top: 0;
+  left: 0;
+  transform: translate(-72%, -72%);
+  background-image: url("../../images/image-card-sketch.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-info-widget-wrapper .project-info-widget .project-info-sketch {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-info-widget-wrapper .project-info-widget .project-info-sketch {
+    display: none;
+  }
+}
+.project-info-widget-wrapper .project-info-widget .info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.project-info-widget-wrapper .project-info-widget .info-item p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #575959;
+}
+
+.project-banner {
+  padding: 29px;
+  border-left: 5px solid #033f47;
+}
+.project-banner p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #080f10;
+}
+.project-banner.style-two {
+  padding: 5px;
+}
+.project-banner.style-two p {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.project-details-gallery {
+  margin-top: 117px;
+}
+
+.color-card-section {
+  margin-top: 24px;
+}
+.color-card-section .color-card-one {
+  height: 250px;
+  background-color: #000;
+}
+.color-card-section .color-card-two {
+  height: 250px;
+  background-color: #e0f780;
+}
+.color-card-section .color-card-three {
+  height: 250px;
+  background-color: #033f47;
+}
+.color-card-section .color-card-four {
+  height: 250px;
+  background-color: #f8f8f1;
+}
+
+.project-text-banner {
+  padding: 0 76px;
+}
+.project-text-banner p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+  color: #080f10;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-text-banner {
+    padding: 0 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-text-banner {
+    padding: 0 20px;
+  }
+}
+
+.video-banner {
+  margin-top: 120px;
+}
+
+.number-card-wrapper .number-card {
+  padding: 76px 0 77px 0;
+  background-color: #033f47;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.number-card-wrapper .number-card h4 {
+  color: #ffffff;
+}
+.number-card-wrapper .number-card p {
+  font-size: 18px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.project-slider-wrapper {
+  height: 700px;
+}
+.project-slider-wrapper .image-wrapper {
+  height: 100%;
+}
+.project-slider-wrapper .image-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.project-slider-wrapper .slick-list {
+  height: 100%;
+  padding: 0 !important;
+}
+.project-slider-wrapper .slick-track {
+  height: 100%;
+}
+.project-slider-wrapper .slick-center {
+  width: 612px !important;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-slider-wrapper .slick-center {
+    width: 370px !important;
+  }
+}
+.project-slider-wrapper .slick-slide {
+  margin: 0 12px;
+  height: 100%;
+  width: 306px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-slider-wrapper .slick-slide {
+    width: 220px;
+  }
+}
+.project-slider-wrapper button {
+  display: none !important;
+}
+
+.service-details-offer .desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 31px;
+  color: #080f10;
+  margin-top: 16px;
+}
+
+.service-details-about {
+  padding: 120px 0;
+  background-color: #033f47;
+  position: relative;
+}
+.service-details-about .service-details-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../../images/Pattern.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.project-info-sketch {
+  position: absolute;
+  width: 109px;
+  height: 109px;
+  top: 0;
+  left: 0;
+  transform: translate(-72%, -72%);
+  background-image: url("../../images/image-card-sketch.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-info-sketch {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-info-sketch {
+    display: none;
+  }
+}
+
+.contackt-faq-btn-wrapper {
+  display: flex;
+  align-items: center;
+}
+.contackt-faq-btn-wrapper .contact-faq-btn {
+  padding: 16px 24px;
+  border-radius: 4px;
+  border: 1px solid #575959;
+}
+.contackt-faq-btn-wrapper .contact-faq-btn span {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: #080f10;
 }/*# sourceMappingURL=rakib-two.css.map */
