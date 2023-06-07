@@ -40,4 +40,13 @@
     @include sm {
         gap: 10px;
     }
+    &.style-two {
+        .icon {
+            width: 24px;
+            height: 24px;
+            i {
+                font-size: 12px;
+            }
+        }
+    }
 }

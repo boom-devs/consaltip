@@ -2746,6 +2746,13 @@ input:focus {
     gap: 10px;
   }
 }
+.list-item.style-two .icon {
+  width: 24px;
+  height: 24px;
+}
+.list-item.style-two .icon i {
+  font-size: 12px;
+}
 
 /* Team-member-page CSS */
 .team-space {

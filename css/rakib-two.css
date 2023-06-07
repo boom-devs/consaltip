@@ -918,23 +918,6 @@ input:focus {
   color: #575959;
 }
 
-.list-item {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.list-item li {
-  display: inline-flex;
-  gap: 15px;
-}
-.list-item li i {
-  color: #ff6731;
-  line-height: 30px;
-}
-.list-item li p {
-  margin: 0;
-}
-
 .project-banner {
   padding: 29px;
   border-left: 5px solid #033f47;
@@ -1085,4 +1068,45 @@ input:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.project-info-sketch {
+  position: absolute;
+  width: 109px;
+  height: 109px;
+  top: 0;
+  left: 0;
+  transform: translate(-72%, -72%);
+  background-image: url("../../images/image-card-sketch.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-info-sketch {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-info-sketch {
+    display: none;
+  }
+}
+
+.contackt-faq-btn-wrapper {
+  display: flex;
+  align-items: center;
+}
+.contackt-faq-btn-wrapper .contact-faq-btn {
+  padding: 16px 24px;
+  border-radius: 4px;
+  border: 1px solid #575959;
+}
+.contackt-faq-btn-wrapper .contact-faq-btn span {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: #080f10;
 }/*# sourceMappingURL=rakib-two.css.map */

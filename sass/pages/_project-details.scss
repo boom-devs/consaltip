@@ -47,22 +47,22 @@
         }
     }
 }
-.list-item {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    li {
-        display: inline-flex;
-        gap: 15px;
-        i {
-            color: $orange-color;
-            line-height: 30px;
-        }
-        p {
-            margin: 0;
-        }
-    }
-}
+// .list-item {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 8px;
+//     li {
+//         display: inline-flex;
+//         gap: 15px;
+//         i {
+//             color: $orange-color;
+//             line-height: 30px;
+//         }
+//         p {
+//             margin: 0;
+//         }
+//     }
+// }
 
 .project-banner {
     padding: 29px;
