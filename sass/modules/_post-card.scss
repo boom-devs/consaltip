@@ -1,7 +1,7 @@
 // Blog Details Page
 .blog-area {
   ol,
-  ul{
+  ul {
     padding-left: 20px;
 
     li {
@@ -52,10 +52,10 @@
   border: 1px solid $gray-300;
 
   .post-content-wrapper {
-    padding: 45px;
+    padding: 40px 32px;
 
     .read-more {
-      margin-top: 30px;
+      margin-top: 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -103,13 +103,7 @@
   }
 
   .post-title {
-    font-size: 36px;
-    line-height: 54px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-transform: capitalize;
-
-    @include sm{
+    @include sm {
       font-size: 28px;
       line-height: 42px;
     }
@@ -126,14 +120,13 @@
     h3,
     h4,
     h5,
-    h6{
+    h6 {
       margin-bottom: 10px;
     }
 
     p {
       margin-bottom: unset;
     }
-
   }
 
   .single-post-meta {
@@ -214,6 +207,11 @@
   // Post Image
   .post-thumbnail {
     position: relative;
+    a {
+      img {
+        width: 100%;
+      }
+    }
 
     .popup-video-wrapper {
       position: absolute;
@@ -227,7 +225,7 @@
         width: 70px;
         height: 70px;
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         border-radius: 50%;
         background-size: cover;
         background-repeat: no-repeat;
@@ -250,9 +248,7 @@
           animation: none;
         }
       }
-
     }
-
   }
   // Post Gallery Slick Button
   button.post-gallery-btn {
@@ -265,7 +261,7 @@
     background-color: #ffffff;
     cursor: pointer;
     top: 50%;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
     overflow: hidden;
 
     &.prev-btn {
@@ -274,7 +270,7 @@
     &.next-btn {
       right: 30px;
     }
-    i{
+    i {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -283,11 +279,11 @@
       font-size: 17px;
       @include transition;
     }
-    &:hover{
+    &:hover {
       @include transition;
       background-color: $primary-color;
 
-      i{
+      i {
         color: $white;
         @include transition;
       }
@@ -305,7 +301,7 @@
     display: flex;
     align-items: center;
     gap: 32px;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
     flex-wrap: wrap;
 
     @include sm {
@@ -314,17 +310,24 @@
       width: 100%;
       align-items: flex-start;
     }
+    .post-type {
+      background-color: $brand;
+      border-radius: 4px;
+      color: $title-color;
+    }
     span {
-      font-size: 18px;
+      font-size: 16px;
+      line-height: 27px;
       font-weight: 400;
       color: $text-color;
       text-transform: capitalize;
       display: flex;
       align-items: center;
       gap: 10px;
+      padding: 4px 16px;
 
       i {
-        color: $sky-color;
+        color: $title-color;
         font-size: 18px;
       }
       a {
@@ -341,7 +344,6 @@
       }
     }
   }
-
 }
 
 // Author
@@ -429,7 +431,6 @@
   }
 }
 
-
 // Next Prev Post
 .blog-details-border {
   margin-top: 40px;
@@ -448,7 +449,7 @@
   color: #ff5b5b;
 }
 .bakix-navigation span a:hover {
-  color: #FE4536;
+  color: #fe4536;
 }
 .bakix-navigation h4 {
   font-size: 21px;
@@ -457,5 +458,5 @@
 }
 
 .bakix-navigation h4 a:hover {
-  color: #FE4536;
+  color: #fe4536;
 }
