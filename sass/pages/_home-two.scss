@@ -42,7 +42,46 @@
 }
 
 // client-logo wrapper
-.client-wrapper {
+.home-two-client-logo-area {
   background: $background;
-  padding: 100px 0;
+  padding: 120px 0;
+  position: relative;
+  .sketch {
+    position: absolute;
+    width: 188px;
+    height: 188px;
+    background-image: url("../../images/sketch-color.png");
+    bottom: 18px;
+    right: 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .home-two-client-logo-slider {
+    button {
+      // display: none !important;
+    }
+    .slick-dots {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-top: 64px;
+      li {
+        line-height: 0;
+        button {
+          width: 14px;
+          height: 14px;
+          font-size: 0;
+          border-radius: 50px;
+          padding: unset;
+          background-color: #bdbdbd;
+        }
+        &.slick-active {
+          button {
+            background: $title-color;
+          }
+        }
+      }
+    }
+  }
 }

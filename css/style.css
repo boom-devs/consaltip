@@ -5610,8 +5610,8 @@ button.testimonial-arrow-btn:hover i {
 }
 
 .client-logo-wrapper {
-  padding: 10px 0;
-  display: grid;
+  padding: 0 40px;
+  display: grid !important;
   grid-template-columns: repeat(5, 1fr);
 }
 .client-logo-wrapper .client-logo {
@@ -8752,9 +8752,41 @@ ul.children {
   transform: translate(-50%, 35%);
 }
 
-.client-wrapper {
+.home-two-client-logo-area {
   background: #f8f8f1;
-  padding: 100px 0;
+  padding: 120px 0;
+  position: relative;
+}
+.home-two-client-logo-area .sketch {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  background-image: url("../../images/sketch-color.png");
+  bottom: 18px;
+  right: 46px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home-two-client-logo-area .home-two-client-logo-slider .slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 64px;
+}
+.home-two-client-logo-area .home-two-client-logo-slider .slick-dots li {
+  line-height: 0;
+}
+.home-two-client-logo-area .home-two-client-logo-slider .slick-dots li button {
+  width: 14px;
+  height: 14px;
+  font-size: 0;
+  border-radius: 50px;
+  padding: unset;
+  background-color: #bdbdbd;
+}
+.home-two-client-logo-area .home-two-client-logo-slider .slick-dots li.slick-active button {
+  background: #080f10;
 }
 
 .why-us-area {
