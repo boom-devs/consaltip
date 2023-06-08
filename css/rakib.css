@@ -811,10 +811,10 @@ input:focus {
   text-align: center;
 }
 .icon-card:hover .icon {
-  background: #033f47;
+  background: #ffffff !important;
 }
 .icon-card:hover .icon i {
-  color: #ffffff;
+  color: #033f47;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .icon-card {
@@ -1147,7 +1147,7 @@ input:focus {
 }
 
 .process-step {
-  display: flex;
+  display: flex !important;
 }
 .process-step .image {
   width: 50%;

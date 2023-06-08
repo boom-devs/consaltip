@@ -3564,10 +3564,10 @@ a.meanmenu-reveal {
   text-align: center;
 }
 .icon-card:hover .icon {
-  background: #033f47;
+  background: #ffffff !important;
 }
 .icon-card:hover .icon i {
-  color: #ffffff;
+  color: #033f47;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .icon-card {
@@ -3886,7 +3886,7 @@ a.meanmenu-reveal {
 }
 
 .process-step {
-  display: flex;
+  display: flex !important;
 }
 .process-step .image {
   width: 50%;
@@ -4882,7 +4882,7 @@ button.testimonial-arrow-btn:hover i {
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
+  width: 278px;
   height: 12px;
   right: 0;
   top: 50%;
@@ -7266,6 +7266,66 @@ ul.children {
 }
 .home-two-client-logo-area .home-two-client-logo-slider .slick-dots li.slick-active button {
   background: #080f10;
+}
+
+.home-2-process-step {
+  padding: 120px 0;
+}
+
+.home-two-process-slider .slick-slide {
+  margin: 24px 50px;
+}
+.home-two-process-slider .process-arrow-btn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: 0.3s;
+  z-index: 99;
+  background-color: transparent;
+  border: 1px solid #828282;
+  cursor: pointer;
+  top: 50%;
+  overflow: hidden;
+}
+.home-two-process-slider .process-arrow-btn.prev-btn {
+  left: 0;
+}
+@media (max-width: 767px) {
+  .home-two-process-slider .process-arrow-btn.prev-btn {
+    right: unset;
+    left: 30px;
+  }
+}
+.home-two-process-slider .process-arrow-btn.next-btn {
+  right: 0;
+}
+@media (max-width: 767px) {
+  .home-two-process-slider .process-arrow-btn.next-btn {
+    right: 30px;
+    left: unset;
+  }
+}
+.home-two-process-slider .process-arrow-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #080f10;
+  font-size: 21px;
+  transition: all 0.5s ease-out;
+}
+.home-two-process-slider .process-arrow-btn:hover {
+  background: #e0f780;
+}
+.home-two-process-slider .process-arrow-btn:hover i {
+  color: #080f10;
+  transition: all 0.5s ease-out;
+}
+
+.process-slider-container {
+  max-width: 1390px;
+  margin: 0 auto;
 }
 
 .why-us-area {

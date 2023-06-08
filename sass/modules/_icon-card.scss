@@ -41,9 +41,9 @@
     }
     &:hover {
         .icon {
-            background: $icon-color;
+            background: $white !important;
             i {
-                color: $white;
+                color: $icon-color;
             }
         }
     }
