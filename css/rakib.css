@@ -215,6 +215,12 @@ input:focus {
   color: #fff;
   border-color: #071c34;
 }
+.theme-btn.style-two,
+.wp-block-loginout a.style-two {
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff !important;
+}
 
 .main-menu.style-two ul li ul {
   background-color: #071c34;

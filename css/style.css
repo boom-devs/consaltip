@@ -735,6 +735,12 @@ input:focus {
   color: #fff;
   border-color: #071c34;
 }
+.theme-btn.style-two,
+.wp-block-loginout a.style-two {
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff !important;
+}
 
 /* Deafult Margin & Padding */
 /*-- Margin Top --*/
@@ -7326,6 +7332,20 @@ ul.children {
 .process-slider-container {
   max-width: 1390px;
   margin: 0 auto;
+}
+
+.home-two-case-studies {
+  padding: 120px 0;
+  background-color: #033f47;
+  position: relative;
+}
+.home-two-case-studies .sketch {
+  position: absolute;
+  background-image: url("../../images/title-sketch.png");
+  width: 188px;
+  height: 188px;
+  bottom: 192px;
+  right: 68px;
 }
 
 .why-us-area {
