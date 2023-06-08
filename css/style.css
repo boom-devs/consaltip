@@ -4718,7 +4718,6 @@ a.meanmenu-reveal {
   display: flex;
   flex-direction: column;
   gap: 48px;
-  padding-left: 132px;
 }
 .about-info-card .content-wrapper {
   display: flex;
@@ -6404,7 +6403,7 @@ button.testimonial-arrow-btn:hover i {
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
-  width: 271px;
+  width: 100%;
   height: 12px;
   right: 0;
   top: 50%;
@@ -8705,6 +8704,11 @@ ul.children {
 .portfolio-wrapper {
   background: #035b7b;
   padding: 100px 0;
+}
+
+.home-two-about-us-area {
+  padding: 120px 0;
+  background: #ffffff;
 }
 
 .counter-card-wrapper {
