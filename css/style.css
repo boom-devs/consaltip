@@ -8711,13 +8711,27 @@ ul.children {
   background: #ffffff;
 }
 
+.home-two-service {
+  background: #f8f8f1;
+  padding: 120px 0;
+}
+
 .counter-card-wrapper {
   padding: 120px 0 104px 0;
+  background: url("../../images/counter-bg-1.png");
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
   position: relative;
+}
+.counter-card-wrapper .counter-sketch {
+  position: absolute;
+  background-image: url("../../images/title-sketch.png");
+  width: 200px;
+  height: 200px;
+  bottom: 246px;
+  right: 104px;
+  z-index: 2;
 }
 .counter-card-wrapper .overlay {
   position: absolute;
@@ -8726,6 +8740,16 @@ ul.children {
   top: 0;
   left: 0;
   background: linear-gradient(0deg, rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8));
+}
+
+.mission-sketch {
+  position: absolute;
+  background-image: url("../../images/sketch-color.png");
+  width: 188px;
+  height: 188px;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 35%);
 }
 
 .client-wrapper {
