@@ -65,24 +65,7 @@
           }
         }
       }
-      &.dropdown {
-        > a {
-          //padding-right: 30px;
-
-          //&:before {
-          //  visibility: visible;
-          //}
-        }
-        .dropdown {
-          > a {
-            //&:before {
-            //  visibility: visible;
-            //  right: 15px;
-            //  transform: rotate(-45deg);
-            //}
-          }
-        }
-      }
+    
 
       ul {
         &.submenu {
@@ -246,7 +229,7 @@
     a{
       background: $white;
       color: $title-color;
-      padding:16px 12px;
+      padding:16px 19px;
       font-weight: 500;
       position: relative;
       z-index: 1;

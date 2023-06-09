@@ -1,0 +1,147 @@
+/* variable */
+@import "variables";
+@import "_mixin.scss";
+@import "partials/theme-default";
+
+// global-overwrite
+@import "modules/global-overwrite";
+
+$text-primary: #4566d4;
+$text-gray-light: #6a6c73;
+
+/* Hero slider CSS */
+//@import "modules/title-section";
+
+/* Hero slider CSS */
+@import "modules/slider-style-one";
+/* custom slider CSS */
+@import "modules/custom-slider";
+
+/* Why choose us CSS(modern tecnology) */
+@import "modules/image-card";
+
+/* About-us CSS */
+@import "modules/about-us";
+
+/* Service-details counter style-three CSS */
+@import "modules/counter-card-three";
+
+/* Service CSS */
+@import "modules/service";
+
+/* Process CSS */
+//@import "modules/process";
+
+/* Pricing CSS */
+@import "modules/pricing";
+
+/* Articles CSS */
+@import "modules/articles";
+
+/* Info card-style-one CSS */
+// @import "modules/info-card-one";
+
+/* Testimonial card CSS */
+@import "modules/testimonial-card";
+
+/* client widget CSS */
+@import "modules/client-widget";
+
+/* Service-page CSS */
+@import "modules/service-page";
+
+/* Contact-info-card CSS */
+@import "modules/contact-info";
+
+/* Footer CSS */
+@import "partials/footer-two";
+
+// icon-card style-one
+@import "modules/icon-card";
+
+// icon-card style-two
+@import "modules/icon-card-two";
+
+// icon-card style-three
+@import "modules/icon-card-three";
+
+// icon-card style-three
+@import "modules/icon-card-four";
+
+// info-card
+@import "modules/colsultent-img";
+
+// info-card style-two
+@import "modules/info-card-two";
+
+// info-card style-three
+@import "modules/info-card-three";
+
+// Info-card style-four
+@import "modules/info-card-four";
+
+// price-card
+@import "modules/price-card";
+
+// portfolio
+@import "modules/portfolio";
+// Testimonial-card
+@import "modules/testimonial-card-two";
+
+// Testimonial-card
+@import "modules/testimonial-card-three";
+
+// Process-step-card
+@import "modules/process-step";
+
+// Process-step-card style-two
+@import "modules/process-step-two";
+
+// Post-card
+@import "modules/post-card-two";
+
+// Post-card
+@import "modules/post-card-three";
+
+// Post-card
+@import "modules/post-card-four";
+
+/* Team-member-card style-one CSS */
+@import "modules/team-member";
+
+/* Nav-tab style-one CSS */
+@import "modules/nav-tabs";
+
+/* Time-card style-one CSS */
+@import "modules/time-card";
+
+/* Service-details CSS */
+@import "modules/service-details";
+
+/* Service-details side-bar CSS */
+@import "partials/sidebar-two";
+
+/* Project-details CSS */
+@import "modules/project-details";
+
+/* Client-logo CSS */
+@import "modules/client-logo-two";
+
+/* List-item CSS */
+@import "modules/list-item";
+
+/* Team-member-page CSS */
+@import "pages/team-member";
+
+/* Service-page CSS */
+@import "pages/service-page";
+
+/* Accordion-style-four CSS */
+@import "modules/accordion-style-four";
+
+/* Pricing-page CSS */
+@import "pages/pricing-page";
+
+/* Blog-page CSS */
+@import "pages/blog-page";
+
