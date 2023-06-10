@@ -1,39 +1,46 @@
-// Why Choose Area
-.why-us-area {
-  margin-top: -65px;
+.home-three-client-logo-area {
+  background-color: $icon-color;
+  padding: 120px 0;
   position: relative;
-  z-index: 2;
-
-
-  .why-us-area-inner {
-    background-color: $black-50;
-    border-radius: 8px;
-    overflow: hidden;
+  .shape-one {
+    @include xl {
+      background-image: url("../../images/shape/Rectangle.png");
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      bottom: 165px;
+      left: 49px;
+    }
   }
-}
-
-// Why Choose Area Three
-.why-choose-three-area {
-  background-color: $secondary-color;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-// Pricing Area
-.pricing-area {
-  background-color: $blue-color;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-// Our Service Area
-.home-three-our-service-area {
-  padding-top: 145px;
-  padding-bottom: 105px;
-
-  @include rmaxwd(991) {
-    padding-top: 100px;
-    padding-bottom: 80px;
+  .home-two-client-logo-slider {
+    .slick-dots {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-top: 64px;
+      li {
+        line-height: 0;
+        button {
+          width: 14px;
+          height: 14px;
+          font-size: 0;
+          border-radius: 50px;
+          padding: unset;
+          background-color: transparent;
+          border: 1px solid $white;
+        }
+        &.slick-active {
+          button {
+            background: $brand;
+          }
+        }
+      }
+    }
+  }
+  @include sm {
+    padding: 80px 0;
   }
 }
