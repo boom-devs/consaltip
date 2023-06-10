@@ -19,6 +19,9 @@
                             font-size: 16px;
                             line-height: 27px;
                             font-family: $body-font;
+                            @include sm {
+                                font-size: 14px;
+                            }
                         }
                     }
                 }

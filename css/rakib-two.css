@@ -220,6 +220,13 @@ input:focus {
   background: transparent;
   color: #ffffff !important;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .theme-btn,
+  .wp-block-loginout a {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
 
 .background-image {
   background-position: center;
@@ -661,6 +668,11 @@ input:focus {
   line-height: 53px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .image-card.style-two .content .title {
+    font-size: 38px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .image-card.style-two {
     flex-direction: column-reverse;
   }
@@ -790,6 +802,11 @@ input:focus {
   line-height: 34px;
   letter-spacing: 0.02em;
   color: #ffffff;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .icon-card.style-seven {
+    flex-direction: column;
+  }
 }
 
 .portfolio_card_wrapper {
@@ -1189,8 +1206,8 @@ input:focus {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .testimonial-card.style-two .image-wrapper .image .video-popup-btn a {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 }
 .testimonial-card.style-two .image-wrapper .image .video-popup-btn a i {
@@ -1215,10 +1232,43 @@ input:focus {
 .testimonial-card.style-two .image-wrapper .image .count p {
   color: #033f47;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-card.style-two .image-wrapper .image .count p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-card.style-two .image-wrapper .image .count {
+    bottom: 0;
+    right: 0;
+    transform: translate(40%, 40%);
+    width: 45px;
+    height: 45px;
+  }
+}
 .testimonial-card.style-two .image-wrapper .image img {
   width: 100%;
   height: 100%;
   border-radius: 0 0 220px 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-card.style-two .image-wrapper .image img {
+    border-radius: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-card.style-two .image-wrapper {
+    max-width: 100%;
+    padding-right: 0;
+    overflow: visible;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-card.style-two .image-wrapper {
+    max-width: 100%;
+    padding-right: 0;
+    overflow: visible;
+  }
 }
 .testimonial-card.style-two .content-wrapper {
   gap: 48px;
@@ -1238,6 +1288,12 @@ input:focus {
   line-height: 34px;
   letter-spacing: 0.02em;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-card.style-two .content-wrapper .content .text {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
 .testimonial-card.style-two .content-wrapper .meta-user .user-info .image {
   display: none;
 }
@@ -1246,4 +1302,99 @@ input:focus {
 }
 .testimonial-card.style-two .content-wrapper .meta-user .user-info .info p {
   color: #ffffff;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-card.style-two .content-wrapper {
+    max-width: 100%;
+    margin-top: 48px;
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-card.style-two .content-wrapper {
+    max-width: 100%;
+    margin-top: 48px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-card.style-two {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-card.style-two {
+    flex-direction: column;
+  }
+}
+
+.about-info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.about-info-card .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.about-info-card .content-wrapper .content .title {
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-info-card .content-wrapper .content .title {
+    font-size: 38px;
+    line-height: 60px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-info-card .content-wrapper .content .title {
+    font-size: 46px;
+    line-height: 60px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-info-card .content-wrapper .content .title {
+    font-size: 46px;
+    line-height: 60px;
+  }
+}
+.about-info-card .content-wrapper .about-counter-card {
+  display: flex;
+  gap: 32px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
+    font-size: 46px;
+    line-height: 60px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
+    font-size: 46px;
+    line-height: 60px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-info-card {
+    padding: 0;
+    margin-top: 24px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-info-card {
+    padding: 0;
+    margin-top: 24px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-info-card {
+    padding: 0;
+    margin-top: 24px;
+  }
 }/*# sourceMappingURL=rakib-two.css.map */

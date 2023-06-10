@@ -285,14 +285,12 @@
             loop: true,
             dots: true,
             speed: 1500,
-            centerMode:true,
-            centerPadding:'50px',
 
             responsive: [
                 {
                     breakpoint: 767,
                     settings: {
-                        autoplay: true,
+                        autoplay: false,
                         slidesToShow: 1,
                     },
                 },
@@ -308,8 +306,6 @@
             loop: true,
             dots: false,
             speed: 1500,
-            centerMode:true,
-            centerPadding:'50px',
             prevArrow:
                 "<button type='button' class='process-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
             nextArrow:
@@ -320,27 +316,26 @@
                     settings: {
                         autoplay: true,
                         slidesToShow: 1,
+                        arrows: false,
                     },
                 },
             ],
         });
         $(".home-two-testimonial-card-slider").slick({
             slidesToShow: 1,
-            infinite: true,
+            infinite: false,
             autoplay: false,
             draggable: true,
             arrows: false,
             slidesToScroll: 1,
-            loop: true,
-            dots: true,
-            speed: 1500,
-            centerMode:true,
-            centerPadding:'50px',
+            loop: false,
+            // dots: true,
+            // speed: 1500,
             responsive: [
                 {
                     breakpoint: 767,
                     settings: {
-                        autoplay: true,
+                        autoplay: false,
                         slidesToShow: 1,
                     },
                 },

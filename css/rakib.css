@@ -221,6 +221,13 @@ input:focus {
   background: transparent;
   color: #ffffff !important;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .theme-btn,
+  .wp-block-loginout a {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
 
 /* Pricing CSS */
 .pricing,
@@ -987,6 +994,11 @@ input:focus {
   gap: 16px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .process-step .content-wrapper .content .title-wrapper h4 {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .process-step .content-wrapper {
     width: 100%;
     padding: 24px;
@@ -1035,6 +1047,11 @@ input:focus {
   font-size: 16px;
   line-height: 27px;
   font-family: "Inter", sans-serif;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .post-card-one.style-two .content-wrapper .post-content .post-meta .meta-info p {
+    font-size: 14px;
+  }
 }
 .post-card-one.style-two .content-wrapper .post-content .title {
   font-size: 24px;
