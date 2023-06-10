@@ -9,12 +9,6 @@
 $text-primary: #4566d4;
 $text-gray-light: #6a6c73;
 
-/* Hero slider CSS */
-//@import "modules/title-section";
-
-/* custom slider CSS */
-@import "modules/custom-slider";
-
 /* Why choose us CSS(modern tecnology) */
 @import "modules/why-choose-us";
 
@@ -44,16 +38,16 @@ $text-gray-light: #6a6c73;
 @import "partials/footer-two";
 
 // icon-card style-one
-@import "modules/icon-card";
+@import "modules/icon-card/icon-card";
 
 // icon-card style-two
-@import "modules/icon-card-two";
+@import "modules/icon-card/icon-card-two";
 
 // icon-card style-three
-@import "modules/icon-card-three";
+@import "modules/icon-card/icon-card-three";
 
 // icon-card style-three
-@import "modules/icon-card-four";
+@import "modules/icon-card/icon-card-four";
 
 // price-card
 @import "modules/price-card";
@@ -65,13 +59,7 @@ $text-gray-light: #6a6c73;
 // @import "modules/process-step-two";
 
 // Post-card
-@import "modules/post-card-two";
-
-// Post-card
-@import "modules/post-card-three";
-
-// Post-card
-@import "modules/post-card-four";
+@import "modules/post-card/post-card-two";
 
 /* Team-member-card style-one CSS */
 @import "modules/team-member";

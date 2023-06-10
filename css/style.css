@@ -3527,7 +3527,6 @@ a.meanmenu-reveal {
   display: none !important;
 }
 
-/* 8.Slider Section */
 .icon-card {
   background: #ffffff;
   padding: 67px 38px;
@@ -3647,78 +3646,6 @@ a.meanmenu-reveal {
 }
 .icon-card.style-three .content .desc {
   text-align: start;
-}
-
-.about-info-card {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-}
-.about-info-card .content-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.about-info-card .content-wrapper .content .title {
-  margin-bottom: 16px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about-info-card .content-wrapper .content .title {
-    font-size: 40px;
-    line-height: 60px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-info-card .content-wrapper .content .title {
-    font-size: 46px;
-    line-height: 60px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about-info-card .content-wrapper .content .title {
-    font-size: 46px;
-    line-height: 60px;
-  }
-}
-.about-info-card .content-wrapper .about-counter-card {
-  display: flex;
-  gap: 32px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
-    font-size: 40px;
-    line-height: 60px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
-    font-size: 46px;
-    line-height: 60px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
-    font-size: 46px;
-    line-height: 60px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about-info-card {
-    padding: 0;
-    margin-top: 24px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-info-card {
-    padding: 0;
-    margin-top: 24px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about-info-card {
-    padding: 0;
-    margin-top: 24px;
-  }
 }
 
 .video-popup-card {
@@ -3972,38 +3899,43 @@ a.meanmenu-reveal {
 
 .testimonial-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 32px;
   padding: 32px 30px;
   background: #ffffff;
 }
-.testimonial-card .icon {
+.testimonial-card .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.testimonial-card .content-wrapper .icon {
   display: flex;
   gap: 4px;
   align-items: center;
 }
-.testimonial-card .content .text {
+.testimonial-card .content-wrapper .content .text {
   font-size: 18px;
   line-height: 31px;
   color: #575959;
 }
-.testimonial-card .meta-user .user-info {
+.testimonial-card .content-wrapper .meta-user .user-info {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-.testimonial-card .meta-user .user-info .image {
+.testimonial-card .content-wrapper .meta-user .user-info .image {
   width: 88px;
   height: 88px;
   border-radius: 50px;
   overflow: hidden;
 }
-.testimonial-card .meta-user .user-info .info {
+.testimonial-card .content-wrapper .meta-user .user-info .info {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.testimonial-card .meta-user .user-info .info h5 {
+.testimonial-card .content-wrapper .meta-user .user-info .info h5 {
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
@@ -4384,112 +4316,6 @@ button.testimonial-arrow-btn:hover i {
 }
 .post-card-one.style-two .content-wrapper .theme-btn:hover {
   color: #080f10;
-}
-
-.post-card.style-three {
-  height: 468px;
-  justify-content: end;
-  align-items: end;
-  position: relative;
-  overflow: hidden;
-}
-.post-card.style-three:before {
-  background-color: #fcaf14;
-  opacity: 0.3;
-}
-.post-card.style-three:hover .image {
-  transform: scale(1.05);
-}
-.post-card.style-three .image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  transform: scale(1.01);
-  transition: all 0.5s ease-out;
-}
-.post-card.style-three .content .post-meta {
-  color: #ffffff;
-  display: inline-flex;
-  gap: 17px;
-  align-items: center;
-  font-size: 16px;
-  line-height: 30px;
-}
-.post-card.style-three .content .post-meta span {
-  color: #ffffff;
-  margin: 0;
-  font-weight: 400;
-}
-.post-card.style-three .content .post-meta span:before {
-  background-color: #b8bfcc;
-  width: 1px;
-  display: inline-flex;
-  height: 12px;
-  content: "";
-  margin-right: 17px;
-}
-.post-card.style-three .content .post-meta span:last-child {
-  display: block;
-}
-.post-card.style-three .content .post-meta span:first-child:before {
-  display: none;
-}
-.post-card.style-three .content .title {
-  color: #ffffff;
-  font-size: 30px;
-  line-height: 42px;
-  font-weight: 700;
-}
-.post-card.style-three .content .title:hover {
-  color: #ff6731;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .post-card.style-three {
-    height: 300px;
-  }
-  .post-card.style-three .content .post-meta {
-    font-size: 14px;
-  }
-  .post-card.style-three .content .title {
-    font-size: 24px;
-    line-height: 38px;
-  }
-}
-
-.post-card.style-four {
-  flex-direction: column;
-  border: none;
-  padding: 0;
-  gap: 28px;
-}
-.post-card.style-four:hover .image img {
-  transform: scale(1.05);
-}
-.post-card.style-four .image img {
-  width: 100%;
-  height: 100%;
-  transition: all 0.5s ease-out;
-}
-.post-card.style-four .content .title:hover {
-  color: #035b7b;
-}
-.post-card.style-four .content .post-meta span {
-  color: #ff6731;
-  line-height: 30px;
-  font-weight: 700;
-}
-.post-card.style-four .content .post-meta span:last-child {
-  display: block;
-}
-.post-card.style-four .content .post-meta span:first-child:before {
-  display: none;
-}
-.post-card.style-four .content .post-meta .date {
-  color: #778196;
-  font-weight: 400;
 }
 
 .price-card-switch {
@@ -7331,7 +7157,14 @@ ul.children {
 
 .process-slider-container {
   max-width: 1390px;
+  width: 100%;
   margin: 0 auto;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .process-slider-container {
+    max-width: 100%;
+    padding: 10px;
+  }
 }
 
 .home-two-case-studies {
