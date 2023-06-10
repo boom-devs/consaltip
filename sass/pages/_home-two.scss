@@ -160,3 +160,77 @@
     right: 68px;
   }
 }
+.customer-review {
+  padding: 120px 0;
+  background-color: $icon-color;
+  position: relative;
+  .sketch {
+    background-image: url("../../images/title-sketch.png");
+    width: 109px;
+    height: 109px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 138px;
+    left: 254px;
+  }
+  .shape-one {
+    background-image: url("../../images/shape/shape-3.png");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 210px;
+    left: 42px;
+  }
+  .shape-two {
+    background-image: url("../../images/shape/Rectangle.png");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 266px;
+    right: 55px;
+    rotate: 90deg;
+  }
+  .home-two-testimonial-card-slider {
+    .slick-slide {
+      display: flex;
+      margin: 64px 50px 0 50px;
+    }
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-top: 64px;
+      li {
+        line-height: 0;
+        button {
+          width: 12px;
+          height: 12px;
+          font-size: 0;
+          border-radius: 50px;
+          padding: unset;
+          background-color: transparent;
+          border: 1px solid $white;
+        }
+        &.slick-active {
+          button {
+            background: $brand;
+          }
+        }
+      }
+    }
+  }
+  .home-two-testimonial-container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    @include lg {
+      max-width: calc(1320px + 100px);
+    }
+  }
+}

@@ -1147,14 +1147,75 @@ input:focus {
   margin-top: 64px;
   background: transparent;
   padding: 0;
+  gap: 0;
 }
 .testimonial-card.style-two .image-wrapper {
   overflow: hidden;
   max-width: 50%;
   width: 100%;
-  padding-right: 100px;
+  padding-right: 134px;
+  position: relative;
 }
-.testimonial-card.style-two .image-wrapper img {
+.testimonial-card.style-two .image-wrapper .image {
+  position: relative;
+}
+.testimonial-card.style-two .image-wrapper .image .video-popup-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.testimonial-card.style-two .image-wrapper .image .video-popup-btn a {
+  width: 86px;
+  height: 86px;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  background: rgba(224, 247, 128, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: ripple 3s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-card.style-two .image-wrapper .image .video-popup-btn a {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-card.style-two .image-wrapper .image .video-popup-btn a {
+    width: 80px;
+    height: 80px;
+  }
+}
+.testimonial-card.style-two .image-wrapper .image .video-popup-btn a i {
+  color: #033f47;
+  font-size: 24px;
+}
+.testimonial-card.style-two .image-wrapper .image .video-popup-btn a:hover {
+  animation: none;
+}
+.testimonial-card.style-two .image-wrapper .image .count {
+  position: absolute;
+  bottom: 48px;
+  right: 27px;
+  width: 66px;
+  height: 66px;
+  border-radius: 50px;
+  background: #e0f780;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-card.style-two .image-wrapper .image .count p {
+  color: #033f47;
+}
+.testimonial-card.style-two .image-wrapper .image img {
   width: 100%;
   height: 100%;
   border-radius: 0 0 220px 0;
@@ -1162,6 +1223,9 @@ input:focus {
 .testimonial-card.style-two .content-wrapper {
   gap: 48px;
   justify-content: end;
+  max-width: 50%;
+  width: 100%;
+  padding-right: 45px;
 }
 .testimonial-card.style-two .content-wrapper .icon {
   display: none;

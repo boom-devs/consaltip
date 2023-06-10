@@ -3,20 +3,85 @@
         margin-top: 64px;
         background: transparent;
         padding: 0;
+        gap: 0;
         .image-wrapper {
             overflow: hidden;
             max-width: 50%;
             width: 100%;
-            padding-right: 100px;
-            img {
-                width: 100%;
-                height: 100%;
-                border-radius: 0 0 220px 0;
+            padding-right: 134px;
+            position: relative;
+            .image {
+                position: relative;
+                .video-popup-btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 1;
+
+                    a {
+                        width: 86px;
+                        height: 86px;
+                        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+                        background: rgba(224, 247, 128, 0.5);
+                        backdrop-filter: blur(10px);
+                        border-radius: 50%;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        animation: ripple 3s infinite;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        @include md {
+                            width: 100px;
+                            height: 100px;
+                        }
+                        @include sm {
+                            width: 80px;
+                            height: 80px;
+                        }
+
+                        i {
+                            color: $icon-color;
+                            font-size: 24px;
+                        }
+                        &:hover {
+                            -webkit-animation: none;
+                            -moz-animation: none;
+                            -ms-animation: none;
+                            animation: none;
+                        }
+                    }
+                }
+                .count {
+                    position: absolute;
+                    bottom: 48px;
+                    right: 27px;
+                    width: 66px;
+                    height: 66px;
+                    border-radius: 50px;
+                    background: $brand;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p {
+                        color: $icon-color;
+                    }
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 0 0 220px 0;
+                }
             }
         }
         .content-wrapper {
             gap: 48px;
             justify-content: end;
+            max-width: 50%;
+            width: 100%;
+            padding-right: 45px;
             .icon {
                 display: none;
             }

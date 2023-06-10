@@ -324,6 +324,28 @@
                 },
             ],
         });
+        $(".home-two-testimonial-card-slider").slick({
+            slidesToShow: 1,
+            infinite: true,
+            autoplay: false,
+            draggable: true,
+            arrows: false,
+            slidesToScroll: 1,
+            loop: true,
+            dots: true,
+            speed: 1500,
+            centerMode:true,
+            centerPadding:'50px',
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        autoplay: true,
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
 
 
 
