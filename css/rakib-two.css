@@ -502,6 +502,34 @@ input:focus {
   }
 }
 
+.portfolio-card.style-three {
+  gap: 0;
+}
+.portfolio-card.style-three .content {
+  background: #ffffff;
+  padding: 42px 49px 44px 49px;
+}
+.portfolio-card.style-three .content .icon {
+  display: flex;
+  border-radius: 4px;
+  background: #033f47;
+  bottom: 50px;
+  right: 50px;
+  top: unset;
+}
+.portfolio-card.style-three .content .icon i {
+  color: #ffffff;
+}
+.portfolio-card.style-three .content h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+}
+.portfolio-card.style-three .content h4,
+.portfolio-card.style-three .content p {
+  color: #080f10;
+}
+
 .image-card {
   display: flex;
   align-items: center;
@@ -703,34 +731,6 @@ input:focus {
 }
 .team-member-card.style-two:hover .content-wrapper .user-info p {
   color: unset;
-}
-
-.portfolio-card.style-three {
-  gap: 0;
-}
-.portfolio-card.style-three .content {
-  background: #ffffff;
-  padding: 42px 49px 44px 49px;
-}
-.portfolio-card.style-three .content .icon {
-  display: flex;
-  border-radius: 4px;
-  background: #033f47;
-  bottom: 50px;
-  right: 50px;
-  top: unset;
-}
-.portfolio-card.style-three .content .icon i {
-  color: #ffffff;
-}
-.portfolio-card.style-three .content h4 {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 34px;
-}
-.portfolio-card.style-three .content h4,
-.portfolio-card.style-three .content p {
-  color: #080f10;
 }
 
 .icon-card.style-five {

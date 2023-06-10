@@ -275,48 +275,6 @@ input:focus {
 }
 
 /* Why choose us CSS(modern tecnology) */
-/* About-us CSS */
-/* Service-details counter style-three CSS */
-.counter-card.style-three {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.counter-card.style-three .counter-item {
-  text-align: left;
-  padding: 60px 40px;
-  background: #035b7b;
-  border-radius: 8px;
-}
-.counter-card.style-three .counter-item .counter-title {
-  flex-direction: row;
-  gap: 30px;
-}
-.counter-card.style-three .counter-item .counter-title .title {
-  margin: 0;
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
-}
-.counter-card.style-three .counter-item .number {
-  margin: 0;
-  color: #ffffff;
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: 700;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .counter-card.style-three .counter-item .number {
-    font-size: 56px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .counter-card.style-three .counter-item {
-    padding: 40px 30px;
-  }
-}
-
 /* Pricing CSS */
 .pricing,
 .contact-section {
@@ -546,7 +504,6 @@ input:focus {
   }
 }
 
-/* Info card-style-one CSS */
 /* Testimonial card CSS */
 .testimonial-card {
   display: flex;
@@ -597,42 +554,6 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* Contact-info-card CSS */
-.contact-info {
-  padding: 25px;
-  background: #ffffff;
-  border-radius: 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-.contact-info.style-two {
-  position: relative;
-  z-index: 1;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.contact-info.style-three {
-  flex-direction: column;
-  background: transparent;
-  padding: 65px 0;
-  justify-content: space-between;
-  border-bottom: 1px solid #424b6a;
-  border-radius: 0;
-}
-@media screen and (min-width: 425px) {
-  .contact-info.style-three {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 65px 30px;
-  }
-}
-@media screen and (min-width: 1199px) {
-  .contact-info {
-    padding: 50px;
-  }
 }
 
 /* Footer CSS */
