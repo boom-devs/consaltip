@@ -1,9 +1,27 @@
+.home-two-about-us-area {
+  padding: 120px 0;
+  background: $white;
+}
+.home-two-service {
+  background: $background;
+  padding: 120px 0;
+}
 .counter-card-wrapper {
   padding: 120px 0 104px 0;
+  background: url("../../images/counter-bg-1.png");
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  object-fit: cover;
   position: relative;
+  .counter-sketch {
+    position: absolute;
+    background-image: url("../../images/title-sketch.png");
+    width: 200px;
+    height: 200px;
+    bottom: 246px;
+    right: 104px;
+    z-index: 2;
+  }
   .overlay {
     position: absolute;
     width: 100%;
@@ -13,9 +31,127 @@
     background: linear-gradient(0deg, rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8));
   }
 }
+.mission-sketch {
+  position: absolute;
+  background-image: url("../../images/sketch-color.png");
+  width: 188px;
+  height: 188px;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 35%);
+}
 
 // client-logo wrapper
-.client-wrapper {
+.home-two-client-logo-area {
   background: $background;
-  padding: 100px 0;
+  padding: 120px 0;
+  position: relative;
+  .sketch {
+    position: absolute;
+    width: 188px;
+    height: 188px;
+    background-image: url("../../images/sketch-color.png");
+    bottom: 18px;
+    right: 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .home-two-client-logo-slider {
+    .slick-dots {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-top: 64px;
+      li {
+        line-height: 0;
+        button {
+          width: 14px;
+          height: 14px;
+          font-size: 0;
+          border-radius: 50px;
+          padding: unset;
+          background-color: #bdbdbd;
+        }
+        &.slick-active {
+          button {
+            background: $title-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.home-2-process-step {
+  padding: 120px 0;
+}
+.home-two-process-slider {
+  .slick-slide {
+    margin: 24px 50px;
+  }
+  .process-arrow-btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 99;
+    background-color: transparent;
+    border: 1px solid #828282;
+    cursor: pointer;
+    top: 50%;
+    overflow: hidden;
+    &.prev-btn {
+      left: 0;
+
+      @include rmaxwd(767) {
+        right: unset;
+        left: 30px;
+      }
+    }
+    &.next-btn {
+      right: 0;
+      @include rmaxwd(767) {
+        right: 30px;
+        left: unset;
+      }
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $title-color;
+      font-size: 21px;
+      @include transition;
+    }
+    &:hover {
+      background: $brand;
+
+      i {
+        color: $title-color;
+        @include transition;
+      }
+    }
+  }
+}
+// process-step slider
+.process-slider-container {
+  max-width: calc(1320px + 70px);
+  margin: 0 auto;
+}
+// case-studies
+.home-two-case-studies {
+  padding: 120px 0;
+  background-color: $icon-color;
+  position: relative;
+  .sketch {
+    position: absolute;
+    background-image: url("../../images/title-sketch.png");
+    width: 188px;
+    height: 188px;
+    bottom: 192px;
+    right: 68px;
+  }
 }

@@ -1,5 +1,5 @@
 .basic-pagination,
-.page-links{
+.page-links {
   display: inline-flex;
   width: 100%;
   align-items: center;
@@ -21,8 +21,8 @@
       padding-top: 0;
     }
     .prev,
-    .next
-    {
+    .next {
+      background: $brand;
       span {
         display: none;
       }
@@ -36,8 +36,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $text-color;
-    background-color: $white;
+    color: $title-color;
+    background-color: $background;
     border-radius: 6px;
     height: 53px;
     width: 53px;
@@ -47,18 +47,17 @@
     border: 1px solid $gray-300;
 
     &:hover {
-      background: $orange-color !important;
+      background: $title-color !important;
       color: $white;
       border-color: $orange-color;
       @include transition;
     }
 
     &.current {
-      background: $orange-color !important;
-      color: $white;
+      background: $brand !important;
+      color: $title-color;
       border-color: $orange-color;
       @include transition;
     }
-
   }
 }

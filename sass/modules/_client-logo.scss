@@ -1,6 +1,6 @@
 .client-logo-wrapper {
-  padding: 10px 0;
-  display: grid;
+  padding: 0 40px;
+  display: grid !important;
   grid-template-columns: repeat(5, 1fr);
 
   .client-logo {

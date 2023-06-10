@@ -12,8 +12,6 @@ $text-gray-light: #6a6c73;
 /* Hero slider CSS */
 //@import "modules/title-section";
 
-/* Hero slider CSS */
-@import "modules/slider-style-one";
 /* custom slider CSS */
 @import "modules/custom-slider";
 
@@ -26,12 +24,6 @@ $text-gray-light: #6a6c73;
 /* Service-details counter style-three CSS */
 @import "modules/counter-card-three";
 
-/* Service CSS */
-@import "modules/service";
-
-/* Process CSS */
-//@import "modules/process";
-
 /* Pricing CSS */
 @import "modules/pricing";
 
@@ -39,16 +31,11 @@ $text-gray-light: #6a6c73;
 @import "modules/articles";
 
 /* Info card-style-one CSS */
-// @import "modules/info-card-one";
-
 /* Testimonial card CSS */
 @import "modules/testimonial-card";
 
 /* client widget CSS */
 @import "modules/client-widget";
-
-/* Service-page CSS */
-@import "modules/service-page";
 
 /* Contact-info-card CSS */
 @import "modules/contact-info";
@@ -68,18 +55,6 @@ $text-gray-light: #6a6c73;
 // icon-card style-three
 @import "modules/icon-card-four";
 
-// info-card
-@import "modules/info-card";
-
-// info-card style-two
-@import "modules/info-card-two";
-
-// info-card style-three
-@import "modules/info-card-three";
-
-// Info-card style-four
-@import "modules/info-card-four";
-
 // price-card
 @import "modules/price-card";
 
@@ -87,7 +62,7 @@ $text-gray-light: #6a6c73;
 @import "modules/process-step";
 
 // Process-step-card style-two
-@import "modules/process-step-two";
+// @import "modules/process-step-two";
 
 // Post-card
 @import "modules/post-card-two";
@@ -103,12 +78,6 @@ $text-gray-light: #6a6c73;
 
 /* Nav-tab style-one CSS */
 @import "modules/nav-tabs";
-
-/* Time-card style-one CSS */
-@import "modules/time-card";
-
-/* Service-details CSS */
-@import "modules/service-details";
 
 /* Service-details side-bar CSS */
 @import "partials/sidebar-two";

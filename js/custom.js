@@ -275,6 +275,57 @@
                 },
             ],
         });
+        $(".home-two-client-logo-slider").slick({
+            slidesToShow: 1,
+            infinite: true,
+            autoplay: false,
+            draggable: true,
+            arrows: false,
+            slidesToScroll: 1,
+            loop: true,
+            dots: true,
+            speed: 1500,
+            centerMode:true,
+            centerPadding:'50px',
+
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        autoplay: true,
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+        $(".home-two-process-slider").slick({
+            slidesToShow: 1,
+            infinite: true,
+            autoplay: false,
+            draggable: true,
+            arrows: true,
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            speed: 1500,
+            centerMode:true,
+            centerPadding:'50px',
+            prevArrow:
+                "<button type='button' class='process-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+            nextArrow:
+                "<button type='button' class='process-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        autoplay: true,
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+
+
 
 
         /*
