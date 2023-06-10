@@ -9,9 +9,6 @@
 $text-primary: #4566d4;
 $text-gray-light: #6a6c73;
 
-/* Why choose us CSS(modern tecnology) */
-@import "modules/why-choose-us";
-
 /* Pricing CSS */
 @import "modules/pricing";
 
@@ -19,10 +16,7 @@ $text-gray-light: #6a6c73;
 @import "modules/articles";
 
 /* Testimonial card CSS */
-@import "modules/testimonial-card";
-
-/* client widget CSS */
-@import "modules/client-widget";
+@import "modules/testimonial-card/testimonial-card";
 
 /* Footer CSS */
 @import "partials/footer-two";
@@ -45,9 +39,6 @@ $text-gray-light: #6a6c73;
 // Process-step-card
 @import "modules/process-step";
 
-// Process-step-card style-two
-// @import "modules/process-step-two";
-
 // Post-card
 @import "modules/post-card/post-card-two";
 
@@ -61,7 +52,7 @@ $text-gray-light: #6a6c73;
 @import "partials/sidebar-two";
 
 /* Client-logo CSS */
-@import "modules/client-logo-two";
+@import "modules/client-logo/client-logo-two";
 
 /* List-item CSS */
 @import "modules/list-item";
