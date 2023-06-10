@@ -222,184 +222,6 @@ input:focus {
   color: #ffffff !important;
 }
 
-.main-menu.style-two ul li ul {
-  background-color: #071c34;
-}
-.main-menu.style-two ul li a {
-  color: #ffffff;
-}
-.main-menu.style-two ul li a:before {
-  border: 1px solid #ffffff;
-  border-width: 0 1px 1px 0;
-}
-
-.comment-respond.style-two {
-  position: relative;
-  z-index: 1;
-  padding: 25px;
-}
-@media screen and (min-width: 1199px) {
-  .comment-respond.style-two {
-    padding: 50px;
-  }
-}
-
-.subscribe-area.style-two {
-  background: #ffffff;
-  border-bottom: 0;
-  padding: 20px 24px 0;
-  border-radius: 10px;
-}
-.subscribe-area.style-two .subscribe-title {
-  color: #fcaf14;
-  font-family: "Outfit", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.subscribe-form-widget .single-field.style-two input {
-  border: 1px solid #bfc5cb;
-  border-radius: 10px;
-}
-.subscribe-form-widget.style-two {
-  flex-direction: column;
-  gap: 25px;
-}
-
-.footer-bottom-menu.style-two ul {
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 0;
-}
-
-/* Hero slider CSS */
-/* custom slider CSS */
-.custom-slider-wrapper,
-.portfolio-slider {
-  margin-top: 50px;
-  width: calc(100% + 30px);
-  padding: 20px 15px;
-  margin-left: -15px;
-  position: relative;
-}
-.custom-slider-wrapper .post-gallery-btn,
-.portfolio-slider .post-gallery-btn {
-  bottom: 5%;
-  top: 95%;
-  background: #ffffff !important;
-  border: 1px solid #d3d3d3 !important;
-}
-.custom-slider-wrapper .post-gallery-btn i,
-.portfolio-slider .post-gallery-btn i {
-  color: #fcaf14;
-}
-.custom-slider-wrapper .post-gallery-btn:hover i,
-.portfolio-slider .post-gallery-btn:hover i {
-  color: #fcaf14;
-}
-.custom-slider-wrapper .slick-slide .drop-shadow,
-.portfolio-slider .slick-slide .drop-shadow {
-  box-shadow: none;
-  transition: box-shadow 0.1s ease-in-out;
-}
-.custom-slider-wrapper .slick-slide.slick-active .drop-shadow,
-.portfolio-slider .slick-slide.slick-active .drop-shadow {
-  box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.35);
-}
-.custom-slider-wrapper .slick-list,
-.portfolio-slider .slick-list {
-  display: flex;
-  overflow: visible;
-}
-.custom-slider-wrapper .slick-list .slick-track,
-.portfolio-slider .slick-list .slick-track {
-  display: flex;
-  gap: 30px;
-}
-.custom-slider-wrapper .slick-dots,
-.portfolio-slider .slick-dots {
-  width: 100%;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  padding: 0 110px;
-  list-style: none;
-  background: white;
-  height: 5px;
-  margin: 78px 70px 10px 0;
-}
-.custom-slider-wrapper .slick-dots li,
-.portfolio-slider .slick-dots li {
-  width: 100%;
-  height: 5px;
-  border-radius: 10px;
-}
-.custom-slider-wrapper .slick-dots li button,
-.portfolio-slider .slick-dots li button {
-  width: 100%;
-  height: 5px;
-  background: #31373f;
-  font-size: 0;
-}
-.custom-slider-wrapper .slick-dots .slick-active button,
-.portfolio-slider .slick-dots .slick-active button {
-  background: #4566d4;
-  width: 100%;
-}
-.custom-slider-wrapper.style-two,
-.portfolio-slider.style-two {
-  width: 100%;
-}
-.custom-slider-wrapper.style-two .slick-list,
-.portfolio-slider.style-two .slick-list {
-  overflow: hidden;
-}
-
-/* Why choose us CSS(modern tecnology) */
-/* About-us CSS */
-/* Service-details counter style-three CSS */
-.counter-card.style-three {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.counter-card.style-three .counter-item {
-  text-align: left;
-  padding: 60px 40px;
-  background: #035b7b;
-  border-radius: 8px;
-}
-.counter-card.style-three .counter-item .counter-title {
-  flex-direction: row;
-  gap: 30px;
-}
-.counter-card.style-three .counter-item .counter-title .title {
-  margin: 0;
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
-}
-.counter-card.style-three .counter-item .number {
-  margin: 0;
-  color: #ffffff;
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: 700;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .counter-card.style-three .counter-item .number {
-    font-size: 56px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .counter-card.style-three .counter-item {
-    padding: 40px 30px;
-  }
-}
-
 /* Pricing CSS */
 .pricing,
 .contact-section {
@@ -629,88 +451,49 @@ input:focus {
   }
 }
 
-/* Info card-style-one CSS */
 /* Testimonial card CSS */
 .testimonial-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 32px;
   padding: 32px 30px;
   background: #ffffff;
 }
-.testimonial-card .icon {
+.testimonial-card .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.testimonial-card .content-wrapper .icon {
   display: flex;
   gap: 4px;
   align-items: center;
 }
-.testimonial-card .content .text {
+.testimonial-card .content-wrapper .content .text {
   font-size: 18px;
   line-height: 31px;
   color: #575959;
 }
-.testimonial-card .meta-user .user-info {
+.testimonial-card .content-wrapper .meta-user .user-info {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-.testimonial-card .meta-user .user-info .image {
+.testimonial-card .content-wrapper .meta-user .user-info .image {
   width: 88px;
   height: 88px;
   border-radius: 50px;
   overflow: hidden;
 }
-.testimonial-card .meta-user .user-info .info {
+.testimonial-card .content-wrapper .meta-user .user-info .info {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.testimonial-card .meta-user .user-info .info h5 {
+.testimonial-card .content-wrapper .meta-user .user-info .info h5 {
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
-}
-
-/* client widget CSS */
-.client-slider-wrapper .client-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Contact-info-card CSS */
-.contact-info {
-  padding: 25px;
-  background: #ffffff;
-  border-radius: 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-.contact-info.style-two {
-  position: relative;
-  z-index: 1;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.contact-info.style-three {
-  flex-direction: column;
-  background: transparent;
-  padding: 65px 0;
-  justify-content: space-between;
-  border-bottom: 1px solid #424b6a;
-  border-radius: 0;
-}
-@media screen and (min-width: 425px) {
-  .contact-info.style-three {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 65px 30px;
-  }
-}
-@media screen and (min-width: 1199px) {
-  .contact-info {
-    padding: 50px;
-  }
 }
 
 /* Footer CSS */
@@ -1263,112 +1046,6 @@ input:focus {
 }
 .post-card-one.style-two .content-wrapper .theme-btn:hover {
   color: #080f10;
-}
-
-.post-card.style-three {
-  height: 468px;
-  justify-content: end;
-  align-items: end;
-  position: relative;
-  overflow: hidden;
-}
-.post-card.style-three:before {
-  background-color: #fcaf14;
-  opacity: 0.3;
-}
-.post-card.style-three:hover .image {
-  transform: scale(1.05);
-}
-.post-card.style-three .image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  transform: scale(1.01);
-  transition: all 0.5s ease-out;
-}
-.post-card.style-three .content .post-meta {
-  color: #ffffff;
-  display: inline-flex;
-  gap: 17px;
-  align-items: center;
-  font-size: 16px;
-  line-height: 30px;
-}
-.post-card.style-three .content .post-meta span {
-  color: #ffffff;
-  margin: 0;
-  font-weight: 400;
-}
-.post-card.style-three .content .post-meta span:before {
-  background-color: #b8bfcc;
-  width: 1px;
-  display: inline-flex;
-  height: 12px;
-  content: "";
-  margin-right: 17px;
-}
-.post-card.style-three .content .post-meta span:last-child {
-  display: block;
-}
-.post-card.style-three .content .post-meta span:first-child:before {
-  display: none;
-}
-.post-card.style-three .content .title {
-  color: #ffffff;
-  font-size: 30px;
-  line-height: 42px;
-  font-weight: 700;
-}
-.post-card.style-three .content .title:hover {
-  color: #ff6731;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .post-card.style-three {
-    height: 300px;
-  }
-  .post-card.style-three .content .post-meta {
-    font-size: 14px;
-  }
-  .post-card.style-three .content .title {
-    font-size: 24px;
-    line-height: 38px;
-  }
-}
-
-.post-card.style-four {
-  flex-direction: column;
-  border: none;
-  padding: 0;
-  gap: 28px;
-}
-.post-card.style-four:hover .image img {
-  transform: scale(1.05);
-}
-.post-card.style-four .image img {
-  width: 100%;
-  height: 100%;
-  transition: all 0.5s ease-out;
-}
-.post-card.style-four .content .title:hover {
-  color: #035b7b;
-}
-.post-card.style-four .content .post-meta span {
-  color: #ff6731;
-  line-height: 30px;
-  font-weight: 700;
-}
-.post-card.style-four .content .post-meta span:last-child {
-  display: block;
-}
-.post-card.style-four .content .post-meta span:first-child:before {
-  display: none;
-}
-.post-card.style-four .content .post-meta .date {
-  color: #778196;
-  font-weight: 400;
 }
 
 /* Team-member-card style-one CSS */

@@ -170,10 +170,13 @@
 }
 
 // Portfolio-card
-@import "modules/portfolio";
+@import "modules/portfolio-card/portfolio";
 
 // Portfolio-card
-@import "modules/portfolio-two";
+@import "modules/portfolio-card/portfolio-two";
+
+// Portfolio-card style-three
+@import "modules/portfolio-card/portfolio-three";
 
 // Image-card
 @import "modules/image-card/image-card";
@@ -187,17 +190,14 @@
 // team-member-card style-two
 @import "modules/team-member-two";
 
-// Portfolio-card style-three
-@import "modules/portfolio-three";
-
 // Icon-card style-five
-@import "modules/icon-card-five";
+@import "modules/icon-card/icon-card-five";
 
 // Icon-card style-six
-@import "modules/icon-card-six";
+@import "modules/icon-card/icon-card-six";
 
 // Icon-card style-seven
-@import "modules/icon-card-seven";
+@import "modules/icon-card/icon-card-seven";
 
 // Portfolio-card-slider-control
 @import "modules/portfolio-card-slider-control";
@@ -213,3 +213,6 @@
 
 // Contact-page
 @import "pages/contact-page";
+
+// Testimonial-card style-two
+@import "modules/testimonial-card/testimonial-card-two";

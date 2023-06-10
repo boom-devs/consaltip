@@ -48,29 +48,21 @@ Footer Section
 @import "partials/header-two";
 @import "partials/header-three";
 @import "modules/meanmenu";
-/* 8.Slider Section */
-@import "modules/icon-card";
-@import "modules/icon-card-two";
-@import "modules/icon-card-three";
-@import "modules/about-info-card";
-// @import "modules/about-info-card-two";
-// @import "modules/about-info-card-three";
-// @import "modules/promotional-banner";
-// @import "modules/promotional-banner-style-two";
+// 4.icon-card
+@import "modules/icon-card/icon-card";
+@import "modules/icon-card/icon-card-two";
+@import "modules/icon-card/icon-card-three";
+
 @import "modules/video-popup-card";
 @import "modules/counter-card";
-// @import "modules/counter-card-two";
 @import "modules/process-step";
-// @import "modules/process-step-two";
-@import "modules/testimonial-card";
+@import "modules/testimonial-card/testimonial-card";
 @import "modules/testimonial-slider-controls";
 @import "modules/accordion";
-@import "modules/client-logo";
-@import "modules/client-logo-two";
-@import "modules/post-card-one";
-@import "modules/post-card-two";
-@import "modules/post-card-three";
-@import "modules/post-card-four";
+@import "modules/client-logo/client-logo";
+@import "modules/client-logo/client-logo-two";
+@import "modules/post-card/post-card-one";
+@import "modules/post-card/post-card-two";
 @import "modules/price-card";
 
 /* 8.Title Section */
@@ -93,8 +85,6 @@ Footer Section
 
 /* Team Member */
 @import "modules/team-member";
-@import "modules/team-slider-controls";
-@import "modules/portfolio-two";
 
 @import "pages/pages";
 @import "pages/about-page";
