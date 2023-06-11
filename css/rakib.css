@@ -163,7 +163,7 @@ input:focus {
 }
 
 .background-black {
-  background-color: #fcaf14;
+  background-color: #033f47;
 }
 
 .background-blue {
@@ -229,6 +229,17 @@ input:focus {
   }
 }
 
+.theme-transparant-btn {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.theme-transparant-btn:hover {
+  background: #e0f780;
+  color: #fff;
+}
+
 /* Pricing CSS */
 .pricing,
 .contact-section {
@@ -272,7 +283,7 @@ input:focus {
   font-size: 16px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #fcaf14;
+  color: #033f47;
   margin: 0;
 }
 .pricing .price-card .card-title,
@@ -282,7 +293,7 @@ input:focus {
   font-weight: 600;
   font-size: 45px;
   line-height: 54px;
-  color: #fcaf14;
+  color: #033f47;
   display: flex;
   align-items: center;
   gap: 2px;
@@ -294,7 +305,7 @@ input:focus {
   font-weight: 600;
   font-size: 16px;
   line-height: 54px;
-  color: #fcaf14;
+  color: #033f47;
   text-align: start;
 }
 .pricing .price-card .card-title span,
@@ -305,7 +316,7 @@ input:focus {
   font-size: 13px;
   line-height: 23px;
   text-transform: capitalize;
-  color: #fcaf14;
+  color: #033f47;
   align-self: end;
 }
 .pricing .price-card .card-desc,
@@ -345,7 +356,7 @@ input:focus {
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
-  color: #fcaf14;
+  color: #033f47;
   margin: 0;
 }
 .pricing .price-card .card-btn,
@@ -385,7 +396,7 @@ input:focus {
   font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #fcaf14;
+  color: #033f47;
 }
 .post-card-item .content-wrapper {
   padding: 25px 25px 30px 25px;
@@ -403,7 +414,7 @@ input:focus {
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
-  color: #fcaf14;
+  color: #033f47;
 }
 .post-card-item .content-wrapper .post-author-meta p {
   font-size: 14px;
@@ -417,7 +428,7 @@ input:focus {
   font-size: 24px;
   line-height: 28px;
   text-transform: capitalize;
-  color: #fcaf14;
+  color: #033f47;
 }
 .post-card-item .content-wrapper .desc {
   font-weight: 400;
@@ -1153,7 +1164,7 @@ input:focus {
   margin-right: 0;
 }
 .nav-tab li a {
-  color: #fcaf14;
+  color: #033f47;
   font-family: "Outfit", sans-serif;
   display: inline-block;
   font-size: 21px;
@@ -1514,7 +1525,7 @@ input:focus {
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  color: #fcaf14;
+  color: #033f47;
 }
 .faq-tab .faq-single-tab:hover {
   background: #ff6731;
@@ -1574,7 +1585,7 @@ input:focus {
 }
 .contact-title h2 {
   font-size: 38px;
-  color: #fcaf14;
+  color: #033f47;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .contact-title h2 {

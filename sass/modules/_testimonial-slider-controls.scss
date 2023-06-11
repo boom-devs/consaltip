@@ -125,7 +125,7 @@ button.testimonial-arrow-btn {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: $orange-color;
+    color: $brand;
     font-size: 21px;
     @include transition;
   }
@@ -145,7 +145,7 @@ button.testimonial-arrow-btn {
   position: relative;
   z-index: 99;
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 12px;
 
   @include rmaxwd(991) {

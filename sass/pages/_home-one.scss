@@ -1,160 +1,25 @@
 // About Us Area
-.home-one-about-us-area {
-  padding: 145px 0;
 
-  @include rmaxwd(991) {
-    padding: 100px 0;
-  }
-  .about-info-card {
-    .about-info-content {
-      padding-left: 60px;
-
-      @include rmaxwd(1199) {
-        padding-left: 0;
-        padding-top: 200px;
-      }
-      @include rmaxwd(650) {
-        padding-top: 100px;
-      }
-    }
-  }
-}
 // Video Popup Area
-.video-popup-area {
-  margin-bottom: -250px;
 
-  @include rmaxwd(991) {
-    margin-bottom: 0;
-    padding-bottom: 100px;
-  }
-}
 
 // Counter Up Area
-.counter-area {
-  padding-top: 390px;
-  padding-bottom: 145px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: $primary-color;
-  z-index: -1;
 
-  @include rmaxwd(991) {
-    padding: 100px 0;
-  }
-}
-.counter-squre-shape {
-  width: 245px;
-  height: 245px;
-  border-radius: 18px;
-  @include gradient-color-red;
-  transform: rotate(45deg);
-  right: -90px;
-  bottom: -80px;
-  position: absolute;
-}
 
 // Why Choose Us Area
-.why-choose-us-area {
-  margin-top: -74px;
 
-  @include rmaxwd(1199) {
-    margin-top: 0;
-    padding-top: 100px;
-  }
-
-  .why-choose-us-wrapper {
-    background-color: $white;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 5px 0 90px rgba(245, 246, 249, 0.8);
-
-    @include sm {
-      box-shadow: none;
-    }
-    @include md {
-      box-shadow: none;
-    }
-  }
-}
 
 // Service Area
-.service-area {
-  padding-top: 144px;
-  padding-bottom: 120px;
 
-  @include rmaxwd(991) {
-    padding-top: 100px;
-    padding-bottom: 76px;
-  }
-  .section-title {
-    margin-bottom: 70px;
-  }
-}
 
 // Process Step Area
-.home-one-process-step-area {
-  background-color: $black-200;
-  padding-top: 145px;
 
-  @include rmaxwd(991) {
-    padding-top: 100px;
-    padding-bottom: 76px;
-  }
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    padding-bottom: 67px;
-  }
-}
-.process-image {
-  margin-bottom: -70px;
-  position: relative;
-  text-align: center;
-  z-index: 99;
-  animation: MoveLeftRight 2s linear infinite alternate;
-}
 
 // Appoitment Area
-.home-one-appointment-area {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  padding: 144px 0;
-  position: relative;
-  z-index: 2;
-
-  @include rmaxwd(991) {
-    padding: 100px 0;
-  }
-  .accordion-wrapper {
-    padding-left: 90px;
-
-    @include rmaxwd(1199) {
-      padding-left: 0;
-      margin-top: 50px;
-    }
-  }
-}
-.appointment-squre-shape {
-  width: 200px;
-  height: 200px;
-  border-radius: 18px;
-  @include gradient-color-red;
-  transform: rotate(45deg);
-  left: -20px;
-  top: -140px;
-  position: absolute;
-}
 
 // Client Logo Area
 // News Area
-.news-area {
-  padding-top: 144px;
-  padding-bottom: 270px;
 
-  .section-title {
-    margin-bottom: 70px;
-  }
-}
 
 // Testimonial Area
 .home-one-testimonial-area {

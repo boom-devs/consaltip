@@ -162,7 +162,7 @@ input:focus {
 }
 
 .background-black {
-  background-color: #fcaf14;
+  background-color: #033f47;
 }
 
 .background-blue {
@@ -226,6 +226,17 @@ input:focus {
     padding: 10px 20px;
     font-size: 16px;
   }
+}
+
+.theme-transparant-btn {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.theme-transparant-btn:hover {
+  background: #e0f780;
+  color: #fff;
 }
 
 .background-image {
@@ -555,6 +566,9 @@ input:focus {
     padding-right: 0;
   }
 }
+.image-card .content .title-wrapper .desc {
+  margin-right: 25px;
+}
 .image-card .image-card-btn span {
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -621,6 +635,27 @@ input:focus {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .image-card {
     flex-direction: column-reverse;
+  }
+}
+
+.section-title .title {
+  position: relative;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .section-title .title {
+    font-size: 46px;
+  }
+}
+.section-title .desc {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .section-title .desc {
+    font-size: 16px;
+    line-height: 28px;
   }
 }
 

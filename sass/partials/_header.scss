@@ -1,120 +1,20 @@
-.header-top {
-  background-color: $primary-color;
 
-  .header-top-info {
-    display: flex;
-
-    @include rmaxwd(1199) {
-      justify-content: space-between;
-      width: 100%;
-    }
-  }
-  .header-contact-info {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 6px 0;
-
-    @include sm {
-      flex-direction: column;
-      gap: 0;
-    }
-    span {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-
-      @include sm {
-        width: 100%;
-      }
-
-
-      &:first-child {
-        &:before {
-          display: none;
-        }
-      }
-      &:before {
-        background-color: $white;
-        width: 1px;
-        display: inline-flex;
-        height: 12px;
-        content: "";
-
-        @include sm {
-          display: none;
-        }
-      }
-
-      i {
-        color: $white;
-      }
-
-      a {
-        display: flex;
-        align-items: center;
-        gap: 13px;
-        color: $white;
-        font-size: 15px;
-        font-weight: 500;
-        font-family: $body-font;
-
-        i {
-          color: $white;
-        }
-      }
-    }
-  }
-  .header-top-btn {
-    @include sm {
-      display: none;
-    }
-    a {
-      position: relative;
-      padding: 11px 46px;
-      font-size: 18px;
-      font-family: $heading-font;
-      color: $white;
-      margin-bottom: -100px;
-      display: inline-block;
-      margin-left: 30px;
-      font-weight: 700;
-      z-index: 2;
-
-      &:before {
-        position: absolute;
-        content: "";
-        border-radius: 0 0 10px 10px;
-        background-color: $orange-color;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-      }
-    }
-  }
-  .header-social {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    justify-content: flex-end;
-
-    a {
-      font-size: 16px;
-      color: $white;
-      transition: 0.3s;
-
-    }
-  }
+.header-area {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
 }
-
 // Start Header Nav
 .header-sec {
   width: 100%;
   z-index: 999;
   transition: all 0.4s ease 0s;
-  background-color: $white;
+  position: relative;
+  padding-right: 96px;
+  padding-left: 96px; 
+
 
   &.sticky-header {
     width: 100%;
@@ -135,48 +35,6 @@
 
 
 
-.logo {
-  position: relative;
-  z-index: 2;
-  height: 120px;
-  display: flex;
-  align-items: center;
-
-  @include sm {
-    height: 80px;
-  }
-
-  &:before {
-    position: absolute;
-    content: "";
-    width: 350px;
-    height: 240px;
-    left: -30px;
-    bottom: -40px;
-    @include gradient-color-red;
-    border-radius: 15px;
-    z-index: -1;
-    transform: rotate(20deg);
-
-    @media only screen and (max-width: 1199px) {
-      display: none;
-    }
-  }
-
-  .standard-logo {
-    @media only screen and (max-width: 1199px) {
-      display: none;
-    }
-  }
-
-  .retina-logo {
-    display: none;
-
-    @media only screen and (max-width: 1199px) {
-      display: block;
-    }
-  }
-}
 
 .main-menu {
   ul {
@@ -191,7 +49,7 @@
       &.active {
         position: relative;
         > a {
-          color: $orange-color;
+          color:$brand;
 
           //&:before {
           //  border-color: $orange-color;
@@ -207,24 +65,7 @@
           }
         }
       }
-      &.dropdown {
-        > a {
-          //padding-right: 30px;
-
-          //&:before {
-          //  visibility: visible;
-          //}
-        }
-        .dropdown {
-          > a {
-            //&:before {
-            //  visibility: visible;
-            //  right: 15px;
-            //  transform: rotate(-45deg);
-            //}
-          }
-        }
-      }
+    
 
       ul {
         &.submenu {
@@ -257,10 +98,10 @@
         text-transform: capitalize;
         @include transition;
         position: relative;
-        color: $secondary-color;
-        font-family: $heading-font;
+        color: $white;
+        font-family: $body-font;
         font-size: 16px;
-        font-weight: 700;
+        font-weight: 400;
 
         //&:before {
         //  position: absolute;
@@ -380,48 +221,38 @@
 
 // Header Button Area
 .header-btn {
-  margin-left: 35px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
 
   @media only screen and (max-width: 1399px) {
     display: none;
   }
-
-  .icon-wrapper {
-    border: 1px solid $sky-color;
-    border-radius: 50px;
-    padding: 4px;
-    animation: ripple 3s infinite;
-    box-shadow: 0 0 0 0 rgba(255, 103, 49, 0.1);
-    .icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 60px;
-      height: 60px;
-      border-radius: 50px;
-      @include gradient-color-red;
-      flex-shrink: 0;
-    }
-  }
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
-
-    span {
-      display: inline-block;
-      width: 100%;
-    }
-    .text {
-      font-family: $heading-font;
+  .header-top-btn{
+    a{
+      background: $white;
+      color: $title-color;
+      padding:16px 19px;
+      font-weight: 500;
+      position: relative;
+      z-index: 1;
+      transition: 0.3s;
       font-size: 18px;
-      font-weight: 700;
-      color: $secondary-color;
+      gap: 10px;
+      border-radius: 50px;
+     font-family: $heading-font;
+
+    }
+    i{
+      vertical-align: middle;
+      display: inline-block;
+      margin-right: 2px;
+      line-height: 1;
+      background: $brand;
+      padding: 11px;
+      border-radius: 50%;
+
     }
   }
 
+  
   @media only screen and (max-width: 1199px) {
     display: none;
   }
