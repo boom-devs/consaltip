@@ -386,7 +386,7 @@ input:focus {
 }
 
 .custom-container-60 {
-  width: calc(100% + 100px);
+  width: 100%;
   overflow: hidden;
   padding-right: 0;
 }
