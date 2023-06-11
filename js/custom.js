@@ -193,7 +193,6 @@
             ],
         });
 
-
         /*
        Testimonial Slider
        ============================*/
@@ -283,6 +282,76 @@
                     },
                 },
             ],
+        });
+
+        // Home-one Review
+        $(".home-one-review-slider").slick({
+            slidesToShow: 1,
+            infinite: true,
+            autoplay: false,
+            draggable: true,
+            arrows: true,
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            speed: 1500,
+            prevArrow:
+                "<button type='button' class='case-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+            nextArrow:
+                "<button type='button' class='case-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+
+        // Home-one Team-member slider
+        $(".home-one-team-member").slick({
+            slidesToShow: 4,
+            infinite: true,
+            autoplay: false,
+            draggable: true,
+            arrows: true,
+            slidesToScroll: 1,
+            loop: true,
+            dots: true,
+            speed: 1500,
+             prevArrow:
+                "<button type='button' class='team-card-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+            nextArrow:
+                "<button type='button' class='team-card-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+
+         $('#home-one-team-prev').on('click', function () {
+            $('.team-card-arrow-btn .prev-btn').trigger('click');
+            console.log("kdf")
+        });
+        $('#home-one-team-next').on('click', function () {
+            $('.team-card-arrow-btn .next-btn').trigger('click');
         });
 
         // client-logo slider home-two
@@ -390,7 +459,6 @@
 
         $('.prev_btn_custom').on('click', function () {
             $('.prev-btn').trigger('click');
-            console.log("djf")
         });
         $('.next_btn_custom').on('click', function () {
             $('.next-btn').trigger('click');

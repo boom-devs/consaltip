@@ -10,15 +10,17 @@
   .imgae-wrappe {
     position: relative;
     .sketch {
-      background-image: url("../../images/sketch-black.png");
-      width: 109px;
-      height: 109px;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(-50%, 50%);
+      @include xl {
+        background-image: url("../../images/sketch-black.png");
+        width: 109px;
+        height: 109px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translate(-50%, 50%);
+      }
     }
   }
 }
@@ -53,13 +55,14 @@
   flex-direction: column;
   gap: 32px;
 }
-.portfolio-wrapper {
+
+// case-studies
+.case-studies-home-one {
   background: $icon-color;
   padding: 120px 0 220px 0;
 }
+// case-studies slider
 .home-one-case-studies-slider {
-  .slick-list {
-  }
   .portfolio-card {
     margin: 0 12px;
   }
@@ -113,4 +116,200 @@
   .home-one-case-studies-slider {
     // display: none !important;
   }
+}
+
+// Review section
+.home-one-review {
+  padding: 120px 0;
+  .review-card {
+    display: flex !important;
+    align-items: end;
+    gap: 73px;
+    .image-wrapper {
+      max-width: 50%;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .review-content {
+      max-width: 50%;
+      width: 100%;
+      .testimonial-card {
+        justify-content: end;
+      }
+    }
+  }
+  .home-one-review-slider {
+    button.case-arrow-btn {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      transition: 0.3s;
+      z-index: 99;
+      background-color: transparent;
+      border: 1px solid #828282;
+      cursor: pointer;
+      top: -174px;
+      overflow: hidden;
+      @include rmaxwd(991) {
+        top: unset;
+      }
+
+      &.prev-btn {
+        right: 74px;
+
+        @include rmaxwd(767) {
+          right: unset;
+        }
+      }
+      &.next-btn {
+        right: 0;
+        @include rmaxwd(767) {
+          right: 30px;
+        }
+      }
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $title-color;
+        font-size: 21px;
+        @include transition;
+      }
+      &:hover {
+        background: $brand;
+        i {
+          color: $title-color;
+          @include transition;
+        }
+      }
+    }
+  }
+}
+
+// Blog section
+.home-one-blog {
+  padding: 120px 0;
+  background-color: $icon-color;
+  position: relative;
+  .sketch {
+    @include xl {
+      background-image: url("../../images/brush-sketch-white.png");
+      width: 109px;
+      height: 109px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      bottom: 72px;
+      right: 176px;
+    }
+  }
+}
+
+// Team-member section
+.home-one-team-member {
+  position: relative;
+  .team-card-arrow-btn {
+    display: none !important;
+  }
+  .slick-list {
+    .slick-slide {
+      margin: 0 32px;
+      @include transition;
+
+      &.slick-active {
+        @include transition;
+      }
+      @include lg {
+        margin: 0 16px;
+      }
+    }
+  }
+  // Slick Nav Arrow Button
+  button.team-card-arrow-btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 99;
+    background-color: transparent;
+    border: 1px solid #828282;
+    cursor: pointer;
+    top: -164px;
+    overflow: hidden;
+    @include rmaxwd(991) {
+      top: unset;
+      bottom: -80px;
+    }
+
+    &.prev-btn {
+      right: 72px;
+
+      @include rmaxwd(767) {
+        right: unset;
+        left: 30px;
+      }
+    }
+    &.next-btn {
+      right: 0;
+      @include rmaxwd(767) {
+        right: 30px;
+        left: unset;
+      }
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $title-color;
+      font-size: 21px;
+      @include transition;
+    }
+    &:hover {
+      background: $brand;
+
+      i {
+        color: $title-color;
+        @include transition;
+      }
+    }
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 64px;
+    list-style: none;
+    li {
+      line-height: 0;
+      button {
+        width: 8px;
+        height: 8px;
+        font-size: 0;
+        border-radius: 50px;
+        padding: unset;
+        background-color: #bdbdbd;
+      }
+      &.slick-active {
+        button {
+          background: $title-color;
+        }
+      }
+    }
+  }
+}
+
+// Client-logo
+.home-one-client-logo {
+  padding: 82px 0 72px 0;
+  background-color: $icon-color;
+  background-image: url("../../images/client/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }

@@ -1295,6 +1295,24 @@ input:focus {
   }
 }
 
+.testimonial-card.style-three .content-wrapper {
+  gap: 16px;
+}
+.testimonial-card.style-three .content .text {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #080f10;
+}
+.testimonial-card.style-three .meta-user {
+  margin-top: 41px;
+}
+.testimonial-card.style-three .meta-user .user-info .image {
+  display: none;
+}
+
 .about-info-card {
   display: flex;
   flex-direction: column;
