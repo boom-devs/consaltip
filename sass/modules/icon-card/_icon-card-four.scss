@@ -15,5 +15,15 @@
                 align-self: center;
             }
         }
+        .content {
+            .title {
+                font-size: 24px;
+            }
+        }
+        &:hover {
+            .icon {
+                background: $brand !important;
+            }
+        }
     }
 }

@@ -716,6 +716,12 @@ input:focus {
     align-self: center;
   }
 }
+.icon-card.style-four .content .title {
+  font-size: 24px;
+}
+.icon-card.style-four:hover .icon {
+  background: #e0f780 !important;
+}
 
 .price-card-switch {
   display: flex;

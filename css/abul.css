@@ -3798,13 +3798,15 @@ a.meanmenu-reveal {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 .video-popup-card .video-popup-btn a {
-  width: 155px;
-  height: 155px;
+  width: 86px;
+  height: 86px;
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-  background: rgb(0, 91, 172);
-  background: linear-gradient(135deg, rgb(0, 91, 172) 0%, rgb(30, 174, 152) 100%);
+  background: rgba(224, 247, 128, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   border-radius: 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3821,12 +3823,12 @@ a.meanmenu-reveal {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .video-popup-card .video-popup-btn a {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 }
 .video-popup-card .video-popup-btn a i {
-  color: #ffffff;
+  color: #033f47;
   font-size: 24px;
 }
 .video-popup-card .video-popup-btn a:hover {
@@ -3834,19 +3836,19 @@ a.meanmenu-reveal {
 }
 .video-popup-card.style-two {
   padding: 0;
-  margin-bottom: -70px;
   box-shadow: none;
-}
-@media (max-width: 991px) {
-  .video-popup-card.style-two {
-    margin-bottom: 80px;
-  }
 }
 .video-popup-card.style-two .video-popup-btn a {
   width: 100px;
   height: 100px;
-  background-color: rgba(255, 103, 49, 0.84);
+  background-color: transparent;
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
   background-image: none;
+  border: 2px solid #ffffff;
+}
+.video-popup-card.style-two .video-popup-btn a i {
+  color: #ffffff;
 }
 .video-popup-card.style-three {
   overflow: visible;
@@ -4092,47 +4094,6 @@ a.meanmenu-reveal {
 }
 .testimonial-card.style-two .image-wrapper .image {
   position: relative;
-}
-.testimonial-card.style-two .image-wrapper .image .video-popup-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-.testimonial-card.style-two .image-wrapper .image .video-popup-btn a {
-  width: 86px;
-  height: 86px;
-  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-  background: rgba(224, 247, 128, 0.5);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  border-radius: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  animation: ripple 3s infinite;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .testimonial-card.style-two .image-wrapper .image .video-popup-btn a {
-    width: 100px;
-    height: 100px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .testimonial-card.style-two .image-wrapper .image .video-popup-btn a {
-    width: 60px;
-    height: 60px;
-  }
-}
-.testimonial-card.style-two .image-wrapper .image .video-popup-btn a i {
-  color: #033f47;
-  font-size: 24px;
-}
-.testimonial-card.style-two .image-wrapper .image .video-popup-btn a:hover {
-  animation: none;
 }
 .testimonial-card.style-two .image-wrapper .image .count {
   position: absolute;
@@ -7488,6 +7449,48 @@ ul.children {
 }
 .home-three-service .home-three-service-slider .home-three-service-arrow-btn {
   display: none !important;
+}
+
+.home-three-process {
+  padding: 120px 0;
+  background-color: #f8f8f1;
+  position: relative;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .home-three-process .shape-one {
+    background-image: url("../../images/shape/Rectangle.png");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 165px;
+    left: 49px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .home-three-process .shape-two {
+    background-image: url("../../images/shape/shape-2.png");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 347px;
+    right: 48px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .home-three-process .sketch {
+    background-image: url("../../images/sketch-color.png");
+    width: 109px;
+    height: 109px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 88px;
+    bottom: 276px;
+  }
 }
 
 .page-breadcrumb-sec .sketch {
