@@ -3067,10 +3067,10 @@ html {
   position: absolute;
   content: "";
   height: 3px;
-  width: 18px;
-  background-color: #ff6731;
+  width: 100%;
+  background-color: #e0f780;
   bottom: 40px;
-  left: 15px;
+  left: 0;
 }
 .main-menu ul li ul.submenu li.active > a {
   position: relative;
@@ -3086,7 +3086,7 @@ html {
 }
 .main-menu ul li a {
   display: block;
-  padding: 45px 20px;
+  padding: 43px 24px;
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.5s ease-out;
@@ -3095,6 +3095,9 @@ html {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 .main-menu ul li a:hover {
   color: #ff6731;
@@ -3177,23 +3180,27 @@ html {
 .header-btn .header-top-btn a {
   background: #ffffff;
   color: #080f10;
-  padding: 16px 19px;
+  padding: 8px 8px;
   font-weight: 500;
   position: relative;
   z-index: 1;
   transition: 0.3s;
   font-size: 18px;
-  gap: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   border-radius: 50px;
   font-family: "Outfit", sans-serif;
 }
 .header-btn .header-top-btn i {
   vertical-align: middle;
-  display: inline-block;
-  margin-right: 2px;
-  line-height: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   background: #e0f780;
   padding: 11px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
 }
 @media only screen and (max-width: 1199px) {
@@ -6416,6 +6423,34 @@ ul.children {
   }
 }
 
+.why-choose-us-area {
+  padding: 120px 0;
+}
+
+.home-one-process-step {
+  padding: 120px 0 208px 0;
+  background-color: #f8f8f1;
+}
+.home-one-process-step .imgae-wrappe {
+  position: relative;
+}
+.home-one-process-step .imgae-wrappe .sketch {
+  background-image: url("../../images/sketch-black.png");
+  width: 109px;
+  height: 109px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+}
+
+.free-consultaion-area {
+  padding-bottom: 120px;
+  margin-top: -114px;
+}
+
 .home-one-testimonial-area {
   padding: 145px 0;
 }
@@ -6442,10 +6477,64 @@ ul.children {
 }
 
 .portfolio-wrapper {
-  background: #035b7b;
-  padding: 100px 0;
+  background: #033f47;
+  padding: 120px 0 220px 0;
 }
 
+.home-one-case-studies-slider .portfolio-card {
+  margin: 0 12px;
+}
+.home-one-case-studies-slider button.case-arrow-btn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: 0.3s;
+  z-index: 99;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  bottom: -136px;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .home-one-case-studies-slider button.case-arrow-btn {
+    top: unset;
+  }
+}
+.home-one-case-studies-slider button.case-arrow-btn.prev-btn {
+  right: 51%;
+}
+@media (max-width: 767px) {
+  .home-one-case-studies-slider button.case-arrow-btn.prev-btn {
+    right: unset;
+  }
+}
+.home-one-case-studies-slider button.case-arrow-btn.next-btn {
+  left: 50%;
+}
+@media (max-width: 767px) {
+  .home-one-case-studies-slider button.case-arrow-btn.next-btn {
+    right: 30px;
+    left: unset;
+  }
+}
+.home-one-case-studies-slider button.case-arrow-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 21px;
+  transition: all 0.5s ease-out;
+}
+.home-one-case-studies-slider button.case-arrow-btn:hover {
+  background: #e0f780;
+}
+.home-one-case-studies-slider button.case-arrow-btn:hover i {
+  color: #080f10;
+  transition: all 0.5s ease-out;
+}
 .home-two-about-us-area {
   padding: 120px 0;
   background: #ffffff;

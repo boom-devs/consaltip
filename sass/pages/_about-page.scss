@@ -128,15 +128,10 @@
   .slick-list {
     .slick-slide {
       margin: 0 32px;
-      //border-radius: 20px;
-      //visibility: hidden;
-      //opacity: 0;
       @include transition;
 
       &.slick-active {
         @include transition;
-        //visibility: visible;
-        //opacity: 1;
       }
       @include lg {
         margin: 0 16px;

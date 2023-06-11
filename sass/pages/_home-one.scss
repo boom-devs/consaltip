@@ -1,25 +1,33 @@
-// About Us Area
-
-// Video Popup Area
-
-
-// Counter Up Area
-
-
 // Why Choose Us Area
-
-
-// Service Area
-
+.why-choose-us-area {
+  padding: 120px 0;
+}
 
 // Process Step Area
+.home-one-process-step {
+  padding: 120px 0 208px 0;
+  background-color: $background;
+  .imgae-wrappe {
+    position: relative;
+    .sketch {
+      background-image: url("../../images/sketch-black.png");
+      width: 109px;
+      height: 109px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(-50%, 50%);
+    }
+  }
+}
 
-
-// Appoitment Area
-
-// Client Logo Area
-// News Area
-
+// consultation
+.free-consultaion-area {
+  padding-bottom: 120px;
+  margin-top: -114px;
+}
 
 // Testimonial Area
 .home-one-testimonial-area {
@@ -46,6 +54,63 @@
   gap: 32px;
 }
 .portfolio-wrapper {
-  background: $primary-color;
-  padding: 100px 0;
+  background: $icon-color;
+  padding: 120px 0 220px 0;
+}
+.home-one-case-studies-slider {
+  .slick-list {
+  }
+  .portfolio-card {
+    margin: 0 12px;
+  }
+  button.case-arrow-btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 99;
+    background-color: transparent;
+    border: 1px solid $white;
+    cursor: pointer;
+    bottom: -136px;
+    overflow: hidden;
+    @include rmaxwd(991) {
+      top: unset;
+    }
+
+    &.prev-btn {
+      right: 51%;
+
+      @include rmaxwd(767) {
+        right: unset;
+      }
+    }
+    &.next-btn {
+      left: 50%;
+      @include rmaxwd(767) {
+        right: 30px;
+        left: unset;
+      }
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $white;
+      font-size: 21px;
+      @include transition;
+    }
+    &:hover {
+      background: $brand;
+      i {
+        color: $title-color;
+        @include transition;
+      }
+    }
+  }
+  .home-one-case-studies-slider {
+    // display: none !important;
+  }
 }

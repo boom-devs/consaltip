@@ -1,10 +1,9 @@
-
 .header-area {
-	position: absolute;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 // Start Header Nav
 .header-sec {
@@ -13,8 +12,7 @@
   transition: all 0.4s ease 0s;
   position: relative;
   padding-right: 96px;
-  padding-left: 96px; 
-
+  padding-left: 96px;
 
   &.sticky-header {
     width: 100%;
@@ -33,9 +31,6 @@
   }
 }
 
-
-
-
 .main-menu {
   ul {
     margin: 0;
@@ -49,7 +44,7 @@
       &.active {
         position: relative;
         > a {
-          color:$brand;
+          color: $brand;
 
           //&:before {
           //  border-color: $orange-color;
@@ -58,14 +53,13 @@
             position: absolute;
             content: "";
             height: 3px;
-            width: 18px;
-            background-color: $orange-color;
+            width: 100%;
+            background-color: $brand;
             bottom: 40px;
-            left: 15px;
+            left: 0;
           }
         }
       }
-    
 
       ul {
         &.submenu {
@@ -93,7 +87,7 @@
       }
       a {
         display: block;
-        padding: 45px 20px;
+        padding: 43px 24px;
         text-decoration: none;
         text-transform: capitalize;
         @include transition;
@@ -102,26 +96,11 @@
         font-family: $body-font;
         font-size: 16px;
         font-weight: 400;
-
-        //&:before {
-        //  position: absolute;
-        //  content: "";
-        //  transform: rotate(45deg);
-        //  border: solid $secondary-color;
-        //  border-width: 0 1px 1px 0;
-        //  display: inline-block;
-        //  padding: 3px;
-        //  margin-top: -5px;
-        //  top: 50%;
-        //  right: 15px;
-        //  visibility: hidden;
-        //}
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
         &:hover {
           color: $orange-color;
-
-          //&:before {
-          //  border-color: $orange-color;
-          //}
         }
       }
       &:hover {
@@ -218,41 +197,40 @@
   animation-name: slideUpIn;
 }
 
-
 // Header Button Area
 .header-btn {
-
   @media only screen and (max-width: 1399px) {
     display: none;
   }
-  .header-top-btn{
-    a{
+  .header-top-btn {
+    a {
       background: $white;
       color: $title-color;
-      padding:16px 19px;
+      padding: 8px 8px;
       font-weight: 500;
       position: relative;
       z-index: 1;
       transition: 0.3s;
       font-size: 18px;
-      gap: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       border-radius: 50px;
-     font-family: $heading-font;
-
+      font-family: $heading-font;
     }
-    i{
+    i {
       vertical-align: middle;
-      display: inline-block;
-      margin-right: 2px;
-      line-height: 1;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
       background: $brand;
       padding: 11px;
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
-
     }
   }
 
-  
   @media only screen and (max-width: 1199px) {
     display: none;
   }

@@ -1,41 +1,55 @@
-.free-img-consul { 
-    background: $secondary-color;
-    position: relative;
+.consultation-wrapper {
+  background: $icon-color;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  .free-consultaion-text {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    width: 100%;
+    gap: 40px;
     height: 100%;
-    .free-consultaion-text {
-        align-items: center;
-        display: flex;
-        height: 100%;
-        z-index: 9999;
-        position: relative; 
-        margin-left: 70px;
-        margin-right: 50px;
-      }
-    .consultion-img img {
-        width: 100%;
-      }
-    &::before{
-        position: absolute;
-        content: "";
-        background-image: url(../images/coltation-img/shap.png);
-        z-index: 2;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        align-items: center;
-        /* display: flex; */
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        content: "";
+    z-index: 9999;
+    position: relative;
+    padding-left: 70px;
+    padding-right: 50px;
+    .sketch {
+      position: absolute;
+      background-image: url("../../images/sketch-brand.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      right: 0;
+      bottom: 0;
+      width: 109px;
+      height: 109px;
+      transform: translate(50%, -50%);
     }
-    .consultion-img {
-        position: relative;
-        z-index: 999;
+    .button-wrapper {
+      display: flex;
+      justify-content: start;
+      gap: 24px;
     }
   }
-
+  .consultion-img img {
+    width: 100%;
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/coltation-img/shap.png);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .consultion-img {
+    position: relative;
+    z-index: 999;
+  }
+}
