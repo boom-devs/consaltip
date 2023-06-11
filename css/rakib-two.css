@@ -295,50 +295,6 @@ input:focus {
   position: relative;
 }
 
-.custom-slider-btn {
-  position: relative;
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-.custom-slider-btn a {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  transition: 0.3s;
-  z-index: 99;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-}
-.custom-slider-btn a i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  font-size: 21px;
-  transition: all 0.5s ease-out;
-}
-.custom-slider-btn a:hover {
-  background: #e0f780;
-}
-.custom-slider-btn a:hover i {
-  color: #080f10;
-  transition: all 0.5s ease-out;
-}
-.custom-slider-btn.style-two {
-  margin-top: 0;
-}
-.custom-slider-btn.style-two a {
-  border: 1px solid #828282;
-}
-.custom-slider-btn.style-two a i {
-  color: #080f10;
-}
-
 .breadcrumb-shape {
   width: 100%;
   height: 100%;
@@ -415,6 +371,18 @@ input:focus {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .faq-area-global {
     padding: 100px 0;
+  }
+}
+
+.custom-container-60 {
+  width: calc(100% + 100px);
+  overflow: hidden;
+  padding-right: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .custom-container-60 {
+    padding: 0 12px;
+    width: 100%;
   }
 }
 
@@ -1397,4 +1365,48 @@ input:focus {
     padding: 0;
     margin-top: 24px;
   }
+}
+
+.custom-slider-btn {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.custom-slider-btn a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: 0.3s;
+  z-index: 99;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.custom-slider-btn a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 21px;
+  transition: all 0.5s ease-out;
+}
+.custom-slider-btn a:hover {
+  background: #e0f780;
+}
+.custom-slider-btn a:hover i {
+  color: #080f10;
+  transition: all 0.5s ease-out;
+}
+.custom-slider-btn.style-two {
+  margin-top: 0;
+}
+.custom-slider-btn.style-two a {
+  border: 1px solid #828282;
+}
+.custom-slider-btn.style-two a i {
+  color: #080f10;
 }/*# sourceMappingURL=rakib-two.css.map */

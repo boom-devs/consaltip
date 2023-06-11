@@ -36,7 +36,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    @include gradient-color-counter;
+    @include icon-gradient-color;
   }
   .theme-btn-wrapper {
     display: flex;
@@ -93,17 +93,6 @@
       margin-left: 0;
       margin-top: 80px;
     }
-  }
-}
-
-//
-.about-container-fluid {
-  width: calc(100% + 60px);
-  overflow: hidden;
-  padding-right: 0;
-  @include sm {
-    padding: 0 12px;
-    width: 100%;
   }
 }
 

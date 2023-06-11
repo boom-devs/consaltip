@@ -120,7 +120,7 @@
         });
 
         /*
-       Info Card Slider
+       Portfolio Card Slider service page
        ============================*/
         $(".portfolio_card_wrapper").slick({
             slidesToShow: 3,
@@ -229,29 +229,7 @@
             $('.testimonial-slider-wrapper .next-btn').trigger('click');
         });
 
-        $("#testimonial_three").slick({
-            slidesToShow: 1,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: true,
-            speed: 1500,
-            prevArrow:
-                "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='testimonial-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        autoplay: true,
-                    },
-                },
-            ],
-        });
+        // project-page
         $(".project-slider-wrapper").slick({
             slidesToShow: 3,
             infinite: true,
@@ -275,6 +253,8 @@
                 },
             ],
         });
+
+        // client-logo slider home-two
         $(".home-two-client-logo-slider").slick({
             slidesToShow: 1,
             infinite: true,
@@ -296,6 +276,8 @@
                 },
             ],
         });
+
+
         $(".home-two-process-slider").slick({
             slidesToShow: 1,
             infinite: true,
@@ -321,6 +303,7 @@
                 },
             ],
         });
+
         $(".home-two-testimonial-card-slider").slick({
             slidesToShow: 1,
             infinite: false,
@@ -342,6 +325,45 @@
             ],
         });
 
+        // service-slider home-three
+        $(".home-three-service-slider").slick({
+            slidesToShow: 4,
+            infinite: true,
+            autoplay: false,
+            draggable: true,
+            arrows: true,
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            speed: 1500,
+            prevArrow:
+                "<button type='button' class='home-three-service-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+            nextArrow:
+                "<button type='button' class='home-three-service-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+
+
+        $('.prev_btn_custom').on('click', function () {
+            $('.prev-btn').trigger('click');
+            console.log("djf")
+        });
+        $('.next_btn_custom').on('click', function () {
+            $('.next-btn').trigger('click');
+        });
 
 
 
@@ -363,6 +385,7 @@
             nextArrow:
                 "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
         });
+
         /*
        Client Logo Slider
        ============================*/
@@ -456,12 +479,12 @@
        var $grid = $('.isotope-grid').isotope({
         itemSelector: '.isotope-item',
             layoutMode: 'fitRows'
-  // options
-});
-// filter items on button click
-$('.filter-button-group').on( 'click', 'button', function() {
-  var filterValue = $(this).attr('data-filter');
-  $grid.isotope({ filter: filterValue });
-});
+        // options
+        });
+        // filter items on button click
+        $('.filter-button-group').on( 'click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        });
     });
 })(jQuery);

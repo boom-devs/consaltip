@@ -1,6 +1,12 @@
 .home-two-about-us-area {
   padding: 120px 0;
   background: $white;
+  .about-us-image-gallery {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 .home-two-service {
   background: $background;

@@ -44,3 +44,61 @@
     padding: 80px 0;
   }
 }
+
+// about-us section
+.home-three-about-us {
+  padding: 120px 0;
+  .home-three-about-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-right: 38px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .sketch {
+      background-image: url("../../images/sketch-black.png");
+      width: 109px;
+      height: 109px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(-50%, 50%);
+    }
+  }
+
+  @include sm {
+    padding: 80px 0;
+  }
+}
+
+// service section
+.home-three-service {
+  padding: 120px 0;
+  background-image: url("../../images/breadcrumb/about.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  .overlay {
+    @include icon-gradient-color;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .home-three-service-slider {
+    margin-left: 200px;
+    .slick-slide {
+      margin: 0 12px;
+      display: flex;
+    }
+    .home-three-service-arrow-btn {
+      display: none !important;
+    }
+  }
+}
