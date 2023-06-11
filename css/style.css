@@ -6873,6 +6873,11 @@ ul.children {
   }
 }
 
+.case-studies-home-three {
+  background-color: #033f47;
+  padding: 120px 0;
+}
+
 .page-breadcrumb-sec .sketch {
   background: url("../../images/title-sketch.png");
   position: absolute;
