@@ -248,19 +248,19 @@
        Client Logo Slider
        ============================*/
         $(".client-logo-slider-wrapper").slick({
-            slidesToShow: 5,
+            slidesToShow: 3,
             infinite: true,
             autoplay: false,
             draggable: true,
-            arrows: false,
+            arrows: true,
             slidesToScroll: 1,
             loop: true,
             dots: false,
             speed: 1500,
             prevArrow:
-                "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
+                "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
             nextArrow:
-                "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
+                "<button type='button' class='testimonial-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
             responsive: [
                 {
                     breakpoint: 1200,

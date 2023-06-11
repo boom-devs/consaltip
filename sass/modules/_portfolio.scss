@@ -17,6 +17,24 @@
     }
 }
 
-.btn-left{
-    text-align: right;
+.btn-left {
+	text-align: center;
+}
+
+.portfolio-wrapper{
+    .client-logo-slider-wrapper{
+        .slick-slide{
+            padding: 20px;
+        }
+        button.testimonial-arrow-btn {
+            position: absolute;
+            bottom: -27%;
+            left: 50%;
+            &.next-btn {
+                position: absolute;
+                left: 46%;
+              }        
+    
+    }
+}
 }

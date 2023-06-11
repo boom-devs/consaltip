@@ -4851,7 +4851,6 @@ a.meanmenu-reveal {
 /* line 1, ../sass/modules/_testimonial-card.scss */
 .testimonial-card {
   padding: 40px 50px;
-  background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4865,9 +4864,8 @@ a.meanmenu-reveal {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
-  border-radius: 10px; }
-  /* line 10, ../sass/modules/_testimonial-card.scss */
+  gap: 30px; }
+  /* line 9, ../sass/modules/_testimonial-card.scss */
   .testimonial-card .content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4877,17 +4875,17 @@ a.meanmenu-reveal {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 30px; }
-  /* line 16, ../sass/modules/_testimonial-card.scss */
+  /* line 15, ../sass/modules/_testimonial-card.scss */
   .testimonial-card .content .text {
     margin: 0;
     font-size: 23px;
     line-height: 36px;
     font-weight: 400; }
     @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-      /* line 16, ../sass/modules/_testimonial-card.scss */
+      /* line 15, ../sass/modules/_testimonial-card.scss */
       .testimonial-card .content .text {
         font-size: 16px; } }
-  /* line 26, ../sass/modules/_testimonial-card.scss */
+  /* line 25, ../sass/modules/_testimonial-card.scss */
   .testimonial-card .meta-user {
     width: 100%;
     display: -webkit-box;
@@ -4899,7 +4897,7 @@ a.meanmenu-reveal {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    /* line 31, ../sass/modules/_testimonial-card.scss */
+    /* line 30, ../sass/modules/_testimonial-card.scss */
     .testimonial-card .meta-user .user-info {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -4908,7 +4906,7 @@ a.meanmenu-reveal {
           -ms-flex-align: center;
               align-items: center;
       gap: 20px; }
-      /* line 35, ../sass/modules/_testimonial-card.scss */
+      /* line 34, ../sass/modules/_testimonial-card.scss */
       .testimonial-card .meta-user .user-info .image {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -4921,7 +4919,7 @@ a.meanmenu-reveal {
                 justify-content: center;
         -ms-flex-negative: 0;
             flex-shrink: 0; }
-      /* line 41, ../sass/modules/_testimonial-card.scss */
+      /* line 40, ../sass/modules/_testimonial-card.scss */
       .testimonial-card .meta-user .user-info .info {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -4930,20 +4928,53 @@ a.meanmenu-reveal {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column; }
-        /* line 45, ../sass/modules/_testimonial-card.scss */
+        /* line 44, ../sass/modules/_testimonial-card.scss */
         .testimonial-card .meta-user .user-info .info h2 {
           margin: 0;
           font-size: 21px;
           line-height: 28px;
           font-weight: 700;
           color: #033f47; }
-        /* line 52, ../sass/modules/_testimonial-card.scss */
+        /* line 51, ../sass/modules/_testimonial-card.scss */
         .testimonial-card .meta-user .user-info .info p {
           margin: 0;
           font-size: 16px;
           line-height: 30px;
           font-weight: 400;
           color: #778196; }
+
+/* line 92, ../sass/modules/_testimonial-card.scss */
+.testimonial-img-list {
+  position: relative;
+  height: 426px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/* line 98, ../sass/modules/_testimonial-card.scss */
+.signle-img {
+  /*! position: absolute; */
+  z-index: 999; }
+
+/* line 102, ../sass/modules/_testimonial-card.scss */
+.signle-img:nth-child(2) {
+  position: absolute;
+  z-index: 7;
+  left: 0;
+  width: 300px;
+  width: 1;
+  top: 31px; }
+
+/* line 110, ../sass/modules/_testimonial-card.scss */
+.signle-img:nth-child(3) {
+  position: absolute;
+  z-index: 6;
+  left: -9%;
+  width: 200px;
+  top: 30px; }
 
 /* line 2, ../sass/modules/_testimonial-card-two.scss */
 .testimonial-card.style-two {
@@ -5128,7 +5159,7 @@ button.testimonial-arrow-btn {
   transition: 0.3s;
   z-index: 99;
   background-color: transparent;
-  border: 1px solid #dfe2e9;
+  border: 1px solid #778196;
   cursor: pointer;
   bottom: 0;
   overflow: hidden; }
@@ -5139,7 +5170,7 @@ button.testimonial-arrow-btn {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    color: #e0f780;
+    color: #778196;
     font-size: 21px;
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
@@ -5147,9 +5178,8 @@ button.testimonial-arrow-btn {
   button.testimonial-arrow-btn:hover {
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
-    background: #e30008;
-    background: linear-gradient(65deg, #e30008 0%, #faae00 100%);
-    border-color: #ff6731; }
+    background: #e0f780;
+    border-color: #778196; }
     /* line 137, ../sass/modules/_testimonial-slider-controls.scss */
     button.testimonial-arrow-btn:hover i {
       color: #ffffff;
@@ -8326,6 +8356,52 @@ ul.children {
         .team-member-slider-wrapper .slick-dots li.slick-active button {
           -webkit-transition: all 0.5s ease-out;
           transition: all 0.5s ease-out; }
+
+/* line 1, ../sass/modules/_portfolio.scss */
+.portfolio-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px; }
+  /* line 5, ../sass/modules/_portfolio.scss */
+  .portfolio-card .portfolio-image {
+    width: 100%;
+    height: 100%; }
+    /* line 8, ../sass/modules/_portfolio.scss */
+    .portfolio-card .portfolio-image img {
+      width: 100%;
+      height: 100%; }
+  /* line 13, ../sass/modules/_portfolio.scss */
+  .portfolio-card .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px; }
+
+/* line 20, ../sass/modules/_portfolio.scss */
+.btn-left {
+  text-align: center; }
+
+/* line 26, ../sass/modules/_portfolio.scss */
+.portfolio-wrapper .client-logo-slider-wrapper .slick-slide {
+  padding: 20px; }
+/* line 29, ../sass/modules/_portfolio.scss */
+.portfolio-wrapper .client-logo-slider-wrapper button.testimonial-arrow-btn {
+  position: absolute;
+  bottom: -27%;
+  left: 50%; }
+  /* line 33, ../sass/modules/_portfolio.scss */
+  .portfolio-wrapper .client-logo-slider-wrapper button.testimonial-arrow-btn.next-btn {
+    position: absolute;
+    left: 46%; }
 
 /* line 2, ../sass/modules/_portfolio-two.scss */
 .portfolio-card.style-two {

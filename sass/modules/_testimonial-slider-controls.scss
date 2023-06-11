@@ -115,7 +115,7 @@ button.testimonial-arrow-btn {
   transition: 0.3s;
   z-index: 99;
   background-color: transparent;
-  border: 1px solid $gray-300;
+  border: 1px solid $black-300;
   cursor: pointer;
   bottom: 0;
   overflow: hidden;
@@ -125,14 +125,14 @@ button.testimonial-arrow-btn {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: $brand;
+    color: $black-300;
     font-size: 21px;
     @include transition;
   }
   &:hover {
     @include transition;
-    @include gradient-color-red;
-    border-color: $orange-color;
+    background: $brand;
+    border-color: $black-300;
 
     i {
       color: $white;

@@ -1,12 +1,11 @@
 .testimonial-card {
     padding: 40px 50px;
-    background: $white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     gap: 30px;
-    border-radius: 10px;
+  
     .content-wrapper {
         display: flex;
         flex-direction: column;
@@ -62,10 +61,6 @@
 
 
 
-
-
-
-
     //@include sm {
     //    padding: 25px;
     //    .content {
@@ -93,3 +88,29 @@
     //    }
     //}
 }
+
+.testimonial-img-list {
+    position: relative;
+    height: 426px;
+    display: flex;
+    justify-content: center;
+  }
+  .signle-img {
+    /*! position: absolute; */
+    z-index: 999;
+  }
+  .signle-img:nth-child(2) {
+    position: absolute;
+    z-index: 7;
+    left: 0;
+    width: 300px;
+    width: 1;
+    top: 31px;
+  }
+  .signle-img:nth-child(3) {
+    position: absolute;
+    z-index: 6;
+    left: -9%;
+    width: 200px;
+    top: 30px;
+  }
