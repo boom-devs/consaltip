@@ -115,6 +115,18 @@
       color: $white;
       transition: 0.3s;
       transform: scale(1);
+      width: 24px;
+      height: 24px;
+      border: 1px solid $brand;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        font-size: 12px;
+        line-height: 16px;
+        color: $white;
+      }
 
       &:hover {
         @include transition;

@@ -740,6 +740,12 @@ input:focus {
   background: transparent;
   color: #ffffff !important;
 }
+.theme-btn.style-three,
+.wp-block-loginout a.style-three {
+  border: 1px solid #575959;
+  color: #080f10;
+  background: transparent;
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .theme-btn,
   .wp-block-loginout a {
@@ -3132,6 +3138,18 @@ html {
   color: #ffffff;
   transition: 0.3s;
   transform: scale(1);
+  width: 24px;
+  height: 24px;
+  border: 1px solid #e0f780;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-top .social-profile a i {
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
 }
 .header-top .social-profile a:hover {
   transition: all 0.5s ease-out;
@@ -7661,6 +7679,19 @@ ul.children {
 .home-two-about-us-area {
   padding: 120px 0;
   background: #ffffff;
+  position: relative;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .home-two-about-us-area .sketch-one {
+    background-image: url("../../../images/sketch-color.png");
+    width: 109px;
+    height: 109px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 114px;
+    right: 46px;
+  }
 }
 .home-two-about-us-area .about-us-image-gallery img {
   width: 100%;
@@ -7670,6 +7701,19 @@ ul.children {
 .home-two-service {
   background: #f8f8f1;
   padding: 120px 0;
+  position: relative;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .home-two-service .sketch-one {
+    background-image: url("../../../images/sketch-color.png");
+    width: 109px;
+    height: 109px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 65px;
+    left: 44px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .home-two-service {
@@ -7685,7 +7729,7 @@ ul.children {
   background-repeat: no-repeat;
   position: relative;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .counter-card-wrapper .counter-sketch {
     position: absolute;
     background-image: url("../../images/title-sketch.png");
@@ -7710,15 +7754,18 @@ ul.children {
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .mission-sketch {
+.home-two-mission {
+  padding: 120px 0;
+  position: relative;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .home-two-mission .sketch-one {
     position: absolute;
     background-image: url("../../images/sketch-color.png");
     width: 188px;
     height: 188px;
-    bottom: 0;
-    left: 0;
-    transform: translate(-50%, 35%);
+    bottom: 45px;
+    left: 147px;
   }
 }
 
@@ -7727,7 +7774,7 @@ ul.children {
   padding: 120px 0;
   position: relative;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .home-two-client-logo-area .sketch {
     position: absolute;
     width: 188px;
@@ -7745,6 +7792,7 @@ ul.children {
   align-items: center;
   gap: 8px;
   margin-top: 64px;
+  list-style: none;
 }
 .home-two-client-logo-area .home-two-client-logo-slider .slick-dots li {
   line-height: 0;
@@ -7768,6 +7816,17 @@ ul.children {
 
 .home-2-process-step {
   padding: 120px 0;
+  position: relative;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .home-2-process-step .sketch {
+    position: absolute;
+    background-image: url("../../images/sketch-color.png");
+    width: 188px;
+    height: 188px;
+    bottom: 45px;
+    left: 147px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .home-2-process-step {
@@ -7797,7 +7856,7 @@ ul.children {
   overflow: hidden;
 }
 .home-two-process-slider .process-arrow-btn.prev-btn {
-  left: 0;
+  left: 20px;
 }
 @media (max-width: 767px) {
   .home-two-process-slider .process-arrow-btn.prev-btn {
@@ -7806,7 +7865,7 @@ ul.children {
   }
 }
 .home-two-process-slider .process-arrow-btn.next-btn {
-  right: 0;
+  right: 20px;
 }
 @media (max-width: 767px) {
   .home-two-process-slider .process-arrow-btn.next-btn {
@@ -7836,7 +7895,7 @@ ul.children {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .process-slider-container {
-    max-width: 1390px;
+    max-width: 1420px;
     width: 100%;
     margin: 0 auto;
   }
@@ -7856,13 +7915,28 @@ ul.children {
   right: 68px;
 }
 
-.customer-review {
+.home-two-team {
+  padding: 120px 0;
+  position: relative;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .home-two-team .sketch {
+    position: absolute;
+    background-image: url("../../images/sketch-color.png");
+    width: 188px;
+    height: 188px;
+    bottom: 192px;
+    right: 68px;
+  }
+}
+
+.home-two-customer-review {
   padding: 120px 0;
   background-color: #033f47;
   position: relative;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
-  .customer-review .sketch {
+  .home-two-customer-review .sketch {
     background-image: url("../../images/title-sketch.png");
     width: 109px;
     height: 109px;
@@ -7874,7 +7948,7 @@ ul.children {
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
-  .customer-review .shape-one {
+  .home-two-customer-review .shape-one {
     background-image: url("../../images/shape/shape-3.png");
     width: 40px;
     height: 40px;
@@ -7886,7 +7960,7 @@ ul.children {
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
-  .customer-review .shape-two {
+  .home-two-customer-review .shape-two {
     background-image: url("../../images/shape/Rectangle.png");
     width: 40px;
     height: 40px;
@@ -7898,26 +7972,27 @@ ul.children {
     rotate: 90deg;
   }
 }
-.customer-review .home-two-testimonial-card-slider .slick-slide {
+.home-two-customer-review .home-two-testimonial-card-slider .slick-slide {
   display: flex;
   margin: 64px 50px 0 50px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .customer-review .home-two-testimonial-card-slider .slick-slide {
+  .home-two-customer-review .home-two-testimonial-card-slider .slick-slide {
     margin: 50px 30px 0 20px;
   }
 }
-.customer-review .home-two-testimonial-card-slider .slick-dots {
+.home-two-customer-review .home-two-testimonial-card-slider .slick-dots {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
   margin-top: 64px;
+  list-style: none;
 }
-.customer-review .home-two-testimonial-card-slider .slick-dots li {
+.home-two-customer-review .home-two-testimonial-card-slider .slick-dots li {
   line-height: 0;
 }
-.customer-review .home-two-testimonial-card-slider .slick-dots li button {
+.home-two-customer-review .home-two-testimonial-card-slider .slick-dots li button {
   width: 12px;
   height: 12px;
   font-size: 0;
@@ -7926,18 +8001,32 @@ ul.children {
   background-color: transparent;
   border: 1px solid #ffffff;
 }
-.customer-review .home-two-testimonial-card-slider .slick-dots li.slick-active button {
+.home-two-customer-review .home-two-testimonial-card-slider .slick-dots li.slick-active button {
   background: #e0f780;
 }
-.customer-review .home-two-testimonial-container {
+.home-two-customer-review .home-two-testimonial-container {
   max-width: 1320px;
   width: 100%;
   margin: 0 auto;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .customer-review .home-two-testimonial-container {
+  .home-two-customer-review .home-two-testimonial-container {
     max-width: 1420px;
     width: 100%;
+  }
+}
+
+.home-two-blog-area {
+  padding: 120px 0;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .home-two-blog-area .sketch {
+    position: absolute;
+    background-image: url("../../images/sketch-color.png");
+    width: 188px;
+    height: 188px;
+    bottom: 192px;
+    right: 68px;
   }
 }
 

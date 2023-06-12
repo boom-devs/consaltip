@@ -100,7 +100,7 @@
             infinite: true,
             autoplay: false,
             draggable: true,
-            arrows: false,
+            arrows: true,
             slidesToScroll: 1,
             loop: true,
             dots: false,
@@ -389,9 +389,9 @@
             dots: false,
             speed: 1500,
             prevArrow:
-                "<button type='button' class='process-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+                "<button type='button' class='process-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
-                "<button type='button' class='process-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+                "<button type='button' class='process-arrow-btn next-btn'><i class='icon-arrow-right-2'></i></button>",
             responsive: [
                 {
                     breakpoint: 767,
@@ -412,8 +412,8 @@
             arrows: false,
             slidesToScroll: 1,
             loop: false,
-            // dots: true,
-            // speed: 1500,
+            dots: true,
+            speed: 1500,
             responsive: [
                 {
                     breakpoint: 767,

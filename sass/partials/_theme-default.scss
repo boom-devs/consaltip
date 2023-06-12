@@ -195,13 +195,18 @@ input:focus {
     background: transparent;
     color: $white !important;
   }
+  &.style-three {
+    border: 1px solid #575959;
+    color: $title-color;
+    background: transparent;
+  }
   @include sm {
     padding: 10px 20px;
     font-size: 16px;
   }
 }
 
-.theme-transparant-btn{
+.theme-transparant-btn {
   background: transparent;
   border: 1px solid $white;
   color: $white;

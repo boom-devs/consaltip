@@ -221,6 +221,12 @@ input:focus {
   background: transparent;
   color: #ffffff !important;
 }
+.theme-btn.style-three,
+.wp-block-loginout a.style-three {
+  border: 1px solid #575959;
+  color: #080f10;
+  background: transparent;
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .theme-btn,
   .wp-block-loginout a {
