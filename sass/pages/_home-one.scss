@@ -167,7 +167,7 @@
     }
   }
   .home-one-review-slider {
-    button.case-arrow-btn {
+    button.review-arrow-btn {
       position: absolute;
       width: 60px;
       height: 60px;
@@ -238,7 +238,7 @@
 // Team-member section
 .home-one-team-member {
   position: relative;
-  .team-card-arrow-btn {
+  .home-one-team-arrow-btn {
     display: none !important;
   }
   .slick-list {
@@ -255,7 +255,7 @@
     }
   }
   // Slick Nav Arrow Button
-  button.team-card-arrow-btn {
+  button.home-one-team-arrow-btn {
     position: absolute;
     width: 60px;
     height: 60px;

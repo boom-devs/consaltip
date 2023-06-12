@@ -3177,7 +3177,6 @@ html {
   position: fixed;
   z-index: 9999;
   box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.03);
-  background: #fff;
 }
 
 .main-menu ul {
@@ -3409,6 +3408,9 @@ html {
 }
 .header-area.style-two .header-sec .main-menu ul li a {
   color: #080f10;
+}
+.header-area.style-two .header-sec .main-menu ul li a:before {
+  border-color: #080f10;
 }
 .header-area.style-two .header-sec .main-menu ul li a:hover:before {
   border-color: #080f10;
@@ -6788,7 +6790,7 @@ ul.children {
 .home-one-review .review-card .review-content .testimonial-card {
   justify-content: end;
 }
-.home-one-review .home-one-review-slider button.case-arrow-btn {
+.home-one-review .home-one-review-slider button.review-arrow-btn {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -6802,27 +6804,27 @@ ul.children {
   overflow: hidden;
 }
 @media (max-width: 991px) {
-  .home-one-review .home-one-review-slider button.case-arrow-btn {
+  .home-one-review .home-one-review-slider button.review-arrow-btn {
     top: unset;
   }
 }
-.home-one-review .home-one-review-slider button.case-arrow-btn.prev-btn {
+.home-one-review .home-one-review-slider button.review-arrow-btn.prev-btn {
   right: 74px;
 }
 @media (max-width: 767px) {
-  .home-one-review .home-one-review-slider button.case-arrow-btn.prev-btn {
+  .home-one-review .home-one-review-slider button.review-arrow-btn.prev-btn {
     right: unset;
   }
 }
-.home-one-review .home-one-review-slider button.case-arrow-btn.next-btn {
+.home-one-review .home-one-review-slider button.review-arrow-btn.next-btn {
   right: 0;
 }
 @media (max-width: 767px) {
-  .home-one-review .home-one-review-slider button.case-arrow-btn.next-btn {
+  .home-one-review .home-one-review-slider button.review-arrow-btn.next-btn {
     right: 30px;
   }
 }
-.home-one-review .home-one-review-slider button.case-arrow-btn i {
+.home-one-review .home-one-review-slider button.review-arrow-btn i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6831,10 +6833,10 @@ ul.children {
   font-size: 21px;
   transition: all 0.5s ease-out;
 }
-.home-one-review .home-one-review-slider button.case-arrow-btn:hover {
+.home-one-review .home-one-review-slider button.review-arrow-btn:hover {
   background: #e0f780;
 }
-.home-one-review .home-one-review-slider button.case-arrow-btn:hover i {
+.home-one-review .home-one-review-slider button.review-arrow-btn:hover i {
   color: #080f10;
   transition: all 0.5s ease-out;
 }
@@ -6860,7 +6862,7 @@ ul.children {
 .home-one-team-member {
   position: relative;
 }
-.home-one-team-member .team-card-arrow-btn {
+.home-one-team-member .home-one-team-arrow-btn {
   display: none !important;
 }
 .home-one-team-member .slick-list .slick-slide {
@@ -6875,7 +6877,7 @@ ul.children {
     margin: 0 16px;
   }
 }
-.home-one-team-member button.team-card-arrow-btn {
+.home-one-team-member button.home-one-team-arrow-btn {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -6889,30 +6891,30 @@ ul.children {
   overflow: hidden;
 }
 @media (max-width: 991px) {
-  .home-one-team-member button.team-card-arrow-btn {
+  .home-one-team-member button.home-one-team-arrow-btn {
     top: unset;
     bottom: -80px;
   }
 }
-.home-one-team-member button.team-card-arrow-btn.prev-btn {
+.home-one-team-member button.home-one-team-arrow-btn.prev-btn {
   right: 72px;
 }
 @media (max-width: 767px) {
-  .home-one-team-member button.team-card-arrow-btn.prev-btn {
+  .home-one-team-member button.home-one-team-arrow-btn.prev-btn {
     right: unset;
     left: 30px;
   }
 }
-.home-one-team-member button.team-card-arrow-btn.next-btn {
+.home-one-team-member button.home-one-team-arrow-btn.next-btn {
   right: 0;
 }
 @media (max-width: 767px) {
-  .home-one-team-member button.team-card-arrow-btn.next-btn {
+  .home-one-team-member button.home-one-team-arrow-btn.next-btn {
     right: 30px;
     left: unset;
   }
 }
-.home-one-team-member button.team-card-arrow-btn i {
+.home-one-team-member button.home-one-team-arrow-btn i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6921,10 +6923,10 @@ ul.children {
   font-size: 21px;
   transition: all 0.5s ease-out;
 }
-.home-one-team-member button.team-card-arrow-btn:hover {
+.home-one-team-member button.home-one-team-arrow-btn:hover {
   background: #e0f780;
 }
-.home-one-team-member button.team-card-arrow-btn:hover i {
+.home-one-team-member button.home-one-team-arrow-btn:hover i {
   color: #080f10;
   transition: all 0.5s ease-out;
 }
@@ -7612,31 +7614,17 @@ ul.children {
 
 .about_team_member_container {
   max-width: 1460px;
-  margin-left: 163px;
+  margin: 0 auto;
   width: 100%;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about_team_member_container {
-    margin-left: 0;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about_team_member_container {
-    margin-left: 0;
-  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about_team_member_container {
-    margin-left: 30px;
     max-width: 980px;
   }
 }
 
 .about_us_team_member {
   position: relative;
-}
-.about_us_team_member .team-card-arrow-btn {
-  display: none !important;
 }
 .about_us_team_member .slick-list .slick-slide {
   margin: 0 32px;
@@ -7670,7 +7658,7 @@ ul.children {
   }
 }
 .about_us_team_member button.team-card-arrow-btn.prev-btn {
-  right: 72px;
+  right: 174px;
 }
 @media (max-width: 767px) {
   .about_us_team_member button.team-card-arrow-btn.prev-btn {
@@ -7679,7 +7667,7 @@ ul.children {
   }
 }
 .about_us_team_member button.team-card-arrow-btn.next-btn {
-  right: 0;
+  right: 98px;
 }
 @media (max-width: 767px) {
   .about_us_team_member button.team-card-arrow-btn.next-btn {

@@ -107,24 +107,14 @@
 }
 .about_team_member_container {
   max-width: 1460px;
-  margin-left: 163px;
+  margin: 0 auto;
   width: 100%;
-  @include sm {
-    margin-left: 0;
-  }
-  @include md {
-    margin-left: 0;
-  }
   @include lg {
-    margin-left: 30px;
     max-width: 980px;
   }
 }
 .about_us_team_member {
   position: relative;
-  .team-card-arrow-btn {
-    display: none !important;
-  }
   .slick-list {
     .slick-slide {
       margin: 0 32px;
@@ -157,7 +147,7 @@
     }
 
     &.prev-btn {
-      right: 72px;
+      right: 174px;
 
       @include rmaxwd(767) {
         right: unset;
@@ -165,7 +155,7 @@
       }
     }
     &.next-btn {
-      right: 0;
+      right: 98px;
       @include rmaxwd(767) {
         right: 30px;
         left: unset;

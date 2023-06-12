@@ -30,6 +30,9 @@
           li {
             a {
               color: $title-color;
+              &:before {
+                border-color: $title-color;
+              }
               &:hover {
                 &:before {
                   border-color: $title-color;

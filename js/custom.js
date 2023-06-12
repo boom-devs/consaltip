@@ -296,9 +296,9 @@
             dots: false,
             speed: 1500,
             prevArrow:
-                "<button type='button' class='case-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+                "<button type='button' class='review-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
             nextArrow:
-                "<button type='button' class='case-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+                "<button type='button' class='review-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
             responsive: [
                 {
                     breakpoint: 991,
@@ -327,9 +327,9 @@
             dots: true,
             speed: 1500,
              prevArrow:
-                "<button type='button' class='team-card-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+                "<button type='button' class='home-one-team-arrow-prev'><i class='fa-solid fa-angle-left'></i></button>",
             nextArrow:
-                "<button type='button' class='team-card-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+                "<button type='button' class='home-one-team-arrow-next'><i class='fa-solid fa-angle-right'></i></button>",
             responsive: [
                 {
                     breakpoint: 992,
@@ -347,11 +347,11 @@
         });
 
          $('#home-one-team-prev').on('click', function () {
-            $('.team-card-arrow-btn .prev-btn').trigger('click');
-            console.log("kdf")
+            $('.home-one-team-arrow-prev').trigger('click');
+            console.log("kdk")
         });
         $('#home-one-team-next').on('click', function () {
-            $('.team-card-arrow-btn .next-btn').trigger('click');
+            $('.home-one-team-arrow-next').trigger('click');
         });
 
         // client-logo slider home-two
@@ -551,15 +551,6 @@
             animation: "fade",
         });
 
-        /*
-       scrollDown
-       ============================*/
-        $.scrollDown({
-            scrollText: '<i class="fa-light fa-arrow-up-long"></i>',
-            easingType: "linear",
-            scrollSpeed: 900,
-            animation: "fade",
-        });
         /*
         ounter Js
         ============================*/

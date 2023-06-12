@@ -11,7 +11,7 @@
     justify-content: center;
     gap: 40px;
     height: 100%;
-    z-index: 9999;
+    z-index: 3;
     position: relative;
     padding-left: 70px;
     padding-right: 50px;
@@ -50,6 +50,6 @@
   }
   .consultion-img {
     position: relative;
-    z-index: 999;
+    z-index: 1;
   }
 }
