@@ -3730,12 +3730,10 @@ a.meanmenu-reveal {
 }
 .slider-area button.slider-arrow-btn:hover {
   transition: all 0.5s ease-out;
-  background: rgb(227, 0, 8);
-  background: linear-gradient(65deg, rgb(227, 0, 8) 0%, rgb(250, 174, 0) 100%);
-  border-color: #ff6731;
+  background-color: #e0f780;
 }
 .slider-area button.slider-arrow-btn:hover i {
-  color: #ffffff;
+  color: #080f10;
   transition: all 0.5s ease-out;
 }
 .slider-area .single-slider {
@@ -7221,9 +7219,6 @@ ul.children {
 }
 .footer.style-two .subscribe-form-wrapper .subscribe-form-widget {
   border-radius: 6px;
-}
-.footer.style-two .subscribe-form-wrapper .subscribe-form-widget .single-field input {
-  height: 60px;
 }
 .footer.style-two .footer-widget-title {
   font-size: 24px;

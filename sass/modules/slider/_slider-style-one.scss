@@ -155,11 +155,10 @@
     }
     &:hover {
       @include transition;
-      @include gradient-color-red;
-      border-color: $orange-color;
+      background-color: $brand;
 
       i {
-        color: $white;
+        color: $title-color;
         @include transition;
       }
     }
