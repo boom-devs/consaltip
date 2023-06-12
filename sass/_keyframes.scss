@@ -1,3 +1,22 @@
+@keyframes MovefadeUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.MovefadeUp {
+  -webkit-animation-name: MovefadeUp;
+  animation-name: MovefadeUp;
+}
+
 // Ripple Animate
 @-webkit-keyframes ripple {
   70% {
@@ -89,7 +108,6 @@
   }
 }
 
-
 @keyframes slideUpIn {
   0% {
     transform: translateY(40px);
@@ -106,39 +124,71 @@
 
 // Animated Top Bottom
 @-webkit-keyframes MoveLeftRight {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-10px); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
 }
 @keyframes MoveLeftRight {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-10px); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
 }
 
 // Animated Left Right
 @-webkit-keyframes MoveUpDown {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-30px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
 }
 @keyframes MoveUpDown {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-30px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
 }
 
 // Animated Left Right
 @-webkit-keyframes Animated3 {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-20px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 @keyframes Animated3 {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-20px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 // Animated Left Right
 @-webkit-keyframes Animated4 {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-10px); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
 }
 @keyframes Animated4 {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-10px); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
 }

@@ -53,8 +53,8 @@
             position: absolute;
             content: "";
             height: 3px;
-            width: 100%;
-            background-color: $brand;
+            width: 18px;
+            background-color: $orange-color;
             bottom: 40px;
             left: 0;
           }
@@ -161,6 +161,7 @@
           color: $secondary-color;
           border-bottom: 1px solid $gray-200;
           margin-left: 0;
+          width: 100%;
           &:hover {
             background-color: $orange-color;
             color: $white;
