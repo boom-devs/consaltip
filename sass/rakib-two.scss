@@ -140,6 +140,14 @@
     margin: 0 auto;
 }
 
+// background-color
+.bg-icon {
+    background-color: $icon-color;
+}
+.bg-gray {
+    background-color: $background;
+}
+
 // Portfolio-card
 @import "modules/portfolio-card/portfolio";
 

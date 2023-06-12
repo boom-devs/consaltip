@@ -403,6 +403,14 @@ input:focus {
   margin: 0 auto;
 }
 
+.bg-icon {
+  background-color: #033f47;
+}
+
+.bg-gray {
+  background-color: #f8f8f1;
+}
+
 .portfolio-card {
   display: flex;
   flex-direction: column;

@@ -1,6 +1,5 @@
 .header-area {
   &.style-two {
-
     // Header Top Area
     .header-top {
       .header-top-btn {
@@ -24,6 +23,35 @@
           transform: skewX(-20deg);
           bottom: 0;
           height: 190px;
+        }
+      }
+      .main-menu {
+        ul {
+          li {
+            a {
+              color: $title-color;
+              &:hover {
+                &:before {
+                  border-color: $title-color;
+                }
+              }
+            }
+            &.active {
+              a {
+                &:before {
+                  border-color: $title-color;
+                }
+              }
+            }
+          }
+        }
+      }
+      .header-btn {
+        a {
+          background: $icon-color;
+          border-radius: 4px;
+          padding: 16px 24px;
+          color: $white;
         }
       }
     }
