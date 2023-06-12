@@ -3204,6 +3204,7 @@ html {
 }
 .main-menu ul li.dropdown > a:before {
   visibility: visible;
+  border-color: #ffffff;
 }
 .main-menu ul li.dropdown .dropdown > a:before {
   visibility: visible;
