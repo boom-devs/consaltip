@@ -1,3 +1,10 @@
+// hero section
+.home-three-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+// client-logo section
 .home-three-client-logo-area {
   background-color: $icon-color;
   padding: 120px 0;

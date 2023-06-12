@@ -3375,6 +3375,17 @@ html {
   height: 48px;
   border-radius: 50%;
 }
+.header-btn.style-two a {
+  background: #033f47;
+  border-radius: 4px;
+  padding: 16px 24px;
+  color: #ffffff;
+}
+.header-btn.style-three a {
+  background: #033f47;
+  color: #ffffff;
+  border-radius: 50px;
+}
 @media only screen and (max-width: 1199px) {
   .header-btn {
     display: none;
@@ -3403,12 +3414,6 @@ html {
 }
 .header-area.style-two .header-sec .main-menu ul li.active a:before {
   border-color: #080f10;
-}
-.header-area.style-two .header-sec .header-btn a {
-  background: #033f47;
-  border-radius: 4px;
-  padding: 16px 24px;
-  color: #ffffff;
 }
 
 .header-area.style-three .header-top .header-top-btn a {
@@ -8038,6 +8043,12 @@ ul.children {
     bottom: 40px;
     right: 102px;
   }
+}
+
+.home-three-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 
 .home-three-client-logo-area {

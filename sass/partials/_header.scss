@@ -410,6 +410,21 @@
     height: 48px;
     border-radius: 50%;
   }
+  &.style-two {
+    a {
+      background: $icon-color;
+      border-radius: 4px;
+      padding: 16px 24px;
+      color: $white;
+    }
+  }
+  &.style-three {
+    a {
+      background: $icon-color;
+      color: $white;
+      border-radius: 50px;
+    }
+  }
   @media only screen and (max-width: 1199px) {
     display: none;
   }
