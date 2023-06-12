@@ -6970,11 +6970,7 @@ ul.children {
 }
 
 /* Footer Section */
-.footer {
-  background-color: #f8f8f1;
-}
 .footer .footer-bottom-area {
-  background: #fff;
   height: 60px;
 }
 .footer .footer-bottom-menu ul li a {
@@ -7175,7 +7171,42 @@ ul.children {
   transition: all 0.5s ease-out;
   background: #e0f780;
 }
-
+.footer .subscribe-area {
+  padding-bottom: 80px;
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #085a65;
+  margin-bottom: 80px;
+}
+.footer .subscribe-area .subscribe-inner-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.footer .subscribe-area .subscribe-inner-area .content-wrapper .subscribe-title {
+  color: #ffffff;
+}
+.footer .subscribe-area .subscribe-inner-area .content-wrapper .text {
+  font-size: 20px;
+  line-height: 34px;
+  color: #ffffff;
+}
+.footer .subscribe-area .subscribe-inner-area .subscribe-form-widget .mc4wp-form-fields {
+  display: flex;
+  background-color: transparent;
+  overflow: hidden;
+  gap: 16px;
+}
+.footer .subscribe-area .subscribe-inner-area .subscribe-form-widget .single-field input {
+  color: #778196;
+  height: 67px;
+  padding: 0 30px;
+  font-size: 18px;
+  border: 1px solid #000;
+  width: 100%;
+}
 .footer.style-two .subscribe-form-wrapper p {
   color: #c7cdda;
   margin-bottom: 35px;
@@ -7186,55 +7217,33 @@ ul.children {
 .footer.style-two .subscribe-form-wrapper .subscribe-form-widget .single-field input {
   height: 60px;
 }
-
-.footer-triangle-image-wrapper {
-  position: absolute;
-  width: 777px;
-  top: 0;
-  height: 100%;
-  left: 0;
-  z-index: -1;
+.footer.style-two .footer-widget-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #f8f8f1;
 }
-@media (max-width: 780px) {
-  .footer-triangle-image-wrapper {
-    width: 100%;
-  }
+.footer.style-two .footer-widget .footer-widget-menu li a {
+  color: #ffffff;
 }
-
-.footer-triangle-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-clip-path: polygon(0 0, 100% 0, 65% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 65% 100%, 0 100%);
+.footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a {
+  color: #ffffff;
 }
-@media (max-width: 780px) {
-  .footer-triangle-image {
-    -webkit-clip-path: none;
-            clip-path: none;
-  }
+.footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
+  border-color: #ffffff;
 }
-.footer-triangle-image:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #035b7b;
-  opacity: 0.9;
-  z-index: 1;
+.footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon i {
+  color: #e0f780;
 }
-.footer-triangle-image img {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
+.footer.style-two .footer-bottom-area {
+  border-top: 1px solid #085a65;
+}
+.footer.style-two .copyright-text p {
+  color: #ffffff;
+}
+.footer.style-two .footer-bottom-menu ul li a {
+  color: #ffffff;
 }
 
 /* Team Member */
@@ -8018,6 +8027,7 @@ ul.children {
 
 .home-two-blog-area {
   padding: 120px 0;
+  position: relative;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .home-two-blog-area .sketch {
@@ -8025,8 +8035,8 @@ ul.children {
     background-image: url("../../images/sketch-color.png");
     width: 188px;
     height: 188px;
-    bottom: 192px;
-    right: 68px;
+    bottom: 40px;
+    right: 102px;
   }
 }
 

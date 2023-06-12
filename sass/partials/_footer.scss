@@ -1,7 +1,5 @@
 .footer {
-  background-color: $background;
   .footer-bottom-area {
-    background: #fff;
     height: 60px;
   }
   .footer-bottom-menu ul li a {
@@ -246,6 +244,52 @@
         &:hover {
           @include transition;
           background: $brand;
+        }
+      }
+    }
+  }
+
+  // subscribe-area
+  .subscribe-area {
+    padding-bottom: 80px;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #085a65;
+    margin-bottom: 80px;
+    .subscribe-inner-area {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      .content-wrapper {
+        .subscribe-title {
+          color: $white;
+        }
+        .text {
+          font-size: 20px;
+          line-height: 34px;
+          color: $white;
+        }
+      }
+      .subscribe-form-widget {
+        .mc4wp-form-fields {
+          display: flex;
+          background-color: transparent;
+          overflow: hidden;
+          gap: 16px;
+        }
+        .single-field {
+          input {
+            color: #778196;
+            height: 67px;
+            padding: 0 30px;
+            font-size: 18px;
+            border: 1px solid #000;
+            width: 100%;
+          }
+        }
+        .submit-btn {
         }
       }
     }

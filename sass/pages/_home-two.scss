@@ -337,14 +337,15 @@
 // Blog area
 .home-two-blog-area {
   padding: 120px 0;
+  position: relative;
   .sketch {
     @include xl {
       position: absolute;
       background-image: url("../../images/sketch-color.png");
       width: 188px;
       height: 188px;
-      bottom: 192px;
-      right: 68px;
+      bottom: 40px;
+      right: 102px;
     }
   }
 }
