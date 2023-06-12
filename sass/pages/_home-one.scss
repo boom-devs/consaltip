@@ -1,6 +1,32 @@
 // Why Choose Us Area
 .why-choose-us-area {
   padding: 120px 0;
+  position: relative;
+  .scrolldown-btn-wrapper {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    transform: translate(0, -65%);
+    background-image: url("../../../images/scroll-down.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100px;
+
+    .scrolldown-btn {
+      margin: 72px 72px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $brand;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      i {
+        color: $title-color;
+        font-size: 34px;
+      }
+    }
+  }
 }
 
 // Process Step Area

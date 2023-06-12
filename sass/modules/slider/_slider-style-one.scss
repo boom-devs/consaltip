@@ -24,33 +24,6 @@
     left: 42px;
     rotate: 90deg;
   }
-  .scrolldown-btn-wrapper {
-    position: absolute;
-    bottom: 0;
-    left: 45%;
-    transform: translate(0, 50%);
-    // background-color: $white;
-    background-image: url("../../../images/scroll-down.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    border-radius: 100px;
-
-    .scrolldown-btn {
-      margin: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: $brand;
-      width: 100px;
-      height: 100px;
-      border-radius: 50px;
-      i {
-        color: $title-color;
-        font-size: 34px;
-      }
-    }
-  }
 
   .slider-wrapper {
     // Active Slider Animate

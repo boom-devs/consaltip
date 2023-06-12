@@ -46,18 +46,53 @@
         > a {
           color: $brand;
 
-          //&:before {
-          //  border-color: $orange-color;
-          //}
-          &:after {
-            position: absolute;
-            content: "";
-            height: 3px;
-            width: 18px;
-            background-color: $orange-color;
-            bottom: 40px;
-            left: 0;
+          &:before {
+            border-color: $brand;
           }
+          // &:after {
+          //   position: absolute;
+          //   content: "";
+          //   height: 3px;
+          //   width: 18px;
+          //   background-color: $orange-color;
+          //   bottom: 40px;
+          //   left: 0;
+          // }
+        }
+      }
+      &.dropdown {
+        > a {
+          padding-right: 30px;
+
+          &:before {
+            visibility: visible;
+          }
+        }
+        .dropdown {
+          > a {
+            &:before {
+              visibility: visible;
+              right: 15px;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+      a {
+        position: relative;
+        padding-right: 15px;
+
+        &:before {
+          position: absolute;
+          content: "";
+          transform: rotate(45deg);
+          border: solid black;
+          border-width: 0 1px 1px 0;
+          display: inline-block;
+          padding: 3px;
+          margin: auto;
+          top: 45%;
+          right: 0;
         }
       }
 
@@ -70,9 +105,9 @@
                 z-index: 2;
                 color: $white;
 
-                //&:before {
-                //  border-color: $white;
-                //}
+                &:before {
+                  border-color: $white;
+                }
                 &:after {
                   height: 100%;
                   top: 0;
@@ -99,8 +134,24 @@
         display: inline-flex;
         align-items: center;
         gap: 8px;
+        &:before {
+          position: absolute;
+          content: "";
+          transform: rotate(45deg);
+          border: solid $secondary-color;
+          border-width: 0 1px 1px 0;
+          display: inline-block;
+          padding: 3px;
+          margin-top: -6px;
+          top: 50%;
+          right: 15px;
+          visibility: hidden;
+        }
         &:hover {
-          color: $orange-color;
+          color: $brand;
+          &:before {
+            border-color: $brand;
+          }
         }
       }
       &:hover {
@@ -166,9 +217,9 @@
             background-color: $orange-color;
             color: $white;
 
-            //&:before {
-            //  border-color: $white;
-            //}
+            &:before {
+              border-color: $white;
+            }
           }
         }
         &:last-child a {

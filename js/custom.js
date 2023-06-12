@@ -550,6 +550,16 @@
             scrollSpeed: 900,
             animation: "fade",
         });
+
+        /*
+       scrollDown
+       ============================*/
+        $.scrollDown({
+            scrollText: '<i class="fa-light fa-arrow-up-long"></i>',
+            easingType: "linear",
+            scrollSpeed: 900,
+            animation: "fade",
+        });
         /*
         ounter Js
         ============================*/

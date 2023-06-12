@@ -3077,19 +3077,43 @@ html {
 .main-menu ul li.active > a {
   color: #e0f780;
 }
-.main-menu ul li.active > a:after {
+.main-menu ul li.active > a:before {
+  border-color: #e0f780;
+}
+.main-menu ul li.dropdown > a {
+  padding-right: 30px;
+}
+.main-menu ul li.dropdown > a:before {
+  visibility: visible;
+}
+.main-menu ul li.dropdown .dropdown > a:before {
+  visibility: visible;
+  right: 15px;
+  transform: rotate(-45deg);
+}
+.main-menu ul li a {
+  position: relative;
+  padding-right: 15px;
+}
+.main-menu ul li a:before {
   position: absolute;
   content: "";
-  height: 3px;
-  width: 18px;
-  background-color: #ff6731;
-  bottom: 40px;
-  left: 0;
+  transform: rotate(45deg);
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: auto;
+  top: 45%;
+  right: 0;
 }
 .main-menu ul li ul.submenu li.active > a {
   position: relative;
   z-index: 2;
   color: #ffffff;
+}
+.main-menu ul li ul.submenu li.active > a:before {
+  border-color: #ffffff;
 }
 .main-menu ul li ul.submenu li.active > a:after {
   height: 100%;
@@ -3113,8 +3137,24 @@ html {
   align-items: center;
   gap: 8px;
 }
+.main-menu ul li a:before {
+  position: absolute;
+  content: "";
+  transform: rotate(45deg);
+  border: solid #033f47;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-top: -6px;
+  top: 50%;
+  right: 15px;
+  visibility: hidden;
+}
 .main-menu ul li a:hover {
-  color: #ff6731;
+  color: #e0f780;
+}
+.main-menu ul li a:hover:before {
+  border-color: #e0f780;
 }
 .main-menu ul li:hover > ul {
   visibility: visible;
@@ -3166,6 +3206,9 @@ html {
 .main-menu ul ul li a:hover {
   background-color: #ff6731;
   color: #ffffff;
+}
+.main-menu ul ul li a:hover:before {
+  border-color: #ffffff;
 }
 .main-menu ul ul li:last-child a {
   border-bottom: 0px;
@@ -6440,6 +6483,31 @@ ul.children {
 
 .why-choose-us-area {
   padding: 120px 0;
+  position: relative;
+}
+.why-choose-us-area .scrolldown-btn-wrapper {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  transform: translate(0, -65%);
+  background-image: url("../../../images/scroll-down.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100px;
+}
+.why-choose-us-area .scrolldown-btn-wrapper .scrolldown-btn {
+  margin: 72px 72px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0f780;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.why-choose-us-area .scrolldown-btn-wrapper .scrolldown-btn i {
+  color: #080f10;
+  font-size: 34px;
 }
 
 .home-one-process-step {
