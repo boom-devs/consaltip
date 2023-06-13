@@ -11,7 +11,7 @@
   position: relative;
   .sketch {
     @include xl {
-      background-image: url("../../images/image-card-sketch.png");
+      background-image: url("../../images/shape/image-card-sketch.png");
       width: 88px;
       height: 88px;
       background-repeat: no-repeat;
@@ -151,7 +151,7 @@
       height: 100%;
     }
     .sketch {
-      background-image: url("../../images/sketch-black.png");
+      background-image: url("../../images/shape/sketch-black.png");
       width: 109px;
       height: 109px;
       background-repeat: no-repeat;

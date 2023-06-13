@@ -54,6 +54,7 @@
         width: 50%;
         height: 100%;
         position: relative;
+        flex-shrink: 0;
         .image-card-sketch {
             position: absolute;
             top: 0;
@@ -96,23 +97,22 @@
     @include md {
         flex-direction: column-reverse;
     }
-}
-
-.section-title {
-    .title {
-        position: relative;
-        margin-bottom: 16px;
-        @include sm {
-            font-size: 46px;
+    .section-title {
+        .title {
+            position: relative;
+            margin-bottom: 16px;
+            @include sm {
+                font-size: 46px;
+            }
         }
-    }
-    .desc {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 31px;
-        @include sm {
-            font-size: 16px;
-            line-height: 28px;
+        .desc {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 31px;
+            @include sm {
+                font-size: 16px;
+                line-height: 28px;
+            }
         }
     }
 }

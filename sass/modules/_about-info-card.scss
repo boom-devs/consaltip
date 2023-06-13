@@ -9,19 +9,11 @@
         .content {
             .title {
                 margin-bottom: 16px;
-
-                @include sm {
-                    font-size: 38px;
-                    line-height: 60px;
-                }
-                @include md {
-                    font-size: 46px;
-                    line-height: 60px;
-                }
-                @include lg {
-                    font-size: 46px;
-                    line-height: 60px;
-                }
+            }
+            .desc {
+                font-size: 18px;
+                line-height: 31px;
+                color: $text-color;
             }
         }
         .about-counter-card {
@@ -30,33 +22,21 @@
             .counter-item {
                 .counter-title {
                     .number {
-                        @include sm {
-                            font-size: 40px;
-                            line-height: 60px;
-                        }
-                        @include md {
-                            font-size: 46px;
-                            line-height: 60px;
-                        }
-                        @include lg {
-                            font-size: 46px;
-                            line-height: 60px;
-                        }
+                        font-size: 43px;
+                        line-height: 52px;
+                        letter-spacing: 0.02em;
+                        color: $title-color;
+                    }
+                }
+                .counter-content {
+                    .text {
+                        font-size: 18px;
+                        line-height: 31px;
+                        color: #080f10;
+                        margin-top: 8px;
                     }
                 }
             }
         }
-    }
-    @include sm {
-        padding: 0;
-        margin-top: 24px;
-    }
-    @include md {
-        padding: 0;
-        margin-top: 24px;
-    }
-    @include lg {
-        padding: 0;
-        margin-top: 24px;
     }
 }

@@ -6627,13 +6627,13 @@ ul.children {
 }
 
 .why-choose-us-area {
-  padding: 120px 0;
+  padding: 180px 0 120px 0;
   position: relative;
 }
 .why-choose-us-area .scrolldown-btn-wrapper {
   position: absolute;
   top: 0;
-  left: 45%;
+  left: 43%;
   transform: translate(0, -65%);
   background-image: url("../../../images/scroll-down.png");
   background-repeat: no-repeat;
@@ -6654,6 +6654,39 @@ ul.children {
   color: #080f10;
   font-size: 34px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .why-choose-us-area .sketch-one {
+    background-image: url("../../images/shape/image-card-sketch.png");
+    width: 109px;
+    height: 109px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 150px;
+    left: 147px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .why-choose-us-area .sketch-two {
+    background-image: url("../../images/shape/image-card-sketch.png");
+    width: 109px;
+    height: 109px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 65px;
+    right: 160px;
+    z-index: 3;
+  }
+}
+
+.home-one-service {
+  padding: 120px 0;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .home-one-process-step {
   padding: 120px 0 208px 0;
@@ -6664,7 +6697,7 @@ ul.children {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .home-one-process-step .imgae-wrappe .sketch {
-    background-image: url("../../images/sketch-black.png");
+    background-image: url("../../images/shape/sketch-black.png");
     width: 109px;
     height: 109px;
     background-repeat: no-repeat;
@@ -7325,7 +7358,7 @@ ul.children {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .hero-image-wrapper .sketch {
-    background-image: url("../../images/image-card-sketch.png");
+    background-image: url("../../images/shape/image-card-sketch.png");
     width: 88px;
     height: 88px;
     background-repeat: no-repeat;
@@ -7461,7 +7494,7 @@ ul.children {
   height: 100%;
 }
 .home-three-about-us .home-three-about-image .sketch {
-  background-image: url("../../images/sketch-black.png");
+  background-image: url("../../images/shape/sketch-black.png");
   width: 109px;
   height: 109px;
   background-repeat: no-repeat;

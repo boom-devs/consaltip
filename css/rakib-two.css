@@ -410,7 +410,7 @@ input:focus {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 43px;
+  padding-top: 112px;
 }
 
 .bg-icon {
@@ -603,6 +603,7 @@ input:focus {
   width: 50%;
   height: 100%;
   position: relative;
+  flex-shrink: 0;
 }
 .image-card .image .image-card-sketch {
   position: absolute;
@@ -661,23 +662,22 @@ input:focus {
     flex-direction: column-reverse;
   }
 }
-
-.section-title .title {
+.image-card .section-title .title {
   position: relative;
   margin-bottom: 16px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .section-title .title {
+  .image-card .section-title .title {
     font-size: 46px;
   }
 }
-.section-title .desc {
+.image-card .section-title .desc {
   font-size: 18px;
   font-weight: 400;
   line-height: 31px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .section-title .desc {
+  .image-card .section-title .desc {
     font-size: 16px;
     line-height: 28px;
   }
@@ -968,7 +968,7 @@ input:focus {
   top: 0;
   left: 0;
   transform: translate(-72%, -72%);
-  background-image: url("../../images/image-card-sketch.png");
+  background-image: url("../../images/shape/image-card-sketch.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1153,7 +1153,7 @@ input:focus {
   top: 0;
   left: 0;
   transform: translate(-72%, -72%);
-  background-image: url("../../images/image-card-sketch.png");
+  background-image: url("../../images/shape/image-card-sketch.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1344,63 +1344,26 @@ input:focus {
 .about-info-card .content-wrapper .content .title {
   margin-bottom: 16px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about-info-card .content-wrapper .content .title {
-    font-size: 38px;
-    line-height: 60px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-info-card .content-wrapper .content .title {
-    font-size: 46px;
-    line-height: 60px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about-info-card .content-wrapper .content .title {
-    font-size: 46px;
-    line-height: 60px;
-  }
+.about-info-card .content-wrapper .content .desc {
+  font-size: 18px;
+  line-height: 31px;
+  color: #575959;
 }
 .about-info-card .content-wrapper .about-counter-card {
   display: flex;
   gap: 32px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
-    font-size: 40px;
-    line-height: 60px;
-  }
+.about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
+  font-size: 43px;
+  line-height: 52px;
+  letter-spacing: 0.02em;
+  color: #080f10;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
-    font-size: 46px;
-    line-height: 60px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
-    font-size: 46px;
-    line-height: 60px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about-info-card {
-    padding: 0;
-    margin-top: 24px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-info-card {
-    padding: 0;
-    margin-top: 24px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about-info-card {
-    padding: 0;
-    margin-top: 24px;
-  }
+.about-info-card .content-wrapper .about-counter-card .counter-item .counter-content .text {
+  font-size: 18px;
+  line-height: 31px;
+  color: #080f10;
+  margin-top: 8px;
 }
 
 .custom-slider-btn {

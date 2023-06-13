@@ -3742,7 +3742,7 @@ a.meanmenu-reveal {
   background-position: center center;
   position: relative;
   z-index: 2;
-  height: 918px;
+  height: 960px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-area .single-slider {
@@ -3779,7 +3779,7 @@ a.meanmenu-reveal {
   font-size: 76px;
   line-height: 91px;
   letter-spacing: 0.02em;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   color: #ffffff;
 }
 @media only screen and (min-width: 992px) and (max-width: 1400px) {
@@ -3832,7 +3832,7 @@ a.meanmenu-reveal {
   }
 }
 .slider-area .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper {
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   gap: 16px;
 }
@@ -3850,7 +3850,7 @@ a.meanmenu-reveal {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .slider-area .single-slider .slider-image .sketch {
-    background-image: url("../../images/title-sketch.png");
+    background-image: url("../../../images/shape/triangle-shape-white.png");
     width: 109px;
     height: 109px;
     background-repeat: no-repeat;
@@ -4022,63 +4022,26 @@ a.meanmenu-reveal {
 .about-info-card .content-wrapper .content .title {
   margin-bottom: 16px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about-info-card .content-wrapper .content .title {
-    font-size: 38px;
-    line-height: 60px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-info-card .content-wrapper .content .title {
-    font-size: 46px;
-    line-height: 60px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about-info-card .content-wrapper .content .title {
-    font-size: 46px;
-    line-height: 60px;
-  }
+.about-info-card .content-wrapper .content .desc {
+  font-size: 18px;
+  line-height: 31px;
+  color: #575959;
 }
 .about-info-card .content-wrapper .about-counter-card {
   display: flex;
   gap: 32px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
-    font-size: 40px;
-    line-height: 60px;
-  }
+.about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
+  font-size: 43px;
+  line-height: 52px;
+  letter-spacing: 0.02em;
+  color: #080f10;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
-    font-size: 46px;
-    line-height: 60px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
-    font-size: 46px;
-    line-height: 60px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about-info-card {
-    padding: 0;
-    margin-top: 24px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-info-card {
-    padding: 0;
-    margin-top: 24px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about-info-card {
-    padding: 0;
-    margin-top: 24px;
-  }
+.about-info-card .content-wrapper .about-counter-card .counter-item .counter-content .text {
+  font-size: 18px;
+  line-height: 31px;
+  color: #080f10;
+  margin-top: 8px;
 }
 
 .video-popup-card {
@@ -5317,12 +5280,12 @@ button.testimonial-arrow-btn:hover i {
   height: 100%;
   z-index: 3;
   position: relative;
-  padding-left: 70px;
+  padding-left: 56px;
   padding-right: 50px;
 }
 .consultation-wrapper .free-consultaion-text .sketch {
   position: absolute;
-  background-image: url("../../images/sketch-brand.png");
+  background-image: url("../../images/shape/sketch-brand.png");
   background-position: center;
   background-repeat: no-repeat;
   right: 0;
@@ -5421,6 +5384,7 @@ button.testimonial-arrow-btn:hover i {
   width: 50%;
   height: 100%;
   position: relative;
+  flex-shrink: 0;
 }
 .image-card .image .image-card-sketch {
   position: absolute;
@@ -5479,23 +5443,22 @@ button.testimonial-arrow-btn:hover i {
     flex-direction: column-reverse;
   }
 }
-
-.section-title .title {
+.image-card .section-title .title {
   position: relative;
   margin-bottom: 16px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .section-title .title {
+  .image-card .section-title .title {
     font-size: 46px;
   }
 }
-.section-title .desc {
+.image-card .section-title .desc {
   font-size: 18px;
   font-weight: 400;
   line-height: 31px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .section-title .desc {
+  .image-card .section-title .desc {
     font-size: 16px;
     line-height: 28px;
   }
@@ -7357,13 +7320,13 @@ ul.children {
 }
 
 .why-choose-us-area {
-  padding: 120px 0;
+  padding: 180px 0 120px 0;
   position: relative;
 }
 .why-choose-us-area .scrolldown-btn-wrapper {
   position: absolute;
   top: 0;
-  left: 45%;
+  left: 43%;
   transform: translate(0, -65%);
   background-image: url("../../../images/scroll-down.png");
   background-repeat: no-repeat;
@@ -7384,6 +7347,39 @@ ul.children {
   color: #080f10;
   font-size: 34px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .why-choose-us-area .sketch-one {
+    background-image: url("../../images/shape/image-card-sketch.png");
+    width: 109px;
+    height: 109px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 150px;
+    left: 147px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .why-choose-us-area .sketch-two {
+    background-image: url("../../images/shape/image-card-sketch.png");
+    width: 109px;
+    height: 109px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 65px;
+    right: 160px;
+    z-index: 3;
+  }
+}
+
+.home-one-service {
+  padding: 120px 0;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .home-one-process-step {
   padding: 120px 0 208px 0;
@@ -7394,7 +7390,7 @@ ul.children {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .home-one-process-step .imgae-wrappe .sketch {
-    background-image: url("../../images/sketch-black.png");
+    background-image: url("../../images/shape/sketch-black.png");
     width: 109px;
     height: 109px;
     background-repeat: no-repeat;
@@ -8055,7 +8051,7 @@ ul.children {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .hero-image-wrapper .sketch {
-    background-image: url("../../images/image-card-sketch.png");
+    background-image: url("../../images/shape/image-card-sketch.png");
     width: 88px;
     height: 88px;
     background-repeat: no-repeat;
@@ -8191,7 +8187,7 @@ ul.children {
   height: 100%;
 }
 .home-three-about-us .home-three-about-image .sketch {
-  background-image: url("../../images/sketch-black.png");
+  background-image: url("../../images/shape/sketch-black.png");
   width: 109px;
   height: 109px;
   background-repeat: no-repeat;

@@ -1,11 +1,11 @@
 // Why Choose Us Area
 .why-choose-us-area {
-  padding: 120px 0;
+  padding: 180px 0 120px 0;
   position: relative;
   .scrolldown-btn-wrapper {
     position: absolute;
     top: 0;
-    left: 45%;
+    left: 43%;
     transform: translate(0, -65%);
     background-image: url("../../../images/scroll-down.png");
     background-repeat: no-repeat;
@@ -27,6 +27,42 @@
       }
     }
   }
+  .sketch-one {
+    @include xl {
+      background-image: url("../../images/shape/image-card-sketch.png");
+      width: 109px;
+      height: 109px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 150px;
+      left: 147px;
+      // transform: translate(100%, 100%);
+    }
+  }
+  .sketch-two {
+    @include xl {
+      background-image: url("../../images/shape/image-card-sketch.png");
+      width: 109px;
+      height: 109px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      bottom: 65px;
+      right: 160px;
+      z-index: 3;
+      // transform: translate(100%, 100%);
+    }
+  }
+}
+
+// Service section
+.home-one-service {
+  padding: 120px 0;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 // Process Step Area
@@ -37,7 +73,7 @@
     position: relative;
     .sketch {
       @include xl {
-        background-image: url("../../images/sketch-black.png");
+        background-image: url("../../images/shape/sketch-black.png");
         width: 109px;
         height: 109px;
         background-repeat: no-repeat;
