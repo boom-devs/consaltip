@@ -1500,4 +1500,53 @@ input:focus {
 }
 .slider-area.style-two button.slider-arrow-btn i {
   color: #080f10;
+}
+
+.accordion-wrapper.style-two {
+  gap: 32px;
+  align-items: start;
+}
+.accordion-wrapper.style-two .accordion-list-item {
+  width: 100%;
+}
+.accordion-wrapper.style-two .accordion-list-item.open:before {
+  display: none;
+}
+.accordion-wrapper.style-two .accordion-list-item.open .accordion-head .icon:before {
+  content: "" !important;
+}
+.accordion-wrapper.style-two .accordion-list-item.open .accordion-head .accordion-title {
+  margin-top: 0;
+}
+.accordion-wrapper.style-two .accordion-list-item .accordion-head {
+  justify-content: start;
+  align-items: start;
+  gap: 24px;
+}
+.accordion-wrapper.style-two .accordion-list-item .accordion-head .icon {
+  width: 80px;
+  height: 80px;
+  background-color: #e0f780;
+  border-radius: 50px;
+  font-size: 48px;
+  line-height: 48px;
+  align-items: center;
+  justify-content: center;
+}
+.accordion-wrapper.style-two .accordion-list-item .accordion-head .icon:before {
+  content: "" !important;
+}
+.accordion-wrapper.style-two .accordion-list-item .accordion-head .accordion-title {
+  margin-top: 16px;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+  color: #080f10;
+}
+.accordion-wrapper.style-two .accordion-list-item .accordion-item-body {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 31px;
+  color: #575959;
 }/*# sourceMappingURL=rakib-two.css.map */
