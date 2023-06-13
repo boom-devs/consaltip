@@ -464,6 +464,46 @@
             $('.next-btn').trigger('click');
         });
 
+        // Home-three review slider
+        // service-slider home-three
+        $(".home-three-review-slider").slick({
+            slidesToShow: 3,
+            infinite: true,
+            autoplay: false,
+            draggable: true,
+            arrows: true,
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            speed: 1500,
+            prevArrow:
+                "<button type='button' class='home-three-review-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+            nextArrow:
+                "<button type='button' class='home-three-review-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+
+
+        $('.home-three-review-arrow-btn prev_btn_custom').on('click', function () {
+            $('.home-three-review-arrow-btn prev-btn').trigger('click');
+        });
+        $('.home-three-review-arrow-btn next_btn_custom').on('click', function () {
+            $('.home-three-review-arrow-btn next-btn').trigger('click');
+        });
+
 
 
         /*

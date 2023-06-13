@@ -7390,6 +7390,17 @@ ul.children {
   margin-top: 16px;
 }
 
+.home-three-hero-main-img {
+  background: url("../../images/home-3-hero-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home-three-hero-main-img img {
+  width: 100%;
+  height: 100%;
+}
+
 .home-three-client-logo-area {
   background-color: #033f47;
   padding: 120px 0;
@@ -7544,10 +7555,24 @@ ul.children {
   padding: 120px 0;
   background-color: #f8f8f1;
 }
-.customer-review .home-three-service-slider .slick-list {
-  margin-left: 175px;
+.customer-review .home-three-review-slider .slick-list {
+  overflow: visible;
+  position: relative;
 }
-.customer-review .home-three-service-slider .home-three-service-arrow-btn {
+.customer-review .home-three-review-slider .slick-list:before {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  content: "";
+  background: #f8f8f1;
+  z-index: 10;
+  transform: translate(-100%, 0);
+}
+.customer-review .home-three-review-slider .slick-list .slick-slide {
+  margin: 0 12px;
+}
+.customer-review .home-three-review-slider .home-three-review-arrow-btn {
   display: none !important;
 }
 
