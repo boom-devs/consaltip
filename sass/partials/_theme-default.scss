@@ -186,7 +186,7 @@ input:focus {
   z-index: 1;
 
   &:hover {
-    background: #071c34;
+    background: $title-color;
     color: #fff;
     border-color: #071c34;
   }

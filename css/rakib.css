@@ -211,7 +211,7 @@ input:focus {
 }
 .theme-btn:hover,
 .wp-block-loginout a:hover {
-  background: #071c34;
+  background: #080f10;
   color: #fff;
   border-color: #071c34;
 }
@@ -578,10 +578,23 @@ input:focus {
   align-items: center;
   flex-shrink: 0;
   transition: all 0.5s ease-out;
+  position: relative;
 }
-.icon-card .icon i {
+.icon-card .icon i,
+.icon-card .icon img {
   font-size: 55px;
   line-height: 55px;
+  z-index: 10;
+  position: relative;
+}
+.icon-card .icon .icon-color {
+  width: 26px;
+  height: 26px;
+  background-color: #e0f780;
+  border-radius: 50px;
+  position: absolute;
+  top: 20px;
+  left: 38px;
 }
 .icon-card .content {
   display: flex;
@@ -1234,7 +1247,6 @@ input:focus {
   font-weight: 400;
   color: #080f10;
   margin: 0;
-  font-family: "Outfit", sans-serif;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .list-item .text {

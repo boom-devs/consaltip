@@ -19,9 +19,22 @@
         align-items: center;
         flex-shrink: 0;
         @include transition;
-        i {
+        position: relative;
+        i,
+        img {
             font-size: 55px;
             line-height: 55px;
+            z-index: 10;
+            position: relative;
+        }
+        .icon-color {
+            width: 26px;
+            height: 26px;
+            background-color: $brand;
+            border-radius: 50px;
+            position: absolute;
+            top: 20px;
+            left: 38px;
         }
     }
     .content {

@@ -210,7 +210,7 @@ input:focus {
 }
 .theme-btn:hover,
 .wp-block-loginout a:hover {
-  background: #071c34;
+  background: #080f10;
   color: #fff;
   border-color: #071c34;
 }
@@ -546,7 +546,7 @@ input:focus {
   gap: 24px;
 }
 .image-card .content {
-  padding-right: 111px;
+  padding-right: 106px;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -589,9 +589,6 @@ input:focus {
     width: 100%;
     padding-right: 0;
   }
-}
-.image-card .content .title-wrapper .desc {
-  margin-right: 25px;
 }
 .image-card .image-card-btn span {
   font-family: "Inter", sans-serif;

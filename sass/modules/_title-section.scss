@@ -148,4 +148,9 @@
       }
     }
   }
+  &.under-line-green {
+    &:after {
+      background: url("../images/under_line_green.png");
+    }
+  }
 }

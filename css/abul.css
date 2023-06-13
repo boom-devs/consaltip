@@ -730,7 +730,7 @@ input:focus {
 }
 .theme-btn:hover,
 .wp-block-loginout a:hover {
-  background: #071c34;
+  background: #080f10;
   color: #fff;
   border-color: #071c34;
 }
@@ -3299,7 +3299,7 @@ html {
   visibility: hidden;
   z-index: 99999;
   transition: all 0.5s ease-out;
-  border-top: 2px solid #ff6731;
+  border-top: 2px solid #080f10;
   box-shadow: 0px 10px 20px 0px rgba(8, 0, 42, 0.08);
   transform-origin: top;
   transform: scaleY(0);
@@ -3323,8 +3323,8 @@ html {
   width: 100%;
 }
 .main-menu ul ul li a:hover {
-  background-color: #ff6731;
-  color: #ffffff;
+  background-color: #e0f780;
+  color: #080f10;
 }
 .main-menu ul ul li a:hover:before {
   border-color: #ffffff;
@@ -3337,7 +3337,7 @@ html {
   transition: all 0.3s ease 0s;
   opacity: 0;
   border-top: 0px;
-  border-top: 2px solid #ff6731;
+  border-top: 2px solid #080f10;
 }
 
 .animation {
@@ -3909,10 +3909,23 @@ a.meanmenu-reveal {
   align-items: center;
   flex-shrink: 0;
   transition: all 0.5s ease-out;
+  position: relative;
 }
-.icon-card .icon i {
+.icon-card .icon i,
+.icon-card .icon img {
   font-size: 55px;
   line-height: 55px;
+  z-index: 10;
+  position: relative;
+}
+.icon-card .icon .icon-color {
+  width: 26px;
+  height: 26px;
+  background-color: #e0f780;
+  border-radius: 50px;
+  position: absolute;
+  top: 20px;
+  left: 38px;
 }
 .icon-card .content {
   display: flex;
@@ -5262,6 +5275,9 @@ button.testimonial-arrow-btn:hover i {
     display: none;
   }
 }
+.under-line.under-line-green:after {
+  background: url("../images/under_line_green.png");
+}
 
 /* consultaion */
 .consultation-wrapper {
@@ -5327,7 +5343,7 @@ button.testimonial-arrow-btn:hover i {
   gap: 24px;
 }
 .image-card .content {
-  padding-right: 111px;
+  padding-right: 106px;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -5370,9 +5386,6 @@ button.testimonial-arrow-btn:hover i {
     width: 100%;
     padding-right: 0;
   }
-}
-.image-card .content .title-wrapper .desc {
-  margin-right: 25px;
 }
 .image-card .image-card-btn span {
   font-family: "Inter", sans-serif;
