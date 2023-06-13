@@ -4,6 +4,79 @@
   justify-content: center;
   gap: 16px;
 }
+
+// Hero section images
+.hero-image-wrapper {
+  height: 100%;
+  position: relative;
+  .sketch {
+    @include xl {
+      background-image: url("../../images/image-card-sketch.png");
+      width: 88px;
+      height: 88px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .sketch-bottom {
+    @include xl {
+      background-image: url("../../images/sketch-color.png  ");
+      width: 124px;
+      height: 124px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translate(-50%, -100%);
+    }
+  }
+  .left-hero-image {
+    position: absolute;
+    &:before {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 1px solid $title-color;
+      content: "";
+      border-radius: 0 0 125px 125px;
+      margin-top: 16px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0 0 125px 125px;
+      position: relative;
+      z-index: 3;
+      margin-left: 16px;
+    }
+  }
+  .right-hero-image {
+    position: absolute;
+    &:before {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 1px solid $title-color;
+      content: "";
+      border-radius: 0 0 125px 125px;
+      margin-left: 16px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0 0 125px 125px;
+      position: relative;
+      z-index: 3;
+      margin-top: 16px;
+    }
+  }
+}
+
 // client-logo section
 .home-three-client-logo-area {
   background-color: $icon-color;
@@ -28,6 +101,7 @@
       align-items: center;
       gap: 8px;
       margin-top: 64px;
+      list-style: none;
       li {
         line-height: 0;
         button {
