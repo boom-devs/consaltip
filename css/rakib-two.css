@@ -242,7 +242,7 @@ input:focus {
 }
 .theme-transparant-btn:hover {
   background: #e0f780;
-  color: #fff;
+  color: #080f10;
 }
 
 .background-image {
@@ -439,6 +439,7 @@ input:focus {
   flex-direction: column;
   gap: 16px;
   position: relative;
+  margin-top: 32px;
 }
 .portfolio-card .content .icon {
   display: none;

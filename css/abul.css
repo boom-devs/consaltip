@@ -762,7 +762,7 @@ input:focus {
 }
 .theme-transparant-btn:hover {
   background: #e0f780;
-  color: #fff;
+  color: #080f10;
 }
 
 /* Deafult Margin & Padding */
@@ -4810,8 +4810,9 @@ button.testimonial-arrow-btn:hover i {
   line-height: 21px;
 }
 .post-card-one .content-wrapper .post-content .post-meta .meta-info span i {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 16px;
+  color: #080f10;
 }
 .post-card-one .content-wrapper .post-content .post-meta .meta-info p {
   font-size: 14px;
@@ -7341,7 +7342,7 @@ ul.children {
   top: 0;
   left: 43%;
   transform: translate(0, -65%);
-  background-image: url("../../../images/scroll-down.png");
+  background-image: url("../images/scroll-down.png");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 100px;

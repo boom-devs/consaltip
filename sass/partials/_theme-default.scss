@@ -213,6 +213,6 @@ input:focus {
   margin-left: 10px;
   &:hover {
     background: $brand;
-    color: #fff;
+    color: $title-color;
   }
 }
