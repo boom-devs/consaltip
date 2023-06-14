@@ -5,9 +5,22 @@
     .portfolio-image {
         width: 100%;
         height: 100%;
+        position: relative;
         img {
             width: 100%;
             height: 100%;
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            visibility: hidden;
+            opacity: 0;
+            // background-color: $white;
+            @include transition;
         }
     }
     .content {
@@ -53,6 +66,10 @@
         cursor: pointer;
         .portfolio-image {
             filter: blur(2px);
+            &:after {
+                visibility: visible;
+                opacity: 0.5;
+            }
         }
     }
 }

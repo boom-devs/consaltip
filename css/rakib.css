@@ -573,6 +573,7 @@ input:focus {
   height: 100px;
   border-radius: 100%;
   border: 1px solid #033f47;
+  color: #080f10;
   display: flex;
   justify-content: center;
   align-items: center;

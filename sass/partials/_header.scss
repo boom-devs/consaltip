@@ -71,7 +71,7 @@
           color: $brand;
         }
         &:hover {
-          color: $sky-color;
+          filter: blur(1px);
         }
       }
     }
@@ -124,7 +124,7 @@
       align-items: center;
       i {
         font-size: 12px;
-        line-height: 16px;
+        line-height: 12px;
         color: $white;
       }
 
@@ -417,6 +417,12 @@
       border-radius: 4px;
       padding: 16px 24px;
       color: $white;
+      font-family: $body-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 27px;
+      text-align: center;
     }
   }
   &.style-three {

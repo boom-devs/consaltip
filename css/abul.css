@@ -3098,7 +3098,7 @@ html {
   color: #e0f780;
 }
 .header-top .header-contact-info span a:hover {
-  color: #1eae98;
+  filter: blur(1px);
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .header-top .header-top-btn {
@@ -3148,7 +3148,7 @@ html {
 }
 .header-top .social-profile a i {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 12px;
   color: #ffffff;
 }
 .header-top .social-profile a:hover {
@@ -3380,6 +3380,12 @@ html {
   border-radius: 4px;
   padding: 16px 24px;
   color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
 }
 .header-btn.style-three a {
   background: #033f47;
@@ -3832,7 +3838,7 @@ a.meanmenu-reveal {
   }
 }
 .slider-area .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper {
-  margin-top: 40px;
+  margin-top: 48px;
   display: flex;
   gap: 16px;
 }
@@ -3935,6 +3941,7 @@ a.meanmenu-reveal {
   height: 100px;
   border-radius: 100%;
   border: 1px solid #033f47;
+  color: #080f10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7607,7 +7614,7 @@ ul.children {
 .home-one-review .review-card .image-wrapper {
   flex-shrink: 0;
   display: flex;
-  width: 50%;
+  width: 40%;
   justify-content: end;
 }
 .home-one-review .review-card .review-content {
