@@ -16,10 +16,20 @@
       // opacity: 0.65;
       @include transition;
     }
+    svg {
+      path {
+        @include transition;
+      }
+    }
     &:hover {
       transform: scale(1.1);
       img {
         filter: brightness(0);
+      }
+      svg {
+        path {
+          fill: $title-color;
+        }
       }
     }
   }

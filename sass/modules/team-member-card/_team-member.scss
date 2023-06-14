@@ -1,14 +1,55 @@
 .team-member-card {
   position: relative;
+  cursor: pointer;
   .image {
     background-color: $background;
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
-
+    position: relative;
     img {
       width: 100%;
       height: 100%;
+    }
+    .image-content-wrapper {
+      padding: 43px 0 44px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      @include transition;
+      visibility: hidden;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      .user-info {
+        h4 {
+          margin-bottom: 4px;
+          color: $white;
+        }
+        p {
+          text-align: center;
+          color: $white;
+        }
+      }
+      .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 27px;
+        width: 100%;
+        a {
+          line-height: 18px;
+          i {
+            color: $white;
+            font-size: 24px;
+          }
+        }
+      }
     }
   }
   .content-wrapper {
@@ -20,7 +61,6 @@
     gap: 16px;
     width: 100%;
     position: relative;
-    top: 0;
     @include transition;
     .user-info {
       h4 {
@@ -47,21 +87,16 @@
   }
   &:hover {
     .content-wrapper {
+      position: relative;
+      // top: -200px;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .image-content-wrapper {
       background: rgba(3, 63, 71, 0.8);
       backdrop-filter: blur(10px);
-      position: relative;
-      top: -200px;
-      .user-info {
-        h4,
-        p {
-          color: $white;
-        }
-      }
-      .social {
-        i {
-          color: $white;
-        }
-      }
+      visibility: visible;
+      opacity: 1;
     }
   }
   @include sm {

@@ -21,27 +21,24 @@
   }
 
   .footer-widget-title {
-    line-height: 25px;
-    color: $title-color;
-    font-weight: 500;
     font-size: 18px;
-    margin-bottom: 18px;
-    padding: 14px 0;
+    line-height: 25px;
+    font-weight: 500;
+    color: $title-color;
+    margin-bottom: 24px;
   }
   .footer-widget {
     .widget-colors {
       background: $icon-color;
-      padding-left: 24px;
-      padding-right: 30px;
-      padding-bottom: 30px;
+      padding: 24px;
       h2 {
         &.footer-widget-title {
-          margin-bottom: 6px;
+          margin-bottom: 24px;
           color: $white;
         }
       }
       p {
-        margin-bottom: 18px;
+        margin-bottom: 16px;
         color: $white;
       }
       .subs {
@@ -51,9 +48,10 @@
             height: 56px;
             padding: 8px;
             border-radius: 5px;
-            margin-bottom: 18px;
+            margin-bottom: 16px;
             border: 1px solid #e0e0e0;
             background: transparent;
+            color: $white;
           }
         }
       }
@@ -175,8 +173,16 @@
             width: 45px;
             height: 45px;
             line-height: 45px;
-            border: 1px solid $text-color;
+            border: 1px solid $icon-color;
             text-align: center;
+            cursor: pointer;
+            @include transition;
+            &:hover {
+              background-color: $brand;
+              i {
+                color: $icon-color;
+              }
+            }
           }
           .contact-text {
             a {

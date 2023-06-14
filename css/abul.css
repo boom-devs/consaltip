@@ -3317,7 +3317,7 @@ html {
 .main-menu ul ul li a {
   line-height: 120%;
   padding: 10px 20px;
-  color: #033f47;
+  color: #080f10;
   border-bottom: 1px solid #f5f5f5;
   margin-left: 0;
   width: 100%;
@@ -3841,10 +3841,41 @@ a.meanmenu-reveal {
     margin-top: 30px;
   }
 }
+.slider-area .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper .slider-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16.5px 32px;
+  text-align: center;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 31px;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  background: #033f47;
+  border: 1px solid #ffffff;
+}
+.slider-area .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper .slider-btn.active {
+  background: #e0f780;
+  color: #080f10;
+  border: 1px solid transparent;
+}
+.slider-area .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper .slider-btn.active:hover {
+  background: #033f47;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.slider-area .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper .slider-btn:hover {
+  background: #e0f780;
+  color: #080f10;
+}
 .slider-area .single-slider .slider-image {
   position: relative;
   z-index: 2;
-  animation: MoveUpDown 2s linear infinite alternate;
   right: 47px;
   top: 24px;
 }
@@ -4049,6 +4080,10 @@ a.meanmenu-reveal {
   line-height: 52px;
   letter-spacing: 0.02em;
   color: #080f10;
+  display: flex;
+}
+.about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number .counter {
+  width: 100px;
 }
 .about-info-card .content-wrapper .about-counter-card .counter-item .counter-content .text {
   font-size: 18px;
@@ -4753,11 +4788,17 @@ button.testimonial-arrow-btn:hover i {
 .client-logo-wrapper .client-logo img {
   transition: all 0.5s ease-out;
 }
+.client-logo-wrapper .client-logo svg path {
+  transition: all 0.5s ease-out;
+}
 .client-logo-wrapper .client-logo:hover {
   transform: scale(1.1);
 }
 .client-logo-wrapper .client-logo:hover img {
   filter: brightness(0);
+}
+.client-logo-wrapper .client-logo:hover svg path {
+  fill: #080f10;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .client-logo-wrapper {
@@ -4801,7 +4842,7 @@ button.testimonial-arrow-btn:hover i {
   align-items: center;
 }
 .post-card-one .content-wrapper .post-content .post-meta .meta-info {
-  padding: 8px 16px;
+  padding: 8px 16px 8px 0;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -4817,6 +4858,9 @@ button.testimonial-arrow-btn:hover i {
 .post-card-one .content-wrapper .post-content .post-meta .meta-info p {
   font-size: 14px;
   line-height: 21px;
+}
+.post-card-one .content-wrapper .post-content .title {
+  cursor: pointer;
 }
 .post-card-one .content-wrapper button {
   flex-shrink: 0;
@@ -5278,6 +5322,9 @@ button.testimonial-arrow-btn:hover i {
 }
 .under-line.under-line-green:after {
   background: url("../images/under_line_green.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* consultaion */
@@ -5289,6 +5336,17 @@ button.testimonial-arrow-btn:hover i {
   width: 100%;
   height: 100%;
 }
+.consultation-wrapper .sketch {
+  position: absolute;
+  background-image: url("../../images/shape/sketch-brand.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 47%;
+  bottom: 125px;
+  width: 109px;
+  height: 109px;
+  z-index: 10;
+}
 .consultation-wrapper .free-consultaion-text {
   display: flex;
   flex-direction: column;
@@ -5299,17 +5357,6 @@ button.testimonial-arrow-btn:hover i {
   position: relative;
   padding-left: 56px;
   padding-right: 50px;
-}
-.consultation-wrapper .free-consultaion-text .sketch {
-  position: absolute;
-  background-image: url("../../images/shape/sketch-brand.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  right: 0;
-  bottom: 0;
-  width: 109px;
-  height: 109px;
-  transform: translate(50%, -50%);
 }
 .consultation-wrapper .free-consultaion-text .button-wrapper {
   display: flex;
@@ -5323,7 +5370,7 @@ button.testimonial-arrow-btn:hover i {
   position: absolute;
   content: "";
   background-image: url(../images/coltation-img/shap.png);
-  z-index: 2;
+  z-index: 1;
   width: 100%;
   height: 100%;
   top: 0;
@@ -5334,7 +5381,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .consultation-wrapper .consultion-img {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* img-card */
@@ -6973,25 +7020,22 @@ ul.children {
   margin-top: 15px;
 }
 .footer .footer-widget-title {
-  line-height: 25px;
-  color: #080f10;
-  font-weight: 500;
   font-size: 18px;
-  margin-bottom: 18px;
-  padding: 14px 0;
+  line-height: 25px;
+  font-weight: 500;
+  color: #080f10;
+  margin-bottom: 24px;
 }
 .footer .footer-widget .widget-colors {
   background: #033f47;
-  padding-left: 24px;
-  padding-right: 30px;
-  padding-bottom: 30px;
+  padding: 24px;
 }
 .footer .footer-widget .widget-colors h2.footer-widget-title {
-  margin-bottom: 6px;
+  margin-bottom: 24px;
   color: #ffffff;
 }
 .footer .footer-widget .widget-colors p {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   color: #ffffff;
 }
 .footer .footer-widget .widget-colors .subs form input {
@@ -6999,9 +7043,10 @@ ul.children {
   height: 56px;
   padding: 8px;
   border-radius: 5px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   border: 1px solid #e0e0e0;
   background: transparent;
+  color: #ffffff;
 }
 .footer .footer-widget ul {
   padding-left: 0;
@@ -7101,8 +7146,16 @@ ul.children {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  border: 1px solid #575959;
+  border: 1px solid #033f47;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.footer .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon:hover {
+  background-color: #e0f780;
+}
+.footer .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon:hover i {
+  color: #033f47;
 }
 .footer .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a {
   color: #575959;
@@ -7229,6 +7282,7 @@ ul.children {
 /* Team Member */
 .team-member-card {
   position: relative;
+  cursor: pointer;
 }
 .team-member-card .image {
   background-color: #f8f8f1;
@@ -7236,10 +7290,49 @@ ul.children {
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
 }
 .team-member-card .image img {
   width: 100%;
   height: 100%;
+}
+.team-member-card .image .image-content-wrapper {
+  padding: 43px 0 44px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  transition: all 0.5s ease-out;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.team-member-card .image .image-content-wrapper .user-info h4 {
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+.team-member-card .image .image-content-wrapper .user-info p {
+  text-align: center;
+  color: #ffffff;
+}
+.team-member-card .image .image-content-wrapper .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  width: 100%;
+}
+.team-member-card .image .image-content-wrapper .social a {
+  line-height: 18px;
+}
+.team-member-card .image .image-content-wrapper .social a i {
+  color: #ffffff;
+  font-size: 24px;
 }
 .team-member-card .content-wrapper {
   padding: 43px 0 44px 0;
@@ -7250,7 +7343,6 @@ ul.children {
   gap: 16px;
   width: 100%;
   position: relative;
-  top: 0;
   transition: all 0.5s ease-out;
 }
 .team-member-card .content-wrapper .user-info h4 {
@@ -7274,18 +7366,16 @@ ul.children {
   font-size: 24px;
 }
 .team-member-card:hover .content-wrapper {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+}
+.team-member-card:hover .image-content-wrapper {
   background: rgba(3, 63, 71, 0.8);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  position: relative;
-  top: -200px;
-}
-.team-member-card:hover .content-wrapper .user-info h4,
-.team-member-card:hover .content-wrapper .user-info p {
-  color: #ffffff;
-}
-.team-member-card:hover .content-wrapper .social i {
-  color: #ffffff;
+  visibility: visible;
+  opacity: 1;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .team-member-card {
@@ -7448,11 +7538,11 @@ ul.children {
 
 .case-studies-home-one {
   background: #033f47;
-  padding: 120px 0 220px 0;
+  padding: 120px 0 240px 0;
 }
 
 .home-one-case-studies-slider .portfolio-card {
-  margin: 0 12px;
+  margin: 0 24px;
 }
 .home-one-case-studies-slider button.case-arrow-btn {
   position: absolute;
@@ -7464,7 +7554,7 @@ ul.children {
   background-color: transparent;
   border: 1px solid #ffffff;
   cursor: pointer;
-  bottom: -136px;
+  bottom: -128px;
   overflow: hidden;
 }
 @media (max-width: 991px) {
@@ -7505,6 +7595,7 @@ ul.children {
   color: #080f10;
   transition: all 0.5s ease-out;
 }
+
 .home-one-review {
   padding: 120px 0;
 }
@@ -7514,11 +7605,10 @@ ul.children {
   gap: 73px;
 }
 .home-one-review .review-card .image-wrapper {
-  max-width: 50%;
-  width: 100%;
-}
-.home-one-review .review-card .image-wrapper img {
-  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  width: 50%;
+  justify-content: end;
 }
 .home-one-review .review-card .review-content {
   max-width: 50%;
@@ -7596,25 +7686,43 @@ ul.children {
   }
 }
 
-.home-one-team-member {
+.home-one-team-member-area {
+  padding: 120px 0;
+  overflow: hidden;
   position: relative;
 }
-.home-one-team-member .home-one-team-arrow-btn {
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .home-one-team-member-area .sketch {
+    background-image: url("../../images/sketch-color.png");
+    width: 188px;
+    height: 188px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 200px;
+    right: 262px;
+  }
+}
+.home-one-team-member-area .home-one-team-member {
+  position: relative;
+  margin-left: -200px;
+}
+.home-one-team-member-area .home-one-team-member .slick-arrow {
   display: none !important;
 }
-.home-one-team-member .slick-list .slick-slide {
+.home-one-team-member-area .home-one-team-member .slick-list .slick-slide {
   margin: 0 32px;
   transition: all 0.5s ease-out;
 }
-.home-one-team-member .slick-list .slick-slide.slick-active {
+.home-one-team-member-area .home-one-team-member .slick-list .slick-slide.slick-active {
   transition: all 0.5s ease-out;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .home-one-team-member .slick-list .slick-slide {
+  .home-one-team-member-area .home-one-team-member .slick-list .slick-slide {
     margin: 0 16px;
   }
 }
-.home-one-team-member button.home-one-team-arrow-btn {
+.home-one-team-member-area .home-one-team-member button.home-one-team-arrow-btn {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -7628,30 +7736,30 @@ ul.children {
   overflow: hidden;
 }
 @media (max-width: 991px) {
-  .home-one-team-member button.home-one-team-arrow-btn {
+  .home-one-team-member-area .home-one-team-member button.home-one-team-arrow-btn {
     top: unset;
     bottom: -80px;
   }
 }
-.home-one-team-member button.home-one-team-arrow-btn.prev-btn {
+.home-one-team-member-area .home-one-team-member button.home-one-team-arrow-btn.prev-btn {
   right: 72px;
 }
 @media (max-width: 767px) {
-  .home-one-team-member button.home-one-team-arrow-btn.prev-btn {
+  .home-one-team-member-area .home-one-team-member button.home-one-team-arrow-btn.prev-btn {
     right: unset;
     left: 30px;
   }
 }
-.home-one-team-member button.home-one-team-arrow-btn.next-btn {
+.home-one-team-member-area .home-one-team-member button.home-one-team-arrow-btn.next-btn {
   right: 0;
 }
 @media (max-width: 767px) {
-  .home-one-team-member button.home-one-team-arrow-btn.next-btn {
+  .home-one-team-member-area .home-one-team-member button.home-one-team-arrow-btn.next-btn {
     right: 30px;
     left: unset;
   }
 }
-.home-one-team-member button.home-one-team-arrow-btn i {
+.home-one-team-member-area .home-one-team-member button.home-one-team-arrow-btn i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -7660,14 +7768,14 @@ ul.children {
   font-size: 21px;
   transition: all 0.5s ease-out;
 }
-.home-one-team-member button.home-one-team-arrow-btn:hover {
+.home-one-team-member-area .home-one-team-member button.home-one-team-arrow-btn:hover {
   background: #e0f780;
 }
-.home-one-team-member button.home-one-team-arrow-btn:hover i {
+.home-one-team-member-area .home-one-team-member button.home-one-team-arrow-btn:hover i {
   color: #080f10;
   transition: all 0.5s ease-out;
 }
-.home-one-team-member .slick-dots {
+.home-one-team-member-area .home-one-team-member .slick-dots {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7675,10 +7783,10 @@ ul.children {
   margin-top: 64px;
   list-style: none;
 }
-.home-one-team-member .slick-dots li {
+.home-one-team-member-area .home-one-team-member .slick-dots li {
   line-height: 0;
 }
-.home-one-team-member .slick-dots li button {
+.home-one-team-member-area .home-one-team-member .slick-dots li button {
   width: 8px;
   height: 8px;
   font-size: 0;
@@ -7686,14 +7794,14 @@ ul.children {
   padding: unset;
   background-color: #bdbdbd;
 }
-.home-one-team-member .slick-dots li.slick-active button {
+.home-one-team-member-area .home-one-team-member .slick-dots li.slick-active button {
   background: #080f10;
 }
 
 .home-one-client-logo {
   padding: 82px 0 72px 0;
   background-color: #033f47;
-  background-image: url("../../images/client/bg.png");
+  background-image: url("../../images/client/bg-1.png");
   background-position: center;
   background-repeat: no-repeat;
 }

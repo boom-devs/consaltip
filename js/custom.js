@@ -68,6 +68,19 @@
                 return false;
             });
         });
+        // Accordion hover
+        $(function () {
+            $('.accordion-list-item-two .accordion-item-body').css("display", "none");
+            $('.accordion-list-item-two.open .accordion-item-body').css("display", "block");
+            $('.accordion-list-item-two').hover( function () {
+                console.log("sdkf")
+                $(this).toggleClass(' open ');
+                $(this).siblings().removeClass(' open ');
+                $('.accordion-item-body').stop().slideUp();
+                $('.open .accordion-item-body').stop().slideDown();
+                return false;
+            });
+        });
 
         /*
         Skill Progress Bar Js
@@ -264,6 +277,7 @@
             loop: true,
             dots: false,
             speed: 1500,
+             variableWidth: true,
             prevArrow:
                 "<button type='button' class='case-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
             nextArrow:
@@ -326,6 +340,7 @@
             loop: true,
             dots: true,
             speed: 1500,
+            variableWidth: true,
              prevArrow:
                 "<button type='button' class='home-one-team-arrow-prev'><i class='fa-solid fa-angle-left'></i></button>",
             nextArrow:

@@ -151,6 +151,9 @@
   &.under-line-green {
     &:after {
       background: url("../images/under_line_green.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
   }
 }

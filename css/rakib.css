@@ -1079,6 +1079,7 @@ input:focus {
 /* Team-member-card style-one CSS */
 .team-member-card {
   position: relative;
+  cursor: pointer;
 }
 .team-member-card .image {
   background-color: #f8f8f1;
@@ -1086,10 +1087,49 @@ input:focus {
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
 }
 .team-member-card .image img {
   width: 100%;
   height: 100%;
+}
+.team-member-card .image .image-content-wrapper {
+  padding: 43px 0 44px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  transition: all 0.5s ease-out;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.team-member-card .image .image-content-wrapper .user-info h4 {
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+.team-member-card .image .image-content-wrapper .user-info p {
+  text-align: center;
+  color: #ffffff;
+}
+.team-member-card .image .image-content-wrapper .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  width: 100%;
+}
+.team-member-card .image .image-content-wrapper .social a {
+  line-height: 18px;
+}
+.team-member-card .image .image-content-wrapper .social a i {
+  color: #ffffff;
+  font-size: 24px;
 }
 .team-member-card .content-wrapper {
   padding: 43px 0 44px 0;
@@ -1100,7 +1140,6 @@ input:focus {
   gap: 16px;
   width: 100%;
   position: relative;
-  top: 0;
   transition: all 0.5s ease-out;
 }
 .team-member-card .content-wrapper .user-info h4 {
@@ -1124,18 +1163,16 @@ input:focus {
   font-size: 24px;
 }
 .team-member-card:hover .content-wrapper {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+}
+.team-member-card:hover .image-content-wrapper {
   background: rgba(3, 63, 71, 0.8);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  position: relative;
-  top: -200px;
-}
-.team-member-card:hover .content-wrapper .user-info h4,
-.team-member-card:hover .content-wrapper .user-info p {
-  color: #ffffff;
-}
-.team-member-card:hover .content-wrapper .social i {
-  color: #ffffff;
+  visibility: visible;
+  opacity: 1;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .team-member-card {
@@ -1265,23 +1302,6 @@ input:focus {
 }
 .list-item.style-two .icon i {
   font-size: 12px;
-}
-
-/* Team-member-page CSS */
-.team-space {
-  padding: 0 37px;
-  margin-top: 30px;
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .team-space {
-    padding: 0 10px;
-    margin-top: 85px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team-space {
-    margin-top: 85px;
-  }
 }
 
 /* Service-page CSS */
