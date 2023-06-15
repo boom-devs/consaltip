@@ -543,9 +543,13 @@ input:focus {
 }
 .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
   border-color: #ffffff;
+  transition: all 0.5s ease-out;
 }
 .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon i {
   color: #e0f780;
+}
+.footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li:hover .contact-icon i {
+  color: #080f10;
 }
 .footer.style-two .footer-bottom-area {
   border-top: 1px solid #085a65;
@@ -573,7 +577,7 @@ input:focus {
   height: 100px;
   border-radius: 100%;
   border: 1px solid #033f47;
-  color: #080f10;
+  color: #033f47;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -581,8 +585,12 @@ input:focus {
   transition: all 0.5s ease-out;
   position: relative;
 }
+.icon-card .icon svg path {
+  fill: #033f47;
+}
 .icon-card .icon i,
-.icon-card .icon img {
+.icon-card .icon img,
+.icon-card .icon svg {
   font-size: 55px;
   line-height: 55px;
   z-index: 10;
@@ -611,12 +619,6 @@ input:focus {
   font-weight: 400;
   color: #575959;
   text-align: center;
-}
-.icon-card:hover .icon {
-  background: #ffffff !important;
-}
-.icon-card:hover .icon i {
-  color: #033f47;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .icon-card {
@@ -1050,7 +1052,7 @@ input:focus {
   gap: 8px;
 }
 .post-card-one.style-two .content-wrapper .post-content .post-meta .meta-info {
-  padding: 4px 8px;
+  padding: 4px 8px 4px 0;
 }
 .post-card-one.style-two .content-wrapper .post-content .post-meta .meta-info span i {
   font-weight: 600;

@@ -156,11 +156,18 @@
           align-items: center;
           line-height: 24px;
           gap: 20px;
-
+          &.address {
+          }
           &:first-child {
             align-items: flex-start;
+            cursor: default;
             .contact-icon {
               margin-top: 5px;
+            }
+            .contact-text {
+              a {
+                cursor: default;
+              }
             }
           }
           &:last-child {
@@ -175,20 +182,22 @@
             line-height: 45px;
             border: 1px solid $icon-color;
             text-align: center;
-            cursor: pointer;
+            // cursor: pointer;
             @include transition;
-            &:hover {
-              background-color: $brand;
-              i {
-                color: $icon-color;
-              }
-            }
           }
           .contact-text {
             a {
               color: $text-color;
               font-weight: 400;
               font-size: 16px;
+            }
+          }
+          &:hover {
+            .contact-icon {
+              background-color: $brand;
+              i {
+                color: $icon-color;
+              }
             }
           }
         }

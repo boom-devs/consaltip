@@ -267,7 +267,7 @@
             position: relative;
             z-index: 1;
             color: $white;
-            background: $icon-color;
+            background: transparent;
             border: 1px solid $white;
             &.active {
               background: $brand;

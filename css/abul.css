@@ -3363,6 +3363,7 @@ html {
   gap: 8px;
   border-radius: 50px;
   font-family: "Outfit", sans-serif;
+  text-transform: capitalize;
 }
 .header-btn i {
   vertical-align: middle;
@@ -3862,7 +3863,7 @@ a.meanmenu-reveal {
   position: relative;
   z-index: 1;
   color: #ffffff;
-  background: #033f47;
+  background: transparent;
   border: 1px solid #ffffff;
 }
 .slider-area .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper .slider-btn.active {
@@ -3941,7 +3942,7 @@ a.meanmenu-reveal {
   height: 100px;
   border-radius: 100%;
   border: 1px solid #033f47;
-  color: #080f10;
+  color: #033f47;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3949,8 +3950,12 @@ a.meanmenu-reveal {
   transition: all 0.5s ease-out;
   position: relative;
 }
+.icon-card .icon svg path {
+  fill: #033f47;
+}
 .icon-card .icon i,
-.icon-card .icon img {
+.icon-card .icon img,
+.icon-card .icon svg {
   font-size: 55px;
   line-height: 55px;
   z-index: 10;
@@ -3979,12 +3984,6 @@ a.meanmenu-reveal {
   font-weight: 400;
   color: #575959;
   text-align: center;
-}
-.icon-card:hover .icon {
-  background: #ffffff !important;
-}
-.icon-card:hover .icon i {
-  color: #033f47;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .icon-card {
@@ -4090,7 +4089,7 @@ a.meanmenu-reveal {
   display: flex;
 }
 .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number .counter {
-  width: 100px;
+  width: 100%;
 }
 .about-info-card .content-wrapper .about-counter-card .counter-item .counter-content .text {
   font-size: 18px;
@@ -4885,7 +4884,7 @@ button.testimonial-arrow-btn:hover i {
   gap: 8px;
 }
 .post-card-one.style-two .content-wrapper .post-content .post-meta .meta-info {
-  padding: 4px 8px;
+  padding: 4px 8px 4px 0;
 }
 .post-card-one.style-two .content-wrapper .post-content .post-meta .meta-info span i {
   font-weight: 600;
@@ -7139,9 +7138,13 @@ ul.children {
 }
 .footer .footer-widget .footer-widget-contact .footer-contact ul li:first-child {
   align-items: flex-start;
+  cursor: default;
 }
 .footer .footer-widget .footer-widget-contact .footer-contact ul li:first-child .contact-icon {
   margin-top: 5px;
+}
+.footer .footer-widget .footer-widget-contact .footer-contact ul li:first-child .contact-text a {
+  cursor: default;
 }
 .footer .footer-widget .footer-widget-contact .footer-contact ul li:last-child {
   margin-bottom: 0;
@@ -7155,19 +7158,18 @@ ul.children {
   line-height: 45px;
   border: 1px solid #033f47;
   text-align: center;
-  cursor: pointer;
   transition: all 0.5s ease-out;
-}
-.footer .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon:hover {
-  background-color: #e0f780;
-}
-.footer .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon:hover i {
-  color: #033f47;
 }
 .footer .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a {
   color: #575959;
   font-weight: 400;
   font-size: 16px;
+}
+.footer .footer-widget .footer-widget-contact .footer-contact ul li:hover .contact-icon {
+  background-color: #e0f780;
+}
+.footer .footer-widget .footer-widget-contact .footer-contact ul li:hover .contact-icon i {
+  color: #033f47;
 }
 .footer .footer-widget .footer-bottom-menu ul {
   list-style: none;
@@ -7272,9 +7274,13 @@ ul.children {
 }
 .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
   border-color: #ffffff;
+  transition: all 0.5s ease-out;
 }
 .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon i {
   color: #e0f780;
+}
+.footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li:hover .contact-icon i {
+  color: #080f10;
 }
 .footer.style-two .footer-bottom-area {
   border-top: 1px solid #085a65;
@@ -7401,6 +7407,7 @@ ul.children {
 .portfolio-card.style-two .content {
   padding: 64px 40px;
   background: #f8f8f1;
+  margin-top: 0;
 }
 .portfolio-card.style-two .content .icon {
   display: flex;
@@ -7818,7 +7825,7 @@ ul.children {
   background: #ffffff;
   position: relative;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .home-two-about-us-area .sketch-one {
     background-image: url("../../../images/sketch-color.png");
     width: 109px;
@@ -7833,6 +7840,11 @@ ul.children {
 .home-two-about-us-area .about-us-image-gallery img {
   width: 100%;
   height: 100%;
+  transition: all 0.5s ease-out;
+}
+.home-two-about-us-area .about-us-image-gallery img:hover {
+  filter: blur(2px);
+  transform: scale(1.1);
 }
 
 .home-two-service {
@@ -7840,7 +7852,7 @@ ul.children {
   padding: 120px 0;
   position: relative;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .home-two-service .sketch-one {
     background-image: url("../../../images/sketch-color.png");
     width: 109px;
@@ -7866,7 +7878,7 @@ ul.children {
   background-repeat: no-repeat;
   position: relative;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .counter-card-wrapper .counter-sketch {
     position: absolute;
     background-image: url("../../images/title-sketch.png");
@@ -7895,7 +7907,7 @@ ul.children {
   padding: 120px 0;
   position: relative;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .home-two-mission .sketch-one {
     position: absolute;
     background-image: url("../../images/sketch-color.png");
@@ -7911,7 +7923,7 @@ ul.children {
   padding: 120px 0;
   position: relative;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .home-two-client-logo-area .sketch {
     position: absolute;
     width: 188px;
@@ -7955,7 +7967,7 @@ ul.children {
   padding: 120px 0;
   position: relative;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .home-2-process-step .sketch {
     position: absolute;
     background-image: url("../../images/sketch-color.png");
@@ -8026,6 +8038,9 @@ ul.children {
   color: #080f10;
   transition: all 0.5s ease-out;
 }
+.home-two-process-slider .slick-dots {
+  display: none !important;
+}
 
 .process-slider-container {
   padding: 20px;
@@ -8056,7 +8071,7 @@ ul.children {
   padding: 120px 0;
   position: relative;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .home-two-team .sketch {
     position: absolute;
     background-image: url("../../images/sketch-color.png");
@@ -8072,7 +8087,7 @@ ul.children {
   background-color: #033f47;
   position: relative;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .home-two-customer-review .sketch {
     background-image: url("../../images/title-sketch.png");
     width: 109px;
@@ -8084,7 +8099,7 @@ ul.children {
     left: 254px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .home-two-customer-review .shape-one {
     background-image: url("../../images/shape/shape-3.png");
     width: 40px;
@@ -8096,7 +8111,7 @@ ul.children {
     left: 42px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .home-two-customer-review .shape-two {
     background-image: url("../../images/shape/Rectangle.png");
     width: 40px;
@@ -8157,7 +8172,7 @@ ul.children {
   padding: 120px 0;
   position: relative;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .home-two-blog-area .sketch {
     position: absolute;
     background-image: url("../../images/sketch-color.png");

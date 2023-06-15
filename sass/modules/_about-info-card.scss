@@ -28,7 +28,8 @@
                         color: $title-color;
                         display: flex;
                         .counter {
-                            width: 100px;
+                            // flex-shrink: 0;
+                            width: 100%;
                         }
                     }
                 }

@@ -316,7 +316,8 @@
             responsive: [
                 {
                     breakpoint: 991,
-                    settings: {
+                    settings:
+                     {
                         slidesToShow: 2,
                     },
                 },
@@ -392,7 +393,7 @@
             ],
         });
 
-
+// Home-two process slider
         $(".home-two-process-slider").slick({
             slidesToShow: 1,
             infinite: true,
@@ -401,7 +402,7 @@
             arrows: true,
             slidesToScroll: 1,
             loop: true,
-            dots: false,
+            dots: true,
             speed: 1500,
             prevArrow:
                 "<button type='button' class='process-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
@@ -417,6 +418,13 @@
                     },
                 },
             ],
+        });
+        $('#home-two-first-step').on('click', function () {
+            $('#slick-slide-control30').trigger('click');
+        });
+        $('#home-two-second-step').on('click', function () {
+            $('#slick-slide-control31').trigger('click');
+            console.log("kk")
         });
 
         $(".home-two-testimonial-card-slider").slick({

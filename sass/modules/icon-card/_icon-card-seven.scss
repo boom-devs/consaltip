@@ -5,6 +5,7 @@
         padding: 26px 0;
         gap: 16px;
         margin-top: 54px;
+        cursor: pointer;
         .icon {
             background: $brand;
             width: 80px;
@@ -13,14 +14,16 @@
                 color: $icon-color;
             }
         }
-        .title {
-            font-size: 24px;
-            line-height: 34px;
-            letter-spacing: 0.02em;
-            color: $white;
-        }
-        @include sm {
-            flex-direction: column;
+        .content {
+            .title {
+                font-size: 24px;
+                line-height: 34px;
+                letter-spacing: 0.02em;
+                color: $white;
+            }
+            @include sm {
+                flex-direction: column;
+            }
         }
     }
 }

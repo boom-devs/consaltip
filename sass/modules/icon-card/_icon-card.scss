@@ -14,15 +14,21 @@
         height: 100px;
         border-radius: 100%;
         border: 1px solid #033f47;
-        color: $title-color;
+        color: $icon-color;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-shrink: 0;
         @include transition;
         position: relative;
+        svg {
+            path {
+                fill: $icon-color;
+            }
+        }
         i,
-        img {
+        img,
+        svg {
             font-size: 55px;
             line-height: 55px;
             z-index: 10;
@@ -55,9 +61,9 @@
     }
     &:hover {
         .icon {
-            background: $white !important;
+            // background: $white !important;
             i {
-                color: $icon-color;
+                // color: $icon-color;
             }
         }
     }
