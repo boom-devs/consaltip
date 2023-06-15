@@ -4313,7 +4313,7 @@ button.testimonial-arrow-btn:hover i {
   filter: brightness(0);
 }
 .client-logo-wrapper .client-logo:hover svg path {
-  fill: #080f10;
+  fill: #e0f780;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .client-logo-wrapper {
@@ -6733,7 +6733,7 @@ ul.children {
   color: #080f10;
   font-size: 34px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .why-choose-us-area .sketch-one {
     background-image: url("../../images/shape/image-card-sketch.png");
     width: 109px;
@@ -6955,9 +6955,9 @@ ul.children {
   background-color: #033f47;
   position: relative;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .home-one-blog .sketch {
-    background-image: url("../../images/brush-sketch-white.png");
+    background-image: url("../images/brush-sketch-white.png");
     width: 109px;
     height: 109px;
     background-repeat: no-repeat;
@@ -6973,7 +6973,7 @@ ul.children {
   overflow: hidden;
   position: relative;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .home-one-team-member-area .sketch {
     background-image: url("../../images/sketch-color.png");
     width: 188px;
