@@ -738,7 +738,13 @@ input:focus {
 .wp-block-loginout a.style-two {
   border: 1px solid #ffffff;
   background: transparent;
-  color: #ffffff !important;
+  color: #ffffff;
+}
+.theme-btn.style-two:hover,
+.wp-block-loginout a.style-two:hover {
+  background: #e0f780;
+  color: #080f10;
+  border-color: #e0f780;
 }
 .theme-btn.style-three,
 .wp-block-loginout a.style-three {
@@ -3352,7 +3358,7 @@ html {
 .header-btn a {
   background: #ffffff;
   color: #080f10;
-  padding: 8px 8px;
+  padding: 8px 16px 8px 8px;
   font-weight: 500;
   position: relative;
   z-index: 1;
@@ -3375,6 +3381,12 @@ html {
   width: 48px;
   height: 48px;
   border-radius: 50%;
+}
+.header-btn:hover a {
+  background: #e0f780;
+}
+.header-btn:hover i {
+  background: #ffffff;
 }
 .header-btn.style-two a {
   background: #033f47;
@@ -3604,7 +3616,7 @@ a.meanmenu-reveal {
   position: relative;
 }
 .slider-area .shape-one {
-  background-image: url("../../images/shape/Rectangle.png");
+  background-image: url("../images/shape/Rectangle.png");
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
@@ -3615,7 +3627,7 @@ a.meanmenu-reveal {
   rotate: 180deg;
 }
 .slider-area .shape-two {
-  background-image: url("../../../images/shape/shape-3.png");
+  background-image: url("../images/shape/shape-3.svg");
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
@@ -3684,19 +3696,23 @@ a.meanmenu-reveal {
 }
 .slider-area .slider-wrapper .slick-dots li button {
   font-size: 0;
+  line-height: 12px;
   padding: 0;
   width: 11px;
   height: 11px;
   background-color: #c3e4de;
+  color: #ffffff;
   border-radius: 50px;
   position: relative;
   transition: all 0.5s ease-out;
 }
 .slider-area .slider-wrapper .slick-dots li.slick-active {
   transition: all 0.5s ease-out;
-  outline: 1px solid #ff6731;
+  outline: 1px solid #e0f780;
 }
 .slider-area .slider-wrapper .slick-dots li.slick-active button {
+  font-size: 14px;
+  background: transparent;
   transition: all 0.5s ease-out;
 }
 .slider-area button.slider-arrow-btn {
@@ -3886,9 +3902,9 @@ a.meanmenu-reveal {
   right: 47px;
   top: 24px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .slider-area .single-slider .slider-image .sketch {
-    background-image: url("../../../images/shape/triangle-shape-white.png");
+    background-image: url("../images/shape/triangle-shape-white.png");
     width: 109px;
     height: 109px;
     background-repeat: no-repeat;
@@ -3900,7 +3916,7 @@ a.meanmenu-reveal {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .slider-area .single-slider .slider-image .brush-sketch {
-    background-image: url("../../images/brush-sketch.png");
+    background-image: url("../images/brush-sketch.png");
     width: 122px;
     height: 100px;
     background-repeat: no-repeat;
@@ -5453,31 +5469,26 @@ button.testimonial-arrow-btn:hover i {
   position: relative;
   flex-shrink: 0;
 }
-.image-card .image .image-card-sketch {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 79%;
-  height: 91%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 1440px) {
   .image-card .image .image-card-sketch {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 79px;
+    height: 91px;
+    transform: translate(-50%, -50%);
+    z-index: 0;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .image-card .image .image-card-sketch {
-    display: none;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .image-card .image .image-card-sketch {
-    display: none;
-  }
+.image-card .image .image-card-sketch.style-two {
+  top: unset;
+  bottom: 0;
+  left: unset;
+  right: 0;
+  transform: translate(50%, 50%);
+  z-index: 3;
 }
 .image-card .image img {
   width: 100%;
@@ -7015,6 +7026,10 @@ ul.children {
   color: #575959;
   margin-right: 15px;
 }
+.footer .footer-bottom-menu ul li a:hover {
+  margin-left: 2px;
+  transform: scale(1.1);
+}
 .footer .footer-bottom-menu ul li {
   display: inline-block;
   margin-top: 15px;
@@ -7114,6 +7129,7 @@ ul.children {
 .footer .footer-widget .footer-widget-menu li a:hover {
   transition: all 0.5s ease-out;
   color: #035b7b;
+  margin-left: 2px;
 }
 .footer .footer-widget .footer-widget-menu li a::before {
   content: "\f054";
@@ -7439,7 +7455,6 @@ ul.children {
 
 .why-choose-us-area {
   padding: 180px 0 120px 0;
-  position: relative;
 }
 .why-choose-us-area .scrolldown-btn-wrapper {
   position: absolute;
@@ -7465,21 +7480,25 @@ ul.children {
   color: #080f10;
   font-size: 34px;
 }
+.why-choose-us-area .about-info-card-image {
+  position: relative;
+}
 @media (min-width: 1440px) {
-  .why-choose-us-area .sketch-one {
-    background-image: url("../../images/shape/image-card-sketch.png");
+  .why-choose-us-area .about-info-card-image .sketch-one {
+    background-image: url("../images/shape/image-card-sketch.png");
     width: 109px;
     height: 109px;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    top: 150px;
-    left: 147px;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .why-choose-us-area .sketch-two {
-    background-image: url("../../images/shape/image-card-sketch.png");
+    background-image: url("../images/shape/image-card-sketch.png");
     width: 109px;
     height: 109px;
     background-repeat: no-repeat;
@@ -7508,7 +7527,7 @@ ul.children {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .home-one-process-step .imgae-wrappe .sketch {
-    background-image: url("../../images/shape/sketch-black.png");
+    background-image: url("../images/shape/sketch-black.png");
     width: 109px;
     height: 109px;
     background-repeat: no-repeat;
@@ -7516,7 +7535,7 @@ ul.children {
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 0%);
   }
 }
 
@@ -7553,6 +7572,19 @@ ul.children {
 .case-studies-home-one {
   background: #033f47;
   padding: 120px 0 240px 0;
+  position: relative;
+}
+@media (min-width: 1440px) {
+  .case-studies-home-one .sketch {
+    background-image: url("../images/shape/title-sketch.svg");
+    width: 188px;
+    height: 188px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 20px;
+    right: 82px;
+  }
 }
 
 .home-one-case-studies-slider .portfolio-card {
@@ -7568,7 +7600,7 @@ ul.children {
   background-color: transparent;
   border: 1px solid #ffffff;
   cursor: pointer;
-  bottom: -128px;
+  bottom: -120px;
   overflow: hidden;
 }
 @media (max-width: 991px) {
@@ -7701,13 +7733,13 @@ ul.children {
 }
 
 .home-one-team-member-area {
-  padding: 120px 0;
+  padding: 120px 0 112px 0;
   overflow: hidden;
   position: relative;
 }
 @media (min-width: 1440px) {
   .home-one-team-member-area .sketch {
-    background-image: url("../../images/sketch-color.png");
+    background-image: url("../images/sketch-color.png");
     width: 188px;
     height: 188px;
     background-repeat: no-repeat;
@@ -7815,7 +7847,7 @@ ul.children {
 .home-one-client-logo {
   padding: 82px 0 72px 0;
   background-color: #033f47;
-  background-image: url("../../images/client/bg-1.png");
+  background-image: url("../images/client/bg-1.png");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -8195,7 +8227,7 @@ ul.children {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .hero-image-wrapper .sketch {
-    background-image: url("../../images/shape/image-card-sketch.png");
+    background-image: url("../images/shape/image-card-sketch.png");
     width: 88px;
     height: 88px;
     background-repeat: no-repeat;
@@ -8208,7 +8240,7 @@ ul.children {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .hero-image-wrapper .sketch-bottom {
-    background-image: url("../../images/sketch-color.png  ");
+    background-image: url("../images/sketch-color.png  ");
     width: 124px;
     height: 124px;
     background-repeat: no-repeat;
@@ -8261,7 +8293,7 @@ ul.children {
 }
 
 .home-three-hero-main-img {
-  background: url("../../images/home-3-hero-bg.png");
+  background: url("../images/home-3-hero-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8278,7 +8310,7 @@ ul.children {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .home-three-client-logo-area .shape-one {
-    background-image: url("../../images/shape/Rectangle.png");
+    background-image: url("../images/shape/Rectangle.png");
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
@@ -8331,7 +8363,7 @@ ul.children {
   height: 100%;
 }
 .home-three-about-us .home-three-about-image .sketch {
-  background-image: url("../../images/shape/sketch-black.png");
+  background-image: url("../images/shape/sketch-black.png");
   width: 109px;
   height: 109px;
   background-repeat: no-repeat;
@@ -8349,7 +8381,7 @@ ul.children {
 
 .home-three-service {
   padding: 120px 0;
-  background-image: url("../../images/breadcrumb/about.jpg");
+  background-image: url("../images/breadcrumb/about.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -8381,7 +8413,7 @@ ul.children {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .home-three-process .shape-one {
-    background-image: url("../../images/shape/Rectangle.png");
+    background-image: url("../images/shape/Rectangle.png");
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
@@ -8393,7 +8425,7 @@ ul.children {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .home-three-process .shape-two {
-    background-image: url("../../images/shape/shape-2.png");
+    background-image: url("../images/shape/shape-2.png");
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
@@ -8405,7 +8437,7 @@ ul.children {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .home-three-process .sketch {
-    background-image: url("../../images/sketch-color.png");
+    background-image: url("../images/sketch-color.png");
     width: 109px;
     height: 109px;
     background-repeat: no-repeat;

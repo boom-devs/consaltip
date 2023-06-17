@@ -2,7 +2,7 @@
   // overflow: hidden;
   position: relative;
   .shape-one {
-    background-image: url("../../images/shape/Rectangle.png");
+    background-image: url("../images/shape/Rectangle.png");
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     rotate: 180deg;
   }
   .shape-two {
-    background-image: url("../../../images/shape/shape-3.png");
+    background-image: url("../images/shape/shape-3.svg");
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
@@ -98,19 +98,23 @@
 
         button {
           font-size: 0;
+          line-height: 12px;
           padding: 0;
           width: 11px;
           height: 11px;
           background-color: #c3e4de;
+          color: $white;
           border-radius: 50px;
           position: relative;
           @include transition;
         }
         &.slick-active {
           @include transition;
-          outline: 1px solid $orange-color;
+          outline: 1px solid $brand;
 
           button {
+            font-size: 14px;
+            background: transparent;
             @include transition;
           }
         }
@@ -294,8 +298,8 @@
       right: 47px;
       top: 24px;
       .sketch {
-        @include xl {
-          background-image: url("../../../images/shape/triangle-shape-white.png");
+        @include rwd(1440) {
+          background-image: url("../images/shape/triangle-shape-white.png");
           width: 109px;
           height: 109px;
           background-repeat: no-repeat;
@@ -307,7 +311,7 @@
       }
       .brush-sketch {
         @include xl {
-          background-image: url("../../images/brush-sketch.png");
+          background-image: url("../images/brush-sketch.png");
           width: 122px;
           height: 100px;
           background-repeat: no-repeat;

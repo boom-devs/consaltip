@@ -7,6 +7,10 @@
     font-size: 14px;
     color: #575959;
     margin-right: 15px;
+    &:hover {
+      margin-left: 2px;
+      transform: scale(1.1);
+    }
   }
   .footer-bottom-menu ul li {
     display: inline-block;
@@ -128,6 +132,7 @@
           &:hover {
             @include transition;
             color: $primary-color;
+            margin-left: 2px;
           }
           &::before {
             content: "\f054";

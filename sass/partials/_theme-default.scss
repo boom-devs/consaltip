@@ -193,7 +193,12 @@ input:focus {
   &.style-two {
     border: 1px solid $white;
     background: transparent;
-    color: $white !important;
+    color: $white;
+    &:hover {
+      background: $brand;
+      color: $title-color;
+      border-color: $brand;
+    }
   }
   &.style-three {
     border: 1px solid #575959;

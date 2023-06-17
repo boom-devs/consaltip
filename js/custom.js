@@ -116,7 +116,7 @@
             arrows: true,
             slidesToScroll: 1,
             loop: true,
-            dots: false,
+            dots: true,
             speed: 1500,
             prevArrow:
                 "<button type='button' class='slider-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
@@ -339,7 +339,7 @@
             arrows: true,
             slidesToScroll: 1,
             loop: true,
-            dots: true,
+            dots: false,
             speed: 1500,
             variableWidth: true,
              prevArrow:

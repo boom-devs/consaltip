@@ -11,7 +11,7 @@
   position: relative;
   .sketch {
     @include xl {
-      background-image: url("../../images/shape/image-card-sketch.png");
+      background-image: url("../images/shape/image-card-sketch.png");
       width: 88px;
       height: 88px;
       background-repeat: no-repeat;
@@ -24,7 +24,7 @@
   }
   .sketch-bottom {
     @include xl {
-      background-image: url("../../images/sketch-color.png  ");
+      background-image: url("../images/sketch-color.png  ");
       width: 124px;
       height: 124px;
       background-repeat: no-repeat;
@@ -79,7 +79,7 @@
 
 // Hero main img
 .home-three-hero-main-img {
-  background: url("../../images/home-3-hero-bg.png");
+  background: url("../images/home-3-hero-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -96,7 +96,7 @@
   position: relative;
   .shape-one {
     @include xl {
-      background-image: url("../../images/shape/Rectangle.png");
+      background-image: url("../images/shape/Rectangle.png");
       width: 40px;
       height: 40px;
       background-repeat: no-repeat;
@@ -151,7 +151,7 @@
       height: 100%;
     }
     .sketch {
-      background-image: url("../../images/shape/sketch-black.png");
+      background-image: url("../images/shape/sketch-black.png");
       width: 109px;
       height: 109px;
       background-repeat: no-repeat;
@@ -171,7 +171,7 @@
 // service section
 .home-three-service {
   padding: 120px 0;
-  background-image: url("../../images/breadcrumb/about.jpg");
+  background-image: url("../images/breadcrumb/about.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -203,7 +203,7 @@
   position: relative;
   .shape-one {
     @include xl {
-      background-image: url("../../images/shape/Rectangle.png");
+      background-image: url("../images/shape/Rectangle.png");
       width: 40px;
       height: 40px;
       background-repeat: no-repeat;
@@ -215,7 +215,7 @@
   }
   .shape-two {
     @include xl {
-      background-image: url("../../images/shape/shape-2.png");
+      background-image: url("../images/shape/shape-2.png");
       width: 40px;
       height: 40px;
       background-repeat: no-repeat;
@@ -227,7 +227,7 @@
   }
   .sketch {
     @include xl {
-      background-image: url("../../images/sketch-color.png");
+      background-image: url("../images/sketch-color.png");
       width: 109px;
       height: 109px;
       background-repeat: no-repeat;

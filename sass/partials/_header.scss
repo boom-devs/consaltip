@@ -388,7 +388,7 @@
   a {
     background: $white;
     color: $title-color;
-    padding: 8px 8px;
+    padding: 8px 16px 8px 8px;
     font-weight: 500;
     position: relative;
     z-index: 1;
@@ -412,6 +412,14 @@
     height: 48px;
     border-radius: 50%;
   }
+  &:hover {
+    a {
+      background: $brand;
+    }
+    i {
+      background: $white;
+    }
+  }
   &.style-two {
     a {
       background: $icon-color;
@@ -433,6 +441,7 @@
       border-radius: 50px;
     }
   }
+
   @media only screen and (max-width: 1199px) {
     display: none;
   }

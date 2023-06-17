@@ -219,7 +219,13 @@ input:focus {
 .wp-block-loginout a.style-two {
   border: 1px solid #ffffff;
   background: transparent;
-  color: #ffffff !important;
+  color: #ffffff;
+}
+.theme-btn.style-two:hover,
+.wp-block-loginout a.style-two:hover {
+  background: #e0f780;
+  color: #080f10;
+  border-color: #e0f780;
 }
 .theme-btn.style-three,
 .wp-block-loginout a.style-three {

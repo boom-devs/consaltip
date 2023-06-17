@@ -56,23 +56,24 @@
         position: relative;
         flex-shrink: 0;
         .image-card-sketch {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-position: center;
-            background-repeat: no-repeat;
-            width: 79%;
-            height: 91%;
-            transform: translate(-50%, -50%);
-            z-index: 0;
-            @include sm {
-                display: none;
+            @include rwd(1440) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 79px;
+                height: 91px;
+                transform: translate(-50%, -50%);
+                z-index: 0;
             }
-            @include md {
-                display: none;
-            }
-            @include lg {
-                display: none;
+            &.style-two {
+                top: unset;
+                bottom: 0;
+                left: unset;
+                right: 0;
+                transform: translate(50%, 50%);
+                z-index: 3;
             }
         }
         img {

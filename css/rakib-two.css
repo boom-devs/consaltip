@@ -218,7 +218,13 @@ input:focus {
 .wp-block-loginout a.style-two {
   border: 1px solid #ffffff;
   background: transparent;
-  color: #ffffff !important;
+  color: #ffffff;
+}
+.theme-btn.style-two:hover,
+.wp-block-loginout a.style-two:hover {
+  background: #e0f780;
+  color: #080f10;
+  border-color: #e0f780;
 }
 .theme-btn.style-three,
 .wp-block-loginout a.style-three {
@@ -627,31 +633,26 @@ input:focus {
   position: relative;
   flex-shrink: 0;
 }
-.image-card .image .image-card-sketch {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 79%;
-  height: 91%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 1440px) {
   .image-card .image .image-card-sketch {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 79px;
+    height: 91px;
+    transform: translate(-50%, -50%);
+    z-index: 0;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .image-card .image .image-card-sketch {
-    display: none;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .image-card .image .image-card-sketch {
-    display: none;
-  }
+.image-card .image .image-card-sketch.style-two {
+  top: unset;
+  bottom: 0;
+  left: unset;
+  right: 0;
+  transform: translate(50%, 50%);
+  z-index: 3;
 }
 .image-card .image img {
   width: 100%;
@@ -1176,7 +1177,7 @@ input:focus {
   top: 0;
   left: 0;
   transform: translate(-72%, -72%);
-  background-image: url("../../images/shape/image-card-sketch.png");
+  background-image: url("../images/shape/image-card-sketch.png");
   background-repeat: no-repeat;
   background-position: center;
 }
