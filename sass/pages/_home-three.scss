@@ -176,6 +176,19 @@
   background-position: center;
   background-size: cover;
   position: relative;
+  .sketch {
+    @include rwd(1440) {
+      background-image: url("../images/shape/title-sketch.svg");
+      width: 169px;
+      height: 169px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      // transform: translate(-50%, 50%);
+    }
+  }
   .overlay {
     @include icon-gradient-color;
     position: absolute;
@@ -243,6 +256,20 @@
 .case-studies-home-three {
   background-color: $icon-color;
   padding: 120px 0;
+  position: relative;
+  .sketch {
+    @include rwd(1440) {
+      background-image: url("../images/shape/title-sketch.svg");
+      width: 169px;
+      height: 169px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 75px;
+      left: 42px;
+      // transform: translate(-50%, 50%);
+    }
+  }
 }
 
 // Customer-review

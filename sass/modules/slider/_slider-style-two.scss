@@ -3,7 +3,7 @@
     position: relative;
     .sketch-one {
       @include xl {
-        background-image: url("../../../images/sketch-color.png");
+        background-image: url("../images/sketch-color.png");
         width: 109px;
         height: 109px;
         background-repeat: no-repeat;
@@ -93,7 +93,7 @@
           z-index: 3;
         }
         .certified {
-          background-image: url("../../../images/slider/certified.png");
+          background-image: url("../images/slider/certified.png");
           background-position: center;
           width: 155px;
           height: 155px;

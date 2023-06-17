@@ -1452,7 +1452,7 @@ input:focus {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .slider-area.style-two .sketch-one {
-    background-image: url("../../../images/sketch-color.png");
+    background-image: url("../images/sketch-color.png");
     width: 109px;
     height: 109px;
     background-repeat: no-repeat;
@@ -1536,7 +1536,7 @@ input:focus {
   z-index: 3;
 }
 .slider-area.style-two .slider-wrapper .slider-image .certified {
-  background-image: url("../../../images/slider/certified.png");
+  background-image: url("../images/slider/certified.png");
   background-position: center;
   width: 155px;
   height: 155px;

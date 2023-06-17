@@ -699,6 +699,13 @@ input:focus {
   background: #f8f8f1;
   padding: 39px 41px 40px 32px;
 }
+.icon-card.style-three .icon .icon-color {
+  width: 39px;
+  height: 39px;
+  top: 0;
+  left: unset;
+  transform: translate(0, 50%);
+}
 .icon-card.style-three .content {
   gap: 8px;
 }

@@ -4081,6 +4081,13 @@ a.meanmenu-reveal {
   background: #f8f8f1;
   padding: 39px 41px 40px 32px;
 }
+.icon-card.style-three .icon .icon-color {
+  width: 39px;
+  height: 39px;
+  top: 0;
+  left: unset;
+  transform: translate(0, 50%);
+}
 .icon-card.style-three .content {
   gap: 8px;
 }
@@ -4824,13 +4831,14 @@ button.testimonial-arrow-btn:hover i {
   transition: all 0.5s ease-out;
 }
 .client-logo-wrapper .client-logo svg path {
+  fill: #ffffff;
   transition: all 0.5s ease-out;
 }
 .client-logo-wrapper .client-logo:hover {
   transform: scale(1.05);
 }
 .client-logo-wrapper .client-logo:hover svg path {
-  fill: #e0f780;
+  fill: #080f10;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .client-logo-wrapper {
@@ -7151,7 +7159,7 @@ ul.children {
 }
 .footer .footer-widget .footer-widget-menu li a:hover {
   transition: all 0.5s ease-out;
-  color: #035b7b;
+  color: #e0f780 !important;
   margin-left: 2px;
 }
 .footer .footer-widget .footer-widget-menu li a::before {
@@ -7905,7 +7913,7 @@ ul.children {
 }
 @media (min-width: 1440px) {
   .home-two-about-us-area .sketch-one {
-    background-image: url("../../../images/sketch-color.png");
+    background-image: url("../images/sketch-color.png");
     width: 109px;
     height: 109px;
     background-repeat: no-repeat;
@@ -7932,7 +7940,7 @@ ul.children {
 }
 @media (min-width: 1440px) {
   .home-two-service .sketch-one {
-    background-image: url("../../../images/sketch-color.png");
+    background-image: url("../images/sketch-color.png");
     width: 109px;
     height: 109px;
     background-repeat: no-repeat;
@@ -7950,7 +7958,7 @@ ul.children {
 
 .counter-card-wrapper {
   padding: 120px 0 104px 0;
-  background: url("../../images/counter-bg-1.png");
+  background: url("../images/counter-bg-1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7959,7 +7967,7 @@ ul.children {
 @media (min-width: 1440px) {
   .counter-card-wrapper .counter-sketch {
     position: absolute;
-    background-image: url("../../images/title-sketch.png");
+    background-image: url("../images/title-sketch.png");
     width: 200px;
     height: 200px;
     bottom: 246px;
@@ -7988,7 +7996,7 @@ ul.children {
 @media (min-width: 1440px) {
   .home-two-mission .sketch-one {
     position: absolute;
-    background-image: url("../../images/sketch-color.png");
+    background-image: url("../images/sketch-color.png");
     width: 188px;
     height: 188px;
     bottom: 45px;
@@ -8006,7 +8014,7 @@ ul.children {
     position: absolute;
     width: 188px;
     height: 188px;
-    background-image: url("../../images/sketch-color.png");
+    background-image: url("../images/sketch-color.png");
     bottom: 18px;
     right: 46px;
     background-position: center;
@@ -8049,7 +8057,7 @@ ul.children {
 @media (min-width: 1440px) {
   .home-2-process-step .sketch {
     position: absolute;
-    background-image: url("../../images/sketch-color.png");
+    background-image: url("../images/sketch-color.png");
     width: 188px;
     height: 188px;
     bottom: 45px;
@@ -8142,7 +8150,7 @@ ul.children {
 }
 .home-two-case-studies .sketch {
   position: absolute;
-  background-image: url("../../images/title-sketch.png");
+  background-image: url("../images/title-sketch.png");
   width: 188px;
   height: 188px;
   bottom: 192px;
@@ -8156,7 +8164,7 @@ ul.children {
 @media (min-width: 1440px) {
   .home-two-team .sketch {
     position: absolute;
-    background-image: url("../../images/sketch-color.png");
+    background-image: url("../images/sketch-color.png");
     width: 188px;
     height: 188px;
     bottom: 192px;
@@ -8171,7 +8179,7 @@ ul.children {
 }
 @media (min-width: 1440px) {
   .home-two-customer-review .sketch {
-    background-image: url("../../images/title-sketch.png");
+    background-image: url("../images/title-sketch.png");
     width: 109px;
     height: 109px;
     background-repeat: no-repeat;
@@ -8183,7 +8191,7 @@ ul.children {
 }
 @media (min-width: 1440px) {
   .home-two-customer-review .shape-one {
-    background-image: url("../../images/shape/shape-3.png");
+    background-image: url("../images/shape/shape-3.png");
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
@@ -8195,7 +8203,7 @@ ul.children {
 }
 @media (min-width: 1440px) {
   .home-two-customer-review .shape-two {
-    background-image: url("../../images/shape/Rectangle.png");
+    background-image: url("../images/shape/Rectangle.png");
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
@@ -8437,6 +8445,18 @@ ul.children {
   background-size: cover;
   position: relative;
 }
+@media (min-width: 1440px) {
+  .home-three-service .sketch {
+    background-image: url("../images/shape/title-sketch.svg");
+    width: 169px;
+    height: 169px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
 .home-three-service .overlay {
   background: linear-gradient(0deg, rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8));
   position: absolute;
@@ -8501,6 +8521,19 @@ ul.children {
 .case-studies-home-three {
   background-color: #033f47;
   padding: 120px 0;
+  position: relative;
+}
+@media (min-width: 1440px) {
+  .case-studies-home-three .sketch {
+    background-image: url("../images/shape/title-sketch.svg");
+    width: 169px;
+    height: 169px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 75px;
+    left: 42px;
+  }
 }
 
 .customer-review {

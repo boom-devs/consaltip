@@ -19,6 +19,7 @@
     }
     svg {
       path {
+        fill: $white;
         @include transition;
       }
     }
@@ -26,7 +27,7 @@
       transform: scale(1.05);
       svg {
         path {
-          fill: $brand;
+          fill: $title-color;
         }
       }
     }

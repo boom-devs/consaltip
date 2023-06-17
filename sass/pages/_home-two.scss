@@ -4,7 +4,7 @@
   position: relative;
   .sketch-one {
     @include rwd(1440) {
-      background-image: url("../../../images/sketch-color.png");
+      background-image: url("../images/sketch-color.png");
       width: 109px;
       height: 109px;
       background-repeat: no-repeat;
@@ -33,7 +33,7 @@
   position: relative;
   .sketch-one {
     @include rwd(1440) {
-      background-image: url("../../../images/sketch-color.png");
+      background-image: url("../images/sketch-color.png");
       width: 109px;
       height: 109px;
       background-repeat: no-repeat;
@@ -50,7 +50,7 @@
 // counter section
 .counter-card-wrapper {
   padding: 120px 0 104px 0;
-  background: url("../../images/counter-bg-1.png");
+  background: url("../images/counter-bg-1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@
   .counter-sketch {
     @include rwd(1440) {
       position: absolute;
-      background-image: url("../../images/title-sketch.png");
+      background-image: url("../images/title-sketch.png");
       width: 200px;
       height: 200px;
       bottom: 246px;
@@ -86,7 +86,7 @@
   .sketch-one {
     @include rwd(1440) {
       position: absolute;
-      background-image: url("../../images/sketch-color.png");
+      background-image: url("../images/sketch-color.png");
       width: 188px;
       height: 188px;
       bottom: 45px;
@@ -106,7 +106,7 @@
       position: absolute;
       width: 188px;
       height: 188px;
-      background-image: url("../../images/sketch-color.png");
+      background-image: url("../images/sketch-color.png");
       bottom: 18px;
       right: 46px;
       background-position: center;
@@ -151,7 +151,7 @@
   .sketch {
     @include rwd(1440) {
       position: absolute;
-      background-image: url("../../images/sketch-color.png");
+      background-image: url("../images/sketch-color.png");
       width: 188px;
       height: 188px;
       bottom: 45px;
@@ -237,7 +237,7 @@
   position: relative;
   .sketch {
     position: absolute;
-    background-image: url("../../images/title-sketch.png");
+    background-image: url("../images/title-sketch.png");
     width: 188px;
     height: 188px;
     bottom: 192px;
@@ -251,7 +251,7 @@
   .sketch {
     @include rwd(1440) {
       position: absolute;
-      background-image: url("../../images/sketch-color.png");
+      background-image: url("../images/sketch-color.png");
       width: 188px;
       height: 188px;
       bottom: 192px;
@@ -266,7 +266,7 @@
   position: relative;
   .sketch {
     @include rwd(1440) {
-      background-image: url("../../images/title-sketch.png");
+      background-image: url("../images/title-sketch.png");
       width: 109px;
       height: 109px;
       background-repeat: no-repeat;
@@ -278,7 +278,7 @@
   }
   .shape-one {
     @include rwd(1440) {
-      background-image: url("../../images/shape/shape-3.png");
+      background-image: url("../images/shape/shape-3.png");
       width: 40px;
       height: 40px;
       background-repeat: no-repeat;
@@ -290,7 +290,7 @@
   }
   .shape-two {
     @include rwd(1440) {
-      background-image: url("../../images/shape/Rectangle.png");
+      background-image: url("../images/shape/Rectangle.png");
       width: 40px;
       height: 40px;
       background-repeat: no-repeat;

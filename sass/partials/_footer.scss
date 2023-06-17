@@ -131,7 +131,7 @@
 
           &:hover {
             @include transition;
-            color: $primary-color;
+            color: $brand !important;
             margin-left: 2px;
           }
           &::before {
