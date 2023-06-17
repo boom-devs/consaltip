@@ -1,6 +1,7 @@
 // Why Choose Us Area
 .why-choose-us-area {
   padding: 180px 0 120px 0;
+  position: relative;
   .scrolldown-btn-wrapper {
     position: absolute;
     top: 0;
@@ -65,6 +66,19 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  .sketch {
+    @include rwd(1440) {
+      background-image: url("../images/shape/triangle-shape-white.png");
+      width: 79px;
+      height: 91px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      left: 64px;
+      bottom: 128px;
+      // transform: translate(-50%, 0%);
+    }
+  }
 }
 
 // Process Step Area

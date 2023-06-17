@@ -3400,6 +3400,13 @@ html {
   line-height: 27px;
   text-align: center;
 }
+.header-btn.style-two:hover a {
+  background: #e0f780;
+  color: #080f10;
+}
+.header-btn.style-two:hover i {
+  background: #080f10;
+}
 .header-btn.style-three a {
   background: #033f47;
   color: #ffffff;
@@ -4000,6 +4007,9 @@ a.meanmenu-reveal {
   font-weight: 400;
   color: #575959;
   text-align: center;
+}
+.icon-card:hover .icon {
+  background: #e0f780;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .icon-card {
@@ -7424,6 +7434,7 @@ ul.children {
 
 .portfolio-card.style-two {
   gap: 0;
+  overflow: hidden;
 }
 .portfolio-card.style-two .content {
   padding: 64px 40px;
@@ -7452,6 +7463,10 @@ ul.children {
     padding: 50px 22px;
   }
 }
+.portfolio-card.style-two:hover .portfolio-image {
+  transform: scale(1.03);
+  filter: unset;
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .portfolio-card.style-two {
     margin-top: 24px;
@@ -7460,6 +7475,7 @@ ul.children {
 
 .why-choose-us-area {
   padding: 180px 0 120px 0;
+  position: relative;
 }
 .why-choose-us-area .scrolldown-btn-wrapper {
   position: absolute;
@@ -7521,6 +7537,18 @@ ul.children {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-width: 1440px) {
+  .home-one-service .sketch {
+    background-image: url("../images/shape/triangle-shape-white.png");
+    width: 79px;
+    height: 91px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 64px;
+    bottom: 128px;
+  }
 }
 
 .home-one-process-step {
@@ -7978,6 +8006,7 @@ ul.children {
   align-items: center;
   gap: 8px;
   margin-top: 64px;
+  margin-bottom: 0;
   list-style: none;
 }
 .home-two-client-logo-area .home-two-client-logo-slider .slick-dots li {
@@ -8040,6 +8069,9 @@ ul.children {
   cursor: pointer;
   top: 50%;
   overflow: hidden;
+}
+.home-two-process-slider .process-arrow-btn.active {
+  background: #e0f780;
 }
 .home-two-process-slider .process-arrow-btn.prev-btn {
   left: 20px;

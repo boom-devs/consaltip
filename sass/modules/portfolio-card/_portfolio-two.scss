@@ -1,6 +1,7 @@
 .portfolio-card {
   &.style-two {
     gap: 0;
+    overflow: hidden;
     .content {
       padding: 64px 40px;
       background: $background;
@@ -20,6 +21,12 @@
       }
       @include lg {
         padding: 50px 22px;
+      }
+    }
+    &:hover {
+      .portfolio-image {
+        transform: scale(1.03);
+        filter: unset;
       }
     }
     @include sm {

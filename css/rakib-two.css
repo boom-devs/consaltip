@@ -511,6 +511,7 @@ input:focus {
 
 .portfolio-card.style-two {
   gap: 0;
+  overflow: hidden;
 }
 .portfolio-card.style-two .content {
   padding: 64px 40px;
@@ -538,6 +539,10 @@ input:focus {
   .portfolio-card.style-two .content {
     padding: 50px 22px;
   }
+}
+.portfolio-card.style-two:hover .portfolio-image {
+  transform: scale(1.03);
+  filter: unset;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .portfolio-card.style-two {
@@ -1538,6 +1543,9 @@ input:focus {
   position: absolute;
   transform: translate(-50%, 0);
   z-index: 5;
+}
+.slider-area.style-two .slider-wrapper .slick-dots {
+  display: none !important;
 }
 .slider-area.style-two button.slider-arrow-btn {
   display: block !important;

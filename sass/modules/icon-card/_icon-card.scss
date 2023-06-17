@@ -61,9 +61,11 @@
     }
     &:hover {
         .icon {
-            // background: $white !important;
-            i {
-                // color: $icon-color;
+            background: $brand;
+            svg {
+                path {
+                    // fill: $white;
+                }
             }
         }
     }

@@ -120,6 +120,7 @@
       align-items: center;
       gap: 8px;
       margin-top: 64px;
+      margin-bottom: 0;
       list-style: none;
       li {
         line-height: 0;
@@ -180,6 +181,9 @@
     cursor: pointer;
     top: 50%;
     overflow: hidden;
+    &.active {
+      background: $brand;
+    }
     &.prev-btn {
       left: 20px;
 

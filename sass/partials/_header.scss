@@ -433,6 +433,15 @@
       line-height: 27px;
       text-align: center;
     }
+    &:hover {
+      a {
+        background: $brand;
+        color: $title-color;
+      }
+      i {
+        background: $title-color;
+      }
+    }
   }
   &.style-three {
     a {

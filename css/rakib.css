@@ -626,6 +626,9 @@ input:focus {
   color: #575959;
   text-align: center;
 }
+.icon-card:hover .icon {
+  background: #e0f780;
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .icon-card {
     margin-top: 24px;

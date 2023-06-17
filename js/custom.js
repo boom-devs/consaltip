@@ -407,7 +407,7 @@
             prevArrow:
                 "<button type='button' class='process-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
-                "<button type='button' class='process-arrow-btn next-btn'><i class='icon-arrow-right-2'></i></button>",
+                "<button type='button' class='process-arrow-btn next-btn active'><i class='icon-arrow-right-2'></i></button>",
             responsive: [
                 {
                     breakpoint: 767,
@@ -419,12 +419,20 @@
                 },
             ],
         });
+        $('.process-arrow-btn').on('click', function () {
+            $('.process-arrow-btn').removeClass(' active ');
+            $(this).addClass('active');
+        });
+
+        // trigger
         $('#home-two-first-step').on('click', function () {
             $('#slick-slide-control30').trigger('click');
         });
         $('#home-two-second-step').on('click', function () {
             $('#slick-slide-control31').trigger('click');
-            console.log("kk")
+        });
+        $('#home-two-third-step').on('click', function () {
+            $('#slick-slide-control32').trigger('click');
         });
 
         $(".home-two-testimonial-card-slider").slick({
