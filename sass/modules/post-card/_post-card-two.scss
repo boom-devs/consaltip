@@ -1,6 +1,13 @@
 .post-card-one {
     &.style-two {
+        overflow: hidden;
+        .post-image {
+            transform: scale(1);
+            overflow: hidden;
+            @include transition;
+        }
         .content-wrapper {
+            overflow: hidden;
             background: $background;
             padding: 24px 25px 32px 24px;
             gap: 32px;
@@ -30,12 +37,18 @@
                     line-height: 34px;
                 }
             }
-            .theme-btn {
+            .post-card-btn {
                 border: 1px solid #828282;
                 background: transparent;
                 &:hover {
                     color: $title-color;
+                    background: $brand;
                 }
+            }
+        }
+        &:hover {
+            .post-image {
+                transform: scale(1.05);
             }
         }
     }

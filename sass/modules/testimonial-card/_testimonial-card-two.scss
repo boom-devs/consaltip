@@ -11,32 +11,6 @@
             padding-right: 134px;
             position: relative;
             .image {
-                position: relative;
-                .count {
-                    position: absolute;
-                    bottom: 48px;
-                    right: 27px;
-                    width: 66px;
-                    height: 66px;
-                    border-radius: 50px;
-                    background: $brand;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    p {
-                        color: $icon-color;
-                        @include sm {
-                            font-size: 14px;
-                        }
-                    }
-                    @include sm {
-                        bottom: 0;
-                        right: 0;
-                        transform: translate(40%, 40%);
-                        width: 45px;
-                        height: 45px;
-                    }
-                }
                 img {
                     width: 100%;
                     height: 100%;
@@ -63,8 +37,38 @@
             max-width: 50%;
             width: 100%;
             padding-right: 45px;
+            position: relative;
+            .count {
+                // position: absolute;
+                // bottom: 48px;
+                // right: 27px;
+                width: 66px;
+                height: 66px;
+                border-radius: 50px;
+                background: $brand;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p {
+                    color: $icon-color;
+                    font-size: 34px;
+                    @include sm {
+                        font-size: 14px;
+                    }
+                }
+                @include sm {
+                    bottom: 0;
+                    right: 0;
+                    transform: translate(40%, 40%);
+                    width: 45px;
+                    height: 45px;
+                }
+            }
             .icon {
                 display: none;
+                i {
+                    // color: $background;
+                }
             }
             .content {
                 .text {

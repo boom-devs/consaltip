@@ -232,6 +232,12 @@ input:focus {
   color: #080f10;
   background: transparent;
 }
+.theme-btn.style-three:hover,
+.wp-block-loginout a.style-three:hover {
+  background: #e0f780;
+  color: #080f10;
+  border-color: #e0f780;
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .theme-btn,
   .wp-block-loginout a {
@@ -1231,38 +1237,6 @@ input:focus {
   padding-right: 134px;
   position: relative;
 }
-.testimonial-card.style-two .image-wrapper .image {
-  position: relative;
-}
-.testimonial-card.style-two .image-wrapper .image .count {
-  position: absolute;
-  bottom: 48px;
-  right: 27px;
-  width: 66px;
-  height: 66px;
-  border-radius: 50px;
-  background: #e0f780;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.testimonial-card.style-two .image-wrapper .image .count p {
-  color: #033f47;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .testimonial-card.style-two .image-wrapper .image .count p {
-    font-size: 14px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .testimonial-card.style-two .image-wrapper .image .count {
-    bottom: 0;
-    right: 0;
-    transform: translate(40%, 40%);
-    width: 45px;
-    height: 45px;
-  }
-}
 .testimonial-card.style-two .image-wrapper .image img {
   width: 100%;
   height: 100%;
@@ -1293,6 +1267,34 @@ input:focus {
   max-width: 50%;
   width: 100%;
   padding-right: 45px;
+  position: relative;
+}
+.testimonial-card.style-two .content-wrapper .count {
+  width: 66px;
+  height: 66px;
+  border-radius: 50px;
+  background: #e0f780;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-card.style-two .content-wrapper .count p {
+  color: #033f47;
+  font-size: 34px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-card.style-two .content-wrapper .count p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-card.style-two .content-wrapper .count {
+    bottom: 0;
+    right: 0;
+    transform: translate(40%, 40%);
+    width: 45px;
+    height: 45px;
+  }
 }
 .testimonial-card.style-two .content-wrapper .icon {
   display: none;

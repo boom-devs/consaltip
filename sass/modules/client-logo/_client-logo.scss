@@ -11,6 +11,7 @@
     justify-content: center;
     cursor: pointer;
     overflow: hidden;
+    transform: scale(1);
     @include transition;
     img {
       // opacity: 0.65;
@@ -22,10 +23,7 @@
       }
     }
     &:hover {
-      transform: scale(1.1);
-      img {
-        filter: brightness(0);
-      }
+      transform: scale(1.05);
       svg {
         path {
           fill: $brand;

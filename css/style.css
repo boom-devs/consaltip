@@ -752,6 +752,12 @@ input:focus {
   color: #080f10;
   background: transparent;
 }
+.theme-btn.style-three:hover,
+.wp-block-loginout a.style-three:hover {
+  background: #e0f780;
+  color: #080f10;
+  border-color: #e0f780;
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .theme-btn,
   .wp-block-loginout a {
@@ -4319,6 +4325,7 @@ button.testimonial-arrow-btn:hover i {
   justify-content: center;
   cursor: pointer;
   overflow: hidden;
+  transform: scale(1);
   transition: all 0.5s ease-out;
 }
 .client-logo-wrapper .client-logo img {
@@ -4328,10 +4335,7 @@ button.testimonial-arrow-btn:hover i {
   transition: all 0.5s ease-out;
 }
 .client-logo-wrapper .client-logo:hover {
-  transform: scale(1.1);
-}
-.client-logo-wrapper .client-logo:hover img {
-  filter: brightness(0);
+  transform: scale(1.05);
 }
 .client-logo-wrapper .client-logo:hover svg path {
   fill: #e0f780;
@@ -4402,7 +4406,16 @@ button.testimonial-arrow-btn:hover i {
   flex-shrink: 0;
 }
 
+.post-card-one.style-two {
+  overflow: hidden;
+}
+.post-card-one.style-two .post-image {
+  transform: scale(1);
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+}
 .post-card-one.style-two .content-wrapper {
+  overflow: hidden;
   background: #f8f8f1;
   padding: 24px 25px 32px 24px;
   gap: 32px;
@@ -4433,12 +4446,16 @@ button.testimonial-arrow-btn:hover i {
   font-size: 24px;
   line-height: 34px;
 }
-.post-card-one.style-two .content-wrapper .theme-btn {
+.post-card-one.style-two .content-wrapper .post-card-btn {
   border: 1px solid #828282;
   background: transparent;
 }
-.post-card-one.style-two .content-wrapper .theme-btn:hover {
+.post-card-one.style-two .content-wrapper .post-card-btn:hover {
   color: #080f10;
+  background: #e0f780;
+}
+.post-card-one.style-two:hover .post-image {
+  transform: scale(1.05);
 }
 
 .price-card-switch {

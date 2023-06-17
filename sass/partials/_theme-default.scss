@@ -204,6 +204,11 @@ input:focus {
     border: 1px solid #575959;
     color: $title-color;
     background: transparent;
+    &:hover {
+      background: $brand;
+      color: $title-color;
+      border-color: $brand;
+    }
   }
   @include sm {
     padding: 10px 20px;
