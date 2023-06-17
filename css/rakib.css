@@ -1097,6 +1097,8 @@ input:focus {
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
 }
 .team-member-card .image img {
   width: 100%;
@@ -1170,6 +1172,9 @@ input:focus {
 .team-member-card .content-wrapper .social a i {
   color: #033f47;
   font-size: 24px;
+}
+.team-member-card:hover .image {
+  transform: scale(1.03);
 }
 .team-member-card:hover .content-wrapper {
   position: relative;
