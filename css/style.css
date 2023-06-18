@@ -758,6 +758,15 @@ input:focus {
   color: #080f10;
   border-color: #e0f780;
 }
+.theme-btn.style-four,
+.wp-block-loginout a.style-four {
+  border: 1px solid transparent;
+}
+.theme-btn.style-four:hover,
+.wp-block-loginout a.style-four:hover {
+  background: transparent;
+  border-color: #ffffff;
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .theme-btn,
   .wp-block-loginout a {
@@ -3103,6 +3112,7 @@ html {
   gap: 10px;
   color: #ffffff;
   font-size: 16px;
+  line-height: 21px;
   font-weight: 400;
   font-family: "Inter", sans-serif;
 }
@@ -3377,7 +3387,6 @@ html {
   border-radius: 50px;
   font-family: "Outfit", sans-serif;
   text-transform: capitalize;
-  border: 3px solid transparent;
 }
 .header-btn i {
   vertical-align: middle;
@@ -3865,7 +3874,7 @@ a.meanmenu-reveal {
   position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0 60px;
+  grid-gap: 0 48px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .counter-card {
@@ -3903,7 +3912,7 @@ a.meanmenu-reveal {
   width: 1px;
   height: 80px;
   background: #e0f780;
-  left: -30px;
+  left: -24px;
 }
 .counter-card .counter-item:first-child:before {
   display: none;
@@ -6503,7 +6512,7 @@ ul.children {
   display: flex;
   align-items: center;
   line-height: 24px;
-  gap: 20px;
+  gap: 16px;
 }
 .footer .footer-widget .footer-widget-contact .footer-contact ul li:first-child {
   align-items: flex-start;
@@ -6977,6 +6986,7 @@ ul.children {
 }
 .home-one-case-studies-slider button.case-arrow-btn:hover {
   background: #e0f780;
+  border-color: transparent;
 }
 .home-one-case-studies-slider button.case-arrow-btn:hover i {
   color: #080f10;
@@ -7216,7 +7226,6 @@ ul.children {
   transition: all 0.5s ease-out;
 }
 .home-two-about-us-area .about-us-image-gallery img:hover {
-  filter: blur(2px);
   transform: scale(1.1);
 }
 

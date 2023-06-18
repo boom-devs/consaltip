@@ -4,7 +4,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0 60px;
+  grid-gap: 0 48px;
 
   @include sm {
     display: grid;
@@ -36,7 +36,7 @@
       width: 1px;
       height: 80px;
       background: $brand;
-      left: -30px;
+      left: -24px;
     }
     &:first-child {
       &:before {

@@ -20,7 +20,7 @@
       height: 100%;
       @include transition;
       &:hover {
-        filter: blur(2px);
+        // filter: blur(2px);
         transform: scale(1.1);
       }
     }
