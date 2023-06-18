@@ -98,10 +98,10 @@
 
         button {
           font-size: 0;
-          line-height: 12px;
+          line-height: 14px;
           padding: 0;
-          width: 11px;
-          height: 11px;
+          width: 29px;
+          height: 29px;
           background-color: #c3e4de;
           color: $white;
           border-radius: 50px;
@@ -113,7 +113,7 @@
           outline: 1px solid $brand;
 
           button {
-            font-size: 14px;
+            font-size: 16px;
             background: transparent;
             @include transition;
           }
@@ -173,6 +173,8 @@
     background-position: center center;
     position: relative;
     z-index: 2;
+    padding-top: 156px;
+    padding-bottom: 64px;
     // overflow: hidden;
     height: 960px;
 
@@ -295,8 +297,12 @@
       position: relative;
       z-index: 2;
       // animation: MoveUpDown 2s linear infinite alternate;
-      right: 47px;
-      top: 24px;
+      right: 0;
+      top: 0;
+      height: 100%;
+      img {
+        height: 100%;
+      }
       .sketch {
         @include rwd(1440) {
           background-image: url("../images/shape/triangle-shape-white.png");

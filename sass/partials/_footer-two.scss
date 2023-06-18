@@ -28,6 +28,9 @@
         li {
           a {
             color: $white;
+            &:hover {
+              color: $brand !important;
+            }
           }
         }
       }

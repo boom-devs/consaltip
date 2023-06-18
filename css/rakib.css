@@ -550,6 +550,9 @@ input:focus {
 .footer.style-two .footer-widget .footer-widget-menu li a {
   color: #ffffff;
 }
+.footer.style-two .footer-widget .footer-widget-menu li a:hover {
+  color: #e0f780 !important;
+}
 .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a {
   color: #ffffff;
 }
@@ -1283,7 +1286,7 @@ input:focus {
 /* Service-details side-bar CSS */
 /* Client-logo CSS */
 .client-logo-wrapper {
-  gap: 24px 49px;
+  gap: 0 48px;
 }
 .client-logo-wrapper .client-logo.style-two {
   filter: brightness(0);

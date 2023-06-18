@@ -421,8 +421,8 @@ input:focus {
 .slider-container {
   max-width: 1440px;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
-  padding-top: 112px;
 }
 
 .bg-icon {
@@ -437,17 +437,19 @@ input:focus {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  overflow: hidden;
 }
 .portfolio-card .portfolio-image {
   width: 100%;
   height: 100%;
   position: relative;
-  transform: scale(1);
-  transition: all 0.5s ease-out;
+  overflow: hidden;
 }
 .portfolio-card .portfolio-image img {
   width: 100%;
   height: 100%;
+  transform: scale(1.01);
+  transition: all 0.5s ease-out;
 }
 .portfolio-card .portfolio-image:after {
   position: absolute;
@@ -506,13 +508,8 @@ input:focus {
 .portfolio-card:hover {
   cursor: pointer;
 }
-.portfolio-card:hover .portfolio-image {
-  filter: blur(2px);
-  transform: scale(1.03);
-}
-.portfolio-card:hover .portfolio-image:after {
-  visibility: visible;
-  opacity: 0.5;
+.portfolio-card:hover .portfolio-image img {
+  transform: scale(1.04);
 }
 
 .portfolio-card.style-two {
@@ -1358,7 +1355,7 @@ input:focus {
   color: #080f10;
 }
 .testimonial-card.style-three .meta-user {
-  margin-top: 41px;
+  margin-top: 40px;
 }
 .testimonial-card.style-three .meta-user .user-info .image {
   display: none;
@@ -1567,7 +1564,7 @@ input:focus {
   width: 100%;
   background: #ffffff;
   position: relative;
-  padding: 39px 40px;
+  padding: 40px;
   cursor: pointer;
 }
 .accordion-wrapper-two .accordion-list-item-two:hover .accordion-head .icon {

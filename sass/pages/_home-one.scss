@@ -29,6 +29,9 @@
   }
   .about-info-card-image {
     position: relative;
+    img {
+      width: 100%;
+    }
     .sketch-one {
       @include rwd(1440) {
         background-image: url("../images/shape/image-card-sketch.png");
@@ -137,7 +140,7 @@
 // case-studies
 .case-studies-home-one {
   background: $icon-color;
-  padding: 120px 0 240px 0;
+  padding: 120px 0 243px 0;
   position: relative;
   .sketch {
     @include rwd(1440) {
@@ -167,7 +170,7 @@
     background-color: transparent;
     border: 1px solid $white;
     cursor: pointer;
-    bottom: -120px;
+    bottom: -123px;
     overflow: hidden;
     @include rmaxwd(991) {
       top: unset;
@@ -322,7 +325,7 @@
     }
     .slick-list {
       .slick-slide {
-        margin: 0 32px;
+        margin: 0 12px;
         @include transition;
 
         &.slick-active {

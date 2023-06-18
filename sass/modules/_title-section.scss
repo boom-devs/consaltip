@@ -125,6 +125,7 @@
 }
 .under-line {
   position: relative;
+  display: inline-block;
   &:after {
     content: "";
     background: url("../../images/under_line.png");

@@ -1689,7 +1689,7 @@ input:focus {
 }
 
 .pr-25 {
-  padding-right: 35px;
+  padding-right: 25px;
 }
 
 .pr-30 {
@@ -3255,7 +3255,7 @@ html {
 }
 .main-menu ul li a {
   display: block;
-  padding: 43px 24px;
+  padding: 42.5px 24px;
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.5s ease-out;
@@ -3263,6 +3263,7 @@ html {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 16px;
+  line-height: 170%;
   font-weight: 400;
   display: inline-flex;
   align-items: center;
@@ -3376,6 +3377,7 @@ html {
   border-radius: 50px;
   font-family: "Outfit", sans-serif;
   text-transform: capitalize;
+  border: 3px solid transparent;
 }
 .header-btn i {
   vertical-align: middle;
@@ -3387,12 +3389,14 @@ html {
   width: 48px;
   height: 48px;
   border-radius: 50%;
+  transition: all 0.5s ease-out;
 }
 .header-btn:hover a {
-  background: #e0f780;
+  border-color: #e0f780;
 }
 .header-btn:hover i {
-  background: #ffffff;
+  background: #033f47;
+  color: #ffffff;
 }
 .header-btn.style-two a {
   background: #033f47;
@@ -3709,10 +3713,10 @@ a.meanmenu-reveal {
 }
 .slider-area .slider-wrapper .slick-dots li button {
   font-size: 0;
-  line-height: 12px;
+  line-height: 14px;
   padding: 0;
-  width: 11px;
-  height: 11px;
+  width: 29px;
+  height: 29px;
   background-color: #c3e4de;
   color: #ffffff;
   border-radius: 50px;
@@ -3724,7 +3728,7 @@ a.meanmenu-reveal {
   outline: 1px solid #e0f780;
 }
 .slider-area .slider-wrapper .slick-dots li.slick-active button {
-  font-size: 14px;
+  font-size: 16px;
   background: transparent;
   transition: all 0.5s ease-out;
 }
@@ -3778,6 +3782,8 @@ a.meanmenu-reveal {
   background-position: center center;
   position: relative;
   z-index: 2;
+  padding-top: 156px;
+  padding-bottom: 64px;
   height: 960px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3912,8 +3918,12 @@ a.meanmenu-reveal {
 .slider-area .single-slider .slider-image {
   position: relative;
   z-index: 2;
-  right: 47px;
-  top: 24px;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+.slider-area .single-slider .slider-image img {
+  height: 100%;
 }
 @media (min-width: 1440px) {
   .slider-area .single-slider .slider-image .sketch {
@@ -4854,7 +4864,7 @@ button.testimonial-arrow-btn:hover i {
 }
 
 .client-logo-wrapper {
-  gap: 24px 49px;
+  gap: 0 48px;
 }
 .client-logo-wrapper .client-logo.style-two {
   filter: brightness(0);
@@ -5347,6 +5357,7 @@ button.testimonial-arrow-btn:hover i {
 
 .under-line {
   position: relative;
+  display: inline-block;
 }
 .under-line:after {
   content: "";
@@ -7145,7 +7156,8 @@ ul.children {
   position: relative;
   display: inline-block;
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
+  line-height: 27px;
 }
 .footer .footer-widget .footer-widget-menu li:last-child {
   padding-top: 0px;
@@ -7154,13 +7166,14 @@ ul.children {
   color: #575959;
   text-transform: capitalize;
   font-size: 16px;
+  line-height: 27px;
   transition: all 0.5s ease-out;
   position: relative;
 }
 .footer .footer-widget .footer-widget-menu li a:hover {
   transition: all 0.5s ease-out;
-  color: #e0f780 !important;
   margin-left: 2px;
+  color: #080f10;
 }
 .footer .footer-widget .footer-widget-menu li a::before {
   content: "\f054";
@@ -7315,6 +7328,9 @@ ul.children {
 }
 .footer.style-two .footer-widget .footer-widget-menu li a {
   color: #ffffff;
+}
+.footer.style-two .footer-widget .footer-widget-menu li a:hover {
+  color: #e0f780 !important;
 }
 .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a {
   color: #ffffff;
@@ -7525,6 +7541,9 @@ ul.children {
 .why-choose-us-area .about-info-card-image {
   position: relative;
 }
+.why-choose-us-area .about-info-card-image img {
+  width: 100%;
+}
 @media (min-width: 1440px) {
   .why-choose-us-area .about-info-card-image .sketch-one {
     background-image: url("../images/shape/image-card-sketch.png");
@@ -7625,7 +7644,7 @@ ul.children {
 
 .case-studies-home-one {
   background: #033f47;
-  padding: 120px 0 240px 0;
+  padding: 120px 0 243px 0;
   position: relative;
 }
 @media (min-width: 1440px) {
@@ -7654,7 +7673,7 @@ ul.children {
   background-color: transparent;
   border: 1px solid #ffffff;
   cursor: pointer;
-  bottom: -120px;
+  bottom: -123px;
   overflow: hidden;
 }
 @media (max-width: 991px) {
@@ -7811,7 +7830,7 @@ ul.children {
   display: none !important;
 }
 .home-one-team-member-area .home-one-team-member .slick-list .slick-slide {
-  margin: 0 32px;
+  margin: 0 12px;
   transition: all 0.5s ease-out;
 }
 .home-one-team-member-area .home-one-team-member .slick-list .slick-slide.slick-active {

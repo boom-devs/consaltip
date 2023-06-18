@@ -255,7 +255,7 @@
       }
       a {
         display: block;
-        padding: 43px 24px;
+        padding: 42.5px 24px;
         text-decoration: none;
         text-transform: capitalize;
         @include transition;
@@ -263,6 +263,7 @@
         color: $white;
         font-family: $body-font;
         font-size: 16px;
+        line-height: 170%;
         font-weight: 400;
         display: inline-flex;
         align-items: center;
@@ -400,6 +401,7 @@
     border-radius: 50px;
     font-family: $heading-font;
     text-transform: capitalize;
+    border: 3px solid transparent;
   }
   i {
     vertical-align: middle;
@@ -411,13 +413,16 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
+    @include transition;
   }
   &:hover {
     a {
-      background: $brand;
+      // background: $brand;
+      border-color: $brand;
     }
     i {
-      background: $white;
+      background: $icon-color;
+      color: $white;
     }
   }
   &.style-two {
