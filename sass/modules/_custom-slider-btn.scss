@@ -39,6 +39,9 @@
             i {
                 color: $title-color;
             }
+            &:hover {
+                border-color: transparent;
+            }
         }
     }
 }

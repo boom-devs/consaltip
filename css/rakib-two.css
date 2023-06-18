@@ -1449,6 +1449,9 @@ input:focus {
 .custom-slider-btn.style-two a i {
   color: #080f10;
 }
+.custom-slider-btn.style-two a:hover {
+  border-color: transparent;
+}
 
 .slider-area.style-two {
   position: relative;

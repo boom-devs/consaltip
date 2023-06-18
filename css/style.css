@@ -4359,7 +4359,7 @@ button.testimonial-arrow-btn:hover i {
   transform: scale(1.05);
 }
 .client-logo-wrapper .client-logo:hover svg path {
-  fill: #080f10;
+  fill: #e0f780;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .client-logo-wrapper {
@@ -7059,6 +7059,7 @@ ul.children {
 }
 .home-one-review .home-one-review-slider button.review-arrow-btn:hover {
   background: #e0f780;
+  border-color: transparent;
 }
 .home-one-review .home-one-review-slider button.review-arrow-btn:hover i {
   color: #080f10;
