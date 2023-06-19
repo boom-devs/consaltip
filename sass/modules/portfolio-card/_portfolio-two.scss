@@ -9,9 +9,17 @@
       .icon {
         display: flex;
       }
-      h4,
-      p {
+      h4 {
         color: $title-color;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        @include transition;
+        &:hover {
+          text-decoration-color: $title-color;
+        }
+      }
+      p {
+        color: $text-color;
       }
       @include sm {
         padding: 50px 22px;

@@ -25,7 +25,7 @@
         }
         &:hover {
             background: $brand;
-
+            border-color: transparent;
             i {
                 color: $title-color;
                 @include transition;

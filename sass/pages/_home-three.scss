@@ -1,4 +1,7 @@
 // hero section
+.home-three-hero-section {
+  padding-top: 209px;
+}
 .home-three-btn-wrapper {
   display: flex;
   justify-content: center;
@@ -10,7 +13,7 @@
   height: 100%;
   position: relative;
   .sketch {
-    @include xl {
+    @include rwd(1440) {
       background-image: url("../images/shape/image-card-sketch.png");
       width: 88px;
       height: 88px;
@@ -20,10 +23,11 @@
       top: 0;
       left: 0;
       transform: translate(-50%, -50%);
+      z-index: 10;
     }
   }
   .sketch-bottom {
-    @include xl {
+    @include rwd(1440) {
       background-image: url("../images/sketch-color.png  ");
       width: 124px;
       height: 124px;
@@ -95,7 +99,7 @@
   padding: 120px 0;
   position: relative;
   .shape-one {
-    @include xl {
+    @include rwd(1440) {
       background-image: url("../images/shape/Rectangle.png");
       width: 40px;
       height: 40px;
@@ -113,6 +117,7 @@
       align-items: center;
       gap: 8px;
       margin-top: 64px;
+      margin-bottom: 0;
       list-style: none;
       li {
         line-height: 0;
@@ -145,7 +150,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    padding-right: 38px;
+    padding-right: 40px;
     img {
       width: 100%;
       height: 100%;
@@ -215,7 +220,7 @@
   background-color: $background;
   position: relative;
   .shape-one {
-    @include xl {
+    @include rwd(1440) {
       background-image: url("../images/shape/Rectangle.png");
       width: 40px;
       height: 40px;
@@ -227,7 +232,7 @@
     }
   }
   .shape-two {
-    @include xl {
+    @include rwd(1440) {
       background-image: url("../images/shape/shape-2.png");
       width: 40px;
       height: 40px;
@@ -239,7 +244,7 @@
     }
   }
   .sketch {
-    @include xl {
+    @include rwd(1440) {
       background-image: url("../images/sketch-color.png");
       width: 109px;
       height: 109px;
@@ -268,6 +273,58 @@
       top: 75px;
       left: 42px;
       // transform: translate(-50%, 50%);
+    }
+  }
+  button.portfolio-card-arrow-btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 99;
+    background-color: transparent;
+    border: 1px solid $white;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    // display: none !important;
+
+    @include rmaxwd(767) {
+      width: 40px;
+      height: 40px;
+    }
+    &.prev-btn {
+      left: 144px;
+    }
+    &.next-btn {
+      right: 30px;
+      display: none !important;
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $white;
+      font-size: 21px;
+      @include transition;
+    }
+    &:hover {
+      background-color: $brand;
+
+      i {
+        color: $title-color;
+        @include transition;
+      }
+    }
+    &.active {
+      background-color: $brand;
+      border-color: transparent;
+      i {
+        color: $title-color;
+        @include transition;
+      }
     }
   }
 }

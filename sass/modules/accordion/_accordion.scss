@@ -8,23 +8,26 @@
     padding: 39px 40px;
     cursor: pointer;
     &.open {
-      &:before {
-        content: "";
-        width: 100%;
-        height: 1px;
-        background: #e0e0e0;
-        position: absolute;
-        top: 45%;
-        left: 0;
-        @include sm {
-          top: 96px;
-        }
-        @include md {
-          top: 86px;
-        }
-      }
+      // &:before {
+      //   content: "";
+      //   width: 100%;
+      //   height: 1px;
+      //   background: #e0e0e0;
+      //   position: absolute;
+      //   top: 45%;
+      //   left: 0;
+      //   @include sm {
+      //     top: 96px;
+      //   }
+      //   @include md {
+      //     top: 86px;
+      //   }
+      // }
       .accordion-item-body {
-        display: block;
+        // display: block;
+        border-top: 1px solid #e0e0e0;
+        opacity: 1;
+        overflow: visible;
       }
       .accordion-head {
         .icon {
@@ -82,7 +85,10 @@
     }
     .accordion-item-body {
       color: $text-color;
-      margin-top: 32px;
+      margin-top: 16px;
+      padding-top: 16px;
+      opacity: 0;
+      overflow: hidden;
     }
     @include sm {
       padding: 20px 30px;

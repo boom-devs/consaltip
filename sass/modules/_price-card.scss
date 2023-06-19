@@ -107,7 +107,7 @@
         background: $background;
         padding: 64px 38px 44px 36px;
         .price {
-            margin-top: 39px;
+            margin-top: 40px;
             .price-heading {
                 display: flex;
                 align-items: center;
@@ -146,6 +146,11 @@
         .list-wrapper {
             display: flex;
             flex-direction: column;
+            .list-inner {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
             .price-list-item {
                 display: inline-flex;
                 gap: 16px;
@@ -200,12 +205,17 @@
         justify-content: center;
         align-items: center;
         background: $icon-color;
-        padding: 15px 0 12px 0;
+        padding: 16px 0;
     }
     &.active,
     &:hover {
         .price-card {
             background: $brand;
+            .divider {
+                &:before {
+                    background: $white;
+                }
+            }
         }
         .list-wrapper {
             .price-list-item {

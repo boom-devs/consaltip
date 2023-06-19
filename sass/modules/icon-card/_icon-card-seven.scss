@@ -12,6 +12,7 @@
             background: $brand;
             width: 80px;
             height: 80px;
+            border: transparent;
             i {
                 color: $icon-color;
             }
@@ -29,7 +30,7 @@
         }
         &.active {
             background-color: $background;
-            border-color: $icon-color;
+            border-color: transparent;
             .content {
                 .title {
                     color: $title-color;

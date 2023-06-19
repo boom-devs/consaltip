@@ -251,47 +251,6 @@
             line-height: 32px;
           }
         }
-        .slider-btn-wrapper {
-          margin-top: 48px;
-          display: flex;
-          gap: 16px;
-          @include sm {
-            margin-top: 30px;
-          }
-          .slider-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 16.5px 32px;
-            text-align: center;
-            border-radius: 4px;
-            text-transform: capitalize;
-            font-family: $body-font;
-            font-size: 18px;
-            line-height: 31px;
-            font-weight: 400;
-            position: relative;
-            z-index: 1;
-            color: $white;
-            background: transparent;
-            border: 1px solid $white;
-            &.active {
-              background: $brand;
-              color: $title-color;
-              border: 1px solid transparent;
-              &:hover {
-                background: $icon-color;
-                color: $white;
-                border: 1px solid $white;
-              }
-            }
-            &:hover {
-              background: $brand;
-              color: $title-color;
-              border-color: transparent;
-            }
-          }
-        }
       }
     }
     .slider-image {

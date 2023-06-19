@@ -145,10 +145,11 @@
             loop: true,
             dots: false,
             speed: 1500,
+            variableWidth: true,
             prevArrow:
-                "<button type='button' class='info-card-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+                "<button type='button' class='portfolio-card-arrow-btn active prev-btn'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
-                "<button type='button' class='info-card-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+                "<button type='button' class='portfolio-card-arrow-btn next-btn'><i class='icon-arrow-right-2'></i></button>",
             responsive: [
                 {
                     breakpoint: 991,
@@ -468,7 +469,7 @@
 
         // service-slider home-three
         $(".home-three-service-slider").slick({
-            slidesToShow: 4,
+            slidesToShow: 3,
             infinite: true,
             autoplay: false,
             draggable: true,
@@ -477,6 +478,7 @@
             loop: true,
             dots: false,
             speed: 1500,
+            variableWidth: true,
             prevArrow:
                 "<button type='button' class='home-three-service-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
             nextArrow:

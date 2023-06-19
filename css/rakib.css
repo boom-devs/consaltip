@@ -657,6 +657,7 @@ input:focus {
   font-weight: 400;
   color: #575959;
   text-align: center;
+  padding: 0 18px;
 }
 .icon-card:hover .icon {
   background: #e0f780;
@@ -723,7 +724,7 @@ input:focus {
 .icon-card.style-three {
   flex-direction: row;
   background: #f8f8f1;
-  padding: 39px 41px 40px 32px;
+  padding: 40px 40px 40px 32px;
 }
 .icon-card.style-three .icon .icon-color {
   width: 39px;
@@ -887,7 +888,7 @@ input:focus {
   padding: 64px 38px 44px 36px;
 }
 .price-card-wrapper .price-card .price {
-  margin-top: 39px;
+  margin-top: 40px;
 }
 .price-card-wrapper .price-card .price .price-heading {
   display: flex;
@@ -926,6 +927,11 @@ input:focus {
 .price-card-wrapper .price-card .list-wrapper {
   display: flex;
   flex-direction: column;
+}
+.price-card-wrapper .price-card .list-wrapper .list-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .price-card-wrapper .price-card .list-wrapper .price-list-item {
   display: inline-flex;
@@ -981,10 +987,13 @@ input:focus {
   justify-content: center;
   align-items: center;
   background: #033f47;
-  padding: 15px 0 12px 0;
+  padding: 16px 0;
 }
 .price-card-wrapper.active .price-card, .price-card-wrapper:hover .price-card {
   background: #e0f780;
+}
+.price-card-wrapper.active .price-card .divider:before, .price-card-wrapper:hover .price-card .divider:before {
+  background: #ffffff;
 }
 .price-card-wrapper.active .list-wrapper .price-list-item .icon, .price-card-wrapper:hover .list-wrapper .price-list-item .icon {
   background: #033f47;

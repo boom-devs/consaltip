@@ -450,10 +450,24 @@
     }
   }
   &.style-three {
+    @include transition;
     a {
       background: $icon-color;
       color: $white;
       border-radius: 50px;
+      @include transition;
+    }
+    i {
+      color: $title-color;
+    }
+    &:hover {
+      a {
+        background: $background;
+        color: $title-color;
+      }
+      i {
+        background: $brand;
+      }
     }
   }
 

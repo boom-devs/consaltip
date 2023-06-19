@@ -7,9 +7,11 @@
     font-size: 16px;
     color: $text-color;
     margin-right: 15px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
     @include transition;
     &:hover {
-      color: $title-color;
+      text-decoration-color: $text-color;
     }
   }
   .footer-bottom-menu ul li {
@@ -181,7 +183,7 @@
             margin-bottom: 0;
           }
           .contact-icon {
-            color: $text-color;
+            color: $icon-color;
             border-radius: 50px;
             align-items: center;
             width: 45px;

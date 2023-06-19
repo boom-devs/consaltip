@@ -164,13 +164,15 @@
     border-radius: 50%;
     transition: 0.3s;
     z-index: 99;
-    background-color: transparent;
-    border: 1px solid #828282;
+    background-color: $white;
+    border: 1px solid transparent;
     cursor: pointer;
     top: 50%;
     overflow: hidden;
+    box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.03);
     &.active {
       background: $brand;
+      border-color: transparent;
     }
     &.prev-btn {
       left: 20px;

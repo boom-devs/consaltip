@@ -289,6 +289,67 @@ input:focus {
   background-size: cover !important;
 }
 
+.slider-btn-wrapper {
+  margin-top: 48px;
+  display: flex;
+  gap: 16px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-btn-wrapper {
+    margin-top: 30px;
+  }
+}
+.slider-btn-wrapper .slider-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16.5px 32px;
+  text-align: center;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 31px;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+.slider-btn-wrapper .slider-btn.active {
+  background: #e0f780;
+  color: #080f10;
+  border: 1px solid transparent;
+}
+.slider-btn-wrapper .slider-btn.active:hover {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.slider-btn-wrapper .slider-btn:hover {
+  background: #e0f780;
+  color: #080f10;
+  border-color: transparent;
+}
+.slider-btn-wrapper.style-two {
+  justify-content: center;
+}
+.slider-btn-wrapper.style-two .slider-btn {
+  border-color: #575959;
+  color: #080f10;
+}
+.slider-btn-wrapper.style-two .slider-btn.active {
+  border-color: transparent;
+}
+.slider-btn-wrapper.style-two .slider-btn.active:hover {
+  border-color: #575959;
+  color: #080f10;
+}
+.slider-btn-wrapper.style-two .slider-btn:hover {
+  border-color: transparent;
+}
+
 .pl-312 {
   padding-left: 312px;
 }
@@ -541,9 +602,17 @@ input:focus {
 .portfolio-card.style-two .content .icon {
   display: flex;
 }
-.portfolio-card.style-two .content h4,
-.portfolio-card.style-two .content p {
+.portfolio-card.style-two .content h4 {
   color: #080f10;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.5s ease-out;
+}
+.portfolio-card.style-two .content h4:hover {
+  text-decoration-color: #080f10;
+}
+.portfolio-card.style-two .content p {
+  color: #575959;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .portfolio-card.style-two .content {
@@ -892,6 +961,7 @@ input:focus {
   background: #e0f780;
   width: 80px;
   height: 80px;
+  border: transparent;
 }
 .icon-card.style-seven .icon i {
   color: #033f47;
@@ -909,7 +979,7 @@ input:focus {
 }
 .icon-card.style-seven.active {
   background-color: #f8f8f1;
-  border-color: #033f47;
+  border-color: transparent;
 }
 .icon-card.style-seven.active .content .title {
   color: #080f10;
@@ -948,10 +1018,6 @@ input:focus {
     margin-left: 48px;
   }
 }
-.portfolio_card_wrapper button.info-card-arrow-btn {
-  display: none !important;
-}
-
 .project-page-project-sec {
   padding: 120px 0;
   position: relative;
@@ -1471,6 +1537,7 @@ input:focus {
 }
 .custom-slider-btn a:hover {
   background: #e0f780;
+  border-color: transparent;
 }
 .custom-slider-btn a:hover i {
   color: #080f10;

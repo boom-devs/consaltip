@@ -3435,10 +3435,24 @@ html {
 .header-btn.style-two:hover i {
   background: #080f10;
 }
+.header-btn.style-three {
+  transition: all 0.5s ease-out;
+}
 .header-btn.style-three a {
   background: #033f47;
   color: #ffffff;
   border-radius: 50px;
+  transition: all 0.5s ease-out;
+}
+.header-btn.style-three i {
+  color: #080f10;
+}
+.header-btn.style-three:hover a {
+  background: #f8f8f1;
+  color: #080f10;
+}
+.header-btn.style-three:hover i {
+  background: #e0f780;
 }
 @media only screen and (max-width: 1199px) {
   .header-btn {
@@ -3893,49 +3907,6 @@ a.meanmenu-reveal {
     line-height: 32px;
   }
 }
-.slider-area .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper {
-  margin-top: 48px;
-  display: flex;
-  gap: 16px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .slider-area .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper {
-    margin-top: 30px;
-  }
-}
-.slider-area .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper .slider-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16.5px 32px;
-  text-align: center;
-  border-radius: 4px;
-  text-transform: capitalize;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  line-height: 31px;
-  font-weight: 400;
-  position: relative;
-  z-index: 1;
-  color: #ffffff;
-  background: transparent;
-  border: 1px solid #ffffff;
-}
-.slider-area .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper .slider-btn.active {
-  background: #e0f780;
-  color: #080f10;
-  border: 1px solid transparent;
-}
-.slider-area .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper .slider-btn.active:hover {
-  background: #033f47;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-}
-.slider-area .single-slider .slider-content-wrapper .slider-content .slider-btn-wrapper .slider-btn:hover {
-  background: #e0f780;
-  color: #080f10;
-  border-color: transparent;
-}
 .slider-area .single-slider .slider-image {
   position: relative;
   z-index: 2;
@@ -4044,6 +4015,7 @@ a.meanmenu-reveal {
   font-weight: 400;
   color: #575959;
   text-align: center;
+  padding: 0 18px;
 }
 .icon-card:hover .icon {
   background: #e0f780;
@@ -4110,7 +4082,7 @@ a.meanmenu-reveal {
 .icon-card.style-three {
   flex-direction: row;
   background: #f8f8f1;
-  padding: 39px 41px 40px 32px;
+  padding: 40px 40px 40px 32px;
 }
 .icon-card.style-three .icon .icon-color {
   width: 39px;
@@ -4764,27 +4736,10 @@ button.testimonial-arrow-btn:hover i {
   padding: 39px 40px;
   cursor: pointer;
 }
-.accordion-wrapper .accordion-list-item.open:before {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background: #e0e0e0;
-  position: absolute;
-  top: 45%;
-  left: 0;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .accordion-wrapper .accordion-list-item.open:before {
-    top: 96px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .accordion-wrapper .accordion-list-item.open:before {
-    top: 86px;
-  }
-}
 .accordion-wrapper .accordion-list-item.open .accordion-item-body {
-  display: block;
+  border-top: 1px solid #e0e0e0;
+  opacity: 1;
+  overflow: visible;
 }
 .accordion-wrapper .accordion-list-item.open .accordion-head .icon:before {
   content: "\e90f";
@@ -4839,7 +4794,10 @@ button.testimonial-arrow-btn:hover i {
 }
 .accordion-wrapper .accordion-list-item .accordion-item-body {
   color: #575959;
-  margin-top: 32px;
+  margin-top: 16px;
+  padding-top: 16px;
+  opacity: 0;
+  overflow: hidden;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .accordion-wrapper .accordion-list-item {
@@ -5132,7 +5090,7 @@ button.testimonial-arrow-btn:hover i {
   padding: 64px 38px 44px 36px;
 }
 .price-card-wrapper .price-card .price {
-  margin-top: 39px;
+  margin-top: 40px;
 }
 .price-card-wrapper .price-card .price .price-heading {
   display: flex;
@@ -5171,6 +5129,11 @@ button.testimonial-arrow-btn:hover i {
 .price-card-wrapper .price-card .list-wrapper {
   display: flex;
   flex-direction: column;
+}
+.price-card-wrapper .price-card .list-wrapper .list-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .price-card-wrapper .price-card .list-wrapper .price-list-item {
   display: inline-flex;
@@ -5226,10 +5189,13 @@ button.testimonial-arrow-btn:hover i {
   justify-content: center;
   align-items: center;
   background: #033f47;
-  padding: 15px 0 12px 0;
+  padding: 16px 0;
 }
 .price-card-wrapper.active .price-card, .price-card-wrapper:hover .price-card {
   background: #e0f780;
+}
+.price-card-wrapper.active .price-card .divider:before, .price-card-wrapper:hover .price-card .divider:before {
+  background: #ffffff;
 }
 .price-card-wrapper.active .list-wrapper .price-list-item .icon, .price-card-wrapper:hover .list-wrapper .price-list-item .icon {
   background: #033f47;
@@ -5491,6 +5457,13 @@ button.testimonial-arrow-btn:hover i {
 .consultation-wrapper .consultion-img {
   position: relative;
   z-index: 2;
+  overflow: hidden;
+}
+.consultation-wrapper .consultion-img img {
+  transition: all 0.5s ease-out;
+}
+.consultation-wrapper .consultion-img:hover img {
+  transform: scale(1.02);
 }
 
 /* img-card */
@@ -7112,10 +7085,12 @@ ul.children {
   font-size: 16px;
   color: #575959;
   margin-right: 15px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
   transition: all 0.5s ease-out;
 }
 .footer .footer-bottom-menu ul li a:hover {
-  color: #080f10;
+  text-decoration-color: #575959;
 }
 .footer .footer-bottom-menu ul li {
   display: inline-block;
@@ -7255,7 +7230,7 @@ ul.children {
   margin-bottom: 0;
 }
 .footer .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
-  color: #575959;
+  color: #033f47;
   border-radius: 50px;
   align-items: center;
   width: 45px;
@@ -7532,9 +7507,17 @@ ul.children {
 .portfolio-card.style-two .content .icon {
   display: flex;
 }
-.portfolio-card.style-two .content h4,
-.portfolio-card.style-two .content p {
+.portfolio-card.style-two .content h4 {
   color: #080f10;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.5s ease-out;
+}
+.portfolio-card.style-two .content h4:hover {
+  text-decoration-color: #080f10;
+}
+.portfolio-card.style-two .content p {
+  color: #575959;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .portfolio-card.style-two .content {
@@ -8151,14 +8134,16 @@ ul.children {
   border-radius: 50%;
   transition: 0.3s;
   z-index: 99;
-  background-color: transparent;
-  border: 1px solid #828282;
+  background-color: #ffffff;
+  border: 1px solid transparent;
   cursor: pointer;
   top: 50%;
   overflow: hidden;
+  box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.03);
 }
 .home-two-process-slider .process-arrow-btn.active {
   background: #e0f780;
+  border-color: transparent;
 }
 .home-two-process-slider .process-arrow-btn.prev-btn {
   left: 20px;
@@ -8340,6 +8325,10 @@ ul.children {
   }
 }
 
+.home-three-hero-section {
+  padding-top: 209px;
+}
+
 .home-three-btn-wrapper {
   display: flex;
   justify-content: center;
@@ -8350,7 +8339,7 @@ ul.children {
   height: 100%;
   position: relative;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .hero-image-wrapper .sketch {
     background-image: url("../images/shape/image-card-sketch.png");
     width: 88px;
@@ -8361,9 +8350,10 @@ ul.children {
     top: 0;
     left: 0;
     transform: translate(-50%, -50%);
+    z-index: 10;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .hero-image-wrapper .sketch-bottom {
     background-image: url("../images/sketch-color.png  ");
     width: 124px;
@@ -8433,7 +8423,7 @@ ul.children {
   padding: 120px 0;
   position: relative;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .home-three-client-logo-area .shape-one {
     background-image: url("../images/shape/Rectangle.png");
     width: 40px;
@@ -8451,6 +8441,7 @@ ul.children {
   align-items: center;
   gap: 8px;
   margin-top: 64px;
+  margin-bottom: 0;
   list-style: none;
 }
 .home-three-client-logo-area .home-two-client-logo-slider .slick-dots li {
@@ -8481,7 +8472,7 @@ ul.children {
   position: relative;
   width: 100%;
   height: 100%;
-  padding-right: 38px;
+  padding-right: 40px;
 }
 .home-three-about-us .home-three-about-image img {
   width: 100%;
@@ -8548,7 +8539,7 @@ ul.children {
   background-color: #f8f8f1;
   position: relative;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .home-three-process .shape-one {
     background-image: url("../images/shape/Rectangle.png");
     width: 40px;
@@ -8560,7 +8551,7 @@ ul.children {
     left: 49px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .home-three-process .shape-two {
     background-image: url("../images/shape/shape-2.png");
     width: 40px;
@@ -8572,7 +8563,7 @@ ul.children {
     right: 48px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .home-three-process .sketch {
     background-image: url("../images/sketch-color.png");
     width: 109px;
@@ -8601,6 +8592,57 @@ ul.children {
     top: 75px;
     left: 42px;
   }
+}
+.case-studies-home-three button.portfolio-card-arrow-btn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: 0.3s;
+  z-index: 99;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .case-studies-home-three button.portfolio-card-arrow-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+.case-studies-home-three button.portfolio-card-arrow-btn.prev-btn {
+  left: 144px;
+}
+.case-studies-home-three button.portfolio-card-arrow-btn.next-btn {
+  right: 30px;
+  display: none !important;
+}
+.case-studies-home-three button.portfolio-card-arrow-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 21px;
+  transition: all 0.5s ease-out;
+}
+.case-studies-home-three button.portfolio-card-arrow-btn:hover {
+  background-color: #e0f780;
+}
+.case-studies-home-three button.portfolio-card-arrow-btn:hover i {
+  color: #080f10;
+  transition: all 0.5s ease-out;
+}
+.case-studies-home-three button.portfolio-card-arrow-btn.active {
+  background-color: #e0f780;
+  border-color: transparent;
+}
+.case-studies-home-three button.portfolio-card-arrow-btn.active i {
+  color: #080f10;
+  transition: all 0.5s ease-out;
 }
 
 .customer-review {
