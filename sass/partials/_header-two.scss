@@ -27,6 +27,9 @@
       }
       .main-menu {
         ul {
+          ul {
+            border-color: $title-color;
+          }
           li {
             a {
               color: $title-color;

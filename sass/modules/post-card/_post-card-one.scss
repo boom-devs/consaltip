@@ -1,6 +1,14 @@
 .post-card-one {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  .post-image {
+    overflow: hidden;
+    img {
+      transform: scale(1.01);
+      @include transition;
+    }
+  }
   .content-wrapper {
     background: $white;
     padding: 32px 32px 48px 48px;
@@ -40,6 +48,13 @@
     }
     button {
       flex-shrink: 0;
+    }
+  }
+  &:hover {
+    .post-image {
+      img {
+        transform: scale(1.04);
+      }
     }
   }
 }

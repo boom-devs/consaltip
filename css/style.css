@@ -784,6 +784,7 @@ input:focus {
 .theme-transparant-btn:hover {
   background: #e0f780;
   color: #080f10;
+  border-color: transparent;
 }
 
 /* Deafult Margin & Padding */
@@ -3322,10 +3323,11 @@ html {
   visibility: hidden;
   z-index: 99999;
   transition: all 0.5s ease-out;
-  border-top: 2px solid #080f10;
+  border-top: 2px solid #e0f780;
   box-shadow: 0px 10px 20px 0px rgba(8, 0, 42, 0.08);
   transform-origin: top;
   transform: scaleY(0);
+  border-radius: 0 0 4px 4px;
 }
 .main-menu ul ul li {
   float: none;
@@ -3450,6 +3452,9 @@ html {
   transform: skewX(-20deg);
   bottom: 0;
   height: 190px;
+}
+.header-area.style-two .header-sec .main-menu ul ul {
+  border-color: #080f10;
 }
 .header-area.style-two .header-sec .main-menu ul li a {
   color: #080f10;
@@ -4384,6 +4389,14 @@ button.testimonial-arrow-btn:hover i {
 .post-card-one {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+.post-card-one .post-image {
+  overflow: hidden;
+}
+.post-card-one .post-image img {
+  transform: scale(1.01);
+  transition: all 0.5s ease-out;
 }
 .post-card-one .content-wrapper {
   background: #ffffff;
@@ -4425,6 +4438,9 @@ button.testimonial-arrow-btn:hover i {
 }
 .post-card-one .content-wrapper button {
   flex-shrink: 0;
+}
+.post-card-one:hover .post-image img {
+  transform: scale(1.04);
 }
 
 .post-card-one.style-two {
@@ -4872,7 +4888,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .under-line:after {
   content: "";
-  background: url("../../images/under_line.png");
+  background: url("../images/under_line.png");
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
@@ -6387,8 +6403,8 @@ ul.children {
   margin-right: 15px;
 }
 .footer .footer-bottom-menu ul li a:hover {
-  margin-left: 2px;
-  transform: scale(1.1);
+  color: #080f10;
+  font-weight: 500;
 }
 .footer .footer-bottom-menu ul li {
   display: inline-block;
@@ -6451,7 +6467,7 @@ ul.children {
   margin-top: 0;
 }
 .footer .footer-widget .footer-widget-info .social-widget {
-  gap: 20px;
+  gap: 16px;
   margin-top: 30px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {

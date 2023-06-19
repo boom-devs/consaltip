@@ -264,6 +264,7 @@ input:focus {
 .theme-transparant-btn:hover {
   background: #e0f780;
   color: #080f10;
+  border-color: transparent;
 }
 
 .background-image {

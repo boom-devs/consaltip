@@ -325,10 +325,11 @@
       visibility: hidden;
       z-index: 99999;
       @include transition;
-      border-top: 2px solid $title-color;
+      border-top: 2px solid $brand;
       box-shadow: 0px 10px 20px 0px rgba(8, 0, 42, 0.08);
       transform-origin: top;
       transform: scaleY(0);
+      border-radius: 0 0 4px 4px;
 
       li {
         float: none;

@@ -231,5 +231,6 @@ input:focus {
   &:hover {
     background: $brand;
     color: $title-color;
+    border-color: transparent;
   }
 }
