@@ -6,6 +6,8 @@
         gap: 16px;
         margin-top: 54px;
         cursor: pointer;
+        border: 1px solid transparent;
+        @include transition;
         .icon {
             background: $brand;
             width: 80px;
@@ -23,6 +25,15 @@
             }
             @include sm {
                 flex-direction: column;
+            }
+        }
+        &.active {
+            background-color: $background;
+            border-color: $icon-color;
+            .content {
+                .title {
+                    color: $title-color;
+                }
             }
         }
     }

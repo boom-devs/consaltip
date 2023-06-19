@@ -140,7 +140,7 @@
 // case-studies
 .case-studies-home-one {
   background: $icon-color;
-  padding: 120px 0 243px 0;
+  padding: 120px 0 244px 0;
   position: relative;
   .sketch {
     @include rwd(1440) {
@@ -170,7 +170,7 @@
     background-color: transparent;
     border: 1px solid $white;
     cursor: pointer;
-    bottom: -123px;
+    bottom: -124px;
     overflow: hidden;
     @include rmaxwd(991) {
       top: unset;
@@ -222,6 +222,22 @@
       display: flex;
       width: 40%;
       justify-content: end;
+      .image {
+        position: relative;
+        border-radius: 200px;
+        z-index: 10;
+        background-color: $background;
+        &:before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-image: url("../images/review/bg.svg");
+          z-index: -1;
+        }
+      }
     }
     .review-content {
       max-width: 50%;

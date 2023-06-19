@@ -1,7 +1,6 @@
 .image-card {
     &.style-two {
         flex-direction: row-reverse;
-        gap: 64px;
         .content {
             padding-right: 30px;
             .title {
@@ -12,11 +11,36 @@
                 }
             }
         }
+        .image {
+            .image-card-sketch {
+                &.style-three {
+                    @include rwd(1440) {
+                        position: absolute;
+                        width: 188px;
+                        height: 188px;
+                        top: unset;
+                        bottom: 0;
+                        left: 0;
+                        transform: translate(-50%, 50%);
+                        // z-index: 5;
+                    }
+                }
+            }
+        }
         @include sm {
             flex-direction: column-reverse;
         }
         @include md {
             flex-direction: column-reverse;
+        }
+        &.image-card-spacing {
+            gap: 80px;
+            .content {
+                gap: 24px;
+                .theme-btn-wrapper {
+                    margin-top: 24px;
+                }
+            }
         }
     }
 }

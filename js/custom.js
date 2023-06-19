@@ -408,7 +408,11 @@
                 "<button type='button' class='process-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
                 "<button type='button' class='process-arrow-btn next-btn active'><i class='icon-arrow-right-2'></i></button>",
-            responsive: [
+            // customPaging : function(slider, index) { 
+            // var num = index + 1;
+            // return ' <div class="dot icon-card style-seven active" id="home-two-first-step"><div class="icon"><i class="icon-Analysis"></i></div><div class="content"><h4 class="title">1. Analysis & Research</h4></div></div>';
+            // },
+                responsive: [
                 {
                     breakpoint: 767,
                     settings: {
@@ -427,12 +431,18 @@
         // trigger
         $('#home-two-first-step').on('click', function () {
             $('#slick-slide-control30').trigger('click');
+             $('.icon-card').removeClass(' active ');
+            $(this).addClass('active');
         });
         $('#home-two-second-step').on('click', function () {
             $('#slick-slide-control31').trigger('click');
+            $('.icon-card').removeClass(' active ');
+            $(this).addClass('active');
         });
         $('#home-two-third-step').on('click', function () {
             $('#slick-slide-control32').trigger('click');
+            $('.icon-card').removeClass(' active ');
+            $(this).addClass('active');
         });
 
         $(".home-two-testimonial-card-slider").slick({

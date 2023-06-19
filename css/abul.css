@@ -779,7 +779,6 @@ input:focus {
   background: transparent;
   border: 1px solid #ffffff;
   color: #ffffff;
-  margin-left: 10px;
 }
 .theme-transparant-btn:hover {
   background: #e0f780;
@@ -4171,7 +4170,6 @@ a.meanmenu-reveal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 1;
 }
 .video-popup-card .video-popup-btn a {
@@ -4330,6 +4328,7 @@ a.meanmenu-reveal {
 }
 .process-step .image {
   width: 50%;
+  position: relative;
 }
 .process-step .image img {
   width: 100%;
@@ -4343,6 +4342,18 @@ a.meanmenu-reveal {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .process-step .image {
     width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .process-step .image .process-step-sketch {
+    position: absolute;
+    background-image: url("../images/shape/sketch-color.svg");
+    width: 188px;
+    height: 188px;
+    bottom: 0;
+    left: 0;
+    top: unset;
+    transform: translate(-63%, 15%);
   }
 }
 .process-step .content-wrapper {
@@ -4930,6 +4941,9 @@ button.testimonial-arrow-btn:hover i {
 }
 .post-card-one .content-wrapper .post-content .title {
   cursor: pointer;
+}
+.post-card-one .content-wrapper .post-content .title:hover {
+  text-decoration: underline;
 }
 .post-card-one .content-wrapper button {
   flex-shrink: 0;
@@ -7666,7 +7680,7 @@ ul.children {
 
 .case-studies-home-one {
   background: #033f47;
-  padding: 120px 0 243px 0;
+  padding: 120px 0 244px 0;
   position: relative;
 }
 @media (min-width: 1440px) {
@@ -7695,7 +7709,7 @@ ul.children {
   background-color: transparent;
   border: 1px solid #ffffff;
   cursor: pointer;
-  bottom: -123px;
+  bottom: -124px;
   overflow: hidden;
 }
 @media (max-width: 991px) {
@@ -7751,6 +7765,22 @@ ul.children {
   display: flex;
   width: 40%;
   justify-content: end;
+}
+.home-one-review .review-card .image-wrapper .image {
+  position: relative;
+  border-radius: 200px;
+  z-index: 10;
+  background-color: #f8f8f1;
+}
+.home-one-review .review-card .image-wrapper .image:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../images/review/bg.svg");
+  z-index: -1;
 }
 .home-one-review .review-card .review-content {
   max-width: 50%;
@@ -8033,17 +8063,6 @@ ul.children {
 
 .home-two-mission {
   padding: 120px 0;
-  position: relative;
-}
-@media (min-width: 1440px) {
-  .home-two-mission .sketch-one {
-    position: absolute;
-    background-image: url("../images/sketch-color.png");
-    width: 188px;
-    height: 188px;
-    bottom: 45px;
-    left: 147px;
-  }
 }
 
 .home-two-client-logo-area {
@@ -8095,16 +8114,6 @@ ul.children {
 .home-2-process-step {
   padding: 120px 0;
   position: relative;
-}
-@media (min-width: 1440px) {
-  .home-2-process-step .sketch {
-    position: absolute;
-    background-image: url("../images/sketch-color.png");
-    width: 188px;
-    height: 188px;
-    bottom: 45px;
-    left: 147px;
-  }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .home-2-process-step {
@@ -8221,7 +8230,7 @@ ul.children {
 }
 @media (min-width: 1440px) {
   .home-two-customer-review .sketch {
-    background-image: url("../images/title-sketch.png");
+    background-image: url("../images/shape/triangle-shape-white.svg");
     width: 109px;
     height: 109px;
     background-repeat: no-repeat;
@@ -8258,6 +8267,7 @@ ul.children {
 }
 .home-two-customer-review .home-two-testimonial-card-slider .slick-slide {
   display: flex;
+  align-items: center;
   margin: 64px 50px 0 50px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {

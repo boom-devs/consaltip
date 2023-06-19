@@ -259,7 +259,6 @@ input:focus {
   background: transparent;
   border: 1px solid #ffffff;
   color: #ffffff;
-  margin-left: 10px;
 }
 .theme-transparant-btn:hover {
   background: #e0f780;
@@ -728,7 +727,6 @@ input:focus {
 
 .image-card.style-two {
   flex-direction: row-reverse;
-  gap: 64px;
 }
 .image-card.style-two .content {
   padding-right: 30px;
@@ -742,6 +740,17 @@ input:focus {
     font-size: 38px;
   }
 }
+@media (min-width: 1440px) {
+  .image-card.style-two .image .image-card-sketch.style-three {
+    position: absolute;
+    width: 188px;
+    height: 188px;
+    top: unset;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%);
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .image-card.style-two {
     flex-direction: column-reverse;
@@ -751,6 +760,15 @@ input:focus {
   .image-card.style-two {
     flex-direction: column-reverse;
   }
+}
+.image-card.style-two.image-card-spacing {
+  gap: 80px;
+}
+.image-card.style-two.image-card-spacing .content {
+  gap: 24px;
+}
+.image-card.style-two.image-card-spacing .content .theme-btn-wrapper {
+  margin-top: 24px;
 }
 
 .image-card.style-three {
@@ -859,6 +877,8 @@ input:focus {
   gap: 16px;
   margin-top: 54px;
   cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.5s ease-out;
 }
 .icon-card.style-seven .icon {
   background: #e0f780;
@@ -878,6 +898,13 @@ input:focus {
   .icon-card.style-seven .content {
     flex-direction: column;
   }
+}
+.icon-card.style-seven.active {
+  background-color: #f8f8f1;
+  border-color: #033f47;
+}
+.icon-card.style-seven.active .content .title {
+  color: #080f10;
 }
 
 .portfolio_card_wrapper {
