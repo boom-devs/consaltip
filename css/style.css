@@ -3121,7 +3121,7 @@ html {
   color: #e0f780;
 }
 .header-top .header-contact-info span a:hover {
-  filter: blur(1px);
+  color: #e0f780;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .header-top .header-top-btn {

@@ -1488,7 +1488,7 @@ input:focus {
 }
 .slider-area.style-two .slider-wrapper .slider-content-wrapper {
   position: relative;
-  z-index: 99;
+  z-index: 1;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area.style-two .slider-wrapper .slider-content-wrapper .slider-content {
@@ -1566,6 +1566,9 @@ input:focus {
 }
 .slider-area.style-two button.slider-arrow-btn i {
   color: #080f10;
+}
+.slider-area.style-two button.slider-arrow-btn:hover {
+  border-color: transparent;
 }
 
 .accordion-wrapper-two {

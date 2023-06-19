@@ -31,7 +31,7 @@
       }
       .slider-content-wrapper {
         position: relative;
-        z-index: 99;
+        z-index: 1;
 
         .slider-content {
           @include sm {
@@ -115,6 +115,9 @@
       border: 1px solid #828282;
       i {
         color: $title-color;
+      }
+      &:hover {
+        border-color: transparent;
       }
     }
   }
