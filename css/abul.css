@@ -748,15 +748,23 @@ input:focus {
 }
 .theme-btn.style-three,
 .wp-block-loginout a.style-three {
-  border: 1px solid #575959;
+  outline: 1px solid #575959;
   color: #080f10;
   background: transparent;
+  padding: 16px 24px;
+  transition: all 0.5s ease-out;
+}
+.theme-btn.style-three span,
+.wp-block-loginout a.style-three span {
+  line-height: 170%;
+  font-size: 16px;
 }
 .theme-btn.style-three:hover,
 .wp-block-loginout a.style-three:hover {
   background: #e0f780;
   color: #080f10;
   border-color: #e0f780;
+  outline: none;
 }
 .theme-btn.style-four,
 .wp-block-loginout a.style-four {
@@ -4170,6 +4178,7 @@ a.meanmenu-reveal {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
 .video-popup-card .video-popup-btn a {
@@ -7346,7 +7355,6 @@ ul.children {
   height: 67px;
   padding: 0 30px;
   font-size: 18px;
-  border: 1px solid #000;
   width: 100%;
 }
 .footer.style-two .subscribe-form-wrapper p {
@@ -7379,6 +7387,9 @@ ul.children {
 .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon i {
   color: #e0f780;
 }
+.footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li:hover .contact-icon {
+  border-color: transparent;
+}
 .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li:hover .contact-icon i {
   color: #080f10;
 }
@@ -7390,6 +7401,9 @@ ul.children {
 }
 .footer.style-two .footer-bottom-menu ul li a {
   color: #ffffff;
+}
+.footer.style-two .footer-bottom-menu ul li a:hover {
+  color: #e0f780;
 }
 
 /* Team Member */

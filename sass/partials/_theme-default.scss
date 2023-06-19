@@ -201,13 +201,21 @@ input:focus {
     }
   }
   &.style-three {
-    border: 1px solid #575959;
+    // border: 1px solid #575959;
+    outline: 1px solid #575959;
     color: $title-color;
     background: transparent;
+    padding: 16px 24px;
+    @include transition;
+    span {
+      line-height: 170%;
+      font-size: 16px;
+    }
     &:hover {
       background: $brand;
       color: $title-color;
       border-color: $brand;
+      outline: none;
     }
   }
   &.style-four {

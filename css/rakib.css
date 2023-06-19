@@ -229,15 +229,23 @@ input:focus {
 }
 .theme-btn.style-three,
 .wp-block-loginout a.style-three {
-  border: 1px solid #575959;
+  outline: 1px solid #575959;
   color: #080f10;
   background: transparent;
+  padding: 16px 24px;
+  transition: all 0.5s ease-out;
+}
+.theme-btn.style-three span,
+.wp-block-loginout a.style-three span {
+  line-height: 170%;
+  font-size: 16px;
 }
 .theme-btn.style-three:hover,
 .wp-block-loginout a.style-three:hover {
   background: #e0f780;
   color: #080f10;
   border-color: #e0f780;
+  outline: none;
 }
 .theme-btn.style-four,
 .wp-block-loginout a.style-four {
@@ -572,6 +580,9 @@ input:focus {
 .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon i {
   color: #e0f780;
 }
+.footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li:hover .contact-icon {
+  border-color: transparent;
+}
 .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li:hover .contact-icon i {
   color: #080f10;
 }
@@ -583,6 +594,9 @@ input:focus {
 }
 .footer.style-two .footer-bottom-menu ul li a {
   color: #ffffff;
+}
+.footer.style-two .footer-bottom-menu ul li a:hover {
+  color: #e0f780;
 }
 
 .icon-card {

@@ -52,6 +52,7 @@
               }
               &:hover {
                 .contact-icon {
+                  border-color: transparent;
                   i {
                     color: $title-color;
                   }
@@ -72,6 +73,9 @@
     }
     .footer-bottom-menu ul li a {
       color: $white;
+      &:hover {
+        color: $brand;
+      }
     }
   }
 }
