@@ -4,12 +4,12 @@
   }
   .footer-bottom-menu ul li a {
     display: block;
-    font-size: 14px;
+    font-size: 16px;
     color: $text-color;
     margin-right: 15px;
+    @include transition;
     &:hover {
       color: $title-color;
-      font-weight: 500;
     }
   }
   .footer-bottom-menu ul li {
@@ -202,6 +202,7 @@
           &:hover {
             .contact-icon {
               background-color: $brand;
+              border-color: transparent;
               i {
                 color: $icon-color;
               }

@@ -6412,13 +6412,13 @@ ul.children {
 }
 .footer .footer-bottom-menu ul li a {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   color: #575959;
   margin-right: 15px;
+  transition: all 0.5s ease-out;
 }
 .footer .footer-bottom-menu ul li a:hover {
   color: #080f10;
-  font-weight: 500;
 }
 .footer .footer-bottom-menu ul li {
   display: inline-block;
@@ -6575,6 +6575,7 @@ ul.children {
 }
 .footer .footer-widget .footer-widget-contact .footer-contact ul li:hover .contact-icon {
   background-color: #e0f780;
+  border-color: transparent;
 }
 .footer .footer-widget .footer-widget-contact .footer-contact ul li:hover .contact-icon i {
   color: #033f47;
