@@ -2,6 +2,8 @@
     &.style-three {
         flex-direction: row-reverse;
         gap: 64px;
+        z-index: 5;
+        position: relative;
         .content {
             padding-right: 30px;
             .title {

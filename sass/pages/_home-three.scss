@@ -75,7 +75,6 @@
   }
   .right-hero-image {
     position: absolute;
-    right: 46px;
     .sketch-bottom {
       @include rwd(1440) {
         background-image: url("../images/sketch-color.png  ");

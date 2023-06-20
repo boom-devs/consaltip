@@ -33,14 +33,5 @@
         @include md {
             flex-direction: column-reverse;
         }
-        &.image-card-spacing {
-            gap: 80px;
-            .content {
-                gap: 24px;
-                .theme-btn-wrapper {
-                    margin-top: 24px;
-                }
-            }
-        }
     }
 }

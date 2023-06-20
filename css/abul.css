@@ -5563,6 +5563,14 @@ button.testimonial-arrow-btn:hover i {
   transform: translate(50%, 50%);
   z-index: 3;
 }
+.image-card .image .image-card-sketch.style-three {
+  width: 155px;
+  height: 155px;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
 .image-card .image img {
   width: 100%;
   height: 100%;
@@ -5613,6 +5621,15 @@ button.testimonial-arrow-btn:hover i {
     font-size: 16px;
     line-height: 28px;
   }
+}
+.image-card.image-card-spacing {
+  gap: 80px;
+}
+.image-card.image-card-spacing .content {
+  gap: 24px;
+}
+.image-card.image-card-spacing .content .theme-btn-wrapper {
+  margin-top: 24px;
 }
 
 /* 15.Page Breadcrumb Section */
@@ -8423,7 +8440,6 @@ ul.children {
 }
 .hero-image-wrapper .right-hero-image {
   position: absolute;
-  right: 46px;
 }
 @media (min-width: 1440px) {
   .hero-image-wrapper .right-hero-image .sketch-bottom {
