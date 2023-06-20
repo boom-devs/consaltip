@@ -947,6 +947,7 @@ input:focus {
 }
 .icon-card.style-five .content .desc {
   text-align: start;
+  padding: 0;
 }
 
 .icon-card.style-six {
@@ -1307,7 +1308,15 @@ input:focus {
   z-index: 0;
 }
 
-.project-info-sketch {
+.contact-info-card-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+.contact-info-card-wrapper .image-wrapper {
+  position: relative;
+}
+.contact-info-card-wrapper .image-wrapper .project-info-sketch {
   position: absolute;
   width: 109px;
   height: 109px;
@@ -1319,14 +1328,19 @@ input:focus {
   background-position: center;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .project-info-sketch {
+  .contact-info-card-wrapper .image-wrapper .project-info-sketch {
     display: none;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .project-info-sketch {
+  .contact-info-card-wrapper .image-wrapper .project-info-sketch {
     display: none;
   }
+}
+.contact-info-card-wrapper .contact-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .contackt-faq-btn-wrapper {
