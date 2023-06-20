@@ -410,7 +410,9 @@ input:focus {
   height: 100%;
   position: absolute;
   background-image: url("../../images/Pattern.png");
-  z-index: 3;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
 
 .faq-area-global {
@@ -651,10 +653,14 @@ input:focus {
 
 .portfolio-card.style-three {
   gap: 0;
+  overflow: visible;
 }
 .portfolio-card.style-three .content {
   background: #ffffff;
-  padding: 42px 49px 44px 49px;
+  padding: 44px 48px;
+  margin-top: 0;
+  overflow: visible;
+  height: 100%;
 }
 .portfolio-card.style-three .content .icon {
   display: flex;
@@ -956,6 +962,9 @@ input:focus {
     padding: 30px 16px;
   }
 }
+.icon-card.style-six .content .desc {
+  padding: 0;
+}
 
 .icon-card.style-seven {
   background-color: #033f47;
@@ -999,7 +1008,7 @@ input:focus {
   position: relative;
 }
 .portfolio_card_wrapper .slick-list {
-  margin-left: 175px;
+  margin-left: 312px;
 }
 .portfolio_card_wrapper .slick-list .slick-slide {
   margin: 0 12px;

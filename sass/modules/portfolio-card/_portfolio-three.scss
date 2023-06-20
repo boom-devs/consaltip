@@ -1,9 +1,13 @@
 .portfolio-card {
     &.style-three {
         gap: 0;
+        overflow: visible;
         .content {
             background: $white;
-            padding: 42px 49px 44px 49px;
+            padding: 44px 48px;
+            margin-top: 0;
+            overflow: visible;
+            height: 100%;
             .icon {
                 display: flex;
                 border-radius: 4px;

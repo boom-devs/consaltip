@@ -1,5 +1,5 @@
 .page-breadcrumb-sec {
-  padding: 211px 0 212px 0;
+  padding: 210px 0 212px 0;
   position: relative;
   z-index: 2;
   background-repeat: no-repeat;
@@ -31,6 +31,7 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: $white;
+    padding: 0 491px;
     @include sm {
       font-size: 36px;
       line-height: 54px;
@@ -43,12 +44,14 @@
 }
 .breadcrumb-wrapper {
   padding: 0;
+  position: relative;
+  z-index: 5;
 }
 .breadcrumb-list {
   text-align: center;
 
   ul {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     padding-left: 0;
     display: flex;
     gap: 8px;

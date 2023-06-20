@@ -188,9 +188,9 @@
             dots: true,
             speed: 1500,
              prevArrow:
-                "<button type='button' class='team-card-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+                "<button type='button' class='team-card-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
-                "<button type='button' class='team-card-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+                "<button type='button' class='team-card-arrow-btn next-btn'><i class='icon-arrow-right-2'></i></button>",
             responsive: [
                 {
                     breakpoint: 992,
@@ -505,6 +505,38 @@
         });
         $('.next_btn_custom').on('click', function () {
             $('.next-btn').trigger('click');
+        });
+
+        // Home-three case-studies 
+        $(".home-three-case-studies-slider").slick({
+            slidesToShow: 3,
+            infinite: true,
+            autoplay: false,
+            draggable: true,
+            arrows: true,
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            speed: 1500,
+            variableWidth: true,
+            prevArrow:
+                "<button type='button' class='portfolio-card-arrow-btn active prev-btn'><i class='icon-arrow-left-2'></i></button>",
+            nextArrow:
+                "<button type='button' class='portfolio-card-arrow-btn next-btn'><i class='icon-arrow-right-2'></i></button>",
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
         });
 
         // Home-three review slider

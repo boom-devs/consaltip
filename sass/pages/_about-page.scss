@@ -43,7 +43,17 @@
     justify-content: center;
     margin-top: 48px;
   }
-
+  .counter-sketch {
+    @include rwd(1440) {
+      position: absolute;
+      background-image: url("../images/title-sketch.png");
+      width: 200px;
+      height: 200px;
+      bottom: 246px;
+      right: 104px;
+      z-index: 2;
+    }
+  }
   @include rmaxwd(991) {
     padding: 100px 0;
   }
@@ -137,6 +147,21 @@
 .about-page-portfolio-area {
   background-color: $icon-color;
   padding: 120px 0;
+  position: relative;
+  .sketch {
+    @include rwd(1440) {
+      position: absolute;
+      background-image: url("../images/title-sketch.png");
+      width: 200px;
+      height: 200px;
+      bottom: 9px;
+      left: 27px;
+      z-index: 2;
+    }
+  }
+  .portfolio-card-arrow-btn {
+    display: none !important;
+  }
 }
 // Team-member area
 .about-page-team-area {
@@ -156,7 +181,7 @@
   }
 }
 .about_team_member_container {
-  max-width: 1460px;
+  max-width: 1376px;
   margin: 0 auto;
   width: 100%;
   @include lg {
@@ -197,7 +222,7 @@
     }
 
     &.prev-btn {
-      right: 174px;
+      right: 124px;
 
       @include rmaxwd(767) {
         right: unset;
@@ -205,7 +230,7 @@
       }
     }
     &.next-btn {
-      right: 98px;
+      right: 50px;
       @include rmaxwd(767) {
         right: 30px;
         left: unset;
@@ -236,6 +261,7 @@
     gap: 8px;
     margin-top: 64px;
     list-style: none;
+    margin-bottom: 0;
     li {
       line-height: 0;
       button {

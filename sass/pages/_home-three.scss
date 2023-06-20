@@ -352,6 +352,33 @@
       }
     }
   }
+  .home-three-case-studies-slider {
+    position: relative;
+    .slick-list {
+      margin-left: 175px;
+
+      .slick-slide {
+        margin: 0 12px;
+        @include transition;
+
+        &.slick-active {
+          @include transition;
+        }
+        @include sm {
+          margin: 0 20px 0 0;
+        }
+      }
+      @include sm {
+        margin-left: 0;
+      }
+      @include md {
+        margin-left: 0;
+      }
+      @include lg {
+        margin-left: 48px;
+      }
+    }
+  }
 }
 
 // Customer-review

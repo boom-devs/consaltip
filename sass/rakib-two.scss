@@ -126,7 +126,9 @@
     height: 100%;
     position: absolute;
     background-image: url("../../images/Pattern.png");
-    z-index: 3;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 .faq-area-global {
     background-color: $background;

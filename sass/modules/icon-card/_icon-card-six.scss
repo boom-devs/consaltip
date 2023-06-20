@@ -5,5 +5,10 @@
         @include lg {
             padding: 30px 16px;
         }
+        .content {
+            .desc {
+                padding: 0;
+            }
+        }
     }
 }

@@ -5618,7 +5618,7 @@ button.testimonial-arrow-btn:hover i {
 
 /* 15.Page Breadcrumb Section */
 .page-breadcrumb-sec {
-  padding: 211px 0 212px 0;
+  padding: 210px 0 212px 0;
   position: relative;
   z-index: 2;
   background-repeat: no-repeat;
@@ -5653,6 +5653,7 @@ button.testimonial-arrow-btn:hover i {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  padding: 0 491px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .page-heading h1 {
@@ -5669,13 +5670,15 @@ button.testimonial-arrow-btn:hover i {
 
 .breadcrumb-wrapper {
   padding: 0;
+  position: relative;
+  z-index: 5;
 }
 
 .breadcrumb-list {
   text-align: center;
 }
 .breadcrumb-list ul {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   padding-left: 0;
   display: flex;
   gap: 8px;
@@ -8686,6 +8689,39 @@ ul.children {
   color: #080f10;
   transition: all 0.5s ease-out;
 }
+.case-studies-home-three .home-three-case-studies-slider {
+  position: relative;
+}
+.case-studies-home-three .home-three-case-studies-slider .slick-list {
+  margin-left: 175px;
+}
+.case-studies-home-three .home-three-case-studies-slider .slick-list .slick-slide {
+  margin: 0 12px;
+  transition: all 0.5s ease-out;
+}
+.case-studies-home-three .home-three-case-studies-slider .slick-list .slick-slide.slick-active {
+  transition: all 0.5s ease-out;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .case-studies-home-three .home-three-case-studies-slider .slick-list .slick-slide {
+    margin: 0 20px 0 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .case-studies-home-three .home-three-case-studies-slider .slick-list {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .case-studies-home-three .home-three-case-studies-slider .slick-list {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .case-studies-home-three .home-three-case-studies-slider .slick-list {
+    margin-left: 48px;
+  }
+}
 
 .customer-review {
   padding: 120px 0;
@@ -8863,6 +8899,17 @@ ul.children {
   justify-content: center;
   margin-top: 48px;
 }
+@media (min-width: 1440px) {
+  .about-page-counter-area .counter-sketch {
+    position: absolute;
+    background-image: url("../images/title-sketch.png");
+    width: 200px;
+    height: 200px;
+    bottom: 246px;
+    right: 104px;
+    z-index: 2;
+  }
+}
 @media (max-width: 991px) {
   .about-page-counter-area {
     padding: 100px 0;
@@ -8963,6 +9010,21 @@ ul.children {
 .about-page-portfolio-area {
   background-color: #033f47;
   padding: 120px 0;
+  position: relative;
+}
+@media (min-width: 1440px) {
+  .about-page-portfolio-area .sketch {
+    position: absolute;
+    background-image: url("../images/title-sketch.png");
+    width: 200px;
+    height: 200px;
+    bottom: 9px;
+    left: 27px;
+    z-index: 2;
+  }
+}
+.about-page-portfolio-area .portfolio-card-arrow-btn {
+  display: none !important;
 }
 
 .about-page-team-area {
@@ -8983,7 +9045,7 @@ ul.children {
 }
 
 .about_team_member_container {
-  max-width: 1460px;
+  max-width: 1376px;
   margin: 0 auto;
   width: 100%;
 }
@@ -9028,7 +9090,7 @@ ul.children {
   }
 }
 .about_us_team_member button.team-card-arrow-btn.prev-btn {
-  right: 174px;
+  right: 124px;
 }
 @media (max-width: 767px) {
   .about_us_team_member button.team-card-arrow-btn.prev-btn {
@@ -9037,7 +9099,7 @@ ul.children {
   }
 }
 .about_us_team_member button.team-card-arrow-btn.next-btn {
-  right: 98px;
+  right: 50px;
 }
 @media (max-width: 767px) {
   .about_us_team_member button.team-card-arrow-btn.next-btn {
@@ -9068,6 +9130,7 @@ ul.children {
   gap: 8px;
   margin-top: 64px;
   list-style: none;
+  margin-bottom: 0;
 }
 .about_us_team_member .slick-dots li {
   line-height: 0;
