@@ -7685,6 +7685,7 @@ ul.children {
 .hero-image-wrapper {
   height: 100%;
   position: relative;
+  margin-top: 98px;
 }
 @media (min-width: 1440px) {
   .hero-image-wrapper .sketch {
@@ -7698,19 +7699,6 @@ ul.children {
     left: 0;
     transform: translate(-50%, -50%);
     z-index: 10;
-  }
-}
-@media (min-width: 1440px) {
-  .hero-image-wrapper .sketch-bottom {
-    background-image: url("../images/sketch-color.png  ");
-    width: 124px;
-    height: 124px;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transform: translate(-50%, -100%);
   }
 }
 .hero-image-wrapper .left-hero-image {
@@ -7735,6 +7723,20 @@ ul.children {
 }
 .hero-image-wrapper .right-hero-image {
   position: absolute;
+  right: 46px;
+}
+@media (min-width: 1440px) {
+  .hero-image-wrapper .right-hero-image .sketch-bottom {
+    background-image: url("../images/sketch-color.png  ");
+    width: 124px;
+    height: 124px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+  }
 }
 .hero-image-wrapper .right-hero-image:before {
   position: absolute;
@@ -8279,7 +8281,7 @@ ul.children {
 }
 @media (min-width: 1440px) {
   .about-page-faq-area .sketch {
-    background: url("../../images/sketch-color.png");
+    background: url("../images/sketch-color.png");
     position: absolute;
     left: 30px;
     bottom: 201px;

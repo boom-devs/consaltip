@@ -37,6 +37,7 @@
 .hero-image-wrapper {
   height: 100%;
   position: relative;
+  margin-top: 98px;
   .sketch {
     @include rwd(1440) {
       background-image: url("../images/shape/image-card-sketch.png");
@@ -51,19 +52,7 @@
       z-index: 10;
     }
   }
-  .sketch-bottom {
-    @include rwd(1440) {
-      background-image: url("../images/sketch-color.png  ");
-      width: 124px;
-      height: 124px;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      transform: translate(-50%, -100%);
-    }
-  }
+
   .left-hero-image {
     position: absolute;
     &:before {
@@ -86,6 +75,20 @@
   }
   .right-hero-image {
     position: absolute;
+    right: 46px;
+    .sketch-bottom {
+      @include rwd(1440) {
+        background-image: url("../images/sketch-color.png  ");
+        width: 124px;
+        height: 124px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(50%, 50%);
+      }
+    }
     &:before {
       position: absolute;
       width: 100%;

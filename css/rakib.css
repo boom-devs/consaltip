@@ -1360,6 +1360,9 @@ input:focus {
   flex-direction: column;
   gap: 16px;
 }
+.list-item-wrapper.style-two {
+  gap: 8px;
+}
 
 .list-item {
   display: flex;
@@ -1410,6 +1413,7 @@ input:focus {
 }
 .list-item.style-two .icon i {
   font-size: 12px;
+  line-height: 7px;
 }
 
 /* Service-page CSS */
