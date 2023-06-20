@@ -1667,46 +1667,4 @@ input:focus {
   border-radius: 8px;
   overflow: hidden;
   background: #2c3236;
-}
-
-.page-heading.style-two h1 {
-  font-size: 40px;
-  line-height: 54px;
-  margin-bottom: 0;
-}
-@media only screen and (min-width: 992px) {
-  .page-heading.style-two h1 {
-    font-size: 60px;
-    margin-bottom: 12px;
-    line-height: 70px;
-  }
-}
-
-.contact-title {
-  text-align: center;
-}
-.contact-title h2 {
-  font-size: 38px;
-  color: #033f47;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .contact-title h2 {
-    font-size: 48px;
-  }
-}
-
-.map iframe {
-  width: 100%;
-  height: 380px;
-  border-radius: 12px;
-}
-
-.service-image {
-  height: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-}
-.service-image img {
-  width: 100%;
-  height: 100%;
 }/*# sourceMappingURL=rakib.css.map */

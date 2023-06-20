@@ -5018,6 +5018,10 @@ button.testimonial-arrow-btn:hover i {
     line-height: 62px;
   }
 }
+.page-heading.style-two h1 {
+  font-size: 56px;
+  line-height: 120%;
+}
 
 .breadcrumb-wrapper {
   padding: 0;
