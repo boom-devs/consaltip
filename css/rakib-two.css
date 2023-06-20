@@ -545,6 +545,8 @@ input:focus {
   flex-direction: column;
   gap: 16px;
   position: relative;
+  width: 636px;
+  height: 112px;
   margin-top: 32px;
 }
 .portfolio-card .content .icon {
@@ -582,6 +584,14 @@ input:focus {
 .portfolio-card .content h4,
 .portfolio-card .content p {
   color: #ffffff;
+}
+.portfolio-card .content h4 {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.5s ease-out;
+}
+.portfolio-card .content h4:hover {
+  text-decoration-color: #ffffff;
 }
 .portfolio-card:hover {
   cursor: pointer;

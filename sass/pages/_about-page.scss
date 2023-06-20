@@ -78,6 +78,43 @@
 .about-page-faq-area {
   padding: 120px 0;
   background: $background;
+  position: relative;
+  .shape-one {
+    @include rwd(1440) {
+      background-image: url("../images/shape/Rectangle.png");
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      bottom: 165px;
+      left: 49px;
+    }
+  }
+  .shape-two {
+    @include rwd(1440) {
+      background-image: url("../images/shape/shape-2.png");
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 347px;
+      right: 48px;
+    }
+  }
+  .sketch {
+    @include rwd(1440) {
+      background: url("../../images/sketch-color.png");
+      position: absolute;
+      left: 30px;
+      bottom: 201px;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 169px;
+      height: 169px;
+    }
+  }
   @include sm {
     padding: 100px 0;
   }
@@ -117,7 +154,7 @@
   position: relative;
   .slick-list {
     .slick-slide {
-      margin: 0 32px;
+      margin: 0 12px;
       @include transition;
 
       &.slick-active {

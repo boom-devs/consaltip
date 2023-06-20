@@ -32,6 +32,8 @@
         flex-direction: column;
         gap: 16px;
         position: relative;
+        width: 636px;
+        height: 112px;
         margin-top: 32px;
         .icon {
             display: none;
@@ -64,6 +66,14 @@
         h4,
         p {
             color: $white;
+        }
+        h4 {
+            text-decoration: underline;
+            text-decoration-color: transparent;
+            @include transition;
+            &:hover {
+                text-decoration-color: $white;
+            }
         }
     }
     &:hover {

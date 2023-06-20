@@ -3805,6 +3805,7 @@ a.meanmenu-reveal {
 }
 .icon-card.style-three .content .desc {
   text-align: start;
+  padding: 0;
 }
 
 .video-popup-card {
@@ -4075,7 +4076,7 @@ a.meanmenu-reveal {
   display: flex;
   flex-direction: row;
   gap: 32px;
-  padding: 32px 30px;
+  padding: 32px 10px 30px 30px;
   background: #ffffff;
 }
 .testimonial-card .content-wrapper {
@@ -4637,6 +4638,15 @@ button.testimonial-arrow-btn:hover i {
   background: #f8f8f1;
   padding: 64px 38px 44px 36px;
 }
+.price-card-wrapper .price-card .card-title .sub-title {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #080f10;
+}
 .price-card-wrapper .price-card .price {
   margin-top: 40px;
 }
@@ -4739,16 +4749,16 @@ button.testimonial-arrow-btn:hover i {
   background: #033f47;
   padding: 16px 0;
 }
-.price-card-wrapper.active .price-card, .price-card-wrapper:hover .price-card {
+.price-card-wrapper.active .price-card {
   background: #e0f780;
 }
-.price-card-wrapper.active .price-card .divider:before, .price-card-wrapper:hover .price-card .divider:before {
+.price-card-wrapper.active .price-card .divider:before {
   background: #ffffff;
 }
-.price-card-wrapper.active .list-wrapper .price-list-item .icon, .price-card-wrapper:hover .list-wrapper .price-list-item .icon {
+.price-card-wrapper.active .list-wrapper .price-list-item .icon {
   background: #033f47;
 }
-.price-card-wrapper.active .list-wrapper .price-list-item .icon i, .price-card-wrapper:hover .list-wrapper .price-list-item .icon i {
+.price-card-wrapper.active .list-wrapper .price-list-item .icon i {
   color: #ffffff;
 }
 .price-card-wrapper.active .price-header {
@@ -4761,6 +4771,10 @@ button.testimonial-arrow-btn:hover i {
 .price-card-wrapper.active .list-wrapper .price-btn a {
   background: #033f47;
   color: #ffffff;
+}
+.price-card-wrapper.active .list-wrapper .price-btn:hover a {
+  background: transparent;
+  color: #080f10;
 }
 
 /* 8.Title Section */
@@ -6302,8 +6316,8 @@ ul.children {
 }
 .comment-respond .single-input-field .nice-select:after {
   color: #ffffff;
-  border-bottom: 2px solid #080f10;
-  border-right: 2px solid #080f10;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
   color: #ffffff;
   width: 10px;
   height: 10px;
@@ -7979,10 +7993,16 @@ ul.children {
 .home-three-contact-us .contact-image {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .home-three-contact-us .contact-image img {
   width: 100%;
   height: 100%;
+  transform: scale(1.01);
+  transition: all 0.5s ease-out;
+}
+.home-three-contact-us .contact-image:hover img {
+  transform: scale(1.03);
 }
 .home-three-contact-us .contact-image.style-two img {
   padding-top: 40px;
@@ -8072,6 +8092,43 @@ ul.children {
 .about-page-faq-area {
   padding: 120px 0;
   background: #f8f8f1;
+  position: relative;
+}
+@media (min-width: 1440px) {
+  .about-page-faq-area .shape-one {
+    background-image: url("../images/shape/Rectangle.png");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 165px;
+    left: 49px;
+  }
+}
+@media (min-width: 1440px) {
+  .about-page-faq-area .shape-two {
+    background-image: url("../images/shape/shape-2.png");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 347px;
+    right: 48px;
+  }
+}
+@media (min-width: 1440px) {
+  .about-page-faq-area .sketch {
+    background: url("../../images/sketch-color.png");
+    position: absolute;
+    left: 30px;
+    bottom: 201px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 169px;
+    height: 169px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .about-page-faq-area {
@@ -8117,7 +8174,7 @@ ul.children {
   position: relative;
 }
 .about_us_team_member .slick-list .slick-slide {
-  margin: 0 32px;
+  margin: 0 12px;
   transition: all 0.5s ease-out;
 }
 .about_us_team_member .slick-list .slick-slide.slick-active {

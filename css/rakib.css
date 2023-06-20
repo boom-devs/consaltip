@@ -509,7 +509,7 @@ input:focus {
   display: flex;
   flex-direction: row;
   gap: 32px;
-  padding: 32px 30px;
+  padding: 32px 10px 30px 30px;
   background: #ffffff;
 }
 .testimonial-card .content-wrapper {
@@ -744,6 +744,7 @@ input:focus {
 }
 .icon-card.style-three .content .desc {
   text-align: start;
+  padding: 0;
 }
 
 .icon-card.style-four {
@@ -890,6 +891,15 @@ input:focus {
   background: #f8f8f1;
   padding: 64px 38px 44px 36px;
 }
+.price-card-wrapper .price-card .card-title .sub-title {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #080f10;
+}
 .price-card-wrapper .price-card .price {
   margin-top: 40px;
 }
@@ -992,16 +1002,16 @@ input:focus {
   background: #033f47;
   padding: 16px 0;
 }
-.price-card-wrapper.active .price-card, .price-card-wrapper:hover .price-card {
+.price-card-wrapper.active .price-card {
   background: #e0f780;
 }
-.price-card-wrapper.active .price-card .divider:before, .price-card-wrapper:hover .price-card .divider:before {
+.price-card-wrapper.active .price-card .divider:before {
   background: #ffffff;
 }
-.price-card-wrapper.active .list-wrapper .price-list-item .icon, .price-card-wrapper:hover .list-wrapper .price-list-item .icon {
+.price-card-wrapper.active .list-wrapper .price-list-item .icon {
   background: #033f47;
 }
-.price-card-wrapper.active .list-wrapper .price-list-item .icon i, .price-card-wrapper:hover .list-wrapper .price-list-item .icon i {
+.price-card-wrapper.active .list-wrapper .price-list-item .icon i {
   color: #ffffff;
 }
 .price-card-wrapper.active .price-header {
@@ -1014,6 +1024,10 @@ input:focus {
 .price-card-wrapper.active .list-wrapper .price-btn a {
   background: #033f47;
   color: #ffffff;
+}
+.price-card-wrapper.active .list-wrapper .price-btn:hover a {
+  background: transparent;
+  color: #080f10;
 }
 
 .process-step {

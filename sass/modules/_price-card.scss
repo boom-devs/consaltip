@@ -106,6 +106,17 @@
     .price-card {
         background: $background;
         padding: 64px 38px 44px 36px;
+        .card-title {
+            .sub-title {
+                font-family: $heading-font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 140%;
+                letter-spacing: 0.02em;
+                color: $title-color;
+            }
+        }
         .price {
             margin-top: 40px;
             .price-heading {
@@ -207,8 +218,7 @@
         background: $icon-color;
         padding: 16px 0;
     }
-    &.active,
-    &:hover {
+    &.active {
         .price-card {
             background: $brand;
             .divider {
@@ -241,6 +251,12 @@
                 a {
                     background: $icon-color;
                     color: $white;
+                }
+                &:hover {
+                    a {
+                        background: transparent;
+                        color: $title-color;
+                    }
                 }
             }
         }
