@@ -215,7 +215,7 @@ input:focus {
       background: $brand;
       color: $title-color;
       border-color: $brand;
-      outline: none;
+      outline: transparent;
     }
   }
   &.style-four {

@@ -764,7 +764,7 @@ input:focus {
   background: #e0f780;
   color: #080f10;
   border-color: #e0f780;
-  outline: none;
+  outline: transparent;
 }
 .theme-btn.style-four,
 .wp-block-loginout a.style-four {
@@ -6743,7 +6743,7 @@ ul.children {
 }
 .footer.style-two .footer-bottom-menu ul li a:hover {
   color: #e0f780;
-  text-decoration: none;
+  text-decoration-color: #e0f780;
 }
 
 /* Team Member */
@@ -7643,6 +7643,31 @@ ul.children {
 
 .home-three-hero-section {
   padding-top: 209px;
+  position: relative;
+}
+@media (min-width: 1440px) {
+  .home-three-hero-section .shape-one {
+    background-image: url("../images/shape/Rectangle.png");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 49px;
+  }
+}
+@media (min-width: 1440px) {
+  .home-three-hero-section .shape-two {
+    background-image: url("../images/shape/shape-2.png");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 144px;
+    right: 48px;
+  }
 }
 
 .home-three-btn-wrapper {
@@ -7741,7 +7766,7 @@ ul.children {
 }
 @media (min-width: 1440px) {
   .home-three-client-logo-area .shape-one {
-    background-image: url("../images/shape/Rectangle.png");
+    background-image: url("../images/shape/rectangle.svg");
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
@@ -7857,7 +7882,7 @@ ul.children {
 }
 @media (min-width: 1440px) {
   .home-three-process .shape-one {
-    background-image: url("../images/shape/Rectangle.png");
+    background-image: url("../images/shape/rectangle.svg");
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
@@ -7964,6 +7989,34 @@ ul.children {
 .customer-review {
   padding: 120px 0;
   background-color: #f8f8f1;
+  position: relative;
+}
+@media (min-width: 1440px) {
+  .customer-review .shape-one {
+    background-image: url("../images/shape/rectangle.svg");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 232px;
+    left: 42px;
+    transform: rotate(90deg);
+    z-index: 1;
+  }
+}
+@media (min-width: 1440px) {
+  .customer-review .shape-two {
+    background-image: url("../images/shape/shape-2.svg");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 115px;
+    right: 58px;
+    z-index: 1;
+  }
 }
 .customer-review .home-three-review-slider .slick-list {
   overflow: visible;
@@ -7989,6 +8042,44 @@ ul.children {
 .home-three-contact-us {
   padding: 120px 0;
   background-color: #033f47;
+  position: relative;
+}
+@media (min-width: 1440px) {
+  .home-three-contact-us .shape-one {
+    background-image: url("../images/shape/shape-3.svg");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 323px;
+    left: 49px;
+    transform: rotate(90deg);
+  }
+}
+@media (min-width: 1440px) {
+  .home-three-contact-us .shape-two {
+    background-image: url("../images/shape/rectangle.svg");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 347px;
+    right: 48px;
+  }
+}
+@media (min-width: 1440px) {
+  .home-three-contact-us .sketch {
+    background: url("../images/shape/title-sketch.svg");
+    position: absolute;
+    right: 32px;
+    bottom: 79px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 169px;
+    height: 169px;
+  }
 }
 .home-three-contact-us .contact-image {
   width: 100%;
@@ -8006,6 +8097,24 @@ ul.children {
 }
 .home-three-contact-us .contact-image.style-two img {
   padding-top: 40px;
+}
+
+.home-three-blog {
+  position: relative;
+  padding: 120px 0;
+  background: #ffffff;
+}
+@media (min-width: 1440px) {
+  .home-three-blog .sketch {
+    background: url("../../images/sketch-color.png");
+    position: absolute;
+    right: 32px;
+    bottom: 79px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 169px;
+    height: 169px;
+  }
 }
 
 .page-breadcrumb-sec .sketch {
@@ -8102,7 +8211,7 @@ ul.children {
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    bottom: 165px;
+    top: 50%;
     left: 49px;
   }
 }
@@ -8157,6 +8266,19 @@ ul.children {
 
 .about-page-team-area {
   padding: 120px 0;
+  position: relative;
+}
+@media (min-width: 1440px) {
+  .about-page-team-area .sketch {
+    background: url("../../images/sketch-color.png");
+    position: absolute;
+    right: 32px;
+    bottom: 79px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 169px;
+    height: 169px;
+  }
 }
 
 .about_team_member_container {

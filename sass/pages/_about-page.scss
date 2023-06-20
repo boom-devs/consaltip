@@ -87,7 +87,7 @@
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
-      bottom: 165px;
+      top: 50%;
       left: 49px;
     }
   }
@@ -141,6 +141,19 @@
 // Team-member area
 .about-page-team-area {
   padding: 120px 0;
+  position: relative;
+  .sketch {
+    @include rwd(1440) {
+      background: url("../../images/sketch-color.png");
+      position: absolute;
+      right: 32px;
+      bottom: 79px;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 169px;
+      height: 169px;
+    }
+  }
 }
 .about_team_member_container {
   max-width: 1460px;

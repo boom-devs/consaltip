@@ -244,7 +244,7 @@ input:focus {
   background: #e0f780;
   color: #080f10;
   border-color: #e0f780;
-  outline: none;
+  outline: transparent;
 }
 .theme-btn.style-four,
 .wp-block-loginout a.style-four {

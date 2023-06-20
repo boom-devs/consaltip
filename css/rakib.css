@@ -245,7 +245,7 @@ input:focus {
   background: #e0f780;
   color: #080f10;
   border-color: #e0f780;
-  outline: none;
+  outline: transparent;
 }
 .theme-btn.style-four,
 .wp-block-loginout a.style-four {
@@ -599,7 +599,7 @@ input:focus {
 }
 .footer.style-two .footer-bottom-menu ul li a:hover {
   color: #e0f780;
-  text-decoration: none;
+  text-decoration-color: #e0f780;
 }
 
 .icon-card {
@@ -1530,8 +1530,8 @@ input:focus {
 .price-card-section .sketch {
   background: url("../../images/sketch-color.png");
   position: absolute;
-  left: 30px;
-  bottom: 201px;
+  right: 93px;
+  bottom: 93px;
   background-position: center;
   background-repeat: no-repeat;
   width: 169px;
