@@ -4978,6 +4978,9 @@ button.testimonial-arrow-btn:hover i {
     padding: 160px 5px;
   }
 }
+.page-breadcrumb-sec.style-two {
+  padding: 235px 0;
+}
 
 .page-overlay {
   background: linear-gradient(0deg, rgba(3, 63, 71, 0.7), rgba(3, 63, 71, 0.7));

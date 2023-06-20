@@ -410,6 +410,9 @@ input:focus {
   height: 100%;
   position: absolute;
   background-image: url("../../images/Pattern.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 1;
   top: 0;
   left: 0;
@@ -686,10 +689,9 @@ input:focus {
 .image-card {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 64px;
 }
 .image-card .content {
-  padding-right: 106px;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -820,9 +822,6 @@ input:focus {
 
 .image-card.style-two {
   flex-direction: row-reverse;
-}
-.image-card.style-two .content {
-  padding-right: 30px;
 }
 .image-card.style-two .content .title {
   font-size: 43px;

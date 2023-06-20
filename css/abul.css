@@ -5484,10 +5484,9 @@ button.testimonial-arrow-btn:hover i {
 .image-card {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 64px;
 }
 .image-card .content {
-  padding-right: 106px;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -5629,6 +5628,9 @@ button.testimonial-arrow-btn:hover i {
   .page-breadcrumb-sec {
     padding: 160px 5px;
   }
+}
+.page-breadcrumb-sec.style-two {
+  padding: 235px 0;
 }
 
 .page-overlay {

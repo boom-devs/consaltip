@@ -60,29 +60,8 @@
         }
     }
 }
-// Sketch
-.image-card-section {
-    position: relative;
-    .sketch {
-        background: url("../../images/sketch-color.png");
-        position: absolute;
-        right: 94px;
-        bottom: 94px;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 169px;
-        height: 169px;
-        @include sm {
-            display: none;
-        }
-        @include md {
-            display: none;
-        }
-        @include lg {
-            display: none;
-        }
-    }
-}
+
+// price-section
 .price-card-section {
     position: relative;
     padding: 120px 0;

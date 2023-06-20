@@ -1494,35 +1494,6 @@ input:focus {
   }
 }
 
-.image-card-section {
-  position: relative;
-}
-.image-card-section .sketch {
-  background: url("../../images/sketch-color.png");
-  position: absolute;
-  right: 94px;
-  bottom: 94px;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 169px;
-  height: 169px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .image-card-section .sketch {
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .image-card-section .sketch {
-    display: none;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .image-card-section .sketch {
-    display: none;
-  }
-}
-
 .price-card-section {
   position: relative;
   padding: 120px 0;
