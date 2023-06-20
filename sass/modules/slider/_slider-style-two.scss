@@ -37,22 +37,6 @@
           @include sm {
             text-align: center;
           }
-          .slider-btn-wrapper {
-            .slider-btn {
-              border-color: $text-color;
-              color: $title-color;
-              &:hover {
-                border-color: transparent;
-              }
-              &.active {
-                &:hover {
-                  background: transparent;
-                  color: $title-color;
-                  border-color: $text-color;
-                }
-              }
-            }
-          }
 
           .slider-short-title {
             font-family: $heading-font;

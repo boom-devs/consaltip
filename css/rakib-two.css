@@ -19,7 +19,7 @@ p {
   margin: 0;
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  line-height: 27px;
+  line-height: 170%;
   font-weight: 400;
 }
 
@@ -1596,18 +1596,6 @@ input:focus {
   .slider-area.style-two .slider-wrapper .slider-content-wrapper .slider-content {
     text-align: center;
   }
-}
-.slider-area.style-two .slider-wrapper .slider-content-wrapper .slider-content .slider-btn-wrapper .slider-btn {
-  border-color: #575959;
-  color: #080f10;
-}
-.slider-area.style-two .slider-wrapper .slider-content-wrapper .slider-content .slider-btn-wrapper .slider-btn:hover {
-  border-color: transparent;
-}
-.slider-area.style-two .slider-wrapper .slider-content-wrapper .slider-content .slider-btn-wrapper .slider-btn.active:hover {
-  background: transparent;
-  color: #080f10;
-  border-color: #575959;
 }
 .slider-area.style-two .slider-wrapper .slider-content-wrapper .slider-content .slider-short-title {
   font-family: "Outfit", sans-serif;

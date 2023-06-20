@@ -69,12 +69,15 @@
     .copyright-text {
       p {
         color: $white;
+        font-size: 14px;
       }
     }
     .footer-bottom-menu ul li a {
       color: $white;
+      font-size: 14px;
       &:hover {
         color: $brand;
+        text-decoration: none;
       }
     }
   }
