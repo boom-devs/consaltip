@@ -1101,7 +1101,7 @@ input:focus {
 }
 
 .project-info-widget-wrapper {
-  padding-right: 200px;
+  padding-right: 218px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .project-info-widget-wrapper {
@@ -1167,7 +1167,7 @@ input:focus {
   color: #080f10;
 }
 .project-banner.style-two {
-  padding: 5px;
+  padding-right: 30px;
 }
 .project-banner.style-two p {
   font-size: 24px;
