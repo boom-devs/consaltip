@@ -3209,7 +3209,7 @@ html {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .header-sec {
-    padding: 0 20px;
+    padding: 24px 20px;
   }
 }
 
@@ -3519,7 +3519,7 @@ a.meanmenu-reveal {
 
 .mean-container .mean-bar {
   width: 100%;
-  position: absolute;
+  position: relative;
   z-index: 999999;
 }
 
@@ -3556,9 +3556,7 @@ a.meanmenu-reveal {
   float: left;
   width: 100%;
   background: #fff;
-  overflow-y: scroll;
   overflow-x: hidden;
-  max-height: 100vh;
 }
 
 .mean-container .mean-nav ul {
@@ -3566,6 +3564,7 @@ a.meanmenu-reveal {
   margin: 0;
   width: 100%;
   list-style-type: none;
+  display: block;
 }
 
 .mean-container .mean-nav ul li {
@@ -3659,7 +3658,8 @@ a.meanmenu-reveal {
   margin: 0;
 }
 
-.mean-container .mean-bar, .mean-container .mean-bar * {
+.mean-container .mean-bar,
+.mean-container .mean-bar * {
   box-sizing: content-box;
 }
 
@@ -5587,6 +5587,26 @@ button.testimonial-arrow-btn:hover i {
 .page-sidebar {
   margin-bottom: 50px;
   padding-left: 18px;
+}
+
+.body-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-out;
+}
+.body-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.body-overlay:hover {
+  cursor: pointer;
 }
 
 /* Widget */
@@ -7658,7 +7678,7 @@ ul.children {
 @media (min-width: 1440px) {
   .home-two-blog-area .sketch {
     position: absolute;
-    background-image: url("../../images/sketch-color.png");
+    background-image: url("../images/sketch-color.png");
     width: 188px;
     height: 188px;
     bottom: 40px;
@@ -7699,6 +7719,10 @@ ul.children {
   display: flex;
   justify-content: center;
   gap: 16px;
+}
+
+.mean-container a.meanmenu-reveal {
+  display: none !important;
 }
 
 .hero-image-wrapper {

@@ -53,6 +53,36 @@
             return false;
         });
 
+         /*
+       Jquery Mobile Menu
+       ============================*/
+        // $('#main-menu').meanmenu({
+        //     meanMenuContainer: '.mobile-nav-menu',
+        //     meanScreenWidth: "991",
+        //     meanExpand: ['<i class="fal fa-plus"></i>'],
+        // });
+
+
+        // Mobile toggle button
+         $(".mobile-menu-toggle-btn").on("click", function () {
+            $(".menu-sidebar-area").addClass("active");
+            $(".body-overlay").addClass("active");
+            // $(".mean-nav :first-child ul").css("display", "block");
+
+        });
+        $(".menu-sidebar-close-btn").on("click", function () {
+            $(".menu-sidebar-area").removeClass("active");
+            $(".body-overlay").removeClass("active");
+        });
+
+         /*
+       Jquery Body Overlay
+       ============================*/
+        $(".body-overlay").on("click", function () {
+            $(".menu-sidebar-area").removeClass("active");
+            $(".body-overlay").removeClass("active");
+        });
+
 
         /*
         Jquery Accordion

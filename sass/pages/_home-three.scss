@@ -33,6 +33,11 @@
   gap: 16px;
 }
 
+// Mobile button
+.mean-container a.meanmenu-reveal {
+  display: none !important;
+}
+
 // Hero section images
 .hero-image-wrapper {
   height: 100%;
