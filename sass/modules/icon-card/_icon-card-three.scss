@@ -22,5 +22,12 @@
                 padding: 0;
             }
         }
+        @include sm {
+            flex-direction: column;
+            .icon {
+                width: 80px;
+                height: 80px;
+            }
+        }
     }
 }

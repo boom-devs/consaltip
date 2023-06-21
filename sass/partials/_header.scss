@@ -165,6 +165,12 @@
   @include sm {
     padding: 24px 20px;
   }
+  @include md {
+    padding: 24px 48px;
+  }
+  @include lg {
+    padding: 24px 48px;
+  }
 }
 
 .main-menu {
@@ -290,6 +296,9 @@
           &:before {
             border-color: $brand;
           }
+        }
+        @include lg {
+          padding: 18px 24px;
         }
       }
       &:hover {

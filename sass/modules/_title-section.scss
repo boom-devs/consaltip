@@ -4,7 +4,9 @@
   flex-direction: column;
   z-index: 2;
   position: relative;
-
+  @include sm {
+    gap: 48px;
+  }
   .short-title {
     font-size: 24px;
     font-weight: 700;
@@ -21,12 +23,18 @@
     line-height: 68px;
     letter-spacing: 0.02em;
     @include sm {
-      font-size: 32px;
-      line-height: 42px;
+      font-size: 38px;
+      line-height: 52px;
+      br {
+        display: none;
+      }
     }
     @include md {
       font-size: 36px;
       line-height: 42px;
+      br {
+        display: none;
+      }
     }
     @include lg {
       font-size: 46px;
@@ -42,6 +50,10 @@
     margin-bottom: 0;
     text-align: center;
     @include sm {
+      font-size: 16px;
+      line-height: 28px;
+    }
+    @include md {
       font-size: 16px;
       line-height: 28px;
     }
@@ -156,5 +168,8 @@
       background-size: cover;
       background-position: center;
     }
+  }
+  @include sm {
+    display: unset;
   }
 }

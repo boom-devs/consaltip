@@ -661,17 +661,25 @@ input:focus {
   text-align: center;
   padding: 0 18px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .icon-card .content .desc {
+    padding: 0;
+    font-size: 14px;
+  }
+}
 .icon-card:hover .icon {
   background: #e0f780;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .icon-card {
     margin-top: 24px;
+    padding: 48px 12px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .icon-card {
     margin-top: 24px;
+    padding: 48px 12px;
   }
 }
 
@@ -744,6 +752,15 @@ input:focus {
 .icon-card.style-three .content .desc {
   text-align: start;
   padding: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .icon-card.style-three {
+    flex-direction: column;
+  }
+  .icon-card.style-three .icon {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .icon-card.style-four {

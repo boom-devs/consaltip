@@ -58,22 +58,23 @@
             color: $text-color;
             text-align: center;
             padding: 0 18px;
+            @include sm {
+                padding: 0;
+                font-size: 14px;
+            }
         }
     }
     &:hover {
         .icon {
             background: $brand;
-            svg {
-                path {
-                    // fill: $white;
-                }
-            }
         }
     }
     @include sm {
         margin-top: 24px;
+        padding: 48px 12px;
     }
     @include md {
         margin-top: 24px;
+        padding: 48px 12px;
     }
 }

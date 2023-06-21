@@ -331,6 +331,12 @@ input:focus {
   color: #080f10;
   border-color: transparent;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-btn-wrapper .slider-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
 .slider-btn-wrapper.style-two {
   justify-content: center;
 }
@@ -355,6 +361,12 @@ input:focus {
 
 .mt-64 {
   margin-top: 64px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .mt-lg-64 {
+    margin-top: 64px;
+  }
 }
 
 .mt-48 {
