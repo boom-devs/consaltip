@@ -162,6 +162,9 @@
     box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.03);
     // background: #fff;
   }
+  @include sm {
+    padding: 0 20px;
+  }
 }
 
 .main-menu {

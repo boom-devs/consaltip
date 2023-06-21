@@ -201,8 +201,7 @@ input:focus {
     }
   }
   &.style-three {
-    // border: 1px solid #575959;
-    outline: 1px solid #575959;
+    border: 1px solid $text-color;
     color: $title-color;
     background: transparent;
     padding: 16px 24px;
@@ -214,8 +213,7 @@ input:focus {
     &:hover {
       background: $brand;
       color: $title-color;
-      border-color: $brand;
-      outline: transparent;
+      border-color: transparent;
     }
   }
   &.style-four {

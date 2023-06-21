@@ -229,7 +229,7 @@ input:focus {
 }
 .theme-btn.style-three,
 .wp-block-loginout a.style-three {
-  outline: 1px solid #575959;
+  border: 1px solid #575959;
   color: #080f10;
   background: transparent;
   padding: 16px 24px;
@@ -244,8 +244,7 @@ input:focus {
 .wp-block-loginout a.style-three:hover {
   background: #e0f780;
   color: #080f10;
-  border-color: #e0f780;
-  outline: transparent;
+  border-color: transparent;
 }
 .theme-btn.style-four,
 .wp-block-loginout a.style-four {

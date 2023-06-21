@@ -748,7 +748,7 @@ input:focus {
 }
 .theme-btn.style-three,
 .wp-block-loginout a.style-three {
-  outline: 1px solid #575959;
+  border: 1px solid #575959;
   color: #080f10;
   background: transparent;
   padding: 16px 24px;
@@ -763,8 +763,7 @@ input:focus {
 .wp-block-loginout a.style-three:hover {
   background: #e0f780;
   color: #080f10;
-  border-color: #e0f780;
-  outline: transparent;
+  border-color: transparent;
 }
 .theme-btn.style-four,
 .wp-block-loginout a.style-four {
@@ -3207,6 +3206,11 @@ html {
   position: fixed;
   z-index: 9999;
   box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.03);
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .header-sec {
+    padding: 0 20px;
+  }
 }
 
 .main-menu ul {
@@ -7371,6 +7375,7 @@ ul.children {
   padding: 0 30px;
   font-size: 18px;
   width: 100%;
+  border-radius: 4px;
 }
 .footer.style-two .subscribe-form-wrapper p {
   color: #c7cdda;
@@ -8580,7 +8585,7 @@ ul.children {
   left: 0;
 }
 .home-three-service .home-three-service-slider {
-  margin-left: 200px;
+  margin-left: 312px;
 }
 .home-three-service .home-three-service-slider .slick-slide {
   margin: 0 12px;
@@ -8670,7 +8675,7 @@ ul.children {
   }
 }
 .case-studies-home-three button.portfolio-card-arrow-btn.prev-btn {
-  left: 144px;
+  left: 280px;
 }
 .case-studies-home-three button.portfolio-card-arrow-btn.next-btn {
   right: 30px;
@@ -8704,7 +8709,7 @@ ul.children {
   position: relative;
 }
 .case-studies-home-three .home-three-case-studies-slider .slick-list {
-  margin-left: 175px;
+  margin-left: 312px;
 }
 .case-studies-home-three .home-three-case-studies-slider .slick-list .slick-slide {
   margin: 0 12px;
@@ -9101,7 +9106,7 @@ ul.children {
   }
 }
 .about_us_team_member button.team-card-arrow-btn.prev-btn {
-  right: 124px;
+  right: 88px;
 }
 @media (max-width: 767px) {
   .about_us_team_member button.team-card-arrow-btn.prev-btn {
@@ -9110,7 +9115,7 @@ ul.children {
   }
 }
 .about_us_team_member button.team-card-arrow-btn.next-btn {
-  right: 50px;
+  right: 12px;
 }
 @media (max-width: 767px) {
   .about_us_team_member button.team-card-arrow-btn.next-btn {

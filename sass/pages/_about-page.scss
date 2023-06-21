@@ -222,7 +222,7 @@
     }
 
     &.prev-btn {
-      right: 124px;
+      right: 88px;
 
       @include rmaxwd(767) {
         right: unset;
@@ -230,7 +230,7 @@
       }
     }
     &.next-btn {
-      right: 50px;
+      right: 12px;
       @include rmaxwd(767) {
         right: 30px;
         left: unset;
