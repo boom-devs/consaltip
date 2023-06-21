@@ -1035,10 +1035,16 @@ input:focus {
 .process-step .image {
   width: 50%;
   position: relative;
+  overflow: hidden;
 }
 .process-step .image img {
   width: 100%;
   height: 100%;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+}
+.process-step .image img:hover {
+  transform: scale(1.03);
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .process-step .image {
@@ -1061,6 +1067,9 @@ input:focus {
     top: unset;
     transform: translate(-63%, 15%);
   }
+}
+.process-step .image:hover img {
+  transform: scale(1.03);
 }
 .process-step .content-wrapper {
   width: 50%;

@@ -1,7 +1,7 @@
 // page-breadcrumb-sec
 .page-breadcrumb-sec {
   .sketch {
-    background: url("../../images/title-sketch.png");
+    background: url("../images/title-sketch.png");
     position: absolute;
     top: 153px;
     left: 11px;
@@ -64,7 +64,7 @@
   padding: 120px 0;
   position: relative;
   .sketch {
-    background: url("../../images/sketch-color.png");
+    background: url("../images/sketch-color.png");
     position: absolute;
     left: 40px;
     bottom: 48px;
@@ -169,7 +169,7 @@
   position: relative;
   .sketch {
     @include rwd(1440) {
-      background: url("../../images/sketch-color.png");
+      background: url("../images/sketch-color.png");
       position: absolute;
       right: 32px;
       bottom: 79px;
@@ -216,6 +216,7 @@
     cursor: pointer;
     top: -164px;
     overflow: hidden;
+    @include transition;
     @include rmaxwd(991) {
       top: unset;
       bottom: -80px;
@@ -247,7 +248,7 @@
     }
     &:hover {
       background: $brand;
-
+      border-color: transparent;
       i {
         color: $title-color;
         @include transition;

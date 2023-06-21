@@ -490,7 +490,7 @@
     img {
       width: 100%;
       height: 100%;
-      transform: scale(1.01);
+      transform: scale(1);
       @include transition;
     }
     &:hover {
@@ -513,7 +513,7 @@
   background: $white;
   .sketch {
     @include rwd(1440) {
-      background: url("../../images/sketch-color.png");
+      background: url("../images/sketch-color.png");
       position: absolute;
       right: 32px;
       bottom: 79px;

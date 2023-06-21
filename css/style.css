@@ -3985,10 +3985,16 @@ a.meanmenu-reveal {
 .process-step .image {
   width: 50%;
   position: relative;
+  overflow: hidden;
 }
 .process-step .image img {
   width: 100%;
   height: 100%;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+}
+.process-step .image img:hover {
+  transform: scale(1.03);
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .process-step .image {
@@ -4011,6 +4017,9 @@ a.meanmenu-reveal {
     top: unset;
     transform: translate(-63%, 15%);
   }
+}
+.process-step .image:hover img {
+  transform: scale(1.03);
 }
 .process-step .content-wrapper {
   width: 50%;
@@ -7515,9 +7524,10 @@ ul.children {
 }
 
 .process-slider-container {
-  padding: 20px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1200px) {
   .process-slider-container {
     max-width: 1420px;
     width: 100%;
@@ -8138,7 +8148,7 @@ ul.children {
 .home-three-contact-us .contact-image img {
   width: 100%;
   height: 100%;
-  transform: scale(1.01);
+  transform: scale(1);
   transition: all 0.5s ease-out;
 }
 .home-three-contact-us .contact-image:hover img {
@@ -8155,7 +8165,7 @@ ul.children {
 }
 @media (min-width: 1440px) {
   .home-three-blog .sketch {
-    background: url("../../images/sketch-color.png");
+    background: url("../images/sketch-color.png");
     position: absolute;
     right: 32px;
     bottom: 79px;
@@ -8167,7 +8177,7 @@ ul.children {
 }
 
 .page-breadcrumb-sec .sketch {
-  background: url("../../images/title-sketch.png");
+  background: url("../images/title-sketch.png");
   position: absolute;
   top: 153px;
   left: 11px;
@@ -8233,7 +8243,7 @@ ul.children {
   position: relative;
 }
 .about-us-our-service-area .sketch {
-  background: url("../../images/sketch-color.png");
+  background: url("../images/sketch-color.png");
   position: absolute;
   left: 40px;
   bottom: 48px;
@@ -8345,7 +8355,7 @@ ul.children {
 }
 @media (min-width: 1440px) {
   .about-page-team-area .sketch {
-    background: url("../../images/sketch-color.png");
+    background: url("../images/sketch-color.png");
     position: absolute;
     right: 32px;
     bottom: 79px;
@@ -8394,6 +8404,7 @@ ul.children {
   cursor: pointer;
   top: -164px;
   overflow: hidden;
+  transition: all 0.5s ease-out;
 }
 @media (max-width: 991px) {
   .about_us_team_member button.team-card-arrow-btn {
@@ -8430,6 +8441,7 @@ ul.children {
 }
 .about_us_team_member button.team-card-arrow-btn:hover {
   background: #e0f780;
+  border-color: transparent;
 }
 .about_us_team_member button.team-card-arrow-btn:hover i {
   color: #080f10;

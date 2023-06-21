@@ -408,7 +408,7 @@ input:focus {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("../../images/Pattern.png");
+  background-image: url("../images/Pattern.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -423,7 +423,7 @@ input:focus {
   position: relative;
 }
 .faq-area-global .faq-sketch {
-  background: url("../../images/sketch-color.png");
+  background: url("../images/sketch-color.png");
   position: absolute;
   bottom: 201px;
   left: 30px;
@@ -433,7 +433,7 @@ input:focus {
   height: 169px;
 }
 .faq-area-global .shape-one {
-  background: url("../../images/shape/Rectangle.png");
+  background: url("../images/shape/Rectangle.png");
   position: absolute;
   left: 42px;
   bottom: 507px;
@@ -458,7 +458,7 @@ input:focus {
   }
 }
 .faq-area-global .shape-two {
-  background: url("../../images/shape/shape-2.png");
+  background: url("../images/shape/shape-2.png");
   position: absolute;
   right: 55px;
   top: 201px;
@@ -530,7 +530,7 @@ input:focus {
 .portfolio-card .portfolio-image img {
   width: 100%;
   height: 100%;
-  transform: scale(1.01);
+  transform: scale(1);
   transition: all 0.5s ease-out;
 }
 .portfolio-card .portfolio-image:after {
@@ -1069,7 +1069,7 @@ input:focus {
   }
 }
 .project-page-project-sec .sketch {
-  background: url("../../images/sketch-color.png");
+  background: url("../images/sketch-color.png");
   position: absolute;
   left: 83px;
   top: 84px;
@@ -1300,7 +1300,7 @@ input:focus {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url("../../images/Pattern.png");
+  background-image: url("../images/Pattern.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

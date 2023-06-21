@@ -216,8 +216,10 @@
 }
 // process-step slider
 .process-slider-container {
-  padding: 20px;
-  @include xl {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include rwd(1200) {
     max-width: calc(1320px + 100px);
     width: 100%;
     margin: 0 auto;

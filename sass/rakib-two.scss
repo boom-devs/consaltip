@@ -125,7 +125,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url("../../images/Pattern.png");
+    background-image: url("../images/Pattern.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -138,7 +138,7 @@
     padding: 120px 0;
     position: relative;
     .faq-sketch {
-        background: url("../../images/sketch-color.png");
+        background: url("../images/sketch-color.png");
         position: absolute;
         bottom: 201px;
         left: 30px;
@@ -148,7 +148,7 @@
         height: 169px;
     }
     .shape-one {
-        background: url("../../images/shape/Rectangle.png");
+        background: url("../images/shape/Rectangle.png");
         position: absolute;
         left: 42px;
         bottom: 507px;
@@ -167,7 +167,7 @@
         }
     }
     .shape-two {
-        background: url("../../images/shape/shape-2.png");
+        background: url("../images/shape/shape-2.png");
         position: absolute;
         right: 55px;
         top: 201px;
