@@ -5,6 +5,7 @@
   .post-image {
     overflow: hidden;
     img {
+      width: 100%;
       transform: scale(1.01);
       @include transition;
     }

@@ -254,6 +254,12 @@ input:focus {
   background: transparent;
   border-color: #ffffff;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .theme-btn.style-four,
+  .wp-block-loginout a.style-four {
+    padding: 10px 20px;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .theme-btn,
   .wp-block-loginout a {

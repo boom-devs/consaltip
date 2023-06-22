@@ -774,6 +774,12 @@ input:focus {
   background: transparent;
   border-color: #ffffff;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .theme-btn.style-four,
+  .wp-block-loginout a.style-four {
+    padding: 10px 20px;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .theme-btn,
   .wp-block-loginout a {
@@ -4475,6 +4481,16 @@ a.meanmenu-reveal {
   line-height: 31px;
   color: #575959;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-card .content-wrapper .content .text {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-card .content-wrapper .content .text {
+    font-size: 14px;
+  }
+}
 .testimonial-card .content-wrapper .meta-user .user-info {
   display: flex;
   align-items: center;
@@ -4815,7 +4831,7 @@ button.testimonial-arrow-btn:hover i {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .accordion-wrapper .accordion-list-item .accordion-head .accordion-title {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
   }
 }
@@ -4844,12 +4860,27 @@ button.testimonial-arrow-btn:hover i {
   transform: translate(-50%, -50%);
   font-family: "icomoon";
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .accordion-wrapper .accordion-list-item .accordion-head {
+    gap: 8px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accordion-wrapper .accordion-list-item .accordion-head {
+    gap: 8px;
+  }
+}
 .accordion-wrapper .accordion-list-item .accordion-item-body {
   color: #575959;
   margin-top: 16px;
   padding-top: 16px;
   opacity: 0;
   overflow: hidden;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .accordion-wrapper .accordion-list-item .accordion-item-body p {
+    font-size: 14px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .accordion-wrapper .accordion-list-item {
@@ -4920,6 +4951,7 @@ button.testimonial-arrow-btn:hover i {
   overflow: hidden;
 }
 .post-card-one .post-image img {
+  width: 100%;
   transform: scale(1.01);
   transition: all 0.5s ease-out;
 }
@@ -5306,7 +5338,12 @@ button.testimonial-arrow-btn:hover i {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .section-title {
-    gap: 48px;
+    gap: 28px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title {
+    gap: 28px;
   }
 }
 .section-title .short-title {
@@ -5450,6 +5487,16 @@ button.testimonial-arrow-btn:hover i {
   color: #575959;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .section-title.style-three {
+    flex-direction: column;
+    justify-content: start;
+    gap: 36px;
+  }
+  .section-title.style-three .title {
+    text-align: start;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-title.style-three {
     flex-direction: column;
     justify-content: start;
@@ -7469,10 +7516,20 @@ ul.children {
 .footer .subscribe-area .subscribe-inner-area .content-wrapper .subscribe-title {
   color: #ffffff;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer .subscribe-area .subscribe-inner-area .content-wrapper .subscribe-title {
+    font-size: 46px;
+  }
+}
 .footer .subscribe-area .subscribe-inner-area .content-wrapper .text {
   font-size: 20px;
   line-height: 34px;
   color: #ffffff;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer .subscribe-area .subscribe-inner-area .content-wrapper .text {
+    font-size: 16px;
+  }
 }
 .footer .subscribe-area .subscribe-inner-area .subscribe-form-widget .mc4wp-form-fields {
   display: flex;
@@ -7488,6 +7545,31 @@ ul.children {
   width: 100%;
   border-radius: 4px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer .subscribe-area .subscribe-inner-area .subscribe-form-widget .single-field input {
+    height: 56px;
+    padding: 0px 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer .subscribe-area .subscribe-inner-area .subscribe-form-widget .single-field input {
+    height: 56px;
+    padding: 0px 12px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer .subscribe-area .subscribe-inner-area {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer .subscribe-area .subscribe-inner-area {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
 .footer.style-two .subscribe-form-wrapper p {
   color: #c7cdda;
   margin-bottom: 35px;
@@ -8719,6 +8801,11 @@ ul.children {
     padding-right: 0;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-three-about-us .home-three-about-image {
+    padding-right: 0;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .home-three-about-us {
     padding: 80px 0;
@@ -8766,6 +8853,11 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .home-three-service .home-three-service-slider {
     margin-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-three-service .home-three-service-slider {
+    margin-left: 12px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -8872,6 +8964,12 @@ ul.children {
   left: 280px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .case-studies-home-three button.portfolio-card-arrow-btn.prev-btn {
+    left: 0;
+    top: -32px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .case-studies-home-three button.portfolio-card-arrow-btn.prev-btn {
     left: 0;
   }
@@ -9000,6 +9098,16 @@ ul.children {
 .customer-review .home-three-review-slider .home-three-review-arrow-btn {
   display: none !important;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .customer-review {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .customer-review {
+    padding: 80px 0;
+  }
+}
 
 .home-three-contact-us {
   padding: 120px 0;
@@ -9060,6 +9168,21 @@ ul.children {
 .home-three-contact-us .contact-image.style-two img {
   padding-top: 40px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-three-contact-us .contact-image.style-two img {
+    padding-top: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-three-contact-us {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-three-contact-us {
+    padding: 80px 0;
+  }
+}
 
 .home-three-blog {
   position: relative;
@@ -9076,6 +9199,16 @@ ul.children {
     background-repeat: no-repeat;
     width: 169px;
     height: 169px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-three-blog {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-three-blog {
+    padding: 80px 0;
   }
 }
 
@@ -9214,12 +9347,12 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .about-page-faq-area {
-    padding: 100px 0;
+    padding: 80px 0;
   }
 }
 @media (max-width: 991px) {
   .about-page-faq-area {
-    padding: 100px 0;
+    padding: 80px 0;
   }
 }
 .about-page-faq-area .video-popup-card.style-three {
@@ -9268,11 +9401,33 @@ ul.children {
     height: 169px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-page-team-area {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-page-team-area {
+    padding: 80px 0;
+  }
+}
 
 .about_team_member_container {
   max-width: 1376px;
   margin: 0 auto;
   width: 100%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about_team_member_container {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about_team_member_container {
+    max-width: 100%;
+    padding: 0 12px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about_team_member_container {
@@ -9309,19 +9464,25 @@ ul.children {
   overflow: hidden;
   transition: all 0.5s ease-out;
 }
-@media (max-width: 991px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about_us_team_member button.team-card-arrow-btn {
+    bottom: 28px;
+    top: unset;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .about_us_team_member button.team-card-arrow-btn {
     top: unset;
-    bottom: -80px;
+    bottom: 28px;
   }
 }
 .about_us_team_member button.team-card-arrow-btn.prev-btn {
   right: 88px;
 }
-@media (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .about_us_team_member button.team-card-arrow-btn.prev-btn {
     right: unset;
-    left: 30px;
+    left: 12px;
   }
 }
 .about_us_team_member button.team-card-arrow-btn.next-btn {
@@ -9372,6 +9533,11 @@ ul.children {
 }
 .about_us_team_member .slick-dots li.slick-active button {
   background: #080f10;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about_us_team_member .slick-dots {
+    margin-top: 40px;
+  }
 }
 
 .nav-tab {

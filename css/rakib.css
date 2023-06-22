@@ -255,6 +255,12 @@ input:focus {
   background: transparent;
   border-color: #ffffff;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .theme-btn.style-four,
+  .wp-block-loginout a.style-four {
+    padding: 10px 20px;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .theme-btn,
   .wp-block-loginout a {
@@ -526,6 +532,16 @@ input:focus {
   line-height: 31px;
   color: #575959;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-card .content-wrapper .content .text {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-card .content-wrapper .content .text {
+    font-size: 14px;
+  }
+}
 .testimonial-card .content-wrapper .meta-user .user-info {
   display: flex;
   align-items: center;
@@ -787,6 +803,11 @@ input:focus {
 }
 .icon-card.style-four:hover .icon {
   background: #e0f780 !important;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .icon-card.style-four {
+    padding: 48px 12px;
+  }
 }
 
 .price-card-switch {

@@ -237,6 +237,9 @@
     @include sm {
       padding-right: 0;
     }
+    @include md {
+      padding-right: 0;
+    }
   }
 
   @include sm {
@@ -284,6 +287,9 @@
     }
     @include sm {
       margin-left: 0;
+    }
+    @include md {
+      margin-left: 12px;
     }
   }
   @include sm {
@@ -384,6 +390,10 @@
     &.prev-btn {
       left: 280px;
       @include sm {
+        left: 0;
+        top: -32px;
+      }
+      @include md {
         left: 0;
       }
     }
@@ -508,6 +518,12 @@
       display: none !important;
     }
   }
+  @include sm {
+    padding: 80px 0;
+  }
+  @include md {
+    padding: 80px 0;
+  }
 }
 
 // Contact us section
@@ -570,8 +586,17 @@
     &.style-two {
       img {
         padding-top: 40px;
+        @include md {
+          padding-top: 0;
+        }
       }
     }
+  }
+  @include sm {
+    padding: 80px 0;
+  }
+  @include md {
+    padding: 80px 0;
   }
 }
 
@@ -591,5 +616,11 @@
       width: 169px;
       height: 169px;
     }
+  }
+  @include sm {
+    padding: 80px 0;
+  }
+  @include md {
+    padding: 80px 0;
   }
 }

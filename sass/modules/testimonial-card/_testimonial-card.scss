@@ -18,6 +18,12 @@
                 font-size: 18px;
                 line-height: 31px;
                 color: $text-color;
+                @include sm {
+                    font-size: 14px;
+                }
+                @include md {
+                    font-size: 14px;
+                }
             }
         }
         .meta-user {

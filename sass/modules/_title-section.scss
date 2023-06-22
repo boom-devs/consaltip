@@ -5,7 +5,10 @@
   z-index: 2;
   position: relative;
   @include sm {
-    gap: 48px;
+    gap: 28px;
+  }
+  @include md {
+    gap: 28px;
   }
   .short-title {
     font-size: 24px;
@@ -124,6 +127,14 @@
       color: $text-color;
     }
     @include sm {
+      flex-direction: column;
+      justify-content: start;
+      gap: 36px;
+      .title {
+        text-align: start;
+      }
+    }
+    @include md {
       flex-direction: column;
       justify-content: start;
       gap: 36px;

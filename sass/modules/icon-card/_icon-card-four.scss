@@ -25,5 +25,8 @@
                 background: $brand !important;
             }
         }
+        @include md {
+            padding: 48px 12px;
+        }
     }
 }

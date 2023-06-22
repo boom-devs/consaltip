@@ -222,6 +222,9 @@ input:focus {
       background: transparent;
       border-color: $white;
     }
+    @include md {
+      padding: 10px 20px;
+    }
   }
   @include sm {
     padding: 10px 20px;

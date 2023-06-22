@@ -126,11 +126,11 @@
     }
   }
   @include sm {
-    padding: 100px 0;
+    padding: 80px 0;
   }
 
   @include rmaxwd(991) {
-    padding: 100px 0;
+    padding: 80px 0;
   }
 
   .video-popup-card.style-three {
@@ -179,11 +179,25 @@
       height: 169px;
     }
   }
+  @include sm {
+    padding: 80px 0;
+  }
+  @include md {
+    padding: 80px 0;
+  }
 }
 .about_team_member_container {
   max-width: 1376px;
   margin: 0 auto;
   width: 100%;
+  @include sm {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+  @include md {
+    max-width: 100%;
+    padding: 0 12px;
+  }
   @include lg {
     max-width: 980px;
   }
@@ -217,18 +231,29 @@
     top: -164px;
     overflow: hidden;
     @include transition;
-    @include rmaxwd(991) {
+    @include sm {
+      bottom: 28px;
       top: unset;
-      bottom: -80px;
     }
+    @include md {
+      top: unset;
+      bottom: 28px;
+    }
+    // @include lg {
+    //   top: unset;
+    //   bottom: -80px;
+    // }
 
     &.prev-btn {
       right: 88px;
-
-      @include rmaxwd(767) {
+      @include md {
         right: unset;
-        left: 30px;
+        left: 12px;
       }
+      // @include rmaxwd(767) {
+      //   right: unset;
+      //   left: 30px;
+      // }
     }
     &.next-btn {
       right: 12px;
@@ -278,6 +303,9 @@
           background: $title-color;
         }
       }
+    }
+    @include sm {
+      margin-top: 40px;
     }
   }
 }
