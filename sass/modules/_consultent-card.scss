@@ -37,6 +37,9 @@
     @include sm {
       padding: 30px;
     }
+    @include md {
+      padding: 30px;
+    }
   }
   .consultion-img img {
     width: 100%;

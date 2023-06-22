@@ -5,6 +5,11 @@
     align-items: start;
     @include sm {
         margin-top: 24px;
+        gap: 24px;
+    }
+    @include md {
+        margin-top: 24px;
+        gap: 24px;
     }
     .accordion-list-item-two {
         width: 100%;
@@ -107,6 +112,9 @@
                     position: relative;
                     z-index: 3;
                     @include sm {
+                        font-size: 30px;
+                    }
+                    @include md {
                         font-size: 30px;
                     }
                 }

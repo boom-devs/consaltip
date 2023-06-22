@@ -21,6 +21,14 @@
         flex-shrink: 0;
         @include transition;
         position: relative;
+        @include sm {
+            width: 80px;
+            height: 80px;
+        }
+        @include md {
+            width: 80px;
+            height: 80px;
+        }
         svg {
             path {
                 fill: $icon-color;
@@ -59,6 +67,10 @@
             text-align: center;
             padding: 0 18px;
             @include sm {
+                padding: 0;
+                font-size: 14px;
+            }
+            @include md {
                 padding: 0;
                 font-size: 14px;
             }

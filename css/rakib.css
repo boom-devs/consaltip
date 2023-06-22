@@ -647,6 +647,18 @@ input:focus {
   transition: all 0.5s ease-out;
   position: relative;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .icon-card .icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .icon-card .icon {
+    width: 80px;
+    height: 80px;
+  }
+}
 .icon-card .icon svg path {
   fill: #033f47;
 }
@@ -684,6 +696,12 @@ input:focus {
   padding: 0 18px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .icon-card .content .desc {
+    padding: 0;
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .icon-card .content .desc {
     padding: 0;
     font-size: 14px;

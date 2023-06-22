@@ -349,11 +349,11 @@
                     breakpoint: 991,
                     settings:
                      {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                     },
                 },
                 {
-                    breakpoint: 767,
+                    breakpoint: 768,
                     settings: {
                         slidesToShow: 1,
                     },
@@ -382,15 +382,16 @@
                     breakpoint: 992,
                     settings: {
                         slidesToShow: 2,
+                        variableWidth: false,
                     },
                 },
                 {
-                    breakpoint: 767,
+                    breakpoint: 768,
                     settings: {
                         slidesToShow: 1,
                         variableWidth: false,
                     },
-                },
+                }
             ],
         });
 

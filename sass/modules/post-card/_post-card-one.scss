@@ -5,6 +5,9 @@
   @include sm {
     margin-bottom: 24px;
   }
+  @include md {
+    margin-bottom: 24px;
+  }
   .post-image {
     overflow: hidden;
     img {

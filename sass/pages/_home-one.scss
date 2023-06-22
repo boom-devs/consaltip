@@ -5,6 +5,9 @@
   @include sm {
     padding: 80px 0;
   }
+  @include md {
+    padding: 80px 0;
+  }
   .scrolldown-btn-wrapper {
     display: none;
     @include rwd(1200) {
@@ -106,8 +109,13 @@
   @include md {
     padding: 80px 0;
   }
-  .imgae-wrappe {
+  .image-wrapper {
     position: relative;
+    img {
+      @include md {
+        width: 100%;
+      }
+    }
     .sketch {
       @include xl {
         background-image: url("../images/shape/sketch-black.png");
@@ -134,6 +142,7 @@
   }
   @include md {
     padding-bottom: 80px;
+    margin-top: 0;
   }
 }
 
@@ -176,7 +185,7 @@
     padding: 80px 0 100px 0;
   }
   @include md {
-    padding: 80px 0;
+    padding: 80px 0 100px 0;
   }
   .sketch {
     @include rwd(1440) {
@@ -193,6 +202,9 @@
 }
 // case-studies slider
 .home-one-case-studies-slider {
+  @include md {
+    padding: 0 48px;
+  }
   .portfolio-card {
     margin: 0 24px;
   }
@@ -223,8 +235,8 @@
       @include sm {
         right: 51%;
       }
-      @include rmaxwd(767) {
-        // right: unset;
+      @include md {
+        right: 51%;
       }
     }
     &.next-btn {
@@ -232,9 +244,8 @@
       @include sm {
         left: 50%;
       }
-      @include rmaxwd(767) {
-        right: 30px;
-        // left: unset;
+      @include md {
+        left: 50%;
       }
     }
     i {
@@ -263,6 +274,9 @@
   @include sm {
     padding: 80px 0;
   }
+  @include md {
+    padding: 80px 0;
+  }
   .review-card {
     display: flex !important;
     align-items: end;
@@ -270,6 +284,9 @@
     @include sm {
       flex-direction: column;
       gap: 24px;
+    }
+    @include md {
+      gap: 32px;
     }
     .image-wrapper {
       flex-shrink: 0;
@@ -333,9 +350,10 @@
           bottom: -50px;
           right: 51%;
         }
-        // @include rmaxwd(767) {
-        //   right: unset;
-        // }
+        @include md {
+          bottom: -64px;
+          right: 51%;
+        }
       }
       &.next-btn {
         right: 0;
@@ -343,9 +361,10 @@
           bottom: -50px;
           left: 50%;
         }
-        // @include rmaxwd(767) {
-        //   right: 30px;
-        // }
+        @include md {
+          bottom: -64px;
+          left: 50%;
+        }
       }
       i {
         position: absolute;
@@ -419,6 +438,7 @@
     }
     @include md {
       margin-left: 0;
+      padding: 0 32px;
     }
     .slick-arrow {
       display: none !important;

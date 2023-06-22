@@ -292,7 +292,7 @@ input:focus {
   z-index: 1;
 }
 
-.imgae-wrappe {
+.image-wrapper {
   width: 100%;
   height: 100%;
   background-position: center !important;
@@ -535,6 +535,11 @@ input:focus {
     padding: 0 12px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-container {
+    padding: 0 12px;
+  }
+}
 
 .bg-icon {
   background-color: #033f47;
@@ -729,6 +734,11 @@ input:focus {
   align-items: center;
   gap: 64px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .image-card {
+    gap: 32px;
+  }
+}
 .image-card .content {
   display: flex;
   flex-direction: column;
@@ -742,7 +752,12 @@ input:focus {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .image-card .content .title {
-    font-size: 46px;
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .image-card .content .title {
+    font-size: 48px;
   }
 }
 .image-card .content .desc {
@@ -1568,6 +1583,11 @@ input:focus {
   flex-direction: column;
   gap: 48px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-info-card {
+    margin-top: 24px;
+  }
+}
 .about-info-card .content-wrapper {
   display: flex;
   flex-direction: column;
@@ -1580,6 +1600,12 @@ input:focus {
   .about-info-card .content-wrapper .content .title {
     margin-top: 24px;
     font-size: 38px;
+    line-height: 56px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-info-card .content-wrapper .content .title {
+    font-size: 48px;
     line-height: 56px;
   }
 }
@@ -1774,6 +1800,13 @@ input:focus {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .accordion-wrapper-two {
     margin-top: 24px;
+    gap: 24px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accordion-wrapper-two {
+    margin-top: 24px;
+    gap: 24px;
   }
 }
 .accordion-wrapper-two .accordion-list-item-two {
@@ -1871,6 +1904,11 @@ input:focus {
   z-index: 3;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .accordion-wrapper-two .accordion-list-item-two .accordion-head .icon i {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .accordion-wrapper-two .accordion-list-item-two .accordion-head .icon i {
     font-size: 30px;
   }

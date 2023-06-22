@@ -26,6 +26,9 @@
     @include sm {
       text-align: start;
     }
+    @include md {
+      text-align: start;
+    }
   }
 
   .copyright-text {
