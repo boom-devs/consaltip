@@ -240,6 +240,9 @@
     @include md {
       padding-right: 0;
     }
+    @include lg {
+      padding-right: 0;
+    }
   }
 
   @include sm {
@@ -290,6 +293,9 @@
     }
     @include md {
       margin-left: 12px;
+    }
+    @include lg {
+      margin-left: 48px;
     }
   }
   @include sm {
@@ -395,6 +401,9 @@
       }
       @include md {
         left: 0;
+      }
+      @include lg {
+        left: 24px;
       }
     }
     &.next-btn {

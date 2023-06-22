@@ -3754,6 +3754,12 @@ a.meanmenu-reveal {
     font-size: 14px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .icon-card .content .desc {
+    padding: 0;
+    font-size: 14px;
+  }
+}
 .icon-card:hover .icon {
   background: #e0f780;
 }
@@ -3843,6 +3849,15 @@ a.meanmenu-reveal {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .icon-card.style-three {
     flex-direction: column;
+  }
+  .icon-card.style-three .icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .icon-card.style-three {
+    padding: 24px;
   }
   .icon-card.style-three .icon {
     width: 80px;
@@ -4587,6 +4602,16 @@ button.testimonial-arrow-btn:hover i {
     font-size: 14px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .post-card-one.style-two .content-wrapper .post-content .post-meta .meta-info p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .post-card-one.style-two .content-wrapper .post-content .post-meta {
+    align-items: start;
+  }
+}
 .post-card-one.style-two .content-wrapper .post-content .title {
   font-size: 24px;
   line-height: 34px;
@@ -4598,6 +4623,11 @@ button.testimonial-arrow-btn:hover i {
 .post-card-one.style-two .content-wrapper .post-card-btn:hover {
   color: #080f10;
   background: #e0f780;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .post-card-one.style-two .content-wrapper {
+    padding: 24px 20px 32px 20px;
+  }
 }
 .post-card-one.style-two:hover .post-image {
   transform: scale(1.05);
@@ -4801,6 +4831,11 @@ button.testimonial-arrow-btn:hover i {
 .price-card-wrapper .price-card .list-wrapper .price-list-item .icon i {
   font-size: 14px;
   line-height: 16px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .price-card-wrapper .price-card .list-wrapper .price-list-item .text {
+    font-size: 14px;
+  }
 }
 .price-card-wrapper .price-card .list-wrapper .price-btn {
   display: flex;
@@ -8102,6 +8137,11 @@ ul.children {
     padding-right: 0;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-three-about-us .home-three-about-image {
+    padding-right: 0;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .home-three-about-us {
     padding: 80px 0;
@@ -8154,6 +8194,11 @@ ul.children {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-three-service .home-three-service-slider {
     margin-left: 12px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-three-service .home-three-service-slider {
+    margin-left: 48px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -8268,6 +8313,11 @@ ul.children {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .case-studies-home-three button.portfolio-card-arrow-btn.prev-btn {
     left: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .case-studies-home-three button.portfolio-card-arrow-btn.prev-btn {
+    left: 24px;
   }
 }
 .case-studies-home-three button.portfolio-card-arrow-btn.next-btn {

@@ -185,6 +185,11 @@
                         line-height: 16px;
                     }
                 }
+                .text {
+                    @include lg {
+                        font-size: 14px;
+                    }
+                }
             }
             .price-btn {
                 display: flex;

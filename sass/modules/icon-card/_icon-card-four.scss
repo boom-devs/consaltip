@@ -28,5 +28,9 @@
         @include md {
             padding: 48px 12px;
         }
+        @include lg {
+            padding: 48px 12px;
+            margin-bottom: 24px;
+        }
     }
 }

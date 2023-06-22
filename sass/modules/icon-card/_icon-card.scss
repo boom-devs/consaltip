@@ -62,6 +62,10 @@
                 padding: 0;
                 font-size: 14px;
             }
+            @include lg {
+                padding: 0;
+                font-size: 14px;
+            }
         }
     }
     &:hover {

@@ -683,6 +683,12 @@ input:focus {
     font-size: 14px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .icon-card .content .desc {
+    padding: 0;
+    font-size: 14px;
+  }
+}
 .icon-card:hover .icon {
   background: #e0f780;
 }
@@ -778,6 +784,15 @@ input:focus {
     height: 80px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .icon-card.style-three {
+    padding: 24px;
+  }
+  .icon-card.style-three .icon {
+    width: 80px;
+    height: 80px;
+  }
+}
 
 .icon-card.style-four {
   flex-direction: column;
@@ -807,6 +822,12 @@ input:focus {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .icon-card.style-four {
     padding: 48px 12px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .icon-card.style-four {
+    padding: 48px 12px;
+    margin-bottom: 24px;
   }
 }
 
@@ -1008,6 +1029,11 @@ input:focus {
 .price-card-wrapper .price-card .list-wrapper .price-list-item .icon i {
   font-size: 14px;
   line-height: 16px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .price-card-wrapper .price-card .list-wrapper .price-list-item .text {
+    font-size: 14px;
+  }
 }
 .price-card-wrapper .price-card .list-wrapper .price-btn {
   display: flex;
@@ -1225,6 +1251,16 @@ input:focus {
     font-size: 14px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .post-card-one.style-two .content-wrapper .post-content .post-meta .meta-info p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .post-card-one.style-two .content-wrapper .post-content .post-meta {
+    align-items: start;
+  }
+}
 .post-card-one.style-two .content-wrapper .post-content .title {
   font-size: 24px;
   line-height: 34px;
@@ -1236,6 +1272,11 @@ input:focus {
 .post-card-one.style-two .content-wrapper .post-card-btn:hover {
   color: #080f10;
   background: #e0f780;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .post-card-one.style-two .content-wrapper {
+    padding: 24px 20px 32px 20px;
+  }
 }
 .post-card-one.style-two:hover .post-image {
   transform: scale(1.05);

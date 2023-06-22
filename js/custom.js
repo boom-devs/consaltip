@@ -590,7 +590,7 @@
                 "<button type='button' class='home-three-review-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
             responsive: [
                 {
-                    breakpoint: 991,
+                    breakpoint: 1200,
                     settings: {
                         slidesToShow: 2,
                     },
