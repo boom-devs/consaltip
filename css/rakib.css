@@ -793,6 +793,7 @@ input:focus {
   display: flex;
   gap: 16px;
   justify-content: center;
+  margin: 48px 0;
 }
 .price-card-switch span {
   font-family: "Inter", sans-serif;
@@ -901,6 +902,11 @@ input:focus {
 }
 .price-card-switch .slider.round:before {
   border-radius: 50%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-switch {
+    margin: 36px 0;
+  }
 }
 
 .price-card-wrapper .price-card {
@@ -1017,6 +1023,16 @@ input:focus {
   align-items: center;
   background: #033f47;
   padding: 16px 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-wrapper .price-header {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-card-wrapper .price-header {
+    display: none;
+  }
 }
 .price-card-wrapper.active .price-card {
   background: #e0f780;
@@ -1600,6 +1616,16 @@ input:focus {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .price-card-section .shape-two {
     display: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-section {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-card-section {
+    padding: 80px 0;
   }
 }
 

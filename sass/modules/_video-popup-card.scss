@@ -66,6 +66,10 @@
         i {
           color: $white;
         }
+        @include sm {
+          width: 80px;
+          height: 80px;
+        }
       }
     }
   }

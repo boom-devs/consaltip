@@ -335,6 +335,13 @@
       bottom: 276px;
     }
   }
+
+  @include sm {
+    padding: 80px 0;
+  }
+  @include md {
+    padding: 80px 0;
+  }
 }
 
 // Case-studies
@@ -376,6 +383,9 @@
     }
     &.prev-btn {
       left: 280px;
+      @include sm {
+        left: 0;
+      }
     }
     &.next-btn {
       right: 30px;
@@ -433,6 +443,12 @@
         margin-left: 48px;
       }
     }
+  }
+  @include sm {
+    padding: 80px 0;
+  }
+  @include md {
+    padding: 80px 0;
   }
 }
 

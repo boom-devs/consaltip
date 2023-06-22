@@ -2,6 +2,7 @@
     display: flex;
     gap: 16px;
     justify-content: center;
+    margin: 48px 0;
     span {
         font-family: $body-font;
         font-style: normal;
@@ -100,6 +101,9 @@
 
     .slider.round:before {
         border-radius: 50%;
+    }
+    @include sm {
+        margin: 36px 0;
     }
 }
 .price-card-wrapper {
@@ -217,6 +221,12 @@
         align-items: center;
         background: $icon-color;
         padding: 16px 0;
+        @include sm {
+            display: none;
+        }
+        @include md {
+            display: none;
+        }
     }
     &.active {
         .price-card {

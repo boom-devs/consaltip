@@ -3910,6 +3910,12 @@ a.meanmenu-reveal {
 .video-popup-card.style-two .video-popup-btn a i {
   color: #ffffff;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .video-popup-card.style-two .video-popup-btn a {
+    width: 80px;
+    height: 80px;
+  }
+}
 .video-popup-card.style-three {
   overflow: visible;
   padding: 0;
@@ -4569,6 +4575,7 @@ button.testimonial-arrow-btn:hover i {
   display: flex;
   gap: 16px;
   justify-content: center;
+  margin: 48px 0;
 }
 .price-card-switch span {
   font-family: "Inter", sans-serif;
@@ -4677,6 +4684,11 @@ button.testimonial-arrow-btn:hover i {
 }
 .price-card-switch .slider.round:before {
   border-radius: 50%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-switch {
+    margin: 36px 0;
+  }
 }
 
 .price-card-wrapper .price-card {
@@ -4794,6 +4806,16 @@ button.testimonial-arrow-btn:hover i {
   background: #033f47;
   padding: 16px 0;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-wrapper .price-header {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-card-wrapper .price-header {
+    display: none;
+  }
+}
 .price-card-wrapper.active .price-card {
   background: #e0f780;
 }
@@ -4853,7 +4875,7 @@ button.testimonial-arrow-btn:hover i {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .section-title .title {
-    font-size: 38px;
+    font-size: 30px;
     line-height: 52px;
   }
   .section-title .title br {
@@ -4862,7 +4884,7 @@ button.testimonial-arrow-btn:hover i {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-title .title {
-    font-size: 36px;
+    font-size: 34px;
     line-height: 42px;
   }
   .section-title .title br {
@@ -4885,14 +4907,20 @@ button.testimonial-arrow-btn:hover i {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .section-title .desc {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 28px;
+  }
+  .section-title .desc br {
+    display: none;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-title .desc {
     font-size: 16px;
     line-height: 28px;
+  }
+  .section-title .desc br {
+    display: none;
   }
 }
 .section-title .text {
@@ -8088,6 +8116,16 @@ ul.children {
     bottom: 276px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-three-process {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-three-process {
+    padding: 80px 0;
+  }
+}
 
 .case-studies-home-three {
   background-color: #033f47;
@@ -8128,6 +8166,11 @@ ul.children {
 }
 .case-studies-home-three button.portfolio-card-arrow-btn.prev-btn {
   left: 280px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .case-studies-home-three button.portfolio-card-arrow-btn.prev-btn {
+    left: 0;
+  }
 }
 .case-studies-home-three button.portfolio-card-arrow-btn.next-btn {
   right: 30px;
@@ -8188,6 +8231,16 @@ ul.children {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .case-studies-home-three .home-three-case-studies-slider .slick-list {
     margin-left: 48px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .case-studies-home-three {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .case-studies-home-three {
+    padding: 80px 0;
   }
 }
 
