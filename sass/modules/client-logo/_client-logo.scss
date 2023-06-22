@@ -1,43 +1,45 @@
-.client-logo-wrapper {
-  padding: 0 40px;
-  display: grid !important;
-  grid-template-columns: repeat(5, 1fr);
+// .client-logo-wrapper {
+//   padding: 0 40px;
+//   display: grid !important;
+//   grid-template-columns: repeat(5, 1fr);
+//   position: relative;
+//   z-index: 5;
 
-  .client-logo {
-    padding-top: 20px;
-    padding-bottom: 21px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    overflow: hidden;
-    transform: scale(1);
+//   @include sm {
+//     padding: 0 30px;
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+//   @include md {
+//     padding: 0 30px;
+//     grid-template-columns: repeat(3, 1fr);
+//   }
+// }
+.client-logo {
+  padding-top: 20px;
+  padding-bottom: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transform: scale(1);
+  @include transition;
+  img {
+    // opacity: 0.65;
     @include transition;
-    img {
-      // opacity: 0.65;
+  }
+  svg {
+    path {
+      fill: $white;
       @include transition;
     }
+  }
+  &:hover {
+    transform: scale(1.05);
     svg {
       path {
-        fill: $white;
-        @include transition;
+        fill: $brand;
       }
     }
-    &:hover {
-      transform: scale(1.05);
-      svg {
-        path {
-          fill: $brand;
-        }
-      }
-    }
-  }
-  @include sm {
-    padding: 0 30px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @include md {
-    padding: 0 30px;
-    grid-template-columns: repeat(3, 1fr);
   }
 }

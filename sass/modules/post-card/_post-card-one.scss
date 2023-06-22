@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  @include sm {
+    margin-bottom: 24px;
+  }
   .post-image {
     overflow: hidden;
     img {
@@ -16,6 +19,9 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
+    @include sm {
+      padding: 24px;
+    }
     .post-content {
       display: flex;
       flex-direction: column;

@@ -2,26 +2,30 @@
   // overflow: hidden;
   position: relative;
   .shape-one {
-    background-image: url("../images/shape/Rectangle.png");
-    width: 40px;
-    height: 40px;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 270px;
-    right: 55px;
-    rotate: 180deg;
+    @include rwd(1440) {
+      background-image: url("../images/shape/Rectangle.png");
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 270px;
+      right: 55px;
+      rotate: 180deg;
+    }
   }
   .shape-two {
-    background-image: url("../images/shape/shape-3.svg");
-    width: 40px;
-    height: 40px;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    bottom: 271px;
-    left: 42px;
-    rotate: 90deg;
+    @include rwd(1440) {
+      background-image: url("../images/shape/shape-3.svg");
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      bottom: 271px;
+      left: 42px;
+      rotate: 90deg;
+    }
   }
 
   .slider-wrapper {
@@ -142,6 +146,10 @@
       width: 40px;
       height: 40px;
     }
+
+    @include sm {
+      display: none !important;
+    }
     &.prev-btn {
       left: 30px;
     }
@@ -178,12 +186,25 @@
     // overflow: hidden;
     height: 960px;
 
-    @include md {
-      height: 700px;
-    }
     .slider-content-wrapper {
       position: relative;
       z-index: 99;
+      @include sm {
+        padding: 12px;
+      }
+      @include sm {
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: $brand;
+          opacity: 0.3;
+          top: 0;
+          left: 0;
+          z-index: 0;
+        }
+      }
 
       .slider-content {
         @include sm {
@@ -198,6 +219,8 @@
           display: inline-block;
           width: 100%;
           margin-bottom: 15px;
+          position: relative;
+          z-index: 99;
 
           @include lg {
             font-size: 18px;
@@ -212,6 +235,8 @@
           letter-spacing: 0.02em;
           margin-bottom: 16px;
           color: $white;
+          position: relative;
+          z-index: 10;
 
           @media only screen and (min-width: 992px) and (max-width: 1400px) {
             font-size: 60px;
@@ -229,6 +254,9 @@
           @include sm {
             font-size: 38px;
             line-height: 44px;
+            br {
+              display: none;
+            }
           }
         }
         .slider-short-desc {
@@ -249,6 +277,9 @@
           @include sm {
             font-size: 18px;
             line-height: 32px;
+            br {
+              display: none;
+            }
           }
         }
       }
@@ -299,6 +330,12 @@
         width: auto;
         margin-top: inherit;
       }
+    }
+    @include sm {
+      padding-top: 100px;
+    }
+    @include md {
+      height: 700px;
     }
   }
 }

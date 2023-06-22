@@ -156,7 +156,7 @@
                 {
                     breakpoint: 767,
                     settings: {
-                        autoplay: true,
+                        autoplay: false,
                     },
                 },
             ],
@@ -324,6 +324,7 @@
                     breakpoint: 767,
                     settings: {
                         slidesToShow: 1,
+             variableWidth: false,
                     },
                 },
             ],
@@ -388,6 +389,7 @@
                     breakpoint: 767,
                     settings: {
                         slidesToShow: 1,
+                        variableWidth: false,
                     },
                 },
             ],

@@ -5,9 +5,11 @@ body {
   word-wrap: break-word;
   overflow-x: hidden;
 }
-dl, ol, ul {
+dl,
+ol,
+ul {
   margin-top: 0;
-  margin-bottom: 25px;
+  // margin-bottom: 25px;
 }
 ol {
   padding-left: 20px;
@@ -29,11 +31,11 @@ ul {
     font-size: 1.2rem;
     line-height: 20px;
     padding: 12px 20px;
-    border: 1px solid #E4E4F2;
+    border: 1px solid #e4e4f2;
     width: 100%;
   }
   input[type="submit"] {
-    background-color: $primary-color ;
+    background-color: $primary-color;
     border: none;
     padding: 10px 40px;
     color: $white;
@@ -58,13 +60,12 @@ table {
     border-top: 0;
   }
   th,
-  td,
-  {
+  td {
     background-color: transparent;
     border: 1px solid $gray;
     text-align: center;
     padding: 8px;
-    transition: .3s;
+    transition: 0.3s;
 
     &#today {
       background: $primary-color;
@@ -85,7 +86,6 @@ table {
     margin-top: 40px;
   }
 }
-
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
@@ -117,7 +117,6 @@ table {
   width: auto;
   z-index: 100000;
 }
-
 
 /*
  Caption
@@ -236,7 +235,7 @@ img {
 ============================*/
 // Blockquote
 blockquote {
-  overflow:hidden;
+  overflow: hidden;
   //padding: 30px 30px 30px 30px !important;
   margin: 40px 0;
   position: relative;
@@ -287,24 +286,28 @@ blockquote {
     margin-top: 20px;
   }
 }
-.wp-block-quote, blockquote {
+.wp-block-quote,
+blockquote {
   border-left: solid 5px $primary-color;
 }
 .wp-block-pullquote {
   border-top: 5px solid $primary-color !important;
   border-bottom: 5px solid $primary-color !important;
 }
-.wp-block-quote__citation, .wp-block-quote cite, .wp-block-quote footer {
+.wp-block-quote__citation,
+.wp-block-quote cite,
+.wp-block-quote footer {
   margin-top: 10px;
   display: block;
 }
-.wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
+.wp-block-column:not(:first-child),
+.wp-block-column:nth-child(2n) {
   margin-left: 10px;
 }
 .wp-block-column:not(:last-child) {
   margin-right: 10px;
 }
-.wp-block-column:nth-child(2n+1) {
+.wp-block-column:nth-child(2n + 1) {
   margin-right: 10px;
 }
 .post-content > .alignwide {
@@ -361,8 +364,7 @@ blockquote {
 .widget.widget_text select,
 .widget.widget_search .search-form,
 .widget.widget_tag_cloud .tagcloud,
-.widget .wp-block-tag-cloud
-{
+.widget .wp-block-tag-cloud {
   margin-bottom: 6px;
 }
 .wp-block-latest-posts {
@@ -379,14 +381,12 @@ nav.wp-calendar-nav {
     color: $text-color;
 
     &:hover {
-      color: $primary-color
+      color: $primary-color;
     }
   }
 }
 
-
-
-  /*
+/*
    Media
   ============================*/
 .page-content .wp-smiley,
@@ -403,4 +403,3 @@ iframe,
 object {
   max-width: 100%;
 }
-

@@ -20,6 +20,9 @@
                     display: none;
                 }
             }
+            @include sm {
+                margin-top: 0;
+            }
         }
     }
 }

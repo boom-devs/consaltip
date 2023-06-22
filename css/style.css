@@ -774,6 +774,12 @@ input:focus {
   background: transparent;
   border-color: #ffffff;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .theme-btn.style-four,
+  .wp-block-loginout a.style-four {
+    padding: 10px 12px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .theme-btn.style-four,
   .wp-block-loginout a.style-four {
@@ -2444,9 +2450,10 @@ body {
   overflow-x: hidden;
 }
 
-dl, ol, ul {
+dl,
+ol,
+ul {
   margin-top: 0;
-  margin-bottom: 25px;
 }
 
 ol {
@@ -2469,7 +2476,7 @@ ul {
   font-size: 1.2rem;
   line-height: 20px;
   padding: 12px 20px;
-  border: 1px solid #E4E4F2;
+  border: 1px solid #e4e4f2;
   width: 100%;
 }
 .post-password-form input[type=submit] {
@@ -2709,7 +2716,8 @@ blockquote footer {
   margin-top: 20px;
 }
 
-.wp-block-quote, blockquote {
+.wp-block-quote,
+blockquote {
   border-left: solid 5px #035b7b;
 }
 
@@ -2718,12 +2726,15 @@ blockquote footer {
   border-bottom: 5px solid #035b7b !important;
 }
 
-.wp-block-quote__citation, .wp-block-quote cite, .wp-block-quote footer {
+.wp-block-quote__citation,
+.wp-block-quote cite,
+.wp-block-quote footer {
   margin-top: 10px;
   display: block;
 }
 
-.wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
+.wp-block-column:not(:first-child),
+.wp-block-column:nth-child(2n) {
   margin-left: 10px;
 }
 
@@ -2814,8 +2825,8 @@ nav.wp-calendar-nav a:hover {
 }
 
 /*
- Media
-============================*/
+   Media
+  ============================*/
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
@@ -4456,12 +4467,7 @@ button.testimonial-arrow-btn:hover i {
   }
 }
 
-.client-logo-wrapper {
-  padding: 0 40px;
-  display: grid !important;
-  grid-template-columns: repeat(5, 1fr);
-}
-.client-logo-wrapper .client-logo {
+.client-logo {
   padding-top: 20px;
   padding-bottom: 21px;
   display: flex;
@@ -4472,30 +4478,18 @@ button.testimonial-arrow-btn:hover i {
   transform: scale(1);
   transition: all 0.5s ease-out;
 }
-.client-logo-wrapper .client-logo img {
+.client-logo img {
   transition: all 0.5s ease-out;
 }
-.client-logo-wrapper .client-logo svg path {
+.client-logo svg path {
   fill: #ffffff;
   transition: all 0.5s ease-out;
 }
-.client-logo-wrapper .client-logo:hover {
+.client-logo:hover {
   transform: scale(1.05);
 }
-.client-logo-wrapper .client-logo:hover svg path {
+.client-logo:hover svg path {
   fill: #e0f780;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .client-logo-wrapper {
-    padding: 0 30px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .client-logo-wrapper {
-    padding: 0 30px;
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 .client-logo-wrapper {
@@ -4509,6 +4503,11 @@ button.testimonial-arrow-btn:hover i {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .post-card-one {
+    margin-bottom: 24px;
+  }
 }
 .post-card-one .post-image {
   overflow: hidden;
@@ -4524,6 +4523,11 @@ button.testimonial-arrow-btn:hover i {
   display: flex;
   flex-direction: column;
   gap: 48px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .post-card-one .content-wrapper {
+    padding: 24px;
+  }
 }
 .post-card-one .content-wrapper .post-content {
   display: flex;
@@ -4947,7 +4951,7 @@ button.testimonial-arrow-btn:hover i {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .section-title .title {
-    font-size: 30px;
+    font-size: 34px;
     line-height: 52px;
   }
   .section-title .title br {
@@ -7107,29 +7111,39 @@ ul.children {
   padding: 180px 0 120px 0;
   position: relative;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .why-choose-us-area {
+    padding: 80px 0;
+  }
+}
 .why-choose-us-area .scrolldown-btn-wrapper {
-  position: absolute;
-  top: 0;
-  left: 43%;
-  transform: translate(0, -65%);
-  background-image: url("../images/scroll-down.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 100px;
+  display: none;
 }
-.why-choose-us-area .scrolldown-btn-wrapper .scrolldown-btn {
-  margin: 72px 72px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #e0f780;
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-}
-.why-choose-us-area .scrolldown-btn-wrapper .scrolldown-btn i {
-  color: #080f10;
-  font-size: 34px;
+@media (min-width: 1200px) {
+  .why-choose-us-area .scrolldown-btn-wrapper {
+    position: absolute;
+    top: 0;
+    left: 43%;
+    transform: translate(0, -65%);
+    background-image: url("../images/scroll-down.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100px;
+  }
+  .why-choose-us-area .scrolldown-btn-wrapper .scrolldown-btn {
+    margin: 72px 72px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0f780;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+  .why-choose-us-area .scrolldown-btn-wrapper .scrolldown-btn i {
+    color: #080f10;
+    font-size: 34px;
+  }
 }
 .why-choose-us-area .about-info-card-image {
   position: relative;
@@ -7171,6 +7185,16 @@ ul.children {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-one-service {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-one-service {
+    padding: 80px 0;
+  }
+}
 @media (min-width: 1440px) {
   .home-one-service .sketch {
     background-image: url("../images/shape/triangle-shape-white.png");
@@ -7187,6 +7211,16 @@ ul.children {
 .home-one-process-step {
   padding: 120px 0 208px 0;
   background-color: #f8f8f1;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-one-process-step {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-one-process-step {
+    padding: 80px 0;
+  }
 }
 .home-one-process-step .imgae-wrappe {
   position: relative;
@@ -7209,9 +7243,30 @@ ul.children {
   padding-bottom: 120px;
   margin-top: -114px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .free-consultaion-area {
+    padding: 80px 0;
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .free-consultaion-area {
+    padding-bottom: 80px;
+  }
+}
 
 .home-one-testimonial-area {
   padding: 145px 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-one-testimonial-area {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-one-testimonial-area {
+    padding: 80px 0;
+  }
 }
 @media (max-width: 991px) {
   .home-one-testimonial-area {
@@ -7239,6 +7294,16 @@ ul.children {
   background: #033f47;
   padding: 120px 0 244px 0;
   position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .case-studies-home-one {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .case-studies-home-one {
+    padding: 80px 0;
+  }
 }
 @media (min-width: 1440px) {
   .case-studies-home-one .sketch {
@@ -7274,21 +7339,30 @@ ul.children {
     top: unset;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-one-case-studies-slider button.case-arrow-btn {
+    bottom: -60px;
+  }
+}
 .home-one-case-studies-slider button.case-arrow-btn.prev-btn {
   right: 51%;
 }
-@media (max-width: 767px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .home-one-case-studies-slider button.case-arrow-btn.prev-btn {
-    right: unset;
+    right: 51%;
   }
 }
 .home-one-case-studies-slider button.case-arrow-btn.next-btn {
   left: 50%;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-one-case-studies-slider button.case-arrow-btn.next-btn {
+    left: 50%;
+  }
+}
 @media (max-width: 767px) {
   .home-one-case-studies-slider button.case-arrow-btn.next-btn {
     right: 30px;
-    left: unset;
   }
 }
 .home-one-case-studies-slider button.case-arrow-btn i {
@@ -7312,10 +7386,21 @@ ul.children {
 .home-one-review {
   padding: 120px 0;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-one-review {
+    padding: 80px 0;
+  }
+}
 .home-one-review .review-card {
   display: flex !important;
   align-items: end;
   gap: 73px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-one-review .review-card {
+    flex-direction: column;
+    gap: 24px;
+  }
 }
 .home-one-review .review-card .image-wrapper {
   flex-shrink: 0;
@@ -7323,9 +7408,15 @@ ul.children {
   width: 40%;
   justify-content: end;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-one-review .review-card .image-wrapper {
+    width: 100%;
+  }
+}
 .home-one-review .review-card .image-wrapper .image {
   position: relative;
   border-radius: 200px;
+  overflow: hidden;
   z-index: 10;
   background-color: #f8f8f1;
 }
@@ -7340,8 +7431,13 @@ ul.children {
   z-index: -1;
 }
 .home-one-review .review-card .review-content {
-  max-width: 50%;
+  width: 50%;
   width: 100%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-one-review .review-card .review-content {
+    width: 100%;
+  }
 }
 .home-one-review .review-card .review-content .testimonial-card {
   justify-content: end;
@@ -7367,17 +7463,19 @@ ul.children {
 .home-one-review .home-one-review-slider button.review-arrow-btn.prev-btn {
   right: 74px;
 }
-@media (max-width: 767px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .home-one-review .home-one-review-slider button.review-arrow-btn.prev-btn {
-    right: unset;
+    bottom: -50px;
+    left: 120px;
   }
 }
 .home-one-review .home-one-review-slider button.review-arrow-btn.next-btn {
   right: 0;
 }
-@media (max-width: 767px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .home-one-review .home-one-review-slider button.review-arrow-btn.next-btn {
-    right: 30px;
+    bottom: -50px;
+    right: 120px;
   }
 }
 .home-one-review .home-one-review-slider button.review-arrow-btn i {
@@ -7402,6 +7500,11 @@ ul.children {
   padding: 120px 0;
   background-color: #033f47;
   position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-one-blog {
+    padding: 80px 0;
+  }
 }
 @media (min-width: 1440px) {
   .home-one-blog .sketch {
@@ -7436,6 +7539,16 @@ ul.children {
 .home-one-team-member-area .home-one-team-member {
   position: relative;
   margin-left: -200px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-one-team-member-area .home-one-team-member {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-one-team-member-area .home-one-team-member {
+    margin-left: 0;
+  }
 }
 .home-one-team-member-area .home-one-team-member .slick-arrow {
   display: none !important;
@@ -7529,11 +7642,22 @@ ul.children {
 }
 
 .home-one-client-logo {
+  position: relative;
   padding: 82px 0 72px 0;
   background-color: #033f47;
+}
+.home-one-client-logo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   background-image: url("../images/client/bg-1.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .home-two-about-us-area {

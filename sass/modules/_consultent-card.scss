@@ -6,15 +6,17 @@
   width: 100%;
   height: 100%;
   .sketch {
-    position: absolute;
-    background-image: url("../images/shape/sketch-brand.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    left: 47%;
-    bottom: 125px;
-    width: 109px;
-    height: 109px;
-    z-index: 10;
+    @include rwd(1440) {
+      position: absolute;
+      background-image: url("../images/shape/sketch-brand.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      left: 47%;
+      bottom: 125px;
+      width: 109px;
+      height: 109px;
+      z-index: 10;
+    }
   }
   .free-consultaion-text {
     display: flex;
@@ -31,6 +33,9 @@
       display: flex;
       justify-content: start;
       gap: 24px;
+    }
+    @include sm {
+      padding: 30px;
     }
   }
   .consultion-img img {
