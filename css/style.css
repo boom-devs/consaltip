@@ -3211,19 +3211,6 @@ html {
   padding-right: 96px;
   padding-left: 96px;
 }
-.header-sec.sticky-header {
-  width: 100%;
-  z-index: 999;
-  transition: all 0.4s ease 0s;
-}
-.header-sec.sticky_menu {
-  left: 0;
-  right: 0;
-  top: 0;
-  position: fixed;
-  z-index: 9999;
-  box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.03);
-}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .header-sec {
     padding: 24px 20px;
@@ -3238,6 +3225,24 @@ html {
   .header-sec {
     padding: 24px 48px;
   }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .header-sec {
+    padding: 0 48px;
+  }
+}
+.header-sec.sticky-header {
+  width: 100%;
+  z-index: 999;
+  transition: all 0.4s ease 0s;
+}
+.header-sec.sticky_menu {
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  z-index: 9999;
+  box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.03);
 }
 
 .main-menu ul {
@@ -4464,6 +4469,26 @@ button.testimonial-arrow-btn:hover i {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .accordion-wrapper .accordion-list-item {
     padding: 20px 28px;
+  }
+}
+
+.client-logo-wrapper {
+  padding: 0 40px;
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr);
+  position: relative;
+  z-index: 5;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .client-logo-wrapper {
+    padding: 0 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .client-logo-wrapper {
+    padding: 0 30px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -6665,6 +6690,11 @@ ul.children {
 .footer .footer-bottom-menu ul li a:hover {
   text-decoration-color: #575959;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer .footer-bottom-menu ul li a {
+    font-size: 14px;
+  }
+}
 .footer .footer-bottom-menu ul li {
   display: inline-block;
   margin-top: 15px;
@@ -6672,8 +6702,18 @@ ul.children {
 .footer .footer-bottom-menu {
   text-align: right;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer .footer-bottom-menu {
+    text-align: start;
+  }
+}
 .footer .copyright-text {
   margin-top: 15px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer .copyright-text p {
+    font-size: 14px;
+  }
 }
 .footer .footer-widget-title {
   font-size: 18px;
@@ -6703,6 +6743,11 @@ ul.children {
   border: 1px solid #e0e0e0;
   background: transparent;
   color: #ffffff;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer .footer-widget .widget-colors .subs form input {
+    width: 100%;
+  }
 }
 .footer .footer-widget ul {
   padding-left: 0;
@@ -7297,7 +7342,7 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .case-studies-home-one {
-    padding: 80px 0;
+    padding: 80px 0 100px 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -7341,7 +7386,12 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .home-one-case-studies-slider button.case-arrow-btn {
-    bottom: -60px;
+    bottom: -76px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-one-case-studies-slider button.case-arrow-btn {
+    bottom: -76px;
   }
 }
 .home-one-case-studies-slider button.case-arrow-btn.prev-btn {
@@ -7466,7 +7516,7 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .home-one-review .home-one-review-slider button.review-arrow-btn.prev-btn {
     bottom: -50px;
-    left: 120px;
+    right: 51%;
   }
 }
 .home-one-review .home-one-review-slider button.review-arrow-btn.next-btn {
@@ -7475,7 +7525,7 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .home-one-review .home-one-review-slider button.review-arrow-btn.next-btn {
     bottom: -50px;
-    right: 120px;
+    left: 50%;
   }
 }
 .home-one-review .home-one-review-slider button.review-arrow-btn i {
@@ -7523,6 +7573,11 @@ ul.children {
   padding: 120px 0 112px 0;
   overflow: hidden;
   position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-one-team-member-area {
+    padding: 80px 0;
+  }
 }
 @media (min-width: 1440px) {
   .home-one-team-member-area .sketch {
@@ -7658,6 +7713,13 @@ ul.children {
   width: 100%;
   height: 100%;
   z-index: 0;
+}
+.home-one-client-logo .home-one-client-slider {
+  position: relative;
+  z-index: 5;
+}
+.home-one-client-logo .home-one-client-slider .slick-dots {
+  display: none !important;
 }
 
 .home-two-about-us-area {

@@ -845,6 +845,11 @@ input:focus {
     flex-direction: column-reverse;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .image-card {
+    flex-direction: column-reverse;
+  }
+}
 .image-card .section-title .title {
   position: relative;
   margin-bottom: 16px;

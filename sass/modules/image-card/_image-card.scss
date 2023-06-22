@@ -106,6 +106,9 @@
     @include md {
         flex-direction: column-reverse;
     }
+    @include lg {
+        flex-direction: column-reverse;
+    }
     .section-title {
         .title {
             position: relative;
