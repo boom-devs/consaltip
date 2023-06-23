@@ -246,6 +246,10 @@
 
     &.prev-btn {
       right: 88px;
+      @include sm {
+        right: unset;
+        left: 32px;
+      }
       @include md {
         right: unset;
         left: 12px;
@@ -258,7 +262,7 @@
     &.next-btn {
       right: 12px;
       @include rmaxwd(767) {
-        right: 30px;
+        right: 32px;
         left: unset;
       }
     }

@@ -8,6 +8,10 @@
         cursor: pointer;
         border: 1px solid transparent;
         @include transition;
+        @include md {
+            justify-content: start;
+            padding: 24px;
+        }
         .icon {
             background: $brand;
             width: 80px;

@@ -14,8 +14,8 @@
                 margin-bottom: 16px;
                 @include sm {
                     margin-top: 24px;
-                    font-size: 38px;
-                    line-height: 56px;
+                    font-size: 32px;
+                    line-height: 44px;
                 }
                 @include md {
                     font-size: 48px;
@@ -34,6 +34,10 @@
                     font-size: 16px;
                     line-height: 28px;
                 }
+                @include md {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
             }
         }
         .about-counter-card {
@@ -47,6 +51,10 @@
                         letter-spacing: 0.02em;
                         color: $title-color;
                         display: flex;
+                        @include sm {
+                            font-size: 32px;
+                            line-height: 44px;
+                        }
                     }
                 }
                 .counter-content {
@@ -55,6 +63,12 @@
                         line-height: 31px;
                         color: #080f10;
                         margin-top: 8px;
+                        @include sm {
+                            font-size: 16px;
+                        }
+                        @include md {
+                            font-size: 16px;
+                        }
                     }
                 }
             }

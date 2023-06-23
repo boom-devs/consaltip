@@ -7829,6 +7829,16 @@ ul.children {
   background: #ffffff;
   position: relative;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-two-about-us-area {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-two-about-us-area {
+    padding: 80px 0;
+  }
+}
 @media (min-width: 1440px) {
   .home-two-about-us-area .sketch-one {
     background-image: url("../images/sketch-color.png");
@@ -7908,6 +7918,16 @@ ul.children {
 
 .home-two-mission {
   padding: 120px 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-two-mission {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-two-mission {
+    padding: 80px 0;
+  }
 }
 
 .home-two-client-logo-area {
@@ -8047,6 +8067,16 @@ ul.children {
   background-color: #033f47;
   position: relative;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-two-case-studies {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-two-case-studies {
+    padding: 80px 0;
+  }
+}
 .home-two-case-studies .sketch {
   position: absolute;
   background-image: url("../images/title-sketch.png");
@@ -8059,6 +8089,16 @@ ul.children {
 .home-two-team {
   padding: 120px 0;
   position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-two-team {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-two-team {
+    padding: 80px 0;
+  }
 }
 @media (min-width: 1440px) {
   .home-two-team .sketch {
@@ -8075,6 +8115,16 @@ ul.children {
   padding: 120px 0;
   background-color: #033f47;
   position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-two-customer-review {
+    padding: 80 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-two-customer-review {
+    padding: 80 0;
+  }
 }
 @media (min-width: 1440px) {
   .home-two-customer-review .sketch {
@@ -9113,6 +9163,12 @@ ul.children {
 .about_us_team_member button.team-card-arrow-btn.prev-btn {
   right: 88px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about_us_team_member button.team-card-arrow-btn.prev-btn {
+    right: unset;
+    left: 32px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about_us_team_member button.team-card-arrow-btn.prev-btn {
     right: unset;
@@ -9124,7 +9180,7 @@ ul.children {
 }
 @media (max-width: 767px) {
   .about_us_team_member button.team-card-arrow-btn.next-btn {
-    right: 30px;
+    right: 32px;
     left: unset;
   }
 }
