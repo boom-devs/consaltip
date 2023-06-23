@@ -3228,6 +3228,11 @@ html {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .header-sec {
+    padding: 0 12px;
+  }
+}
+@media (min-width: 1440px) {
+  .header-sec {
     padding: 0 48px;
   }
 }
@@ -3249,11 +3254,14 @@ html {
   margin: 0;
   padding: 0;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .main-menu ul li {
   display: inline-block;
   padding: 0;
   position: relative;
+  flex-shrink: 0;
 }
 .main-menu ul li.active {
   position: relative;
@@ -3263,6 +3271,10 @@ html {
 }
 .main-menu ul li.active > a:before {
   border-color: #e0f780;
+}
+.main-menu ul li.dropdown ul {
+  display: flex;
+  flex-direction: column;
 }
 .main-menu ul li.dropdown > a {
   padding-right: 30px;
@@ -3715,6 +3727,23 @@ a.meanmenu-reveal {
   position: relative;
   z-index: 2;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .icon-card {
+    margin-top: 24px;
+    padding: 48px 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .icon-card {
+    margin-top: 24px;
+    padding: 48px 12px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .icon-card {
+    padding: 32px 12px;
+  }
+}
 .icon-card .icon {
   width: 100px;
   height: 100px;
@@ -3796,18 +3825,6 @@ a.meanmenu-reveal {
 }
 .icon-card:hover .icon {
   background: #e0f780;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .icon-card {
-    margin-top: 24px;
-    padding: 48px 12px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .icon-card {
-    margin-top: 24px;
-    padding: 48px 12px;
-  }
 }
 
 .icon-card.style-two {
@@ -5018,6 +5035,9 @@ button.testimonial-arrow-btn:hover i {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-title .title {
     font-size: 46px;
+  }
+  .section-title .title br {
+    display: none;
   }
 }
 .section-title .desc {
@@ -6772,7 +6792,7 @@ ul.children {
   background: transparent;
   color: #ffffff;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media (max-width: 1199px) {
   .footer .footer-widget .widget-colors .subs form input {
     width: 100%;
   }
@@ -7407,6 +7427,11 @@ ul.children {
     padding: 0 48px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-one-case-studies-slider {
+    padding: 0 48px;
+  }
+}
 .home-one-case-studies-slider .portfolio-card {
   margin: 0 24px;
 }
@@ -7677,6 +7702,12 @@ ul.children {
     padding: 0 32px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-one-team-member-area .home-one-team-member {
+    margin-left: 0;
+    padding: 0 32px;
+  }
+}
 .home-one-team-member-area .home-one-team-member .slick-arrow {
   display: none !important;
 }
@@ -7772,6 +7803,11 @@ ul.children {
   position: relative;
   padding: 82px 0 72px 0;
   background-color: #033f47;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-one-client-logo {
+    padding: 60px 0;
+  }
 }
 .home-one-client-logo:after {
   content: "";

@@ -587,6 +587,26 @@ input:focus {
   height: 112px;
   margin-top: 32px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .portfolio-card .content {
+    width: 100%;
+    height: 100%;
+    margin-top: 24px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio-card .content {
+    width: 100%;
+    height: 100%;
+    margin-top: 24px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-card .content {
+    width: 100%;
+    height: 100%;
+  }
+}
 .portfolio-card .content .icon {
   display: none;
   position: absolute;
@@ -638,20 +658,6 @@ input:focus {
   }
   .portfolio-card .content p br {
     display: none;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .portfolio-card .content {
-    width: 100%;
-    height: 100%;
-    margin-top: 24px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .portfolio-card .content {
-    width: 100%;
-    height: 100%;
-    margin-top: 24px;
   }
 }
 .portfolio-card:hover {
@@ -734,8 +740,14 @@ input:focus {
   align-items: center;
   gap: 64px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .image-card {
+    flex-direction: column-reverse;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .image-card {
+    flex-direction: column-reverse;
     gap: 32px;
   }
 }
@@ -756,6 +768,11 @@ input:focus {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .image-card .content .title {
+    font-size: 48px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .image-card .content .title {
     font-size: 48px;
   }
@@ -843,26 +860,6 @@ input:focus {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .image-card .image {
     width: 100%;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .image-card .image {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .image-card {
-    flex-direction: column-reverse;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .image-card {
-    flex-direction: column-reverse;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .image-card {
-    flex-direction: column-reverse;
   }
 }
 .image-card .section-title .title {
@@ -1609,6 +1606,12 @@ input:focus {
     line-height: 56px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-info-card .content-wrapper .content .title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
 .about-info-card .content-wrapper .content .desc {
   font-size: 18px;
   line-height: 31px;
@@ -1796,6 +1799,8 @@ input:focus {
   flex-direction: column;
   gap: 32px;
   align-items: start;
+  justify-content: space-between;
+  height: 100%;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .accordion-wrapper-two {
@@ -1824,6 +1829,11 @@ input:focus {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .accordion-wrapper-two .accordion-list-item-two {
     padding: 24px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .accordion-wrapper-two .accordion-list-item-two {
+    padding: 16px;
   }
 }
 .accordion-wrapper-two .accordion-list-item-two:hover .accordion-head .icon {
@@ -1856,6 +1866,12 @@ input:focus {
     gap: 16px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .accordion-wrapper-two .accordion-list-item-two .accordion-head {
+    align-items: center;
+    gap: 16px;
+  }
+}
 .accordion-wrapper-two .accordion-list-item-two .accordion-head .icon {
   width: 80px;
   height: 80px;
@@ -1876,6 +1892,12 @@ input:focus {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accordion-wrapper-two .accordion-list-item-two .accordion-head .icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .accordion-wrapper-two .accordion-list-item-two .accordion-head .icon {
     width: 60px;
     height: 60px;
@@ -1913,6 +1935,11 @@ input:focus {
     font-size: 30px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .accordion-wrapper-two .accordion-list-item-two .accordion-head .icon i {
+    font-size: 40px;
+  }
+}
 .accordion-wrapper-two .accordion-list-item-two .accordion-head .icon:before {
   content: "" !important;
 }
@@ -1931,6 +1958,11 @@ input:focus {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accordion-wrapper-two .accordion-list-item-two .accordion-head .accordion-title {
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .accordion-wrapper-two .accordion-list-item-two .accordion-head .accordion-title {
     margin-top: 0;
   }

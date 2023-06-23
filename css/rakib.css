@@ -634,6 +634,23 @@ input:focus {
   position: relative;
   z-index: 2;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .icon-card {
+    margin-top: 24px;
+    padding: 48px 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .icon-card {
+    margin-top: 24px;
+    padding: 48px 12px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .icon-card {
+    padding: 32px 12px;
+  }
+}
 .icon-card .icon {
   width: 100px;
   height: 100px;
@@ -715,18 +732,6 @@ input:focus {
 }
 .icon-card:hover .icon {
   background: #e0f780;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .icon-card {
-    margin-top: 24px;
-    padding: 48px 12px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .icon-card {
-    margin-top: 24px;
-    padding: 48px 12px;
-  }
 }
 
 .icon-card.style-two {

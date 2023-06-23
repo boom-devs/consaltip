@@ -157,6 +157,9 @@
     padding: 24px 48px;
   }
   @include xl {
+    padding: 0 12px;
+  }
+  @include rwd(1440) {
     padding: 0 48px;
   }
   &.sticky-header {
@@ -181,10 +184,13 @@
     margin: 0;
     padding: 0;
     position: relative;
+    display: flex;
+    align-items: center;
     li {
       display: inline-block;
       padding: 0;
       position: relative;
+      flex-shrink: 0;
 
       &.active {
         position: relative;
@@ -206,6 +212,10 @@
         }
       }
       &.dropdown {
+        ul {
+          display: flex;
+          flex-direction: column;
+        }
         > a {
           padding-right: 30px;
 

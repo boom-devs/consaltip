@@ -40,6 +40,9 @@
     @include md {
       padding: 30px;
     }
+    @include lg {
+      padding: 30px;
+    }
   }
   .consultion-img img {
     width: 100%;

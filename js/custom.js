@@ -145,7 +145,7 @@
             arrows: true,
             slidesToScroll: 1,
             loop: true,
-            dots: false,
+            dots: true,
             speed: 1500,
             prevArrow:
                 "<button type='button' class='slider-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
@@ -314,6 +314,13 @@
                 "<button type='button' class='case-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
             responsive: [
                 {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        variableWidth: false,
+                    },
+                },
+                {
                     breakpoint: 991,
                     settings: {
                         slidesToShow: 2,
@@ -378,6 +385,13 @@
             nextArrow:
                 "<button type='button' class='home-one-team-arrow-next'><i class='fa-solid fa-angle-right'></i></button>",
             responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        variableWidth: false,
+                    },
+                },
                 {
                     breakpoint: 992,
                     settings: {
@@ -700,12 +714,6 @@
                     breakpoint: 767,
                     settings: {
                         slidesToShow: 2,
-                    },
-                },
-                {
-                    breakpoint: 460,
-                    settings: {
-                        slidesToShow: 1,
                     },
                 },
             ],

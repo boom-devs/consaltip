@@ -72,7 +72,7 @@
             border: 1px solid #e0e0e0;
             background: transparent;
             color: $white;
-            @include sm {
+            @include rmaxwd(1199) {
               width: 100%;
             }
           }

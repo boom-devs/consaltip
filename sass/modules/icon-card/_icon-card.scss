@@ -8,7 +8,18 @@
     gap: 24px;
     position: relative;
     z-index: 2;
-
+    @include sm {
+        margin-top: 24px;
+        padding: 48px 12px;
+    }
+    @include md {
+        margin-top: 24px;
+        padding: 48px 12px;
+    }
+    @include lg {
+        // margin-top: 24px;
+        padding: 32px 12px;
+    }
     .icon {
         width: 100px;
         height: 100px;
@@ -84,13 +95,5 @@
         .icon {
             background: $brand;
         }
-    }
-    @include sm {
-        margin-top: 24px;
-        padding: 48px 12px;
-    }
-    @include md {
-        margin-top: 24px;
-        padding: 48px 12px;
     }
 }

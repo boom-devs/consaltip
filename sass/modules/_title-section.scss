@@ -41,6 +41,9 @@
     }
     @include lg {
       font-size: 46px;
+      br {
+        display: none;
+      }
     }
   }
 

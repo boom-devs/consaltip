@@ -2,8 +2,15 @@
     display: flex;
     align-items: center;
     gap: 64px;
+    @include sm {
+        flex-direction: column-reverse;
+    }
     @include md {
+        flex-direction: column-reverse;
         gap: 32px;
+    }
+    @include lg {
+        // flex-direction: column-reverse;
     }
     .content {
         // padding-right: 106px;
@@ -19,6 +26,9 @@
                 font-size: 36px;
             }
             @include md {
+                font-size: 48px;
+            }
+            @include lg {
                 font-size: 48px;
             }
         }
@@ -103,18 +113,10 @@
             width: 100%;
         }
         @include lg {
-            width: 100%;
+            // width: 100%;
         }
     }
-    @include sm {
-        flex-direction: column-reverse;
-    }
-    @include md {
-        flex-direction: column-reverse;
-    }
-    @include lg {
-        flex-direction: column-reverse;
-    }
+
     .section-title {
         .title {
             position: relative;

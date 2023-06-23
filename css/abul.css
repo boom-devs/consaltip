@@ -3228,6 +3228,11 @@ html {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
   .header-sec {
+    padding: 0 12px;
+  }
+}
+@media (min-width: 1440px) {
+  .header-sec {
     padding: 0 48px;
   }
 }
@@ -3249,11 +3254,14 @@ html {
   margin: 0;
   padding: 0;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .main-menu ul li {
   display: inline-block;
   padding: 0;
   position: relative;
+  flex-shrink: 0;
 }
 .main-menu ul li.active {
   position: relative;
@@ -3263,6 +3271,10 @@ html {
 }
 .main-menu ul li.active > a:before {
   border-color: #e0f780;
+}
+.main-menu ul li.dropdown ul {
+  display: flex;
+  flex-direction: column;
 }
 .main-menu ul li.dropdown > a {
   padding-right: 30px;
@@ -3760,13 +3772,12 @@ a.meanmenu-reveal {
 .slider-area .slider-wrapper .slick-dots {
   display: flex;
   gap: 20px;
-  flex-direction: column;
   position: absolute;
-  top: 50%;
-  right: 46px;
+  bottom: 48px;
+  left: 46px;
   transform: translateY(-50%);
   z-index: 2;
-  flex-direction: column;
+  flex-direction: row;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .slider-wrapper .slick-dots {
@@ -3795,8 +3806,8 @@ a.meanmenu-reveal {
   font-size: 0;
   line-height: 14px;
   padding: 0;
-  width: 29px;
-  height: 29px;
+  width: 16px;
+  height: 16px;
   background-color: #c3e4de;
   color: #ffffff;
   border-radius: 50px;
@@ -3825,6 +3836,7 @@ a.meanmenu-reveal {
   top: 50%;
   transform: translateY(-50%);
   overflow: hidden;
+  display: none !important;
 }
 @media (max-width: 767px) {
   .slider-area button.slider-arrow-btn {
@@ -3834,19 +3846,33 @@ a.meanmenu-reveal {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area button.slider-arrow-btn {
+    bottom: 0;
+    top: unset;
     display: none !important;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-area button.slider-arrow-btn {
+    bottom: 0;
+    top: unset;
     display: none !important;
   }
 }
 .slider-area button.slider-arrow-btn.prev-btn {
   left: 30px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area button.slider-arrow-btn.prev-btn {
+    left: 144px;
+  }
+}
 .slider-area button.slider-arrow-btn.next-btn {
   right: 30px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area button.slider-arrow-btn.next-btn {
+    right: 144px;
+  }
 }
 .slider-area button.slider-arrow-btn i {
   position: absolute;
@@ -3871,8 +3897,7 @@ a.meanmenu-reveal {
   background-position: center center;
   position: relative;
   z-index: 2;
-  padding-top: 156px;
-  padding-bottom: 64px;
+  padding: 156px 48px 64px 48px;
   height: 960px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -3884,6 +3909,12 @@ a.meanmenu-reveal {
   .slider-area .single-slider {
     height: 700px;
     padding-top: 112px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .slider-area .single-slider {
+    height: 700px;
+    padding: 120px 24px 64px 24px;
   }
 }
 .slider-area .single-slider .slider-content-wrapper {
@@ -3906,7 +3937,7 @@ a.meanmenu-reveal {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #e0f780;
+    background-color: #575959;
     opacity: 0.3;
     top: 0;
     left: 0;
@@ -3916,6 +3947,8 @@ a.meanmenu-reveal {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .single-slider .slider-content-wrapper .slider-content {
     text-align: center;
+    position: relative;
+    z-index: 5;
   }
 }
 .slider-area .single-slider .slider-content-wrapper .slider-content .slider-short-title {
@@ -4065,6 +4098,23 @@ a.meanmenu-reveal {
   position: relative;
   z-index: 2;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .icon-card {
+    margin-top: 24px;
+    padding: 48px 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .icon-card {
+    margin-top: 24px;
+    padding: 48px 12px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .icon-card {
+    padding: 32px 12px;
+  }
+}
 .icon-card .icon {
   width: 100px;
   height: 100px;
@@ -4146,18 +4196,6 @@ a.meanmenu-reveal {
 }
 .icon-card:hover .icon {
   background: #e0f780;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .icon-card {
-    margin-top: 24px;
-    padding: 48px 12px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .icon-card {
-    margin-top: 24px;
-    padding: 48px 12px;
-  }
 }
 
 .icon-card.style-two {
@@ -4275,6 +4313,12 @@ a.meanmenu-reveal {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-info-card .content-wrapper .content .title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about-info-card .content-wrapper .content .title {
     font-size: 48px;
     line-height: 56px;
@@ -5551,6 +5595,9 @@ button.testimonial-arrow-btn:hover i {
   .section-title .title {
     font-size: 46px;
   }
+  .section-title .title br {
+    display: none;
+  }
 }
 .section-title .desc {
   font-family: "Inter", sans-serif;
@@ -5773,6 +5820,11 @@ button.testimonial-arrow-btn:hover i {
     padding: 30px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .consultation-wrapper .free-consultaion-text {
+    padding: 30px;
+  }
+}
 .consultation-wrapper .consultion-img img {
   width: 100%;
 }
@@ -5807,8 +5859,14 @@ button.testimonial-arrow-btn:hover i {
   align-items: center;
   gap: 64px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .image-card {
+    flex-direction: column-reverse;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .image-card {
+    flex-direction: column-reverse;
     gap: 32px;
   }
 }
@@ -5829,6 +5887,11 @@ button.testimonial-arrow-btn:hover i {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .image-card .content .title {
+    font-size: 48px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .image-card .content .title {
     font-size: 48px;
   }
@@ -5916,26 +5979,6 @@ button.testimonial-arrow-btn:hover i {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .image-card .image {
     width: 100%;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .image-card .image {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .image-card {
-    flex-direction: column-reverse;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .image-card {
-    flex-direction: column-reverse;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .image-card {
-    flex-direction: column-reverse;
   }
 }
 .image-card .section-title .title {
@@ -7547,7 +7590,7 @@ ul.children {
   background: transparent;
   color: #ffffff;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media (max-width: 1199px) {
   .footer .footer-widget .widget-colors .subs form input {
     width: 100%;
   }
@@ -8218,6 +8261,11 @@ ul.children {
     padding: 0 48px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-one-case-studies-slider {
+    padding: 0 48px;
+  }
+}
 .home-one-case-studies-slider .portfolio-card {
   margin: 0 24px;
 }
@@ -8488,6 +8536,12 @@ ul.children {
     padding: 0 32px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-one-team-member-area .home-one-team-member {
+    margin-left: 0;
+    padding: 0 32px;
+  }
+}
 .home-one-team-member-area .home-one-team-member .slick-arrow {
   display: none !important;
 }
@@ -8583,6 +8637,11 @@ ul.children {
   position: relative;
   padding: 82px 0 72px 0;
   background-color: #033f47;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-one-client-logo {
+    padding: 60px 0;
+  }
 }
 .home-one-client-logo:after {
   content: "";

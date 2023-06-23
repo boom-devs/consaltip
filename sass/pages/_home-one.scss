@@ -205,6 +205,9 @@
   @include md {
     padding: 0 48px;
   }
+  @include lg {
+    padding: 0 48px;
+  }
   .portfolio-card {
     margin: 0 24px;
   }
@@ -440,6 +443,10 @@
       margin-left: 0;
       padding: 0 32px;
     }
+    @include lg {
+      margin-left: 0;
+      padding: 0 32px;
+    }
     .slick-arrow {
       display: none !important;
     }
@@ -539,6 +546,9 @@
   position: relative;
   padding: 82px 0 72px 0;
   background-color: $icon-color;
+  @include sm {
+    padding: 60px 0;
+  }
   &:after {
     content: "";
     position: absolute;
