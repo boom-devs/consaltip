@@ -9073,6 +9073,16 @@ ul.children {
   padding: 120px 0;
   position: relative;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-two-blog-area {
+    padding: 80 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-two-blog-area {
+    padding: 80 0;
+  }
+}
 @media (min-width: 1440px) {
   .home-two-blog-area .sketch {
     position: absolute;

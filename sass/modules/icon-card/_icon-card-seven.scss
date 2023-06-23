@@ -12,6 +12,9 @@
             justify-content: start;
             padding: 24px;
         }
+        @include lg {
+            padding: 16px 12px;
+        }
         .icon {
             background: $brand;
             width: 80px;

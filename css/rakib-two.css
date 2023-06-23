@@ -1053,6 +1053,11 @@ input:focus {
     padding: 24px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .icon-card.style-seven {
+    padding: 16px 12px;
+  }
+}
 .icon-card.style-seven .icon {
   background: #e0f780;
   width: 80px;

@@ -376,6 +376,12 @@
 .home-two-blog-area {
   padding: 120px 0;
   position: relative;
+  @include sm {
+    padding: 80 0;
+  }
+  @include md {
+    padding: 80 0;
+  }
   .sketch {
     @include rwd(1440) {
       position: absolute;
