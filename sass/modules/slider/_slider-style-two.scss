@@ -79,15 +79,17 @@
           z-index: 3;
         }
         .certified {
-          background-image: url("../images/slider/certified.png");
-          background-position: center;
-          width: 155px;
-          height: 155px;
-          top: 31px;
-          left: 0;
-          position: absolute;
-          transform: translate(-50%, 0);
-          z-index: 5;
+          @include rwd(1400) {
+            background-image: url("../images/slider/certified.png");
+            background-position: center;
+            width: 155px;
+            height: 155px;
+            top: 31px;
+            left: 0;
+            position: absolute;
+            transform: translate(-50%, 0);
+            z-index: 5;
+          }
         }
       }
       .slick-dots {

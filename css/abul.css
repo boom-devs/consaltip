@@ -3226,14 +3226,9 @@ html {
     padding: 24px 48px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
   .header-sec {
-    padding: 0 12px;
-  }
-}
-@media (min-width: 1440px) {
-  .header-sec {
-    padding: 0 48px;
+    padding: 0 36px;
   }
 }
 .header-sec.sticky-header {
@@ -3254,8 +3249,6 @@ html {
   margin: 0;
   padding: 0;
   position: relative;
-  display: flex;
-  align-items: center;
 }
 .main-menu ul li {
   display: inline-block;
@@ -3271,10 +3264,6 @@ html {
 }
 .main-menu ul li.active > a:before {
   border-color: #e0f780;
-}
-.main-menu ul li.dropdown ul {
-  display: flex;
-  flex-direction: column;
 }
 .main-menu ul li.dropdown > a {
   padding-right: 30px;
@@ -5186,6 +5175,11 @@ button.testimonial-arrow-btn:hover i {
 }
 .post-card-one .content-wrapper .post-content .title:hover {
   text-decoration: underline;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .post-card-one .content-wrapper .post-content .title {
+    font-size: 28px;
+  }
 }
 .post-card-one .content-wrapper button {
   flex-shrink: 0;

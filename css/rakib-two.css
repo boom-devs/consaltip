@@ -1769,16 +1769,18 @@ input:focus {
   position: relative;
   z-index: 3;
 }
-.slider-area.style-two .slider-wrapper .slider-image .certified {
-  background-image: url("../images/slider/certified.png");
-  background-position: center;
-  width: 155px;
-  height: 155px;
-  top: 31px;
-  left: 0;
-  position: absolute;
-  transform: translate(-50%, 0);
-  z-index: 5;
+@media (min-width: 1400px) {
+  .slider-area.style-two .slider-wrapper .slider-image .certified {
+    background-image: url("../images/slider/certified.png");
+    background-position: center;
+    width: 155px;
+    height: 155px;
+    top: 31px;
+    left: 0;
+    position: absolute;
+    transform: translate(-50%, 0);
+    z-index: 5;
+  }
 }
 .slider-area.style-two .slider-wrapper .slick-dots {
   display: none !important;

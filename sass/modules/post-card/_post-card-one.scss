@@ -57,6 +57,9 @@
         &:hover {
           text-decoration: underline;
         }
+        @include lg {
+          font-size: 28px;
+        }
       }
     }
     button {
