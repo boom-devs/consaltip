@@ -1001,6 +1001,16 @@ input:focus {
   background: #f8f8f1;
   padding: 64px 38px 44px 36px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-wrapper .price-card {
+    padding: 40px 30px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .price-card-wrapper .price-card {
+    padding: 45px 25px 35px 25px;
+  }
+}
 .price-card-wrapper .price-card .card-title .sub-title {
   font-family: "Outfit", sans-serif;
   font-style: normal;
@@ -1012,6 +1022,11 @@ input:focus {
 }
 .price-card-wrapper .price-card .price {
   margin-top: 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-wrapper .price-card .price {
+    margin-top: 24px;
+  }
 }
 .price-card-wrapper .price-card .price .price-heading {
   display: flex;
@@ -1087,6 +1102,16 @@ input:focus {
   justify-content: center;
   margin-top: 76px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-wrapper .price-card .list-wrapper .price-btn {
+    margin-top: 44px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-card-wrapper .price-card .list-wrapper .price-btn {
+    margin-top: 44px;
+  }
+}
 .price-card-wrapper .price-card .list-wrapper .price-btn a {
   padding: 17px 64px;
   border: 1px solid #575959;
@@ -1102,9 +1127,14 @@ input:focus {
   background: #033f47;
   color: #ffffff;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .price-card-wrapper .price-card {
-    padding: 45px 25px 35px 25px;
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-wrapper .price-card .list-wrapper .price-btn a {
+    padding: 14px 52px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-card-wrapper .price-card .list-wrapper .price-btn a {
+    padding: 14px 52px;
   }
 }
 .price-card-wrapper .price-header {
@@ -1571,6 +1601,16 @@ input:focus {
   padding: 120px 0;
   position: relative;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .service-what-we-area {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .service-what-we-area {
+    padding: 80px 0;
+  }
+}
 .service-what-we-area .sketch {
   background: url("../images/sketch-color.png");
   position: absolute;
@@ -1581,17 +1621,7 @@ input:focus {
   width: 169px;
   height: 169px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .service-what-we-area .sketch {
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .service-what-we-area .sketch {
-    display: none;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
   .service-what-we-area .sketch {
     display: none;
   }
@@ -1606,17 +1636,7 @@ input:focus {
   width: 40px;
   height: 40px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .service-what-we-area .shape-one {
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .service-what-we-area .shape-one {
-    display: none;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
   .service-what-we-area .shape-one {
     display: none;
   }
@@ -1631,19 +1651,23 @@ input:focus {
   width: 40px;
   height: 40px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media (max-width: 1199px) {
   .service-what-we-area .shape-two {
     display: none;
+  }
+}
+
+.image-card-section {
+  padding: 120px 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .image-card-section {
+    padding: 60px 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .service-what-we-area .shape-two {
-    display: none;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .service-what-we-area .shape-two {
-    display: none;
+  .image-card-section {
+    padding: 80px 0;
   }
 }
 

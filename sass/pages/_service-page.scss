@@ -2,6 +2,12 @@
     background: $background;
     padding: 120px 0;
     position: relative;
+    @include sm {
+        padding: 80px 0;
+    }
+    @include md {
+        padding: 80px 0;
+    }
     .sketch {
         background: url("../images/sketch-color.png");
         position: absolute;
@@ -11,13 +17,7 @@
         background-repeat: no-repeat;
         width: 169px;
         height: 169px;
-        @include sm {
-            display: none;
-        }
-        @include md {
-            display: none;
-        }
-        @include lg {
+        @include rmaxwd(1199) {
             display: none;
         }
     }
@@ -30,13 +30,7 @@
         background-repeat: no-repeat;
         width: 40px;
         height: 40px;
-        @include sm {
-            display: none;
-        }
-        @include md {
-            display: none;
-        }
-        @include lg {
+        @include rmaxwd(1199) {
             display: none;
         }
     }
@@ -49,15 +43,20 @@
         background-repeat: no-repeat;
         width: 40px;
         height: 40px;
-        @include sm {
+        @include rmaxwd(1199) {
             display: none;
         }
-        @include md {
-            display: none;
-        }
-        @include lg {
-            display: none;
-        }
+    }
+}
+
+// image-card-section
+.image-card-section {
+    padding: 120px 0;
+    @include sm {
+        padding: 60px 0;
+    }
+    @include md {
+        padding: 80px 0;
     }
 }
 

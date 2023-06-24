@@ -110,6 +110,12 @@
     .price-card {
         background: $background;
         padding: 64px 38px 44px 36px;
+        @include sm {
+            padding: 40px 30px;
+        }
+        @include lg {
+            padding: 45px 25px 35px 25px;
+        }
         .card-title {
             .sub-title {
                 font-family: $heading-font;
@@ -123,6 +129,9 @@
         }
         .price {
             margin-top: 40px;
+            @include sm {
+                margin-top: 24px;
+            }
             .price-heading {
                 display: flex;
                 align-items: center;
@@ -196,6 +205,12 @@
                 align-items: center;
                 justify-content: center;
                 margin-top: 76px;
+                @include sm {
+                    margin-top: 44px;
+                }
+                @include md {
+                    margin-top: 44px;
+                }
                 a {
                     padding: 17px 64px;
                     border: 1px solid $text-color;
@@ -210,11 +225,14 @@
                         background: $icon-color;
                         color: $white;
                     }
+                    @include sm {
+                        padding: 14px 52px;
+                    }
+                    @include md {
+                        padding: 14px 52px;
+                    }
                 }
             }
-        }
-        @include lg {
-            padding: 45px 25px 35px 25px;
         }
     }
     .price-header {

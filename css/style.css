@@ -4827,6 +4827,16 @@ button.testimonial-arrow-btn:hover i {
   background: #f8f8f1;
   padding: 64px 38px 44px 36px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-wrapper .price-card {
+    padding: 40px 30px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .price-card-wrapper .price-card {
+    padding: 45px 25px 35px 25px;
+  }
+}
 .price-card-wrapper .price-card .card-title .sub-title {
   font-family: "Outfit", sans-serif;
   font-style: normal;
@@ -4838,6 +4848,11 @@ button.testimonial-arrow-btn:hover i {
 }
 .price-card-wrapper .price-card .price {
   margin-top: 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-wrapper .price-card .price {
+    margin-top: 24px;
+  }
 }
 .price-card-wrapper .price-card .price .price-heading {
   display: flex;
@@ -4913,6 +4928,16 @@ button.testimonial-arrow-btn:hover i {
   justify-content: center;
   margin-top: 76px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-wrapper .price-card .list-wrapper .price-btn {
+    margin-top: 44px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-card-wrapper .price-card .list-wrapper .price-btn {
+    margin-top: 44px;
+  }
+}
 .price-card-wrapper .price-card .list-wrapper .price-btn a {
   padding: 17px 64px;
   border: 1px solid #575959;
@@ -4928,9 +4953,14 @@ button.testimonial-arrow-btn:hover i {
   background: #033f47;
   color: #ffffff;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .price-card-wrapper .price-card {
-    padding: 45px 25px 35px 25px;
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .price-card-wrapper .price-card .list-wrapper .price-btn a {
+    padding: 14px 52px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-card-wrapper .price-card .list-wrapper .price-btn a {
+    padding: 14px 52px;
   }
 }
 .price-card-wrapper .price-header {
@@ -4991,7 +5021,7 @@ button.testimonial-arrow-btn:hover i {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .section-title {
-    gap: 28px;
+    gap: 20px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -5232,6 +5262,16 @@ button.testimonial-arrow-btn:hover i {
 .page-breadcrumb-sec.style-two {
   padding: 235px 0;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .page-breadcrumb-sec.style-two {
+    padding: 112px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .page-breadcrumb-sec.style-two {
+    padding: 148px 0;
+  }
+}
 
 .page-overlay {
   background: linear-gradient(0deg, rgba(3, 63, 71, 0.7), rgba(3, 63, 71, 0.7));
@@ -5275,12 +5315,35 @@ button.testimonial-arrow-btn:hover i {
   .page-heading h1 {
     font-size: 48px;
     line-height: 62px;
-    padding: 0 12px;
+    padding: 0 136px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .page-heading h1 {
+    padding: 0 300px;
   }
 }
 .page-heading.style-two h1 {
   font-size: 56px;
   line-height: 120%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .page-heading.style-two h1 {
+    font-size: 36px;
+    line-height: 54px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .page-heading.style-two h1 {
+    font-size: 48px;
+    line-height: 62px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .page-heading.style-two h1 {
+    font-size: 48px;
+    line-height: 62px;
+  }
 }
 
 .breadcrumb-wrapper {

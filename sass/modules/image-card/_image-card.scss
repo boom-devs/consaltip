@@ -19,12 +19,24 @@
         flex-direction: column;
         gap: 48px;
         width: 50%;
+        @include sm {
+            width: 100%;
+            padding-right: 0;
+            gap: 32px;
+        }
+        @include md {
+            width: 100%;
+        }
+        @include lg {
+            width: 100%;
+            padding-right: 0;
+        }
         .title {
             position: relative;
             margin-bottom: 16px;
             letter-spacing: 0.02em;
             @include sm {
-                font-size: 36px;
+                font-size: 30px;
             }
             @include md {
                 font-size: 48px;
@@ -41,17 +53,6 @@
                 font-size: 16px;
                 line-height: 28px;
             }
-        }
-        @include sm {
-            width: 100%;
-            padding-right: 0;
-        }
-        @include md {
-            width: 100%;
-        }
-        @include lg {
-            width: 100%;
-            padding-right: 0;
         }
         .title-wrapper {
             .desc {

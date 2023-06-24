@@ -794,6 +794,24 @@ input:focus {
   gap: 48px;
   width: 50%;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .image-card .content {
+    width: 100%;
+    padding-right: 0;
+    gap: 32px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .image-card .content {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .image-card .content {
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .image-card .content .title {
   position: relative;
   margin-bottom: 16px;
@@ -801,7 +819,7 @@ input:focus {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .image-card .content .title {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -823,23 +841,6 @@ input:focus {
   .image-card .content .desc {
     font-size: 16px;
     line-height: 28px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .image-card .content {
-    width: 100%;
-    padding-right: 0;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .image-card .content {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .image-card .content {
-    width: 100%;
-    padding-right: 0;
   }
 }
 .image-card .image-card-btn span {
@@ -938,7 +939,7 @@ input:focus {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .image-card.style-two .content .title {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 52px;
   }
 }

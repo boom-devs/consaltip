@@ -10,6 +10,12 @@
   }
   &.style-two {
     padding: 235px 0;
+    @include sm {
+      padding: 112px 0;
+    }
+    @include md {
+      padding: 148px 0;
+    }
   }
 }
 
@@ -48,13 +54,28 @@
     @include lg {
       font-size: 48px;
       line-height: 62px;
-      padding: 0 12px;
+      padding: 0 136px;
+    }
+    @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+      padding: 0 300px;
     }
   }
   &.style-two {
     h1 {
       font-size: 56px;
       line-height: 120%;
+      @include sm {
+        font-size: 36px;
+        line-height: 54px;
+      }
+      @include md {
+        font-size: 48px;
+        line-height: 62px;
+      }
+      @include lg {
+        font-size: 48px;
+        line-height: 62px;
+      }
     }
   }
 }
