@@ -1934,6 +1934,12 @@ input:focus {
   display: flex;
   gap: 32px;
 }
+.about-info-card .content-wrapper .about-counter-card .counter-item {
+  text-align: center;
+}
+.about-info-card .content-wrapper .about-counter-card .counter-item .counter-title {
+  text-align: center;
+}
 .about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number {
   font-size: 43px;
   line-height: 52px;
@@ -1946,6 +1952,9 @@ input:focus {
     font-size: 32px;
     line-height: 44px;
   }
+}
+.about-info-card .content-wrapper .about-counter-card .counter-item .counter-title .number span {
+  flex-shrink: 0;
 }
 .about-info-card .content-wrapper .about-counter-card .counter-item .counter-content .text {
   font-size: 18px;
@@ -2228,6 +2237,7 @@ input:focus {
   position: relative;
   padding: 40px;
   cursor: pointer;
+  transition: all 0.5s ease-out;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .accordion-wrapper-two .accordion-list-item-two {

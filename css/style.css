@@ -3715,7 +3715,7 @@ a.meanmenu-reveal {
 .icon-card {
   background: #ffffff;
   padding: 67px 38px;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -7409,6 +7409,9 @@ ul.children {
     left: 64px;
     bottom: 128px;
   }
+}
+.home-one-service .home-one-service-slider .slick-slide {
+  margin: 0 12px;
 }
 
 .home-one-process-step {

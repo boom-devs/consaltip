@@ -644,7 +644,7 @@ input:focus {
 .icon-card {
   background: #ffffff;
   padding: 67px 38px;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;

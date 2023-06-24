@@ -19,6 +19,7 @@
         position: relative;
         padding: 40px;
         cursor: pointer;
+        @include transition;
         @include sm {
             padding: 16px;
         }
