@@ -603,6 +603,7 @@ input:focus {
 }
 .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
   border-color: #ffffff;
+  flex-shrink: 0;
   transition: all 0.5s ease-out;
 }
 .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon i {
@@ -1562,7 +1563,18 @@ input:focus {
 .list-item .icon i {
   color: #033f47;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .list-item .icon i {
+    font-size: 14px;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .list-item .icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .list-item .icon {
     width: 28px;
     height: 28px;
@@ -1578,6 +1590,12 @@ input:focus {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .list-item .text {
     font-size: 16px;
+    line-height: 28px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .list-item .text {
+    font-size: 18px;
     line-height: 28px;
   }
 }

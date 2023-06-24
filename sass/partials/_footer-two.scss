@@ -45,6 +45,7 @@
               }
               .contact-icon {
                 border-color: $white;
+                flex-shrink: 0;
                 @include transition;
                 i {
                   color: $brand;

@@ -5047,7 +5047,7 @@ button.testimonial-arrow-btn:hover i {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .section-title .title {
-    font-size: 34px;
+    font-size: 30px;
     line-height: 52px;
   }
   .section-title .title br {
@@ -7150,6 +7150,7 @@ ul.children {
 }
 .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
   border-color: #ffffff;
+  flex-shrink: 0;
   transition: all 0.5s ease-out;
 }
 .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon i {

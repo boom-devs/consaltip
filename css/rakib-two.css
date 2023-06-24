@@ -453,6 +453,16 @@ input:focus {
   padding: 120px 0;
   position: relative;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .faq-area-global {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .faq-area-global {
+    padding: 80px 0;
+  }
+}
 .faq-area-global .faq-sketch {
   background: url("../images/sketch-color.png");
   position: absolute;
@@ -511,11 +521,6 @@ input:focus {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .faq-area-global .shape-two {
     display: none;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .faq-area-global {
-    padding: 100px 0;
   }
 }
 
@@ -994,6 +999,25 @@ input:focus {
   .image-card.style-three .content .title {
     font-size: 38px;
   }
+  .image-card.style-three .content .title br {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .image-card.style-three .content .title {
+    font-size: 38px;
+  }
+  .image-card.style-three .content .title br {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .image-card.style-three .content .title {
+    font-size: 38px;
+  }
+  .image-card.style-three .content .title br {
+    display: none;
+  }
 }
 .image-card.style-three .content .desc {
   font-weight: 400;
@@ -1419,7 +1443,12 @@ input:focus {
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .service-details-offer .title {
-    font-size: 30px;
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .service-details-offer .title {
+    font-size: 28px;
   }
 }
 .service-details-offer .desc {
@@ -2222,12 +2251,15 @@ input:focus {
   font-size: 16px;
   height: 45px;
   width: 45px;
-  background-color: #1eae98;
+  background-color: #033f47;
   color: #ffffff;
   border-radius: 50%;
 }
 .menu-sidebar-area .menu-sidebar-close .menu-sidebar-close-btn:hover {
-  background-color: #035b7b;
+  background-color: #e0f780;
+}
+.menu-sidebar-area .menu-sidebar-close .menu-sidebar-close-btn:hover i {
+  color: #080f10;
 }
 .menu-sidebar-area .menu-sidebar-content .menu-sidebar-single-widget {
   display: inline-block;

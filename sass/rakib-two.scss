@@ -147,6 +147,12 @@
     background-color: $background;
     padding: 120px 0;
     position: relative;
+    @include sm {
+        padding: 80px 0;
+    }
+    @include md {
+        padding: 80px 0;
+    }
     .faq-sketch {
         background: url("../images/sketch-color.png");
         position: absolute;
@@ -194,9 +200,6 @@
         @include lg {
             display: none;
         }
-    }
-    @include sm {
-        padding: 100px 0;
     }
 }
 

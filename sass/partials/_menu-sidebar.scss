@@ -47,11 +47,14 @@
       font-size: 16px;
       height: 45px;
       width: 45px;
-      background-color: $sky-color;
+      background-color: $icon-color;
       color: $white;
       border-radius: 50%;
       &:hover {
-        background-color: $primary-color;
+        background-color: $brand;
+        i {
+          color: $title-color;
+        }
       }
     }
   }

@@ -1,7 +1,10 @@
 .service-details-offer {
     .title {
         @include sm {
-            font-size: 30px;
+            font-size: 28px;
+        }
+        @include md {
+            font-size: 28px;
         }
     }
     .desc {

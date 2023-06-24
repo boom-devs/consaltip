@@ -11,7 +11,28 @@
                 line-height: 52px;
                 @include sm {
                     font-size: 38px;
+                    br {
+                        display: none;
+                    }
                 }
+                @include md {
+                    font-size: 38px;
+                    br {
+                        display: none;
+                    }
+                }
+                @include lg {
+                    font-size: 38px;
+                    br {
+                        display: none;
+                    }
+                }
+                // @include md {
+                //     font-size: 38px;
+                //     br {
+                //         display: none;
+                //     }
+                // }
             }
             .desc {
                 font-weight: 400;
