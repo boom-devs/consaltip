@@ -8,15 +8,23 @@
             margin-top: 0;
             overflow: visible;
             height: 100%;
+            @include rmaxwd(991) {
+                padding: 24px;
+            }
             .icon {
                 display: flex;
                 border-radius: 4px;
                 background: $icon-color;
-                bottom: 50px;
+                bottom: unset;
                 right: 50px;
-                top: unset;
+                top: 0;
                 i {
                     color: $white;
+                }
+                @include sm {
+                    width: 48px;
+                    height: 48px;
+                    right: 24px;
                 }
             }
             h4 {

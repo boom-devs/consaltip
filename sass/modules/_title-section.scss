@@ -83,6 +83,14 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 64px;
+    @include sm {
+      flex-direction: column;
+      margin-bottom: 32px;
+    }
+    @include md {
+      flex-direction: column;
+      gap: 48px;
+    }
     .title {
       color: $title-color;
       width: 50%;
@@ -110,13 +118,6 @@
         width: 50%;
         padding-left: 0;
       }
-    }
-    @include sm {
-      flex-direction: column;
-    }
-    @include md {
-      flex-direction: column;
-      gap: 48px;
     }
   }
   &.style-three {

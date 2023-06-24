@@ -5075,6 +5075,18 @@ button.testimonial-arrow-btn:hover i {
   justify-content: space-between;
   margin-bottom: 64px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .section-title.style-two {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title.style-two {
+    flex-direction: column;
+    gap: 48px;
+  }
+}
 .section-title.style-two .title {
   color: #080f10;
   width: 50%;
@@ -5111,17 +5123,6 @@ button.testimonial-arrow-btn:hover i {
   .section-title.style-two .desc {
     width: 50%;
     padding-left: 0;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .section-title.style-two {
-    flex-direction: column;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .section-title.style-two {
-    flex-direction: column;
-    gap: 48px;
   }
 }
 .section-title.style-three {
@@ -5209,7 +5210,7 @@ button.testimonial-arrow-btn:hover i {
 
 /* 15.Page Breadcrumb Section */
 .page-breadcrumb-sec {
-  padding: 210px 0 212px 0;
+  padding: 320px 0 212px 0;
   position: relative;
   z-index: 2;
   background-repeat: no-repeat;
@@ -5218,7 +5219,7 @@ button.testimonial-arrow-btn:hover i {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .page-breadcrumb-sec {
-    padding: 160px 5px;
+    padding: 120px 5px;
   }
 }
 .page-breadcrumb-sec.style-two {
@@ -5253,12 +5254,14 @@ button.testimonial-arrow-btn:hover i {
   .page-heading h1 {
     font-size: 36px;
     line-height: 54px;
+    padding: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .page-heading h1 {
     font-size: 48px;
     line-height: 62px;
+    padding: 0 12px;
   }
 }
 .page-heading.style-two h1 {
@@ -8927,7 +8930,7 @@ ul.children {
 }
 @media (max-width: 991px) {
   .about-page-about-us-area {
-    padding: 100px 0;
+    padding: 80px 0;
   }
 }
 
@@ -8937,6 +8940,11 @@ ul.children {
   background-position: center;
   background-size: cover;
   position: relative;
+}
+@media (max-width: 991px) {
+  .about-page-counter-area {
+    padding: 80px 0;
+  }
 }
 .about-page-counter-area .overlay {
   position: absolute;
@@ -8962,39 +8970,26 @@ ul.children {
     z-index: 2;
   }
 }
-@media (max-width: 991px) {
-  .about-page-counter-area {
-    padding: 100px 0;
-  }
-}
 
 .about-us-our-service-area {
   padding: 120px 0;
   position: relative;
 }
-.about-us-our-service-area .sketch {
-  background: url("../images/sketch-color.png");
-  position: absolute;
-  left: 40px;
-  bottom: 48px;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 169px;
-  height: 169px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about-us-our-service-area .sketch {
-    display: none;
+@media (max-width: 991px) {
+  .about-us-our-service-area {
+    padding: 80px 0;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 1400px) {
   .about-us-our-service-area .sketch {
-    display: none;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about-us-our-service-area .sketch {
-    display: none;
+    background: url("../images/sketch-color.png");
+    position: absolute;
+    left: 40px;
+    bottom: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 169px;
+    height: 169px;
   }
 }
 
@@ -9002,6 +8997,11 @@ ul.children {
   padding: 120px 0;
   background: #f8f8f1;
   position: relative;
+}
+@media (max-width: 991px) {
+  .about-page-faq-area {
+    padding: 80px 0;
+  }
 }
 @media (min-width: 1440px) {
   .about-page-faq-area .shape-one {
@@ -9039,16 +9039,6 @@ ul.children {
     height: 169px;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about-page-faq-area {
-    padding: 80px 0;
-  }
-}
-@media (max-width: 991px) {
-  .about-page-faq-area {
-    padding: 80px 0;
-  }
-}
 .about-page-faq-area .video-popup-card.style-three {
   margin-left: 160px;
 }
@@ -9063,6 +9053,11 @@ ul.children {
   background-color: #033f47;
   padding: 120px 0;
   position: relative;
+}
+@media (max-width: 991px) {
+  .about-page-portfolio-area {
+    padding: 80px 0;
+  }
 }
 @media (min-width: 1440px) {
   .about-page-portfolio-area .sketch {
@@ -9083,6 +9078,11 @@ ul.children {
   padding: 120px 0;
   position: relative;
 }
+@media (max-width: 991px) {
+  .about-page-team-area {
+    padding: 80px 0;
+  }
+}
 @media (min-width: 1440px) {
   .about-page-team-area .sketch {
     background: url("../images/sketch-color.png");
@@ -9095,29 +9095,13 @@ ul.children {
     height: 169px;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about-page-team-area {
-    padding: 80px 0;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-page-team-area {
-    padding: 80px 0;
-  }
-}
 
 .about_team_member_container {
   max-width: 1376px;
   margin: 0 auto;
   width: 100%;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about_team_member_container {
-    max-width: 100%;
-    padding: 0 12px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .about_team_member_container {
     max-width: 100%;
     padding: 0 12px;

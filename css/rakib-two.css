@@ -719,16 +719,28 @@ input:focus {
   overflow: visible;
   height: 100%;
 }
+@media (max-width: 991px) {
+  .portfolio-card.style-three .content {
+    padding: 24px;
+  }
+}
 .portfolio-card.style-three .content .icon {
   display: flex;
   border-radius: 4px;
   background: #033f47;
-  bottom: 50px;
+  bottom: unset;
   right: 50px;
-  top: unset;
+  top: 0;
 }
 .portfolio-card.style-three .content .icon i {
   color: #ffffff;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .portfolio-card.style-three .content .icon {
+    width: 48px;
+    height: 48px;
+    right: 24px;
+  }
 }
 .portfolio-card.style-three .content h4 {
   font-weight: 600;
@@ -748,6 +760,7 @@ input:focus {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .image-card {
     flex-direction: column-reverse;
+    gap: 32px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
