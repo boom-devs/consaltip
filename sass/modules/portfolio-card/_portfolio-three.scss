@@ -26,6 +26,11 @@
                     height: 48px;
                     right: 24px;
                 }
+                @include md {
+                    width: 48px;
+                    height: 48px;
+                    right: 24px;
+                }
             }
             h4 {
                 font-weight: 600;
@@ -35,6 +40,11 @@
             h4,
             p {
                 color: $title-color;
+            }
+            p {
+                @include rmaxwd(991) {
+                    font-size: 14px;
+                }
             }
         }
     }

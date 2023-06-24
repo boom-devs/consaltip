@@ -184,7 +184,14 @@ input:focus {
   font-weight: 400;
   position: relative;
   z-index: 1;
-
+  @include sm {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  @include md {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
   &:hover {
     background: $title-color;
     color: #fff;
@@ -228,10 +235,6 @@ input:focus {
     @include md {
       padding: 10px 20px;
     }
-  }
-  @include sm {
-    padding: 10px 20px;
-    font-size: 16px;
   }
 }
 

@@ -15,6 +15,7 @@
     }
     @include sm {
       font-size: 14px;
+      margin-right: 4px;
     }
   }
   .footer-bottom-menu ul li {
@@ -309,6 +310,9 @@
           color: $white;
           @include sm {
             font-size: 46px;
+          }
+          @include md {
+            font-size: 48px;
           }
         }
         .text {

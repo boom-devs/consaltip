@@ -208,6 +208,20 @@ input:focus {
   position: relative;
   z-index: 1;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .theme-btn,
+  .wp-block-loginout a {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .theme-btn,
+  .wp-block-loginout a {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}
 .theme-btn:hover,
 .wp-block-loginout a:hover {
   background: #080f10;
@@ -264,13 +278,6 @@ input:focus {
   .theme-btn.style-four,
   .wp-block-loginout a.style-four {
     padding: 10px 20px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .theme-btn,
-  .wp-block-loginout a {
-    padding: 10px 20px;
-    font-size: 16px;
   }
 }
 
@@ -742,6 +749,13 @@ input:focus {
     right: 24px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio-card.style-three .content .icon {
+    width: 48px;
+    height: 48px;
+    right: 24px;
+  }
+}
 .portfolio-card.style-three .content h4 {
   font-weight: 600;
   font-size: 24px;
@@ -750,6 +764,11 @@ input:focus {
 .portfolio-card.style-three .content h4,
 .portfolio-card.style-three .content p {
   color: #080f10;
+}
+@media (max-width: 991px) {
+  .portfolio-card.style-three .content p {
+    font-size: 14px;
+  }
 }
 
 .image-card {
@@ -1130,6 +1149,11 @@ input:focus {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .portfolio_card_wrapper .slick-list {
     margin-left: 48px;
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+  .portfolio_card_wrapper .slick-list {
+    margin-left: 116px;
   }
 }
 .project-page-project-sec {

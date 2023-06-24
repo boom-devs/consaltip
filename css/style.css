@@ -728,6 +728,20 @@ input:focus {
   position: relative;
   z-index: 1;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .theme-btn,
+  .wp-block-loginout a {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .theme-btn,
+  .wp-block-loginout a {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}
 .theme-btn:hover,
 .wp-block-loginout a:hover {
   background: #080f10;
@@ -784,13 +798,6 @@ input:focus {
   .theme-btn.style-four,
   .wp-block-loginout a.style-four {
     padding: 10px 20px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .theme-btn,
-  .wp-block-loginout a {
-    padding: 10px 20px;
-    font-size: 16px;
   }
 }
 
@@ -5264,6 +5271,13 @@ button.testimonial-arrow-btn:hover i {
     padding: 0 12px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .page-heading h1 {
+    font-size: 48px;
+    line-height: 62px;
+    padding: 0 12px;
+  }
+}
 .page-heading.style-two h1 {
   font-size: 56px;
   line-height: 120%;
@@ -6733,6 +6747,7 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .footer .footer-bottom-menu ul li a {
     font-size: 14px;
+    margin-right: 4px;
   }
 }
 .footer .footer-bottom-menu ul li {
@@ -6982,6 +6997,11 @@ ul.children {
     font-size: 46px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer .subscribe-area .subscribe-inner-area .content-wrapper .subscribe-title {
+    font-size: 48px;
+  }
+}
 .footer .subscribe-area .subscribe-inner-area .content-wrapper .text {
   font-size: 20px;
   line-height: 34px;
@@ -7069,6 +7089,16 @@ ul.children {
 }
 .footer.style-two .footer-bottom-area {
   border-top: 1px solid #085a65;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer.style-two .footer-bottom-area {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer.style-two .footer-bottom-area {
+    height: 100%;
+  }
 }
 .footer.style-two .copyright-text p {
   color: #ffffff;

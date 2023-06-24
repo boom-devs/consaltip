@@ -65,6 +65,12 @@
     }
     .footer-bottom-area {
       border-top: 1px solid #085a65;
+      @include sm {
+        height: 100%;
+      }
+      @include md {
+        height: 100%;
+      }
     }
     .copyright-text {
       p {
