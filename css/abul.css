@@ -6129,7 +6129,7 @@ button.testimonial-arrow-btn:hover i {
   .page-heading h1 {
     font-size: 36px;
     line-height: 54px;
-    padding: 0;
+    padding: 0 12px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
