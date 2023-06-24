@@ -138,6 +138,9 @@
     background-color: transparent;
     font-family: $body-font !important;
     height: 200px;
+    &.style-two {
+      color: $title-color !important;
+    }
   }
 
   p {

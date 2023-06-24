@@ -6749,6 +6749,9 @@ ul.children {
   font-family: "Inter", sans-serif !important;
   height: 200px;
 }
+.comment-respond textarea.style-two {
+  color: #080f10 !important;
+}
 .comment-respond p {
   margin-bottom: 20px;
 }

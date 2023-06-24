@@ -51,15 +51,15 @@
         <div class="header-sec sticky-header bg-white">
             <div class="container-fulid">
                 <div class="row justify-content-between">
-                    <div class="col-xl-2 col-lg-3 col-6 d-flex align-items-center">
+                    <div class="col-xl-2 col-lg-2 col-6 d-flex align-items-center">
                         <div class="logo">
                             <a href="index.html" class="standard-logo">
                                 <img src="images/logo/footer_logo.png" alt="logo" />
                             </a>
                         </div>
                     </div>
-                    <div class="mobile-nav-menu d-lg-none"></div>
-                    <div class="col-xl-6 col-lg-6 d-flex align-items-center justify-content-center">
+                    <!-- <div class="mobile-nav-menu d-lg-none"></div> -->
+                    <div class="col-xl-7 col-lg-9 col-1 d-flex align-items-center justify-content-center">
                         <div class="menu d-inline-block">
                             <nav id="main-menu" class="main-menu">
                                 <ul>
@@ -87,7 +87,16 @@
                                             <li><a href="project-details.html">Project Details Page</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Pages</a></li>
+                                    <li class="dropdown">
+                                        <a href="project.html">Pages</a>
+                                        <ul class="submenu">
+                                            <li><a href="project.html">Case Studies</a></li>
+                                            <li><a href="project-details.html">Case Studies Details</a></li>
+                                            <li><a href="team.html">Team Member</a></li>
+                                            <li><a href="faq.html">FAQ</a></li>
+                                            <li><a href="#">404</a></li>
+                                        </ul>
+                                    </li>
                                     <li class="dropdown">
                                         <a href="blog.html">Blogs</a>
                                         <ul class="submenu">
@@ -100,12 +109,15 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-12 d-flex align-items-center">
+                    <div class="col-xl-3 col-2xl-2 col-2 d-flex align-items-center justify-content-end">
                         <div class="header-btn style-three">
                             <a href="#">
                                 <i class="fa fa-phone"></i>
                                 +(123) 456 7890
                             </a>
+                        </div>
+                        <div class="mobile-menu-bar d-lg-none text-end">
+                            <a href="#" class="mobile-menu-toggle-btn"><i class="fal fa-bars"></i></a>
                         </div>
                     </div>
                 </div>
@@ -113,6 +125,29 @@
         </div>
     </header>
     <!-- Header End !-->
+
+    <!-- Menu Sidebar Section Start -->
+    <div class="menu-sidebar-area ">
+        <div class="menu-sidebar-wrapper">
+            <div class="menu-sidebar-close">
+                <button class="menu-sidebar-close-btn" id="menu_sidebar_close_btn">
+                    <i class="fal fa-times"></i>
+                </button>
+            </div>
+            <div class="menu-sidebar-content">
+                <div class="menu-sidebar-logo">
+                    <a href="index.html" class="standard-logo">
+                        <img src="images/logo/footer_logo.png" alt="logo" />
+                    </a>
+                </div>
+                <div class="mobile-nav-menu fix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu Sidebar Section Start -->
+
+    <!-- Menu Sidebar Section Start -->
+    <div class="body-overlay"></div>
     <!-- Page Header Start !-->
     <div class="custom-container bg-icon pt-110">
         <div class="breadcrumb-shape"></div>
@@ -140,8 +175,8 @@
     </div>
     <!-- Page Header End !-->
 
-    <!--  -->
-    <div class="py-120">
+    <!--contact info section  -->
+    <div class="contact-page-contact-info">
         <div class="container">
             <div class="contact-info-card-wrapper">
                 <div class="image-wrapper">
@@ -152,7 +187,7 @@
                     <div class="section-title">
                         <h2 class="title text-start"> <span class="under-line style-two"> Get In Touch </span></h2>
                     </div>
-                    <div class="contact-list-wrapper mt-48 ">
+                    <div class="contact-list-wrapper">
                         <div class="icon-card style-five">
                             <div class="icon">
                                 <i class="icon-phone-3"></i>
@@ -188,7 +223,7 @@
     <!--  -->
 
     <!-- Contact-form style-two contact-page start -->
-    <div class="py-120" style="background: #F8F8F1;">
+    <div class="contact-form-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -196,15 +231,15 @@
                         <h2 class="title text-start">
                             <span class="under-line style-two"> Contact us.</span> It’s <br> Easy
                         </h2>
-                        <p class="text-start pr-80">Lorem ipsum dolor sit amet, consectetur adipiscing erat posuere nec mauris faucibus urna sagittis. Lorem ipsum dolor sit
+                        <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing erat posuere nec mauris faucibus urna sagittis. Lorem ipsum dolor sit
                         amet consectetur adipiscing elit erat posuere nec mauris faucibus urna sagittis.</p>
                         <div class="mt-48">
-                            <a href="#" class="theme-btn style-three"> <span> Visit FAQ </span></a>
+                            <a href="faq.html" class="theme-btn style-three"> <span> Visit FAQ </span></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="comment-respond style-two">
+                    <div class="comment-respond style-two mt-48 mt-lg-0">
                         <form action="#" class="comment-form">
                             <div class="row gx-3">
                                 <div class="col-md-6">
@@ -221,7 +256,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="single-input-field">
-                                        <label>Email</label>
+                                        <label>Phone</label>
                                         <input name="number" type="number" placeholder="Phone number">
                                     </div>
                                 </div>
@@ -237,14 +272,15 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="single-input-field">
+                                    <div class="single-input-field style-two">
                                         <label>Message</label>
-                                        <textarea name="message" placeholder="message" rows="4" cols="50">
+                                        <textarea class="style-two" name="message" placeholder="message" rows="4"
+                                            cols="50">
                                         </textarea>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="theme-btn" type="submit">Post Comment </button>
+                                    <button class="theme-btn" type="submit">Send Message</button>
                                 </div>
                             </div>
                         </form>
