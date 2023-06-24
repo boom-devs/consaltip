@@ -277,7 +277,7 @@
         $(".project-slider-wrapper").slick({
             slidesToShow: 3,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -289,10 +289,22 @@
 
             responsive: [
                 {
+                    breakpoint: 991,
+                    settings: {
+                        autoplay: true,
+                        slidesToShow: 1,
+                        centerPadding: 0,
+                        centerMode: false,
+
+                    },
+                },
+                {
                     breakpoint: 767,
                     settings: {
                         autoplay: true,
                         slidesToShow: 1,
+                        centerPadding: 0,
+                        centerMode: false,
                     },
                 },
             ],

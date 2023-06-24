@@ -1279,6 +1279,16 @@ input:focus {
   padding-top: 120px;
   background: #f8f8f1;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-details-info {
+    padding-top: 80px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-details-info {
+    padding-top: 80px;
+  }
+}
 
 .project-info-widget-wrapper {
   padding-right: 218px;
@@ -1293,6 +1303,11 @@ input:focus {
     padding-right: 0;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .project-info-widget-wrapper {
+    padding-right: 112px;
+  }
+}
 .project-info-widget-wrapper .project-info-widget {
   background: #e0f780;
   padding: 60px 48px;
@@ -1300,6 +1315,11 @@ input:focus {
   flex-direction: column;
   gap: 32px;
   position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-info-widget-wrapper .project-info-widget {
+    padding: 40px 38px;
+  }
 }
 .project-info-widget-wrapper .project-info-widget .project-info-sketch {
   position: absolute;
@@ -1327,16 +1347,46 @@ input:focus {
   flex-direction: column;
   gap: 8px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-info-widget-wrapper .project-info-widget .info-item h5 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-info-widget-wrapper .project-info-widget .info-item h5 {
+    font-size: 20px;
+  }
+}
 .project-info-widget-wrapper .project-info-widget .info-item p {
   font-weight: 400;
   font-size: 20px;
   line-height: 34px;
   color: #575959;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-info-widget-wrapper .project-info-widget .info-item p {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-info-widget-wrapper .project-info-widget .info-item p {
+    font-size: 18px;
+  }
+}
 
 .project-banner {
   padding: 29px;
   border-left: 5px solid #033f47;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-banner {
+    padding: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-banner {
+    padding: 20px;
+  }
 }
 .project-banner p {
   font-family: "Outfit", sans-serif;
@@ -1381,6 +1431,16 @@ input:focus {
 .project-text-banner {
   padding: 0 76px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-text-banner {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-text-banner {
+    padding: 0;
+  }
+}
 .project-text-banner p {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
@@ -1388,6 +1448,18 @@ input:focus {
   line-height: 42px;
   letter-spacing: 0.02em;
   color: #080f10;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-text-banner p {
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-text-banner p {
+    font-size: 20px;
+    line-height: 34px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .project-text-banner {
@@ -1402,6 +1474,30 @@ input:focus {
 
 .video-banner {
   margin-top: 120px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .video-banner {
+    margin-top: 64px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .video-banner {
+    margin-top: 64px;
+  }
+}
+
+.project-details-about-us {
+  padding: 120px 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-details-about-us {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-details-about-us {
+    padding: 80px 0;
+  }
 }
 
 .number-card-wrapper .number-card {
