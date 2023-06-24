@@ -6191,6 +6191,11 @@ button.testimonial-arrow-btn:hover i {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .breadcrumb-list ul {
+    flex-wrap: wrap;
+  }
+}
 .breadcrumb-list ul i {
   color: #ffffff;
   font-size: 12px;

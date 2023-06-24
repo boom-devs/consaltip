@@ -1,5 +1,8 @@
 .service-details-offer {
     .title {
+        @include sm {
+            font-size: 30px;
+        }
     }
     .desc {
         font-weight: 400;
@@ -7,8 +10,22 @@
         line-height: 31px;
         color: $title-color;
         margin-top: 16px;
+        @include sm {
+            font-size: 16px;
+        }
     }
 }
+// service-details-service-section
+.service-details-service-section {
+    padding: 120px 0;
+    @include sm {
+        padding: 80px 0;
+    }
+    @include md {
+        padding: 80px 0;
+    }
+}
+// About-us section
 .service-details-about {
     padding: 120px 0;
     background-color: #033f47;

@@ -94,6 +94,9 @@
     gap: 8px;
     justify-content: center;
     align-items: center;
+    @include sm {
+      flex-wrap: wrap;
+    }
     i {
       color: $white;
       font-size: 12px;
