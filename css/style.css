@@ -7046,6 +7046,12 @@ ul.children {
   border-bottom: 1px solid #085a65;
   margin-bottom: 80px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer .subscribe-area {
+    padding-bottom: 48px;
+    margin-bottom: 48px;
+  }
+}
 .footer .subscribe-area .subscribe-inner-area {
   display: flex;
   align-items: center;

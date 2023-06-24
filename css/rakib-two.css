@@ -855,6 +855,22 @@ input:focus {
   position: relative;
   flex-shrink: 0;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .image-card .image {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .image-card .image {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .image-card .image {
+    padding-right: unset;
+    padding-left: 12px;
+  }
+}
 @media (min-width: 1440px) {
   .image-card .image .image-card-sketch {
     position: absolute;
@@ -889,16 +905,6 @@ input:focus {
   height: 100%;
   z-index: 1;
   position: relative;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .image-card .image {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .image-card .image {
-    width: 100%;
-  }
 }
 .image-card .section-title .title {
   position: relative;
@@ -941,6 +947,12 @@ input:focus {
   .image-card.style-two .content .title {
     font-size: 30px;
     line-height: 52px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .image-card.style-two .image {
+    padding-right: 12px;
+    padding-left: unset;
   }
 }
 @media (min-width: 1440px) {

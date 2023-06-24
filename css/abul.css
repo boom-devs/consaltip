@@ -5992,6 +5992,22 @@ button.testimonial-arrow-btn:hover i {
   position: relative;
   flex-shrink: 0;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .image-card .image {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .image-card .image {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  .image-card .image {
+    padding-right: unset;
+    padding-left: 12px;
+  }
+}
 @media (min-width: 1440px) {
   .image-card .image .image-card-sketch {
     position: absolute;
@@ -6026,16 +6042,6 @@ button.testimonial-arrow-btn:hover i {
   height: 100%;
   z-index: 1;
   position: relative;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .image-card .image {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .image-card .image {
-    width: 100%;
-  }
 }
 .image-card .section-title .title {
   position: relative;
@@ -7867,6 +7873,12 @@ ul.children {
   overflow: hidden;
   border-bottom: 1px solid #085a65;
   margin-bottom: 80px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer .subscribe-area {
+    padding-bottom: 48px;
+    margin-bottom: 48px;
+  }
 }
 .footer .subscribe-area .subscribe-inner-area {
   display: flex;

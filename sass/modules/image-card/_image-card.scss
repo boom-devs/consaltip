@@ -73,6 +73,16 @@
         height: 100%;
         position: relative;
         flex-shrink: 0;
+        @include sm {
+            width: 100%;
+        }
+        @include md {
+            width: 100%;
+        }
+        @include xl {
+            padding-right: unset;
+            padding-left: 12px;
+        }
         .image-card-sketch {
             @include rwd(1440) {
                 position: absolute;
@@ -107,15 +117,6 @@
             height: 100%;
             z-index: 1;
             position: relative;
-        }
-        @include sm {
-            width: 100%;
-        }
-        @include md {
-            width: 100%;
-        }
-        @include lg {
-            // width: 100%;
         }
     }
 

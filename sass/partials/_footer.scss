@@ -300,6 +300,10 @@
     overflow: hidden;
     border-bottom: 1px solid #085a65;
     margin-bottom: 80px;
+    @include sm {
+      padding-bottom: 48px;
+      margin-bottom: 48px;
+    }
     .subscribe-inner-area {
       display: flex;
       align-items: center;
