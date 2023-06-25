@@ -932,6 +932,12 @@ input:focus {
 .image-card.image-card-spacing .content .theme-btn-wrapper {
   margin-top: 24px;
 }
+.image-card.large-title .content .title-wrapper .title {
+  font-size: 57px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 1.14px;
+}
 
 .image-card.style-two {
   flex-direction: row-reverse;
@@ -2074,7 +2080,7 @@ input:focus {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area.style-two .single-slider {
-    padding: 112px 12px 64px 12px;
+    padding: 80px 12px 64px 12px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {

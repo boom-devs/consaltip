@@ -3103,6 +3103,23 @@ html {
   position: relative;
   z-index: 10;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .header-top {
+    padding: 0 16px;
+  }
+}
+.header-top .header-top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .header-top .header-top-wrapper {
+    flex-direction: column;
+    padding: 16px 0;
+    align-items: start;
+  }
+}
 .header-top .header-top-info {
   display: flex;
   gap: 0 24px;
@@ -3113,17 +3130,17 @@ html {
     width: 100%;
   }
 }
-@media (max-width: 991px) {
-  .header-top .header-top-info {
-    padding-bottom: 10px;
-  }
-}
 .header-top .header-contact-info {
   display: flex;
   align-items: center;
   gap: 0 24px;
-  padding: 17.5px 0;
+  padding: 16px 0;
   flex-wrap: wrap;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .header-top .header-contact-info {
+    padding-top: 0;
+  }
 }
 .header-top .header-contact-info span {
   display: flex;
@@ -3235,7 +3252,7 @@ html {
 }
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   .header-sec {
-    padding: 0 36px;
+    padding: 0 28px;
   }
 }
 .header-sec.sticky-header {
@@ -6101,6 +6118,12 @@ button.testimonial-arrow-btn:hover i {
 }
 .image-card.image-card-spacing .content .theme-btn-wrapper {
   margin-top: 24px;
+}
+.image-card.large-title .content .title-wrapper .title {
+  font-size: 57px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 1.14px;
 }
 
 /* 15.Page Breadcrumb Section */
