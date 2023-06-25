@@ -309,6 +309,14 @@
                 },
             ],
         });
+         /*
+       Jquery Tilt Js
+       ============================*/
+        $('.tilt-animate').tilt({
+            maxTilt: 12,
+            perspective: 1500,
+        })
+
 
         // Home-one Service
         $(".home-one-service-slider").slick({

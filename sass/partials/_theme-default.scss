@@ -105,13 +105,13 @@ a:focus,
   outline: none;
 }
 a:focus {
-  color: $sky-color;
+  color: $title-color;
   text-decoration: none;
   @include transition;
 }
 a,
 button {
-  color: $sky-color;
+  color: $title-color;
   outline: medium none;
   @include transition;
 }

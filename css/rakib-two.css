@@ -118,14 +118,14 @@ a:focus,
 }
 
 a:focus {
-  color: #1eae98;
+  color: #080f10;
   text-decoration: none;
   transition: all 0.5s ease-out;
 }
 
 a,
 button {
-  color: #1eae98;
+  color: #080f10;
   outline: medium none;
   transition: all 0.5s ease-out;
 }
