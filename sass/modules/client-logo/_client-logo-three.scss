@@ -1,0 +1,8 @@
+.client-logo-wrapper {
+    .client-logo {
+        &.style-three {
+            filter: brightness(0);
+            padding: 0;
+        }
+    }
+}

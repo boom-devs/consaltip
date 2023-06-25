@@ -2539,6 +2539,11 @@ input:focus {
   display: block !important;
 }
 
+.client-logo-wrapper .client-logo.style-three {
+  filter: brightness(0);
+  padding: 0;
+}
+
 .mean-bar .meanmenu-reveal {
   display: none !important;
 }/*# sourceMappingURL=rakib-two.css.map */
