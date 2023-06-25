@@ -3214,8 +3214,8 @@ html {
   align-items: center;
 }
 .header-top .social-profile a i {
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 13px;
+  line-height: 14px;
   color: #ffffff;
 }
 .header-top .social-profile a:hover {
@@ -7358,6 +7358,7 @@ ul.children {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 100px;
+    display: block;
   }
   .why-choose-us-area .scrolldown-btn-wrapper .scrolldown-btn {
     margin: 72px 72px 0px;
