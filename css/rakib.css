@@ -1398,6 +1398,9 @@ input:focus {
   margin-bottom: 4px;
   color: #ffffff;
 }
+.team-member-card .image .image-content-wrapper .user-info h4:hover {
+  color: #e0f780;
+}
 .team-member-card .image .image-content-wrapper .user-info p {
   text-align: center;
   color: #ffffff;

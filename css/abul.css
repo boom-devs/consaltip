@@ -3159,15 +3159,12 @@ html {
   align-items: center;
   gap: 10px;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   font-family: "Inter", sans-serif;
 }
 .header-top .header-contact-info span a i {
-  color: #e0f780;
-}
-.header-top .header-contact-info span a:hover {
   color: #e0f780;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -8119,6 +8116,9 @@ ul.children {
   margin-bottom: 4px;
   color: #ffffff;
 }
+.team-member-card .image .image-content-wrapper .user-info h4:hover {
+  color: #e0f780;
+}
 .team-member-card .image .image-content-wrapper .user-info p {
   text-align: center;
   color: #ffffff;
@@ -8296,6 +8296,7 @@ ul.children {
     top: 0;
     left: 0;
     transform: translate(-50%, -50%);
+    z-index: 3;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
@@ -8378,6 +8379,7 @@ ul.children {
     bottom: 0;
     left: 0;
     transform: translate(-50%, 0%);
+    z-index: 3;
   }
 }
 
@@ -9518,6 +9520,7 @@ ul.children {
     bottom: 0;
     left: 0;
     transform: translate(-50%, 50%);
+    z-index: 3;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
