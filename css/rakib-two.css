@@ -1777,6 +1777,7 @@ input:focus {
   background-image: url("../images/shape/image-card-sketch.png");
   background-repeat: no-repeat;
   background-position: center;
+  animation: MoveUpDown 2s linear infinite alternate;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .contact-info-card-wrapper .image-wrapper .project-info-sketch {
