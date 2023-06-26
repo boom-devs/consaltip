@@ -651,6 +651,7 @@ input:focus {
   gap: 24px;
   position: relative;
   z-index: 2;
+  overflow: hidden;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .icon-card {
@@ -681,6 +682,7 @@ input:focus {
   flex-shrink: 0;
   transition: all 0.5s ease-out;
   position: relative;
+  z-index: 5;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .icon-card .icon {
@@ -718,6 +720,8 @@ input:focus {
   display: flex;
   gap: 16px;
   flex-direction: column;
+  position: relative;
+  z-index: 5;
 }
 .icon-card .content .title {
   color: #080f10;
@@ -748,8 +752,26 @@ input:focus {
     font-size: 14px;
   }
 }
-.icon-card:hover .icon {
-  background: #e0f780;
+.icon-card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e0f780;
+  margin-top: -100%;
+  margin-right: -100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 0;
+  transition: all 0.8s ease-out;
+}
+.icon-card:hover:after {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+  margin-right: 0;
 }
 
 .icon-card.style-two {
@@ -1086,11 +1108,12 @@ input:focus {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #e0e0e0;
   transition: all 0.5s ease-out;
 }
 .price-card-wrapper .price-card .list-wrapper .price-list-item .icon i {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 12px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .price-card-wrapper .price-card .list-wrapper .price-list-item .text {
@@ -1696,6 +1719,7 @@ input:focus {
 .price-card-section {
   position: relative;
   padding: 120px 0;
+  background-color: #f8f8f1;
 }
 .price-card-section .sketch {
   background: url("../images/sketch-color.png");

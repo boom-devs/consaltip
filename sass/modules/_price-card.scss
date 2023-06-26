@@ -188,10 +188,11 @@
                     display: inline-flex;
                     align-items: center;
                     justify-content: center;
+                    border: 1px solid #e0e0e0;
                     @include transition;
                     i {
                         font-size: 14px;
-                        line-height: 16px;
+                        line-height: 12px;
                     }
                 }
                 .text {
