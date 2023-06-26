@@ -3266,6 +3266,12 @@ html {
   box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.03);
 }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .logo {
+    width: 180px;
+  }
+}
+
 .main-menu ul {
   margin: 0;
   padding: 0;
@@ -4054,7 +4060,7 @@ a.meanmenu-reveal {
   .counter-card {
     display: grid;
     padding: 10px;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .counter-card:before {
     display: none;
@@ -4080,6 +4086,23 @@ a.meanmenu-reveal {
   position: relative;
   text-align: center;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .counter-card .counter-item {
+    padding: 35px 0;
+    gap: 14px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .counter-card .counter-item {
+    padding: 35px 0;
+    gap: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .counter-card .counter-item.style-two:before {
+    display: none;
+  }
+}
 .counter-card .counter-item:before {
   content: "";
   position: absolute;
@@ -4104,7 +4127,7 @@ a.meanmenu-reveal {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .counter-card .counter-item .number {
-    font-size: 36px;
+    font-size: 32px;
     line-height: 40px;
   }
 }
@@ -4116,8 +4139,8 @@ a.meanmenu-reveal {
   font-weight: 400;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .counter-card .counter-item {
-    padding: 35px 0;
+  .counter-card .counter-item .text {
+    font-size: 14px;
   }
 }
 
@@ -7176,7 +7199,12 @@ ul.children {
   }
 }
 
-.footer.style-two .subscribe-form-wrapper p {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer.style-two .subscribe-form-wrapper {
+    width: 100%;
+  }
+}
+.footer.style-two .subscribe-form-wrapper .single-fiel p {
   color: #c7cdda;
   margin-bottom: 35px;
 }
@@ -8060,6 +8088,11 @@ ul.children {
     animation: MoveUpDown 2s linear infinite alternate;
   }
 }
+@media (min-width: 991px) {
+  .home-two-about-us-area .about-us-image-gallery .about-image-three {
+    margin-top: 70px;
+  }
+}
 .home-two-about-us-area .about-us-image-gallery img {
   width: 100%;
   height: 100%;
@@ -8264,6 +8297,11 @@ ul.children {
 .process-slider-container {
   padding: 0 20px;
   margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .process-slider-container {
+    padding: 48px 12px;
+  }
 }
 @media (min-width: 1200px) {
   .process-slider-container {

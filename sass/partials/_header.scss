@@ -184,7 +184,11 @@
     // background: #fff;
   }
 }
-
+.logo {
+  @include sm {
+    width: 180px;
+  }
+}
 .main-menu {
   ul {
     margin: 0;

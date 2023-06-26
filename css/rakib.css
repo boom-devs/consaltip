@@ -578,7 +578,12 @@ input:focus {
 }
 
 /* Footer CSS */
-.footer.style-two .subscribe-form-wrapper p {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer.style-two .subscribe-form-wrapper {
+    width: 100%;
+  }
+}
+.footer.style-two .subscribe-form-wrapper .single-fiel p {
   color: #c7cdda;
   margin-bottom: 35px;
 }

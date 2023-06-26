@@ -16,17 +16,20 @@
     }
     button.slider-arrow-btn {
       @include md {
-        bottom: 36px;
+        bottom: 0px;
       }
       @include lg {
         bottom: 36px;
         top: unset;
       }
       &.prev-btn {
-        left: 30px;
+        left: 48px;
+        @include sm {
+          left: 40%;
+        }
         @include md {
-          left: unset;
-          right: 96px;
+          left: 43%;
+          right: unset;
         }
         @include lg {
           left: unset;
@@ -36,7 +39,12 @@
       &.next-btn {
         right: 30px;
         @include sm {
-          left: 80px;
+          left: 52%;
+        }
+        @include md {
+          left: 50%;
+          right: unset;
+          margin-left: 12px;
         }
         @include lg {
           left: 50%;

@@ -358,6 +358,11 @@ input:focus {
 .slider-btn-wrapper.style-two {
   justify-content: center;
 }
+@media (min-width: 768px) {
+  .slider-btn-wrapper.style-two {
+    justify-content: start;
+  }
+}
 .slider-btn-wrapper.style-two .slider-btn {
   border-color: #575959;
   color: #080f10;
@@ -1040,6 +1045,11 @@ input:focus {
   font-weight: 600;
   line-height: 120%;
   letter-spacing: 1.14px;
+}
+@media (max-width: 991px) {
+  .image-card.large-title .content .title-wrapper .title {
+    font-size: 42px;
+  }
 }
 
 .image-card.style-two {
@@ -2190,7 +2200,7 @@ input:focus {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-area.style-two button.slider-arrow-btn {
-    bottom: 36px;
+    bottom: 0px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2200,12 +2210,17 @@ input:focus {
   }
 }
 .slider-area.style-two button.slider-arrow-btn.prev-btn {
-  left: 30px;
+  left: 48px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area.style-two button.slider-arrow-btn.prev-btn {
+    left: 40%;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-area.style-two button.slider-arrow-btn.prev-btn {
-    left: unset;
-    right: 96px;
+    left: 43%;
+    right: unset;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2219,7 +2234,14 @@ input:focus {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area.style-two button.slider-arrow-btn.next-btn {
-    left: 80px;
+    left: 52%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-area.style-two button.slider-arrow-btn.next-btn {
+    left: 50%;
+    right: unset;
+    margin-left: 12px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

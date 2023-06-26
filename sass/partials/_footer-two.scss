@@ -2,7 +2,10 @@
   &.style-two {
     // Subscribe Form
     .subscribe-form-wrapper {
-      p {
+      @include md {
+        width: 100%;
+      }
+      .single-fiel p {
         color: $white-100;
         margin-bottom: 35px;
       }
