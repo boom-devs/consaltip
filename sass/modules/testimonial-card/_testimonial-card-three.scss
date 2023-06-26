@@ -2,6 +2,9 @@
     &.style-three {
         .content-wrapper {
             gap: 16px;
+            @include sm {
+                align-items: center;
+            }
         }
         .content {
             .text {
@@ -16,6 +19,11 @@
         .meta-user {
             margin-top: 40px;
             .user-info {
+                .info {
+                    @include sm {
+                        align-items: center;
+                    }
+                }
                 .image {
                     display: none;
                 }

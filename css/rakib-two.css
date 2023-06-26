@@ -307,6 +307,7 @@ input:focus {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-btn-wrapper {
     margin-top: 30px;
+    justify-content: center;
   }
 }
 .slider-btn-wrapper .slider-btn {
@@ -1996,6 +1997,11 @@ input:focus {
 .testimonial-card.style-three .content-wrapper {
   gap: 16px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-card.style-three .content-wrapper {
+    align-items: center;
+  }
+}
 .testimonial-card.style-three .content .text {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
@@ -2006,6 +2012,11 @@ input:focus {
 }
 .testimonial-card.style-three .meta-user {
   margin-top: 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-card.style-three .meta-user .user-info .info {
+    align-items: center;
+  }
 }
 .testimonial-card.style-three .meta-user .user-info .image {
   display: none;
@@ -2120,8 +2131,8 @@ input:focus {
   align-items: center;
 }
 .custom-slider-btn a {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   transition: 0.3s;
   z-index: 99;
@@ -2371,7 +2382,7 @@ input:focus {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .accordion-wrapper-two {
     margin-top: 24px;
-    gap: 24px;
+    gap: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {

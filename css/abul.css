@@ -4114,6 +4114,7 @@ a.meanmenu-reveal {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .single-slider .slider-image {
     animation: none;
+    margin: 0 auto;
     text-align: center;
     width: 300px;
     justify-content: center;
@@ -5698,7 +5699,7 @@ button.testimonial-arrow-btn:hover i {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .section-title .title {
     font-size: 30px;
-    line-height: 52px;
+    line-height: 46px;
   }
   .section-title .title br {
     display: none;
@@ -8286,7 +8287,7 @@ ul.children {
 .why-choose-us-area .scrolldown-btn-wrapper {
   display: none;
 }
-@media (min-width: 1200px) {
+@media (min-width: 991px) {
   .why-choose-us-area .scrolldown-btn-wrapper {
     position: absolute;
     top: 0;
@@ -8460,7 +8461,7 @@ ul.children {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .free-consultaion-area {
-    padding-bottom: 80px;
+    padding: 80px 0;
     margin-top: 0;
   }
 }
@@ -8563,11 +8564,15 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .home-one-case-studies-slider button.case-arrow-btn {
     bottom: -76px;
+    width: 40px;
+    height: 40px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-one-case-studies-slider button.case-arrow-btn {
     bottom: -76px;
+    width: 45px;
+    height: 45px;
   }
 }
 .home-one-case-studies-slider button.case-arrow-btn.prev-btn {
@@ -8652,6 +8657,7 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .home-one-review .review-card .image-wrapper {
     width: 100%;
+    justify-content: center;
   }
 }
 .home-one-review .review-card .image-wrapper .image {

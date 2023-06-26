@@ -102,7 +102,7 @@
         $(function () {
             $('.accordion-list-item-two .accordion-item-body').css("display", "none");
             $('.accordion-list-item-two.open .accordion-item-body').css("display", "block");
-            $('.accordion-list-item-two').hover( function () {
+            $('.accordion-list-item-two').on('click', function () {
                 $(this).toggleClass(' open ');
                 $(this).siblings().removeClass(' open ');
                 $('.accordion-item-body').stop().slideUp();

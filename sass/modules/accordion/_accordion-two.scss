@@ -7,7 +7,7 @@
     height: 100%;
     @include sm {
         margin-top: 24px;
-        gap: 24px;
+        gap: 0;
     }
     @include md {
         margin-top: 24px;

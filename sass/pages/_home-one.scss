@@ -10,7 +10,7 @@
   }
   .scrolldown-btn-wrapper {
     display: none;
-    @include rwd(1200) {
+    @include rwd(991) {
       position: absolute;
       top: 0;
       left: 43%;
@@ -181,7 +181,7 @@
     margin-top: 0;
   }
   @include md {
-    padding-bottom: 80px;
+    padding: 80px 0;
     margin-top: 0;
   }
 }
@@ -269,9 +269,13 @@
     }
     @include sm {
       bottom: -76px;
+      width: 40px;
+      height: 40px;
     }
     @include md {
       bottom: -76px;
+      width: 45px;
+      height: 45px;
     }
 
     &.prev-btn {
@@ -339,6 +343,7 @@
       justify-content: end;
       @include sm {
         width: 100%;
+        justify-content: center;
       }
       .image {
         position: relative;
