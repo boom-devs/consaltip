@@ -13,6 +13,7 @@
     @include lg {
         // flex-direction: column-reverse;
     }
+
     .content {
         // padding-right: 106px;
         display: flex;
@@ -75,6 +76,7 @@
         flex-shrink: 0;
         padding-left: 12px;
         padding-right: unset;
+        // overflow: hidden;
 
         @include sm {
             width: 100%;
@@ -83,6 +85,11 @@
         @include md {
             width: 100%;
             padding: 0;
+        }
+        &:hover {
+            img {
+                transform: scale(1.03);
+            }
         }
         .image-card-sketch {
             @include rwd(1440) {
@@ -95,6 +102,7 @@
                 height: 91px;
                 transform: translate(-50%, -50%);
                 z-index: 0;
+                animation: MoveUpDown 2s linear infinite alternate;
                 &.style-two {
                     top: unset;
                     bottom: 0;
@@ -118,6 +126,8 @@
             height: 100%;
             z-index: 1;
             position: relative;
+            transform: scale(1.01);
+            @include transition;
         }
     }
 

@@ -648,7 +648,7 @@ input:focus {
 }
 
 .bg-gray {
-  background-color: #f8f8f1;
+  background-color: #f8f8f1 !important;
 }
 
 .portfolio-card {
@@ -964,6 +964,9 @@ input:focus {
     padding: 0;
   }
 }
+.image-card .image:hover img {
+  transform: scale(1.03);
+}
 @media (min-width: 1440px) {
   .image-card .image .image-card-sketch {
     position: absolute;
@@ -975,6 +978,7 @@ input:focus {
     height: 91px;
     transform: translate(-50%, -50%);
     z-index: 0;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
   .image-card .image .image-card-sketch.style-two {
     top: unset;
@@ -998,6 +1002,8 @@ input:focus {
   height: 100%;
   z-index: 1;
   position: relative;
+  transform: scale(1.01);
+  transition: all 0.5s ease-out;
 }
 .image-card .section-title .title {
   position: relative;
@@ -1196,6 +1202,9 @@ input:focus {
 .icon-card.style-five .content .desc {
   text-align: start;
   padding: 0;
+}
+.icon-card.style-five:hover:after {
+  display: none;
 }
 
 .icon-card.style-six {
@@ -1777,6 +1786,7 @@ input:focus {
   background-image: url("../images/shape/image-card-sketch.png");
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 5;
   animation: MoveUpDown 2s linear infinite alternate;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1813,6 +1823,7 @@ input:focus {
 .contact-form-area {
   padding: 120px 0;
   background-color: #f8f8f1;
+  position: relative;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .contact-form-area {
@@ -1822,6 +1833,19 @@ input:focus {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-form-area {
     padding: 80px 0;
+  }
+}
+@media (min-width: 1440px) {
+  .contact-form-area .sketch {
+    background-image: url("../images/sketch-color.png");
+    width: 169px;
+    height: 169px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 19px;
+    right: 78px;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 

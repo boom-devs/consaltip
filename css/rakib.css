@@ -765,7 +765,7 @@ input:focus {
   opacity: 0;
   visibility: hidden;
   z-index: 0;
-  transition: all 0.8s ease-out;
+  transition: all 0.4s ease-out;
 }
 .icon-card:hover:after {
   visibility: visible;
@@ -872,6 +872,7 @@ input:focus {
   width: 80px;
   height: 80px;
   border: none;
+  transition: all 0.5s ease-out;
 }
 .icon-card.style-four .icon i {
   font-size: 48px;
@@ -887,6 +888,7 @@ input:focus {
 }
 .icon-card.style-four:hover .icon {
   background: #e0f780 !important;
+  border: 1px solid #033f47;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .icon-card.style-four {
@@ -1730,6 +1732,7 @@ input:focus {
   background-repeat: no-repeat;
   width: 169px;
   height: 169px;
+  animation: MoveUpDown 2s linear infinite alternate;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .price-card-section .sketch {

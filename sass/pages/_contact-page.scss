@@ -38,6 +38,7 @@
             background-image: url("../images/shape/image-card-sketch.png");
             background-repeat: no-repeat;
             background-position: center;
+            z-index: 5;
             animation: MoveUpDown 2s linear infinite alternate;
             @include sm {
                 display: none;
@@ -67,11 +68,25 @@
 .contact-form-area {
     padding: 120px 0;
     background-color: $background;
+    position: relative;
     @include sm {
         padding: 80px 0;
     }
     @include md {
         padding: 80px 0;
+    }
+    .sketch {
+        @include rwd(1440) {
+            background-image: url("../images/sketch-color.png");
+            width: 169px;
+            height: 169px;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            bottom: 19px;
+            right: 78px;
+            animation: MoveUpDown 2s linear infinite alternate;
+        }
     }
 }
 

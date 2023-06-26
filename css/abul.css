@@ -3808,7 +3808,7 @@ a.meanmenu-reveal {
 .slider-area .slider-wrapper .slick-dots li {
   display: inline-block;
   line-height: 0;
-  border: 4px solid transparent;
+  border: 3px solid transparent;
   width: 48px;
   height: 48px;
   border-radius: 50px;
@@ -3817,6 +3817,34 @@ a.meanmenu-reveal {
   justify-content: center;
   cursor: pointer;
   transition: all 0.5s ease-out;
+  position: relative;
+}
+.slider-area .slider-wrapper .slick-dots li:before, .slider-area .slider-wrapper .slick-dots li:after {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+.slider-area .slider-wrapper .slick-dots li:before {
+  border: 3px solid transparent;
+}
+.slider-area .slider-wrapper .slick-dots li:hover:before {
+  border-top-color: #e0f780;
+  border-right-color: #e0f780;
+  border-bottom-color: #e0f780;
+  transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+}
+.slider-area .slider-wrapper .slick-dots li:after {
+  border: 0 solid transparent;
+}
+.slider-area .slider-wrapper .slick-dots li:hover:after {
+  border-top: 3px solid #e0f780;
+  border-left-width: 3px;
+  border-right-width: 3px;
+  transform: rotate(270deg);
+  transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
 }
 .slider-area .slider-wrapper .slick-dots li button {
   font-size: 0;
@@ -3834,26 +3862,13 @@ a.meanmenu-reveal {
   transition: all 0.5s ease-out;
   border-color: #e0f780;
 }
+.slider-area .slider-wrapper .slick-dots li.slick-active:before, .slider-area .slider-wrapper .slick-dots li.slick-active:after {
+  display: none;
+}
 .slider-area .slider-wrapper .slick-dots li.slick-active button {
   font-size: 16px;
   background: transparent;
   transition: all 0.5s ease-out;
-}
-.slider-area .slider-wrapper .slick-dots li:hover {
-  box-shadow: 0 0 0 0 rgba(68, 4, 4, 0);
-  border-color: #e0f780;
-  transition: border-color 0.2s;
-}
-.slider-area .slider-wrapper .slick-dots li:hover:after {
-  animation: spinAround 9s linear infinite;
-}
-@keyframes spinAround {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 .slider-area button.slider-arrow-btn {
   position: absolute;
@@ -3930,7 +3945,7 @@ a.meanmenu-reveal {
   position: relative;
   z-index: 2;
   padding: 156px 48px 64px 48px;
-  height: 960px;
+  height: 930px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .single-slider {
@@ -4227,7 +4242,7 @@ a.meanmenu-reveal {
   opacity: 0;
   visibility: hidden;
   z-index: 0;
-  transition: all 0.8s ease-out;
+  transition: all 0.4s ease-out;
 }
 .icon-card:hover:after {
   visibility: visible;
@@ -5898,6 +5913,7 @@ button.testimonial-arrow-btn:hover i {
     width: 109px;
     height: 109px;
     z-index: 10;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 .consultation-wrapper .free-consultaion-text {
@@ -6058,6 +6074,9 @@ button.testimonial-arrow-btn:hover i {
     padding: 0;
   }
 }
+.image-card .image:hover img {
+  transform: scale(1.03);
+}
 @media (min-width: 1440px) {
   .image-card .image .image-card-sketch {
     position: absolute;
@@ -6069,6 +6088,7 @@ button.testimonial-arrow-btn:hover i {
     height: 91px;
     transform: translate(-50%, -50%);
     z-index: 0;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
   .image-card .image .image-card-sketch.style-two {
     top: unset;
@@ -6092,6 +6112,8 @@ button.testimonial-arrow-btn:hover i {
   height: 100%;
   z-index: 1;
   position: relative;
+  transform: scale(1.01);
+  transition: all 0.5s ease-out;
 }
 .image-card .section-title .title {
   position: relative;
@@ -7563,6 +7585,9 @@ ul.children {
   color: #ffffff;
   width: 10px;
   height: 10px;
+}
+.comment-respond .single-input-field.style-two .nice-select:after {
+  border-color: #080f10;
 }
 .comment-respond label {
   display: block;
@@ -9418,6 +9443,7 @@ ul.children {
     left: 0;
     transform: translate(-50%, -50%);
     z-index: 10;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 @media (min-width: 1200px) {
@@ -9453,9 +9479,10 @@ ul.children {
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    bottom: 0;
+    bottom: -48px;
     right: 0;
-    transform: translate(50%, 50%);
+    z-index: 5;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 .hero-image-wrapper .right-hero-image:before {

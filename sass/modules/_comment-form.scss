@@ -54,6 +54,13 @@
         height: 10px;
       }
     }
+    &.style-two {
+      .nice-select {
+        &:after {
+          border-color: $title-color;
+        }
+      }
+    }
   }
   label {
     display: block;

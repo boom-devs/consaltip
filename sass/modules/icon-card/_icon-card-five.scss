@@ -32,5 +32,10 @@
                 padding: 0;
             }
         }
+        &:hover {
+            &:after {
+                display: none;
+            }
+        }
     }
 }
