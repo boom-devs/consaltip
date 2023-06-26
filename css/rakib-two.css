@@ -604,10 +604,10 @@ input:focus {
   }
 }
 .certified .rounded-text {
-  width: 125px;
-  height: 125px;
+  width: 115px;
+  height: 115px;
   text-transform: uppercase;
-  transform: rotate(-145deg);
+  transform: rotate(-106deg);
   color: #fff;
   font-weight: bold;
   z-index: 10;
@@ -1267,6 +1267,9 @@ input:focus {
 }
 .icon-card.style-seven.active .content .title {
   color: #080f10;
+}
+.icon-card.style-seven:hover:after {
+  display: none;
 }
 
 .portfolio_card_wrapper {

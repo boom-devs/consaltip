@@ -7,6 +7,7 @@
             width: 80px;
             height: 80px;
             border: none;
+            border: 1px solid transparent;
             @include transition;
             i {
                 font-size: 48px;
@@ -24,7 +25,7 @@
         &:hover {
             .icon {
                 background: $brand !important;
-                border: 1px solid $icon-color;
+                border-color: $icon-color;
             }
         }
         @include md {

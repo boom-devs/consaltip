@@ -44,5 +44,10 @@
                 }
             }
         }
+        &:hover {
+            &:after {
+                display: none;
+            }
+        }
     }
 }

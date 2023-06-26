@@ -107,6 +107,13 @@
         position: relative;
         z-index: 3;
         margin-left: 16px;
+        transform: scale(1.01);
+        @include transition;
+      }
+      &:hover {
+        img {
+          transform: scale(1.03);
+        }
       }
     }
   }
@@ -143,6 +150,13 @@
       position: relative;
       z-index: 3;
       margin-top: 16px;
+      transform: scale(1.01);
+      @include transition;
+    }
+    &:hover {
+      img {
+        transform: scale(1.03);
+      }
     }
   }
 }

@@ -7379,21 +7379,21 @@ ul.children {
     position: absolute;
     top: 0;
     left: 43%;
-    transform: translate(0, -61%);
-    background-image: url("../images/scroll-down.png");
+    transform: translate(0, -58%);
+    background-image: url("../images/scroll-down-2.png");
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 100px;
     display: block;
   }
   .why-choose-us-area .scrolldown-btn-wrapper .scrolldown-btn {
-    margin: 104px 72px 0px;
+    margin: 80px 72px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #e0f780;
-    width: 135px;
-    height: 135px;
+    width: 100px;
+    height: 100px;
     border-radius: 100px;
     position: relative;
   }
@@ -7404,8 +7404,8 @@ ul.children {
   }
 }
 .why-choose-us-area .scrolldown-btn-wrapper .rounded-text {
-  width: 125px;
-  height: 125px;
+  width: 90px;
+  height: 90px;
   text-transform: uppercase;
   transform: rotate(-103deg);
   color: #fff;
@@ -7428,6 +7428,11 @@ ul.children {
 }
 .why-choose-us-area .about-info-card-image img {
   width: 100%;
+  transform: scale(1.01);
+  transition: all 0.5s ease-out;
+}
+.why-choose-us-area .about-info-card-image:hover img {
+  transform: scale(1.03);
 }
 @media (min-width: 1440px) {
   .why-choose-us-area .about-info-card-image .sketch-one {
@@ -8556,6 +8561,11 @@ ul.children {
     position: relative;
     z-index: 3;
     margin-left: 16px;
+    transform: scale(1.01);
+    transition: all 0.5s ease-out;
+  }
+  .hero-image-wrapper .left-hero-image:hover img {
+    transform: scale(1.03);
   }
 }
 .hero-image-wrapper .right-hero-image {
@@ -8591,6 +8601,11 @@ ul.children {
   position: relative;
   z-index: 3;
   margin-top: 16px;
+  transform: scale(1.01);
+  transition: all 0.5s ease-out;
+}
+.hero-image-wrapper .right-hero-image:hover img {
+  transform: scale(1.03);
 }
 
 .home-three-hero-main-img {

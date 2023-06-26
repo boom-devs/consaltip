@@ -73,11 +73,11 @@
       display: flex;
       gap: 2px;
       position: absolute;
-      top: 50%;
+      bottom: 24px;
       right: 96px;
       transform: translateY(-50%);
       z-index: 2;
-      flex-direction: column;
+      flex-direction: row;
 
       @include sm {
         display: none !important;
@@ -243,7 +243,7 @@
     position: relative;
     z-index: 2;
     padding: 156px 48px 64px 48px;
-    height: 930px;
+    height: 950px;
 
     @include sm {
       padding: 100px 0 64px 0;
@@ -369,9 +369,10 @@
       right: 0;
       top: 0;
       height: 100%;
-      margin: 0 auto;
       img {
         height: 100%;
+        position: relative;
+        z-index: 5;
       }
       .sketch {
         @include rwd(1440) {
@@ -398,6 +399,7 @@
           right: 0px;
           transform: translate(50%, 50%);
           animation: MoveUpDown 2s linear infinite alternate;
+          z-index: 8;
         }
       }
 

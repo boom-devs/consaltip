@@ -3783,11 +3783,11 @@ a.meanmenu-reveal {
   display: flex;
   gap: 2px;
   position: absolute;
-  top: 50%;
+  bottom: 24px;
   right: 96px;
   transform: translateY(-50%);
   z-index: 2;
-  flex-direction: column;
+  flex-direction: row;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .slider-wrapper .slick-dots {
@@ -3945,7 +3945,7 @@ a.meanmenu-reveal {
   position: relative;
   z-index: 2;
   padding: 156px 48px 64px 48px;
-  height: 930px;
+  height: 950px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .single-slider {
@@ -4077,10 +4077,11 @@ a.meanmenu-reveal {
   right: 0;
   top: 0;
   height: 100%;
-  margin: 0 auto;
 }
 .slider-area .single-slider .slider-image img {
   height: 100%;
+  position: relative;
+  z-index: 5;
 }
 @media (min-width: 1440px) {
   .slider-area .single-slider .slider-image .sketch {
@@ -4107,6 +4108,7 @@ a.meanmenu-reveal {
     right: 0px;
     transform: translate(50%, 50%);
     animation: MoveUpDown 2s linear infinite alternate;
+    z-index: 8;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -8289,21 +8291,21 @@ ul.children {
     position: absolute;
     top: 0;
     left: 43%;
-    transform: translate(0, -61%);
-    background-image: url("../images/scroll-down.png");
+    transform: translate(0, -58%);
+    background-image: url("../images/scroll-down-2.png");
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 100px;
     display: block;
   }
   .why-choose-us-area .scrolldown-btn-wrapper .scrolldown-btn {
-    margin: 104px 72px 0px;
+    margin: 80px 72px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #e0f780;
-    width: 135px;
-    height: 135px;
+    width: 100px;
+    height: 100px;
     border-radius: 100px;
     position: relative;
   }
@@ -8314,8 +8316,8 @@ ul.children {
   }
 }
 .why-choose-us-area .scrolldown-btn-wrapper .rounded-text {
-  width: 125px;
-  height: 125px;
+  width: 90px;
+  height: 90px;
   text-transform: uppercase;
   transform: rotate(-103deg);
   color: #fff;
@@ -8338,6 +8340,11 @@ ul.children {
 }
 .why-choose-us-area .about-info-card-image img {
   width: 100%;
+  transform: scale(1.01);
+  transition: all 0.5s ease-out;
+}
+.why-choose-us-area .about-info-card-image:hover img {
+  transform: scale(1.03);
 }
 @media (min-width: 1440px) {
   .why-choose-us-area .about-info-card-image .sketch-one {
@@ -9466,6 +9473,11 @@ ul.children {
     position: relative;
     z-index: 3;
     margin-left: 16px;
+    transform: scale(1.01);
+    transition: all 0.5s ease-out;
+  }
+  .hero-image-wrapper .left-hero-image:hover img {
+    transform: scale(1.03);
   }
 }
 .hero-image-wrapper .right-hero-image {
@@ -9501,6 +9513,11 @@ ul.children {
   position: relative;
   z-index: 3;
   margin-top: 16px;
+  transform: scale(1.01);
+  transition: all 0.5s ease-out;
+}
+.hero-image-wrapper .right-hero-image:hover img {
+  transform: scale(1.03);
 }
 
 .home-three-hero-main-img {

@@ -147,7 +147,7 @@
             loop: true,
             dots: true,
             speed: 1500,
-            fade: true,
+            // fade: true,
             prevArrow:
                 "<button type='button' class='slider-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
             nextArrow:

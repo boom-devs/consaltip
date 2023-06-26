@@ -14,20 +14,20 @@
       position: absolute;
       top: 0;
       left: 43%;
-      transform: translate(0, -61%);
-      background-image: url("../images/scroll-down.png");
+      transform: translate(0, -58%);
+      background-image: url("../images/scroll-down-2.png");
       background-repeat: no-repeat;
       background-position: center;
       border-radius: 100px;
       display: block;
       .scrolldown-btn {
-        margin: 104px 72px 0px;
+        margin: 80px 72px 0px;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: $brand;
-        width: 135px;
-        height: 135px;
+        width: 100px;
+        height: 100px;
         border-radius: 100px;
         position: relative;
         i {
@@ -38,8 +38,8 @@
       }
     }
     .rounded-text {
-      width: 125px;
-      height: 125px;
+      width: 90px;
+      height: 90px;
       text-transform: uppercase;
       transform: rotate(-103deg);
       color: #fff;
@@ -61,8 +61,16 @@
   }
   .about-info-card-image {
     position: relative;
+
     img {
       width: 100%;
+      transform: scale(1.01);
+      @include transition;
+    }
+    &:hover {
+      img {
+        transform: scale(1.03);
+      }
     }
     .sketch-one {
       @include rwd(1440) {
