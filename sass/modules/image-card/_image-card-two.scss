@@ -13,10 +13,8 @@
             }
         }
         .image {
-            @include xl {
-                padding-right: 12px;
-                padding-left: unset;
-            }
+            padding-right: 12px;
+            padding-left: unset;
             .image-card-sketch {
                 &.style-three {
                     @include rwd(1440) {
@@ -34,9 +32,11 @@
         }
         @include sm {
             flex-direction: column-reverse;
+            padding: 0;
         }
         @include md {
             flex-direction: column-reverse;
+            padding: 0;
         }
     }
 }

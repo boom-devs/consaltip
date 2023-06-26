@@ -18,6 +18,7 @@
       position: absolute;
       bottom: 114px;
       right: 46px;
+      animation: MoveUpDown 2s linear infinite alternate;
     }
   }
   .about-us-image-gallery {
@@ -47,6 +48,7 @@
       position: absolute;
       bottom: 65px;
       left: 44px;
+      animation: MoveUpDown 2s linear infinite alternate;
     }
   }
   @include sm {
@@ -111,6 +113,7 @@
       right: 46px;
       background-position: center;
       background-repeat: no-repeat;
+      animation: MoveUpDown 2s linear infinite alternate;
     }
   }
   .home-two-client-logo-slider {
@@ -255,6 +258,7 @@
     height: 188px;
     bottom: 192px;
     right: 68px;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 // Team-member section
@@ -275,6 +279,7 @@
       height: 188px;
       bottom: 192px;
       right: 68px;
+      animation: MoveUpDown 2s linear infinite alternate;
     }
   }
 }
@@ -299,6 +304,7 @@
       position: absolute;
       top: 138px;
       left: 254px;
+      animation: MoveUpDown 2s linear infinite alternate;
     }
   }
   .shape-one {
@@ -390,6 +396,7 @@
       height: 188px;
       bottom: 40px;
       right: 102px;
+      animation: MoveUpDown 2s linear infinite alternate;
     }
   }
 }

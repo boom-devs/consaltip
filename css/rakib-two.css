@@ -949,21 +949,19 @@ input:focus {
   height: 100%;
   position: relative;
   flex-shrink: 0;
+  padding-left: 12px;
+  padding-right: unset;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .image-card .image {
     width: 100%;
+    padding: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .image-card .image {
     width: 100%;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
-  .image-card .image {
-    padding-right: unset;
-    padding-left: 12px;
+    padding: 0;
   }
 }
 @media (min-width: 1440px) {
@@ -1050,11 +1048,9 @@ input:focus {
     line-height: 52px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
-  .image-card.style-two .image {
-    padding-right: 12px;
-    padding-left: unset;
-  }
+.image-card.style-two .image {
+  padding-right: 12px;
+  padding-left: unset;
 }
 @media (min-width: 1440px) {
   .image-card.style-two .image .image-card-sketch.style-three {
@@ -1070,11 +1066,13 @@ input:focus {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .image-card.style-two {
     flex-direction: column-reverse;
+    padding: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .image-card.style-two {
     flex-direction: column-reverse;
+    padding: 0;
   }
 }
 
@@ -2128,7 +2126,7 @@ input:focus {
 .slider-area.style-two {
   position: relative;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .slider-area.style-two .sketch-one {
     background-image: url("../images/sketch-color.png");
     width: 109px;
@@ -2138,6 +2136,7 @@ input:focus {
     position: absolute;
     bottom: 40px;
     left: 40px;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {

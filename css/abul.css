@@ -3444,12 +3444,6 @@ html {
   animation-name: slideUpIn;
 }
 
-@media only screen and (max-width: 1199px) {
-  .header-btn-wrapper {
-    display: none;
-  }
-}
-
 .header-btn a {
   background: #ffffff;
   color: #080f10;
@@ -3522,6 +3516,11 @@ html {
 }
 .header-btn.style-three:hover i {
   background: #e0f780;
+}
+@media only screen and (max-width: 1199px) {
+  .header-btn {
+    display: none;
+  }
 }
 
 .header-area.style-two .header-top .header-top-btn a {
@@ -4078,9 +4077,10 @@ a.meanmenu-reveal {
     position: absolute;
     top: 115px;
     left: 6px;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .slider-area .single-slider .slider-image .brush-sketch {
     background-image: url("../images/brush-sketch.png");
     width: 122px;
@@ -4091,6 +4091,7 @@ a.meanmenu-reveal {
     bottom: 40px;
     right: 0px;
     transform: translate(50%, 50%);
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -6019,21 +6020,19 @@ button.testimonial-arrow-btn:hover i {
   height: 100%;
   position: relative;
   flex-shrink: 0;
+  padding-left: 12px;
+  padding-right: unset;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .image-card .image {
     width: 100%;
+    padding: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .image-card .image {
     width: 100%;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
-  .image-card .image {
-    padding-right: unset;
-    padding-left: 12px;
+    padding: 0;
   }
 }
 @media (min-width: 1440px) {
@@ -8304,6 +8303,7 @@ ul.children {
     left: 0;
     transform: translate(-50%, -50%);
     z-index: 3;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
@@ -8317,6 +8317,7 @@ ul.children {
     bottom: 65px;
     right: 160px;
     z-index: 3;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 
@@ -8347,6 +8348,7 @@ ul.children {
     position: absolute;
     left: 64px;
     bottom: 128px;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 .home-one-service .home-one-service-slider .slick-slide {
@@ -8387,6 +8389,7 @@ ul.children {
     left: 0;
     transform: translate(-50%, 0%);
     z-index: 3;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 
@@ -8467,6 +8470,7 @@ ul.children {
     position: absolute;
     top: 20px;
     right: 82px;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 
@@ -8710,6 +8714,7 @@ ul.children {
     position: absolute;
     bottom: 72px;
     right: 176px;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 
@@ -8731,8 +8736,9 @@ ul.children {
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    bottom: 200px;
+    bottom: 100px;
     right: 262px;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 .home-one-team-member-area .home-one-team-member {
@@ -8903,6 +8909,7 @@ ul.children {
     position: absolute;
     bottom: 114px;
     right: 46px;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 .home-two-about-us-area .about-us-image-gallery img {
@@ -8929,6 +8936,7 @@ ul.children {
     position: absolute;
     bottom: 65px;
     left: 44px;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -8999,6 +9007,7 @@ ul.children {
     right: 46px;
     background-position: center;
     background-repeat: no-repeat;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 .home-two-client-logo-area .home-two-client-logo-slider .slick-dots {
@@ -9138,6 +9147,7 @@ ul.children {
   height: 188px;
   bottom: 192px;
   right: 68px;
+  animation: MoveUpDown 2s linear infinite alternate;
 }
 
 .home-two-team {
@@ -9162,6 +9172,7 @@ ul.children {
     height: 188px;
     bottom: 192px;
     right: 68px;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 
@@ -9190,6 +9201,7 @@ ul.children {
     position: absolute;
     top: 138px;
     left: 254px;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 @media (min-width: 1440px) {
@@ -9284,6 +9296,7 @@ ul.children {
     height: 188px;
     bottom: 40px;
     right: 102px;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 
@@ -9970,6 +9983,7 @@ ul.children {
   background-repeat: no-repeat;
   width: 169px;
   height: 169px;
+  animation: MoveUpDown 2s linear infinite alternate;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .page-breadcrumb-sec .sketch {
@@ -10020,6 +10034,7 @@ ul.children {
     bottom: 246px;
     right: 104px;
     z-index: 2;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 
@@ -10042,6 +10057,7 @@ ul.children {
     background-repeat: no-repeat;
     width: 169px;
     height: 169px;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 
@@ -10089,6 +10105,7 @@ ul.children {
     background-repeat: no-repeat;
     width: 169px;
     height: 169px;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 .about-page-faq-area .video-popup-card.style-three {
@@ -10120,6 +10137,7 @@ ul.children {
     bottom: 9px;
     left: 27px;
     z-index: 2;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 .about-page-portfolio-area .portfolio-card-arrow-btn {
@@ -10145,6 +10163,7 @@ ul.children {
     background-repeat: no-repeat;
     width: 169px;
     height: 169px;
+    animation: MoveUpDown 2s linear infinite alternate;
   }
 }
 

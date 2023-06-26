@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     width: 169px;
     height: 169px;
+    animation: MoveUpDown 2s linear infinite alternate;
     @include sm {
       display: none;
     }
@@ -55,6 +56,7 @@
       bottom: 246px;
       right: 104px;
       z-index: 2;
+      animation: MoveUpDown 2s linear infinite alternate;
     }
   }
 }
@@ -76,6 +78,7 @@
       background-repeat: no-repeat;
       width: 169px;
       height: 169px;
+      animation: MoveUpDown 2s linear infinite alternate;
     }
   }
 }
@@ -124,6 +127,7 @@
       background-repeat: no-repeat;
       width: 169px;
       height: 169px;
+      animation: MoveUpDown 2s linear infinite alternate;
     }
   }
   .video-popup-card.style-three {
@@ -153,6 +157,7 @@
       bottom: 9px;
       left: 27px;
       z-index: 2;
+      animation: MoveUpDown 2s linear infinite alternate;
     }
   }
   .portfolio-card-arrow-btn {
@@ -176,6 +181,7 @@
       background-repeat: no-repeat;
       width: 169px;
       height: 169px;
+      animation: MoveUpDown 2s linear infinite alternate;
     }
   }
 }

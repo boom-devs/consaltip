@@ -76,6 +76,7 @@
         left: 0;
         transform: translate(-50%, -50%);
         z-index: 3;
+        animation: MoveUpDown 2s linear infinite alternate;
       }
     }
   }
@@ -90,7 +91,7 @@
       bottom: 65px;
       right: 160px;
       z-index: 3;
-      // transform: translate(100%, 100%);
+      animation: MoveUpDown 2s linear infinite alternate;
     }
   }
 }
@@ -118,7 +119,7 @@
       position: absolute;
       left: 64px;
       bottom: 128px;
-      // transform: translate(-50%, 0%);
+      animation: MoveUpDown 2s linear infinite alternate;
     }
   }
   .home-one-service-slider {
@@ -157,6 +158,7 @@
         left: 0;
         transform: translate(-50%, 0%);
         z-index: 3;
+        animation: MoveUpDown 2s linear infinite alternate;
       }
     }
   }
@@ -227,6 +229,7 @@
       position: absolute;
       top: 20px;
       right: 82px;
+      animation: MoveUpDown 2s linear infinite alternate;
     }
   }
 }
@@ -438,6 +441,7 @@
       position: absolute;
       bottom: 72px;
       right: 176px;
+      animation: MoveUpDown 2s linear infinite alternate;
     }
   }
 }
@@ -458,9 +462,9 @@
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
-      bottom: 200px;
+      bottom: 100px;
       right: 262px;
-      // transform: translate(100%, 100%);
+      animation: MoveUpDown 2s linear infinite alternate;
     }
   }
   .home-one-team-member {

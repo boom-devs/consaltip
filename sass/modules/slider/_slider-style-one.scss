@@ -12,6 +12,7 @@
       top: 270px;
       right: 55px;
       rotate: 180deg;
+      // animation: MoveUpDown 2s linear infinite alternate;
     }
   }
   .shape-two {
@@ -25,6 +26,7 @@
       bottom: 271px;
       left: 42px;
       rotate: 90deg;
+      // animation: MoveUpDown 2s linear infinite alternate;
     }
   }
 
@@ -373,10 +375,11 @@
           position: absolute;
           top: 115px;
           left: 6px;
+          animation: MoveUpDown 2s linear infinite alternate;
         }
       }
       .brush-sketch {
-        @include xl {
+        @include rwd(1440) {
           background-image: url("../images/brush-sketch.png");
           width: 122px;
           height: 100px;
@@ -386,6 +389,7 @@
           bottom: 40px;
           right: 0px;
           transform: translate(50%, 50%);
+          animation: MoveUpDown 2s linear infinite alternate;
         }
       }
 
