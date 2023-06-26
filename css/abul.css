@@ -3444,6 +3444,12 @@ html {
   animation-name: slideUpIn;
 }
 
+@media only screen and (max-width: 1199px) {
+  .header-btn-wrapper {
+    display: none;
+  }
+}
+
 .header-btn a {
   background: #ffffff;
   color: #080f10;
@@ -3516,11 +3522,6 @@ html {
 }
 .header-btn.style-three:hover i {
   background: #e0f780;
-}
-@media only screen and (max-width: 1199px) {
-  .header-btn {
-    display: none;
-  }
 }
 
 .header-area.style-two .header-top .header-top-btn a {
@@ -3783,11 +3784,11 @@ a.meanmenu-reveal {
   display: flex;
   gap: 2px;
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  top: 50%;
+  right: 96px;
   transform: translateY(-50%);
   z-index: 2;
-  flex-direction: row;
+  flex-direction: column;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .slider-wrapper .slick-dots {
@@ -3796,12 +3797,13 @@ a.meanmenu-reveal {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 30px;
-    bottom: 70px;
-    top: unset;
-    left: unset;
-    right: unset;
+    right: 70px;
     transform: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-area .slider-wrapper .slick-dots {
+    right: 12px;
   }
 }
 .slider-area .slider-wrapper .slick-dots li {
@@ -3939,7 +3941,7 @@ a.meanmenu-reveal {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-area .single-slider {
     height: 700px;
-    padding-top: 112px;
+    padding: 112px 32px 64px 24px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3959,20 +3961,7 @@ a.meanmenu-reveal {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-area .single-slider .slider-content-wrapper {
-    padding: 12px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .slider-area .single-slider .slider-content-wrapper:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #575959;
-    opacity: 0.3;
-    top: 0;
-    left: 0;
-    z-index: 0;
+    padding: 0;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -4074,6 +4063,7 @@ a.meanmenu-reveal {
   right: 0;
   top: 0;
   height: 100%;
+  margin: 0 auto;
 }
 .slider-area .single-slider .slider-image img {
   height: 100%;
@@ -4106,15 +4096,9 @@ a.meanmenu-reveal {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .single-slider .slider-image {
     animation: none;
-    margin-bottom: -150px;
-    right: unset;
     text-align: center;
-  }
-}
-@media (max-width: 1799px) {
-  .slider-area .single-slider .slider-image {
-    width: auto;
-    margin-top: inherit;
+    width: 300px;
+    justify-content: center;
   }
 }
 
@@ -8258,7 +8242,7 @@ ul.children {
     position: absolute;
     top: 0;
     left: 43%;
-    transform: translate(0, -65%);
+    transform: translate(0, -61%);
     background-image: url("../images/scroll-down.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -8266,19 +8250,41 @@ ul.children {
     display: block;
   }
   .why-choose-us-area .scrolldown-btn-wrapper .scrolldown-btn {
-    margin: 72px 72px 0px;
+    margin: 104px 72px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #e0f780;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+    width: 135px;
+    height: 135px;
+    border-radius: 100px;
+    position: relative;
   }
   .why-choose-us-area .scrolldown-btn-wrapper .scrolldown-btn i {
     color: #080f10;
     font-size: 34px;
+    position: absolute;
   }
+}
+.why-choose-us-area .scrolldown-btn-wrapper .rounded-text {
+  width: 125px;
+  height: 125px;
+  text-transform: uppercase;
+  transform: rotate(-103deg);
+  color: #fff;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.why-choose-us-area .scrolldown-btn-wrapper .rotating {
+  animation: rotating 12s linear infinite;
 }
 .why-choose-us-area .about-info-card-image {
   position: relative;

@@ -71,11 +71,11 @@
       display: flex;
       gap: 2px;
       position: absolute;
-      bottom: 0;
-      left: 50%;
+      top: 50%;
+      right: 96px;
       transform: translateY(-50%);
       z-index: 2;
-      flex-direction: row;
+      flex-direction: column;
 
       @include sm {
         display: none !important;
@@ -83,12 +83,11 @@
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
-        margin-right: 30px;
-        bottom: 70px;
-        top: unset;
-        left: unset;
-        right: unset;
+        right: 70px;
         transform: none;
+      }
+      @include md {
+        right: 12px;
       }
 
       li {
@@ -241,7 +240,7 @@
     }
     @include md {
       height: 700px;
-      padding-top: 112px;
+      padding: 112px 32px 64px 24px;
     }
     @include lg {
       height: 700px;
@@ -254,21 +253,21 @@
         padding: 12px;
       }
       @include md {
-        padding: 12px;
+        padding: 0;
       }
-      @include sm {
-        &:after {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background-color: $text-color;
-          opacity: 0.3;
-          top: 0;
-          left: 0;
-          z-index: 0;
-        }
-      }
+      // @include sm {
+      //   &:after {
+      //     content: "";
+      //     position: absolute;
+      //     width: 100%;
+      //     height: 100%;
+      //     background-color: $text-color;
+      //     opacity: 0.3;
+      //     top: 0;
+      //     left: 0;
+      //     z-index: 0;
+      //   }
+      // }
 
       .slider-content {
         @include sm {
@@ -360,6 +359,7 @@
       right: 0;
       top: 0;
       height: 100%;
+      margin: 0 auto;
       img {
         height: 100%;
       }
@@ -391,14 +391,15 @@
 
       @include sm {
         animation: none;
-        margin-bottom: -150px;
-        right: unset;
+        // margin-bottom: -150px;
         text-align: center;
+        width: 300px;
+        justify-content: center;
       }
-      @include rmaxwd(1799) {
-        width: auto;
-        margin-top: inherit;
-      }
+      // @include rmaxwd(1799) {
+      //   width: auto;
+      //   margin-top: inherit;
+      // }
     }
   }
 }

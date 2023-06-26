@@ -411,6 +411,11 @@
 }
 
 // Header Button Area
+.header-btn-wrapper {
+  @media only screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 
 .header-btn {
   a {
@@ -494,9 +499,5 @@
         background: $brand;
       }
     }
-  }
-
-  @media only screen and (max-width: 1199px) {
-    display: none;
   }
 }

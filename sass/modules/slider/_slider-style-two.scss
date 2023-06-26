@@ -17,20 +17,29 @@
       @include md {
         bottom: 36px;
       }
+      @include lg {
+        bottom: 36px;
+        top: unset;
+      }
       &.prev-btn {
         left: 30px;
-        @include sm {
-          left: 144px;
-        }
         @include md {
           left: unset;
           right: 96px;
+        }
+        @include lg {
+          left: unset;
+          right: 50%;
         }
       }
       &.next-btn {
         right: 30px;
         @include sm {
-          right: 144px;
+          left: 80px;
+        }
+        @include lg {
+          left: 50%;
+          margin-left: 12px;
         }
       }
     }
@@ -44,10 +53,15 @@
       height: 994px;
       @include sm {
         padding: 80px 12px 64px 12px;
+        height: 880px;
       }
       @include md {
         height: 100%;
         padding-top: 148px;
+      }
+      @include lg {
+        padding-top: 80px;
+        height: 786px;
       }
     }
     .slider-wrapper {
@@ -62,11 +76,10 @@
         }
         @include sm {
           padding: 0;
-          margin-top: 112px;
         }
         @include md {
           padding: 0;
-          margin-top: 64px;
+          margin-top: 24px;
         }
 
         .slider-content {
@@ -101,6 +114,7 @@
         overflow: visible;
         @include sm {
           border-radius: 4px;
+          width: 300px;
         }
         @include md {
           border-radius: 4px;
@@ -127,6 +141,7 @@
           position: relative;
           z-index: 3;
           height: 100%;
+          margin: 0 auto;
           @include sm {
             border-radius: 4px;
             z-index: -1;
@@ -134,19 +149,6 @@
           @include md {
             border-radius: 4px;
             z-index: -1;
-          }
-        }
-        .certified {
-          @include rwd(1400) {
-            background-image: url("../images/slider/certified.png");
-            background-position: center;
-            width: 155px;
-            height: 155px;
-            top: 31px;
-            left: 0;
-            position: absolute;
-            transform: translate(-50%, 0);
-            z-index: 5;
           }
         }
       }
