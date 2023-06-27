@@ -176,10 +176,10 @@
       top: unset;
       bottom: -12px;
       @include sm {
-        display: none;
+        // display: none;
       }
       @include md {
-        display: none;
+        // display: none;
       }
     }
   }

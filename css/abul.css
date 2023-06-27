@@ -5904,16 +5904,6 @@ button.testimonial-arrow-btn:hover i {
   top: unset;
   bottom: -12px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .under-line.style-two:after {
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .under-line.style-two:after {
-    display: none;
-  }
-}
 .under-line.under-line-green:after {
   background: url("../images/under_line_green.png");
   background-repeat: no-repeat;
