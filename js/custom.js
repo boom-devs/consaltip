@@ -457,6 +457,13 @@
                 {
                     breakpoint: 768,
                     settings: {
+                        slidesToShow: 2,
+                        variableWidth: false,
+                    },
+                },
+                {
+                    breakpoint: 550,
+                    settings: {
                         slidesToShow: 1,
                         variableWidth: false,
                     },
@@ -618,10 +625,11 @@
                     breakpoint: 991,
                     settings: {
                         slidesToShow: 2,
+                        variableWidth: false,
                     },
                 },
                 {
-                    breakpoint: 767,
+                    breakpoint: 550,
                     settings: {
                         slidesToShow: 1,
                         variableWidth: false,

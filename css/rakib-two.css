@@ -566,7 +566,7 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e0f780;
+  background-color: rgba(224, 247, 128, 0.5);
   width: 135px;
   height: 135px;
   border-radius: 100px;
@@ -2237,7 +2237,9 @@ input:focus {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area.style-two button.slider-arrow-btn.prev-btn {
-    left: 40%;
+    right: 50%;
+    left: unset;
+    margin-right: 12px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2257,7 +2259,8 @@ input:focus {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area.style-two button.slider-arrow-btn.next-btn {
-    left: 52%;
+    left: 50%;
+    right: unset;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {

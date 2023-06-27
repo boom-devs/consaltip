@@ -25,7 +25,9 @@
       &.prev-btn {
         left: 48px;
         @include sm {
-          left: 40%;
+          right: 50%;
+          left: unset;
+          margin-right: 12px;
         }
         @include md {
           left: 43%;
@@ -39,7 +41,8 @@
       &.next-btn {
         right: 30px;
         @include sm {
-          left: 52%;
+          left: 50%;
+          right: unset;
         }
         @include md {
           left: 50%;

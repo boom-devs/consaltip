@@ -328,12 +328,16 @@
           }
         }
       }
+      .subscribe-form-wrapper {
+        width: 100%;
+      }
       .subscribe-form-widget {
         .mc4wp-form-fields {
           display: flex;
           background-color: transparent;
           overflow: hidden;
           gap: 16px;
+          justify-content: end;
           .submit-btn {
             padding: 12px 16px;
             font-size: 16px;
