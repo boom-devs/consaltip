@@ -293,7 +293,7 @@
                     breakpoint: 991,
                     settings: {
                         autoplay: true,
-                        slidesToShow: 1,
+                        slidesToShow: 2,
                         centerPadding: 0,
                         centerMode: false,
 
@@ -301,6 +301,15 @@
                 },
                 {
                     breakpoint: 767,
+                    settings: {
+                        autoplay: true,
+                        slidesToShow: 2,
+                        centerPadding: 0,
+                        centerMode: false,
+                    },
+                },
+                {
+                    breakpoint: 550,
                     settings: {
                         autoplay: true,
                         slidesToShow: 1,

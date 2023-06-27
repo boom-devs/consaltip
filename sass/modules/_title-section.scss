@@ -166,10 +166,11 @@
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
-    width: 278px;
+    width: 100%;
     height: 12px;
     right: 0;
     top: 50%;
+    background-size: contain;
   }
   &.style-two {
     &:after {

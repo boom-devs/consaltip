@@ -467,15 +467,17 @@ input:focus {
     padding: 80px 0;
   }
 }
-.faq-area-global .faq-sketch {
-  background: url("../images/sketch-color.png");
-  position: absolute;
-  bottom: 201px;
-  left: 30px;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 169px;
-  height: 169px;
+@media (min-width: 1400px) {
+  .faq-area-global .faq-sketch {
+    background: url("../images/sketch-color.png");
+    position: absolute;
+    bottom: 201px;
+    left: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 169px;
+    height: 169px;
+  }
 }
 .faq-area-global .shape-one {
   background: url("../images/shape/Rectangle.png");
@@ -760,6 +762,12 @@ input:focus {
     line-height: 38px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio-card .content h4 {
+    font-size: 26px;
+    line-height: 38px;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .portfolio-card .content p {
     font-size: 14px;
@@ -787,6 +795,11 @@ input:focus {
   height: 100%;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .portfolio-card.style-two .content {
+    padding: 40px 26px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .portfolio-card.style-two .content {
     padding: 40px 26px;
   }
@@ -1453,6 +1466,14 @@ input:focus {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .project-info-widget-wrapper .project-info-widget {
     padding: 40px 38px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-info-widget-wrapper .project-info-widget {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 .project-info-widget-wrapper .project-info-widget .project-info-sketch {
@@ -1545,20 +1566,38 @@ input:focus {
 .color-card-section {
   margin-top: 24px;
 }
-.color-card-section .color-card-one {
+.color-card-section .color-card-one,
+.color-card-section .color-card-two,
+.color-card-section .color-card-three,
+.color-card-section .color-card-four {
   height: 250px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .color-card-section .color-card-one,
+  .color-card-section .color-card-two,
+  .color-card-section .color-card-three,
+  .color-card-section .color-card-four {
+    height: 80px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .color-card-section .color-card-one,
+  .color-card-section .color-card-two,
+  .color-card-section .color-card-three,
+  .color-card-section .color-card-four {
+    height: 100px;
+  }
+}
+.color-card-section .color-card-one {
   background-color: #000;
 }
 .color-card-section .color-card-two {
-  height: 250px;
   background-color: #e0f780;
 }
 .color-card-section .color-card-three {
-  height: 250px;
   background-color: #033f47;
 }
 .color-card-section .color-card-four {
-  height: 250px;
   background-color: #f8f8f1;
 }
 
@@ -2754,7 +2793,7 @@ input:focus {
 
 .client-logo-wrapper .client-logo.style-three {
   filter: brightness(0);
-  padding: 0;
+  padding: 24px 0;
 }
 
 .mean-bar .meanmenu-reveal {

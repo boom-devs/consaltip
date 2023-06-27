@@ -28,6 +28,12 @@
         position: relative;
         @include sm {
             padding: 40px 38px;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        @include md {
+            flex-direction: row;
+            flex-wrap: wrap;
         }
         .project-info-sketch {
             position: absolute;
@@ -104,20 +110,29 @@
 }
 .color-card-section {
     margin-top: 24px;
-    .color-card-one {
+
+    .color-card-one,
+    .color-card-two,
+    .color-card-three,
+    .color-card-four {
         height: 250px;
+        @include sm {
+            height: 80px;
+        }
+        @include md {
+            height: 100px;
+        }
+    }
+    .color-card-one {
         background-color: #000;
     }
     .color-card-two {
-        height: 250px;
         background-color: $brand;
     }
     .color-card-three {
-        height: 250px;
         background-color: $icon-color;
     }
     .color-card-four {
-        height: 250px;
         background-color: $background;
     }
 }

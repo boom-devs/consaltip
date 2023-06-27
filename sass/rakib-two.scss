@@ -162,14 +162,16 @@
         padding: 80px 0;
     }
     .faq-sketch {
-        background: url("../images/sketch-color.png");
-        position: absolute;
-        bottom: 201px;
-        left: 30px;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 169px;
-        height: 169px;
+        @include rwd(1400) {
+            background: url("../images/sketch-color.png");
+            position: absolute;
+            bottom: 201px;
+            left: 30px;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 169px;
+            height: 169px;
+        }
     }
     .shape-one {
         background: url("../images/shape/Rectangle.png");

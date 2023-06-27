@@ -12,6 +12,9 @@
       @include sm {
         padding: 40px 26px;
       }
+      @include md {
+        padding: 40px 26px;
+      }
       .icon {
         display: flex;
       }
