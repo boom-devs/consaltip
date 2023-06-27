@@ -360,7 +360,7 @@ input:focus {
 }
 @media (min-width: 768px) {
   .slider-btn-wrapper.style-two {
-    justify-content: center;
+    justify-content: start;
   }
 }
 .slider-btn-wrapper.style-two .slider-btn {

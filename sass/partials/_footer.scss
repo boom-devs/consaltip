@@ -344,6 +344,12 @@
           }
         }
         .single-field {
+          @include sm {
+            width: 100%;
+          }
+          @include md {
+            width: 100%;
+          }
           input {
             color: #778196;
             height: 48px;

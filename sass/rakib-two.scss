@@ -69,7 +69,7 @@
     &.style-two {
         justify-content: center;
         @include rwd(768) {
-            justify-content: center;
+            justify-content: start;
         }
         .slider-btn {
             border-color: $text-color;

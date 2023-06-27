@@ -3830,11 +3830,17 @@ a.meanmenu-reveal {
     padding: 0;
     font-size: 14px;
   }
+  .icon-card .content .desc br {
+    display: none;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .icon-card .content .desc {
     padding: 0;
     font-size: 14px;
+  }
+  .icon-card .content .desc br {
+    display: none;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -5317,7 +5323,7 @@ button.testimonial-arrow-btn:hover i {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .page-breadcrumb-sec {
-    padding: 120px 5px;
+    padding: 180px 8px 112px 8px;
   }
 }
 .page-breadcrumb-sec.style-two {
@@ -7172,6 +7178,16 @@ ul.children {
   background: #e0f780;
   border-radius: 4px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer .subscribe-area .subscribe-inner-area .subscribe-form-widget .single-field {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer .subscribe-area .subscribe-inner-area .subscribe-form-widget .single-field {
+    width: 100%;
+  }
+}
 .footer .subscribe-area .subscribe-inner-area .subscribe-form-widget .single-field input {
   color: #778196;
   height: 48px;
@@ -7280,16 +7296,27 @@ ul.children {
 .team-member-card {
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
-.team-member-card .image {
+.team-member-card:after {
   background-color: #f8f8f1;
+  background-image: url(images/team/Bg.png);
   background-position: center;
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.team-member-card .image {
   position: relative;
   transform: scale(1);
   transition: all 0.5s ease-out;
+  z-index: 10;
 }
 .team-member-card .image img {
   width: 100%;
@@ -8961,7 +8988,6 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .case-studies-home-three button.portfolio-card-arrow-btn.prev-btn {
     left: 0;
-    top: -32px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {

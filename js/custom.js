@@ -149,9 +149,9 @@
             speed: 1500,
             // fade: true,
             prevArrow:
-                "<button type='button' class='slider-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+                "<button type='button' class='slider-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
-                "<button type='button' class='slider-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+                "<button type='button' class='slider-arrow-btn next-btn'><i class='icon-arrow-right-2'></i></button>",
             responsive: [
                 {
                     breakpoint: 767,
@@ -253,9 +253,9 @@
             dots: false,
             speed: 1500,
             prevArrow:
-                "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+                "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
-                "<button type='button' class='testimonial-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+                "<button type='button' class='testimonial-arrow-btn next-btn'><i class='icon-arrow-right-2'></i></button>",
             responsive: [
                 {
                     breakpoint: 1200,
@@ -331,9 +331,9 @@
             dots: false,
             speed: 1500,
             prevArrow:
-                "<button type='button' class='case-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+                "<button type='button' class='case-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
-                "<button type='button' class='case-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+                "<button type='button' class='case-arrow-btn next-btn'><i class='icon-arrow-right-2'></i></button>",
             responsive: [
                 {
                     breakpoint: 991,
@@ -364,9 +364,9 @@
             speed: 1500,
              variableWidth: true,
             prevArrow:
-                "<button type='button' class='case-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+                "<button type='button' class='case-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
-                "<button type='button' class='case-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+                "<button type='button' class='case-arrow-btn next-btn'><i class='icon-arrow-right-2'></i></button>",
             responsive: [
                 {
                     breakpoint: 1200,
@@ -403,9 +403,9 @@
             dots: false,
             speed: 1500,
             prevArrow:
-                "<button type='button' class='review-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+                "<button type='button' class='review-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
-                "<button type='button' class='review-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+                "<button type='button' class='review-arrow-btn next-btn'><i class='icon-arrow-right-2'></i></button>",
             responsive: [
                 {
                     breakpoint: 991,
@@ -436,9 +436,9 @@
             speed: 1500,
             variableWidth: true,
              prevArrow:
-                "<button type='button' class='home-one-team-arrow-prev'><i class='fa-solid fa-angle-left'></i></button>",
+                "<button type='button' class='home-one-team-arrow-prev'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
-                "<button type='button' class='home-one-team-arrow-next'><i class='fa-solid fa-angle-right'></i></button>",
+                "<button type='button' class='home-one-team-arrow-next'><i class='icon-arrow-right-2'></i></button>",
             responsive: [
                 {
                     breakpoint: 1200,
@@ -610,9 +610,9 @@
             speed: 1500,
             variableWidth: true,
             prevArrow:
-                "<button type='button' class='home-three-service-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+                "<button type='button' class='home-three-service-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
-                "<button type='button' class='home-three-service-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+                "<button type='button' class='home-three-service-arrow-btn next-btn'><i class='icon-arrow-right-2'></i></button>",
             responsive: [
                 {
                     breakpoint: 991,
@@ -685,9 +685,9 @@
             dots: false,
             speed: 1500,
             prevArrow:
-                "<button type='button' class='home-three-review-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+                "<button type='button' class='home-three-review-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
-                "<button type='button' class='home-three-review-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+                "<button type='button' class='home-three-review-arrow-btn next-btn'><i class='icon-arrow-right-2'></i></button>",
             responsive: [
                 {
                     breakpoint: 1200,

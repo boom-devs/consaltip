@@ -84,10 +84,16 @@
             @include sm {
                 padding: 0;
                 font-size: 14px;
+                br {
+                    display: none;
+                }
             }
             @include md {
                 padding: 0;
                 font-size: 14px;
+                br {
+                    display: none;
+                }
             }
             @include lg {
                 padding: 0;
