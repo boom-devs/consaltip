@@ -148,6 +148,9 @@
     &.style-two {
       color: $title-color !important;
     }
+    @include lg {
+      height: 90px;
+    }
   }
 
   p {

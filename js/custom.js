@@ -788,6 +788,14 @@
             scrollSpeed: 900,
             animation: "fade",
         });
+        /*
+       scrolldown
+       ============================*/
+        $("#scrolldown").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".footer-sec").offset().top
+        }, 1500);
+        });
 
         /*
         ounter Js

@@ -9,6 +9,10 @@
             .user-info {
                 h4 {
                     margin-bottom: 8px;
+                    @include lg {
+                        font-size: 28px;
+                        line-height: 32px;
+                    }
                 }
                 p {
                     font-size: 18px;

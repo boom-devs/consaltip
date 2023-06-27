@@ -53,6 +53,10 @@
           font-size: 62px;
           line-height: 68px;
         }
+        @include lg {
+          font-size: 62px;
+          line-height: 68px;
+        }
       }
     }
   }
@@ -315,6 +319,9 @@
     @include lg {
       margin-left: 48px;
     }
+    @media only screen and (min-width: 1200px) and (max-width: 1439px) {
+      margin-left: 112px;
+    }
   }
   @include sm {
     padding: 80px 0;
@@ -423,6 +430,9 @@
       @include lg {
         left: 24px;
       }
+      @media only screen and (min-width: 1200px) and (max-width: 1439px) {
+        left: 78px;
+      }
     }
     &.next-btn {
       right: 30px;
@@ -478,6 +488,9 @@
       }
       @include lg {
         margin-left: 48px;
+      }
+      @media only screen and (min-width: 1200px) and (max-width: 1439px) {
+        margin-left: 112px;
       }
     }
   }
@@ -613,6 +626,9 @@
     &.style-two {
       img {
         padding-top: 40px;
+        @include sm {
+          padding-top: 0;
+        }
         @include md {
           padding-top: 0;
         }

@@ -90,6 +90,20 @@
       }
     }
   }
+  .image-content-wrapper {
+    .social {
+      a {
+        i {
+          z-index: 10;
+          position: relative;
+          @include transition;
+          &:hover {
+            color: $brand;
+          }
+        }
+      }
+    }
+  }
   &:hover {
     .image {
       transform: scale(1.03);

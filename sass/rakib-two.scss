@@ -69,7 +69,7 @@
     &.style-two {
         justify-content: center;
         @include rwd(768) {
-            justify-content: start;
+            justify-content: center;
         }
         .slider-btn {
             border-color: $text-color;
@@ -390,5 +390,27 @@
 .mean-bar {
     .meanmenu-reveal {
         display: none !important;
+    }
+}
+
+.flip {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $icon-color;
+        opacity: 0;
+        overflow: hidden;
+    }
+    &:hover {
+        &:after {
+            opacity: 0.4;
+            overflow: visible;
+            transform: rotateY("180deg");
+        }
     }
 }

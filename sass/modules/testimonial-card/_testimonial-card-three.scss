@@ -14,6 +14,9 @@
                 line-height: 34px;
                 letter-spacing: 0.02em;
                 color: $title-color;
+                @include sm {
+                    text-align: center;
+                }
             }
         }
         .meta-user {

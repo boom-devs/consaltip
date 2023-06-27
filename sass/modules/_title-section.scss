@@ -96,6 +96,7 @@
       width: 50%;
       @include sm {
         width: 100%;
+        text-align: center !important;
       }
       @include md {
         width: 100%;

@@ -637,6 +637,9 @@ input:focus {
   color: #ffffff;
   font-size: 14px;
 }
+.footer.style-two .copyright-text p span {
+  color: #e0f780;
+}
 .footer.style-two .footer-bottom-menu ul li a {
   color: #ffffff;
   font-size: 14px;
@@ -1480,6 +1483,14 @@ input:focus {
 .team-member-card .content-wrapper .social a i {
   color: #033f47;
   font-size: 24px;
+}
+.team-member-card .image-content-wrapper .social a i {
+  z-index: 10;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+.team-member-card .image-content-wrapper .social a i:hover {
+  color: #e0f780;
 }
 .team-member-card:hover .image {
   transform: scale(1.03);
