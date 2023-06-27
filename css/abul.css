@@ -3850,7 +3850,6 @@ a.meanmenu-reveal {
   border-left-width: 3px;
   border-right-width: 3px;
   transform: rotate(270deg);
-  transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
 }
 .slider-area .slider-wrapper .slick-dots li button {
   font-size: 0;
@@ -4061,11 +4060,17 @@ a.meanmenu-reveal {
     font-size: 18px;
     line-height: 32px;
   }
+  .slider-area .single-slider .slider-content-wrapper .slider-content .slider-short-desc br {
+    display: none;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-area .single-slider .slider-content-wrapper .slider-content .slider-short-desc {
     font-size: 18px;
     line-height: 32px;
+  }
+  .slider-area .single-slider .slider-content-wrapper .slider-content .slider-short-desc br {
+    display: none;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -5267,6 +5272,12 @@ button.testimonial-arrow-btn:hover i {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .post-card-one .content-wrapper {
     padding: 24px;
+    gap: 24px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .post-card-one .content-wrapper {
+    gap: 24px;
   }
 }
 .post-card-one .content-wrapper .post-content {
@@ -5908,7 +5919,7 @@ button.testimonial-arrow-btn:hover i {
 .under-line.under-line-green:after {
   background: url("../images/under_line_green.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -8783,6 +8794,18 @@ ul.children {
 @media (max-width: 991px) {
   .home-one-review .home-one-review-slider button.review-arrow-btn {
     top: unset;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .home-one-review .home-one-review-slider button.review-arrow-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-one-review .home-one-review-slider button.review-arrow-btn {
+    width: 50px;
+    height: 50px;
   }
 }
 .home-one-review .home-one-review-slider button.review-arrow-btn.prev-btn {

@@ -18,6 +18,7 @@
                 bottom: unset;
                 right: 50px;
                 top: 0;
+                @include transition;
                 i {
                     color: $white;
                 }
@@ -30,6 +31,12 @@
                     width: 48px;
                     height: 48px;
                     right: 24px;
+                }
+                &:hover {
+                    background: $brand;
+                    i {
+                        color: $title-color;
+                    }
                 }
             }
             h4 {

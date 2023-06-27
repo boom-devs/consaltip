@@ -24,6 +24,10 @@
     gap: 48px;
     @include sm {
       padding: 24px;
+      gap: 24px;
+    }
+    @include md {
+      gap: 24px;
     }
     .post-content {
       display: flex;

@@ -399,7 +399,14 @@
       @include rmaxwd(991) {
         top: unset;
       }
-
+      @include sm {
+        width: 40px;
+        height: 40px;
+      }
+      @include md {
+        width: 50px;
+        height: 50px;
+      }
       &.prev-btn {
         right: 74px;
 

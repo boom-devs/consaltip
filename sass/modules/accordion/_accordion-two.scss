@@ -11,7 +11,7 @@
     }
     @include md {
         margin-top: 24px;
-        gap: 24px;
+        gap: 0;
     }
     .accordion-list-item-two {
         width: 100%;
@@ -93,6 +93,10 @@
             align-items: start;
             gap: 24px;
             @include sm {
+                align-items: center;
+                gap: 16px;
+            }
+            @include md {
                 align-items: center;
                 gap: 16px;
             }

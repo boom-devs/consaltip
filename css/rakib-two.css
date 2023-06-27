@@ -852,6 +852,7 @@ input:focus {
   bottom: unset;
   right: 50px;
   top: 0;
+  transition: all 0.5s ease-out;
 }
 .portfolio-card.style-three .content .icon i {
   color: #ffffff;
@@ -869,6 +870,12 @@ input:focus {
     height: 48px;
     right: 24px;
   }
+}
+.portfolio-card.style-three .content .icon:hover {
+  background: #e0f780;
+}
+.portfolio-card.style-three .content .icon:hover i {
+  color: #080f10;
 }
 .portfolio-card.style-three .content h4 {
   font-weight: 600;
@@ -2475,7 +2482,7 @@ input:focus {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .accordion-wrapper-two {
     margin-top: 24px;
-    gap: 24px;
+    gap: 0;
   }
 }
 .accordion-wrapper-two .accordion-list-item-two {
@@ -2550,6 +2557,12 @@ input:focus {
   gap: 24px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .accordion-wrapper-two .accordion-list-item-two .accordion-head {
+    align-items: center;
+    gap: 16px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .accordion-wrapper-two .accordion-list-item-two .accordion-head {
     align-items: center;
     gap: 16px;
