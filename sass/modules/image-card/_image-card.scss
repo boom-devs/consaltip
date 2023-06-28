@@ -101,7 +101,7 @@
                 width: 79px;
                 height: 91px;
                 transform: translate(-50%, -50%);
-                z-index: 0;
+                z-index: 5;
                 animation: MoveUpDown 2s linear infinite alternate;
                 &.style-two {
                     top: unset;
@@ -118,6 +118,12 @@
                     left: 0;
                     transform: translate(-50%, -50%);
                     z-index: 3;
+                }
+                &.style-four {
+                    top: 0;
+                    right: 0;
+                    left: unset;
+                    bottom: unset;
                 }
             }
         }

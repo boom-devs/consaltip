@@ -1071,6 +1071,7 @@ input:focus {
 .price-card-wrapper .price-card .price .price-heading {
   display: flex;
   align-items: center;
+  transition: all 0.5s ease-out;
 }
 .price-card-wrapper .price-card .price .price-heading .duration {
   font-size: 18px;
@@ -1198,24 +1199,18 @@ input:focus {
     display: none;
   }
 }
-.price-card-wrapper.active .price-card {
-  background: #e0f780;
-}
-.price-card-wrapper.active .price-card .divider:before {
-  background: #ffffff;
-}
-.price-card-wrapper.active .list-wrapper .price-list-item .icon {
-  background: #033f47;
-}
-.price-card-wrapper.active .list-wrapper .price-list-item .icon i {
-  color: #ffffff;
-}
 .price-card-wrapper.active .price-header {
   opacity: 1;
   overflow: visible;
 }
 .price-card-wrapper.active .price-header p {
   color: #ffffff;
+}
+.price-card-wrapper.active .price-card {
+  background: #e0f780;
+}
+.price-card-wrapper.active .price-card .divider:before {
+  background: #ffffff;
 }
 .price-card-wrapper.active .list-wrapper .price-btn a {
   background: #033f47;
@@ -1225,6 +1220,48 @@ input:focus {
   background: transparent;
   color: #080f10;
 }
+.price-card-wrapper.active .list-wrapper .price-list-item .icon {
+  background: #033f47;
+}
+.price-card-wrapper.active .list-wrapper .price-list-item .icon i {
+  color: #ffffff;
+}
+.price-card-wrapper.reverse .price-header {
+  background: #e0f780;
+}
+.price-card-wrapper.reverse .price-header p {
+  color: #080f10;
+}
+.price-card-wrapper.reverse .price-card {
+  background: #033f47;
+}
+.price-card-wrapper.reverse .price-card .card-title .sub-title {
+  color: #ffffff;
+}
+.price-card-wrapper.reverse .price-card .price .price-heading {
+  color: #ffffff;
+}
+.price-card-wrapper.reverse .price-card .price .price-heading .duration {
+  color: #ffffff;
+}
+.price-card-wrapper.reverse .price-card .list-title {
+  color: #ffffff;
+}
+.price-card-wrapper.reverse .price-card .list-wrapper .price-list-item .icon i {
+  color: #ffffff;
+}
+.price-card-wrapper.reverse .price-card .list-wrapper .price-list-item .text {
+  color: #ffffff;
+}
+.price-card-wrapper.reverse .price-card .list-wrapper .price-btn a {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.price-card-wrapper.reverse .price-card .list-wrapper .price-btn a:hover {
+  background: #e0f780;
+  color: #080f10;
+  border-color: transparent;
+}
 
 .process-step {
   display: flex !important;
@@ -1232,7 +1269,6 @@ input:focus {
 .process-step .image {
   width: 50%;
   position: relative;
-  overflow: hidden;
 }
 .process-step .image img {
   width: 100%;
@@ -1263,10 +1299,8 @@ input:focus {
     left: 0;
     top: unset;
     transform: translate(-63%, 15%);
+    z-index: 1;
   }
-}
-.process-step .image:hover img {
-  transform: scale(1.03);
 }
 .process-step .content-wrapper {
   width: 50%;
@@ -1690,6 +1724,7 @@ input:focus {
   background-repeat: no-repeat;
   width: 169px;
   height: 169px;
+  animation: MoveUpDown 2s linear infinite alternate;
 }
 @media (max-width: 1199px) {
   .service-what-we-area .sketch {

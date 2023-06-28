@@ -539,7 +539,7 @@ input:focus {
   text-transform: uppercase;
   transform: rotate(-106deg);
   color: #fff;
-  font-weight: bold;
+  font-weight: 400;
   z-index: 10;
   font-family: "Outfit", sans-serif;
 }
@@ -925,7 +925,7 @@ input:focus {
     width: 79px;
     height: 91px;
     transform: translate(-50%, -50%);
-    z-index: 0;
+    z-index: 5;
     animation: MoveUpDown 2s linear infinite alternate;
   }
   .image-card .image .image-card-sketch.style-two {
@@ -943,6 +943,12 @@ input:focus {
     left: 0;
     transform: translate(-50%, -50%);
     z-index: 3;
+  }
+  .image-card .image .image-card-sketch.style-four {
+    top: 0;
+    right: 0;
+    left: unset;
+    bottom: unset;
   }
 }
 .image-card .image img {

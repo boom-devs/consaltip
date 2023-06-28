@@ -17,6 +17,7 @@
         background-repeat: no-repeat;
         width: 169px;
         height: 169px;
+        animation: MoveUpDown 2s linear infinite alternate;
         @include rmaxwd(1199) {
             display: none;
         }

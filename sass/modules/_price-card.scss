@@ -135,6 +135,7 @@
             .price-heading {
                 display: flex;
                 align-items: center;
+                @include transition;
                 .duration {
                     font-size: 18px;
                     line-height: 25px;
@@ -253,31 +254,19 @@
         }
     }
     &.active {
+        .price-header {
+            opacity: 1;
+            overflow: visible;
+            p {
+                color: $white;
+            }
+        }
         .price-card {
             background: $brand;
             .divider {
                 &:before {
                     background: $white;
                 }
-            }
-        }
-        .list-wrapper {
-            .price-list-item {
-                .icon {
-                    background: $icon-color;
-                    i {
-                        color: $white;
-                    }
-                }
-            }
-        }
-    }
-    &.active {
-        .price-header {
-            opacity: 1;
-            overflow: visible;
-            p {
-                color: $white;
             }
         }
         .list-wrapper {
@@ -290,6 +279,64 @@
                     a {
                         background: transparent;
                         color: $title-color;
+                    }
+                }
+            }
+            .price-list-item {
+                .icon {
+                    background: $icon-color;
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    &.reverse {
+        .price-header {
+            background: $brand;
+            p {
+                color: $title-color;
+            }
+        }
+        .price-card {
+            background: $icon-color;
+            .card-title {
+                .sub-title {
+                    color: $white;
+                }
+            }
+            .price {
+                .price-heading {
+                    color: $white;
+                    .duration {
+                        color: $white;
+                    }
+                }
+            }
+            .list-title {
+                color: $white;
+            }
+            .list-wrapper {
+                .price-list-item {
+                    .icon {
+                        i {
+                            color: $white;
+                        }
+                    }
+                    .text {
+                        color: $white;
+                    }
+                }
+                .price-btn {
+                    a {
+                        border-color: $white;
+                        color: $white;
+                        &:hover {
+                            background: $brand;
+                            color: $title-color;
+                            border-color: transparent;
+                        }
                     }
                 }
             }

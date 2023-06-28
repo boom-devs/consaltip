@@ -287,7 +287,7 @@
             speed: 1500,
             centerMode:true,
             centerPadding:'50px',
-
+            clickable: true,
             responsive: [
                 {
                     breakpoint: 991,
@@ -545,8 +545,8 @@
             slidesToShow: 1,
             infinite: true,
             autoplay: false,
-            draggable: true,
-            arrows: true,
+            draggable: false,
+            arrows: false,
             slidesToScroll: 1,
             loop: true,
             dots: true,
@@ -555,10 +555,6 @@
                 "<button type='button' class='process-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
                 "<button type='button' class='process-arrow-btn next-btn active'><i class='icon-arrow-right-2'></i></button>",
-            // customPaging : function(slider, index) { 
-            // var num = index + 1;
-            // return ' <div class="dot icon-card style-seven active" id="home-two-first-step"><div class="icon"><i class="icon-Analysis"></i></div><div class="content"><h4 class="title">1. Analysis & Research</h4></div></div>';
-            // },
                 responsive: [
                 {
                     breakpoint: 767,
@@ -570,6 +566,8 @@
                 },
             ],
         });
+
+        
         $('.process-arrow-btn').on('click', function () {
             $('.process-arrow-btn').removeClass(' active ');
             $(this).addClass('active');
@@ -687,6 +685,11 @@
                     },
                 },
             ],
+        });
+
+        // Price switch
+        $('.price-switch').on('click', function () {
+            $('.switch-price-card').toggleClass(' reverse ');
         });
 
         // Home-three review slider

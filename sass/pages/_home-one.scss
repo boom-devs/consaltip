@@ -149,7 +149,14 @@
   }
   .image-wrapper {
     position: relative;
+    overflow: hidden;
+    &:hover {
+      img {
+        transform: scale(1.03);
+      }
+    }
     img {
+      @include transition;
       @include md {
         width: 100%;
       }
