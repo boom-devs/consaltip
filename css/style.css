@@ -7503,7 +7503,7 @@ ul.children {
     position: absolute;
     top: 0;
     left: 43%;
-    transform: translate(0, -58%);
+    transform: translate(0, -62%);
     background-image: url("../images/scroll-down-2.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -7511,13 +7511,13 @@ ul.children {
     display: block;
   }
   .why-choose-us-area .scrolldown-btn-wrapper .scrolldown-btn {
-    margin: 80px 72px 0px;
+    margin: 100px 72px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #e0f780;
-    width: 100px;
-    height: 100px;
+    width: 135px;
+    height: 135px;
     border-radius: 100px;
     position: relative;
   }
@@ -7528,8 +7528,8 @@ ul.children {
   }
 }
 .why-choose-us-area .scrolldown-btn-wrapper .rounded-text {
-  width: 90px;
-  height: 90px;
+  width: 110px;
+  height: 110px;
   text-transform: uppercase;
   transform: rotate(-103deg);
   color: #fff;
