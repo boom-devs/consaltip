@@ -274,51 +274,7 @@
             $('.testimonial-slider-wrapper .next-btn').trigger('click');
         });
 
-        // project-page
-        $(".project-slider-wrapper").slick({
-            slidesToShow: 3,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: false,
-            speed: 1500,
-            centerMode:true,
-            centerPadding:'50px',
-            clickable: true,
-            responsive: [
-                {
-                    breakpoint: 991,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 2,
-                        centerPadding: 0,
-                        centerMode: false,
-
-                    },
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 2,
-                        centerPadding: 0,
-                        centerMode: false,
-                    },
-                },
-                {
-                    breakpoint: 550,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 1,
-                        centerPadding: 0,
-                        centerMode: false,
-                    },
-                },
-            ],
-        });
+        
          /*
        Jquery Tilt Js
        ============================*/
