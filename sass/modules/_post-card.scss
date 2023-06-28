@@ -42,6 +42,22 @@
     margin-bottom: 30px;
   }
 }
+// sketch
+.blog-sketch {
+  @include rwd(1440) {
+    background-image: url("../images/shape/sketch-color.svg");
+    width: 109px;
+    height: 109px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    animation: MoveUpDown 2s linear infinite alternate;
+  }
+}
 
 // Standar Blog Post
 .single-post-item {
@@ -53,6 +69,7 @@
 
   .post-content-wrapper {
     padding: 40px 32px;
+    background: $background;
 
     .read-more {
       margin-top: 40px;
