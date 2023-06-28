@@ -35,6 +35,9 @@
           &:hover {
             color: $brand;
           }
+          @include sm {
+            font-size: 26px;
+          }
         }
         p {
           text-align: center;
@@ -70,6 +73,9 @@
     .user-info {
       h4 {
         margin-bottom: 4px;
+        @include sm {
+          font-size: 26px;
+        }
       }
       p {
         text-align: center;

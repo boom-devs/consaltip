@@ -862,7 +862,7 @@ input:focus {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .image-card .content .title {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1924,7 +1924,7 @@ input:focus {
 .testimonial-card.style-two .content-wrapper .meta-user .user-info .image {
   display: none;
 }
-.testimonial-card.style-two .content-wrapper .meta-user .user-info .info h5 {
+.testimonial-card.style-two .content-wrapper .meta-user .user-info .info h6 {
   color: #e0f780;
 }
 .testimonial-card.style-two .content-wrapper .meta-user .user-info .info p {

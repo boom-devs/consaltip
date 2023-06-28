@@ -4301,11 +4301,6 @@ a.meanmenu-reveal {
   flex-direction: column;
   gap: 8px;
 }
-.testimonial-card .content-wrapper .meta-user .user-info .info h5 {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
-}
 
 .testimonial-slider-wrapper {
   position: relative;
@@ -4692,6 +4687,11 @@ button.testimonial-arrow-btn:hover i {
 .post-card-one .content-wrapper .post-content .title:hover {
   text-decoration: underline;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .post-card-one .content-wrapper .post-content .title {
+    font-size: 26px;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .post-card-one .content-wrapper .post-content .title {
     font-size: 28px;
@@ -4821,7 +4821,7 @@ button.testimonial-arrow-btn:hover i {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #033f47;
   transition: 0.4s;
 }
 .price-card-switch .slider:before {
@@ -5153,7 +5153,7 @@ button.testimonial-arrow-btn:hover i {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .section-title .title {
-    font-size: 30px;
+    font-size: 32px;
     line-height: 46px;
   }
   .section-title .title br {
@@ -7397,6 +7397,11 @@ ul.children {
 .team-member-card .image .image-content-wrapper .user-info h4:hover {
   color: #e0f780;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .team-member-card .image .image-content-wrapper .user-info h4 {
+    font-size: 26px;
+  }
+}
 .team-member-card .image .image-content-wrapper .user-info p {
   text-align: center;
   color: #ffffff;
@@ -7428,6 +7433,11 @@ ul.children {
 }
 .team-member-card .content-wrapper .user-info h4 {
   margin-bottom: 4px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .team-member-card .content-wrapper .user-info h4 {
+    font-size: 26px;
+  }
 }
 .team-member-card .content-wrapper .user-info p {
   text-align: center;
