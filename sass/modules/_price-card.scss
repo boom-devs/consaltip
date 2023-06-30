@@ -73,7 +73,7 @@
         }
     }
     input:checked + .slider {
-        background-color: $icon-color;
+        background-color: $brand;
     }
 
     input:focus + .slider {
@@ -84,6 +84,7 @@
         -webkit-transform: translateX(35px);
         -ms-transform: translateX(35px);
         transform: translateX(35px);
+        background-color: $icon-color;
         @include sm {
             transform: translate(23px);
         }

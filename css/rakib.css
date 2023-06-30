@@ -997,13 +997,14 @@ input:focus {
   }
 }
 .price-card-switch input:checked + .slider {
-  background-color: #033f47;
+  background-color: #e0f780;
 }
 .price-card-switch input:focus + .slider {
   box-shadow: 0 0 1px #2196f3;
 }
 .price-card-switch input:checked + .slider:before {
   transform: translateX(35px);
+  background-color: #033f47;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .price-card-switch input:checked + .slider:before {
