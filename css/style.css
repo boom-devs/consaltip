@@ -5585,6 +5585,24 @@ button.testimonial-arrow-btn:hover i {
   flex-wrap: wrap;
   gap: 30px;
 }
+.single-post-item .post-content-wrapper .read-more a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #080f10;
+  padding: 16px 24px;
+  text-align: center;
+  border-radius: 4px;
+  background: transparent;
+  text-transform: capitalize;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 31px;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+  border: 1px solid #828282;
+}
 .single-post-item.format-quote .post-content {
   margin: 0;
 }
@@ -5776,7 +5794,7 @@ button.testimonial-arrow-btn:hover i {
 .single-post-item .post-meta {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 8px;
   margin-bottom: 24px;
   flex-wrap: wrap;
 }
@@ -6149,17 +6167,22 @@ button.testimonial-arrow-btn:hover i {
   margin: 0;
 }
 .widget .social-widget {
+  display: flex;
   justify-content: flex-start;
+  gap: 16px;
 }
 .widget .social-widget a {
   width: 40px;
   height: 40px;
-  background-color: #f8f8f1;
+  background-color: #d9d9d9;
   color: #080f10;
   transition: all 0.5s ease-out;
   border-radius: 50px;
   flex-shrink: 0;
   flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 1199px) {
   .widget .social-widget a {
@@ -6377,9 +6400,18 @@ button.testimonial-arrow-btn:hover i {
 .widget ol.wp-tag-cloud li a:before {
   display: none;
 }
+.widget.widget_categories {
+  padding: 32px 24px;
+}
+.widget.widget_categories ul li {
+  padding: 8px 16px;
+}
 .widget.widget_categories ul li a {
   display: flex;
   justify-content: space-between;
+}
+.widget.widget_social_profile {
+  padding: 32px 24px;
 }
 
 /* About Info Widget*/
@@ -6517,12 +6549,16 @@ button.testimonial-arrow-btn:hover i {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-bottom: 10px;
-  border: 0;
-  align-items: center;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: start;
 }
 .widget_latest_post ul li:last-child {
   margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
 }
 .widget_latest_post ul li a {
   padding-left: 0;
@@ -6544,7 +6580,7 @@ button.testimonial-arrow-btn:hover i {
   line-height: 170%;
   border: 1px solid #bdbdbd;
   border-radius: 4px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   display: inline-block;
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-title {
@@ -6567,12 +6603,12 @@ button.testimonial-arrow-btn:hover i {
   transition: all 0.5s ease-out;
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-meta {
-  font-size: 16px;
-  display: flex;
-  align-items: center;
+  font-size: 14px;
+  font-family: Inter;
+  font-style: normal;
   font-weight: 400;
-  gap: 8px;
-  color: #9ba8c3;
+  line-height: 150%;
+  color: #080f10;
 }
 
 .widget-instagram-feed {
