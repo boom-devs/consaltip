@@ -1943,6 +1943,10 @@ input:focus {
   border-radius: 6px;
 }
 
+.blog-details-area {
+  padding: 120px 0;
+}
+
 .common-card-wrapper {
   background: #4566d4;
   padding: 100px 50px;

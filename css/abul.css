@@ -2686,27 +2686,27 @@ img.emoji {
 ============================*/
 blockquote {
   overflow: hidden;
-  margin: 40px 0;
+  margin: 48px 0;
   position: relative;
   z-index: 1;
-  padding-left: 60px;
+  padding-left: 24px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   blockquote {
-    padding-left: 30px;
+    padding-left: 16px;
   }
 }
 blockquote p {
-  font-family: "Inter", sans-serif;
-  font-size: 24px;
-  color: #5e6f92;
-  line-height: 32px;
-  font-weight: 400;
-  font-style: italic;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.36px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   blockquote p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
   }
 }
@@ -2715,12 +2715,14 @@ blockquote p a {
   text-decoration: underline;
 }
 blockquote footer {
+  font-size: 18px;
   font-family: "Outfit", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: capitalize;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.36px;
   color: #033f47;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .wp-block-quote,
@@ -6415,19 +6417,32 @@ button.testimonial-arrow-btn:hover i {
   margin-bottom: 30px;
 }
 .blog-details-wrapper .single-post-item .post-thumbnail {
-  border-radius: 12px;
-  overflow: hidden;
+  display: flex;
+  gap: 24px;
 }
 .blog-details-wrapper .single-post-item .post-content-wrapper {
-  padding-bottom: 10px;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
 }
 .blog-details-wrapper .single-post-item .post-content {
   margin-bottom: 20px;
 }
-.blog-details-wrapper .single-post-item .post-content p {
-  margin-bottom: 20px;
+.blog-details-wrapper .single-post-item .post-content .content-list-item li {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  color: #080f10;
+}
+.blog-details-wrapper .single-post-item .post-content .content-list-item li.light {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.36px;
+  color: #575959;
 }
 .blog-details-wrapper .single-post-item .post-content p img {
   margin: 20px 0;
@@ -6464,7 +6479,6 @@ button.testimonial-arrow-btn:hover i {
 }
 .single-post-item .post-content-wrapper {
   padding: 40px 32px;
-  background: #f8f8f1;
 }
 .single-post-item .post-content-wrapper .read-more {
   margin-top: 40px;
@@ -6521,6 +6535,9 @@ button.testimonial-arrow-btn:hover i {
 .single-post-item.sticky .post-content p {
   margin-bottom: 0;
 }
+.single-post-item.format-image {
+  background: #f8f8f1;
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .single-post-item .post-title {
     font-size: 28px;
@@ -6536,10 +6553,7 @@ button.testimonial-arrow-btn:hover i {
 .single-post-item .post-content h4,
 .single-post-item .post-content h5,
 .single-post-item .post-content h6 {
-  margin-bottom: 10px;
-}
-.single-post-item .post-content p {
-  margin-bottom: unset;
+  margin-bottom: 16px;
 }
 .single-post-item .single-post-meta {
   display: flex;
@@ -6547,22 +6561,28 @@ button.testimonial-arrow-btn:hover i {
   padding-top: 15px;
   margin-top: 30px;
   margin-bottom: 20px;
-  flex-direction: column;
+  flex-direction: row;
 }
 .single-post-item .social-share {
   display: flex;
   gap: 17px;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
-.single-post-item .social-share a.facebook {
-  color: #1877f2;
+.single-post-item .social-share a.linkedin, .single-post-item .social-share a.facebook, .single-post-item .social-share a.twitter {
+  color: #080f10;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e0f780;
+  border-radius: 50px;
 }
-.single-post-item .social-share a.twitter {
-  color: #1da1f2;
-}
-.single-post-item .social-share a.linkedin {
-  color: #1a70c6;
+.single-post-item .social-share a.linkedin i, .single-post-item .social-share a.facebook i, .single-post-item .social-share a.twitter i {
+  line-height: 14px;
+  font-size: 16px;
 }
 .single-post-item .social-share .social-share-title {
   font-size: 16px;
@@ -6586,7 +6606,7 @@ button.testimonial-arrow-btn:hover i {
   font-family: "Outfit", sans-serif;
   color: #033f47;
   margin-bottom: 0;
-  margin-right: 28px;
+  margin-right: 16px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .single-post-item .blog-post-tag span {
@@ -6598,10 +6618,9 @@ button.testimonial-arrow-btn:hover i {
   display: inline-block;
   font-size: 16px;
   line-height: 1;
-  padding: 12px 22px;
-  border-radius: 50px;
+  padding: 8px 12px;
   transition: all 0.5s ease-out;
-  border: 1px solid #bfc5cb;
+  background: #f8f8f1;
 }
 .single-post-item .blog-post-tag a:hover {
   color: #ffffff;
