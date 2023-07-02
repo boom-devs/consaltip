@@ -194,6 +194,48 @@
     margin-bottom: 20px;
     flex-direction: row;
   }
+
+  // Post-testimonial
+  .post-testimonial {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    background-color: $background;
+    padding: 32px;
+    .image {
+      border-radius: 100%;
+      overflow: hidden;
+    }
+    .testimonial-post-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .meta-author {
+        font-size: 18px;
+        font-family: $body-font;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%;
+      }
+      .social-share {
+        a {
+          width: 24px;
+          height: 24px;
+          border: 1px solid #e0e0e0;
+          border-radius: 24px;
+          background-color: transparent;
+          i {
+            font-size: 10px;
+            line-height: 10px;
+          }
+          &:hover {
+            border-color: transparent;
+            background-color: $brand;
+          }
+        }
+      }
+    }
+  }
   // Social Share
   .social-share {
     display: flex;

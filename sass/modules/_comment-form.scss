@@ -10,8 +10,22 @@
   @include lg {
     padding: 25px 30px;
   }
+  &.style-two {
+    padding: 0;
+    background: transparent;
+  }
 }
 .post-comments-title {
+  &.style-two {
+    h5 {
+      color: $title-color;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 130%;
+      letter-spacing: 0.64px;
+      margin-bottom: 48px;
+    }
+  }
   .sub-title {
     color: $white;
     display: inline-block;
@@ -99,6 +113,16 @@
   }
   .comment-form-cookies-consent {
     display: none;
+  }
+  .comment-form {
+    .terms-condition-wrapper {
+      .terms-condition {
+        height: 100%;
+        width: auto;
+        display: inline-block;
+        margin-right: 8px;
+      }
+    }
   }
   input,
   select {

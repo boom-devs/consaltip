@@ -156,7 +156,7 @@
     <div class="body-overlay"></div>
 
     <!-- Page Header Start !-->
-    <div class="custom-container pt-110" style="background-image: url(images/hero/project-details.jpg);">
+    <div class="custom-container pt-110" style="background-image: url(images/hero/blog-details.jpg);">
         <div class="page-overlay"></div>
         <div class="breadcrumb-shape"></div>
         <div class=" page-breadcrumb-sec style-two">
@@ -183,16 +183,14 @@
     </div>
     <!-- Page Header End !-->
 
-
-
     <div class="blog-details-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10 blog-details-wrapper">
                     <!-- Post Details Start -->
-                    <article class="single-post-item">
+                    <article class="single-post-item mb-0">
                         <div class="post-content-wrapper">
-                            <div class="post-content">
+                            <div class="post-content mb-0">
                                 <p class="mb-48">Design and development may seem like two separate worlds, but they can work together seamlessly to create stunning and
                                 functional software. In this post, we'll explore the benefits of integrating design and development early on in a
                                 project, and how it can lead to a better end product.</p>
@@ -245,54 +243,64 @@
                                         <a class="facebook" href="#"><i class="icon-facebook"></i></a>
                                     </div>
                                 </div>
-                                <p>
-                                <img src="images/b-details.jpg" alt="image">
-                                </p>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut per spiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperi am, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                <div class="post-testimonial">
+                                    <div class="image">
+                                        <img src="images/blog/blog-details-meta.jpg" alt="image">
+                                    </div>
+                                    <div class="content-wrapper">
+                                        <h5>Jenny Wilson</h5>
+                                        <p
+                                            class="mb-16">Lorem ipsum dolor sit amet consectetur. Nec nunc pellentesque massa pretium. Quam sapien nec venenatis vivamus sed cras faucibus mi viverra. Quam faucibus morbi cras vitae neque.</p>
+                                        <div class="testimonial-post-meta">
+                                            <p class="meta-author">Chief Advisor </p>
+                                            <div class="social-share">
+                                                <a class="linkedin" href="#"><i class="icon-linkedin"></i></a>
+                                                <a class="twitter" href="#"><i class="icon-twitter"></i></a>
+                                                <a class="facebook" href="#"><i class="icon-facebook"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
                         </div>
                     </article>
 
                     <!-- Comment Form Start -->
-                    <div class="post-comments-form">
+                    <div class="post-comments-form style-two mt-120">
                         <div class="comment-respond">
-                            <div class="post-comments-title">
-                                <h2>Add A Comment</h2>
+                            <div class="post-comments-title style-two">
+                                <h5>Leave a Reply</h5>
                             </div>
                             <form action="#" method="post" class="comment-form">
                                 <div class="row gx-2">
                                     <div class="col-xl-6">
+                                        <label>Full Name</label>
                                         <div class="contacts-name">
-                                            <input name="author" type="text" placeholder="Your name*">
+                                            <input name="author" type="text" placeholder="Your name here*">
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
+                                        <label>Your Mail</label>
                                         <div class="contacts-email">
-                                            <input name="email" type="text" placeholder="Your email*">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="contacts-name">
-                                            <input name="phone" type="text" placeholder="Your phone">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="contacts-name">
-                                            <input name="website" type="text" placeholder="Your website">
+                                            <input name="email" type="text" placeholder="Your email here*">
                                         </div>
                                     </div>
                                     <div class="col-xl-12">
+                                        <label>Your Comment</label>
                                         <div class="contacts-message">
                                             <textarea name="comment" cols="20" rows="3" type="text"
-                                                placeholder="Start writing comment"></textarea>
+                                                placeholder="Type your comment"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="theme-btn" type="submit" data-dashlane-rid="97e94a7f0649a6e6"
-                                            data-form-type="other" data-dashlane-label="true">Post Comment <i
-                                                class="fa-solid fa-angle-right"></i></button>
+                                        <label class="terms-condition-wrapper mb-0">
+                                            <input class="terms-condition" type="checkbox" checked="checked"
+                                                name="terms-condition">I
+                                            agree that my submitted data is being collected and stored.
+                                        </label>
+                                        <button class="theme-btn mt-40" type="submit"
+                                            data-dashlane-rid="97e94a7f0649a6e6" data-form-type="other"
+                                            data-dashlane-label="true">Submit</button>
                                     </div>
                                 </div>
                             </form>
@@ -305,6 +313,108 @@
         </div>
     </div>
     <!--- Blog End !-->
+
+    <!-- Related Blog Start -->
+    <div class="mb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title style-two mb-64 align-items-start align-items-lg-center ">
+                        <h2 class="title text-start">
+                            <span class="under-line style-two">Related articles</span>
+                        </h2>
+                        <div class="">
+                            <a class="theme-btn" href="blog.html">Browse all articles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="post-card-one style-two">
+                        <div class="post-image">
+                            <img src="images/post_card/Image-2.jpg" alt="post" />
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <div class="meta-info">
+                                        <span><i class="icon-user"></i></span>
+                                        <p>By Alex Doe</p>
+                                    </div>
+                                    <div class="meta-info">
+                                        <span><i class="icon-calender"></i></span>
+                                        <p>Jan 17, 2023</p>
+                                    </div>
+                                </div>
+                                <a href="blog-details.html">
+                                    <h4 class="title">How to hire a right business executive for your company</h4>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="blog-details.html" class="theme-btn style-three"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="post-card-one style-two">
+                        <div class="post-image">
+                            <img src="images/post_card/Image-1.jpg" alt="post" />
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <div class="meta-info">
+                                        <span><i class="icon-user"></i></span>
+                                        <p>By Michel John</p>
+                                    </div>
+                                    <div class="meta-info">
+                                        <span><i class="icon-calender"></i></span>
+                                        <p>Jan 17, 2023</p>
+                                    </div>
+                                </div>
+                                <a href="blog-details.html">
+                                    <h4 class="title">5 social media funnels to grow your business audience</h4>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="blog-details.html" class="theme-btn style-three"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="post-card-one style-two mt-24 mt-xl-0">
+                        <div class="post-image">
+                            <img src="images/post_card/Image.jpg" alt="post" />
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <div class="meta-info">
+                                        <span><i class="icon-user"></i></span>
+                                        <p>By Marina</p>
+                                    </div>
+                                    <div class="meta-info">
+                                        <span><i class="icon-calender"></i></span>
+                                        <p>Jan 17, 2023</p>
+                                    </div>
+                                </div>
+                                <a href="blog-details.html">
+                                    <h4 class="title">3 marketing tools you should be paying attention to in 2024</h4>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="blog-details.html" class="theme-btn style-three"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Related Blog End -->
 
     <!-- Footer start -->
     <footer class="footer style-two pt-80 bg-icon">
