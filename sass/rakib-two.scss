@@ -137,7 +137,7 @@
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
-    @include sm {
+    @include rmaxwd(1800) {
         background-position: center;
         background-size: cover;
     }

@@ -5531,7 +5531,12 @@ button.testimonial-arrow-btn:hover i {
 .blog-details-wrapper .single-post-item .post-thumbnail {
   display: flex;
   gap: 24px;
-  flex-wrap: wrap;
+}
+@media (max-width: 1199px) {
+  .blog-details-wrapper .single-post-item .post-thumbnail {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 .blog-details-wrapper .single-post-item .post-content-wrapper {
   padding: 0;

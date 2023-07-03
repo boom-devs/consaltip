@@ -1933,6 +1933,20 @@ input:focus {
 }
 
 /* Blog-page CSS */
+.blog-main-wrapper {
+  padding: 120px 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .blog-main-wrapper {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-main-wrapper {
+    padding: 100px 0;
+  }
+}
+
 .blog-load-btn {
   padding: 20px 35px;
   background: #ff6731;
