@@ -140,7 +140,7 @@
         $(".slider-wrapper").slick({
             slidesToShow: 1,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -156,7 +156,7 @@
                 {
                     breakpoint: 767,
                     settings: {
-                        autoplay: false,
+                        autoplay: true,
                     },
                 },
             ],
@@ -168,7 +168,7 @@
         $(".portfolio_card_wrapper").slick({
             slidesToShow: 3,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -212,7 +212,7 @@
         $(".about_us_team_member").slick({
             slidesToShow: 3,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -245,7 +245,7 @@
         $("#testimonial_two").slick({
             slidesToShow: 1,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -320,7 +320,7 @@
         $(".home-one-case-studies-slider").slick({
             slidesToShow: 3,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -360,7 +360,7 @@
         $(".home-one-review-slider").slick({
             slidesToShow: 1,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -392,7 +392,7 @@
         $(".home-one-team-member").slick({
             slidesToShow: 4,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -459,14 +459,14 @@
                 {
                     breakpoint: 767,
                     settings: {
-                        autoplay: false,
+                        autoplay: true,
                         slidesToShow: 3,
                     },
                 },
                 {
                     breakpoint: 424,
                     settings: {
-                        autoplay: false,
+                        autoplay: true,
                         slidesToShow: 2,
                     },
                 },
@@ -477,7 +477,7 @@
         $(".home-two-client-logo-slider").slick({
             slidesToShow: 1,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: false,
             slidesToScroll: 1,
@@ -489,7 +489,7 @@
                 {
                     breakpoint: 767,
                     settings: {
-                        autoplay: false,
+                        autoplay: true,
                         slidesToShow: 1,
                     },
                 },
@@ -500,7 +500,7 @@
         $(".home-two-process-slider").slick({
             slidesToShow: 1,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: false,
             arrows: false,
             slidesToScroll: 1,
@@ -549,7 +549,7 @@
         $(".home-two-testimonial-card-slider").slick({
             slidesToShow: 1,
             infinite: false,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: false,
             slidesToScroll: 1,
@@ -560,7 +560,7 @@
                 {
                     breakpoint: 767,
                     settings: {
-                        autoplay: false,
+                        autoplay: true,
                         slidesToShow: 1,
                     },
                 },
@@ -571,7 +571,7 @@
         $(".home-three-service-slider").slick({
             slidesToShow: 3,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -613,7 +613,7 @@
         $(".home-three-case-studies-slider").slick({
             slidesToShow: 3,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -653,7 +653,7 @@
         $(".home-three-review-slider").slick({
             slidesToShow: 3,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -696,7 +696,7 @@
         $(".post-gallery").slick({
             slidesToShow: 1,
             infinite: false,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -715,7 +715,7 @@
         $(".home-one-client-slider").slick({
             slidesToShow: 5,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: false,
             slidesToScroll: 1,
