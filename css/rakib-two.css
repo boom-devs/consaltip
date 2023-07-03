@@ -438,6 +438,12 @@ input:focus {
   background-repeat: no-repeat;
   background-size: contain;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .custom-container {
+    background-position: center;
+    background-size: cover;
+  }
+}
 
 .breadcrumb-shape {
   width: 100%;

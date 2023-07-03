@@ -24,6 +24,9 @@
       line-height: 130%;
       letter-spacing: 0.64px;
       margin-bottom: 48px;
+      @include sm {
+        margin-bottom: 28px;
+      }
     }
   }
   .sub-title {

@@ -5467,6 +5467,7 @@ button.testimonial-arrow-btn:hover i {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .breadcrumb-list ul {
     flex-wrap: wrap;
+    padding: 0 48px;
   }
 }
 .breadcrumb-list ul i {
@@ -5530,6 +5531,7 @@ button.testimonial-arrow-btn:hover i {
 .blog-details-wrapper .single-post-item .post-thumbnail {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 .blog-details-wrapper .single-post-item .post-content-wrapper {
   padding: 0;
@@ -5591,6 +5593,16 @@ button.testimonial-arrow-btn:hover i {
 .single-post-item .post-content-wrapper {
   padding: 40px 32px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .single-post-item .post-content-wrapper {
+    padding: 20px 16px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-post-item .post-content-wrapper {
+    padding: 28px 24px;
+  }
+}
 .single-post-item .post-content-wrapper .read-more {
   margin-top: 40px;
   display: flex;
@@ -5616,6 +5628,18 @@ button.testimonial-arrow-btn:hover i {
   position: relative;
   z-index: 1;
   border: 1px solid #828282;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .single-post-item .post-content-wrapper .read-more a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-post-item .post-content-wrapper .read-more a {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
 }
 .single-post-item.format-quote .post-content {
   margin: 0;
@@ -5672,7 +5696,12 @@ button.testimonial-arrow-btn:hover i {
   padding-top: 15px;
   margin-top: 30px;
   margin-bottom: 20px;
-  flex-direction: row;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .single-post-item .single-post-meta {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 .single-post-item .post-testimonial {
   display: flex;
@@ -5681,36 +5710,56 @@ button.testimonial-arrow-btn:hover i {
   background-color: #f8f8f1;
   padding: 32px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .single-post-item .post-testimonial {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-post-item .post-testimonial {
+    flex-direction: column;
+  }
+}
 .single-post-item .post-testimonial .image {
   border-radius: 100%;
   overflow: hidden;
 }
-.single-post-item .post-testimonial .testimonial-post-meta {
+.single-post-item .post-testimonial .content-wrapper .testimonial-post-meta {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.single-post-item .post-testimonial .testimonial-post-meta .meta-author {
+.single-post-item .post-testimonial .content-wrapper .testimonial-post-meta .meta-author {
   font-size: 18px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 170%;
 }
-.single-post-item .post-testimonial .testimonial-post-meta .social-share a {
+.single-post-item .post-testimonial .content-wrapper .testimonial-post-meta .social-share a {
   width: 24px;
   height: 24px;
   border: 1px solid #e0e0e0;
   border-radius: 24px;
   background-color: transparent;
 }
-.single-post-item .post-testimonial .testimonial-post-meta .social-share a i {
+.single-post-item .post-testimonial .content-wrapper .testimonial-post-meta .social-share a i {
   font-size: 10px;
   line-height: 10px;
 }
-.single-post-item .post-testimonial .testimonial-post-meta .social-share a:hover {
+.single-post-item .post-testimonial .content-wrapper .testimonial-post-meta .social-share a:hover {
   border-color: transparent;
   background-color: #e0f780;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .single-post-item .post-testimonial .content-wrapper {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-post-item .post-testimonial .content-wrapper {
+    text-align: center;
+  }
 }
 .single-post-item .social-share {
   display: flex;
@@ -5857,10 +5906,15 @@ button.testimonial-arrow-btn:hover i {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .single-post-item .post-meta {
-    gap: 10px;
+    gap: 4px;
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-post-item .post-meta {
+    gap: 4px;
   }
 }
 .single-post-item .post-meta .post-type {
@@ -5879,9 +5933,30 @@ button.testimonial-arrow-btn:hover i {
   gap: 10px;
   padding: 4px 16px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .single-post-item .post-meta span {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-post-item .post-meta span {
+    font-size: 14px;
+    padding: 4px 12px;
+  }
+}
 .single-post-item .post-meta span i {
   color: #080f10;
   font-size: 18px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .single-post-item .post-meta span i {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-post-item .post-meta span i {
+    font-size: 16px;
+  }
 }
 .single-post-item .post-meta span a {
   display: flex;
@@ -6870,6 +6945,11 @@ ul.children {
   line-height: 130%;
   letter-spacing: 0.64px;
   margin-bottom: 48px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .post-comments-title.style-two h5 {
+    margin-bottom: 28px;
+  }
 }
 .post-comments-title .sub-title {
   color: #ffffff;

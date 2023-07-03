@@ -19,6 +19,13 @@
     .post-thumbnail {
       display: flex;
       gap: 24px;
+      flex-wrap: wrap;
+      // @include sm {
+      //   flex-direction: column;
+      // }
+      // @include md {
+      //   flex-direction: column;
+      // }
     }
     .post-content-wrapper {
       padding: 0;
@@ -87,6 +94,12 @@
 
   .post-content-wrapper {
     padding: 40px 32px;
+    @include sm {
+      padding: 20px 16px;
+    }
+    @include lg {
+      padding: 28px 24px;
+    }
 
     .read-more {
       margin-top: 40px;
@@ -105,13 +118,21 @@
         border-radius: 4px;
         background: transparent;
         text-transform: capitalize;
-        font-family: "Inter", sans-serif;
+        font-family: $body-font;
         font-size: 18px;
         line-height: 31px;
         font-weight: 400;
         position: relative;
         z-index: 1;
         border: 1px solid #828282;
+        @include sm {
+          padding: 8px 12px;
+          font-size: 14px;
+        }
+        @include lg {
+          padding: 12px 18px;
+          font-size: 16px;
+        }
       }
     }
   }
@@ -192,7 +213,11 @@
     padding-top: 15px;
     margin-top: 30px;
     margin-bottom: 20px;
-    flex-direction: row;
+    // flex-direction: row;
+    @include sm {
+      flex-direction: column;
+      gap: 16px;
+    }
   }
 
   // Post-testimonial
@@ -202,37 +227,52 @@
     gap: 32px;
     background-color: $background;
     padding: 32px;
+    @include sm {
+      flex-direction: column;
+    }
+    @include md {
+      flex-direction: column;
+    }
     .image {
       border-radius: 100%;
       overflow: hidden;
     }
-    .testimonial-post-meta {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      .meta-author {
-        font-size: 18px;
-        font-family: $body-font;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 170%;
-      }
-      .social-share {
-        a {
-          width: 24px;
-          height: 24px;
-          border: 1px solid #e0e0e0;
-          border-radius: 24px;
-          background-color: transparent;
-          i {
-            font-size: 10px;
-            line-height: 10px;
-          }
-          &:hover {
-            border-color: transparent;
-            background-color: $brand;
+    .content-wrapper {
+      .testimonial-post-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .meta-author {
+          font-size: 18px;
+          font-family: $body-font;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 170%;
+        }
+        .social-share {
+          a {
+            width: 24px;
+            height: 24px;
+            border: 1px solid #e0e0e0;
+            border-radius: 24px;
+            background-color: transparent;
+            i {
+              font-size: 10px;
+              line-height: 10px;
+            }
+            &:hover {
+              border-color: transparent;
+              background-color: $brand;
+            }
           }
         }
+      }
+      @include sm {
+        text-align: center;
+      }
+      @include md {
+        text-align: center;
       }
     }
   }
@@ -411,10 +451,13 @@
     flex-wrap: wrap;
 
     @include sm {
-      gap: 10px;
+      gap: 4px;
       flex-direction: column;
       width: 100%;
       align-items: flex-start;
+    }
+    @include lg {
+      gap: 4px;
     }
     .post-type {
       background-color: $brand;
@@ -431,10 +474,22 @@
       align-items: center;
       gap: 10px;
       padding: 4px 16px;
-
+      @include sm {
+        font-size: 14px;
+      }
+      @include lg {
+        font-size: 14px;
+        padding: 4px 12px;
+      }
       i {
         color: $title-color;
         font-size: 18px;
+        @include sm {
+          font-size: 14px;
+        }
+        @include lg {
+          font-size: 16px;
+        }
       }
       a {
         display: flex;
