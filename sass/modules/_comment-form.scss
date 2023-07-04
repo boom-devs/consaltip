@@ -194,6 +194,31 @@
     transition: all 0.4s ease 0s;
     color: $white;
   }
+  &.style-two {
+    input {
+      padding: 16px;
+      height: auto;
+      color: $title-color;
+      border: 1px solid #828282;
+      border-radius: 0;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: $body-font !important;
+      line-height: 150%;
+    }
+    textarea {
+      border-color: #828282;
+    }
+    .contacts-checkbox {
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      border-radius: 4px;
+      margin-right: 8px;
+      $form-check-input-checked-color: $blue-color;
+      $form-check-input-checked-bg-color: $title-color;
+    }
+  }
 }
 
 .comment-respond {

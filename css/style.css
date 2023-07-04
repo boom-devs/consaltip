@@ -2811,7 +2811,6 @@ blockquote {
 .widget.widget_archive select,
 .widget.widget_categories select,
 .widget.widget_text select,
-.widget.widget_search .search-form,
 .widget.widget_tag_cloud .tagcloud,
 .widget .wp-block-tag-cloud {
   margin-bottom: 6px;
@@ -5573,8 +5572,8 @@ button.testimonial-arrow-btn:hover i {
 @media (min-width: 1440px) {
   .blog-sketch {
     background-image: url("../images/shape/sketch-color.svg");
-    width: 109px;
-    height: 109px;
+    width: 169px;
+    height: 169px;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -5590,7 +5589,7 @@ button.testimonial-arrow-btn:hover i {
   background-color: #ffffff;
   border-radius: 12px;
   overflow: hidden;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
   border: 1px solid #dfe2e9;
   /* Quote Format Post */
   /* Sticky Post */
@@ -5690,17 +5689,18 @@ button.testimonial-arrow-btn:hover i {
 }
 .single-post-item .post-content h2,
 .single-post-item .post-content h3,
-.single-post-item .post-content h4,
 .single-post-item .post-content h5,
 .single-post-item .post-content h6 {
   margin-bottom: 16px;
 }
+.single-post-item .post-content h4 {
+  margin-bottom: 24px;
+}
 .single-post-item .single-post-meta {
   display: flex;
   align-items: flex-start;
-  padding-top: 15px;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .single-post-item .single-post-meta {
@@ -5798,7 +5798,6 @@ button.testimonial-arrow-btn:hover i {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  padding-bottom: 20px;
   width: 100%;
   align-items: center;
 }
@@ -6455,7 +6454,7 @@ button.testimonial-arrow-btn:hover i {
   display: inline-block;
   font-size: 16px;
   line-height: 1;
-  padding: 12px 22px;
+  padding: 8px 16px;
   border-radius: 8px;
   background: #ffffff;
   transition: all 0.5s ease-out;
@@ -6684,7 +6683,7 @@ button.testimonial-arrow-btn:hover i {
 .widget_latest_post ul li {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 32px;
   margin-bottom: 32px;
   padding-bottom: 32px;
   border: none;
@@ -6716,7 +6715,7 @@ button.testimonial-arrow-btn:hover i {
   line-height: 170%;
   border: 1px solid #bdbdbd;
   border-radius: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   display: inline-block;
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-title {
@@ -7094,6 +7093,27 @@ ul.children {
   border-color: #c3d1d2;
   transition: all 0.4s ease 0s;
   color: #ffffff;
+}
+.comment-respond.style-two input {
+  padding: 16px;
+  height: auto;
+  color: #080f10;
+  border: 1px solid #828282;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif !important;
+  line-height: 150%;
+}
+.comment-respond.style-two textarea {
+  border-color: #828282;
+}
+.comment-respond.style-two .contacts-checkbox {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border-radius: 4px;
+  margin-right: 8px;
 }
 
 .comment-respond.style-two .single-input-field {
