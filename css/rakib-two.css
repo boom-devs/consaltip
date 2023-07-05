@@ -865,6 +865,8 @@ input:focus {
   position: relative;
   margin-bottom: 16px;
   letter-spacing: 0.02em;
+  font-size: 43px;
+  line-height: 53px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .image-card .content .title {
@@ -964,26 +966,6 @@ input:focus {
   position: relative;
   transform: scale(1.01);
   transition: all 0.5s ease-out;
-}
-.image-card .section-title .title {
-  position: relative;
-  margin-bottom: 16px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .image-card .section-title .title {
-    font-size: 46px;
-  }
-}
-.image-card .section-title .desc {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 31px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .image-card .section-title .desc {
-    font-size: 16px;
-    line-height: 28px;
-  }
 }
 .image-card.image-card-spacing {
   gap: 80px;

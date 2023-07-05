@@ -36,6 +36,8 @@
             position: relative;
             margin-bottom: 16px;
             letter-spacing: 0.02em;
+            font-size: 43px;
+            line-height: 53px;
             @include sm {
                 font-size: 32px;
             }
@@ -137,24 +139,24 @@
         }
     }
 
-    .section-title {
-        .title {
-            position: relative;
-            margin-bottom: 16px;
-            @include sm {
-                font-size: 46px;
-            }
-        }
-        .desc {
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 31px;
-            @include sm {
-                font-size: 16px;
-                line-height: 28px;
-            }
-        }
-    }
+    // .section-title {
+    //     .title {
+    //         position: relative;
+    //         margin-bottom: 16px;
+    //         @include sm {
+    //             font-size: 46px;
+    //         }
+    //     }
+    //     .desc {
+    //         font-size: 18px;
+    //         font-weight: 400;
+    //         line-height: 31px;
+    //         @include sm {
+    //             font-size: 16px;
+    //             line-height: 28px;
+    //         }
+    //     }
+    // }
     &.image-card-spacing {
         gap: 80px;
         .content {
