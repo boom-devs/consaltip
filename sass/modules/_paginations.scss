@@ -49,7 +49,7 @@
     &:hover {
       background: $title-color !important;
       color: $white;
-      border-color: $orange-color;
+      // border-color: $orange-color;
       @include transition;
     }
 
