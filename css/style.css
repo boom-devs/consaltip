@@ -5830,9 +5830,9 @@ button.testimonial-arrow-btn:hover i {
   background: #f8f8f1;
 }
 .single-post-item .blog-post-tag a:hover {
-  color: #ffffff;
-  background: #035b7b;
-  border-color: #035b7b;
+  color: #080f10;
+  background: #e0f780;
+  border-color: #e0f780;
   transition: all 0.5s ease-out;
 }
 .single-post-item .post-thumbnail {

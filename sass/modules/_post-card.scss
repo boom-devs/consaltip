@@ -344,9 +344,9 @@
       background: $background;
 
       &:hover {
-        color: $white;
-        background: $primary-color;
-        border-color: $primary-color;
+        color: $title-color;
+        background: $brand;
+        border-color: $brand;
         @include transition;
       }
     }
