@@ -769,7 +769,7 @@
        ============================*/
         $("#scrolldown").click(function() {
         $('html, body').animate({
-            scrollTop: $(".footer-sec").offset().top
+            scrollTop: $("#scrolldown-end").offset().top
         }, 1500);
         });
 
