@@ -3875,84 +3875,6 @@ a.meanmenu-reveal {
   background: transparent;
   transition: all 0.5s ease-out;
 }
-.slider-area .slider-btn-wrapper {
-  margin-top: 48px;
-  display: flex;
-  gap: 16px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .slider-area .slider-btn-wrapper {
-    margin-top: 30px;
-    justify-content: center;
-  }
-}
-.slider-area .slider-btn-wrapper .slider-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16.5px 32px;
-  text-align: center;
-  border-radius: 4px;
-  text-transform: capitalize;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  line-height: 31px;
-  font-weight: 400;
-  position: relative;
-  z-index: 1;
-  color: #ffffff;
-  background: transparent;
-  border: 1px solid #ffffff;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .slider-area .slider-btn-wrapper .slider-btn {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .slider-area .slider-btn-wrapper .slider-btn {
-    padding: 12px 16px;
-    font-size: 14px;
-  }
-}
-.slider-area .slider-btn-wrapper .slider-btn.active {
-  background: #e0f780;
-  color: #080f10;
-  border: 1px solid transparent;
-}
-.slider-area .slider-btn-wrapper .slider-btn.active:hover {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-}
-.slider-area .slider-btn-wrapper .slider-btn:hover {
-  background: #e0f780;
-  color: #080f10;
-  border-color: transparent;
-}
-.slider-area .slider-btn-wrapper.style-two {
-  justify-content: center;
-}
-@media (min-width: 768px) {
-  .slider-area .slider-btn-wrapper.style-two {
-    justify-content: start;
-  }
-}
-.slider-area .slider-btn-wrapper.style-two .slider-btn {
-  border-color: #575959;
-  color: #080f10;
-}
-.slider-area .slider-btn-wrapper.style-two .slider-btn.active {
-  border-color: transparent;
-}
-.slider-area .slider-btn-wrapper.style-two .slider-btn.active:hover {
-  border-color: #575959;
-  color: #080f10;
-}
-.slider-area .slider-btn-wrapper.style-two .slider-btn:hover {
-  border-color: transparent;
-}
 .slider-area button.slider-arrow-btn {
   position: absolute;
   width: 60px;
@@ -4209,6 +4131,85 @@ a.meanmenu-reveal {
     width: 300px;
     justify-content: center;
   }
+}
+
+.slider-btn-wrapper {
+  margin-top: 48px;
+  display: flex;
+  gap: 16px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-btn-wrapper {
+    margin-top: 30px;
+    justify-content: center;
+  }
+}
+.slider-btn-wrapper .slider-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16.5px 32px;
+  text-align: center;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 31px;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-btn-wrapper .slider-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-btn-wrapper .slider-btn {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}
+.slider-btn-wrapper .slider-btn.active {
+  background: #e0f780;
+  color: #080f10;
+  border: 1px solid transparent;
+}
+.slider-btn-wrapper .slider-btn.active:hover {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.slider-btn-wrapper .slider-btn:hover {
+  background: #e0f780;
+  color: #080f10;
+  border-color: transparent;
+}
+.slider-btn-wrapper.style-two {
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .slider-btn-wrapper.style-two {
+    justify-content: start;
+  }
+}
+.slider-btn-wrapper.style-two .slider-btn {
+  border-color: #575959;
+  color: #080f10;
+}
+.slider-btn-wrapper.style-two .slider-btn.active {
+  border-color: transparent;
+}
+.slider-btn-wrapper.style-two .slider-btn.active:hover {
+  border-color: #575959;
+  color: #080f10;
+}
+.slider-btn-wrapper.style-two .slider-btn:hover {
+  border-color: transparent;
 }
 
 .icon-card {
