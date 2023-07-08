@@ -7549,6 +7549,11 @@ button.testimonial-arrow-btn:hover i {
   border: 1px solid #e0e0e0;
   padding: 24px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .widget_search {
+    padding: 12px;
+  }
+}
 
 .widget_latest_post ul li {
   display: flex;
