@@ -236,11 +236,8 @@
   background: $icon-color;
   padding: 120px 0 244px 0;
   position: relative;
-  @include sm {
-    padding: 80px 0 100px 0;
-  }
-  @include md {
-    padding: 80px 0 100px 0;
+  @include rmaxwd(991) {
+    padding: 80px 0 145px 0;
   }
   .sketch {
     @include rwd(1440) {
@@ -269,8 +266,8 @@
   }
   button.case-arrow-btn {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     transition: 0.3s;
     z-index: 99;
@@ -393,8 +390,8 @@
   .home-one-review-slider {
     button.review-arrow-btn {
       position: absolute;
-      width: 60px;
-      height: 60px;
+      width: 64px;
+      height: 64px;
       border-radius: 50%;
       transition: 0.3s;
       z-index: 99;

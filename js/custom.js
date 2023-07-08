@@ -757,7 +757,8 @@
         /*
        scrolldown
        ============================*/
-        $("#scrolldown").click(function() {
+        $("#scrolldown").on('click', function(e) {
+            e.preventDefault()
         $('html, body').animate({
             scrollTop: $("#scrolldown-end").offset().top
         }, 1500);

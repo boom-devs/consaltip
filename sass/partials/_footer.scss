@@ -1,26 +1,9 @@
 .footer {
-  .footer-bottom-area {
-    height: 60px;
-  }
-  .footer-bottom-menu ul li a {
-    display: block;
-    font-size: 16px;
-    color: $text-color;
-    margin-right: 15px;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    @include transition;
-    &:hover {
-      text-decoration-color: $text-color;
+  &.style-1 {
+    .footer-sec {
+      padding-top: 104px;
+      padding-bottom: 64px;
     }
-    @include sm {
-      font-size: 14px;
-      margin-right: 4px;
-    }
-  }
-  .footer-bottom-menu ul li {
-    display: inline-block;
-    margin-top: 15px;
   }
   .footer-bottom-menu {
     text-align: right;
@@ -30,14 +13,38 @@
     @include md {
       text-align: start;
     }
+
+    ul li {
+      display: inline-block;
+      margin-top: 0;
+
+      &:last-child {
+        a {
+          margin-right: 0;
+        }
+      }
+      a {
+        display: block;
+        font-size: 14px;
+        color: $text-color;
+        margin-right: 15px;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        @include transition;
+        &:hover {
+          text-decoration-color: $text-color;
+        }
+        @include sm {
+          margin-right: 4px;
+        }
+      }
+    }
   }
 
   .copyright-text {
-    margin-top: 15px;
     p {
-      @include sm {
-        font-size: 14px;
-      }
+      margin: 0;
+      font-size: 14px;
     }
   }
 
@@ -49,9 +56,10 @@
     margin-bottom: 24px;
   }
   .footer-widget {
-    .widget-colors {
+    .widget-subscribe {
       background: $icon-color;
       padding: 24px;
+      margin-top: -24px;
       h2 {
         &.footer-widget-title {
           margin-bottom: 24px;
@@ -181,7 +189,6 @@
           margin-bottom: 16px;
           display: flex;
           align-items: center;
-          line-height: 24px;
           gap: 16px;
           &.address {
           }
@@ -204,16 +211,18 @@
             color: $icon-color;
             border-radius: 50px;
             align-items: center;
-            width: 45px;
-            height: 45px;
-            line-height: 45px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border: 1px solid $icon-color;
             text-align: center;
             // cursor: pointer;
             @include transition;
           }
           .contact-text {
-            a {
+            a, span {
               color: $text-color;
               font-weight: 400;
               font-size: 16px;
@@ -232,38 +241,6 @@
       }
     }
 
-    // Footer Latest News
-
-    // Footer Bottom Section
-    .footer-bottom-menu {
-      ul {
-        list-style: none;
-        display: flex;
-        gap: 40px;
-        align-items: center;
-        justify-content: flex-end;
-        margin-bottom: 0;
-        padding-left: 0;
-
-        @include rmaxwd(991) {
-          justify-content: flex-start;
-        }
-
-        li {
-          a {
-            font-size: 16px;
-            text-transform: capitalize;
-            color: $white-100;
-            @include transition;
-
-            &:hover {
-              @include transition;
-              color: $sky-color;
-            }
-          }
-        }
-      }
-    }
 
     // Footer Subscribe
 
@@ -382,5 +359,8 @@
         align-items: start;
       }
     }
+  }
+  .footer-bottom-area {
+    padding: 19px 0;
   }
 }

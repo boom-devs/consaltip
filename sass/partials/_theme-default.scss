@@ -173,7 +173,8 @@ input:focus {
   align-items: center;
   justify-content: center;
   color: $title-color;
-  padding: 16.5px 32px;
+  padding: 15.5px 32px;
+  border: 1px solid $brand;
   text-align: center;
   border-radius: 4px;
   background: $brand;
@@ -195,7 +196,7 @@ input:focus {
   &:hover {
     background: $title-color;
     color: #fff;
-    border-color: #071c34;
+    border-color: $title-color;
   }
   &.style-two {
     border: 1px solid $white;
