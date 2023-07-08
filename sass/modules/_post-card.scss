@@ -129,6 +129,11 @@
           padding: 12px 18px;
           font-size: 16px;
         }
+        &:hover {
+          background: $brand;
+          color: $title-color;
+          border-color: $brand;
+        }
       }
     }
   }

@@ -5644,6 +5644,11 @@ button.testimonial-arrow-btn:hover i {
     font-size: 16px;
   }
 }
+.single-post-item .post-content-wrapper .read-more a:hover {
+  background: #e0f780;
+  color: #080f10;
+  border-color: #e0f780;
+}
 .single-post-item.format-quote .post-content {
   margin: 0;
 }
