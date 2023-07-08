@@ -1621,22 +1621,11 @@ input:focus {
 /* Service-details side-bar CSS */
 /* Client-logo CSS */
 .client-logo-wrapper {
-  display: grid !important;
-  grid-template-columns: repeat(5, 1fr);
   gap: 0 48px;
 }
-.client-logo-wrapper .client-logo.style-two {
+
+.client-logo.style-two {
   filter: brightness(0);
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .client-logo-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .client-logo-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 /* List-item CSS */

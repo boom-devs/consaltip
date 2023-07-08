@@ -1,16 +1,8 @@
 .client-logo-wrapper {
-    display: grid !important;
-    grid-template-columns: repeat(5, 1fr);
     gap: 0 48px;
-    .client-logo {
-        &.style-two {
-            filter: brightness(0);
-        }
-    }
-    @include sm {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    @include md {
-        grid-template-columns: repeat(3, 1fr);
+}
+.client-logo {
+    &.style-two {
+        filter: brightness(0);
     }
 }
