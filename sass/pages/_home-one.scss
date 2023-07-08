@@ -141,11 +141,42 @@
 .home-one-process-step {
   padding: 120px 0 208px 0;
   background-color: $background;
+  position: relative;
   @include sm {
     padding: 80px 0;
   }
   @include md {
     padding: 80px 0;
+  }
+  .shape-one {
+    @include rwd(1440) {
+      background-image: url("../images/shape/shape-2.svg");
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 270px;
+      right: 55px;
+      transform: rotate(0deg);
+      animation: Rotating-reverse 9s linear infinite;
+      transform-origin: bottom right;
+    }
+  }
+  .shape-two {
+    @include rwd(1440) {
+      background-image: url("../images/shape/rectangle.svg");
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      bottom: 271px;
+      left: 42px;
+      transform: rotate(0deg);
+      animation: Rotating 5s linear infinite;
+      transform-origin: bottom right;
+    }
   }
   .image-wrapper {
     position: relative;
