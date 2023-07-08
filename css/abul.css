@@ -2927,6 +2927,14 @@ object {
     transform: translateX(-10px);
   }
 }
+@keyframes Rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /* 1.Preloader */
 #preloader {
   position: fixed;
@@ -3760,7 +3768,8 @@ a.meanmenu-reveal {
     position: absolute;
     bottom: 271px;
     left: 42px;
-    rotate: 90deg;
+    transform: rotate(90deg);
+    animation: Rotating 12s linear infinite;
   }
 }
 .slider-area .slider-wrapper .slick-active .slider-short-title,

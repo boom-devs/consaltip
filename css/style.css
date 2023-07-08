@@ -2927,6 +2927,14 @@ object {
     transform: translateX(-10px);
   }
 }
+@keyframes Rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /* 1.Preloader */
 #preloader {
   position: fixed;
