@@ -6458,7 +6458,6 @@ button.testimonial-arrow-btn:hover i {
 
 .single-post-item {
   background-color: #ffffff;
-  border-radius: 12px;
   overflow: hidden;
   margin-bottom: 48px;
   border: 1px solid #dfe2e9;
@@ -6497,8 +6496,8 @@ button.testimonial-arrow-btn:hover i {
   background: transparent;
   text-transform: capitalize;
   font-family: "Inter", sans-serif;
-  font-size: 18px;
-  line-height: 31px;
+  font-size: 16px;
+  line-height: 170%;
   font-weight: 400;
   position: relative;
   z-index: 1;
@@ -6555,7 +6554,8 @@ button.testimonial-arrow-btn:hover i {
   }
 }
 .single-post-item .post-title:hover a {
-  color: #035b7b;
+  text-decoration: underline;
+  color: #080f10;
   transition: all 0.5s ease-out;
 }
 .single-post-item .post-content h2,
@@ -7180,7 +7180,7 @@ button.testimonial-arrow-btn:hover i {
 .widget .social-widget a {
   width: 40px;
   height: 40px;
-  background-color: #d9d9d9;
+  background-color: #ffffff;
   color: #080f10;
   transition: all 0.5s ease-out;
   border-radius: 50px;
@@ -7197,9 +7197,9 @@ button.testimonial-arrow-btn:hover i {
   }
 }
 .widget .social-widget a:hover {
-  color: #f8f8f1;
+  color: #033f47;
   transition: all 0.5s ease-out;
-  background-color: #080f10;
+  background-color: #e0f780;
 }
 .widget select {
   max-width: 100%;
@@ -7321,10 +7321,10 @@ button.testimonial-arrow-btn:hover i {
 }
 .widget .tagcloud a,
 .widget .wp-block-tag-cloud a {
-  color: #575959;
+  color: #080f10;
   display: inline-block;
   font-size: 16px;
-  line-height: 1;
+  line-height: 170%;
   padding: 8px 16px;
   border-radius: 8px;
   background: #ffffff;
@@ -7332,9 +7332,9 @@ button.testimonial-arrow-btn:hover i {
 }
 .widget .tagcloud a:hover,
 .widget .wp-block-tag-cloud a:hover {
-  color: #ffffff;
-  background: #035b7b;
-  border-color: #035b7b;
+  color: #080f10;
+  background: #e0f780;
+  border-color: #e0f780;
   transition: all 0.5s ease-out;
 }
 .widget ul,

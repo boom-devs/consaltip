@@ -1947,6 +1947,16 @@ input:focus {
   }
 }
 
+.blogs-wrapper {
+  padding-right: 62px;
+}
+@media (max-width: 991px) {
+  .blogs-wrapper {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+
 .blog-load-btn {
   padding: 20px 35px;
   background: #ff6731;

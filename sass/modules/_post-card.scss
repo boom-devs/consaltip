@@ -84,7 +84,6 @@
 // Standar Blog Post
 .single-post-item {
   background-color: $white;
-  border-radius: 12px;
   overflow: hidden;
   margin-bottom: 48px;
   border: 1px solid $gray-300;
@@ -116,8 +115,8 @@
         background: transparent;
         text-transform: capitalize;
         font-family: $body-font;
-        font-size: 18px;
-        line-height: 31px;
+        font-size: 16px;
+        line-height: 170%;
         font-weight: 400;
         position: relative;
         z-index: 1;
@@ -185,7 +184,8 @@
 
     &:hover {
       a {
-        color: $primary-color;
+        text-decoration: underline;
+        color: $title-color;
         @include transition;
       }
     }

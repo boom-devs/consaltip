@@ -7,6 +7,13 @@
         padding: 100px 0;
     }
 }
+.blogs-wrapper {
+    padding-right: 62px;
+    @include rmaxwd(991) {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+}
 
 .blog-load-btn {
     padding: 20px 35px;
