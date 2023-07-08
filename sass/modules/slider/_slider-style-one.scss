@@ -11,8 +11,9 @@
       position: absolute;
       top: 270px;
       right: 55px;
-      rotate: 180deg;
-      // animation: MoveUpDown 2s linear infinite alternate;
+      transform: rotate(180deg);
+      animation: Rotating 5s linear infinite;
+      transform-origin: top left;
     }
   }
   .shape-two {
@@ -25,10 +26,9 @@
       position: absolute;
       bottom: 271px;
       left: 42px;
-      // rotate: 90deg;
-      transform: rotate(90deg);
-      // animation: MoveUpDown 2s linear infinite alternate;
-      animation: Rotating 12s linear infinite;
+      transform: rotate(0deg);
+      animation: Rotating 5s linear infinite;
+      transform-origin: bottom left;
     }
   }
 

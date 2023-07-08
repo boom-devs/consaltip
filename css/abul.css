@@ -2928,10 +2928,10 @@ object {
   }
 }
 @keyframes Rotating {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -3755,7 +3755,9 @@ a.meanmenu-reveal {
     position: absolute;
     top: 270px;
     right: 55px;
-    rotate: 180deg;
+    transform: rotate(180deg);
+    animation: Rotating 5s linear infinite;
+    transform-origin: top left;
   }
 }
 @media (min-width: 1440px) {
@@ -3768,8 +3770,9 @@ a.meanmenu-reveal {
     position: absolute;
     bottom: 271px;
     left: 42px;
-    transform: rotate(90deg);
-    animation: Rotating 12s linear infinite;
+    transform: rotate(0deg);
+    animation: Rotating 5s linear infinite;
+    transform-origin: bottom left;
   }
 }
 .slider-area .slider-wrapper .slick-active .slider-short-title,
