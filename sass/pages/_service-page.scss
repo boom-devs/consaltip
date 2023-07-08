@@ -31,6 +31,9 @@
         background-repeat: no-repeat;
         width: 40px;
         height: 40px;
+        transform: rotate(0deg);
+        animation: Rotating-reverse 9s linear infinite;
+        transform-origin: top left;
         @include rmaxwd(1199) {
             display: none;
         }
@@ -44,6 +47,9 @@
         background-repeat: no-repeat;
         width: 40px;
         height: 40px;
+        transform: rotate(0deg);
+        animation: Rotating-reverse 9s linear infinite;
+        transform-origin: bottom right;
         @include rmaxwd(1199) {
             display: none;
         }

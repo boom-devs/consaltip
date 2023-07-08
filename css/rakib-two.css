@@ -2653,6 +2653,9 @@ input:focus {
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
+  transform: rotate(0deg);
+  animation: Rotating-reverse 9s linear infinite;
+  transform-origin: top left;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .faq-area-global .shape-one {
@@ -2678,6 +2681,9 @@ input:focus {
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
+  transform: rotate(0deg);
+  animation: Rotating-reverse 9s linear infinite;
+  transform-origin: bottom right;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .faq-area-global .shape-two {

@@ -29,6 +29,9 @@
         background-repeat: no-repeat;
         width: 40px;
         height: 40px;
+        transform: rotate(0deg);
+        animation: Rotating-reverse 9s linear infinite;
+        transform-origin: top left;
         @include sm {
             display: none;
         }
@@ -48,6 +51,9 @@
         background-repeat: no-repeat;
         width: 40px;
         height: 40px;
+        transform: rotate(0deg);
+        animation: Rotating-reverse 9s linear infinite;
+        transform-origin: bottom right;
         @include sm {
             display: none;
         }

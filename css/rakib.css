@@ -1633,6 +1633,11 @@ input:focus {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .client-logo-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 /* List-item CSS */
 .list-item-wrapper {
@@ -1754,6 +1759,9 @@ input:focus {
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
+  transform: rotate(0deg);
+  animation: Rotating-reverse 9s linear infinite;
+  transform-origin: top left;
 }
 @media (max-width: 1199px) {
   .service-what-we-area .shape-one {
@@ -1769,6 +1777,9 @@ input:focus {
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
+  transform: rotate(0deg);
+  animation: Rotating-reverse 9s linear infinite;
+  transform-origin: bottom right;
 }
 @media (max-width: 1199px) {
   .service-what-we-area .shape-two {

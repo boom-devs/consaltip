@@ -103,6 +103,9 @@
       position: absolute;
       top: 50%;
       left: 49px;
+      transform: rotate(0deg);
+      animation: Rotating-reverse 9s linear infinite;
+      transform-origin: top left;
     }
   }
   .shape-two {
@@ -115,6 +118,9 @@
       position: absolute;
       top: 347px;
       right: 48px;
+      transform: rotate(0deg);
+      animation: Rotating-reverse 9s linear infinite;
+      transform-origin: bottom right;
     }
   }
   .sketch {

@@ -474,16 +474,6 @@
             loop: true,
             dots: true,
             speed: 1500,
-
-            responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 1,
-                    },
-                },
-            ],
         });
 
 // Home-two process slider

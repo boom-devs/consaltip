@@ -4617,6 +4617,11 @@ button.testimonial-arrow-btn:hover i {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .client-logo-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 .post-card-one {
   display: flex;
@@ -8893,6 +8898,9 @@ ul.children {
     position: absolute;
     top: 50%;
     left: 49px;
+    transform: rotate(0deg);
+    animation: Rotating-reverse 9s linear infinite;
+    transform-origin: top left;
   }
 }
 @media (min-width: 1440px) {
@@ -8905,6 +8913,9 @@ ul.children {
     position: absolute;
     top: 144px;
     right: 48px;
+    transform: rotate(0deg);
+    animation: Rotating-reverse 9s linear infinite;
+    transform-origin: bottom right;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -9076,6 +9087,9 @@ ul.children {
     position: absolute;
     bottom: 165px;
     left: 49px;
+    transform: rotate(0deg);
+    animation: Rotating-reverse 9s linear infinite;
+    transform-origin: bottom right;
   }
 }
 .home-three-client-logo-area .home-two-client-logo-slider .slick-dots {
@@ -9245,6 +9259,9 @@ ul.children {
     position: absolute;
     bottom: 165px;
     left: 49px;
+    transform: rotate(0deg);
+    animation: Rotating-reverse 9s linear infinite;
+    transform-origin: bottom right;
   }
 }
 @media (min-width: 1440px) {
@@ -9257,6 +9274,9 @@ ul.children {
     position: absolute;
     top: 347px;
     right: 48px;
+    transform: rotate(0deg);
+    animation: Rotating-reverse 9s linear infinite;
+    transform-origin: bottom right;
   }
 }
 @media (min-width: 1440px) {
@@ -9434,8 +9454,10 @@ ul.children {
     position: absolute;
     bottom: 232px;
     left: 42px;
-    transform: rotate(90deg);
     z-index: 1;
+    transform: rotate(0deg);
+    animation: Rotating-reverse 9s linear infinite;
+    transform-origin: bottom right;
   }
 }
 @media (min-width: 1440px) {
@@ -9449,6 +9471,9 @@ ul.children {
     top: 115px;
     right: 58px;
     z-index: 1;
+    transform: rotate(0deg);
+    animation: Rotating-reverse 9s linear infinite;
+    transform-origin: bottom right;
   }
 }
 .customer-review .home-three-review-slider .slick-list {
@@ -9497,7 +9522,9 @@ ul.children {
     position: absolute;
     bottom: 323px;
     left: 49px;
-    transform: rotate(90deg);
+    transform: rotate(0deg);
+    animation: Rotating-reverse 9s linear infinite;
+    transform-origin: bottom left;
   }
 }
 @media (min-width: 1440px) {
@@ -9510,6 +9537,9 @@ ul.children {
     position: absolute;
     top: 347px;
     right: 48px;
+    transform: rotate(0deg);
+    animation: Rotating-reverse 9s linear infinite;
+    transform-origin: bottom right;
   }
 }
 @media (min-width: 1440px) {
@@ -9698,6 +9728,9 @@ ul.children {
     position: absolute;
     top: 50%;
     left: 49px;
+    transform: rotate(0deg);
+    animation: Rotating-reverse 9s linear infinite;
+    transform-origin: top left;
   }
 }
 @media (min-width: 1440px) {
@@ -9710,6 +9743,9 @@ ul.children {
     position: absolute;
     top: 347px;
     right: 48px;
+    transform: rotate(0deg);
+    animation: Rotating-reverse 9s linear infinite;
+    transform-origin: bottom right;
   }
 }
 @media (min-width: 1440px) {

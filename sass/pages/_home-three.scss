@@ -12,6 +12,9 @@
       position: absolute;
       top: 50%;
       left: 49px;
+      transform: rotate(0deg);
+      animation: Rotating-reverse 9s linear infinite;
+      transform-origin: top left;
     }
   }
   .shape-two {
@@ -24,6 +27,9 @@
       position: absolute;
       top: 144px;
       right: 48px;
+      transform: rotate(0deg);
+      animation: Rotating-reverse 9s linear infinite;
+      transform-origin: bottom right;
     }
   }
   @include sm {
@@ -192,6 +198,9 @@
       position: absolute;
       bottom: 165px;
       left: 49px;
+      transform: rotate(0deg);
+      animation: Rotating-reverse 9s linear infinite;
+      transform-origin: bottom right;
     }
   }
   .home-two-client-logo-slider {
@@ -346,6 +355,9 @@
       position: absolute;
       bottom: 165px;
       left: 49px;
+      transform: rotate(0deg);
+      animation: Rotating-reverse 9s linear infinite;
+      transform-origin: bottom right;
     }
   }
   .shape-two {
@@ -358,6 +370,9 @@
       position: absolute;
       top: 347px;
       right: 48px;
+      transform: rotate(0deg);
+      animation: Rotating-reverse 9s linear infinite;
+      transform-origin: bottom right;
     }
   }
   .sketch {
@@ -517,8 +532,10 @@
       position: absolute;
       bottom: 232px;
       left: 42px;
-      transform: rotate(90deg);
       z-index: 1;
+      transform: rotate(0deg);
+      animation: Rotating-reverse 9s linear infinite;
+      transform-origin: bottom right;
     }
   }
   .shape-two {
@@ -532,6 +549,9 @@
       top: 115px;
       right: 58px;
       z-index: 1;
+      transform: rotate(0deg);
+      animation: Rotating-reverse 9s linear infinite;
+      transform-origin: bottom right;
     }
   }
   .home-three-review-slider {
@@ -581,7 +601,9 @@
       position: absolute;
       bottom: 323px;
       left: 49px;
-      transform: rotate(90deg);
+      transform: rotate(0deg);
+      animation: Rotating-reverse 9s linear infinite;
+      transform-origin: bottom left;
     }
   }
   .shape-two {
@@ -594,6 +616,9 @@
       position: absolute;
       top: 347px;
       right: 48px;
+      transform: rotate(0deg);
+      animation: Rotating-reverse 9s linear infinite;
+      transform-origin: bottom right;
     }
   }
   .sketch {
