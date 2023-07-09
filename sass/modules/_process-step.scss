@@ -10,8 +10,9 @@
             bottom: 0;
             left: 0;
             top: unset;
-            transform: translate(-63%, 15%);
+            // transform: translate(-50%, 15%);
             z-index: 1;
+            animation: MoveUpDownCorner 2s linear infinite alternate;
         }
     }
     .image {

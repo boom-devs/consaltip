@@ -199,15 +199,28 @@
       padding: 16px;
       height: auto;
       color: $title-color;
-      border: 1px solid #828282;
+      border: 1px solid $text-gray;
       border-radius: 0;
       font-size: 14px;
       font-weight: 400;
       font-family: $body-font !important;
       line-height: 150%;
     }
+    ::placeholder {
+      color: $text-gray;
+      opacity: 1; /* Firefox */
+    }
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: $text-gray;
+    }
+
+    ::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: $text-gray;
+    }
     textarea {
-      border-color: #828282;
+      border-color: $text-gray;
     }
     .contacts-checkbox {
       width: 20px;
@@ -215,8 +228,10 @@
       padding: 0;
       border-radius: 4px;
       margin-right: 8px;
-      $form-check-input-checked-color: $blue-color;
-      $form-check-input-checked-bg-color: $title-color;
+    }
+    .form-check-input:checked {
+      background-color: $icon-color;
+      border-color: $icon-color;
     }
   }
 }
@@ -228,34 +243,34 @@
       input,
       select {
         background-color: transparent;
-        border-color: #828282;
+        border-color: $text-gray;
         color: $title-color;
       }
       .nice-select {
         color: $title-color;
       }
       textarea {
-        border-color: #828282;
+        border-color: $text-gray;
       }
       *::-webkit-input-placeholder {
-        color: #828282;
+        color: $text-gray;
       }
       *:-moz-placeholder {
-        color: #828282;
+        color: $text-gray;
         opacity: 1;
       }
       *::-moz-placeholder {
-        color: #828282;
+        color: $text-gray;
         opacity: 1;
       }
       *:-ms-input-placeholder {
-        color: #828282;
+        color: $text-gray;
       }
       *::-ms-input-placeholder {
-        color: #828282;
+        color: $text-gray;
       }
       *::placeholder {
-        color: #828282;
+        color: $text-gray;
       }
     }
     .checkbox-field-wrapper {
@@ -270,7 +285,7 @@
     textarea:focus,
     .form-select:focus,
     .nice-select {
-      border-color: #828282;
+      border-color: $text-gray;
     }
   }
 }

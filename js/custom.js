@@ -480,7 +480,7 @@
         $(".home-two-process-slider").slick({
             slidesToShow: 1,
             infinite: true,
-            autoplay: true,
+            autoplay: false,
             draggable: false,
             arrows: false,
             slidesToScroll: 1,

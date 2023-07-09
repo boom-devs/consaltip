@@ -36,8 +36,9 @@
           font-family: $body-font;
           font-style: normal;
           font-weight: 400;
-          line-height: 170%;
+          line-height: 140%;
           color: $title-color;
+          letter-spacing: 0.36px;
           &.light {
             font-size: 18px;
             font-family: $heading-font;
@@ -238,6 +239,7 @@
     .image {
       border-radius: 100%;
       overflow: hidden;
+      flex-shrink: 0;
     }
     .content-wrapper {
       .testimonial-post-meta {
@@ -302,6 +304,10 @@
           line-height: 14px;
           font-size: 16px;
         }
+      }
+      &:hover {
+        background: $title-color;
+        color: $white;
       }
     }
 

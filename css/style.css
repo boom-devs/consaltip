@@ -2913,6 +2913,14 @@ object {
     transform: translateY(-30px);
   }
 }
+@keyframes MoveUpDownCorner {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(-50%, 15%);
+  }
+}
 @keyframes Animated3 {
   0% {
     transform: translateY(0);
@@ -3472,7 +3480,7 @@ html {
 .header-btn a {
   background: #ffffff;
   color: #080f10;
-  padding: 8px 18px 8px 12px;
+  padding: 8px 18px 8px 8px;
   font-weight: 500;
   position: relative;
   z-index: 1;
@@ -4182,8 +4190,8 @@ a.meanmenu-reveal {
     bottom: 0;
     left: 0;
     top: unset;
-    transform: translate(-63%, 15%);
     z-index: 1;
+    animation: MoveUpDownCorner 2s linear infinite alternate;
   }
 }
 .process-step .image {
@@ -5570,8 +5578,9 @@ button.testimonial-arrow-btn:hover i {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 170%;
+  line-height: 140%;
   color: #080f10;
+  letter-spacing: 0.36px;
 }
 .blog-details-wrapper .single-post-item .post-content .content-list-item li.light {
   font-size: 18px;
@@ -5754,6 +5763,7 @@ button.testimonial-arrow-btn:hover i {
 .single-post-item .post-testimonial .image {
   border-radius: 100%;
   overflow: hidden;
+  flex-shrink: 0;
 }
 .single-post-item .post-testimonial .content-wrapper .testimonial-post-meta {
   display: flex;
@@ -5812,6 +5822,10 @@ button.testimonial-arrow-btn:hover i {
 .single-post-item .social-share a.linkedin i, .single-post-item .social-share a.facebook i, .single-post-item .social-share a.twitter i {
   line-height: 14px;
   font-size: 16px;
+}
+.single-post-item .social-share a:hover {
+  background: #080f10;
+  color: #ffffff;
 }
 .single-post-item .social-share .social-share-title {
   font-size: 16px;
@@ -7135,6 +7149,22 @@ ul.children {
   font-family: "Inter", sans-serif !important;
   line-height: 150%;
 }
+.comment-respond.style-two ::-moz-placeholder {
+  color: #828282;
+  opacity: 1; /* Firefox */
+}
+.comment-respond.style-two ::placeholder {
+  color: #828282;
+  opacity: 1; /* Firefox */
+}
+.comment-respond.style-two :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #828282;
+}
+.comment-respond.style-two ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #828282;
+}
 .comment-respond.style-two textarea {
   border-color: #828282;
 }
@@ -7144,6 +7174,10 @@ ul.children {
   padding: 0;
   border-radius: 4px;
   margin-right: 8px;
+}
+.comment-respond.style-two .form-check-input:checked {
+  background-color: #033f47;
+  border-color: #033f47;
 }
 
 .comment-respond.style-two .single-input-field {
@@ -7370,7 +7404,8 @@ ul.children {
   text-align: center;
   transition: all 0.5s ease-out;
 }
-.footer .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a, .footer .footer-widget .footer-widget-contact .footer-contact ul li .contact-text span {
+.footer .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a,
+.footer .footer-widget .footer-widget-contact .footer-contact ul li .contact-text span {
   color: #575959;
   font-weight: 400;
   font-size: 16px;
@@ -7446,8 +7481,10 @@ ul.children {
     font-size: 16px;
   }
 }
-.footer .subscribe-area .subscribe-inner-area .subscribe-form-wrapper {
-  width: 100%;
+@media (max-width: 1200px) {
+  .footer .subscribe-area .subscribe-inner-area .subscribe-form-wrapper {
+    width: 100%;
+  }
 }
 .footer .subscribe-area .subscribe-inner-area .subscribe-form-widget .mc4wp-form-fields {
   display: flex;

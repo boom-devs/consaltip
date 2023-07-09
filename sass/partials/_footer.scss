@@ -222,7 +222,8 @@
             @include transition;
           }
           .contact-text {
-            a, span {
+            a,
+            span {
               color: $text-color;
               font-weight: 400;
               font-size: 16px;
@@ -240,7 +241,6 @@
         }
       }
     }
-
 
     // Footer Subscribe
 
@@ -306,7 +306,9 @@
         }
       }
       .subscribe-form-wrapper {
-        width: 100%;
+        @include rmaxwd(1200) {
+          width: 100%;
+        }
       }
       .subscribe-form-widget {
         .mc4wp-form-fields {
