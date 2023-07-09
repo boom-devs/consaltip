@@ -1262,10 +1262,25 @@ input:focus {
 
 .process-step {
   display: flex !important;
+  position: relative;
+}
+@media (min-width: 1440px) {
+  .process-step .process-step-sketch {
+    position: absolute;
+    background-image: url("../images/shape/sketch-color.svg");
+    width: 188px;
+    height: 188px;
+    bottom: 0;
+    left: 0;
+    top: unset;
+    transform: translate(-63%, 15%);
+    z-index: 1;
+  }
 }
 .process-step .image {
   width: 50%;
   position: relative;
+  overflow: hidden;
 }
 .process-step .image img {
   width: 100%;
@@ -1284,19 +1299,6 @@ input:focus {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .process-step .image {
     width: 100%;
-  }
-}
-@media (min-width: 1440px) {
-  .process-step .image .process-step-sketch {
-    position: absolute;
-    background-image: url("../images/shape/sketch-color.svg");
-    width: 188px;
-    height: 188px;
-    bottom: 0;
-    left: 0;
-    top: unset;
-    transform: translate(-63%, 15%);
-    z-index: 1;
   }
 }
 .process-step .content-wrapper {

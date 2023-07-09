@@ -1,9 +1,23 @@
 .process-step {
     display: flex !important;
+    position: relative;
+    .process-step-sketch {
+        @include rwd(1440) {
+            position: absolute;
+            background-image: url("../images/shape/sketch-color.svg");
+            width: 188px;
+            height: 188px;
+            bottom: 0;
+            left: 0;
+            top: unset;
+            transform: translate(-63%, 15%);
+            z-index: 1;
+        }
+    }
     .image {
         width: 50%;
         position: relative;
-        // overflow: hidden;
+        overflow: hidden;
         img {
             width: 100%;
             height: 100%;
@@ -18,19 +32,6 @@
         }
         @include md {
             width: 100%;
-        }
-        .process-step-sketch {
-            @include rwd(1440) {
-                position: absolute;
-                background-image: url("../images/shape/sketch-color.svg");
-                width: 188px;
-                height: 188px;
-                bottom: 0;
-                left: 0;
-                top: unset;
-                transform: translate(-63%, 15%);
-                z-index: 1;
-            }
         }
         // &:hover {
         //     img {

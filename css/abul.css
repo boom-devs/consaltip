@@ -4750,10 +4750,25 @@ a.meanmenu-reveal {
 
 .process-step {
   display: flex !important;
+  position: relative;
+}
+@media (min-width: 1440px) {
+  .process-step .process-step-sketch {
+    position: absolute;
+    background-image: url("../images/shape/sketch-color.svg");
+    width: 188px;
+    height: 188px;
+    bottom: 0;
+    left: 0;
+    top: unset;
+    transform: translate(-63%, 15%);
+    z-index: 1;
+  }
 }
 .process-step .image {
   width: 50%;
   position: relative;
+  overflow: hidden;
 }
 .process-step .image img {
   width: 100%;
@@ -4772,19 +4787,6 @@ a.meanmenu-reveal {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .process-step .image {
     width: 100%;
-  }
-}
-@media (min-width: 1440px) {
-  .process-step .image .process-step-sketch {
-    position: absolute;
-    background-image: url("../images/shape/sketch-color.svg");
-    width: 188px;
-    height: 188px;
-    bottom: 0;
-    left: 0;
-    top: unset;
-    transform: translate(-63%, 15%);
-    z-index: 1;
   }
 }
 .process-step .content-wrapper {
@@ -6262,7 +6264,6 @@ button.testimonial-arrow-btn:hover i {
     height: 91px;
     transform: translate(-50%, -50%);
     z-index: 5;
-    animation: MoveUpDown 2s linear infinite alternate;
   }
   .image-card .image .image-card-sketch.style-two {
     top: unset;
@@ -6273,12 +6274,13 @@ button.testimonial-arrow-btn:hover i {
     z-index: 3;
   }
   .image-card .image .image-card-sketch.style-three {
-    width: 155px;
-    height: 155px;
-    top: 0;
+    position: absolute;
+    width: 188px;
+    height: 188px;
+    top: unset;
+    bottom: 0;
     left: 0;
-    transform: translate(-50%, -50%);
-    z-index: 3;
+    transform: translate(-50%, 50%);
   }
   .image-card .image .image-card-sketch.style-four {
     top: 0;
