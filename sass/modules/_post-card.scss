@@ -23,6 +23,18 @@
         flex-direction: column;
         flex-wrap: wrap;
       }
+      .image {
+        overflow: hidden;
+        img {
+          transform: scale(1.01);
+          @include transition;
+        }
+        &:hover {
+          img {
+            transform: scale(1.03);
+          }
+        }
+      }
     }
     .post-content-wrapper {
       padding: 0;

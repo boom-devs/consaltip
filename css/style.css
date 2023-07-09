@@ -5637,6 +5637,16 @@ button.testimonial-arrow-btn:hover i {
     flex-wrap: wrap;
   }
 }
+.blog-details-wrapper .single-post-item .post-thumbnail .image {
+  overflow: hidden;
+}
+.blog-details-wrapper .single-post-item .post-thumbnail .image img {
+  transform: scale(1.01);
+  transition: all 0.5s ease-out;
+}
+.blog-details-wrapper .single-post-item .post-thumbnail .image:hover img {
+  transform: scale(1.03);
+}
 .blog-details-wrapper .single-post-item .post-content-wrapper {
   padding: 0;
 }
