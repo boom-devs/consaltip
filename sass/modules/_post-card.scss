@@ -192,6 +192,11 @@
   // formate image
   &.format-image {
     background: $background;
+    overflow: hidden;
+    img {
+      transform: translate(1.03);
+      @include transition;
+    }
   }
 
   .post-title {
@@ -375,6 +380,15 @@
     a {
       img {
         width: 100%;
+        transform: scale(1.01);
+        @include transition;
+      }
+    }
+    &:hover {
+      a {
+        img {
+          transform: scale(1.03);
+        }
       }
     }
 

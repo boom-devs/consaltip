@@ -6743,6 +6743,11 @@ button.testimonial-arrow-btn:hover i {
 }
 .single-post-item.format-image {
   background: #f8f8f1;
+  overflow: hidden;
+}
+.single-post-item.format-image img {
+  transform: translate(1.03);
+  transition: all 0.5s ease-out;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .single-post-item .post-title {
@@ -6908,6 +6913,11 @@ button.testimonial-arrow-btn:hover i {
 }
 .single-post-item .post-thumbnail a img {
   width: 100%;
+  transform: scale(1.01);
+  transition: all 0.5s ease-out;
+}
+.single-post-item .post-thumbnail:hover a img {
+  transform: scale(1.03);
 }
 .single-post-item .post-thumbnail .popup-video-wrapper {
   position: absolute;
@@ -7780,10 +7790,16 @@ button.testimonial-arrow-btn:hover i {
 }
 .widget_latest_post ul li .latest-post-thumb {
   flex-shrink: 0;
+  overflow: hidden;
 }
 .widget_latest_post ul li .latest-post-thumb img {
   width: 100%;
   height: 100%;
+  transform: scale(1.01);
+  transition: all 0.5s ease-out;
+}
+.widget_latest_post ul li .latest-post-thumb:hover img {
+  transform: scale(1.03);
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-type {
   padding: 4px 16px;
@@ -7811,7 +7827,7 @@ button.testimonial-arrow-btn:hover i {
   transition: all 0.5s ease-out;
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-title a:hover {
-  color: #035b7b;
+  color: #080f10;
   transition: all 0.5s ease-out;
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-meta {
