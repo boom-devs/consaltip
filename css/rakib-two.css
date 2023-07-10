@@ -527,7 +527,7 @@ input:focus {
     .portfolio-card.style-two .content p {
       color: #575959; }
   .portfolio-card.style-two:hover .portfolio-image img {
-    transform: scale(1.1);
+    transform: scale(1.03);
     filter: unset;
     transition: all 0.5s ease-out; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {

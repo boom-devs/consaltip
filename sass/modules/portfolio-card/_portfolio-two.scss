@@ -34,7 +34,7 @@
     &:hover {
       .portfolio-image {
         img {
-          transform: scale(1.1);
+          transform: scale(1.03);
           filter: unset;
           @include transition
         }

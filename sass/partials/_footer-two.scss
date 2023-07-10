@@ -1,5 +1,14 @@
 .footer {
   &.style-two {
+    .footer-sec {
+      .footer-bottom-border {
+        border-bottom: 1px solid #085a65;
+        padding-bottom: 40px;
+      }
+    }
+    .footer-bottom-area {
+      padding: 28px 0;
+    }
     // Subscribe Form
     .subscribe-form-wrapper {
       @include md {
@@ -23,6 +32,7 @@
     .footer-widget {
       .footer-widget-menu {
         li {
+          line-height: 34px;
           a {
             color: $white;
             &:hover {
@@ -59,15 +69,6 @@
             }
           }
         }
-      }
-    }
-    .footer-bottom-area {
-      border-top: 1px solid #085a65;
-      @include sm {
-        height: 100%;
-      }
-      @include md {
-        height: 100%;
       }
     }
     .copyright-text {

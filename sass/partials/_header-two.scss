@@ -19,6 +19,10 @@
     .header-menu-area {
       .logo {
           height: 107px;
+
+        @include rmaxwd(991) {
+          height: 80px;
+        }
       }
       .main-menu {
         ul {

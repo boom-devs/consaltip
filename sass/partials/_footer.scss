@@ -298,6 +298,8 @@
       .content-wrapper {
         .subscribe-title {
           color: $white;
+          margin-bottom: 16px;
+
           @include sm {
             font-size: 46px;
           }

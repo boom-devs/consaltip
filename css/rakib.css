@@ -481,6 +481,11 @@ input:focus {
         gap: 8px; }
 
 /* Footer CSS */
+.footer.style-two .footer-sec .footer-bottom-border {
+  border-bottom: 1px solid #085a65;
+  padding-bottom: 40px; }
+.footer.style-two .footer-bottom-area {
+  padding: 28px 0; }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer.style-two .subscribe-form-wrapper {
     width: 100%; } }
@@ -495,10 +500,12 @@ input:focus {
   line-height: 34px;
   letter-spacing: 0.02em;
   color: #f8f8f1; }
-.footer.style-two .footer-widget .footer-widget-menu li a {
-  color: #ffffff; }
-  .footer.style-two .footer-widget .footer-widget-menu li a:hover {
-    color: #e0f780 !important; }
+.footer.style-two .footer-widget .footer-widget-menu li {
+  line-height: 34px; }
+  .footer.style-two .footer-widget .footer-widget-menu li a {
+    color: #ffffff; }
+    .footer.style-two .footer-widget .footer-widget-menu li a:hover {
+      color: #e0f780 !important; }
 .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a {
   color: #ffffff; }
 .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
@@ -511,14 +518,6 @@ input:focus {
   border-color: transparent; }
   .footer.style-two .footer-widget .footer-widget-contact .footer-contact ul li:hover .contact-icon i {
     color: #080f10; }
-.footer.style-two .footer-bottom-area {
-  border-top: 1px solid #085a65; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .footer.style-two .footer-bottom-area {
-      height: 100%; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .footer.style-two .footer-bottom-area {
-      height: 100%; } }
 .footer.style-two .copyright-text p {
   color: #ffffff;
   font-size: 14px; }
@@ -1021,7 +1020,7 @@ input:focus {
       transform: scale(1);
       transition: all 0.5s ease-out; }
       .process-step .image img:hover {
-        transform: scale(1.1);
+        transform: scale(1.03);
         transition: all 0.5s ease-out; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .process-step .image {
