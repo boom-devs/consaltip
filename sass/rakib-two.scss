@@ -67,7 +67,6 @@
     background-repeat: no-repeat;
     background-size: contain;
     @include rmaxwd(1800) {
-        // background-position: center;
         background-size: cover;
     }
 }
