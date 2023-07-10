@@ -356,13 +356,12 @@ input:focus {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 @media (max-width: 1800px) {
   .custom-container {
-    background-position: center;
     background-size: cover;
   }
 }
