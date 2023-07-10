@@ -3112,22 +3112,22 @@ html {
     border-radius: 0;
     -webkit-transform: skewX(-20deg);
             transform: skewX(-20deg); }
-.header-area.style-two .header-menu-area .logo:before {
-  border-radius: 0;
-  -webkit-transform: skewX(-20deg);
-          transform: skewX(-20deg);
-  bottom: 0;
-  height: 190px; }
+.header-area.style-two .header-menu-area .logo {
+  height: 107px; }
 .header-area.style-two .header-menu-area .main-menu ul ul {
   border-color: #080f10; }
 .header-area.style-two .header-menu-area .main-menu ul li a {
-  color: #080f10; }
+  color: #080f10;
+  padding: 39.5px 24px; }
   .header-area.style-two .header-menu-area .main-menu ul li a:before {
-    border-color: #080f10; }
+    border-color: #080f10;
+    right: 8px; }
   .header-area.style-two .header-menu-area .main-menu ul li a:hover:before {
     border-color: #080f10; }
 .header-area.style-two .header-menu-area .main-menu ul li.active a:before {
   border-color: #080f10; }
+.header-area.style-two .header-menu-area .main-menu ul li ul li a {
+  padding: 10px 20px; }
 
 .header-area.style-three .header-top .header-top-btn a {
   margin-bottom: inherit;
@@ -3405,14 +3405,12 @@ a.meanmenu-reveal {
     background-color: #e0f780;
     margin-top: -100%;
     margin-right: -100%;
-    opacity: 0;
     visibility: hidden;
     z-index: 0;
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out; }
   .icon-card:hover:after {
     visibility: visible;
-    opacity: 1;
     margin-top: 0;
     margin-right: 0; }
 
@@ -4113,6 +4111,21 @@ button.testimonial-arrow-btn {
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .accordion-wrapper .accordion-list-item {
         padding: 20px 28px; } }
+
+.client-logo-wrapper {
+  padding: 0 40px;
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr);
+  position: relative;
+  z-index: 5; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .client-logo-wrapper {
+      padding: 0 30px;
+      grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .client-logo-wrapper {
+      padding: 0 30px;
+      grid-template-columns: repeat(3, 1fr); } }
 
 .client-logo {
   padding-top: 20px;
@@ -9195,4 +9208,5 @@ ul.children {
 
 .tab-content img {
   border-radius: 8px; }
+
 /*# sourceMappingURL=style.css.map */

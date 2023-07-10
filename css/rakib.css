@@ -632,13 +632,11 @@ input:focus {
     background-color: #e0f780;
     margin-top: -100%;
     margin-right: -100%;
-    opacity: 0;
     visibility: hidden;
     z-index: 0;
     transition: all 0.4s ease-out; }
   .icon-card:hover:after {
     visibility: visible;
-    opacity: 1;
     margin-top: 0;
     margin-right: 0; }
 
