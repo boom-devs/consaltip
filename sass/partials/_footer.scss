@@ -3,6 +3,10 @@
     .footer-sec {
       padding-top: 104px;
       padding-bottom: 64px;
+
+      @include rmaxwd(991) {
+        padding: 80px 0;
+      }
     }
   }
   .footer-bottom-menu {
@@ -60,6 +64,10 @@
       background: $icon-color;
       padding: 24px;
       margin-top: -24px;
+
+      @include rmaxwd(991) {
+        margin: 0;
+      }
       h2 {
         &.footer-widget-title {
           margin-bottom: 24px;
@@ -214,11 +222,11 @@
             width: 40px;
             height: 40px;
             display: flex;
+            flex-shrink: 0;
             align-items: center;
             justify-content: center;
             border: 1px solid $icon-color;
             text-align: center;
-            // cursor: pointer;
             @include transition;
           }
           .contact-text {
@@ -260,6 +268,7 @@
         height: 40px;
         width: 40px;
         border-radius: 50%;
+        flex-shrink: 0;
 
         &:hover {
           @include transition;
