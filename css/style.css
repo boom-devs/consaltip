@@ -2806,7 +2806,7 @@ html {
                 transform: scale(1.4);
         color: #1eae98; }
 
-.header-sec {
+.header-menu-area {
   width: 100%;
   z-index: 999;
   -webkit-transition: all 0.4s ease 0s;
@@ -2814,24 +2814,18 @@ html {
   position: relative;
   padding-right: 96px;
   padding-left: 96px; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .header-sec {
-      padding: 24px 20px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .header-sec {
-      padding: 24px 48px; } }
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .header-sec {
-      padding: 24px 48px; } }
+  @media (max-width: 1199px) {
+    .header-menu-area {
+      padding: 0 30px; } }
   @media screen and (min-width: 1200px) and (max-width: 1440px) {
-    .header-sec {
+    .header-menu-area {
       padding: 0 28px; } }
-  .header-sec.sticky-header {
+  .header-menu-area.sticky-header {
     width: 100%;
     z-index: 999;
     -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s; }
-  .header-sec.sticky_menu {
+  .header-menu-area.sticky_menu {
     left: 0;
     right: 0;
     top: 0;
@@ -2839,10 +2833,33 @@ html {
     z-index: 9999;
     -webkit-box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.03);
             box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.03); }
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .logo {
-    width: 180px; } }
+    .header-menu-area.sticky_menu .logo {
+      height: 90px; }
+      @media (max-width: 991px) {
+        .header-menu-area.sticky_menu .logo {
+          height: 80px; } }
+    .header-menu-area.sticky_menu .main-menu ul li a {
+      padding: 31px 26px;
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; }
+      .header-menu-area.sticky_menu .main-menu ul li a:before {
+        right: 8px; }
+    .header-menu-area.sticky_menu .main-menu ul li ul li a {
+      padding: 10px 20px; }
+  .header-menu-area .logo {
+    height: 112px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 991px) {
+      .header-menu-area .logo {
+        height: 80px; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .header-menu-area .logo {
+        width: 180px; } }
 
 .main-menu ul {
   margin: 0;
@@ -3008,6 +3025,10 @@ html {
   -webkit-animation-name: slideUpIn;
   animation-name: slideUpIn; }
 
+@media only screen and (max-width: 1199px) {
+  .header-btn-wrapper {
+    display: none; } }
+
 .header-btn a {
   background: #ffffff;
   color: #080f10;
@@ -3083,9 +3104,6 @@ html {
     color: #080f10; }
   .header-btn.style-three:hover i {
     background: #e0f780; }
-@media only screen and (max-width: 1199px) {
-  .header-btn {
-    display: none; } }
 
 .header-area.style-two .header-top .header-top-btn a {
   margin-bottom: inherit;
@@ -3094,21 +3112,21 @@ html {
     border-radius: 0;
     -webkit-transform: skewX(-20deg);
             transform: skewX(-20deg); }
-.header-area.style-two .header-sec .logo:before {
+.header-area.style-two .header-menu-area .logo:before {
   border-radius: 0;
   -webkit-transform: skewX(-20deg);
           transform: skewX(-20deg);
   bottom: 0;
   height: 190px; }
-.header-area.style-two .header-sec .main-menu ul ul {
+.header-area.style-two .header-menu-area .main-menu ul ul {
   border-color: #080f10; }
-.header-area.style-two .header-sec .main-menu ul li a {
+.header-area.style-two .header-menu-area .main-menu ul li a {
   color: #080f10; }
-  .header-area.style-two .header-sec .main-menu ul li a:before {
+  .header-area.style-two .header-menu-area .main-menu ul li a:before {
     border-color: #080f10; }
-  .header-area.style-two .header-sec .main-menu ul li a:hover:before {
+  .header-area.style-two .header-menu-area .main-menu ul li a:hover:before {
     border-color: #080f10; }
-.header-area.style-two .header-sec .main-menu ul li.active a:before {
+.header-area.style-two .header-menu-area .main-menu ul li.active a:before {
   border-color: #080f10; }
 
 .header-area.style-three .header-top .header-top-btn a {
@@ -3116,7 +3134,7 @@ html {
   padding: 6px 30px; }
   .header-area.style-three .header-top .header-top-btn a:before {
     border-radius: 8px; }
-.header-area.style-three .header-sec .logo:before {
+.header-area.style-three .header-menu-area .logo:before {
   display: none; }
 
 /*!
@@ -9177,5 +9195,4 @@ ul.children {
 
 .tab-content img {
   border-radius: 8px; }
-
 /*# sourceMappingURL=style.css.map */

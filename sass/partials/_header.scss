@@ -148,7 +148,7 @@
 }
 
 // Start Header Nav
-.header-sec {
+.header-menu-area {
   width: 100%;
   z-index: 999;
   transition: all 0.4s ease 0s;
@@ -156,14 +156,8 @@
   padding-right: 96px;
   padding-left: 96px;
 
-  @include sm {
-    padding: 24px 20px;
-  }
-  @include md {
-    padding: 24px 48px;
-  }
-  @include lg {
-    padding: 24px 48px;
+  @include rmaxwd(1199) {
+    padding: 0 30px;
   }
   @media screen and (min-width: 1200px) and (max-width: 1440px) {
     padding: 0 28px;
@@ -181,14 +175,50 @@
     position: fixed;
     z-index: 9999;
     box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.03);
-    // background: #fff;
+
+    .logo {
+      height: 90px;
+
+      @include rmaxwd(991) {
+        height: 80px;
+      }
+    }
+    .main-menu {
+      ul {
+        li {
+          a {
+            padding: 31px 26px;
+            @include transition;
+            &:before {
+              right: 8px;
+            }
+          }
+          ul {
+            li {
+              a {
+                padding: 10px 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // Header Logo
+  .logo {
+    height: 112px;
+    display: flex;
+    align-items: center;
+
+    @include rmaxwd(991) {
+      height: 80px;
+    }
+    @include sm {
+      width: 180px;
+    }
   }
 }
-.logo {
-  @include sm {
-    width: 180px;
-  }
-}
+
 .main-menu {
   ul {
     margin: 0;
@@ -415,7 +445,11 @@
 }
 
 // Header Button Area
-
+.header-btn-wrapper {
+  @media only screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .header-btn {
   a {
     background: $white;
@@ -500,7 +534,4 @@
     }
   }
 
-  @media only screen and (max-width: 1199px) {
-    display: none;
-  }
 }

@@ -42,7 +42,7 @@
         /*
         Stikey Js
         ============================*/
-        var nav = $(".header-sec.sticky-header");
+        var nav = $(".header-menu-area.sticky-header");
         var scrolled = false;
         $(window).scroll(function () {
             if (100 < $(window).scrollTop() && !scrolled) {
