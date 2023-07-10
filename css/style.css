@@ -3702,8 +3702,10 @@ a.meanmenu-reveal {
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out; }
       .process-step .image img:hover {
-        -webkit-transform: scale(1.03);
-                transform: scale(1.03); }
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .process-step .image {
         width: 100%; } }
@@ -4184,8 +4186,8 @@ button.testimonial-arrow-btn {
     overflow: hidden; }
     .post-card-one .post-image img {
       width: 100%;
-      -webkit-transform: scale(1.01);
-              transform: scale(1.01);
+      -webkit-transform: scale(1);
+              transform: scale(1);
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out; }
   .post-card-one .content-wrapper {
@@ -4255,17 +4257,20 @@ button.testimonial-arrow-btn {
       -ms-flex-negative: 0;
           flex-shrink: 0; }
   .post-card-one:hover .post-image img {
-    -webkit-transform: scale(1.04);
-            transform: scale(1.04); }
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
 
 .post-card-one.style-two {
   overflow: hidden; }
   .post-card-one.style-two .post-image {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    overflow: hidden;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out; }
+    overflow: hidden; }
+    .post-card-one.style-two .post-image img {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; }
   .post-card-one.style-two .content-wrapper {
     overflow: hidden;
     background: #f8f8f1;
@@ -4306,9 +4311,11 @@ button.testimonial-arrow-btn {
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .post-card-one.style-two .content-wrapper {
         padding: 24px 20px 32px 20px; } }
-  .post-card-one.style-two:hover .post-image {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05); }
+  .post-card-one.style-two:hover .post-image img {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
 
 .price-card-switch {
   display: -webkit-box;
@@ -7313,8 +7320,8 @@ ul.children {
     position: relative; }
     .why-choose-us-area .about-info-card-image img {
       width: 100%;
-      -webkit-transform: scale(1.01);
-              transform: scale(1.01);
+      -webkit-transform: scale(1);
+              transform: scale(1);
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out; }
     .why-choose-us-area .about-info-card-image:hover img {
@@ -7423,7 +7430,9 @@ ul.children {
     overflow: hidden; }
     .home-one-process-step .image-wrapper:hover img {
       -webkit-transform: scale(1.03);
-              transform: scale(1.03); }
+              transform: scale(1.03);
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; }
     .home-one-process-step .image-wrapper img {
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out; }

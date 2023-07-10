@@ -3848,7 +3848,8 @@ a.meanmenu-reveal {
       transform: scale(1);
       transition: all 0.5s ease-out; }
       .process-step .image img:hover {
-        transform: scale(1.03); }
+        transform: scale(1.1);
+        transition: all 0.5s ease-out; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .process-step .image {
         width: 100%; } }
@@ -4292,7 +4293,7 @@ button.testimonial-arrow-btn {
     overflow: hidden; }
     .post-card-one .post-image img {
       width: 100%;
-      transform: scale(1.01);
+      transform: scale(1);
       transition: all 0.5s ease-out; }
   .post-card-one .content-wrapper {
     background: #ffffff;
@@ -4342,14 +4343,16 @@ button.testimonial-arrow-btn {
     .post-card-one .content-wrapper button {
       flex-shrink: 0; }
   .post-card-one:hover .post-image img {
-    transform: scale(1.04); }
+    transform: scale(1.03);
+    transition: all 0.5s ease-out; }
 
 .post-card-one.style-two {
   overflow: hidden; }
   .post-card-one.style-two .post-image {
-    transform: scale(1);
-    overflow: hidden;
-    transition: all 0.5s ease-out; }
+    overflow: hidden; }
+    .post-card-one.style-two .post-image img {
+      transform: scale(1);
+      transition: all 0.5s ease-out; }
   .post-card-one.style-two .content-wrapper {
     overflow: hidden;
     background: #f8f8f1;
@@ -4388,8 +4391,9 @@ button.testimonial-arrow-btn {
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .post-card-one.style-two .content-wrapper {
         padding: 24px 20px 32px 20px; } }
-  .post-card-one.style-two:hover .post-image {
-    transform: scale(1.05); }
+  .post-card-one.style-two:hover .post-image img {
+    transform: scale(1.03);
+    transition: all 0.5s ease-out; }
 
 .price-card-switch {
   display: flex;
@@ -4884,7 +4888,8 @@ button.testimonial-arrow-btn {
     .consultation-wrapper .consultion-img img {
       transition: all 0.5s ease-out; }
     .consultation-wrapper .consultion-img:hover img {
-      transform: scale(1.02); }
+      transform: scale(1.03);
+      transition: all 0.5s ease-out; }
 
 /* img-card */
 .image-card {
@@ -4997,7 +5002,7 @@ button.testimonial-arrow-btn {
       height: 100%;
       z-index: 1;
       position: relative;
-      transform: scale(1.01);
+      transform: scale(1);
       transition: all 0.5s ease-out; }
   .image-card.image-card-spacing {
     gap: 80px; }
@@ -7057,9 +7062,10 @@ ul.children {
         text-decoration-color: #080f10; }
     .portfolio-card.style-two .content p {
       color: #575959; }
-  .portfolio-card.style-two:hover .portfolio-image {
-    transform: scale(1.03);
-    filter: unset; }
+  .portfolio-card.style-two:hover .portfolio-image img {
+    transform: scale(1.1);
+    filter: unset;
+    transition: all 0.5s ease-out; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .portfolio-card.style-two {
       margin-top: 24px; } }
@@ -7119,7 +7125,7 @@ ul.children {
     position: relative; }
     .why-choose-us-area .about-info-card-image img {
       width: 100%;
-      transform: scale(1.01);
+      transform: scale(1);
       transition: all 0.5s ease-out; }
     .why-choose-us-area .about-info-card-image:hover img {
       transform: scale(1.03); }
@@ -7215,7 +7221,8 @@ ul.children {
     position: relative;
     overflow: hidden; }
     .home-one-process-step .image-wrapper:hover img {
-      transform: scale(1.03); }
+      transform: scale(1.03);
+      transition: all 0.5s ease-out; }
     .home-one-process-step .image-wrapper img {
       transition: all 0.5s ease-out; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {

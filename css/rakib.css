@@ -1021,7 +1021,8 @@ input:focus {
       transform: scale(1);
       transition: all 0.5s ease-out; }
       .process-step .image img:hover {
-        transform: scale(1.03); }
+        transform: scale(1.1);
+        transition: all 0.5s ease-out; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .process-step .image {
         width: 100%; } }
@@ -1078,9 +1079,10 @@ input:focus {
 .post-card-one.style-two {
   overflow: hidden; }
   .post-card-one.style-two .post-image {
-    transform: scale(1);
-    overflow: hidden;
-    transition: all 0.5s ease-out; }
+    overflow: hidden; }
+    .post-card-one.style-two .post-image img {
+      transform: scale(1);
+      transition: all 0.5s ease-out; }
   .post-card-one.style-two .content-wrapper {
     overflow: hidden;
     background: #f8f8f1;
@@ -1119,8 +1121,9 @@ input:focus {
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .post-card-one.style-two .content-wrapper {
         padding: 24px 20px 32px 20px; } }
-  .post-card-one.style-two:hover .post-image {
-    transform: scale(1.05); }
+  .post-card-one.style-two:hover .post-image img {
+    transform: scale(1.03);
+    transition: all 0.5s ease-out; }
 
 /* Team-member-card style-one CSS */
 .team-member-card {

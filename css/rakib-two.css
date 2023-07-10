@@ -498,7 +498,7 @@ input:focus {
   .portfolio-card:hover {
     cursor: pointer; }
     .portfolio-card:hover .portfolio-image img {
-      transform: scale(1.04); }
+      transform: scale(1.03); }
 
 .portfolio-card.style-two {
   gap: 0;
@@ -526,9 +526,10 @@ input:focus {
         text-decoration-color: #080f10; }
     .portfolio-card.style-two .content p {
       color: #575959; }
-  .portfolio-card.style-two:hover .portfolio-image {
-    transform: scale(1.03);
-    filter: unset; }
+  .portfolio-card.style-two:hover .portfolio-image img {
+    transform: scale(1.1);
+    filter: unset;
+    transition: all 0.5s ease-out; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .portfolio-card.style-two {
       margin-top: 24px; } }
@@ -690,7 +691,7 @@ input:focus {
       height: 100%;
       z-index: 1;
       position: relative;
-      transform: scale(1.01);
+      transform: scale(1);
       transition: all 0.5s ease-out; }
   .image-card.image-card-spacing {
     gap: 80px; }

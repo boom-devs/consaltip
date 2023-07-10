@@ -25,7 +25,8 @@
             transform: scale(1);
             @include transition;
             &:hover {
-                transform: scale(1.03);
+                transform: scale(1.1);
+                @include transition;
             }
         }
         @include sm {
@@ -34,11 +35,6 @@
         @include md {
             width: 100%;
         }
-        // &:hover {
-        //     img {
-        //         transform: scale(1.03);
-        //     }
-        // }
     }
     .content-wrapper {
         width: 50%;

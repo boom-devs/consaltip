@@ -135,29 +135,10 @@
             height: 100%;
             z-index: 1;
             position: relative;
-            transform: scale(1.01);
+            transform: scale(1);
             @include transition;
         }
     }
-
-    // .section-title {
-    //     .title {
-    //         position: relative;
-    //         margin-bottom: 16px;
-    //         @include sm {
-    //             font-size: 46px;
-    //         }
-    //     }
-    //     .desc {
-    //         font-size: 18px;
-    //         font-weight: 400;
-    //         line-height: 31px;
-    //         @include sm {
-    //             font-size: 16px;
-    //             line-height: 28px;
-    //         }
-    //     }
-    // }
     &.image-card-spacing {
         gap: 80px;
         .content {

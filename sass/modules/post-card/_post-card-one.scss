@@ -12,7 +12,7 @@
     overflow: hidden;
     img {
       width: 100%;
-      transform: scale(1.01);
+      transform: scale(1);
       @include transition;
     }
   }
@@ -76,7 +76,8 @@
   &:hover {
     .post-image {
       img {
-        transform: scale(1.04);
+        transform: scale(1.03);
+        @include transition;
       }
     }
   }

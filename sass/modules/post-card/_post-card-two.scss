@@ -2,9 +2,12 @@
     &.style-two {
         overflow: hidden;
         .post-image {
-            transform: scale(1);
             overflow: hidden;
-            @include transition;
+
+            img {
+                transform: scale(1);
+                @include transition;
+            }
         }
         .content-wrapper {
             overflow: hidden;
@@ -58,7 +61,10 @@
         }
         &:hover {
             .post-image {
-                transform: scale(1.05);
+                img {
+                    transform: scale(1.03);
+                    @include transition;
+                }
             }
         }
     }
