@@ -347,7 +347,7 @@
         });
 
         // Home-one Review
-        $(".home-one-review-slider").slick({
+        $(".testimonial-slider").slick({
             slidesToShow: 1,
             infinite: true,
             autoplay: false,
@@ -364,7 +364,7 @@
         });
 
         // Home-one Team-member slider
-        $(".home-one-team-member").slick({
+        $(".team-slider").slick({
             slidesToShow: 4,
             infinite: true,
             autoplay: true,
@@ -376,9 +376,9 @@
             speed: 1500,
             variableWidth: true,
              prevArrow:
-                "<button type='button' class='home-one-team-arrow-prev'><i class='icon-arrow-left-2'></i></button>",
+                "<button type='button' class='team-arrow-prev'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
-                "<button type='button' class='home-one-team-arrow-next'><i class='icon-arrow-right-2'></i></button>",
+                "<button type='button' class='team-arrow-next'><i class='icon-arrow-right-2'></i></button>",
             responsive: [
                 {
                     breakpoint: 1200,
@@ -413,11 +413,11 @@
 
          $('#home-one-team-prev').on('click', function (e) {
              e.preventDefault()
-            $('.home-one-team-arrow-prev').trigger('click');
+            $('.team-arrow-prev').trigger('click');
         });
         $('#home-one-team-next').on('click', function (e) {
             e.preventDefault()
-            $('.home-one-team-arrow-next').trigger('click');
+            $('.team-arrow-next').trigger('click');
         });
         // client-logo slider home-one
         $(".client-logo-slider-wrapper").slick({
@@ -680,7 +680,7 @@
         /*
        Client Logo Slider
        ============================*/
-        $(".home-one-client-slider").slick({
+        $(".brand-slider").slick({
             slidesToShow: 5,
             infinite: true,
             autoplay: true,

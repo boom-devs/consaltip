@@ -202,7 +202,10 @@
     }
     .image-wrapper {
       position: relative;
-      overflow: hidden;
+
+      .image-inner {
+        overflow: hidden;
+      }
       &:hover {
         img {
           transform: scale(1.03);
@@ -223,9 +226,8 @@
           background-repeat: no-repeat;
           background-position: center;
           position: absolute;
-          bottom: 0;
-          left: 0;
-          transform: translate(-50%, 0%);
+          bottom: -20px;
+          left: -43px;
           z-index: 3;
           animation: MoveUpDown 2s linear infinite alternate;
         }
@@ -294,25 +296,30 @@
   }
 }
 
-// case-studies
-.case-studies-home-one {
-  background: $icon-color;
-  padding: 120px 0 244px 0;
-  position: relative;
-  @include rmaxwd(991) {
-    padding: 80px 0 145px 0;
-  }
-  .sketch {
-    @include rwd(1440) {
-      background-image: url("../images/shape/title-sketch.svg");
-      width: 188px;
-      height: 188px;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      top: 20px;
-      right: 82px;
-      animation: MoveUpDown 2s linear infinite alternate;
+// Portfolio CSS
+.portfolio-slider-area {
+  &.style-1 {
+    background: $icon-color;
+    padding: 120px 0 244px 0;
+    position: relative;
+    @include rmaxwd(767) {
+      padding: 80px 0 160px 0;
+    }
+    @include md {
+      padding: 100px 0 175px 0;
+    }
+    .sketch {
+      @include rwd(1440) {
+        background-image: url("../images/shape/title-sketch.svg");
+        width: 188px;
+        height: 188px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 20px;
+        right: 82px;
+        animation: MoveUpDown 2s linear infinite alternate;
+      }
     }
   }
 }
@@ -391,140 +398,145 @@
   }
 }
 
-// Review section
-.home-one-review {
-  padding: 120px 0;
+// Testimonial Area
+.testimonial-slider-area {
+  &.style-1 {
+    padding: 120px 0;
 
-  @include rmaxwd(991) {
-    padding: 80px 0 145px 0;
-  }
-  .section-title.style-three .title {
-    @include rmaxwd(991) {
-      text-align: center !important;
-    }
-  }
-  .review-card {
-    display: flex !important;
-    align-items: center;
-    gap: 73px;
-
-    @include rmaxwd(991) {
-      flex-direction: column;
-      text-align: center;
-    }
-    @include sm {
-      gap: 24px;
+    @include rmaxwd(767) {
+      padding: 80px 0 145px 0;
     }
     @include md {
-      gap: 32px;
+      padding: 100px 0 180px 0;
     }
-    .image-wrapper {
-      flex-shrink: 0;
-      display: flex;
-      width: 40%;
-      justify-content: end;
-      @include sm {
-        width: 100%;
-        justify-content: center;
-      }
-      .image {
-        position: relative;
-        border-radius: 200px;
-        overflow: hidden;
-        z-index: 10;
-        background-color: $background;
-
-        &:before {
-          position: absolute;
-          content: "";
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;
-          background-image: url("../images/review/bg.svg");
-          z-index: -1;
-        }
-      }
-    }
-    .review-content {
-      width: 50%;
-      width: 100%;
-      @include sm {
-        width: 100%;
-      }
-      .content-wrapper {
-        @include rmaxwd(991) {
-          justify-content: center;
-          align-items: center;
-        }
-      }
-      .testimonial-card {
-        justify-content: end;
-      }
-    }
-  }
-  .home-one-review-slider {
-    button.review-arrow-btn {
-      position: absolute;
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      transition: 0.3s;
-      z-index: 99;
-      background-color: transparent;
-      border: 1px solid #828282;
-      cursor: pointer;
-      top: -174px;
-      overflow: hidden;
+    .section-title.style-three .title {
       @include rmaxwd(991) {
-        top: unset;
+        text-align: center !important;
+      }
+    }
+    .review-card {
+      display: flex !important;
+      align-items: center;
+      gap: 73px;
+
+      @include rmaxwd(991) {
+        flex-direction: column;
+        text-align: center;
       }
       @include sm {
-        width: 40px;
-        height: 40px;
+        gap: 24px;
       }
       @include md {
-        width: 50px;
-        height: 50px;
+        gap: 32px;
       }
-      &.prev-btn {
-        right: 74px;
+      .image-wrapper {
+        flex-shrink: 0;
+        display: flex;
+        width: 40%;
+        justify-content: end;
+        @include sm {
+          width: 100%;
+          justify-content: center;
+        }
+        .image {
+          position: relative;
+          border-radius: 200px;
+          overflow: hidden;
+          z-index: 10;
+          background-color: $background;
 
-        @include sm {
-          bottom: -50px;
-          right: 51%;
-        }
-        @include md {
-          bottom: -64px;
-          right: 51%;
-        }
-      }
-      &.next-btn {
-        right: 0;
-        @include sm {
-          bottom: -50px;
-          left: 50%;
-        }
-        @include md {
-          bottom: -64px;
-          left: 50%;
+          &:before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-image: url("../images/review/bg.svg");
+            z-index: -1;
+          }
         }
       }
-      i {
+      .review-content {
+        width: 50%;
+        width: 100%;
+        @include sm {
+          width: 100%;
+        }
+        .content-wrapper {
+          @include rmaxwd(991) {
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .testimonial-card {
+          justify-content: end;
+        }
+      }
+    }
+    .testimonial-slider {
+      button.review-arrow-btn {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: $title-color;
-        font-size: 21px;
-        @include transition;
-      }
-      &:hover {
-        background: $brand;
-        border-color: transparent;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        transition: 0.3s;
+        z-index: 99;
+        background-color: transparent;
+        border: 1px solid #828282;
+        cursor: pointer;
+        top: -174px;
+        overflow: hidden;
+        @include rmaxwd(991) {
+          top: unset;
+        }
+        @include sm {
+          width: 40px;
+          height: 40px;
+        }
+        @include md {
+          width: 50px;
+          height: 50px;
+        }
+        &.prev-btn {
+          right: 74px;
+
+          @include sm {
+            bottom: -50px;
+            right: 51%;
+          }
+          @include md {
+            bottom: -64px;
+            right: 51%;
+          }
+        }
+        &.next-btn {
+          right: 0;
+          @include sm {
+            bottom: -50px;
+            left: 50%;
+          }
+          @include md {
+            bottom: -64px;
+            left: 50%;
+          }
+        }
         i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
           color: $title-color;
+          font-size: 21px;
           @include transition;
+        }
+        &:hover {
+          background: $brand;
+          border-color: transparent;
+          i {
+            color: $title-color;
+            @include transition;
+          }
         }
       }
     }
@@ -532,150 +544,160 @@
 }
 
 // Blog section
-.home-one-blog {
-  padding: 120px 0;
-  background-color: $icon-color;
-  position: relative;
-  @include sm {
-    padding: 80px 0;
-  }
-  .sketch {
-    @include rwd(1440) {
-      background-image: url("../images/brush-sketch-white.png");
-      width: 109px;
-      height: 109px;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      bottom: 72px;
-      right: 176px;
-      animation: MoveUpDown 2s linear infinite alternate;
+.latest-posts-area {
+  &.style-1 {
+    padding: 120px 0;
+    background-color: $icon-color;
+    position: relative;
+
+    @include rmaxwd(767) {
+      padding-top: 80px;
+      padding-bottom: 56px;
+    }
+    @include md {
+      padding-top: 100px;
+      padding-bottom: 76px;
+    }
+    .sketch {
+      @include rwd(1440) {
+        background-image: url("../images/brush-sketch-white.png");
+        width: 109px;
+        height: 109px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        bottom: 72px;
+        right: 176px;
+        animation: MoveUpDown 2s linear infinite alternate;
+      }
     }
   }
 }
 
 // Team-member section
-.home-one-team-member-area {
-  padding: 120px 0 112px 0;
-  overflow: hidden;
-  position: relative;
-  @include sm {
-    padding: 80px 0;
-  }
-  .sketch {
-    @include rwd(1440) {
-      background-image: url("../images/sketch-color.png");
-      width: 188px;
-      height: 188px;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      bottom: 100px;
-      right: 262px;
-      animation: MoveUpDown 2s linear infinite alternate;
-    }
-  }
-  .home-one-team-member {
+.team-slider-area {
+  &.style-1 {
+    padding: 120px 0 112px 0;
+    overflow: hidden;
     position: relative;
-    margin-left: -200px;
     @include sm {
-      margin-left: 0;
+      padding: 80px 0;
     }
-    @include md {
-      margin-left: 0;
-      padding: 0 32px;
-    }
-    @include lg {
-      margin-left: 0;
-      padding: 0 32px;
-    }
-    .slick-arrow {
-      display: none !important;
-    }
-    .slick-list {
-      .slick-slide {
-        margin: 0 12px;
-        @include transition;
-
-        &.slick-active {
-          @include transition;
-        }
-        @include lg {
-          margin: 0 16px;
-        }
-      }
-    }
-    // Slick Nav Arrow Button
-    button.home-one-team-arrow-btn {
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      transition: 0.3s;
-      z-index: 99;
-      background-color: transparent;
-      border: 1px solid #828282;
-      cursor: pointer;
-      top: -164px;
-      overflow: hidden;
-      @include rmaxwd(991) {
-        top: unset;
-        bottom: -80px;
-      }
-
-      &.prev-btn {
-        right: 72px;
-
-        @include rmaxwd(767) {
-          right: unset;
-          left: 30px;
-        }
-      }
-      &.next-btn {
-        right: 0;
-        @include rmaxwd(767) {
-          right: 30px;
-          left: unset;
-        }
-      }
-      i {
+    .sketch {
+      @include rwd(1440) {
+        background-image: url("../images/sketch-color.png");
+        width: 188px;
+        height: 188px;
+        background-repeat: no-repeat;
+        background-position: center;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: $title-color;
-        font-size: 21px;
-        @include transition;
-      }
-      &:hover {
-        background: $brand;
-
-        i {
-          color: $title-color;
-          @include transition;
-        }
+        bottom: 100px;
+        right: 262px;
+        animation: MoveUpDown 2s linear infinite alternate;
       }
     }
-    .slick-dots {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      margin-top: 64px;
-      list-style: none;
-      li {
-        line-height: 0;
-        button {
-          width: 8px;
-          height: 8px;
-          font-size: 0;
-          border-radius: 50px;
-          padding: unset;
-          background-color: #bdbdbd;
+    .team-slider {
+      position: relative;
+      margin-left: -200px;
+      @include sm {
+        margin-left: 0;
+      }
+      @include md {
+        margin-left: 0;
+        padding: 0 32px;
+      }
+      @include lg {
+        margin-left: 0;
+        padding: 0 32px;
+      }
+      .slick-arrow {
+        display: none !important;
+      }
+      .slick-list {
+        .slick-slide {
+          margin: 0 12px;
+          @include transition;
+
+          &.slick-active {
+            @include transition;
+          }
+          @include lg {
+            margin: 0 16px;
+          }
         }
-        &.slick-active {
+      }
+      // Slick Nav Arrow Button
+      button.team-arrow-btn {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        transition: 0.3s;
+        z-index: 99;
+        background-color: transparent;
+        border: 1px solid #828282;
+        cursor: pointer;
+        top: -164px;
+        overflow: hidden;
+        @include rmaxwd(991) {
+          top: unset;
+          bottom: -80px;
+        }
+
+        &.prev-btn {
+          right: 72px;
+
+          @include rmaxwd(767) {
+            right: unset;
+            left: 30px;
+          }
+        }
+        &.next-btn {
+          right: 0;
+          @include rmaxwd(767) {
+            right: 30px;
+            left: unset;
+          }
+        }
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: $title-color;
+          font-size: 21px;
+          @include transition;
+        }
+        &:hover {
+          background: $brand;
+
+          i {
+            color: $title-color;
+            @include transition;
+          }
+        }
+      }
+      .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-top: 64px;
+        list-style: none;
+        li {
+          line-height: 0;
           button {
-            background: $title-color;
+            width: 8px;
+            height: 8px;
+            font-size: 0;
+            border-radius: 50px;
+            padding: unset;
+            background-color: #bdbdbd;
+          }
+          &.slick-active {
+            button {
+              background: $title-color;
+            }
           }
         }
       }
@@ -684,31 +706,34 @@
 }
 
 // Client-logo
-.home-one-client-logo {
-  position: relative;
-  padding: 82px 0 72px 0;
-  background-color: $icon-color;
-  @include sm {
-    padding: 60px 0;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url("../images/client/bg-1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-  }
-  .home-one-client-slider {
+.brand-slider-area {
+  &.style-1 {
     position: relative;
-    z-index: 5;
-    .slick-dots {
-      display: none !important;
+    padding: 82px 0 72px 0;
+    background-color: $icon-color;
+
+    @include rmaxwd(767) {
+      padding: 60px 0;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../images/client/bg-1.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    .brand-slider {
+      position: relative;
+      z-index: 5;
+      .slick-dots {
+        display: none !important;
+      }
     }
   }
 }

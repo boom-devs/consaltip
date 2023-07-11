@@ -14,7 +14,9 @@
                 line-height: 34px;
                 letter-spacing: 0.02em;
                 color: $title-color;
-                @include sm {
+
+                @include rmaxwd(767) {
+                    font-size: 18px;
                     text-align: center;
                 }
             }
