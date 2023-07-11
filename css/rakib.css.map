@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,cAAc;AAcd,0BAA0B;AAG1B,gBAAgB;AAwBhB,oCAAoC;AAGpC,2BAA2B;AAG3B,kCAAkC;AAGlC,qBAAqB;AAGrB,mBAAmB;AAGnB,sBAAsB;AAGtB,sBAAsB;AAGtB,mBAAmB",
-"sources": ["../sass/rakib.scss"],
-"names": [],
-"file": "rakib.css"
-}

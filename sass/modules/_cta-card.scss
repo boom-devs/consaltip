@@ -1,4 +1,4 @@
-.consultation-wrapper {
+.cta-wrapper {
   background: $icon-color;
   position: relative;
   justify-content: center;
@@ -19,7 +19,7 @@
       animation: MoveUpDown 2s linear infinite alternate;
     }
   }
-  .free-consultaion-text {
+  .free-cta-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,7 +45,7 @@
       padding: 30px;
     }
   }
-  .consultion-img img {
+  .cta-img img {
     width: 100%;
   }
   &:before {
@@ -61,7 +61,7 @@
     background-position: center center;
     background-repeat: no-repeat;
   }
-  .consultion-img {
+  .cta-img {
     position: relative;
     z-index: 2;
     overflow: hidden;

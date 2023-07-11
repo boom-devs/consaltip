@@ -38,7 +38,9 @@
     .slick-active .slider-title,
     .slick-active .slider-short-desc,
     .slick-active .slider-btn-wrapper {
+      -webkit-animation-name: MovefadeUp;
       animation-name: MovefadeUp;
+      -webkit-animation-fill-mode: both;
     }
 
     .slick-active .slider-short-title {

@@ -4568,7 +4568,8 @@ button.testimonial-arrow-btn {
   .slider-area .slider-wrapper .slick-active .slider-short-desc,
   .slider-area .slider-wrapper .slick-active .slider-btn-wrapper {
     -webkit-animation-name: MovefadeUp;
-            animation-name: MovefadeUp; }
+    animation-name: MovefadeUp;
+    -webkit-animation-fill-mode: both; }
   .slider-area .slider-wrapper .slick-active .slider-short-title {
     -webkit-animation-delay: 0.3s;
             animation-delay: 0.3s;
@@ -5619,7 +5620,7 @@ button.testimonial-arrow-btn {
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
 
-.consultation-wrapper {
+.cta-wrapper {
   background: #033f47;
   position: relative;
   -webkit-box-pack: center;
@@ -5630,7 +5631,7 @@ button.testimonial-arrow-btn {
   width: 100%;
   height: 100%; }
   @media (min-width: 1440px) {
-    .consultation-wrapper .sketch {
+    .cta-wrapper .sketch {
       position: absolute;
       background-image: url("../images/shape/sketch-brand.png");
       background-position: center;
@@ -5642,7 +5643,7 @@ button.testimonial-arrow-btn {
       z-index: 10;
       -webkit-animation: MoveUpDown 2s linear infinite alternate;
               animation: MoveUpDown 2s linear infinite alternate; } }
-  .consultation-wrapper .free-consultaion-text {
+  .cta-wrapper .free-cta-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5659,7 +5660,7 @@ button.testimonial-arrow-btn {
     position: relative;
     padding-left: 56px;
     padding-right: 50px; }
-    .consultation-wrapper .free-consultaion-text .button-wrapper {
+    .cta-wrapper .free-cta-text .button-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -5668,17 +5669,17 @@ button.testimonial-arrow-btn {
               justify-content: start;
       gap: 24px; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .consultation-wrapper .free-consultaion-text {
+      .cta-wrapper .free-cta-text {
         padding: 30px; } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .consultation-wrapper .free-consultaion-text {
+      .cta-wrapper .free-cta-text {
         padding: 30px; } }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
-      .consultation-wrapper .free-consultaion-text {
+      .cta-wrapper .free-cta-text {
         padding: 30px; } }
-  .consultation-wrapper .consultion-img img {
+  .cta-wrapper .cta-img img {
     width: 100%; }
-  .consultation-wrapper:before {
+  .cta-wrapper:before {
     position: absolute;
     content: "";
     background-image: url(../images/coltation-img/shap.png);
@@ -5690,14 +5691,14 @@ button.testimonial-arrow-btn {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; }
-  .consultation-wrapper .consultion-img {
+  .cta-wrapper .cta-img {
     position: relative;
     z-index: 2;
     overflow: hidden; }
-    .consultation-wrapper .consultion-img img {
+    .cta-wrapper .cta-img img {
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out; }
-    .consultation-wrapper .consultion-img:hover img {
+    .cta-wrapper .cta-img:hover img {
       -webkit-transform: scale(1.03);
               transform: scale(1.03);
       -webkit-transition: all 0.5s ease-out;
@@ -9559,19 +9560,19 @@ ul.children {
     .mean-container .mean-nav ul:first-child {
       display: block !important; }
 
-.why-choose-us-area {
+.about-us-area.style-1 {
   padding: 180px 0 120px 0;
   position: relative; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .why-choose-us-area {
+  @media (max-width: 767px) {
+    .about-us-area.style-1 {
       padding: 80px 0; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .why-choose-us-area {
-      padding: 80px 0; } }
-  .why-choose-us-area .scrolldown-btn-wrapper {
+    .about-us-area.style-1 {
+      padding: 100px 0; } }
+  .about-us-area.style-1 .scrolldown-btn-wrapper {
     display: none; }
     @media (min-width: 991px) {
-      .why-choose-us-area .scrolldown-btn-wrapper {
+      .about-us-area.style-1 .scrolldown-btn-wrapper {
         position: absolute;
         top: 0;
         left: 43%;
@@ -9582,7 +9583,7 @@ ul.children {
         background-position: center;
         border-radius: 100px;
         display: block; }
-        .why-choose-us-area .scrolldown-btn-wrapper .scrolldown-btn {
+        .about-us-area.style-1 .scrolldown-btn-wrapper .scrolldown-btn {
           margin: 100px 72px 0px;
           display: -webkit-box;
           display: -ms-flexbox;
@@ -9598,11 +9599,11 @@ ul.children {
           height: 135px;
           border-radius: 100px;
           position: relative; }
-          .why-choose-us-area .scrolldown-btn-wrapper .scrolldown-btn i {
+          .about-us-area.style-1 .scrolldown-btn-wrapper .scrolldown-btn i {
             color: #080f10;
             font-size: 34px;
             position: absolute; } }
-    .why-choose-us-area .scrolldown-btn-wrapper .rounded-text {
+    .about-us-area.style-1 .scrolldown-btn-wrapper .rounded-text {
       width: 110px;
       height: 110px;
       text-transform: uppercase;
@@ -9618,24 +9619,24 @@ ul.children {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
-    .why-choose-us-area .scrolldown-btn-wrapper .rotating {
+    .about-us-area.style-1 .scrolldown-btn-wrapper .rotating {
       -webkit-animation: rotating 12s linear infinite;
               animation: rotating 12s linear infinite; }
-  .why-choose-us-area .about-info-card-image {
+  .about-us-area.style-1 .about-info-card-image {
     position: relative; }
-    .why-choose-us-area .about-info-card-image .image-wrapper {
+    .about-us-area.style-1 .about-info-card-image .image-wrapper {
       overflow: hidden; }
-    .why-choose-us-area .about-info-card-image img {
+    .about-us-area.style-1 .about-info-card-image img {
       width: 100%;
       -webkit-transform: scale(1);
               transform: scale(1);
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out; }
-    .why-choose-us-area .about-info-card-image:hover img {
+    .about-us-area.style-1 .about-info-card-image:hover img {
       -webkit-transform: scale(1.03);
               transform: scale(1.03); }
     @media (min-width: 1440px) {
-      .why-choose-us-area .about-info-card-image .sketch-one {
+      .about-us-area.style-1 .about-info-card-image .sketch-one {
         background-image: url("../images/shape/image-card-sketch.png");
         width: 109px;
         height: 109px;
@@ -9648,7 +9649,7 @@ ul.children {
         -webkit-animation: MoveUpDown 2s linear infinite alternate;
                 animation: MoveUpDown 2s linear infinite alternate; } }
   @media only screen and (min-width: 1200px) and (max-width: 1920px) {
-    .why-choose-us-area .sketch-two {
+    .about-us-area.style-1 .sketch-two {
       background-image: url("../images/shape/image-card-sketch.png");
       width: 109px;
       height: 109px;
@@ -9661,20 +9662,29 @@ ul.children {
       -webkit-animation: MoveUpDown 2s linear infinite alternate;
               animation: MoveUpDown 2s linear infinite alternate; } }
 
-.home-one-service {
+.why-choose-us-area.style-1 {
+  padding-bottom: 120px; }
+  @media (max-width: 767px) {
+    .why-choose-us-area.style-1 {
+      padding-bottom: 80px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .why-choose-us-area.style-1 {
+      padding-bottom: 100px; } }
+
+.service-slider-area.style-1 {
   padding: 120px 0;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .home-one-service {
+  @media (max-width: 767px) {
+    .service-slider-area.style-1 {
       padding: 80px 0; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .home-one-service {
-      padding: 80px 0; } }
+    .service-slider-area.style-1 {
+      padding: 100px 0; } }
   @media (min-width: 1440px) {
-    .home-one-service .sketch {
+    .service-slider-area.style-1 .sketch {
       background-image: url("../images/shape/triangle-shape-white.png");
       width: 79px;
       height: 91px;
@@ -9685,21 +9695,21 @@ ul.children {
       bottom: 128px;
       -webkit-animation: MoveUpDown 2s linear infinite alternate;
               animation: MoveUpDown 2s linear infinite alternate; } }
-  .home-one-service .home-one-service-slider .slick-slide {
+  .service-slider-area.style-1 .service-slider .slick-slide {
     margin: 0 12px; }
 
-.home-one-process-step {
-  padding: 120px 0 208px 0;
+.process-step-area.style-1 {
+  padding: 120px 0 211px 0;
   background-color: #f8f8f1;
   position: relative; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .home-one-process-step {
+  @media (max-width: 767px) {
+    .process-step-area.style-1 {
       padding: 80px 0; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .home-one-process-step {
-      padding: 80px 0; } }
+    .process-step-area.style-1 {
+      padding: 100px 0; } }
   @media (min-width: 1440px) {
-    .home-one-process-step .shape-one {
+    .process-step-area.style-1 .shape-one {
       background-image: url("../images/shape/shape-2.svg");
       width: 40px;
       height: 40px;
@@ -9715,7 +9725,7 @@ ul.children {
       -webkit-transform-origin: bottom right;
               transform-origin: bottom right; } }
   @media (min-width: 1440px) {
-    .home-one-process-step .shape-two {
+    .process-step-area.style-1 .shape-two {
       background-image: url("../images/shape/rectangle.svg");
       width: 40px;
       height: 40px;
@@ -9730,22 +9740,22 @@ ul.children {
               animation: Rotating 5s linear infinite;
       -webkit-transform-origin: bottom right;
               transform-origin: bottom right; } }
-  .home-one-process-step .image-wrapper {
+  .process-step-area.style-1 .image-wrapper {
     position: relative;
     overflow: hidden; }
-    .home-one-process-step .image-wrapper:hover img {
+    .process-step-area.style-1 .image-wrapper:hover img {
       -webkit-transform: scale(1.03);
               transform: scale(1.03);
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out; }
-    .home-one-process-step .image-wrapper img {
+    .process-step-area.style-1 .image-wrapper img {
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .home-one-process-step .image-wrapper img {
+        .process-step-area.style-1 .image-wrapper img {
           width: 100%; } }
     @media only screen and (min-width: 1200px) and (max-width: 1920px) {
-      .home-one-process-step .image-wrapper .sketch {
+      .process-step-area.style-1 .image-wrapper .sketch {
         background-image: url("../images/shape/sketch-black.png");
         width: 109px;
         height: 109px;
@@ -9760,19 +9770,19 @@ ul.children {
         -webkit-animation: MoveUpDown 2s linear infinite alternate;
                 animation: MoveUpDown 2s linear infinite alternate; } }
   @media (max-width: 991px) {
-    .home-one-process-step .mb-80 {
+    .process-step-area.style-1 .mb-80 {
       margin-bottom: 30px; } }
 
-.free-consultaion-area {
-  padding-bottom: 120px;
-  margin-top: -114px; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .free-consultaion-area {
+.cta-area.style-1 {
+  padding-bottom: 116px;
+  margin-top: -116px; }
+  @media (max-width: 767px) {
+    .cta-area.style-1 {
       padding: 80px 0;
       margin-top: 0; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .free-consultaion-area {
-      padding: 80px 0;
+    .cta-area.style-1 {
+      padding: 100px 0;
       margin-top: 0; } }
 
 .home-one-testimonial-area {

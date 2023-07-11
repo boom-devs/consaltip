@@ -275,7 +275,7 @@
 
 
         // Home-one Service
-        $(".home-one-service-slider").slick({
+        $(".service-slider").slick({
             slidesToShow: 3,
             infinite: true,
             autoplay: true,

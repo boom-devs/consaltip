@@ -1,234 +1,259 @@
 // Why Choose Us Area
-.why-choose-us-area {
-  padding: 180px 0 120px 0;
-  position: relative;
-  @include sm {
-    padding: 80px 0;
-  }
-  @include md {
-    padding: 80px 0;
-  }
-  .scrolldown-btn-wrapper {
-    display: none;
-    @include rwd(991) {
-      position: absolute;
-      top: 0;
-      left: 43%;
-      transform: translate(0, -61%);
-      background-image: url("../images/scroll-down-2.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 100px;
-      display: block;
-      .scrolldown-btn {
-        margin: 100px 72px 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $brand;
-        width: 135px;
-        height: 135px;
+.about-us-area {
+  &.style-1 {
+    padding: 180px 0 120px 0;
+    position: relative;
+    @include rmaxwd(767) {
+      padding: 80px 0;
+    }
+    @include md {
+      padding: 100px 0;
+    }
+    .scrolldown-btn-wrapper {
+      display: none;
+      @include rwd(991) {
+        position: absolute;
+        top: 0;
+        left: 43%;
+        transform: translate(0, -61%);
+        background-image: url("../images/scroll-down-2.png");
+        background-repeat: no-repeat;
+        background-position: center;
         border-radius: 100px;
-        position: relative;
-        i {
-          color: $title-color;
-          font-size: 34px;
+        display: block;
+        .scrolldown-btn {
+          margin: 100px 72px 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $brand;
+          width: 135px;
+          height: 135px;
+          border-radius: 100px;
+          position: relative;
+          i {
+            color: $title-color;
+            font-size: 34px;
+            position: absolute;
+          }
+        }
+      }
+      .rounded-text {
+        width: 110px;
+        height: 110px;
+        text-transform: uppercase;
+        transform: rotate(-103deg);
+        color: #fff;
+        font-weight: bold;
+        // z-index: -1;
+        font-family: $body-font;
+      }
+      @keyframes rotating {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .rotating {
+        animation: rotating 12s linear infinite;
+      }
+    }
+    .about-info-card-image {
+      position: relative;
+      .image-wrapper {
+        overflow: hidden;
+      }
+      img {
+        width: 100%;
+        transform: scale(1);
+        @include transition;
+      }
+      &:hover {
+        img {
+          transform: scale(1.03);
+        }
+      }
+      .sketch-one {
+        @include rwd(1440) {
+          background-image: url("../images/shape/image-card-sketch.png");
+          width: 109px;
+          height: 109px;
+          background-repeat: no-repeat;
+          background-position: center;
           position: absolute;
+          top: -30px;
+          left: -45px;
+          z-index: 3;
+          animation: MoveUpDown 2s linear infinite alternate;
         }
       }
     }
-    .rounded-text {
-      width: 110px;
-      height: 110px;
-      text-transform: uppercase;
-      transform: rotate(-103deg);
-      color: #fff;
-      font-weight: bold;
-      // z-index: -1;
-      font-family: $body-font;
-    }
-    @keyframes rotating {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-    }
-    .rotating {
-      animation: rotating 12s linear infinite;
-    }
-  }
-  .about-info-card-image {
-    position: relative;
-    .image-wrapper {
-      overflow: hidden;
-    }
-    img {
-      width: 100%;
-      transform: scale(1);
-      @include transition;
-    }
-    &:hover {
-      img {
-        transform: scale(1.03);
-      }
-    }
-    .sketch-one {
-      @include rwd(1440) {
+    .sketch-two {
+      @include xl {
         background-image: url("../images/shape/image-card-sketch.png");
         width: 109px;
         height: 109px;
         background-repeat: no-repeat;
         background-position: center;
         position: absolute;
-        top: -30px;
-        left: -45px;
+        bottom: 65px;
+        right: 160px;
         z-index: 3;
         animation: MoveUpDown 2s linear infinite alternate;
       }
     }
   }
-  .sketch-two {
-    @include xl {
-      background-image: url("../images/shape/image-card-sketch.png");
-      width: 109px;
-      height: 109px;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      bottom: 65px;
-      right: 160px;
-      z-index: 3;
-      animation: MoveUpDown 2s linear infinite alternate;
+}
+
+// Why Choose Us
+.why-choose-us-area {
+  &.style-1 {
+    padding-bottom: 120px;
+
+    @include rmaxwd(767) {
+      padding-bottom: 80px;
+    }
+    @include md {
+      padding-bottom: 100px;
     }
   }
 }
 
 // Service section
-.home-one-service {
-  padding: 120px 0;
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  @include sm {
-    padding: 80px 0;
-  }
-  @include md {
-    padding: 80px 0;
-  }
-  .sketch {
-    @include rwd(1440) {
-      background-image: url("../images/shape/triangle-shape-white.png");
-      width: 79px;
-      height: 91px;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      left: 64px;
-      bottom: 128px;
-      animation: MoveUpDown 2s linear infinite alternate;
+.service-slider-area {
+  &.style-1 {
+    padding: 120px 0;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include rmaxwd(767) {
+      padding: 80px 0;
     }
-  }
-  .home-one-service-slider {
-    .slick-slide {
-      margin: 0 12px;
+    @include md {
+      padding: 100px 0;
+    }
+    .sketch {
+      @include rwd(1440) {
+        background-image: url("../images/shape/triangle-shape-white.png");
+        width: 79px;
+        height: 91px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        left: 64px;
+        bottom: 128px;
+        animation: MoveUpDown 2s linear infinite alternate;
+      }
+    }
+    .service-slider {
+      .slick-slide {
+        margin: 0 12px;
+      }
     }
   }
 }
 
 // Process Step Area
-.home-one-process-step {
-  padding: 120px 0 208px 0;
-  background-color: $background;
-  position: relative;
-  @include sm {
-    padding: 80px 0;
-  }
-  @include md {
-    padding: 80px 0;
-  }
-  .shape-one {
-    @include rwd(1440) {
-      background-image: url("../images/shape/shape-2.svg");
-      width: 40px;
-      height: 40px;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      top: 270px;
-      right: 55px;
-      transform: rotate(0deg);
-      animation: Rotating-reverse 9s linear infinite;
-      transform-origin: bottom right;
-    }
-  }
-  .shape-two {
-    @include rwd(1440) {
-      background-image: url("../images/shape/rectangle.svg");
-      width: 40px;
-      height: 40px;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      bottom: 271px;
-      left: 42px;
-      transform: rotate(0deg);
-      animation: Rotating 5s linear infinite;
-      transform-origin: bottom right;
-    }
-  }
-  .image-wrapper {
+.process-step-area {
+  &.style-1 {
+    padding: 120px 0 211px 0;
+    background-color: $background;
     position: relative;
-    overflow: hidden;
-    &:hover {
-      img {
-        transform: scale(1.03);
-        @include transition;
-      }
+
+    @include rmaxwd(767) {
+      padding: 80px 0;
     }
-    img {
-      @include transition;
-      @include md {
-        width: 100%;
-      }
+    @include md {
+      padding: 100px 0;
     }
-    .sketch {
-      @include xl {
-        background-image: url("../images/shape/sketch-black.png");
-        width: 109px;
-        height: 109px;
+    .shape-one {
+      @include rwd(1440) {
+        background-image: url("../images/shape/shape-2.svg");
+        width: 40px;
+        height: 40px;
         background-repeat: no-repeat;
         background-position: center;
         position: absolute;
-        bottom: 0;
-        left: 0;
-        transform: translate(-50%, 0%);
-        z-index: 3;
-        animation: MoveUpDown 2s linear infinite alternate;
+        top: 270px;
+        right: 55px;
+        transform: rotate(0deg);
+        animation: Rotating-reverse 9s linear infinite;
+        transform-origin: bottom right;
       }
     }
-  }
-  .mb-80 {
-    @include rmaxwd(991) {
-      margin-bottom: 30px;
+    .shape-two {
+      @include rwd(1440) {
+        background-image: url("../images/shape/rectangle.svg");
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        bottom: 271px;
+        left: 42px;
+        transform: rotate(0deg);
+        animation: Rotating 5s linear infinite;
+        transform-origin: bottom right;
+      }
+    }
+    .image-wrapper {
+      position: relative;
+      overflow: hidden;
+      &:hover {
+        img {
+          transform: scale(1.03);
+          @include transition;
+        }
+      }
+      img {
+        @include transition;
+        @include md {
+          width: 100%;
+        }
+      }
+      .sketch {
+        @include xl {
+          background-image: url("../images/shape/sketch-black.png");
+          width: 109px;
+          height: 109px;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transform: translate(-50%, 0%);
+          z-index: 3;
+          animation: MoveUpDown 2s linear infinite alternate;
+        }
+      }
+    }
+    .mb-80 {
+      @include rmaxwd(991) {
+        margin-bottom: 30px;
+      }
     }
   }
 }
 
 // consultation
-.free-consultaion-area {
-  padding-bottom: 120px;
-  margin-top: -114px;
-  @include sm {
-    padding: 80px 0;
-    margin-top: 0;
-  }
-  @include md {
-    padding: 80px 0;
-    margin-top: 0;
-  }
+.cta-area {
+    &.style-1 {
+      padding-bottom: 116px;
+      margin-top: -116px;
+
+      @include rmaxwd(767) {
+        padding: 80px 0;
+        margin-top: 0;
+      }
+      @include md {
+        padding: 100px 0;
+        margin-top: 0;
+      }
+    }
 }
 
 // Testimonial Area
