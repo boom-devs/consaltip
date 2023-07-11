@@ -350,7 +350,7 @@
         $(".home-one-review-slider").slick({
             slidesToShow: 1,
             infinite: true,
-            autoplay: true,
+            autoplay: false,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -361,21 +361,6 @@
                 "<button type='button' class='review-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
                 "<button type='button' class='review-arrow-btn next-btn'><i class='icon-arrow-right-2'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 991,
-                    settings:
-                     {
-                        slidesToShow: 1,
-                    },
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-            ],
         });
 
         // Home-one Team-member slider
@@ -426,11 +411,12 @@
             ],
         });
 
-         $('#home-one-team-prev').on('click', function () {
+         $('#home-one-team-prev').on('click', function (e) {
+             e.preventDefault()
             $('.home-one-team-arrow-prev').trigger('click');
-            console.log("kdk")
         });
-        $('#home-one-team-next').on('click', function () {
+        $('#home-one-team-next').on('click', function (e) {
+            e.preventDefault()
             $('.home-one-team-arrow-next').trigger('click');
         });
         // client-logo slider home-one
@@ -582,10 +568,12 @@
         });
 
 
-        $('.prev_btn_custom').on('click', function () {
+        $('.prev_btn_custom').on('click', function (e) {
+            e.preventDefault()
             $('.prev-btn').trigger('click');
         });
-        $('.next_btn_custom').on('click', function () {
+        $('.next_btn_custom').on('click', function (e) {
+            e.preventDefault()
             $('.next-btn').trigger('click');
         });
 
@@ -775,14 +763,12 @@
         });
 
         $('.isotope-grid').isotope({
-            // options
             itemSelector: '.isotope-item',
             layoutMode: 'fitRows'
         });
        var $grid = $('.isotope-grid').isotope({
         itemSelector: '.isotope-item',
             layoutMode: 'fitRows'
-        // options
         });
         // filter items on button click
         $('.filter-button-group').on( 'click', 'button', function() {

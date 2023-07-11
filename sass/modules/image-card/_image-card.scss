@@ -78,7 +78,10 @@
         flex-shrink: 0;
         padding-left: 12px;
         padding-right: unset;
-        // overflow: hidden;
+
+        .image-wrapper {
+            overflow: hidden;
+        }
 
         @include sm {
             width: 100%;
@@ -94,6 +97,7 @@
             }
         }
         .image-card-sketch {
+            animation: MoveUpDown 2s linear infinite alternate;
             @include rwd(1440) {
                 position: absolute;
                 top: 0;
@@ -107,10 +111,9 @@
                 // animation: MoveUpDown 2s linear infinite alternate;
                 &.style-two {
                     top: unset;
-                    bottom: 0;
+                    bottom: -60px;
                     left: unset;
-                    right: 0;
-                    transform: translate(50%, 50%);
+                    right: -30px;
                     z-index: 3;
                 }
                 &.style-three {

@@ -28,22 +28,13 @@
     @include sm {
       font-size: 32px;
       line-height: 46px;
-      br {
-        display: none;
-      }
     }
     @include md {
       font-size: 46px;
       line-height: 48px;
-      br {
-        display: none;
-      }
     }
     @include lg {
       font-size: 46px;
-      br {
-        display: none;
-      }
     }
   }
 
@@ -176,12 +167,6 @@
     &:after {
       top: unset;
       bottom: -12px;
-      @include sm {
-        // display: none;
-      }
-      @include md {
-        // display: none;
-      }
     }
   }
   &.under-line-green {
