@@ -7,26 +7,12 @@
  */
 /* Table of contents
 =========================
-1.Preloader
-2.Scrollup
-3. Nav Menu CSS
-4. Banner Section CSS
-5.About Section
-6.Why Choose Us Section 
-7.Service Version 
-8.Title Section
-9.Service Another Section
-10.Count Up Section 
-11.Contact Page
-12.Call To Action Section
-13.Team section
-14.Testimonial CSS
-15.Page Breadcrumb Section
-16.Blog Section
-17.Sidebar
-18.Pricing Section
-19.About Us Section
-Footer Section 
+1. Preloader
+2. Scrollup
+3. Module CSS
+4. Sidebar
+5. Pages
+Footer
 
 ===========================*/
 /* Theme Default CSS */
@@ -38,54 +24,83 @@ Footer Section
 @import "unittest";
 @import "keyframes";
 
-/* 1.Preloader */
+/* 1. Preloader */
 @import "modules/preeloader";
 
-/* 2.Scrollup */
+/* 2. Scrollup */
 @import "partials/scrollup";
-/* 3.Nav Menu CSS */
+
+/* 3. Partials */
 @import "partials/header";
 @import "partials/header-two";
 @import "partials/header-three";
+
+/* 3. Module CSS */
 @import "modules/meanmenu";
-// 4.icon-card
 @import "modules/icon-card/icon-card";
 @import "modules/icon-card/icon-card-two";
 @import "modules/icon-card/icon-card-three";
-
+@import "modules/icon-card/icon-card-four";
+@import "modules/icon-card/icon-card-five";
+@import "modules/icon-card/icon-card-six";
+@import "modules/icon-card/icon-card-seven";
 @import "modules/video-popup-card";
 @import "modules/counter-card";
 @import "modules/process-step";
 @import "modules/testimonial-card/testimonial-card";
+@import "modules/testimonial-card/testimonial-card-two";
+@import "modules/testimonial-card/testimonial-card-three";
 @import "modules/testimonial-slider-controls";
+@import "modules/custom-slider-btn";
+@import "modules/slider/slider-style-one";
+@import "modules/slider/slider-style-two";
 @import "modules/accordion/accordion";
+@import "modules/accordion/accordion-two";
 @import "modules/client-logo/client-logo";
 @import "modules/client-logo/client-logo-two";
+@import "modules/client-logo/client-logo-three";
 @import "modules/post-card/post-card-one";
 @import "modules/post-card/post-card-two";
+@import "modules/consultent-card";
 @import "modules/price-card";
-
-/* 8.Title Section */
+@import "modules/faq-section";
+@import "modules/list-item";
+@import "modules/articles";
+@import "modules/pricing";
+@import "modules/about-info-card";
+@import "modules/portfolio-card/portfolio";
+@import "modules/portfolio-card/portfolio-two";
+@import "modules/portfolio-card/portfolio-three";
+@import "modules/portfolio-card-slider-control";
+@import "modules/image-card/image-card";
+@import "modules/image-card/image-card-two";
+@import "modules/image-card/image-card-three";
 @import "modules/title-section";
-
-/* 15.Page Breadcrumb Section */
 @import "modules/breadcrumb";
-
-/* 16.Blog Section */
 @import "modules/post-card";
 @import "modules/paginations";
-
-/* 17.Sidebar */
-@import "partials/sidebar";
+@import "pages/service-page";
+@import "pages/pricing-page";
+@import "pages/blog-page";
 @import "modules/comment-list";
 @import "modules/comment-form";
-/* Footer Section */
+@import "modules/team-member-card/team-member";
+@import "modules/nav-tabs";
+
+/* 4.Sidebar */
+@import "partials/sidebar";
+@import "partials/sidebar-two";
+@import "partials/menu-sidebar";
+
+// 5. Pages
+@import "pages/pages";
+@import "pages/project-page";
+@import "pages/project-details";
+@import "pages/service-details";
+@import "pages/contact-page";
+@import "pages/about-page";
+
+/* Footer */
 @import "partials/footer";
 @import "partials/footer-two";
 
-/* Team Member */
-@import "modules/team-member-card/team-member";
-
-@import "pages/pages";
-@import "pages/about-page";
-@import "modules/nav-tabs";

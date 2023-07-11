@@ -1,3 +1,13 @@
+.common-card-wrapper {
+    background: #4566d4;
+    padding: 100px 50px;
+}
+.icon-card-wrapper-two {
+    padding: 70px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #2c3236;
+}
 .icon-card {
     &.style-two {
         flex-direction: row;
