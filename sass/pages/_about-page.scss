@@ -240,31 +240,18 @@
       top: unset;
       bottom: 28px;
     }
-    // @include lg {
-    //   top: unset;
-    //   bottom: -80px;
-    // }
 
     &.prev-btn {
       right: 88px;
-      @include sm {
-        right: unset;
-        left: 32px;
+      @include rmaxwd(991) {
+        display: none !important;
       }
-      @include md {
-        right: unset;
-        left: 12px;
-      }
-      // @include rmaxwd(767) {
-      //   right: unset;
-      //   left: 30px;
-      // }
     }
     &.next-btn {
       right: 12px;
-      @include rmaxwd(767) {
-        right: 32px;
-        left: unset;
+
+      @include rmaxwd(991) {
+        display: none !important;
       }
     }
     i {
@@ -293,6 +280,10 @@
     margin-top: 64px;
     list-style: none;
     margin-bottom: 0;
+
+    @include rmaxwd(1024) {
+      margin-top: 20px;
+    }
     li {
       line-height: 0;
       button {

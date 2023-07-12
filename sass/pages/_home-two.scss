@@ -302,40 +302,21 @@
   }
 }
 // case-studies
-.home-two-case-studies {
-  padding: 120px 0;
-  background-color: $icon-color;
-  position: relative;
-  @include sm {
-    padding: 80px 0;
-  }
-  @include md {
-    padding: 80px 0;
-  }
-  .sketch {
-    position: absolute;
-    background-image: url("../images/title-sketch.png");
-    width: 188px;
-    height: 188px;
-    bottom: 192px;
-    right: 68px;
-    animation: MoveUpDown 2s linear infinite alternate;
-  }
-}
-// Team-member section
-.home-two-team {
-  padding: 120px 0;
-  position: relative;
-  @include sm {
-    padding: 80px 0;
-  }
-  @include md {
-    padding: 80px 0;
-  }
-  .sketch {
-    @include rwd(1440) {
+.portfolio-area {
+  &.style-1 {
+    padding: 120px 0;
+    background-color: $icon-color;
+    position: relative;
+
+    @include rmaxwd(767) {
+      padding: 80px 0;
+    }
+    @include md {
+      padding: 100px 0;
+    }
+    .sketch {
       position: absolute;
-      background-image: url("../images/sketch-color.png");
+      background-image: url("../images/title-sketch.png");
       width: 188px;
       height: 188px;
       bottom: 192px;
@@ -344,120 +325,153 @@
     }
   }
 }
-// customer-review
-.home-two-customer-review {
-  padding: 120px 0;
-  background-color: $icon-color;
-  position: relative;
-  @include sm {
-    padding: 80 0;
-  }
-  @include md {
-    padding: 80 0;
-  }
-  .sketch {
-    @include rwd(1440) {
-      background-image: url("../images/shape/triangle-shape-white.svg");
-      width: 109px;
-      height: 109px;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      top: 138px;
-      left: 254px;
-      animation: MoveUpDown 2s linear infinite alternate;
+// Team-member section
+.team-slider-area {
+  &.style-2 {
+    padding: 120px 0;
+    position: relative;
+
+    @include rmaxwd(767) {
+      padding: 80px 0;
     }
-  }
-  .shape-one {
-    @include rwd(1440) {
-      background-image: url("../images/shape/shape-3.png");
-      width: 40px;
-      height: 40px;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      top: 210px;
-      left: 42px;
+    @include md {
+      padding: 100px 0;
     }
-  }
-  .shape-two {
-    @include rwd(1440) {
-      background-image: url("../images/shape/Rectangle.png");
-      width: 40px;
-      height: 40px;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      bottom: 266px;
-      right: 55px;
-      rotate: 90deg;
-    }
-  }
-  .home-two-testimonial-card-slider {
-    .slick-slide {
-      display: flex;
-      align-items: center;
-      margin: 64px 50px 0 50px;
-      @include sm {
-        margin: 50px 60px 0 60px;
+    .sketch {
+      @include rwd(1440) {
+        position: absolute;
+        background-image: url("../images/sketch-color.png");
+        width: 188px;
+        height: 188px;
+        bottom: 192px;
+        right: 68px;
+        animation: MoveUpDown 2s linear infinite alternate;
       }
     }
-    .slick-dots {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      margin-top: 64px;
-      list-style: none;
-      li {
-        line-height: 0;
-        button {
-          width: 12px;
-          height: 12px;
-          font-size: 0;
-          border-radius: 50px;
-          padding: unset;
-          background-color: transparent;
-          border: 1px solid $white;
+  }
+}
+// Testimonial Slider
+.testimonial-slider-area {
+  &.style-2 {
+    padding: 120px 0;
+    background-color: $icon-color;
+    position: relative;
+
+    @include rmaxwd(767) {
+      padding: 80px 0;
+    }
+    @include md {
+      padding: 100px 0;
+    }
+    .sketch {
+      @include rwd(1440) {
+        background-image: url("../images/shape/triangle-shape-white.svg");
+        width: 109px;
+        height: 109px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 138px;
+        left: 254px;
+        animation: MoveUpDown 2s linear infinite alternate;
+      }
+    }
+    .shape-one {
+      @include rwd(1440) {
+        background-image: url("../images/shape/shape-3.png");
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 210px;
+        left: 42px;
+      }
+    }
+    .shape-two {
+      @include rwd(1440) {
+        background-image: url("../images/shape/Rectangle.png");
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        bottom: 266px;
+        right: 55px;
+        rotate: 90deg;
+      }
+    }
+    .home-two-testimonial-card-slider {
+      .slick-slide {
+        display: flex;
+        align-items: center;
+        margin: 64px 50px 0 50px;
+        @include sm {
+          margin: 50px 60px 0 60px;
         }
-        &.slick-active {
+      }
+      .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-top: 64px;
+        list-style: none;
+        li {
+          line-height: 0;
           button {
-            background: $brand;
+            width: 12px;
+            height: 12px;
+            font-size: 0;
+            border-radius: 50px;
+            padding: unset;
+            background-color: transparent;
+            border: 1px solid $white;
+          }
+          &.slick-active {
+            button {
+              background: $brand;
+            }
           }
         }
       }
     }
-  }
-  .home-two-testimonial-container {
-    max-width: 1320px;
-    width: 100%;
-    margin: 0 auto;
-    @include lg {
-      max-width: calc(1320px + 100px);
+    .home-two-testimonial-container {
+      max-width: 1320px;
       width: 100%;
+      margin: 0 auto;
+      @include lg {
+        max-width: calc(1320px + 100px);
+        width: 100%;
+      }
     }
   }
 }
 
-// Blog area
-.home-two-blog-area {
-  padding: 120px 0;
-  position: relative;
-  @include sm {
-    padding: 80 0;
-  }
-  @include md {
-    padding: 80 0;
-  }
-  .sketch {
-    @include rwd(1440) {
-      position: absolute;
-      background-image: url("../images/sketch-color.png");
-      width: 188px;
-      height: 188px;
-      bottom: 40px;
-      right: 102px;
-      animation: MoveUpDown 2s linear infinite alternate;
+// Latest Posts Area
+.latest-posts-area {
+  &.style-2 {
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+
+    @include rmaxwd(767) {
+      padding-top: 80px;
+      padding-bottom: 56px;
+    }
+    @include md {
+      padding: 100px 0;
+    }
+    .sketch {
+      @include rwd(1440) {
+        position: absolute;
+        background-image: url("../images/sketch-color.png");
+        width: 188px;
+        height: 188px;
+        bottom: 40px;
+        right: 102px;
+        animation: MoveUpDown 2s linear infinite alternate;
+      }
     }
   }
 }
