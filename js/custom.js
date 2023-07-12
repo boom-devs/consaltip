@@ -462,17 +462,19 @@
             speed: 1500,
         });
 
-// Home-two process slider
-        $(".home-two-process-slider").slick({
+
+        // Process Step Slider
+        $(".process-step-slider").slick({
             slidesToShow: 1,
             infinite: true,
-            autoplay: false,
-            draggable: false,
+            autoplay: true,
+            draggable: true,
             arrows: false,
             slidesToScroll: 1,
             loop: true,
-            dots: true,
-            speed: 1500,
+            dots: false,
+            speed: 800,
+            asNavFor: '.process-step-slider-tab',
             prevArrow:
                 "<button type='button' class='process-arrow-btn prev-btn'><i class='icon-arrow-left-2'></i></button>",
             nextArrow:
@@ -489,27 +491,37 @@
             ],
         });
 
-        
-        $('.process-arrow-btn').on('click', function () {
-            $('.process-arrow-btn').removeClass(' active ');
-            $(this).addClass('active');
-        });
-
-        // trigger
-        $('#home-two-first-step').on('click', function () {
-            $('#slick-slide-control30').trigger('click');
-             $('.icon-card').removeClass(' active ');
-            $(this).addClass('active');
-        });
-        $('#home-two-second-step').on('click', function () {
-            $('#slick-slide-control31').trigger('click');
-            $('.icon-card').removeClass(' active ');
-            $(this).addClass('active');
-        });
-        $('#home-two-third-step').on('click', function () {
-            $('#slick-slide-control32').trigger('click');
-            $('.icon-card').removeClass(' active ');
-            $(this).addClass('active');
+        // Process Step Slider Tab
+        $('.process-step-slider-tab').slick({
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            loop: true,
+            infinite: true,
+            asNavFor: '.process-step-slider',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true,
+            arrows:false,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                }
+            ],
         });
 
         $(".home-two-testimonial-card-slider").slick({

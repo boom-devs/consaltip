@@ -36,7 +36,7 @@
                 flex-direction: column;
             }
         }
-        &.active {
+        &.slick-current {
             background-color: $background;
             border-color: transparent;
             .content {
