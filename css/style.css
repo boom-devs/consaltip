@@ -3474,7 +3474,8 @@ a.meanmenu-reveal {
   gap: 24px;
   position: relative;
   z-index: 2;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 24px; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .icon-card {
       margin-top: 24px;
@@ -3908,7 +3909,6 @@ a.meanmenu-reveal {
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .counter-card {
       display: grid;
-      padding: 10px;
       grid-template-columns: repeat(2, 1fr); }
       .counter-card:before {
         display: none; } }
@@ -4001,12 +4001,12 @@ a.meanmenu-reveal {
       background-image: url("../images/shape/sketch-color.svg");
       width: 188px;
       height: 188px;
-      bottom: 0;
-      left: 0;
+      bottom: -30px;
+      left: -94px;
       top: unset;
       z-index: 1;
-      -webkit-animation: MoveUpDownCorner 2s linear infinite alternate;
-              animation: MoveUpDownCorner 2s linear infinite alternate; } }
+      -webkit-animation: MoveUpDown 2s linear infinite alternate;
+              animation: MoveUpDown 2s linear infinite alternate; } }
   .process-step .image {
     width: 50%;
     position: relative;
@@ -6819,10 +6819,8 @@ button.testimonial-arrow-btn {
             width: 188px;
             height: 188px;
             top: unset;
-            bottom: 0;
-            left: 0;
-            -webkit-transform: translate(-50%, 50%);
-                    transform: translate(-50%, 50%); }
+            bottom: -87px;
+            left: -84px; }
           .image-card .image .image-card-sketch.style-four {
             top: 0;
             right: 0;
@@ -6839,6 +6837,9 @@ button.testimonial-arrow-btn {
       transition: all 0.5s ease-out; }
   .image-card.image-card-spacing {
     gap: 80px; }
+    @media (max-width: 1199px) {
+      .image-card.image-card-spacing {
+        gap: 30px; } }
     .image-card.image-card-spacing .content {
       gap: 24px; }
       .image-card.image-card-spacing .content .theme-btn-wrapper {
@@ -10259,14 +10260,16 @@ ul.children {
 
 .service-area.style-1 {
   background: #f8f8f1;
-  padding: 120px 0;
+  padding: 100px 0;
   position: relative; }
   @media (max-width: 767px) {
     .service-area.style-1 {
-      padding: 80px 0; } }
+      padding-top: 44px;
+      padding-bottom: 80px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .service-area.style-1 {
-      padding: 100px 0; } }
+      padding-top: 76px;
+      padding-bottom: 100px; } }
   @media (min-width: 1440px) {
     .service-area.style-1 .sketch-one {
       background-image: url("../images/sketch-color.png");
@@ -10279,19 +10282,23 @@ ul.children {
       left: 44px;
       -webkit-animation: MoveUpDown 2s linear infinite alternate;
               animation: MoveUpDown 2s linear infinite alternate; } }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .service-area.style-1 {
-      padding: 80px 0; } }
+  .service-area.style-1 .section-title {
+    margin-top: 24px; }
 
-.counter-card-wrapper {
+.counter-up-area.style-1 {
   padding: 120px 0 104px 0;
-  background: url("../images/counter-bg-1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative; }
+  @media (max-width: 767px) {
+    .counter-up-area.style-1 {
+      padding: 80px 0 45px 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .counter-up-area.style-1 {
+      padding: 100px 0 65px 0; } }
   @media (min-width: 1440px) {
-    .counter-card-wrapper .counter-sketch {
+    .counter-up-area.style-1 .counter-sketch {
       position: absolute;
       background-image: url("../images/title-sketch.png");
       width: 200px;
@@ -10299,7 +10306,7 @@ ul.children {
       bottom: 246px;
       right: 104px;
       z-index: 2; } }
-  .counter-card-wrapper .overlay {
+  .counter-up-area.style-1 .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -10307,25 +10314,28 @@ ul.children {
     left: 0;
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(3, 63, 71, 0.8)), to(rgba(3, 63, 71, 0.8)));
     background: linear-gradient(0deg, rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)); }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .counter-card-wrapper {
-      padding: 80px 0 80px 0; } }
 
-.home-two-mission {
+.why-choose-us-area.style-1 {
   padding: 120px 0; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .home-two-mission {
+  @media (max-width: 767px) {
+    .why-choose-us-area.style-1 {
       padding: 80px 0; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .home-two-mission {
-      padding: 80px 0; } }
+    .why-choose-us-area.style-1 {
+      padding: 100px 0; } }
 
-.home-two-client-logo-area {
+.brand-slider-area.style-2 {
   background: #f8f8f1;
   padding: 120px 0;
   position: relative; }
+  @media (max-width: 767px) {
+    .brand-slider-area.style-2 {
+      padding: 80px 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .brand-slider-area.style-2 {
+      padding: 100px 0; } }
   @media (min-width: 1440px) {
-    .home-two-client-logo-area .sketch {
+    .brand-slider-area.style-2 .sketch {
       position: absolute;
       width: 188px;
       height: 188px;
@@ -10336,41 +10346,47 @@ ul.children {
       background-repeat: no-repeat;
       -webkit-animation: MoveUpDown 2s linear infinite alternate;
               animation: MoveUpDown 2s linear infinite alternate; } }
-  .home-two-client-logo-area .home-two-client-logo-slider .slick-dots {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 8px;
-    margin-top: 64px;
-    margin-bottom: 0;
-    list-style: none; }
-    .home-two-client-logo-area .home-two-client-logo-slider .slick-dots li {
-      line-height: 0; }
-      .home-two-client-logo-area .home-two-client-logo-slider .slick-dots li button {
-        width: 14px;
-        height: 14px;
-        font-size: 0;
-        border-radius: 50px;
-        padding: unset;
-        background-color: #bdbdbd; }
-      .home-two-client-logo-area .home-two-client-logo-slider .slick-dots li.slick-active button {
-        background: #080f10; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .home-two-client-logo-area {
-      padding: 80px 0; } }
+  .brand-slider-area.style-2 .brand-slider-wrapper {
+    margin-top: 64px; }
+    .brand-slider-area.style-2 .brand-slider-wrapper .slick-dots {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      gap: 8px;
+      margin-top: 64px;
+      margin-bottom: 0;
+      list-style: none; }
+      @media (max-width: 767px) {
+        .brand-slider-area.style-2 .brand-slider-wrapper .slick-dots {
+          margin-top: 40px; } }
+      .brand-slider-area.style-2 .brand-slider-wrapper .slick-dots li {
+        line-height: 0; }
+        .brand-slider-area.style-2 .brand-slider-wrapper .slick-dots li button {
+          width: 14px;
+          height: 14px;
+          font-size: 0;
+          border-radius: 50px;
+          padding: unset;
+          background-color: #bdbdbd; }
+        .brand-slider-area.style-2 .brand-slider-wrapper .slick-dots li.slick-active button {
+          background: #080f10; }
 
-.home-2-process-step {
-  padding: 120px 0;
+.process-step-slider-area.style-1 {
+  padding-top: 124px;
+  padding-bottom: 120px;
   position: relative; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .home-2-process-step {
+  @media (max-width: 767px) {
+    .process-step-slider-area.style-1 {
       padding: 80px 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .process-step-slider-area.style-1 {
+      padding: 100px 0; } }
 
 .home-two-process-slider .slick-slide {
   margin: 24px 50px; }
@@ -12367,4 +12383,5 @@ ul.children {
     color: #e0f780;
     -webkit-text-decoration-color: #e0f780;
             text-decoration-color: #e0f780; }
+
 /*# sourceMappingURL=style.css.map */

@@ -9,6 +9,8 @@
     position: relative;
     z-index: 2;
     overflow: hidden;
+    margin-top: 24px;
+
     @include sm {
         margin-top: 24px;
         padding: 48px 12px;

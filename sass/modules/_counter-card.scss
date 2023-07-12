@@ -8,7 +8,6 @@
 
   @include sm {
     display: grid;
-    padding: 10px;
     grid-template-columns: repeat(2, 1fr);
     &:before {
       display: none;

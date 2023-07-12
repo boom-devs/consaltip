@@ -45,14 +45,16 @@
 .service-area {
   &.style-1 {
     background: $background;
-    padding: 120px 0;
+    padding: 100px 0;
     position: relative;
 
     @include rmaxwd(767) {
-      padding: 80px 0;
+      padding-top: 44px;
+      padding-bottom: 80px;
     }
     @include md {
-      padding: 100px 0;
+      padding-top: 76px;
+      padding-bottom: 100px;
     }
 
     .sketch-one {
@@ -68,119 +70,137 @@
         animation: MoveUpDown 2s linear infinite alternate;
       }
     }
-    @include sm {
-      padding: 80px 0;
+    .section-title {
+      margin-top: 24px;
     }
   }
 }
 // counter section
-.counter-card-wrapper {
-  padding: 120px 0 104px 0;
-  background: url("../images/counter-bg-1.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  .counter-sketch {
-    @include rwd(1440) {
-      position: absolute;
-      background-image: url("../images/title-sketch.png");
-      width: 200px;
-      height: 200px;
-      bottom: 246px;
-      right: 104px;
-      z-index: 2;
+.counter-up-area {
+  &.style-1 {
+    padding: 120px 0 104px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    @include rmaxwd(767) {
+      padding: 80px 0 45px 0;
     }
-  }
-  .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(0deg, rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8));
-  }
-  @include sm {
-    padding: 80px 0 80px 0;
+    @include md {
+      padding: 100px 0 65px 0;
+    }
+    .counter-sketch {
+      @include rwd(1440) {
+        position: absolute;
+        background-image: url("../images/title-sketch.png");
+        width: 200px;
+        height: 200px;
+        bottom: 246px;
+        right: 104px;
+        z-index: 2;
+      }
+    }
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(0deg, rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8));
+    }
   }
 }
 
 // mission section
-.home-two-mission {
-  padding: 120px 0;
-  @include sm {
-    padding: 80px 0;
-  }
-  @include md {
-    padding: 80px 0;
+.why-choose-us-area {
+  &.style-1 {
+    padding: 120px 0;
+
+    @include rmaxwd(767) {
+      padding: 80px 0;
+    }
+    @include md {
+      padding: 100px 0;
+    }
   }
 }
 
 // client-logo wrapper
-.home-two-client-logo-area {
-  background: $background;
-  padding: 120px 0;
-  position: relative;
-  .sketch {
-    @include rwd(1440) {
-      position: absolute;
-      width: 188px;
-      height: 188px;
-      background-image: url("../images/sketch-color.png");
-      bottom: 18px;
-      right: 46px;
-      background-position: center;
-      background-repeat: no-repeat;
-      animation: MoveUpDown 2s linear infinite alternate;
+.brand-slider-area {
+  &.style-2 {
+    background: $background;
+    padding: 120px 0;
+    position: relative;
+
+    @include rmaxwd(767) {
+      padding: 80px 0;
     }
-  }
-  .home-two-client-logo-slider {
-    .slick-dots {
-      display: flex !important;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
+    @include md {
+      padding: 100px 0;
+    }
+
+    .sketch {
+      @include rwd(1440) {
+        position: absolute;
+        width: 188px;
+        height: 188px;
+        background-image: url("../images/sketch-color.png");
+        bottom: 18px;
+        right: 46px;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation: MoveUpDown 2s linear infinite alternate;
+      }
+    }
+    .brand-slider-wrapper {
       margin-top: 64px;
-      margin-bottom: 0;
-      list-style: none;
-      li {
-        line-height: 0;
-        button {
-          width: 14px;
-          height: 14px;
-          font-size: 0;
-          border-radius: 50px;
-          padding: unset;
-          background-color: #bdbdbd;
+
+      .slick-dots {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-top: 64px;
+        margin-bottom: 0;
+        list-style: none;
+
+        @include rmaxwd(767) {
+          margin-top: 40px;
         }
-        &.slick-active {
+        li {
+          line-height: 0;
           button {
-            background: $title-color;
+            width: 14px;
+            height: 14px;
+            font-size: 0;
+            border-radius: 50px;
+            padding: unset;
+            background-color: #bdbdbd;
+          }
+          &.slick-active {
+            button {
+              background: $title-color;
+            }
           }
         }
       }
     }
   }
-  @include sm {
-    padding: 80px 0;
-  }
 }
 
-.home-2-process-step {
-  padding: 120px 0;
-  position: relative;
-  // .sketch {
-  //   @include rwd(1440) {
-  //     position: absolute;
-  //     background-image: url("../images/shape/sketch-color.svg");
-  //     width: 188px;
-  //     height: 188px;
-  //     bottom: 45px;
-  //     left: 147px;
-  //   }
-  // }
-  @include sm {
-    padding: 80px 0;
+.process-step-slider-area {
+  &.style-1 {
+    padding-top: 124px;
+    padding-bottom: 120px;
+    position: relative;
+
+    @include rmaxwd(767) {
+      padding: 80px 0;
+    }
+    @include md {
+      padding: 100px 0;
+    }
   }
 }
 .home-two-process-slider {

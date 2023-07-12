@@ -108,7 +108,6 @@
                 height: 91px;
                 transform: translate(-50%, -50%);
                 z-index: 5;
-                // animation: MoveUpDown 2s linear infinite alternate;
                 &.style-two {
                     top: unset;
                     bottom: -60px;
@@ -121,9 +120,8 @@
                     width: 188px;
                     height: 188px;
                     top: unset;
-                    bottom: 0;
-                    left: 0;
-                    transform: translate(-50%, 50%);
+                    bottom: -87px;
+                    left: -84px;
                 }
                 &.style-four {
                     top: 0;
@@ -144,6 +142,10 @@
     }
     &.image-card-spacing {
         gap: 80px;
+
+        @include rmaxwd(1199) {
+            gap: 30px;
+        }
         .content {
             gap: 24px;
             .theme-btn-wrapper {

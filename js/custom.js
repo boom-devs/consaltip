@@ -449,8 +449,8 @@
             ],
         });
 
-        // client-logo slider home-two
-        $(".home-two-client-logo-slider").slick({
+        // Brand Slider Style 2
+        $(".brand-slider-wrapper").slick({
             slidesToShow: 1,
             infinite: true,
             autoplay: true,

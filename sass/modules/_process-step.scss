@@ -11,12 +11,11 @@
             background-image: url("../images/shape/sketch-color.svg");
             width: 188px;
             height: 188px;
-            bottom: 0;
-            left: 0;
+            bottom: -30px;
+            left: -94px;
             top: unset;
-            // transform: translate(-50%, 15%);
             z-index: 1;
-            animation: MoveUpDownCorner 2s linear infinite alternate;
+            animation: MoveUpDown 2s linear infinite alternate;
         }
     }
     .image {
