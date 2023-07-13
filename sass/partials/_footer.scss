@@ -125,6 +125,7 @@
       .social-widget {
         gap: 16px;
         margin-top: 30px;
+        flex-wrap: wrap;
       }
       @include sm {
         .info-form-and-social-icon {
