@@ -742,18 +742,6 @@ input:focus {
       padding: 0 12px;
       width: 100%; } }
 
-.slider-container {
-  max-width: 1440px;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .slider-container {
-      padding: 0 12px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .slider-container {
-      padding: 0 12px; } }
-
 .certified {
   z-index: 5;
   position: absolute;
@@ -3346,7 +3334,7 @@ a.meanmenu-reveal {
 
 .mean-container a.meanmenu-reveal span {
   display: block;
-  background: #035b7b;
+  background: #033f47;
   height: 2px;
   margin-top: 5px; }
 
@@ -3432,7 +3420,7 @@ a.meanmenu-reveal {
   border-left: 1px solid #ebecee; }
 
 .mean-container .mean-nav ul li a.mean-expand:hover {
-  background: #035b7b;
+  background: #033f47;
   color: #fff; }
 
 .mean-container .mean-push {
@@ -4557,6 +4545,18 @@ button.testimonial-arrow-btn {
         color: #080f10; }
       .custom-slider-btn.style-two a:hover {
         border-color: transparent; }
+
+.slider-container {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .slider-container {
+      padding: 0 12px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .slider-container {
+      padding: 0 12px; } }
 
 .slider-area {
   position: relative; }
@@ -9877,14 +9877,14 @@ ul.children {
               animation: MoveUpDown 2s linear infinite alternate; } }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .home-one-case-studies-slider {
+  .portfolio-slider-wrapper {
     padding: 0 48px; } }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .home-one-case-studies-slider {
+  .portfolio-slider-wrapper {
     padding: 0 48px; } }
-.home-one-case-studies-slider .portfolio-card {
+.portfolio-slider-wrapper .portfolio-card {
   margin: 0 24px; }
-.home-one-case-studies-slider button.case-arrow-btn {
+.portfolio-slider-wrapper button.case-arrow-btn {
   position: absolute;
   width: 64px;
   height: 64px;
@@ -9898,35 +9898,25 @@ ul.children {
   bottom: -124px;
   overflow: hidden; }
   @media (max-width: 991px) {
-    .home-one-case-studies-slider button.case-arrow-btn {
+    .portfolio-slider-wrapper button.case-arrow-btn {
       top: unset; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .home-one-case-studies-slider button.case-arrow-btn {
+    .portfolio-slider-wrapper button.case-arrow-btn {
       bottom: -76px;
       width: 40px;
       height: 40px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .home-one-case-studies-slider button.case-arrow-btn {
+    .portfolio-slider-wrapper button.case-arrow-btn {
       bottom: -76px;
       width: 45px;
       height: 45px; } }
-  .home-one-case-studies-slider button.case-arrow-btn.prev-btn {
-    right: 51%; }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .home-one-case-studies-slider button.case-arrow-btn.prev-btn {
-        right: 51%; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .home-one-case-studies-slider button.case-arrow-btn.prev-btn {
-        right: 51%; } }
-  .home-one-case-studies-slider button.case-arrow-btn.next-btn {
-    left: 50%; }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .home-one-case-studies-slider button.case-arrow-btn.next-btn {
-        left: 50%; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .home-one-case-studies-slider button.case-arrow-btn.next-btn {
-        left: 50%; } }
-  .home-one-case-studies-slider button.case-arrow-btn i {
+  .portfolio-slider-wrapper button.case-arrow-btn.prev-btn {
+    right: 50%;
+    margin-right: 8px; }
+  .portfolio-slider-wrapper button.case-arrow-btn.next-btn {
+    left: 50%;
+    margin-left: 8px; }
+  .portfolio-slider-wrapper button.case-arrow-btn i {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -9936,10 +9926,10 @@ ul.children {
     font-size: 21px;
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
-  .home-one-case-studies-slider button.case-arrow-btn:hover {
+  .portfolio-slider-wrapper button.case-arrow-btn:hover {
     background: #e0f780;
     border-color: transparent; }
-    .home-one-case-studies-slider button.case-arrow-btn:hover i {
+    .portfolio-slider-wrapper button.case-arrow-btn:hover i {
       color: #080f10;
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out; }
@@ -9998,6 +9988,9 @@ ul.children {
         overflow: hidden;
         z-index: 10;
         background-color: #f8f8f1; }
+        @media (max-width: 470px) {
+          .testimonial-slider-area.style-1 .review-card .image-wrapper .image {
+            width: 300px; } }
         .testimonial-slider-area.style-1 .review-card .image-wrapper .image:before {
           position: absolute;
           content: "";
@@ -10054,21 +10047,25 @@ ul.children {
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .testimonial-slider-area.style-1 .testimonial-slider button.review-arrow-btn.prev-btn {
           bottom: -50px;
-          right: 51%; } }
+          right: 50%;
+          margin-right: 8px; } }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .testimonial-slider-area.style-1 .testimonial-slider button.review-arrow-btn.prev-btn {
           bottom: -64px;
-          right: 51%; } }
+          right: 50%;
+          margin-right: 8px; } }
     .testimonial-slider-area.style-1 .testimonial-slider button.review-arrow-btn.next-btn {
       right: 0; }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .testimonial-slider-area.style-1 .testimonial-slider button.review-arrow-btn.next-btn {
           bottom: -50px;
-          left: 50%; } }
+          left: 50%;
+          margin-left: 8px; } }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .testimonial-slider-area.style-1 .testimonial-slider button.review-arrow-btn.next-btn {
           bottom: -64px;
-          left: 50%; } }
+          left: 50%;
+          margin-left: 8px; } }
     .testimonial-slider-area.style-1 .testimonial-slider button.review-arrow-btn i {
       position: absolute;
       top: 50%;
@@ -12400,4 +12397,5 @@ ul.children {
     color: #e0f780;
     -webkit-text-decoration-color: #e0f780;
             text-decoration-color: #e0f780; }
+
 /*# sourceMappingURL=style.css.map */

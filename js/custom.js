@@ -130,7 +130,7 @@
         $(".slider-wrapper").slick({
             slidesToShow: 1,
             infinite: true,
-            autoplay: true,
+            autoplay: false,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
@@ -306,8 +306,8 @@
             ],
         });
 
-        // Home-one case-studies
-        $(".home-one-case-studies-slider").slick({
+        // Portfolio Slider
+        $(".portfolio-slider-wrapper").slick({
             slidesToShow: 3,
             infinite: true,
             autoplay: true,

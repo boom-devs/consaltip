@@ -324,7 +324,7 @@
   }
 }
 // case-studies slider
-.home-one-case-studies-slider {
+.portfolio-slider-wrapper {
   @include md {
     padding: 0 48px;
   }
@@ -361,22 +361,12 @@
     }
 
     &.prev-btn {
-      right: 51%;
-      @include sm {
-        right: 51%;
-      }
-      @include md {
-        right: 51%;
-      }
+      right: 50%;
+      margin-right: 8px;
     }
     &.next-btn {
       left: 50%;
-      @include sm {
-        left: 50%;
-      }
-      @include md {
-        left: 50%;
-      }
+      margin-left: 8px;
     }
     i {
       position: absolute;
@@ -445,6 +435,10 @@
           z-index: 10;
           background-color: $background;
 
+          @include rmaxwd(470) {
+            width: 300px;
+          }
+
           &:before {
             position: absolute;
             content: "";
@@ -503,11 +497,13 @@
 
           @include sm {
             bottom: -50px;
-            right: 51%;
+            right: 50%;
+            margin-right: 8px;
           }
           @include md {
             bottom: -64px;
-            right: 51%;
+            right: 50%;
+            margin-right: 8px;
           }
         }
         &.next-btn {
@@ -515,10 +511,12 @@
           @include sm {
             bottom: -50px;
             left: 50%;
+            margin-left: 8px;
           }
           @include md {
             bottom: -64px;
             left: 50%;
+            margin-left: 8px;
           }
         }
         i {
