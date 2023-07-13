@@ -39,9 +39,6 @@
             padding-right: 45px;
             position: relative;
             .count {
-                // position: absolute;
-                // bottom: 48px;
-                // right: 27px;
                 width: 66px;
                 height: 66px;
                 border-radius: 50px;
@@ -57,18 +54,12 @@
                     }
                 }
                 @include sm {
-                    bottom: 0;
-                    right: 0;
-                    transform: translate(40%, 40%);
                     width: 45px;
                     height: 45px;
                 }
             }
             .icon {
                 display: none;
-                i {
-                    // color: $background;
-                }
             }
             .content {
                 .text {
@@ -107,7 +98,6 @@
             @include md {
                 max-width: 100%;
                 margin-top: 48px;
-                // padding-right: 0;
             }
         }
         @include sm {

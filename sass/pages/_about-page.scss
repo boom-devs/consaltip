@@ -280,6 +280,7 @@
     margin-top: 64px;
     list-style: none;
     margin-bottom: 0;
+    padding: 0;
 
     @include rmaxwd(1024) {
       margin-top: 20px;

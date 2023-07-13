@@ -29,15 +29,24 @@
           margin-top: 70px;
         }
       }
-      img {
-        width: 100%;
-        height: 100%;
-        @include transition;
+      .image-wrapper {
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          @include transition;
+          transform: scale(1);
+        }
+
         &:hover {
-          // filter: blur(2px);
-          transform: scale(1.1);
+          img {
+            transform: scale(1.03);
+            @include transition;
+          }
         }
       }
+
     }
   }
 }
@@ -349,6 +358,13 @@
         bottom: 192px;
         right: 68px;
         animation: MoveUpDown 2s linear infinite alternate;
+      }
+    }
+    .section-title {
+      .title {
+        @include rmaxwd(767) {
+          text-align: center !important;
+        }
       }
     }
   }

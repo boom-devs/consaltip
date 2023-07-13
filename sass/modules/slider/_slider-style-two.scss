@@ -14,47 +14,6 @@
         animation: MoveUpDown 2s linear infinite alternate;
       }
     }
-    button.slider-arrow-btn {
-      @include md {
-        bottom: 0px;
-      }
-      @include lg {
-        bottom: 36px;
-        top: unset;
-      }
-      &.prev-btn {
-        left: 48px;
-        @include sm {
-          right: 50%;
-          left: unset;
-          margin-right: 12px;
-        }
-        @include md {
-          left: 43%;
-          right: unset;
-        }
-        @include lg {
-          left: unset;
-          right: 50%;
-        }
-      }
-      &.next-btn {
-        right: 30px;
-        @include sm {
-          left: 50%;
-          right: unset;
-        }
-        @include md {
-          left: 50%;
-          right: unset;
-          margin-left: 12px;
-        }
-        @include lg {
-          left: 50%;
-          margin-left: 12px;
-        }
-      }
-    }
     .social-share {
       @include rmaxwd(991) {
         display: none;
@@ -63,13 +22,15 @@
     .single-slider {
       padding-top: 206px;
       height: 994px;
+
       @include sm {
-        padding: 80px 12px 64px 12px;
-        height: 880px;
+        padding: 80px 12px 150px 12px;
+        height: 100%;
       }
       @include md {
         height: 100%;
-        padding-top: 148px;
+        padding-top: 100px;
+        padding-bottom: 140px;
       }
       @include lg {
         padding-top: 80px;
@@ -127,6 +88,7 @@
         @include sm {
           border-radius: 4px;
           width: 300px;
+          margin-bottom: 30px;
         }
         @include md {
           border-radius: 4px;

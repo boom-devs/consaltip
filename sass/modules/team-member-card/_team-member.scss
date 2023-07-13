@@ -1,6 +1,7 @@
 .team-member-card {
   position: relative;
   cursor: pointer;
+
   .image {
     background-color: $background;
     background-position: center;
@@ -61,7 +62,7 @@
     }
   }
   .content-wrapper {
-    padding: 43px 0 44px 0;
+    padding: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
